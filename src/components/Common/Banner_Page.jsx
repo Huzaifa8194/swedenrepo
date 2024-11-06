@@ -1,13 +1,24 @@
-import React from "react";
-const Banner_Page = ({ title }) => {
+import React, { useEffect } from "react";
+import { useTranslation } from 'react-i18next';
+import './Banner_Page.css';
+
+const Banner_Page = ({ highlightText, regularText, backgroundImage }) => {
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    // Dynamically inject the background image into the CSS variable
+    document.documentElement.style.setProperty('--dynamic-bg', `url(${backgroundImage})`);
+  }, [backgroundImage]);
+
   return (
-    <>
-      <div className={"  lg:tw-pt-44 md:tw-pt-56  tw-pt-72 tw-bg-common tw-bg-center tw-bg-cover  tw-absolute tw-top-20 -tw-z-10 tw-bg-[#4D5160] tw-w-full tw-flex tw-justify-center tw-items-end"}>
-        <div className=" tw-pb-7">
-          <h1 className=" tw-font-bold text-white tw-uppercase">{title}</h1>
-        </div>
+    <div className="hero-section">
+      <div className="hero-content">
+        <h1 className = "theregulartext">
+          <div className="highlight">{highlightText}</div> 
+        </h1>
+        <div className="regulartextbanner">{regularText} </div>
       </div>
-    </>
+    </div>
   );
 };
 

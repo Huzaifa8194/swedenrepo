@@ -4,6 +4,7 @@ import Navbar from '../../components/Header/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
 import Header from '../../components/Header_New/Header';
 const ContactUs = () => {
@@ -13,7 +14,11 @@ const ContactUs = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={'CONTACT US'} />
+      <Banner_Page 
+  highlightText={"Contact Us"} 
+  regularText={"Have questions? We’re here to help! Reach out for personalized guidance on your relocation journey. Together, we’ll make Sweden feel like home."} 
+  backgroundImage={homeBgImage} 
+/>
       <div className=" sm:tw-pt-36 tw-pt-28">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4509.282465196967!2d13.02468000000001!3d55.59085300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a16677346a9f%3A0x3fffcf31a36f0521!2sAmiralsgatan%2086A%2C%20214%2037%20Malm%C3%B6%2C%20Sweden!5e0!3m2!1sen!2sus!4v1709645005178!5m2!1sen!2sus"

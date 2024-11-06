@@ -9,6 +9,7 @@ import video1 from '../../assets/images/video/about_video1.mp4';
 import Header from '../../components/Header_New/Header';
 import video2 from '../../assets/images/video/about_video2.mp4';
 import { useTranslation } from 'react-i18next';
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
 const AboutUs = () => {
   useEffect(() => {
@@ -20,7 +21,11 @@ const AboutUs = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={t('ABOUT US')} />
+      <Banner_Page 
+        highlightText= {t("About Us") }
+        regularText= {t("Welcome to your reliable partner for relocating to Sweden. Our team brings expertise and commitment to ensure a seamless transition. Let us help you feel at home from day one.")}
+        backgroundImage={homeBgImage} 
+      />
 
       <div className="md:tw-mt-36 tw-mt-36">
         <section className="tw-bg-[#F5FAFF]">

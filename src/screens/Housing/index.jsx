@@ -10,6 +10,8 @@ import agreement from "../../assets/images/view-document.png";
 import rent from "../../assets/images/find-home.png";
 import house from "../../assets/images/looking-for-housing.png";
 
+
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button";
@@ -26,7 +28,11 @@ const Housing = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={"HOUSING SOLUTIONS"} />
+      <Banner_Page 
+  highlightText={"Housing"} 
+  regularText={"Your home in Sweden is just a step away. Explore options across cities and neighborhoods that suit your needs. Let us help you find the perfect place to settle in."} 
+  backgroundImage={homeBgImage} 
+/>
 
       <div className=" ">
         <div className="  md:tw-mt-44 tw-mt-44">

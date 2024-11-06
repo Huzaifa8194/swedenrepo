@@ -13,6 +13,7 @@ import assess5 from "../../assets/images/ass5.png";
 import assess6 from "../../assets/images/ass6.png";
 import { Link } from "react-router-dom";
 import Header from '../../components/Header_New/Header';
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
 import { useTranslation } from "react-i18next";
 
@@ -295,7 +296,11 @@ const { t} = useTranslation();
           }
         `}
       </style>
-      <Banner_Page title={" Assessment"} />
+      <Banner_Page 
+  highlightText={t("Assessments")} 
+  regularText={t("Relocating is easier with guidance tailored to your needs. Our assessments provide clarity and confidence for your move. Trust us to make every step simpler and more informed.")} 
+  backgroundImage={homeBgImage} 
+/>
       <section className=" md:tw-pt-40 tw-pt-48">
         <div className="container-fluid ">
           <div className="row tw-px-0">

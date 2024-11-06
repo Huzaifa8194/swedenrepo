@@ -5,7 +5,7 @@ import Footer from '../../components/Footer/Footer';
 import { Link } from 'react-router-dom';
 import { Button } from 'bootstrap';
 import { GoTriangleRight } from 'react-icons/go';
-
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 import Header from '../../components/Header_New/Header';
 
 import { useTranslation } from 'react-i18next';
@@ -176,7 +176,11 @@ const Services = () => {
     <>
       <div className=" tw-bg-[#1F2437]">
         <Header />
-        <Banner_Page />
+        <Banner_Page 
+  highlightText={t("Services")} 
+  regularText={t("Comprehensive support for every step of your relocation. Our tailored services cover assessments, permits, housing, and more. Discover all we offer to make your move stress-free.")} 
+  backgroundImage={homeBgImage} 
+/>
         <div className="container">
           <div className="  tw-text-center  tw-mt-28">
             <h1 className=" tw-text-white tw-uppercase tw-font-bold">{t("Our Services")}</h1>

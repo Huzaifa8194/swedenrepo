@@ -87,14 +87,14 @@ const Header = () => {
 
               {/* Navbar section */}
               <div
-                className={`tw-pb-[10px] tw-px-[50px]  2xl:tw-px-[60px] tw-bg-[#1f2437] tw-w-full tw-shadow-md tw-transition-all tw-duration-500 tw-ease-in-out ${
+                className={`tw-fixed tw-pb-[10px] tw-px-[50px] tw-pt-[60px]  2xl:tw-px-[60px] tw-bg-[#1f2437] tw-w-full tw-shadow-md tw-transition-all tw-duration-500 tw-ease-in-out ${
                   isTop
                     ? "tw-translate-y-[0px] "
                     : "tw-translate-y-[-52px] tw-pt-2 tw-bg-[#fff]"
                 }`}
               >
                 <Flex spaceBetween={"space-between"}>
-                  <div className="tw-flex tw-justify-center tw-items-center tw-gap-5">
+                  <div className="tw-flex tw-justify-center tw-items-center tw-gap-5 ">
                     <Image
                       link={logo}
                       alt={t("header.logoAlt")} // Brand Logo

@@ -9,6 +9,7 @@ import mobile4 from '../../assets/images/family-purchasing-new-home.png';
 import mobile5 from '../../assets/images/writing_image.png';
 import { GoTriangleRight } from 'react-icons/go';
 import { Link, useLocation } from 'react-router-dom';
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
 
 import Header from '../../components/Header_New/Header';
@@ -188,7 +189,14 @@ const New_In_sweden = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={'NEW IN SWEDEN'} />
+      <Banner_Page 
+        highlightText= {"New in Sweden"}
+        regularText= {"Starting fresh in Sweden? We’re here to make your transition smoother. From settling in to navigating local systems, we’ve got you covered. Embrace your new life with confidence and ease."}
+        backgroundImage={homeBgImage} 
+      />
+
+
+   
 
       <div className=" ">
         <section className="  md:tw-mt-36 tw-mt-44">
