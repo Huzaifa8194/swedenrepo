@@ -301,17 +301,17 @@ const { t} = useTranslation();
   regularText={t("Relocating is easier with guidance tailored to your needs. Our assessments provide clarity and confidence for your move. Trust us to make every step simpler and more informed.")} 
   backgroundImage={homeBgImage} 
 />
-      <section className=" md:tw-pt-40 tw-pt-48">
+      <section className=" md:tw-pt-4 tw-pt-8">
         <div className="container-fluid ">
           <div className="row tw-px-0">
             <div className="tw-px-0">
               <div className=" tw-bg-white  md:tw-pl-32 tw-pl-10 md:tw-pr-32 tw-pr-10 tw-pt-14">
-                <div className="">
+                <div className=" ">
                   <span>
                     --Assessment
                     <br />
                   </span>
-                  <h1 className="tw-mt-2 tw-font-bold tw-text-2xl md:tw-flex tw-block tw-gap-2  tw-text-gray-dark tw-m-0">
+                  <h1 className="tw-mt-2 tw-font-bold tw-text-2xl md:tw-flex tw-block tw-gap-2  tw-text-gray-dark tw-m-0 ">
                     {" "}
                     <img
                       src={
@@ -327,9 +327,20 @@ const { t} = useTranslation();
 
                   <div className="row tw-flex tw-items-center tw-justify-center tw-mb-6 tw-px-20">
                      
-                      <div className="col-md-6">
+                      <div className="col-md-4">
+
+                      <div className="row ">
+                          <div className="col-md-10 tw-mx-auto">
+                          <img src={assess3} alt="" />
+                          </div>
+                        </div>
                         
-                        <p className=" tw-text-gray">
+                        
+                        
+                      </div>
+
+                      <div className="col-md-8">
+                      <p className=" tw-text-gray">
                         Welcome to our fully digital eligibility assessment tool!
                     Designed to streamline the process of relocating to Sweden,
                     this tool helps you determine whether you meet the basic
@@ -337,15 +348,7 @@ const { t} = useTranslation();
                     web portal and app offer a completely online experience,
                     ensuring that every step of your relocation journey is
                     convenient and transparent. </p>
-                        
-                      </div>
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-10 tw-mx-auto">
-                          <img src={assess3} alt="" />
-                          </div>
-                        </div>
+                       
                       </div>
                     </div>
 

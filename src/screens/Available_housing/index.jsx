@@ -12,13 +12,17 @@ import available2 from '../../assets/images/available2.webp';
 import available3 from '../../assets/images/available3.webp';
 import available4 from '../../assets/images/available4.webp';
 import available5 from '../../assets/images/available5.webp';
-
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 import { LiaAngleLeftSolid, LiaAngleRightSolid } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
 
+import { useTranslation } from "react-i18next";
+
+
 import Header from '../../components/Header_New/Header';
 const Available_housing = ({ children: slides, autoSlide = false, autoSlideInterval = 3000 }) => {
+  const { t } = useTranslation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -526,10 +530,14 @@ const Available_housing = ({ children: slides, autoSlide = false, autoSlideInter
   return (
     <>
       <Header />
-      <Banner_Page title={'HOUSING SOLUTIONS'} />
+      <Banner_Page 
+    highlightText={t("Available Housing")}
+    regularText={t("Explore the best housing options available in Sweden. We help you find a place that meets your needs and preferences.")}
+    backgroundImage={homeBgImage} 
+/>
 
       <div className="  tw-bg-[#f5f8fb]">
-        <div className="  md:tw-mt-36 tw-mt-44">
+        <div className=" ">
           <div className="container tw-py-12">
           <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}

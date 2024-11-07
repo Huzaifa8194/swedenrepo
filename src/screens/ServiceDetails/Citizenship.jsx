@@ -6,13 +6,16 @@ import { GoTriangleRight } from 'react-icons/go';
 import { Link, useParams } from 'react-router-dom';
 import banner from '../../assets/images/security-check-in-airport.png';
 import banner2 from '../../assets/images/travel-vacation.png';
-
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
+import { useTranslation } from "react-i18next";
 
 import Header from '../../components/Header_New/Header';
 
 
 
 const Citizenship = () => {
+
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -173,10 +176,13 @@ const Citizenship = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`CITIZENSHIP`} />
-
+      <Banner_Page 
+    highlightText={t("Citizenship")}
+    regularText={t("Take the final step to call Sweden your home. We guide you through the process of acquiring Swedish citizenship smoothly.")}
+    backgroundImage={homeBgImage} 
+/>
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">

@@ -12,12 +12,14 @@ import flag1 from '../../assets/images/icons8-finland-80.png';
 import flag2 from '../../assets/images/Norway.png';
 import flag3 from '../../assets/images/icons8-czech-republic-80.png';
 import flag4 from '../../assets/images/great-britain.png';
-
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
+import { useTranslation } from "react-i18next";
 
 import Header from '../../components/Header_New/Header';
 
 
 const StudyInEu = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -194,10 +196,14 @@ const StudyInEu = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`STUDY IN EU`} />
+      <Banner_Page 
+    highlightText={t("Study in EU")}
+    regularText={t("Unlock academic opportunities across Europe. Our team assists you in finding the right path for your educational journey.")}
+    backgroundImage={homeBgImage} 
+/>
 
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">

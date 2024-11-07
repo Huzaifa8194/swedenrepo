@@ -5,12 +5,14 @@ import Footer from '../../components/Footer/Footer';
 import { GoTriangleRight } from 'react-icons/go';
 import { Link, useParams } from 'react-router-dom';
 import banner from '../../assets/images/family-time-at-home.png';
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
 
 import Header from '../../components/Header_New/Header';
-
+import { useTranslation } from "react-i18next";
 
 const MarriageDivorce = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -171,10 +173,14 @@ const MarriageDivorce = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`MARRIAGE & DIVORCE`} />
+      <Banner_Page 
+    highlightText={t("Marriage & Divorce")}
+    regularText={t("Understand your rights and navigate the legal aspects of marriage and divorce in the EU with our comprehensive support.")}
+    backgroundImage={homeBgImage} 
+/>
 
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">

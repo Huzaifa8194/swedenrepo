@@ -1,85 +1,138 @@
 .hero-section {
-    position: relative;
-    background-color: #1f2437;
-    color: white;
-    padding: 100px 40px;
-    text-align: left;
-    height: 50vh;
-    justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    overflow: hidden;
-    margin-top: 100px;
-    padding-left: 16%;
-    
-  }
-  
-  .hero-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: var(--dynamic-bg);
-    background-size: cover;
-    background-position: right;
-    filter: brightness(0.2); /* Apply brightness to the background only */
-    z-index: 0; /* Behind the text */
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 1; /* Text on top of the background */
-    max-width: 50%;
-  }
-  
-  
-  .regulartextbanner {
-    font-size: 1.3em;
-   
-    margin-bottom: 20px;
-  }
-  
+  position: relative;
+  background-color: #1f2437;
+  color: white;
+  padding: 100px 40px;
+  text-align: left;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+  margin-top: 100px;
+  padding-left: 16%;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: var(--dynamic-bg);
+  background-size: cover;
+  background-position: right;
+  filter: brightness(0.2); /* Apply brightness to the background only */
+  z-index: 0; /* Behind the text */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1; /* Text on top of the background */
+  max-width: 50%;
+}
+
+.regulartextbanner {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #ffe67e ;
+  font-size: 1.5em ;
+  max-width: 80%;
+  margin-bottom: 3%;
+}
+
+/* Small devices (tablets, 768px and below) */
+/* @media (max-width: 768px) {
   .highlight {
-    color: #f3c145 !important; /* Highlight color */
-    font-size: 1.5em !important;
-    max-width: 80%;
-    color: #ffe67e !important;
-    margin-bottom: 3%;
-    
+      font-size: 36px;
   }
-  
-  @media (max-width: 768px) {
-    .highlight {
-      font-size: 36px ;
-    }
 
-    .hero-section
-    {
+  .hero-section {
       margin-top: 60px;
-    }
-
-    .regulartextbanner
-    {
-      font-size: 1.5em ;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .highlight {
-      font-size: 1.625em ;
-    }
 
-    .hero-section
-    {
-      margin-top: 50px;
-    }
+  .regulartextbanner {
+      font-size: 1.5em;
+  }
+} */
 
-    .regulartextbanner
-    {
+/* Extra small devices (phones, 480px and below) */
+@media (max-width: 480px) {
+  .highlight {
       font-size: 1.125em;
-    }
   }
-  
+
+  .hero-section {
+      margin-top: 50px;
+  }
+
+  .hero-section
+  {
+    height: 50vh;
+  }
+
+  .regulartextbanner {
+      font-size: 0.7em !important;
+  }
+}
+
+/* Medium devices (tablets, 992px and below) */
+@media (max-width: 992px) {
+  .highlight {
+      font-size: 1.25em;
+  }
+
+
+
+  .regulartextbanner {
+      font-size: 1em ;
+  }
+}
+
+/* Large devices (desktops, 1200px and below) */
+@media (max-width: 1200px) {
+  .highlight {
+      font-size: 1.25em;
+  }
+
+ 
+
+  .regulartextbanner {
+      font-size: 2em;
+  }
+}
+
+/* Extra-large devices (large desktops, 1600px and below) */
+@media (max-width: 1600px) {
+  .highlight {
+      font-size: 1.18em;
+  }
+
+  .highlight {
+    font-size: 1em;
+}
+
+ 
+
+  .regulartextbanner {
+      font-size: 1em;
+  }
+}
+
+/* Ultra-large devices (very large screens, 1600px and above) */
+@media (min-width: 1600px) {
+  .highlight {
+    margin-top: 5%;
+      font-size: 1.7em;
+  }
+
+
+  .regulartextbanner {
+      font-size: 1.5em;
+  }
+}

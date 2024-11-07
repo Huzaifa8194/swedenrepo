@@ -27,7 +27,7 @@ const AboutUs = () => {
         backgroundImage={homeBgImage} 
       />
 
-      <div className="md:tw-mt-36 tw-mt-36">
+      <div className="">
         <section className="tw-bg-[#F5FAFF]">
           <div className="container tw-py-14">
             <div className="row">

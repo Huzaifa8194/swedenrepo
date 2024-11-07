@@ -7,15 +7,18 @@ import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 import { GoTriangleRight } from "react-icons/go";
 
+import Header from "../../components/Header_New/Header";
 
+import { useTranslation } from "react-i18next";
 
-import Box from '@mui/material/Box';
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
 
 
 
 const Rent_out_your_housing = () => {
   
+  const {t} = useTranslation();
 
 
   const [selectCountry,setSelectCountry] = useState(" ")
@@ -25,8 +28,12 @@ const Rent_out_your_housing = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={"RENT OUT YOUR HOUSING"} />
-      <section className=" md:tw-pt-40 tw-pt-48">
+      <Banner_Page 
+    highlightText={t("Rent Out Your House")}
+    regularText={t("Maximize your rental potential with ease. We provide support for listing and renting out your property efficiently.")}
+    backgroundImage={homeBgImage} 
+/>
+      <section className=" md:tw-pt-8 tw-pt-8">
 
 
       <section className="tw-bg-[#F5FAFF] tw-p-5">

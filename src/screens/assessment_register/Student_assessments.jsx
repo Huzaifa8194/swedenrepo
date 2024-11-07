@@ -12,10 +12,12 @@ import { GoTriangleRight } from "react-icons/go";
 import { TfiAngleLeft } from "react-icons/tfi";
 import { Link, useParams } from "react-router-dom";
 import Assessment_modal from "./Assessment_modal";
-
+import { useTranslation } from "react-i18next";
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 import Header from '../../components/Header_New/Header';
 
 const Student_assessments = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -298,8 +300,13 @@ const Student_assessments = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`STUDENT ASSESSMENT`} />
-      <section className=" md:tw-mt-36 tw-mt-48">
+      <Banner_Page 
+    highlightText={t("Student Visa")}
+    regularText={t("Begin your educational journey in the EU. We simplify the process of acquiring a student visa for your studies abroad.")}
+    backgroundImage={homeBgImage} 
+/>
+
+      <section className=" ">
         <div className="container-fluid ">
           <div className="row g-5">
             <div className="col-md-8    tw-py-10 tw-bg-white">

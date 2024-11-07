@@ -12,10 +12,12 @@ import { GoTriangleRight } from "react-icons/go";
 import { TfiAngleLeft } from "react-icons/tfi";
 import { Link, useParams } from "react-router-dom";
 import Assessment_modal from "./Assessment_modal";
-
+import { useTranslation } from "react-i18next";
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 import Header from '../../components/Header_New/Header';
 
 const Visit_visa = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -314,8 +316,12 @@ const Visit_visa = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`VISIT VISA ASSESSMENT`} />
-      <section className=" md:tw-mt-36 tw-mt-48">
+      <Banner_Page 
+    highlightText={t("Visit Visa")}
+    regularText={t("Plan your visit with ease. We offer assistance for obtaining visit visas tailored to your travel needs.")}
+    backgroundImage={homeBgImage} 
+/>
+      <section className="">
         <div className="container-fluid ">
           <div className="row   g-5">
             <div className="col-md-8    tw-py-10 tw-bg-white">

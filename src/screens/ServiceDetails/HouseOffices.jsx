@@ -9,12 +9,14 @@ import banner2 from '../../assets/images/office-interior-design.png';
 import { imageVariants } from '../../utils/motion';
 import { motion } from 'framer-motion';
 
-
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
+import { useTranslation } from "react-i18next";
 import Header from '../../components/Header_New/Header';
 
 
 
 const HouseOffices = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -175,10 +177,13 @@ const HouseOffices = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`HOUSE & OFFICES`} />
-
+      <Banner_Page 
+    highlightText={t("Houses & Offices")}
+    regularText={t("Find your perfect space in Sweden. We assist you in securing residential and commercial properties seamlessly.")}
+    backgroundImage={homeBgImage} 
+/>
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">

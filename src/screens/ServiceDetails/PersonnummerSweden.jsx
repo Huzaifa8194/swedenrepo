@@ -7,13 +7,15 @@ import { Link, useParams } from 'react-router-dom';
 import banner from '../../assets/images/credit-card.png';
 import { imageVariants } from '../../utils/motion';
 import { motion } from 'framer-motion';
-
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
+import { useTranslation } from "react-i18next";
 
 import Header from '../../components/Header_New/Header';
 
 
 
 const PersonnumerSweden = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -174,10 +176,14 @@ const PersonnumerSweden = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`personnumer sweden`} />
+      <Banner_Page 
+    highlightText={t("Personnummer Sweden")}
+    regularText={t("Get your unique Swedish identity number to unlock essential services. Let us simplify the registration process for you.")}
+    backgroundImage={homeBgImage} 
+/>
 
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">

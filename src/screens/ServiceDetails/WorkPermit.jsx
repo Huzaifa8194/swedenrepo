@@ -8,14 +8,16 @@ import banner from '../../assets/images/programmers-building-mobile-application.
 import { imageVariants } from '../../utils/motion';
 import { motion } from 'framer-motion';
 
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
 
-
+import { useTranslation } from "react-i18next";
 import Header from '../../components/Header_New/Header';
 
 
 
 const WorkPermit = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -176,10 +178,14 @@ const WorkPermit = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`WORK PERMIT`} />
+      <Banner_Page 
+    highlightText={t("Work Permit")}
+    regularText={t("Explore your career opportunities in Sweden. We facilitate your work permit application for a smooth transition.")}
+    backgroundImage={homeBgImage} 
+/>
 
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">

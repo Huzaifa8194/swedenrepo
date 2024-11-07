@@ -7,7 +7,7 @@ const Tabs = ({ tabs, defaultTab, className }) => {
 
   return (
     <div>
-      <div className="tw-flex tw-gap-6 tw-py-5  tw-rounded-md tw-border-white tw-border-opacity-20 tw-backdrop-blur-md tw-scroll-container  tw-productOverflow  tw-overflow-x-auto tw-whitespace-nowrap">
+      {/* <div className="tw-flex tw-gap-6 tw-py-5  tw-rounded-md tw-border-white tw-border-opacity-20 tw-backdrop-blur-md tw-scroll-container  tw-productOverflow  tw-overflow-x-auto tw-whitespace-nowrap">
         {tabs.map((tab) => (
           <button
             key={tab.title}
@@ -21,7 +21,7 @@ const Tabs = ({ tabs, defaultTab, className }) => {
             {tab.title}
           </button>
         ))}
-      </div>
+      </div> */}
       <div className="mt-4">
         {tabs.map((tab) => (
           <div

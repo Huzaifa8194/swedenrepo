@@ -72,7 +72,6 @@
 //     })
 
 // export default i18n;
-
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
@@ -86,7 +85,7 @@ i18n
     fallbackLng: 'en', // Fallback language if the user's language is not available
     debug: true, // Enable debug mode to see what's going on
     backend: {
-      loadPath: '/src/locales/langs/{{lng}}/translation.json', // Path to local translation files
+      loadPath: '/locales/langs/{{lng}}/translation.json', // Updated path to be relative
     },
     detection: {
       order: ['querystring', 'cookie', 'localStorage', 'navigator'],

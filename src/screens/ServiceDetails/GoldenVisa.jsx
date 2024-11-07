@@ -8,13 +8,14 @@ import banner from '../../assets/images/business-team-planning-project.png';
 
 import banner1 from '../../assets/images/Free-Outstanding-Portugal-Travel-Map-Vectors-2-removebg-preview.png';
 
-
-
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
+import { useTranslation } from "react-i18next";
 import Header from '../../components/Header_New/Header';
 
 
 
 const GoldenVisa = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -175,10 +176,14 @@ const GoldenVisa = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`GOLDEN VISA (GREECE-PORTUGAL)`} />
+      <Banner_Page 
+    highlightText={t("Golden Visa (Greece - Portugal)")}
+    regularText={t("Secure your Golden Visa for Greece or Portugal. Invest wisely and enjoy the benefits of European residence.")}
+    backgroundImage={homeBgImage} 
+/>
 
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">

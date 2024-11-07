@@ -6,12 +6,13 @@ import { GoTriangleRight } from 'react-icons/go';
 import { Link, useParams } from 'react-router-dom';
 import banner from '../../assets/images/family-doctor-consultation.png';
 import banner2 from '../../assets/images/kid-doctor.png';
-
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 import Header from '../../components/Header_New/Header';
-
+import { useTranslation } from "react-i18next";
 
 
 const ParentsEUPermit = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -172,10 +173,15 @@ const ParentsEUPermit = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`PARENTS EU PERMIT`} />
+      <Banner_Page 
+    highlightText={t("Parents EU Permit")}
+    regularText={t("Bring your parents to the EU with confidence. Our services help make the application process simple and stress-free.")}
+    backgroundImage={homeBgImage} 
+/>
+
 
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">

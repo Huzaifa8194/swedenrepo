@@ -7,12 +7,21 @@ import { Link, useParams } from 'react-router-dom';
 import banner from '../../assets/images/psychological-problems-at-school.png';
 import { motion } from 'framer-motion';
 import { imageVariants } from '../../utils/motion';
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
+
+
+import { useTranslation } from "react-i18next";
+
 
 
 import Header from '../../components/Header_New/Header';
 
 
 const ServiceDetails = () => {
+
+
+  const { t} = useTranslation();
+
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -173,10 +182,15 @@ const ServiceDetails = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`asylum`} />
+      <Banner_Page 
+    highlightText={t("Asylum")}
+    regularText={t("Seek safety and a fresh start in Sweden. Our comprehensive support helps guide you through the asylum process smoothly.")}
+    backgroundImage={homeBgImage} 
+/>
+
 
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className=" ">
           <div className="container-fluid">
             <div className="">
               <div className="row g-4">

@@ -5,6 +5,8 @@ import Footer from '../../components/Footer/Footer';
 import { GoTriangleRight } from 'react-icons/go';
 import { Link, useParams } from 'react-router-dom';
 import banner from '../../assets/images/business-startup.png';
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
+import { useTranslation } from "react-i18next";
 
 
 import Header from '../../components/Header_New/Header';
@@ -167,13 +169,20 @@ const BusinessPermit = () => {
     },
   ];
 
+  const { t } = useTranslation();
+
   return (
     <>
       <Header />
-      <Banner_Page title={`BUSINESS PERMIT`} />
+      <Banner_Page 
+    highlightText={t("Business Permit")}
+    regularText={t("Launch your entrepreneurial journey in Sweden. Our experts help you with all the necessary paperwork for a business permit.")}
+    backgroundImage={homeBgImage} 
+/>
+
 
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">

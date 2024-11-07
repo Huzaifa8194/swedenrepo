@@ -6,12 +6,16 @@ import { GoTriangleRight } from 'react-icons/go';
 import { Link, useParams } from 'react-router-dom';
 import banner from '../../assets/images/startup-business.jpg';
 import banner2 from '../../assets/images/man-searching-air-ticket-for-summer-travel.png';
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
+import { useTranslation } from "react-i18next";
 
 
 import Header from '../../components/Header_New/Header';
 
 
 const BusinessVisit = () => {
+
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -172,13 +176,15 @@ const BusinessVisit = () => {
   return (
     <>
       <Header />
-      <Banner_Page
-        title={`BUSINESS VISIT
-`}
-      />
+    <Banner_Page 
+    highlightText={t("Business Visit")}
+    regularText={t("Plan your business visit to Sweden efficiently. We provide support to make your short-term stays hassle-free and productive.")}
+    backgroundImage={homeBgImage} 
+/>
+      
 
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">

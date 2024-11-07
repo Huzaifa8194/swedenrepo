@@ -14,13 +14,16 @@ import d7 from '../../assets/images/Saint_Lucia.jpg';
 import d8 from '../../assets/images/Turkey.jpg';
 import { imageVariants } from '../../utils/motion';
 import { motion } from 'framer-motion';
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
-
+import { useTranslation } from "react-i18next";
 
 import Header from '../../components/Header_New/Header';
 
 
 const DirectCitizenship = () => {
+
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -181,10 +184,14 @@ const DirectCitizenship = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`DIRECT CITIZENSHIP BY INVESTMENTS`} />
+      <Banner_Page 
+    highlightText={t("Direct Citizenship by Investments")}
+    regularText={t("Fast-track your path to citizenship through strategic investments. Our services make the process seamless and efficient.")}
+    backgroundImage={homeBgImage} 
+/>
 
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">

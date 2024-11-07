@@ -13,9 +13,13 @@ import { TfiAngleLeft } from 'react-icons/tfi';
 import { Link, useParams } from 'react-router-dom';
 import Assessment_modal from './Assessment_modal';
 
+import { useTranslation } from "react-i18next";
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
+
 import Header from '../../components/Header_New/Header';
 
 const Work_permit = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -200,8 +204,12 @@ const Work_permit = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`WORK PERMIT ASSESSMENT`} />
-      <section className=" md:tw-mt-36 tw-mt-48">
+      <Banner_Page 
+    highlightText={t("Work Permit")}
+    regularText={t("Unlock your career potential in Sweden. We provide guidance and support for a smooth work permit application process.")}
+    backgroundImage={homeBgImage} 
+/>
+      <section className=" ">
         <div className="container-fluid ">
           <div className="row g-5">
             <div className="col-md-8    tw-py-10 tw-bg-white">

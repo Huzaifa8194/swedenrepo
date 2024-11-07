@@ -6,9 +6,13 @@ import Input from "../../components/Input";
 import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 import { GoTriangleRight } from "react-icons/go";
+import { useTranslation } from "react-i18next";
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
+
 
 import Header from '../../components/Header_New/Header';
 const Looking_for_housing = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -223,8 +227,12 @@ const Looking_for_housing = () => {
           }
         `}
       </style>
-      <Banner_Page title={"LOOKING FOR A HOUSE"} />
-      <div className=" md:tw-mt-36 tw-mt-36">
+     <Banner_Page 
+    highlightText={t("Looking For Housing")}
+    regularText={t("Find your ideal home in Sweden. Our comprehensive services guide you through every step of the housing search process.")}
+    backgroundImage={homeBgImage} 
+/>
+      <div className=" md:tw-mt-8 tw-mt-8">
         <section className="tw-bg-[#F5FAFF] tw-p-5">
           <div className="container ">
             <div className="row md:tw-px-40 sd:tw-px-0">
@@ -253,7 +261,7 @@ const Looking_for_housing = () => {
         <div className="container-fluid  ">
           <div className="row tw-justify-center tw-items-center">
             <div className="col-md-8">
-              <div className=" tw-bg-white tw-pt-14 ">
+              <div className=" tw-bg-white tw-pt-8 ">
                 <div
                   className="  tw-bg-primary tw-text-center tw-rounded-md tw-py-4  px-3"
                   style={{ backgroundColor: "rgb(0, 123, 255)" }}

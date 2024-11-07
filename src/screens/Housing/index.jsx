@@ -35,7 +35,7 @@ const Housing = () => {
 />
 
       <div className=" ">
-        <div className="  md:tw-mt-44 tw-mt-44">
+        <div className="  md:tw-mt-10 tw-mt-10">
           <div className="container-fluid">
             <section className="">
               <div className="container  tw-my-7 tw-rounded-md tw-shadow-lg tw-bg-white ">

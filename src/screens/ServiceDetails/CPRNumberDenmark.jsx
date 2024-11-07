@@ -7,14 +7,17 @@ import { Link, useParams } from 'react-router-dom';
 import banner from '../../assets/images/doctor-identification-card.png';
 import { imageVariants } from '../../utils/motion';
 import { motion } from 'framer-motion';
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
-
+import { useTranslation } from "react-i18next";
 
 import Header from '../../components/Header_New/Header';
 
 
 
 const CPRNumberDenmark = () => {
+
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -175,10 +178,13 @@ const CPRNumberDenmark = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`CPR NUMBER DENMARK`} />
-
+      <Banner_Page 
+    highlightText={t("CPR Number Denmark")}
+    regularText={t("Secure your Danish CPR number seamlessly. We provide guidance to ensure a smooth process for your official identification.")}
+    backgroundImage={homeBgImage} 
+/>
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">

@@ -199,7 +199,7 @@ const New_In_sweden = () => {
    
 
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className=" ">
           <div className="container-fluid  ">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">

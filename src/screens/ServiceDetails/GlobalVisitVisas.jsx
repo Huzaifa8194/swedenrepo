@@ -6,11 +6,13 @@ import { GoTriangleRight } from 'react-icons/go';
 import { Link, useParams } from 'react-router-dom';
 import banner from '../../assets/images/man-searching-air-ticket-for-summer-travel.png';
 
-
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
+import { useTranslation } from "react-i18next";
 import Header from '../../components/Header_New/Header';
 
 
 const GlobalVisitVisas = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -171,10 +173,13 @@ const GlobalVisitVisas = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`GLOBAL VISIT VISAS`} />
-
+      <Banner_Page 
+    highlightText={t("Global Visit Visas")}
+    regularText={t("Travel with confidence. We provide guidance for global visit visas tailored to your destination and needs.")}
+    backgroundImage={homeBgImage} 
+/>
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">

@@ -7,13 +7,15 @@ import { Link, useParams } from 'react-router-dom';
 import banner from '../../assets/images/signup-screen-of-e-wallet-app.png';
 import { imageVariants } from '../../utils/motion';
 import { motion } from 'framer-motion';
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
-
+import { useTranslation } from "react-i18next";
 
 import Header from '../../components/Header_New/Header';
 
 
 const Investment = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -174,13 +176,14 @@ const Investment = () => {
   return (
     <>
       <Header />
-      <Banner_Page
-        title={`INVESTMENT
-`}
-      />
+      <Banner_Page 
+    highlightText={t("Investment")}
+    regularText={t("Explore investment opportunities in Sweden. We provide assistance for investors seeking growth and permanent solutions.")}
+    backgroundImage={homeBgImage} 
+/>
 
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">

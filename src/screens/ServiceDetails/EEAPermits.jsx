@@ -6,13 +6,14 @@ import { GoTriangleRight } from 'react-icons/go';
 import { Link, useParams } from 'react-router-dom';
 import banner from '../../assets/images/happy-family-on-shopping.png';
 import banner2 from '../../assets/images/removebg-preview.png';
-
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
 import Header from '../../components/Header_New/Header';
-
+import { useTranslation } from "react-i18next";
 
 
 const EEAPermits = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -173,10 +174,13 @@ const EEAPermits = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`EEA PERMITS`} />
-
+      <Banner_Page 
+    highlightText={t("EEA Permits")}
+    regularText={t("Navigate EEA permits with ease. Our expertise ensures a smooth application process for your stay within the European Economic Area.")}
+    backgroundImage={homeBgImage} 
+/>
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">

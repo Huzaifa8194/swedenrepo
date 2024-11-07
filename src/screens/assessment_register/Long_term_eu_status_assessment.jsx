@@ -13,9 +13,13 @@ import { TfiAngleLeft } from 'react-icons/tfi';
 import { Link, useParams } from 'react-router-dom';
 import Assessment_modal from './Assessment_modal';
 
+import { useTranslation } from "react-i18next";
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
+
 import Header from '../../components/Header_New/Header';
 
 const Long_term_eu_status_assessment = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -227,8 +231,14 @@ const Long_term_eu_status_assessment = () => {
 
 
       
-      <Banner_Page title={`LONG-TERM EU STATUS ASSESSMENT`} />
-      <section className=" md:tw-mt-36 tw-mt-48">
+    
+<Banner_Page 
+    highlightText={t("Long Term EU Status")}
+    regularText={t("Secure your long-term EU residence status confidently. We guide you through the process for a seamless experience.")}
+    backgroundImage={homeBgImage} 
+/>
+
+      <section className="">
         <div className="container-fluid ">
           <div className="row g-5">
             <div className="col-md-8    tw-py-10 tw-bg-white">

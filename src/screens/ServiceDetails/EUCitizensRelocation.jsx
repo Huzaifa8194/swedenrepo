@@ -6,13 +6,15 @@ import { GoTriangleRight } from 'react-icons/go';
 import { Link, useParams } from 'react-router-dom';
 import banner from '../../assets/images/family-playing-games-in-park.png';
 import banner2 from '../../assets/images/happy-family-jumping-together.png';
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
-
+import { useTranslation } from "react-i18next";
 import Header from '../../components/Header_New/Header';
 
 
 
 const EUCitizensRelocation = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -173,13 +175,14 @@ const EUCitizensRelocation = () => {
   return (
     <>
       <Header />
-      <Banner_Page
-        title={`EU FAMILY REUNIFICATION
-`}
-      />
+      <Banner_Page 
+    highlightText={t("EU Citizens Relocation")}
+    regularText={t("Relocate within the EU effortlessly. Our expert team makes your transition smooth and compliant with EU regulations.")}
+    backgroundImage={homeBgImage} 
+/>
 
       <div className=" ">
-        <section className="  md:tw-mt-36 tw-mt-44">
+        <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white">
