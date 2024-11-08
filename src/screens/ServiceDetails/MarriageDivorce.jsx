@@ -183,7 +183,7 @@ const MarriageDivorce = () => {
         <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
-              <div className="col-md-8 tw-py-20 tw-bg-white">
+              <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
                 <div className="  md:tw-pl-32 tw-pl-3">
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}

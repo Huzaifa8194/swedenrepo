@@ -40,40 +40,40 @@ const AboutUs = () => {
                   {t('Welcome To')} <strong>{t('SWEDEN RELOCATORS AB')}</strong>
                 </h2>
 
-                <p className="tw-text-gray">
+                <p className="tw-text-gray ">
                   <strong>{t('SWEDEN RELOCATORS AB')}</strong> {t('was established in 2015.')}
                 </p>
 
-                <p className="tw-text-gray">
+                <p className="tw-text-gray tw-text-justify">
                   {t(
                     'We offer quality guidance, and effective advice and provide information to our clients to settle down in the country. We provide solutions with Destination Services, Global Mobility Services, Immigration Services, Move Management, Intercultural Communication, Investment in Sweden, Property Management, and IT Solutions.'
                   )}
                 </p>
-                <p className="tw-text-gray">
+                <p className="tw-text-gray tw-text-justify">
                   {t('We provide a portal and app-based solution for individuals and companies. Some key features of our portal and app-based solution are:')}
                 </p>
-                <p className="tw-text-gray">
+                <p className="tw-text-gray tw-text-justify">
                   {t(
                     'Online application and documentation submission: Clients can submit their visa and immigration applications, as well as any required documentation, through the portal or app, making the process more efficient and convenient.'
                   )}
                 </p>
-                <p className="tw-text-gray">
+                <p className="tw-text-gray tw-text-justify">
                   {t(
                     'Account management and tracking: Clients can create an account and track the progress of their applications and requests through the portal or app.'
                   )}
                 </p>
 
-                <p className="tw-text-gray">
+                <p className="tw-text-gray tw-text-justify">
                   {t(
                     'Housing and accommodation search: Clients can search for housing and accommodation options through the portal or app, including the ability to filter by location, price, and amenities.'
                   )}
                 </p>
-                <p className="tw-text-gray">
+                <p className="tw-text-gray tw-text-justify">
                   {t(
                     'School and education search: Clients can search for schools and education options for their children through the portal or app, including the ability to filter by location, curriculum, and language.'
                   )}
                 </p>
-                <p className="tw-text-gray">
+                <p className="tw-text-gray tw-text-justify">
                   {t(
                     'Digital Wallet: Clients can keep track of their expenses and invoices and make payments through the portal or app.'
                   )}
