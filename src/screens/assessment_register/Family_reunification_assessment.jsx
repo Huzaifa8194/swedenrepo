@@ -13,8 +13,13 @@ import { TfiAngleLeft } from "react-icons/tfi";
 import { Link, useParams } from "react-router-dom";
 import Assessment_modal from "./Assessment_modal";
 import Header from '../../components/Header_New/Header';
+import { useTranslation } from "react-i18next";
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
+
 
 const Family_reunification_assessment = () => {
+
+  const {t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -273,8 +278,12 @@ const Family_reunification_assessment = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={`FAMILY REUNIFICATION ASSESSMENT`} />
-      <section className=" md:tw-mt-36 tw-mt-48">
+      <Banner_Page 
+    highlightText={t("FAMILY REUNIFICATION")}
+    regularText={t("Secure your family reunification assessment confidently. We guide you through the process for a seamless experience.")}
+    backgroundImage={homeBgImage} 
+/>
+      <section className="">
         <div className="container-fluid ">
           <div className="row g-5">
             <div className="col-md-8    tw-py-10 tw-bg-white">
@@ -396,12 +405,14 @@ const Family_reunification_assessment = () => {
                     </p>
                   </div>
                   <div>
-                    <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                      <i class="fa fa-user"></i>
-                      <p className=" m-0 tw-text-white tw-font-semibold">
-                        PERSONAL DETAILS
-                      </p>
-                    </div>
+                  <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">Personal Details</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>FILL UP THE PERSONAL DETAILS 
+                  </h6>
+                </div>
 
                     <Assessment_modal
                       isModalOpen={isModalOpen}
@@ -410,7 +421,7 @@ const Family_reunification_assessment = () => {
                     />
 
                     <form>
-                      <div className="row ">
+                      <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                         <div className="col-md-6 tw-pt-4">
                           <Input
                             placeholder={"You Full Name"}
@@ -447,18 +458,20 @@ const Family_reunification_assessment = () => {
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-                    <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                      <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                      <p className=" m-0 tw-text-white tw-font-semibold">
-                        RELOCATE TO SWEDEN
-                      </p>
-                    </div>
+                  <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">Relocate to Sweden</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>FILL UP THE PERSONAL DETAILS 
+                  </h6>
+                </div>
 
                     <form>
-                      <div className="row ">
+                      <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                            Are you EU Citizen?
+                            
                           </label>
                           <select
                             name="location"
@@ -466,7 +479,7 @@ const Family_reunification_assessment = () => {
                             onChange={handleSelectChange}
                             className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                           >
-                            <option value=""> Choose option</option>
+                            <option value="">Are you EU Citizen?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
@@ -475,11 +488,11 @@ const Family_reunification_assessment = () => {
                         {location === "yes" ? (
                           <div className="col-md-12 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              Are you already moved to Sweden or planning to
-                              move in coming 90 Days Period?
+                             
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option value="">Choose option</option>
+                              <option value=""> Are you already moved to Sweden or planning to
+                              move in coming 90 Days Period?</option>
                               <option value="yes">Yes</option>
                               <option value="no">No</option>
                             </select>
@@ -490,10 +503,10 @@ const Family_reunification_assessment = () => {
                           <>
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
-                                Which Citizenship you have?
+                               
                               </label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option value="">Choose option</option>
+                                <option value=""> Which Citizenship you have?</option>
                                 <option value="AF">Afghanistan</option>
                                 <option value="AS">American Samoa</option>
                                 <option value="CA">Canada</option>
@@ -527,11 +540,11 @@ const Family_reunification_assessment = () => {
 
                             <div className="col-md-12 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
-                                Do you have permanent Residence permit from
-                                below mentioned countries?
+                                
                               </label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option value="">Choose option</option>
+                                <option value="">Do you have permanent Residence permit from
+                                below mentioned countries?</option>
                                 <option value="AF">Afghanistan</option>
                                 <option value="AS">American Samoa</option>
                                 <option value="CA">Canada</option>
@@ -567,20 +580,20 @@ const Family_reunification_assessment = () => {
 
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                            Do you have valid Personnummer in Sweden?
+                           
                           </label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option value="">Choose option</option>
+                            <option value=""> Do you have valid Personnummer in Sweden?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
                         </div>
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                            Did you applied for Personnummer and got rejected?
+                            
                           </label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>Choose option</option>
+                            <option>Did you applied for Personnummer and got rejected?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
@@ -588,11 +601,11 @@ const Family_reunification_assessment = () => {
 
                         <div className="col-md-12 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                            Do you have your own Apartment in Sweden OR do you
-                            have first hand rental apartment?
+                            
                           </label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>Choose</option>
+                            <option>Do you have your own Apartment in Sweden OR do you
+                            have first hand rental apartment?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
@@ -600,31 +613,31 @@ const Family_reunification_assessment = () => {
 
                         <div className="col-md-12 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                            Are you planning to stay permanently in Sweden?
+                           
                           </label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option value="">Choose option</option>
+                            <option value=""> Are you planning to stay permanently in Sweden?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
                         </div>
                         <div className="col-md-12 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                            Do you have full time work in Sweden or Denmark?
+                            
                           </label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option value="">Choose option</option>
+                            <option value="">Do you have full time work in Sweden or Denmark?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
                         </div>
                         <div className="col-md-12 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                            Did you applied for your family visa and got
-                            rejected?
+                           
                           </label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>Choose option</option>
+                            <option> Did you applied for your family visa and got
+                            rejected?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
@@ -635,12 +648,14 @@ const Family_reunification_assessment = () => {
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-                    <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                      <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                      <p className=" m-0 tw-text-white tw-font-semibold">
-                        FAMILY DOCUMENTS ASSESSMENT
-                      </p>
-                    </div>
+                  <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">Family Documents</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>FILL UP THE Family Documents
+                  </h6>
+                </div>
 
                     <div className="tw-flex tw-items-center tw-gap-2 tw-pt-3">
                       <input
@@ -656,45 +671,45 @@ const Family_reunification_assessment = () => {
 
                     {!isSingle && (
                       <form>
-                        <div className="row">
+                        <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              Did your Spouse have valid National Passport?
+                              
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Choose option</option>
+                              <option>Did your Spouse have valid National Passport?</option>
                               <option value={"yes"}>Yes</option>
                               <option value={"no"}>No</option>
                             </select>
                           </div>
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              Did your Children have valid national passport?
+                              
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Choose option</option>
+                              <option>Did your Children have valid national passport?</option>
                               <option value={"yes"}>Yes</option>
                               <option value={"no"}>No</option>
                             </select>
                           </div>
                           <div className="col-md-8 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              Did your spouse have marriage certificate and is
-                              your marriage registered in your home country?
+                              
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Choose option</option>
+                              <option>Did your spouse have marriage certificate and is
+                              your marriage registered in your home country?</option>
                               <option>Yes</option>
                               <option>No</option>
                             </select>
                           </div>
                           <div className="col-md-12 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              If you are not EU citizen, do you have birth
-                              certificate of your children?
+                             
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Choose option</option>
+                              <option> If you are not EU citizen, do you have birth
+                              certificate of your children?</option>
                               <option>Yes</option>
                               <option>No</option>
                             </select>

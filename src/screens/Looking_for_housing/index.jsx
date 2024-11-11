@@ -7,10 +7,9 @@ import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 import { GoTriangleRight } from "react-icons/go";
 import { useTranslation } from "react-i18next";
-import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
-
-import Header from '../../components/Header_New/Header';
+import Header from "../../components/Header_New/Header";
 const Looking_for_housing = () => {
   const { t } = useTranslation();
   useEffect(() => {
@@ -227,20 +226,22 @@ const Looking_for_housing = () => {
           }
         `}
       </style>
-     <Banner_Page 
-    highlightText={t("Looking For Housing")}
-    regularText={t("Find your ideal home in Sweden. Our comprehensive services guide you through every step of the housing search process.")}
-    backgroundImage={homeBgImage} 
-/>
+      <Banner_Page
+        highlightText={t("Looking For Housing")}
+        regularText={t(
+          "Find your ideal home in Sweden. Our comprehensive services guide you through every step of the housing search process."
+        )}
+        backgroundImage={homeBgImage}
+      />
       <div className=" md:tw-mt-8 tw-mt-8">
-        <section className="tw-bg-[#F5FAFF] tw-p-5">
-          <div className="container ">
-            <div className="row md:tw-px-40 sd:tw-px-0">
-            <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Looking for housing
-                    </span>
+        <section className="">
+          <div className="container tw-rounded-2xl tw-mb-1 px-4 tw-py-4 tw-shadow tw-bg-white">
+            <div className="row tw-py-8">
+              <span className=" tw-flex tw-items-center tw-gap-2">
+                {" "}
+                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                Looking for housing
+              </span>
               <h2>
                 Find Your Perfect Home with <strong>Us</strong>
               </h2>
@@ -262,11 +263,11 @@ const Looking_for_housing = () => {
           <div className="row tw-justify-center tw-items-center">
             <div className="col-md-8">
               <div className=" tw-bg-white tw-pt-8 ">
-                <div
-                  className="  tw-bg-primary tw-text-center tw-rounded-md tw-py-4  px-3"
-                  style={{ backgroundColor: "rgb(0, 123, 255)" }}
-                >
-                  <h6 className=" tw-text-white tw-uppercase tw-m-0">
+                
+                <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  "> Details</h5>
+
+                  <h6 className=" tw-text-black ">
                     {" "}
                     <i class="fa fa-building"></i> Provide the details & We will
                     assist you in finding the right place in Skåne & Copenhagen.
@@ -274,8 +275,8 @@ const Looking_for_housing = () => {
                 </div>
 
                 <form>
-                  <div className="row g-3 tw-pt-6 ">
-                    <div className="col-md-auto">
+                  <div className="row g-3 tw-pt-6 tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                    <div className="col-md-6">
                       {/* <label
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
@@ -283,16 +284,14 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Country
                       </label> */}
-                      <label className=" tw-text-sm  tw-text-gray ">
-                        Select Country
-                      </label>
+                     
                       <select
                         value={selectCountry}
                         name="selectCountry"
                         onChange={handleSelectChange}
                         className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                       >
-                        <option>Choose Option</option>
+                        <option>Select Country</option>
                         <option value="Sweden - Skane">Sweden - Skane</option>
                         <option value="Denmark - Copenhagen">
                           Denmark - Copenhagen
@@ -308,11 +307,9 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Country
                       </label> */}
-                        <label className=" tw-text-sm  tw-text-gray ">
-                          Select Skåne City
-                        </label>
+                       
                         <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                          <option>Choose Option</option>
+                          <option>Select Skåne City</option>
                           <option value="Ängelholm">Ängelholm</option>
                           <option value="Åstorp">Åstorp</option>
                           <option value="Båstad">Båstad</option>
@@ -332,11 +329,9 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Country
                       </label> */}
-                        <label className=" tw-text-sm  tw-text-gray ">
-                          Select Denmark City
-                        </label>
+                        
                         <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                          <option>Choose Option</option>
+                          <option>Select Denmark City</option>
                           <option value="Ängelholm">Ängelholm</option>
                           <option value="Åstorp">Åstorp</option>
                           <option value="Båstad">Båstad</option>
@@ -355,16 +350,14 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select your type of house
                       </label> */}
-                      <label className=" tw-text-sm  tw-text-gray ">
-                        Select Housing Type
-                      </label>
+                      
                       <select
                         value={housing}
                         name="housing"
                         onChange={handleSelectChange}
                         className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                       >
-                        <option>Choose Option</option>
+                        <option>Select Housing Type</option>
                         <option value="Apartment">Apartment</option>
                         <option value="Villa">Villa</option>
                         <option value="Radhus">Radhus</option>
@@ -381,11 +374,9 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Floor
                       </label> */}
-                      <label className=" tw-text-sm  tw-text-gray ">
-                        Select Required Floor?
-                      </label>
+                      
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Choose Option</option>
+                        <option>Select Required Floor?</option>
 
                         <option value={"Basement"}>Basement</option>
                         <option value={"Ground Floor"}>Ground Floor</option>
@@ -405,11 +396,9 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Floor
                       </label> */}
-                          <label className=" tw-text-sm  tw-text-gray ">
-                            Number of Rooms Required?
-                          </label>
+                         
                           <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>Choose Option</option>
+                            <option>Number of Rooms Required?</option>
 
                             <option value={"1"}>1</option>
                             <option value={"2"}>2</option>
@@ -423,14 +412,18 @@ const Looking_for_housing = () => {
                       </>
                     ) : null}
 
-                    <div
-                      className="  tw-bg-primary  tw-rounded-md tw-py-3.5  px-3"
-                      style={{ backgroundColor: "rgb(0, 123, 255)" }}
-                    >
-                      <h6 className=" tw-text-white tw-uppercase tw-m-0">
-                        Family Details
+                    <div className="row g-3 tw-rounded-md tw-py-4 tw-bg-white border-t-2 border-b-2 border-black">
+                      <h5 className="tw-text-black">Family Details</h5>
+
+                      <h6 className="tw-text-gray">
+                        Fill up your family details
                       </h6>
                     </div>
+
+                    <div
+                      className="tw-border-t-2"
+                      style={{ borderColor: "rgba(145, 158, 171, 0.2)" }}
+                    ></div>
 
                     <div className="col-md-6">
                       {/* <label
@@ -441,11 +434,9 @@ const Looking_for_housing = () => {
                         Furnished?
                       </label> */}
 
-                      <label className=" tw-text-sm  tw-text-gray ">
-                        Number of adults in the house?
-                      </label>
+                      
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Choose Option</option>
+                        <option>Number of adults in the house?</option>
                         <option value={"1"}>1</option>
                         <option value={"2"}>2</option>
                         <option value={"3"}>3</option>
@@ -463,11 +454,9 @@ const Looking_for_housing = () => {
                         Is car parking included?
                       </label> */}
 
-                      <label className=" tw-text-sm  tw-text-gray ">
-                        How many children do you have?
-                      </label>
+                  
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Choose Option</option>
+                        <option>How many children do you have?</option>
                         <option value={"1"}>1</option>
                         <option value={"2"}>2</option>
                         <option value={"3"}>3</option>
@@ -485,11 +474,9 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Are pets allowed?
                       </label> */}
-                      <label className=" tw-text-sm  tw-text-gray ">
-                        Do you have infants?
-                      </label>
+                     
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Choose Option</option>
+                        <option>Do you have infants?</option>
                         <option value={"1"}>1</option>
                         <option value={"2"}>2</option>
                         <option value={"3"}>3</option>
@@ -498,14 +485,19 @@ const Looking_for_housing = () => {
                       </select>
                     </div>
 
-                    <div
-                      className="  tw-bg-primary  tw-rounded-md tw-py-3  px-3"
-                      style={{ backgroundColor: "rgb(0, 123, 255)" }}
-                    >
-                      <h6 className=" tw-text-white tw-m-0">
-                        CONTRACT DETAILS
+                    
+                    <div className="row g-3 tw-rounded-md tw-py-4 tw-bg-white border-t-2 border-b-2 border-black">
+                      <h5 className="tw-text-black">Contract Details</h5>
+
+                      <h6 className="tw-text-gray">
+                        Fill up your contract details
                       </h6>
                     </div>
+
+                    <div
+                      className="tw-border-t-2"
+                      style={{ borderColor: "rgba(145, 158, 171, 0.2)" }}
+                    ></div>
 
                     <div className="col-md-6">
                       {/* <label
@@ -515,11 +507,9 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Contract Type?
                       </label> */}
-                      <label className=" tw-text-sm  tw-text-gray ">
-                        Select Contract Type
-                      </label>
+                     
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Choose Option</option>
+                        <option>Select Contract Type</option>
                         <option value={"First Hand"}> First Hand</option>
                         <option value={"Second Hand"}>Second Hand</option>
                         <option value={"Other"}>Other</option>
@@ -535,10 +525,16 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Are you looking for deposit?
                       </label> */}
-                      <label className=" tw-text-sm  tw-text-gray ">
-                        How much rent you can pay?
-                      </label>
-                      <input className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2" />
+                      
+                      <Input
+                        star={"*"}
+                        type={""}
+                        className={
+                          " tw-w-full border tw-py-3 tw-px-3 tw-rounded-xl  "
+                        }
+                        label={" How much rent you can pay?"}
+                        placeholder={""}
+                      />
                     </div>
 
                     <div className="col-md-6">
@@ -549,11 +545,12 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Maximum people can stay in this residence?
                       </label> */}
-                      <label className=" tw-text-sm  tw-text-gray ">
-                        What is the duration of your stay?
-                      </label>
+                      
+
+
+                      
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Choose Option</option>
+                        <option>What is the duration of your stay?</option>
                         <option value={"1 Month"}>1 Month</option>
                         <option value={"2 Month"}>2 Month</option>
                         <option value={"3 Month"}>3 Month</option>
@@ -574,16 +571,14 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         What is the duration of rent out?
                       </label> */}
-                      <label className=" tw-text-sm  tw-text-gray ">
-                        Are you willing to pay deposit?
-                      </label>
+                     
                       <select
                         value={deposit}
                         name="deposit"
                         onChange={handleDepositChange}
                         className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                       >
-                        <option>Choose Option</option>
+                        <option>Are you willing to pay deposit?</option>
                         <option value={"yes"}>Yes</option>
                         <option value={"no"}>No</option>
                       </select>
@@ -599,11 +594,9 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         What is the duration of rent out?
                       </label> */}
-                          <label className=" tw-text-sm  tw-text-gray ">
-                            How many months of deposit?
-                          </label>
+                        
                           <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>Choose Option</option>
+                            <option>How many months of deposit?</option>
                             <option value={"1 Month"}>1 Month</option>
                             <option value={"2 Month"}>2 Month</option>
                             <option value={"3 Month"}>3 Month</option>
@@ -623,22 +616,33 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         What is the duration of rent out?
                       </label> */}
-                      <label className=" tw-text-sm  tw-text-gray ">
-                        Expected moving date:
-                      </label>
+                      
 
-                      <input className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2" />
-                    </div>
+                      <Input
+                        star={"*"}
+                        type={""}
+                        className={
+                          " tw-w-full border tw-py-3 tw-px-3 tw-rounded-xl  "
+                        }
+                        label={"Expected moving date:"}
+                        placeholder={""}
+                      />
+                        </div>
 
-                    <div
-                      className=" tw-bg-primary  tw-rounded-md tw-py-3 px-3"
-                      style={{ backgroundColor: "rgb(0, 123, 255)" }}
-                    >
-                      <h6 className=" tw-text-white tw-uppercase tw-m-0">
-                        Other Details
+                  
+                    <div className="row g-3 tw-rounded-md tw-py-4 tw-bg-white border-t-2 border-b-2 border-black">
+                      <h5 className="tw-text-black">Other Details</h5>
+
+                      <h6 className="tw-text-gray">
+                        Fill up your Other Details
                       </h6>
                     </div>
 
+                    <div
+                      className="tw-border-t-2"
+                      style={{ borderColor: "rgba(145, 158, 171, 0.2)" }}
+                    ></div>
+
                     <div className="col-md-6">
                       {/* <label
                         htmlFor="first_name"
@@ -647,11 +651,9 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Your Property Type
                       </label> */}
-                      <label className=" tw-text-sm  tw-text-gray ">
-                        Do you have Pets?
-                      </label>
+                    
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2">
-                        <option>Choose Option</option>
+                        <option>Do you have Pets?</option>
                         <option value={"yes"}>Yes</option>
                         <option value={"no"}>No</option>
                       </select>
@@ -665,52 +667,47 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Your Property Type
                       </label> */}
-                      <label className=" tw-text-sm  tw-text-gray ">
-                        Do You Smoking?
-                      </label>
+                     
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2">
-                        <option>Choose Option</option>
+                        <option>Do You Smoke?</option>
                         <option value={"yes"}>Yes</option>
                         <option value={"no"}>No</option>
                       </select>
                     </div>
 
                     <div className="col-md-6">
-                      <label className=" tw-text-sm  tw-text-gray ">
-                        * Why you are leaving your current place?
-                      </label>
-                      <textarea
+                      
+                      <Input
                         star={"*"}
-                        type={"text"}
+                        type={""}
+                        required = {true}
                         className={
-                          " tw-w-full border tw-py-2.5 tw-px-3  tw-rounded-xl mt-2"
+                          " tw-w-full border tw-py-3 tw-px-3 tw-rounded-xl  "
                         }
-                        label={"Your Property Address"}
-                        placeholder={"Complete Address"}
-                      ></textarea>
+                        label={"* Why you are leaving your current place?"}
+                        placeholder={""}
+                      />
                     </div>
                     <div className="col-md-6">
-                      <label className=" tw-text-sm  tw-text-gray ">
-                        Any other information?
-                      </label>
-                      <textarea
+                     
+                      <Input
                         star={"*"}
-                        type={"text"}
+                        type={""}
                         className={
-                          " tw-w-full border tw-py-2.5 tw-px-3  tw-rounded-xl mt-2"
+                          " tw-w-full border tw-py-3 tw-px-3 tw-rounded-xl  "
                         }
-                        label={"Your Property Address"}
-                        placeholder={"Complete Address"}
-                      ></textarea>
+                        label={"Any other information?"}
+                        placeholder={""}
+                      />
                     </div>
 
                     <div className="col-md-12 tw-pb-12">
                       <Button
                         label={"SEND REQUEST"}
                         className={
-                          " tw-uppercase tw-mx-auto  tw-text-sm    tw-py-3 custom-bg  tw-w-full tw-rounded-xl  tw-text-white "
+                          " tw-uppercase tw-mx-auto  tw-text-sm    tw-py-3 tw-bg-primary  tw-w-full tw-rounded-xl  tw-text-white "
                         }
-                        style={{ backgroundColor: "#3388E3" }}
+                       
                       />
                     </div>
                   </div>

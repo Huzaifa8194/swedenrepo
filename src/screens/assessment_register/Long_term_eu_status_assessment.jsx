@@ -405,11 +405,14 @@ const Long_term_eu_status_assessment = () => {
 
 
                   <div>
-                    <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                      <i class="fa fa-user"></i>
-                      <p className=" m-0 tw-text-white tw-font-semibold">PERSONAL DETAILS</p>
-                    </div>
+                  <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">Personal Details</h5>
 
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>FILL UP THE PERSONAL DETAILS 
+                  </h6>
+                </div>
                     <Assessment_modal
                       isModalOpen={isModalOpen}
                       setIsModalOpen={setIsModalOpen}
@@ -417,7 +420,7 @@ const Long_term_eu_status_assessment = () => {
                     />
 
                     <form>
-                      <div className="row ">
+                      <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                         <div className="col-md-6 tw-pt-4">
                           <Input placeholder={'You Full Name'} star={'*'} className={' tw-w-full border tw-rounded-lg  tw-py-3.5 tw-px-3'} label={'Full Name'} />
                         </div>
@@ -433,17 +436,21 @@ const Long_term_eu_status_assessment = () => {
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-                    <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                      <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                      <p className=" m-0 tw-text-white tw-font-semibold">MAIN APPLICANT ASSESSMENT</p>
-                    </div>
+                  <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">Main Application Assessment</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>FILL UP THE PERSONAL DETAILS 
+                  </h6>
+                </div>
 
                     <form>
-                      <div className="row ">
+                      <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">Select Citizenship</label>
+                          <label className=" tw-text-sm  tw-text-gray "></label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2" value={location} name="location" onChange={handleSelectChange}>
-                            <option>Choose option</option>
+                            <option>Select Citizenship</option>
                             <option value="AF">Afghanistan</option>
                             <option value="AL">Albania</option>
                             <option value="DZ">Algeria</option>
@@ -549,9 +556,9 @@ const Long_term_eu_status_assessment = () => {
                         </div>
 
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">Select Country</label>
+                          <label className=" tw-text-sm  tw-text-gray "></label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option value="">Choose option</option>
+                            <option value="">Select Country</option>
                             <option value="AF">Afghanistan</option>
                             <option value="AL">Albania</option>
                             <option value="DZ">Algeria</option>
@@ -656,27 +663,27 @@ const Long_term_eu_status_assessment = () => {
                           </select>
                         </div>
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">Do you have job offer in Sweden?</label>
+                          <label className=" tw-text-sm  tw-text-gray "></label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option value="">Choose option</option>
+                            <option value="">Do you have job offer in Sweden?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
                         </div>
 
                         <div className="col-md-12 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">Do you want to start your own business in Sweden?</label>
+                          <label className=" tw-text-sm  tw-text-gray "></label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option value="">Choose option</option>
+                            <option value="">Do you want to start your own business in Sweden?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
                         </div>
 
                         <div className="col-md-12 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">Are you already moved to Sweden or planning to move in coming 90 Days Period?</label>
+                          <label className=" tw-text-sm  tw-text-gray "></label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>Choose option</option>
+                            <option>Are you already moved to Sweden or planning to move in coming 90 Days Period?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
@@ -687,17 +694,21 @@ const Long_term_eu_status_assessment = () => {
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-                    <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                      <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                      <p className=" m-0 tw-text-white tw-font-semibold">FAMILY ASSESMENT</p>
-                    </div>
+                  <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">Family Assessment</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>FILL UP THE PERSONAL DETAILS OF ALL THE MEMBERS OF THE FAMILY
+                  </h6>
+                </div>
 
                     <form>
-                      <div className="row">
+                      <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">Do you want to move to Sweden with family?</label>
+                          <label className=" tw-text-sm  tw-text-gray "></label>
                           <select name="assesment_family" value={assesment_family} onChange={handleSelectChange} className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>Choose option</option>
+                            <option>Do you want to move to Sweden with family?</option>
                             <option value={'yes'}>Yes</option>
                             <option value={'no'}>No</option>
                           </select>
@@ -706,34 +717,34 @@ const Long_term_eu_status_assessment = () => {
                         {assesment_family === 'yes' && (
                           <>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Do you have marriage certificate?</label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
+                                <option>Do you have marriage certificate?</option>
                                 <option value={'yes'}>Yes</option>
                                 <option value={'no'}>No</option>
                               </select>
                             </div>
 
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Is your marriage registered in your home country?</label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
+                                <option>Is your marriage registered in your home country?</option>
                                 <option value={'yes'}>Yes</option>
                                 <option value={'no'}>No</option>
                               </select>
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Do you have family registration certificate?</label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
+                                <option>Do you have family registration certificate?</option>
                                 <option value={'yes'}>Yes</option>
                                 <option value={'no'}>No</option>
                               </select>
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">How many children do you have?</label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select name="personalStatus" value={personalStatus} onChange={handleSelectChange} className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
+                                <option>How many children do you have?</option>
                                 <option value={'N/A'}>N/A</option>
                                 <option value={'1'}>1</option>
                                 <option value={'2'}>2</option>
@@ -749,9 +760,9 @@ const Long_term_eu_status_assessment = () => {
                             {personalStatus === '1' || personalStatus === '2' || personalStatus === '3' || personalStatus === '4' || personalStatus === '5' ? (
                               <>
                                 <div className="col-md-6 tw-pt-4">
-                                  <label className=" tw-text-sm  tw-text-gray ">Do you have birth certificates for childrens?</label>
+                                  <label className=" tw-text-sm  tw-text-gray "></label>
                                   <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                    <option>Choose option</option>
+                                    <option>Do you have birth certificates for childrens?</option>
                                     <option value={'yes'}>Yes</option>
                                     <option value={'no'}>No</option>
                                   </select>

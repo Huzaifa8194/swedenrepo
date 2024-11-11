@@ -526,12 +526,14 @@ const Visit_visa = () => {
                   </div>
 
                   <div>
-                    <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                      <i class="fa fa-user"></i>
-                      <p className=" m-0 tw-text-white tw-font-semibold">
-                        PERSONAL DETAILS
-                      </p>
-                    </div>
+                  <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">Personal Details</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>FILL UP THE PERSONAL DETAILS 
+                  </h6>
+                </div>
 
                     <Assessment_modal
                       isModalOpen={isModalOpen}
@@ -540,7 +542,7 @@ const Visit_visa = () => {
                     />
 
                     <form>
-                      <div className="row ">
+                      <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                         <div className="col-md-6 tw-pt-4">
                           <Input
                             placeholder={"You Full Name"}
@@ -577,22 +579,24 @@ const Visit_visa = () => {
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-                    <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                      <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                      <p className=" m-0 tw-text-white tw-font-semibold">
-                        APPLICANT ASSESSMENT
-                      </p>
-                    </div>
+                  <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">Applicant Assessment</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>FILL UP THE APPLICANT ASSESSMENT DETAILS 
+                  </h6>
+                </div>
 
                     <form>
-                      <div className="row ">
+                      <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
                             {" "}
-                            Do you have National Passport?
+                            
                           </label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>Choose an option </option>
+                            <option>Do you have National Passport? </option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
@@ -601,7 +605,7 @@ const Visit_visa = () => {
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
                             {" "}
-                            Did you visit Schengen Countries before?
+                           
                           </label>
 
                           <select
@@ -610,7 +614,7 @@ const Visit_visa = () => {
                             onChange={handleSelectChange}
                             className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                           >
-                            <option>Choose an option</option>
+                            <option> Did you visit Schengen Countries before?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
@@ -620,11 +624,11 @@ const Visit_visa = () => {
                           <>
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
-                                How many time you visited the Schengen States?
+                                
                               </label>
 
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose an option</option>
+                                <option>How many time you visited the Schengen States?</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -635,11 +639,11 @@ const Visit_visa = () => {
 
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
-                                Purpose of Visit
+                              
                               </label>
 
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option value="">Choose an option</option>
+                                <option value="">Purpose of Visit</option>
                                 <option value="Visiting Family Friend">
                                   Visiting Family Friend
                                 </option>
@@ -661,7 +665,7 @@ const Visit_visa = () => {
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
                             {" "}
-                            Have you got any refusal for Schengen Countries?
+                            
                           </label>
 
                           <select
@@ -670,7 +674,7 @@ const Visit_visa = () => {
                             onChange={handleSelectChange}
                             className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                           >
-                            <option>Choose an option</option>
+                            <option>Have you got any refusal for Schengen Countries?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
@@ -680,29 +684,44 @@ const Visit_visa = () => {
                           <>
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
-                                Refusal Month-Year
+                              
                               </label>
 
-                              <input
-                                type="date"
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                              />
+                              <Input
+                            placeholder={"Refusal Month-Year"}
+                            star={"*"}
+                            type = {"date"}
+                            className={
+                              " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                            }
+                            label={"Refusal Month-Year"}
+                          />
                             </div>
 
                             <div className="col-md-12 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
-                                Reason of Refusal
+                              
                               </label>
-                              <textarea className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"></textarea>
-                            </div>
+                              <Input
+                            placeholder={"Reason of Refusal"}
+                            star={"*"}
+                           
+                            className={
+                              " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                            }
+                            label={"Reason of Refusal"}
+                          />
+                              
+                              
+                              
+                                </div>
                           </>
                         ) : null}
 
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
                             {" "}
-                            Is any of your close relative living in Schengen
-                            Countries and you want to visit him/her?
+                           
                           </label>
 
                           <select
@@ -711,7 +730,8 @@ const Visit_visa = () => {
                             onChange={handleSelectChange}
                             className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                           >
-                            <option value="">Choose an option</option>
+                            <option value=""> Is any of your close relative living in Schengen
+                            Countries and you want to visit him/her?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
@@ -720,12 +740,12 @@ const Visit_visa = () => {
                         {residencePermit === "yes" ? (
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              Relation with the EU person( Like Parents,
-                              Siblings, Family friend)
+                             
                             </label>
 
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option value="">Choose an option</option>
+                              <option value=""> Relation with the EU person( Like Parents,
+                                Siblings, Family friend)</option>
                               <option value="Parents">Parents</option>
                               <option value="Husband">Husband</option>
                               <option value="Wife">Wife</option>
@@ -740,8 +760,7 @@ const Visit_visa = () => {
 
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                            Are you dependent on the person who is living in
-                            Schengen Countries?
+                          
                           </label>
                           <select
                             name="depents"
@@ -749,7 +768,8 @@ const Visit_visa = () => {
                             onChange={handleSelectChange}
                             className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                           >
-                            <option>Choose an option</option>
+                            <option>  Are you dependent on the person who is living in
+                            Schengen Countries?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
@@ -759,16 +779,26 @@ const Visit_visa = () => {
                           <>
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
-                                Describe How?
+                             
                               </label>
-                              <textarea className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"></textarea>
-                            </div>
+                              
+                              <Input
+                            placeholder={" Describe How?"}
+                            star={"*"}
+                            type = {"year"}
+                            className={
+                              " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                            }
+                            label={" Describe How?"}
+                          />
+                              
+                              
+                                </div>
                           </>
                         ) : null}
                         <div className="col-md-12 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                            Do you have an invitation from any Individual
-                            Business Group, Company, Organisation?
+                           
                           </label>
                           <select
                             name="separateAssets"
@@ -776,7 +806,8 @@ const Visit_visa = () => {
                             onChange={handleSelectChange}
                             className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                           >
-                            <option value="">Choose an option</option>
+                            <option value=""> Do you have an invitation from any Individual
+                            Business Group, Company, Organisation?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
@@ -786,16 +817,26 @@ const Visit_visa = () => {
                           <>
                             <div className="col-md-12 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
-                                Details of the Company, Organisation or
-                                Association
+                             
                               </label>
-                              <textarea className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"></textarea>
-                            </div>
+                             
+                              <Input
+                            placeholder={" Details of the Company, Organisation or Association"}
+                            star={"*"}
+                         
+                            className={
+                              " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                            }
+                            label={"Details of the Company, Organisation or Association"}
+                          />
+                             
+                             
+                                        </div>
                           </>
                         ) : null}
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                            Can you support yourself for this trip?
+                           
                           </label>
                           <select
                             name="investmentAmount"
@@ -803,7 +844,7 @@ const Visit_visa = () => {
                             onChange={handleSelectChange}
                             className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                           >
-                            <option value="">Choose an option</option>
+                            <option value=""> Can you support yourself for this trip?</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                           </select>
@@ -811,7 +852,7 @@ const Visit_visa = () => {
                         {investmentAmount === "no" ? (
                           <div className="col-md-3 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              Funded by Organizer?
+                              
                             </label>
                             <select
                               name="coordinationNumber"
@@ -819,7 +860,7 @@ const Visit_visa = () => {
                               onChange={handleSelectChange}
                               className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                             >
-                              <option value="">Choose an option</option>
+                              <option value="">Funded by Organizer?</option>
                               <option value="yes">Yes</option>
                               <option value="no">No</option>
                             </select>
@@ -830,16 +871,27 @@ const Visit_visa = () => {
                           <>
                             <div className="col-md-3 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
-                                Details of Organizer
+                               
                               </label>
-                              <textarea className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"></textarea>
-                            </div>
+                             
+                              <Input
+                            placeholder={" Details of Organizer"}
+                           
+                           
+                            className={
+                              " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                            }
+                            label={" Details of Organizer"}
+                          />
+                             
+                             
+                                </div>
                           </>
                         ) : null}
 
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                            Choose Employee Type?
+                            
                           </label>
                           <select
                             name="personnummer"
@@ -847,7 +899,7 @@ const Visit_visa = () => {
                             onChange={handleSelectChange}
                             className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                           >
-                            <option>Choose an option</option>
+                            <option>Choose Employee Type?</option>
                             <option value="Employee">Employee</option>
                             <option value="Self-Employee">Self-Employee</option>
                             <option value="Student">Student</option>
@@ -862,20 +914,20 @@ const Visit_visa = () => {
                             <div className="row">
                               <div className="col-md-3 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  Proof of enrolment
+                                  t
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option value="">Choose an option</option>
+                                  <option value="">Proof of enrolmen</option>
                                   <option value="yes">Yes</option>
                                   <option value="no">No</option>
                                 </select>
                               </div>
                               <div className="col-md-3 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  Invitation for visit
+                                  
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option value="">Choose an option</option>
+                                  <option value="">Invitation for visit</option>
                                   <option value="yes">Yes</option>
                                   <option value="no">No</option>
                                 </select>
@@ -883,11 +935,11 @@ const Visit_visa = () => {
 
                               <div className="col-md-6 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  No objection letter from
-                                  School/College/University
+                                 
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option value="">Choose an option</option>
+                                  <option value=""> No objection letter from
+                                  School/College/University</option>
                                   <option value="yes">Yes</option>
                                   <option value="no">No</option>
                                 </select>
@@ -901,20 +953,20 @@ const Visit_visa = () => {
                             <div className="row">
                               <div className="col-md-4 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  Registration Certificate
+                                  
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option value="">Choose an option</option>
+                                  <option value="">Registration Certificate</option>
                                   <option value="yes">Yes</option>
                                   <option value="no">No</option>
                                 </select>
                               </div>
                               <div className="col-md-4 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  Available Assets
+                                  
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option value="">Choose an option</option>
+                                  <option value="">Available Assets</option>
                                   <option value="1 Million $ to 3 Million $">
                                     1 Million $ to 3 Million $
                                   </option>
@@ -932,10 +984,10 @@ const Visit_visa = () => {
 
                               <div className="col-md-4 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  Tax Returns of 2 to 3 Years
+                                  
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option value="">Choose an option</option>
+                                  <option value="">Tax Returns of 2 to 3 Years</option>
                                   <option value="yes">Yes</option>
                                   <option value="no">No</option>
                                 </select>
@@ -948,10 +1000,20 @@ const Visit_visa = () => {
                         "NGO / Media /Sports / Association" ? (
                           <div className="col-md-12 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              Please describe NGO / Media /Sports / Association:
+                              
                             </label>
-                            <textarea className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"></textarea>
-                          </div>
+                            <Input
+                            placeholder={"Please describe NGO / Media /Sports / Association:"}
+                           
+                            className={
+                              " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                            }
+                            label={"Please describe NGO / Media /Sports / Association:"}
+                          />
+                           
+                           
+                           
+                                  </div>
                         ) : null}
 
                         {personnummer === "Employee" ? (
@@ -959,20 +1021,20 @@ const Visit_visa = () => {
                             <div className="row">
                               <div className="col-md-3 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  Nature of Job
+                                  
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option value="">Choose an option</option>
+                                  <option value="">Nature of Jobn</option>
                                   <option value="Permanent">Permanent</option>
                                   <option value="Temporary">Temporary</option>
                                 </select>
                               </div>
                               <div className="col-md-3 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  Monthly Salary
+                                  
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option value="">Choose an option</option>
+                                  <option value="">Monthly Salary</option>
                                   <option value="Permanent">
                                     0 - 50.000 $
                                   </option>
@@ -987,20 +1049,20 @@ const Visit_visa = () => {
 
                               <div className="col-md-3 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  Job Contract
+                                  
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option value="">Choose an option</option>
+                                  <option value="">Job Contract</option>
                                   <option value="yes">Yes</option>
                                   <option value="no">No</option>
                                 </select>
                               </div>
                               <div className="col-md-3 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  Vacations Letter
+                                  
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option value="">Choose an option</option>
+                                  <option value="">Vacations Letter</option>
                                   <option value="yes">Yes</option>
                                   <option value="no">No</option>
                                 </select>
@@ -1014,12 +1076,14 @@ const Visit_visa = () => {
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-                    <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                      <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                      <p className=" m-0 tw-text-white tw-font-semibold">
-                        FAMILY DOCUMENTS ASSESSMENT
-                      </p>
-                    </div>
+                     <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">Family Document Details</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>FILL UP THE FAMILY DOCUMENT DETAILS 
+                  </h6>
+                </div>
 
                     <div className="tw-flex tw-items-center tw-gap-2 tw-pt-3">
                       <input
@@ -1035,21 +1099,21 @@ const Visit_visa = () => {
 
                     {!isSingle && (
                       <form>
-                        <div className="row">
+                        <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              Did your Spouse have valid National Passport?
+                              
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Choose an option</option>
+                              <option>Did your Spouse have valid National Passport?</option>
                               <option value={"yes"}>Yes</option>
                               <option value={"no"}>No</option>
                             </select>
                           </div>
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              Did your spouse have Marriage certificate and did
-                              your marriage is registered in your home country?
+                            Did your spouse have Marriage certificate and did
+                            your marriage is registered in your home country?
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Choose an option</option>
@@ -1059,61 +1123,62 @@ const Visit_visa = () => {
                           </div>
                           <div className="col-md-8 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              Do you have Family Registration Certificate?
+                             
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
+                              <option>Do you have Family Registration Certificate?</option>
                               <option value={"yes"}>Yes</option>
                               <option value={"no"}>No</option>
                             </select>
                           </div>
                           <div className="col-md-12 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              Do you as main applicant support your family as
-                              trip?
+                              
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Choose an option</option>
+                              <option>Do you as main applicant support your family as
+                              trip?</option>
                               <option value={"yes"}>Yes</option>
                               <option value={"no"}>No</option>
                             </select>
                           </div>
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              Do you have children?
+                             
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Choose an option</option>
+                              <option> Do you have children?</option>
                               <option value={"yes"}>Yes</option>
                               <option value={"no"}>No</option>
                             </select>
                           </div>
                           <div className="col-md-12 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              If you are not EU citizen, do you have birth
-                              certificate of your childrens?
+                              
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Choose an option</option>
+                              <option>If you are not EU citizen, do you have birth
+                              certificate of your childrens?</option>
                               <option value={"yes"}>Yes</option>
                               <option value={"no"}>No</option>
                             </select>
                           </div>
                           <div className="col-md-12 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              Does your spouse have any income, Savings?
+                              
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Choose an option</option>
+                              <option>Does your spouse have any income, Savings?</option>
                               <option value={"yes"}>Yes</option>
                               <option value={"no"}>No</option>
                             </select>
                           </div>
                           <div className="col-md-12 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              Someone else will support you for this trip
+                              
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Choose an option</option>
+                              <option>Someone else will support you for this trip</option>
                               <option value={"yes"}>Yes</option>
                               <option value={"no"}>No</option>
                             </select>

@@ -13,8 +13,8 @@ import { TfiAngleLeft } from "react-icons/tfi";
 import { Link, useParams } from "react-router-dom";
 import Assessment_modal from "./Assessment_modal";
 import { useTranslation } from "react-i18next";
-import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
-import Header from '../../components/Header_New/Header';
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
+import Header from "../../components/Header_New/Header";
 
 const Student_assessments = () => {
   const { t } = useTranslation();
@@ -300,11 +300,13 @@ const Student_assessments = () => {
   return (
     <>
       <Header />
-      <Banner_Page 
-    highlightText={t("Student Visa")}
-    regularText={t("Begin your educational journey in the EU. We simplify the process of acquiring a student visa for your studies abroad.")}
-    backgroundImage={homeBgImage} 
-/>
+      <Banner_Page
+        highlightText={t("Student Visa")}
+        regularText={t(
+          "Begin your educational journey in the EU. We simplify the process of acquiring a student visa for your studies abroad."
+        )}
+        backgroundImage={homeBgImage}
+      />
 
       <section className=" ">
         <div className="container-fluid ">
@@ -334,8 +336,8 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">
-                        Individuals who are planning to apply for a student residence permit in Sweden.
-
+                          Individuals who are planning to apply for a student
+                          residence permit in Sweden.
                         </p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
@@ -343,18 +345,8 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">
-                        Those seeking assistance with the application process for studying in Sweden.
-
-                        </p>
-                      </li>
-
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className=" m-0 tw-text-gray">
-                        Applicants looking for support with housing and settling in Sweden once they arrive on a student residence permit.
-
+                          Those seeking assistance with the application process
+                          for studying in Sweden.
                         </p>
                       </li>
 
@@ -363,22 +355,28 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">
-                        Anyone who prefers professional assistance in managing their study application and relocation process.
-
+                          Applicants looking for support with housing and
+                          settling in Sweden once they arrive on a student
+                          residence permit.
                         </p>
                       </li>
 
-                    
-
-                    
-
-                     
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
+                        <p className=" m-0 tw-text-gray">
+                          Anyone who prefers professional assistance in managing
+                          their study application and relocation process.
+                        </p>
+                      </li>
                     </ul>
 
                     <h4>Why Use the Eligibility Tool? </h4>
                     <p className="tw-text-gray">
-                    This tool is designed to help you understand the requirements and eligibility criteria for studying in Sweden by gathering essential details such as:
-
+                      This tool is designed to help you understand the
+                      requirements and eligibility criteria for studying in
+                      Sweden by gathering essential details such as:
                     </p>
 
                     <ul className=" tw-p-0 ">
@@ -387,8 +385,8 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">
-                        Academic Background: Information on your previous education and qualifications.
-
+                          Academic Background: Information on your previous
+                          education and qualifications.
                         </p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
@@ -396,8 +394,8 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">
-                        Program of Interest: The type of course or program you intend to apply for at Swedish universities.
-
+                          Program of Interest: The type of course or program you
+                          intend to apply for at Swedish universities.
                         </p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
@@ -405,18 +403,27 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">
-                        Application Requirements: Your preparedness in meeting the specific admission requirements of Swedish institutions.
+                          Application Requirements: Your preparedness in meeting
+                          the specific admission requirements of Swedish
+                          institutions.
                         </p>
                       </li>
                     </ul>
                     <h5>Important Note </h5>
-                    <p className = "tw-text-gray"> This assessment is designed to guide you through the initial steps of applying to study in Sweden. It is not an official assessment, and for the latest updates and detailed information, we recommend visiting the official universityadmissions.se website.</p>
+                    <p className="tw-text-gray">
+                      {" "}
+                      This assessment is designed to guide you through the
+                      initial steps of applying to study in Sweden. It is not an
+                      official assessment, and for the latest updates and
+                      detailed information, we recommend visiting the official
+                      universityadmissions.se website.
+                    </p>
 
-                    <h4>Complete Study Permit and Relocation Support  </h4>
+                    <h4>Complete Study Permit and Relocation Support </h4>
 
                     <p className="tw-text-gray">
-                    We offer end-to-end support for your study journey and relocation to Sweden through our web portal and app:
-
+                      We offer end-to-end support for your study journey and
+                      relocation to Sweden through our web portal and app:
                     </p>
 
                     <ul className=" tw-p-0 ">
@@ -425,8 +432,10 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">
-                        Comprehensive Application Assistance: We help with your student residence permit application, making sure all documents are complete and comply with Swedish immigration standards.
-
+                          Comprehensive Application Assistance: We help with
+                          your student residence permit application, making sure
+                          all documents are complete and comply with Swedish
+                          immigration standards.
                         </p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
@@ -434,8 +443,10 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">
-                        	Housing and Settling Services: Once your permit is approved, we provide assistance with finding accommodation and settling into your new life in Sweden.
-
+                          Housing and Settling Services: Once your permit is
+                          approved, we provide assistance with finding
+                          accommodation and settling into your new life in
+                          Sweden.
                         </p>
                       </li>
 
@@ -444,8 +455,10 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">
-                        Digital Management: Manage your entire study application and relocation process through our web portal or app, making it easy and convenient to track every step.
-
+                          Digital Management: Manage your entire study
+                          application and relocation process through our web
+                          portal or app, making it easy and convenient to track
+                          every step.
                         </p>
                       </li>
                     </ul>
@@ -458,8 +471,8 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">
-                        	We will evaluate your details to determine your eligibility to study in Sweden.
-
+                          We will evaluate your details to determine your
+                          eligibility to study in Sweden.
                         </p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
@@ -467,8 +480,9 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">
-                        Our team will guide you through the application process for both your chosen academic program and student residence permit.
-
+                          Our team will guide you through the application
+                          process for both your chosen academic program and
+                          student residence permit.
                         </p>
                       </li>
 
@@ -477,25 +491,30 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">
-                        We’ll ensure that you have the support you need for a smooth transition to life in Sweden.
-
+                          We’ll ensure that you have the support you need for a
+                          smooth transition to life in Sweden.
                         </p>
                       </li>
                     </ul>
 
                     <h4>Get Started </h4>
                     <p className=" tw-text-gray">
-                    Use the eligibility tool on our web portal or app to take the first step toward your educational journey in Sweden. Whether you need help with your application or future relocation, we’re here to assist you at every step!
-
+                      Use the eligibility tool on our web portal or app to take
+                      the first step toward your educational journey in Sweden.
+                      Whether you need help with your application or future
+                      relocation, we’re here to assist you at every step!
                     </p>
                   </div>
 
                   <div>
-                    <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                      <i class="fa fa-user"></i>
-                      <p className=" m-0 tw-text-white tw-font-semibold">
-                        PERSONAL DETAILS
-                      </p>
+                    <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
+                      <h5 className=" tw-text-black  ">Persoanl Details</h5>
+
+                      <h6 className=" tw-text-black ">
+                        {" "}
+                        <i class="fa fa-building"></i> Fill up your personal
+                        details.
+                      </h6>
                     </div>
 
                     <Assessment_modal
@@ -542,21 +561,24 @@ const Student_assessments = () => {
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-                    <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                      <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                      <p className=" m-0 tw-text-white tw-font-semibold">
-                        EDUCATIONAL BACKGROUND
-                      </p>
+                    <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
+                      <h5 className=" tw-text-black  ">
+                        Educational Background
+                      </h5>
+
+                      <h6 className=" tw-text-black ">
+                        {" "}
+                        <i class="fa fa-building"></i> Fill up your Educational
+                        Background.
+                      </h6>
                     </div>
 
                     <form>
                       <div className="row ">
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">
-                            Country
-                          </label>
+                          <label className=" tw-text-sm  tw-text-gray "></label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>Choose option</option>
+                            <option>Country</option>
                             <option value="AF">Afghanistan</option>
                             <option value="AL">Albania</option>
                             <option value="DZ">Algeria</option>
@@ -670,16 +692,14 @@ const Student_assessments = () => {
                         </div>
 
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">
-                            Select Level of Studies
-                          </label>
+                          <label className=" tw-text-sm  tw-text-gray "></label>
                           <select
                             name="chooseType"
                             value={chooseType}
                             onChange={handleSelectChange}
                             className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                           >
-                            <option>Choose option</option>
+                            <option>Select Level of Studies</option>
 
                             <option value="Higher Secondary Education">
                               Higher Secondary Education
@@ -698,11 +718,9 @@ const Student_assessments = () => {
                         </div>
 
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">
-                            Total no of years of study
-                          </label>
+                          <label className=" tw-text-sm  tw-text-gray "></label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>Choose option</option>
+                            <option>Total no of years of study</option>
                             <option value="10 Year">10 Year</option>
                             <option value="12 Year">12 Year</option>
                             <option value="14 Year">14 Year</option>
@@ -713,34 +731,44 @@ const Student_assessments = () => {
                         {chooseType === "Other" ? (
                           <>
                             <div className="col-md-8 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Describe Your Education
-                              </label>
-                              <textarea className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"></textarea>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
+
+                              <Input
+                                placeholder={" Describe Your Education"}
+                                star={"*"}
+                                className={
+                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                }
+                                label={" Describe Your Education"}
+                              />
                             </div>
 
                             {/* user info */}
                             <div className=" tw-pt-8">
-                              <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                                <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                                <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">
-                                  Higher Secondary Education (Matriculation)
-                                </p>
+                              <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
+                                <h5 className=" tw-text-black  ">
+                                Higher Secondary Education (Matriculation)
+                                </h5>
+
+                                <h6 className=" tw-text-black ">
+                                  {" "}
+                                  <i class="fa fa-building"></i> Fill up Higher Secondary Education (Matriculation).
+                                </h6>
                               </div>
 
                               <form>
                                 <div className="row ">
                                   <div className="col-md-6 tw-pt-4">
-                                    <label className=" tw-text-sm  tw-text-gray ">
-                                      English Language Proficiency Test
-                                    </label>
+                                    <label className=" tw-text-sm  tw-text-gray "></label>
                                     <select
                                       onChange={handleSelectChange}
                                       name="others"
                                       value={others}
                                       className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                                     >
-                                      <option>Choose option</option>
+                                      <option>
+                                        English Language Proficiency Test
+                                      </option>
 
                                       <option value="IELTS">IELTS</option>
                                       <option value="TOFEL (Paper-based)">
@@ -763,11 +791,9 @@ const Student_assessments = () => {
                                   {others === "IELTS" ? (
                                     <>
                                       <div className="col-md-6 tw-pt-4">
-                                        <label className=" tw-text-sm  tw-text-gray ">
-                                          Over all IELTS Score
-                                        </label>
+                                        <label className=" tw-text-sm  tw-text-gray "></label>
                                         <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                          <option>Select your Score</option>
+                                          <option>Over all IELTS Score</option>
 
                                           <option value="5">5</option>
                                           <option value="5.5">5.5</option>
@@ -784,16 +810,32 @@ const Student_assessments = () => {
                                     <>
                                       <div className="col-md-6"></div>
                                       <div className="col-md-6 tw-pt-4">
-                                        <label className=" tw-text-sm  tw-text-gray ">
-                                          Other Language
-                                        </label>
-                                        <textarea className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"></textarea>
+                                        <label className=" tw-text-sm  tw-text-gray "></label>
+
+                                        <Input
+                                          placeholder={
+                                            "Contact No with Country"
+                                          }
+                                          star={"*"}
+                                          className={
+                                            " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                          }
+                                          label={"Other Language"}
+                                        />
                                       </div>
                                       <div className="col-md-6 tw-pt-4">
-                                        <label className=" tw-text-sm  tw-text-gray ">
-                                          Other Details
-                                        </label>
-                                        <textarea className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"></textarea>
+                                        <label className=" tw-text-sm  tw-text-gray "></label>
+
+                                        <Input
+                                          placeholder={
+                                            "Contact No with Country"
+                                          }
+                                          star={"*"}
+                                          className={
+                                            " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                          }
+                                          label={"Other Details"}
+                                        />
                                       </div>
                                     </>
                                   ) : null}
@@ -812,21 +854,23 @@ const Student_assessments = () => {
                     <>
                       {/* user info */}
                       <div className=" tw-pt-8">
-                        <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                          <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                          <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">
-                            Higher Secondary Education (Matriculation)
-                          </p>
-                        </div>
+                      <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
+                                <h5 className=" tw-text-black  ">
+                                Higher Secondary Education (Matriculation)
+                                </h5>
+
+                                <h6 className=" tw-text-black ">
+                                  {" "}
+                                  <i class="fa fa-building"></i> Fill up Higher Secondary Education (Matriculation).
+                                </h6>
+                              </div>
 
                         <form>
                           <div className="row ">
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Subject
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
+                                <option>Subject</option>
 
                                 <option value="Science">Science</option>
                                 <option value="Engineering">Engineering</option>
@@ -846,20 +890,20 @@ const Student_assessments = () => {
                             </div>
 
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Completed Year
-                              </label>
-                              <input
-                                type="year"
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <Input
+                                placeholder={"Completed Year"}
+                                star={"*"}
+                                type={"year"}
+                                className={
+                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                }
+                                label={"Completed Year"}
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Percentage
-                              </label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Select Percentage</option>
+                                <option>Percentage</option>
                                 <option value="33">33</option>
                                 <option value="34">34</option>
                                 <option value="35">35</option>
@@ -881,11 +925,9 @@ const Student_assessments = () => {
                               </select>
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Grade
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Select Grade</option>
+                                <option>Grade</option>
                                 <option value="A">A</option>
                                 <option value="B">B</option>
                                 <option value="C">C</option>
@@ -899,21 +941,25 @@ const Student_assessments = () => {
 
                       {/* user info */}
                       <div className=" tw-pt-8">
-                        <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                          <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                          <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">
-                            English Proficiency Test
-                          </p>
-                        </div>
+                      <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
+                                <h5 className=" tw-text-black  ">
+                                English Proficiency Test
+                                </h5>
+
+                                <h6 className=" tw-text-black ">
+                                  {" "}
+                                  <i class="fa fa-building"></i> Fill up English Proficiency Test details.
+                                </h6>
+                              </div>
 
                         <form>
-                          <div className="row ">
+                          <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                English Language Proficiency Test
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
+                                <option>
+                                  English Language Proficiency Test
+                                </option>
 
                                 <option value="IELTS">IELTS</option>
                                 <option value="TOFEL (Paper-based)">
@@ -940,21 +986,23 @@ const Student_assessments = () => {
                     <>
                       {/* user info */}
                       <div className=" tw-pt-8">
-                        <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                          <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                          <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">
-                            Higher Secondary Education (Matriculation)
-                          </p>
-                        </div>
+                      <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
+                                <h5 className=" tw-text-black  ">
+                                Higher Secondary Education (Matriculation)
+                                </h5>
+
+                                <h6 className=" tw-text-black ">
+                                  {" "}
+                                  <i class="fa fa-building"></i> Fill up Higher Secondary Education (Matriculation).
+                                </h6>
+                              </div>
 
                         <form>
-                          <div className="row ">
+                          <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Subject
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
+                                <option>Subject</option>
 
                                 <option value="Science">Science</option>
                                 <option value="Engineering">Engineering</option>
@@ -974,20 +1022,21 @@ const Student_assessments = () => {
                             </div>
 
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Completed Year
-                              </label>
-                              <input
-                                type="year"
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <Input
+                                placeholder={"Contact No with Country"}
+                                star={"*"}
+                                type={"year"}
+                                className={
+                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                }
+                                label={"Completed Year"}
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Percentage
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Select Percentage</option>
+                                <option>Percentage</option>
                                 <option value="33">33</option>
                                 <option value="34">34</option>
                                 <option value="35">35</option>
@@ -1009,9 +1058,7 @@ const Student_assessments = () => {
                               </select>
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Grade
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Select Grade</option>
                                 <option value="A">A</option>
@@ -1036,13 +1083,11 @@ const Student_assessments = () => {
                         </div>
 
                         <form>
-                          <div className="row ">
+                          <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Subject
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
+                                <option>Subject</option>
 
                                 <option value="Science">Science</option>
                                 <option value="Engineering">Engineering</option>
@@ -1062,20 +1107,21 @@ const Student_assessments = () => {
                             </div>
 
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Completed Year
-                              </label>
-                              <input
-                                type="year"
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <Input
+                                placeholder={"Contact No with Country"}
+                                star={"*"}
+                                type={"year"}
+                                className={
+                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                }
+                                label={"Completed Year"}
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Percentage
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Select Percentage</option>
+                                <option>Percentage</option>
                                 <option value="33">33</option>
                                 <option value="34">34</option>
                                 <option value="35">35</option>
@@ -1097,9 +1143,7 @@ const Student_assessments = () => {
                               </select>
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Grade
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Select Grade</option>
                                 <option value="A">A</option>
@@ -1115,21 +1159,26 @@ const Student_assessments = () => {
 
                       {/* user info */}
                       <div className=" tw-pt-8">
-                        <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                          <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                          <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">
-                            Higher Secondary Education (Matriculation)
-                          </p>
-                        </div>
+                      <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
+                                <h5 className=" tw-text-black  ">
+                                Higher Secondary Education (Matriculation)
+                                </h5>
+
+                                <h6 className=" tw-text-black ">
+                                  {" "}
+                                  <i class="fa fa-building"></i> Fill up Higher Secondary Education (Matriculation).
+                                </h6>
+                              </div>
 
                         <form>
-                          <div className="row ">
+                          <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                English Language Proficiency Test
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
+                                <option>
+                                  {" "}
+                                  English Language Proficiency Test
+                                </option>
 
                                 <option value="IELTS">IELTS</option>
                                 <option value="TOFEL (Paper-based)">
@@ -1157,21 +1206,23 @@ const Student_assessments = () => {
                     <>
                       {/* user info */}
                       <div className=" tw-pt-8">
-                        <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                          <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                          <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">
-                            Higher Secondary Education (Matriculation)
-                          </p>
-                        </div>
+                      <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
+                                <h5 className=" tw-text-black  ">
+                                Higher Secondary Education (Matriculation)
+                                </h5>
+
+                                <h6 className=" tw-text-black ">
+                                  {" "}
+                                  <i class="fa fa-building"></i> Fill up Higher Secondary Education (Matriculation).
+                                </h6>
+                              </div>
 
                         <form>
-                          <div className="row ">
+                          <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Subject
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
+                                <option>Subject</option>
 
                                 <option value="Science">Science</option>
                                 <option value="Engineering">Engineering</option>
@@ -1191,18 +1242,19 @@ const Student_assessments = () => {
                             </div>
 
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Completed Year
-                              </label>
-                              <input
-                                type="year"
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <Input
+                                placeholder={"Completed Year"}
+                                star={"*"}
+                                type={"year"}
+                                className={
+                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                }
+                                label={"Completed Year"}
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Percentage
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Select Percentage</option>
                                 <option value="33">33</option>
@@ -1226,9 +1278,7 @@ const Student_assessments = () => {
                               </select>
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Grade
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Select Grade</option>
                                 <option value="A">A</option>
@@ -1253,13 +1303,11 @@ const Student_assessments = () => {
                         </div>
 
                         <form>
-                          <div className="row ">
+                          <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Subject
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
+                                <option>Subject</option>
 
                                 <option value="Science">Science</option>
                                 <option value="Engineering">Engineering</option>
@@ -1279,18 +1327,19 @@ const Student_assessments = () => {
                             </div>
 
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Completed Year
-                              </label>
-                              <input
-                                type="year"
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <Input
+                                placeholder={"Completed Year"}
+                                star={"*"}
+                                type={"year"}
+                                className={
+                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                }
+                                label={"Completed Year"}
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Percentage
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Select Percentage</option>
                                 <option value="33">33</option>
@@ -1314,9 +1363,7 @@ const Student_assessments = () => {
                               </select>
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Grade
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Select Grade</option>
                                 <option value="A">A</option>
@@ -1341,13 +1388,11 @@ const Student_assessments = () => {
                         </div>
 
                         <form>
-                          <div className="row ">
+                          <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Subject
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
+                                <option>Subject</option>
 
                                 <option value="Science">Science</option>
                                 <option value="Engineering">Engineering</option>
@@ -1367,13 +1412,15 @@ const Student_assessments = () => {
                             </div>
 
                             <div className="col-md-3 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                From
-                              </label>
-                              <input
-                                type="year"
-                                placeholder="Degree start from"
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <Input
+                                placeholder={"From"}
+                                star={"*"}
+                                type={"year"}
+                                className={
+                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                }
+                                label={"From"}
                               />
                             </div>
 
@@ -1381,16 +1428,19 @@ const Student_assessments = () => {
                               <label className=" tw-text-sm  tw-text-gray ">
                                 To
                               </label>
-                              <input
-                                placeholder="Degree End Year"
-                                type="year"
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+
+                              <Input
+                                placeholder={"To"}
+                                star={"*"}
+                                type={"year"}
+                                className={
+                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                }
+                                label={"To"}
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Percentage
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Select Percentage</option>
                                 <option value="33">33</option>
@@ -1414,9 +1464,7 @@ const Student_assessments = () => {
                               </select>
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Grade
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Select Grade</option>
                                 <option value="A">A</option>
@@ -1432,21 +1480,26 @@ const Student_assessments = () => {
 
                       {/* user info */}
                       <div className=" tw-pt-8">
-                        <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                          <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                          <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">
-                            Higher Secondary Education (Matriculation)
-                          </p>
-                        </div>
+                      <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
+                                <h5 className=" tw-text-black  ">
+                                Higher Secondary Education (Matriculation)
+                                </h5>
+
+                                <h6 className=" tw-text-black ">
+                                  {" "}
+                                  <i class="fa fa-building"></i> Fill up Higher Secondary Education (Matriculation).
+                                </h6>
+                              </div>
 
                         <form>
-                          <div className="row ">
+                          <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                English Language Proficiency Test
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
+                                <option>
+                                  {" "}
+                                  English Language Proficiency Test
+                                </option>
 
                                 <option value="IELTS">IELTS</option>
                                 <option value="TOFEL (Paper-based)">

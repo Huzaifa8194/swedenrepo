@@ -214,14 +214,14 @@ export const assessmentChidldLinks = [
     title: 'Business Visa',
     description: 'A business visa allows individuals to enter a foreign country for business-related activities, such as meetings, conferences, and negotiations, without engaging in long-term employment.',
     icons: <MdBusinessCenter color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
-    Link: '/business-visit',
+    Link: '/assessment_register',
   },
   {
     id: 2,
     title: 'Family Reunification',
     description: 'A family reunification visa enables family members to join a relative residing legally in a foreign country, facilitating the reuniting of close family units across borders.',
     icons: <MdFamilyRestroom color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
-    Link: '/family-reunification',
+    Link: '/family_reunification_assessment',
   },
   {
     id: 3,

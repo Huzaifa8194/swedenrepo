@@ -34,6 +34,20 @@ const Housing = () => {
   backgroundImage={homeBgImage} 
 />
 
+<div className="row g-4">
+              <div className=" tw-pt-12 tw-bt-0  tw-text-center tw-mb-0">
+                {/* <span>EXPopular</span> */}
+                <h2>
+                  <h1>Explore Popular Location</h1>
+                </h2>
+                <p className=" tw-text-gray">
+                  Explore the latest listings & projects in diverse areas
+                </p>
+
+                <Popular />
+              </div>
+            </div>
+
       <div className=" ">
         <div className="  md:tw-mt-10 tw-mt-10">
           <div className="container-fluid">
@@ -168,19 +182,7 @@ const Housing = () => {
                 </div>
               </div>
             </section>
-            <div className="row g-4">
-              <div className=" tw-py-12 tw-text-center">
-                {/* <span>EXPopular</span> */}
-                <h2>
-                  <h1>Explore Popular Location</h1>
-                </h2>
-                <p className=" tw-text-gray">
-                  Explore the latest listings & projects in diverse areas
-                </p>
-
-                <Popular />
-              </div>
-            </div>
+           
             <New_Listings />
             {/* <div className="row g-4">
               <div className=" tw-py-12 tw-text-center">

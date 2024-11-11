@@ -114,7 +114,7 @@ const Popular = () => {
   ));
 
   return (
-    <div className=" tw-bg-white tw-mb-8  tw-py-6">
+    <div className=" tw-bg-white   tw-pt-6">
       <div className=" tw-container tw-mx-auto">
       <div className="tw-relative  tw-px-4 tw-mx-auto">
         <Slider ref={arrowRef} {...settings}>
