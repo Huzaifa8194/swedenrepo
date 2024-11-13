@@ -12,6 +12,11 @@ import Header from "../../components/Header_New/Header";
 import { useTranslation } from "react-i18next";
 
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
+import rentimage1 from "../../assets/images/rentoutyourhouse1.png";
+import rentimage2 from "../../assets/images/rentoutyourhouse2.png";
+import rentimage3 from "../../assets/images/rentoutyourhouse3.png";
+import rentimage4 from "../../assets/images/rentoutyourhouse4.png";
+import rentimage5 from "../../assets/images/rentoutyourhouse5.png";
 
 const Rent_out_your_housing = () => {
   const { t } = useTranslation();
@@ -30,7 +35,7 @@ const Rent_out_your_housing = () => {
         )}
         backgroundImage={homeBgImage}
       />
-      <section className=" md:tw-pt-8 tw-pt-8 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white">
+      <section className=" md:tw-pt-8 tw-pt-8 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-[#F5FAFF]">
         <section className="">
           <div className="container tw-rounded-2xl tw-mb-1 px-4 tw-py-4 tw-shadow tw-bg-white">
             <div className="row tw-py-8 ">
@@ -57,10 +62,10 @@ const Rent_out_your_housing = () => {
           </div>
         </section>
 
-        <div className="container-fluid   ">
-          <div className="row tw-justify-center tw-items-center ">
-            <div className="col-md-8">
-              <div className="  tw-pt-14   ">
+        <div className="container-fluid  tw-px-4 ">
+          <div className="row tw-justify-left tw-items-start ">
+            <div className="col-md-8 ">
+              <div className="  tw-pt-10   ">
                 <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
                   <h5 className=" tw-text-black  "> Details</h5>
 
@@ -70,10 +75,9 @@ const Rent_out_your_housing = () => {
                     HOUSE
                   </h6>
                 </div>
-                
 
                 <form>
-                  <div className="row g-3 tw-pt-6 tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                  <div className="row g-3 tw-pt-6 tw-rounded-2xl px-4 tw-py-4 tw-shadow-lg tw-bg-white border-t-2 border-black">
                     <div className="col-md-6">
                       {/* <label
                         htmlFor="first_name"
@@ -82,7 +86,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Country
                       </label> */}
-                      
+
                       <select
                         value={selectCountry}
                         name="selectCountry"
@@ -152,7 +156,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select your type of house
                       </label> */}
-                     
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option> Select your type of house</option>
                         <option value="Apartment">Apartment</option>
@@ -171,7 +175,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Floor
                       </label> */}
-                     
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>Select Floor</option>
                         <option value="Basement">Basement</option>
@@ -192,7 +196,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Total rooms
                       </label> */}
-                      
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option> Total rooms are in the property?</option>
                         <option value={"1"}>1</option>
@@ -204,7 +208,6 @@ const Rent_out_your_housing = () => {
                     </div>
 
                     <div className="col-md-6">
-                      
                       <Input
                         star={"*"}
                         className={
@@ -215,11 +218,6 @@ const Rent_out_your_housing = () => {
                       />
                     </div>
 
-                   
-
-
-
-
                     <div className="row g-3 tw-rounded-md tw-py-4 tw-bg-white border-t-2 border-b-2 border-black">
                       <h5 className="tw-text-black">BASIC NECESSITIES</h5>
 
@@ -228,7 +226,10 @@ const Rent_out_your_housing = () => {
                       </h6>
                     </div>
 
-                    <div className="tw-border-t-2" style={{ borderColor: "rgba(145, 158, 171, 0.2)" }}></div>
+                    <div
+                      className="tw-border-t-2"
+                      style={{ borderColor: "rgba(145, 158, 171, 0.2)" }}
+                    ></div>
 
                     <div className="col-md-6">
                       {/* <label
@@ -239,7 +240,6 @@ const Rent_out_your_housing = () => {
                         Furnished?
                       </label> */}
 
-                     
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option> Furnished?</option>
                         <option value={"yes"}>Yes</option>
@@ -256,7 +256,6 @@ const Rent_out_your_housing = () => {
                         Is car parking included?
                       </label> */}
 
-                     
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option> Is car parking included?</option>
                         <option value={"Included"}>Included</option>
@@ -273,7 +272,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Are pets allowed?
                       </label> */}
-                    
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>Are pets allowed?</option>
                         <option value={"Allowed"}>Allowed</option>
@@ -289,7 +288,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Is smoking allowed?
                       </label> */}
-                      
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>Is smoking allowed?</option>
                         <option value={"Allowed"}>Allowed</option>
@@ -305,7 +304,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Is electricity included?
                       </label> */}
-                     
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>Is electricity included?</option>
                         <option value={"Included"}>Included</option>
@@ -322,7 +321,6 @@ const Rent_out_your_housing = () => {
                         Is lift available?
                       </label> */}
 
-                   
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg  mt-2">
                         <option>Is lift available?</option>
                         <option value={"Allowed"}>Allowed</option>
@@ -338,7 +336,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Is internet included?
                       </label> */}
-                    
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>Is internet included?</option>
                         <option value={"Included"}>Included</option>
@@ -356,7 +354,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Is washing machine available?
                       </label> */}
-                      
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>Is washing machine available?</option>
                         <option value={"Available"}>Available</option>
@@ -372,7 +370,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Is dishwasher available?
                       </label> */}
-                      
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option> Is dishwasher available?</option>
                         <option value={"Available"}>Available</option>
@@ -388,7 +386,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Is heat & water includes in rent?
                       </label> */}
-                   
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>Is heat & water includes in rent?</option>
                         <option value={"Available"}>Available</option>
@@ -404,7 +402,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Is balcony/terrace available?
                       </label> */}
-                     
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>Is balcony/terrace available?</option>
                         <option value={"Included"}>Included</option>
@@ -419,7 +417,10 @@ const Rent_out_your_housing = () => {
                         FILL UP THE CONTRACT DETAILS OF YOUR HOUSE
                       </h6>
                     </div>
-                    <div className="tw-border-t-2" style={{ borderColor: "rgba(145, 158, 171, 0.2)" }}></div>
+                    <div
+                      className="tw-border-t-2"
+                      style={{ borderColor: "rgba(145, 158, 171, 0.2)" }}
+                    ></div>
 
                     <div className="col-md-6">
                       {/* <label
@@ -429,7 +430,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Contract Type?
                       </label> */}
-                    
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>Select Contract Type</option>
                         <option value={"First Hand"}> First Hand</option>
@@ -447,7 +448,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Are you looking for deposit?
                       </label> */}
-                     
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>How much rent are you looking for?</option>
                         <option value={"yes"}>Yes</option>
@@ -463,7 +464,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Maximum people can stay in this residence?
                       </label> */}
-                     
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>Are you looking for deposit?</option>
                         <option value={"yes"}>Yes</option>
@@ -479,9 +480,11 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         What is the duration of rent out?
                       </label> */}
-                     
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Maximum people can stay in this residence?</option>
+                        <option>
+                          Maximum people can stay in this residence?
+                        </option>
                         <option value={"1"}>1 </option>
                         <option value={"2"}>2</option>
                         <option value={"3"}>3</option>
@@ -498,7 +501,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         What is the duration of rent out?
                       </label> */}
-                      
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>What is the duration of rent out?</option>
                         <option value={"1 Month "}>1 Month </option>
@@ -518,7 +521,10 @@ const Rent_out_your_housing = () => {
                         FILL UP THE PROPERTY DETAILS & PICTURES OF YOUR HOUSE
                       </h6>
                     </div>
-                    <div className="tw-border-t-2" style={{ borderColor: "rgba(145, 158, 171, 0.2)" }}></div>
+                    <div
+                      className="tw-border-t-2"
+                      style={{ borderColor: "rgba(145, 158, 171, 0.2)" }}
+                    ></div>
 
                     <div className="col-md-6">
                       {/* <label
@@ -528,7 +534,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Your Property Type
                       </label> */}
-                     
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2">
                         <option>Your Property Type</option>
                         <option value={"Rental Property"}>
@@ -542,7 +548,6 @@ const Rent_out_your_housing = () => {
                     </div>
 
                     <div className="col-md-6">
-                     
                       <Input
                         star={"*"}
                         type={"text"}
@@ -555,7 +560,6 @@ const Rent_out_your_housing = () => {
                     </div>
 
                     <div className="col-md-6">
-                      
                       <input
                         star={"*"}
                         type={"file"}
@@ -574,10 +578,12 @@ const Rent_out_your_housing = () => {
                         FILL UP THE PROPERTY BANK DETAILS
                       </h6>
                     </div>
-                    <div className="tw-border-t-2" style={{ borderColor: "rgba(145, 158, 171, 0.2)" }}></div>
+                    <div
+                      className="tw-border-t-2"
+                      style={{ borderColor: "rgba(145, 158, 171, 0.2)" }}
+                    ></div>
 
                     <div className="col-md-12">
-                     
                       <Input
                         star={"*"}
                         type={"text"}
@@ -590,7 +596,6 @@ const Rent_out_your_housing = () => {
                     </div>
 
                     <div className="col-md-6">
-                      
                       <Input
                         star={"*"}
                         type={""}
@@ -603,7 +608,6 @@ const Rent_out_your_housing = () => {
                     </div>
 
                     <div className="col-md-6">
-                      
                       <Input
                         star={"*"}
                         type={""}
@@ -623,7 +627,10 @@ const Rent_out_your_housing = () => {
                       </h6>
                     </div>
 
-                    <div className="tw-border-t-2" style={{ borderColor: "rgba(145, 158, 171, 0.2)" }}></div>
+                    <div
+                      className="tw-border-t-2"
+                      style={{ borderColor: "rgba(145, 158, 171, 0.2)" }}
+                    ></div>
 
                     <div className="col-md-6">
                       {/* <label
@@ -633,7 +640,7 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Bank Country
                       </label> */}
-                      
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>Select Bank Country</option>
                         <option value={"Rental Property"}>
@@ -647,7 +654,6 @@ const Rent_out_your_housing = () => {
                     </div>
 
                     <div className="col-md-6">
-                     
                       <Input
                         star={"*"}
                         type={"text"}
@@ -660,7 +666,6 @@ const Rent_out_your_housing = () => {
                     </div>
 
                     <div className="col-md-6">
-                     
                       <Input
                         star={"*"}
                         type={""}
@@ -673,7 +678,6 @@ const Rent_out_your_housing = () => {
                     </div>
 
                     <div className="col-md-6">
-                     
                       <Input
                         star={"*"}
                         type={""}
@@ -695,6 +699,98 @@ const Rent_out_your_housing = () => {
                     </div>
                   </div>
                 </form>
+              </div>
+            </div>
+
+            <div className="col-md-4  row gap-3 tw-justify-center tw-text-center">
+             
+             <div></div>
+             <img
+                src={rentimage1}
+                className=" tw-rounded-3xl tw-w-full tw-mt-14  "
+
+                // keeps image fixed at the top of its container while scrolling
+              />
+
+              <div className="">
+                {" "}
+                <h2>Maximize Your Property’s Potential</h2>
+                <p>
+                  Leverage our platform to showcase your property to a wide
+                  range of potential tenants. Fill out the necessary
+                  information, and we’ll guide you through every step to ensure
+                  a smooth rental experience.
+                </p>
+              </div>
+
+              <img
+                src={rentimage2}
+                className=" tw-rounded-3xl tw-w-full"
+
+                // keeps image fixed at the top of its container while scrolling
+              />
+
+              <div className="">
+                {" "}
+                <h2>Personalized Search Experience</h2>
+                <p>
+                  We prioritize your preferences to show only the most relevant
+                  listings. Whether it’s a cozy apartment or a spacious family
+                  home, let us help you find the place you’ll love.
+                </p>
+              </div>
+
+              <img
+                src={rentimage3}
+                className=" tw-rounded-3xl tw-w-full"
+
+                // keeps image fixed at the top of its container while scrolling
+              />
+
+              <div className="">
+                {" "}
+                <h2>Trust and Transparency</h2>
+                <p>
+                  Our goal is to make renting a hassle-free experience. We
+                  provide clear information on each property, ensuring you feel
+                  confident in every step of the rental process.
+                </p>
+              </div>
+
+              <img
+                src={rentimage4}
+                className=" tw-rounded-3xl tw-w-full"
+
+                // keeps image fixed at the top of its container while scrolling
+              />
+
+              <div className="">
+                {" "}
+                <h2>Rent Out Your Home with Ease</h2>
+                <p>
+                  Start the process of renting out your property by filling in
+                  the details about your house. Our simple form helps you get
+                  started quickly, so you can start earning from your space
+                  without the stress.
+                </p>
+              </div>
+
+              <img
+                src={rentimage5}
+                className=" tw-rounded-3xl tw-w-full"
+
+                // keeps image fixed at the top of its container while scrolling
+              />
+
+              <div className="">
+                {" "}
+                <h2>List Your Home in Minutes</h2>
+                <p>
+                  Renting out your house doesn’t have to be complicated. Just
+                  provide the details about your property, and we’ll take care
+                  of the rest, connecting you with interested renters in no
+                  time.
+                </p>
               </div>
             </div>
           </div>

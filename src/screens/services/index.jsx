@@ -20,9 +20,9 @@ const index = () => {
       <FeatureSection />
       <SkillSection/>
       <ServiceCat />
-      <TestimonialSection/>
+      {/* <TestimonialSection/>
       <IntroductionSection/>
-      <BlogSection/>
+      <BlogSection/> */}
       <Footer/>
     </div>
   )

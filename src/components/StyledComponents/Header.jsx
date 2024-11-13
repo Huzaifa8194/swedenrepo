@@ -61,10 +61,16 @@ export const Typography = ({ children, variant, color, fontSize, fontWeight }) =
   return renderTypography();
 };
 
-export const Image = ({ link, alt, imageType, ImageSize }) => {
+export const Image = ({ link, alt, imageType, ImageSize, href }) => {
   return (
     <>
-      <img src={link} alt={alt} className={`css-image css-${imageType} css-${ImageSize}`} />
+      {href ? (
+        <a href={href}  rel="noopener noreferrer">
+          <img src={link} alt={alt} className={`css-image css-${imageType} css-${ImageSize}`} />
+        </a>
+      ) : (
+        <img src={link} alt={alt} className={`css-image css-${imageType} css-${ImageSize}`} />
+      )}
     </>
   );
 };

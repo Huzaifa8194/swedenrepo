@@ -8,6 +8,11 @@ import { Link } from "react-router-dom";
 import { GoTriangleRight } from "react-icons/go";
 import { useTranslation } from "react-i18next";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
+import rentimage1 from "../../assets/images/rentoutyourhouse1.png";
+import rentimage2 from "../../assets/images/rentoutyourhouse2.png";
+import rentimage3 from "../../assets/images/rentoutyourhouse3.png";
+import rentimage4 from "../../assets/images/rentoutyourhouse4.png";
+import rentimage5 from "../../assets/images/rentoutyourhouse5.png";
 
 import Header from "../../components/Header_New/Header";
 const Looking_for_housing = () => {
@@ -233,8 +238,8 @@ const Looking_for_housing = () => {
         )}
         backgroundImage={homeBgImage}
       />
-      <div className=" md:tw-mt-8 tw-mt-8">
-        <section className="">
+      <div className=" tw-pt-8 tw-bg-[#F5FAFF]">
+        <section className=" tw-bg-[#F5FAFF]">
           <div className="container tw-rounded-2xl tw-mb-1 px-4 tw-py-4 tw-shadow tw-bg-white">
             <div className="row tw-py-8">
               <span className=" tw-flex tw-items-center tw-gap-2">
@@ -258,12 +263,11 @@ const Looking_for_housing = () => {
           </div>
         </section>
       </div>
-      <section className=" md:tw-pt-2 tw-pt-4">
-        <div className="container-fluid  ">
-          <div className="row tw-justify-center tw-items-center">
-            <div className="col-md-8">
-              <div className=" tw-bg-white tw-pt-8 ">
-                
+      <section className=" md:tw-pt-2 tw-pt-4 tw-bg-[#F5FAFF]">
+        <div className="container-fluid  tw-bg-[#F5FAFF] ">
+          <div className="row tw-justify-start tw-items-start">
+            <div className="col-md-8 tw-mx-2">
+              <div className=" tw-bg-[#F5FAFF] tw-pt-8 ">
                 <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
                   <h5 className=" tw-text-black  "> Details</h5>
 
@@ -275,7 +279,7 @@ const Looking_for_housing = () => {
                 </div>
 
                 <form>
-                  <div className="row g-3 tw-pt-6 tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                  <div className="row g-3 tw-pt-6  tw-rounded-2xl px-4 tw-py-4 tw-shadow-lg tw-bg-white border-t-2 border-black">
                     <div className="col-md-6">
                       {/* <label
                         htmlFor="first_name"
@@ -284,7 +288,7 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Country
                       </label> */}
-                     
+
                       <select
                         value={selectCountry}
                         name="selectCountry"
@@ -307,7 +311,7 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Country
                       </label> */}
-                       
+
                         <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                           <option>Select Skåne City</option>
                           <option value="Ängelholm">Ängelholm</option>
@@ -329,7 +333,7 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Country
                       </label> */}
-                        
+
                         <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                           <option>Select Denmark City</option>
                           <option value="Ängelholm">Ängelholm</option>
@@ -350,7 +354,7 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select your type of house
                       </label> */}
-                      
+
                       <select
                         value={housing}
                         name="housing"
@@ -374,7 +378,7 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Floor
                       </label> */}
-                      
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>Select Required Floor?</option>
 
@@ -396,7 +400,7 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Floor
                       </label> */}
-                         
+
                           <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                             <option>Number of Rooms Required?</option>
 
@@ -434,7 +438,6 @@ const Looking_for_housing = () => {
                         Furnished?
                       </label> */}
 
-                      
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>Number of adults in the house?</option>
                         <option value={"1"}>1</option>
@@ -454,7 +457,6 @@ const Looking_for_housing = () => {
                         Is car parking included?
                       </label> */}
 
-                  
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>How many children do you have?</option>
                         <option value={"1"}>1</option>
@@ -474,7 +476,7 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Are pets allowed?
                       </label> */}
-                     
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>Do you have infants?</option>
                         <option value={"1"}>1</option>
@@ -485,7 +487,6 @@ const Looking_for_housing = () => {
                       </select>
                     </div>
 
-                    
                     <div className="row g-3 tw-rounded-md tw-py-4 tw-bg-white border-t-2 border-b-2 border-black">
                       <h5 className="tw-text-black">Contract Details</h5>
 
@@ -507,7 +508,7 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Contract Type?
                       </label> */}
-                     
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>Select Contract Type</option>
                         <option value={"First Hand"}> First Hand</option>
@@ -525,7 +526,7 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Are you looking for deposit?
                       </label> */}
-                      
+
                       <Input
                         star={"*"}
                         type={""}
@@ -545,10 +546,7 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Maximum people can stay in this residence?
                       </label> */}
-                      
 
-
-                      
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>What is the duration of your stay?</option>
                         <option value={"1 Month"}>1 Month</option>
@@ -571,7 +569,7 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         What is the duration of rent out?
                       </label> */}
-                     
+
                       <select
                         value={deposit}
                         name="deposit"
@@ -594,7 +592,7 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         What is the duration of rent out?
                       </label> */}
-                        
+
                           <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                             <option>How many months of deposit?</option>
                             <option value={"1 Month"}>1 Month</option>
@@ -616,7 +614,6 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         What is the duration of rent out?
                       </label> */}
-                      
 
                       <Input
                         star={"*"}
@@ -627,9 +624,8 @@ const Looking_for_housing = () => {
                         label={"Expected moving date:"}
                         placeholder={""}
                       />
-                        </div>
+                    </div>
 
-                  
                     <div className="row g-3 tw-rounded-md tw-py-4 tw-bg-white border-t-2 border-b-2 border-black">
                       <h5 className="tw-text-black">Other Details</h5>
 
@@ -651,7 +647,7 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Your Property Type
                       </label> */}
-                    
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2">
                         <option>Do you have Pets?</option>
                         <option value={"yes"}>Yes</option>
@@ -667,7 +663,7 @@ const Looking_for_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Your Property Type
                       </label> */}
-                     
+
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2">
                         <option>Do You Smoke?</option>
                         <option value={"yes"}>Yes</option>
@@ -676,11 +672,10 @@ const Looking_for_housing = () => {
                     </div>
 
                     <div className="col-md-6">
-                      
                       <Input
                         star={"*"}
                         type={""}
-                        required = {true}
+                        required={true}
                         className={
                           " tw-w-full border tw-py-3 tw-px-3 tw-rounded-xl  "
                         }
@@ -689,7 +684,6 @@ const Looking_for_housing = () => {
                       />
                     </div>
                     <div className="col-md-6">
-                     
                       <Input
                         star={"*"}
                         type={""}
@@ -707,11 +701,64 @@ const Looking_for_housing = () => {
                         className={
                           " tw-uppercase tw-mx-auto  tw-text-sm    tw-py-3 tw-bg-primary  tw-w-full tw-rounded-xl  tw-text-white "
                         }
-                       
                       />
                     </div>
                   </div>
                 </form>
+              </div>
+            </div>
+
+            <div className="col-md-4  row gap-3 tw-justify-center tw-text-center">
+              <div></div>
+              <img
+                src={rentimage1}
+                className=" tw-rounded-3xl tw-w-full tw-mt-14  "
+
+                // keeps image fixed at the top of its container while scrolling
+              />
+
+              <div className="">
+                {" "}
+                <h2>Find Your Perfect Rental Home</h2>
+                <p>
+                  Fill out the form with your preferences, and we'll show you
+                  the best rental options. Start your search today and discover
+                  homes that fit your needs.
+                </p>
+              </div>
+
+              <img
+                src={rentimage2}
+                className=" tw-rounded-3xl tw-w-full"
+
+                // keeps image fixed at the top of its container while scrolling
+              />
+
+              <div className="">
+                {" "}
+                <h2>Your Ideal Rental Is Just a Few Clicks Away</h2>
+                <p>
+                  Enter your details, and we’ll present rental homes that match
+                  your criteria. Finding the perfect place has never been
+                  easier.
+                </p>
+              </div>
+
+              <img
+                src={rentimage3}
+                className=" tw-rounded-3xl tw-w-full"
+
+                // keeps image fixed at the top of its container while scrolling
+              />
+
+              <div className="">
+                {" "}
+                <h2>Browse Homes That Fit Your Needs</h2>
+                <p>
+                  Complete the form, and we’ll match you with available rental
+                  properties. Find a home that suits your style and budget
+                  today.
+                </p>
               </div>
             </div>
           </div>

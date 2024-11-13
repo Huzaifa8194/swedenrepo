@@ -11,6 +11,14 @@ import san from "../../assets/images/san.webp";
 import san2 from "../../assets/images/san2.webp";
 import { GoArrowUpRight, GoTriangleRight } from "react-icons/go";
 
+import forsaleicon from "../../assets/icons/sale.svg";
+
+import idicon from "../../assets/icons/id.svg";
+
+import availableicon from "../../assets/icons/tick.svg";
+
+import locationicon from "../../assets/icons/location.svg";
+
 import Header from "../../components/Header_New/Header";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
@@ -253,7 +261,7 @@ const Property_Details = ({
 
       <section className="">
         <section className="tw-bg-[#F5FAFF] tw-py-6">
-          <div className="container  tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white">
+          <div className="container  tw-rounded-2xl  px-4 tw-py-4 tw-shadow-lg tw-bg-white">
             <div className=" row g-3 tw-py-8">
               <div className="col-md-12">
                 <h3 style={{ color: "white", textAlign: "center" }}>
@@ -265,21 +273,34 @@ const Property_Details = ({
     <p className="tw-m-0 tw-pl-1 tw-font-bold tw-text-xl tw-text-gray">
       Status
     </p>
+    <div className="tw-flex tw-items-center tw-justify-between tw-mt-1">
     <h3 className="tw-ml-1 tw-mt-1">For Sale</h3>
+    <img src={forsaleicon} className="tw-w-10 tw-h-10" alt="For Sale Icon"/>
+</div>
+
+
+   
   </div>
 
   <div className="container tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white tw-flex-1 tw-mb-4 sm:tw-w-full md:tw-w-1/3">
     <p className="tw-m-0 tw-pl-1 tw-font-bold tw-text-xl tw-text-gray">
-      ID
+      Identification
     </p>
+    <div className="tw-flex tw-items-center tw-justify-between tw-mt-1">
     <h3 className="tw-ml-1 tw-mt-1">475</h3>
+    <img src={idicon} className="tw-w-10 tw-h-10" alt="For Sale Icon"/>
+</div>
+       
   </div>
 
   <div className="container tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white tw-flex-1 tw-mb-4 sm:tw-w-full md:tw-w-1/3">
     <p className="tw-m-0 tw-pl-1 tw-font-bold tw-text-xl tw-text-gray">
       Available Status
     </p>
+    <div className="tw-flex tw-items-center tw-justify-between tw-mt-1">
     <h3 className="tw-ml-1 tw-mt-1">Available</h3>
+    <img src={availableicon} className="tw-w-10 tw-h-10" alt="For Sale Icon"/>
+</div>
   </div>
 </div>
 
@@ -288,12 +309,12 @@ const Property_Details = ({
                 <p className="tw-m-0 tw-pl-1 tw-font-bold   tw-text-xl tw-text-gray">
                   Address
                 </p>
+                <div className="tw-flex tw-items-center tw-items-center tw-justify-between  tw-mt-1">
+    <p className="tw-ml-1 tw-font-bold tw-mt-2">SKOLGATAN 2 LGH 1402, 22361 LUND, LUND, SWEDEN</p>
+    <img src={locationicon} className="tw-w-12 tw-h-12" alt="For Sale Icon"/>
+</div>
 
-                <p className="  tw-flex tw-items-center tw-gap-3 tw-m-0 tw-text-black tw-ml-1 tw-mt-1 tw-font-bold  ">
-                  {" "}
-                  <IoLocationOutline size={30} />
-                  SKOLGATAN 2 LGH 1402, 22361 LUND, LUND, SWEDEN
-                </p>
+              
               </div>
             </div>
             <div className="row justify-content-center align-items-center">
