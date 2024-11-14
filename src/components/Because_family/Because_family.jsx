@@ -124,7 +124,7 @@ const Because_family = () => {
     {
       id: 'service7',
       title: t('EOR & Payroll Services'),
-      subtitle: t('EOR &') + '<strong>' + t('Payroll Services') + '</strong>',
+      subtitle: t('EOR &') + '<strong>' + t(' Payroll Services') + '</strong>',
       text: t(''),
       textTwo: t('How Payroll Services Work:'),
       description: [
@@ -137,6 +137,7 @@ const Because_family = () => {
         '<strong>' + t('Tax Compliance:') + '</strong>' + " " + t('Our experts are well-versed in the latest tax regulations and ensure that your operations stay compliant, helping you avoid fines and penalties.'),
         '<strong>' + t('Benefit Administration:') + '</strong>' + " " + t('We take care of administering employee benefits, from healthcare to retirement plans, ensuring that the process is efficient for both you and your employees'),
       ],
+      link: '/eorpayroll',
       image: nine_image,
       component: null,
       btnText: t('Read More!'),

@@ -4,9 +4,11 @@ import Navbar from "../../components/Header/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { PiMapPin } from "react-icons/pi";
 import work from "../../assets/images/how-it-works.png";
-import camera from "../../assets/images/no-picture-taking.png";
+import camera from "../../assets/iconscout/camera.png";
 import payments from "../../assets/images/failed.png";
-import agreement from "../../assets/images/view-document.png";
+import agreement from "../../assets/iconscout/contract.png";
+
+import serviceimage from "../../assets/iconscout/servicecharge.png"
 import rent from "../../assets/images/find-home.png";
 import house from "../../assets/images/looking-for-housing.png";
 
@@ -108,8 +110,8 @@ const Housing = () => {
                   </h3>
                 </div>
                 <p className=" tw-text-gray"></p>
-                <div className=" col  tw-pt-5">
-                <div className="tw-mx-8">
+                <div className=" col ">
+                <div className="tw-mx-8 tw-mb-4 p-4 tw-bg-white tw-rounded-2xl tw-shadow-lg">
                     <div className="tw-flex tw-items-start">
                       <img src={camera} alt="" className="tw-w-24" />
                       <div className="tw-ml-8">
@@ -126,7 +128,7 @@ const Housing = () => {
                     </div>
                   </div>
 
-                  <div className="tw-mx-8">
+                  <div className="tw-mx-8 tw-my-4 p-4  tw-rounded-2xl tw-shadow-lg">
                     <div className="tw-flex tw-items-start">
                       <img src={rent} alt="" className="tw-w-24" />
                       <div className="tw-ml-8">
@@ -144,7 +146,7 @@ const Housing = () => {
                     </div>
                   </div>
 
-                  <div className="tw-mx-8">
+                  <div className="tw-mx-8 tw-my-4 p-4 tw-rounded-2xl tw-shadow-lg">
                     <div className="tw-flex tw-items-start">
                       <img src={payments} alt="" className="tw-w-24" />
                       <div className="tw-ml-8">
@@ -162,9 +164,9 @@ const Housing = () => {
                     </div>
                   </div>
 
-                  <div className="tw-mx-8">
+                  <div className="tw-mx-8 tw-my-4 tw-rounded-2xl tw-shadow-lg tw-p-4">
                     <div className="tw-flex tw-items-start">
-                      <img src={agreement} alt="" className="tw-w-24" />
+                      <img src={serviceimage} alt="" className="tw-w-24" />
                       <div className="tw-ml-8">
                         <h5 className="tw-pt-2">Service Charges (Tenants)</h5>
                         <p className="tw-text-gray">

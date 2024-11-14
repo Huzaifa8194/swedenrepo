@@ -38,7 +38,7 @@ const Hero = () => {
                 {t("We offer complete relocation services to our worldwide clients including residence & work permits, home finding, school pre-search, integration, and setting-in services.")}
               </motion.p>
             </motion.div>
-            <div className="  tw-flex sm:tw-flex-row tw-flex-col tw-gap-7 tw-pt-5">
+            <div className="  tw-flex sm:tw-flex-row tw-flex-col tw-gap-5 tw-pt-5">
               <Link to={'/services'} className=" ">
                 <Button className={'btn-warning'} label={t('Our Services')} />
               </Link>

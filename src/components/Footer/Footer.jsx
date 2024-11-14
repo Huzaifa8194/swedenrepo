@@ -7,6 +7,12 @@ import sweden from "../../assets/images/icons8-sweden.png";
 import denmark from "../../assets/images/icons8-denmark.png";
 import { useTranslation } from 'react-i18next';
 
+import Facebookicon from "../../assets/icons/facebook.png";
+import Twittericon from "../../assets/icons/twitter.png";
+import Instagramicon from "../../assets/icons/instagram.png";
+import Linkedinicon from "../../assets/icons/linkedin.png";
+import Youtubeicon from "../../assets/icons/youtube.png";
+
 const Footer = () => {
   const { t } = useTranslation();
 
@@ -46,61 +52,63 @@ const Footer = () => {
                     </div>
 
                     <hr className=" tw-border  tw-border-gray" />
-                    <div className="social-icons circle">
+                    <div className=" ">
                       <ul className="list-inline p-0  tw-flex tw-gap-2 cmt-textcolor-skincolor">
-                        <li className="social-facebook tw-w-9 tw-h-9 tw-flex tw-justify-center tw-items-center tw-rounded-full tw-border  tw-border-blue">
+                        <li className="social-facebook tw-w-12 tw-h-9 tw-flex tw-justify-center tw-items-center ">
                           <Link
                             className=" "
                             target="_blank"
                             to="https://www.facebook.com/Swedenrelocators/"
                             rel="noopener"
                           >
-                            <span className="ti ti-facebook" />
+                            <img src = {Facebookicon} alt="" />
                           </Link>
                         </li>
-                        <li className="social-twitter tw-w-9 tw-h-9 tw-flex tw-justify-center tw-items-center tw-rounded-full tw-border  tw-border-blue">
+                        <li className="social-twitter tw-w-12 tw-h-9 tw-flex tw-justify-center tw-items-center ">
                           <Link
                             className="tooltip-top"
                             target="_blank"
                             to="https://twitter.com/swedenrelocator"
                             rel="noopener"
                           >
-                            <span className="ti ti-twitter-alt" />
+                            <img src = {Twittericon} alt="" />
                           </Link>
                         </li>
-                        <li className="social-instagram tw-w-9 tw-h-9 tw-flex tw-justify-center tw-items-center tw-rounded-full tw-border  tw-border-blue">
+                        <li className="social-instagram tw-w-12 tw-h-9 tw-flex tw-justify-center tw-items-center ">
                           <Link
                             className="tooltip-top"
                             target="_blank"
                             to="https://www.instagram.com/sweden_relocators/"
                             rel="noopener"
                           >
-                            <span className="ti ti-instagram" />
+                            <img src = {Instagramicon} alt="" />
                           </Link>
                         </li>
-                        <li className="social-google tw-w-9 tw-h-9 tw-flex tw-justify-center tw-items-center tw-rounded-full tw-border  tw-border-blue">
+                        <li className="social-google tw-w-12 tw-h-9 tw-flex tw-justify-center tw-items-center ">
                           <Link
                             className="tooltip-top"
                             target="_blank"
                             to="https://www.youtube.com/channel/UCa5vSxO9UajNMUluDBloi2w"
                             rel="noopener"
                           >
-                            <span className="ti ti-youtube" />
+                            <img src = {Youtubeicon} alt="" />
                           </Link>
                         </li>
-                        <li className="social-google tw-w-9 tw-h-9 tw-flex tw-justify-center tw-items-center tw-rounded-full tw-border  tw-border-blue">
+                        <li className="social-google tw-w-12 tw-h-9 tw-flex tw-justify-center tw-items-center  ">
                           <Link
                             className="tooltip-top"
                             target="_blank"
                             to="https://www.linkedin.com/in/sweden-relocators-ab-b7151424"
                             rel="noopener"
                           >
-                            <span className="ti ti-linkedin" />
+                          <img src={Linkedinicon} alt="" className="w-full h-full object-fill" />
+
+
                           </Link>
                         </li>
                       </ul>
                     </div>
-                    <div className=" tw-flex tw-gap-3">
+                    <div className="tw-justify-center tw-pt-4 tw-flex tw-gap-3">
                       <Link
                         to={
                           "https://apps.apple.com/ca/app/sweden-relocators/id1621885091"

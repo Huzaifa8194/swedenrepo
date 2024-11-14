@@ -8,11 +8,10 @@ import { Link } from "react-router-dom";
 import { GoTriangleRight } from "react-icons/go";
 import { useTranslation } from "react-i18next";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
-import rentimage1 from "../../assets/images/rentoutyourhouse1.png";
-import rentimage2 from "../../assets/images/rentoutyourhouse2.png";
-import rentimage3 from "../../assets/images/rentoutyourhouse3.png";
-import rentimage4 from "../../assets/images/rentoutyourhouse4.png";
-import rentimage5 from "../../assets/images/rentoutyourhouse5.png";
+import rentimage1 from "../../assets/iconscout/rentimage1.png";
+import rentimage4 from "../../assets/iconscout/rentimage2.png";
+import rentimage2 from "../../assets/iconscout/rentimage5.png";
+import rentimage3 from "../../assets/iconscout/rentimage3.png";
 
 import Header from "../../components/Header_New/Header";
 const Looking_for_housing = () => {
@@ -239,9 +238,9 @@ const Looking_for_housing = () => {
         backgroundImage={homeBgImage}
       />
       <div className=" tw-pt-8 tw-bg-[#F5FAFF]">
-        <section className=" tw-bg-[#F5FAFF]">
-          <div className="container tw-rounded-2xl tw-mb-1 px-4 tw-py-4 tw-shadow tw-bg-white">
-            <div className="row tw-py-8">
+        <section className=" tw-px-6 tw-bg-[#F5FAFF]">
+          <section className=" tw-rounded-2xl tw-mb-1 px-4 tw-py-4 tw-shadow tw-bg-white">
+            <div className="tw-w-full">
               <span className=" tw-flex tw-items-center tw-gap-2">
                 {" "}
                 <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
@@ -260,26 +259,25 @@ const Looking_for_housing = () => {
                 as possible.
               </p>
             </div>
-          </div>
+          </section>
         </section>
       </div>
-      <section className=" md:tw-pt-2 tw-pt-4 tw-bg-[#F5FAFF]">
+      <section className=" tw-pb-8 tw-bg-[#F5FAFF]">
         <div className="container-fluid  tw-bg-[#F5FAFF] ">
           <div className="row tw-justify-start tw-items-start">
             <div className="col-md-8 tw-mx-2">
-              <div className=" tw-bg-[#F5FAFF] tw-pt-8 ">
-                <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  "> Details</h5>
-
-                  <h6 className=" tw-text-black ">
-                    {" "}
-                    <i class="fa fa-building"></i> Provide the details & We will
-                    assist you in finding the right place in Skåne & Copenhagen.
-                  </h6>
-                </div>
-
+              <div className=" tw-bg-[#F5FAFF] tw-pt-8 tw-pl-10">
                 <form>
                   <div className="row g-3 tw-pt-6  tw-rounded-2xl px-4 tw-py-4 tw-shadow-lg tw-bg-white border-t-2 border-black">
+                    <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                        FILL UP THE DETAILS OF YOUR HOUSE
+                      </span>
+                      <h2>Details</h2>
+                    </div>
+
                     <div className="col-md-6">
                       {/* <label
                         htmlFor="first_name"
@@ -416,12 +414,13 @@ const Looking_for_housing = () => {
                       </>
                     ) : null}
 
-                    <div className="row g-3 tw-rounded-md tw-py-4 tw-bg-white border-t-2 border-b-2 border-black">
-                      <h5 className="tw-text-black">Family Details</h5>
-
-                      <h6 className="tw-text-gray">
+                    <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                         Fill up your family details
-                      </h6>
+                      </span>
+                      <h2>Family Details</h2>
                     </div>
 
                     <div
@@ -487,12 +486,13 @@ const Looking_for_housing = () => {
                       </select>
                     </div>
 
-                    <div className="row g-3 tw-rounded-md tw-py-4 tw-bg-white border-t-2 border-b-2 border-black">
-                      <h5 className="tw-text-black">Contract Details</h5>
-
-                      <h6 className="tw-text-gray">
+                    <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                         Fill up your contract details
-                      </h6>
+                      </span>
+                      <h2>Contract Details</h2>
                     </div>
 
                     <div
@@ -626,12 +626,13 @@ const Looking_for_housing = () => {
                       />
                     </div>
 
-                    <div className="row g-3 tw-rounded-md tw-py-4 tw-bg-white border-t-2 border-b-2 border-black">
-                      <h5 className="tw-text-black">Other Details</h5>
-
-                      <h6 className="tw-text-gray">
+                    <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                         Fill up your Other Details
-                      </h6>
+                      </span>
+                      <h2>Other Details</h2>
                     </div>
 
                     <div
@@ -710,6 +711,31 @@ const Looking_for_housing = () => {
 
             <div className="col-md-4  row gap-3 tw-justify-center tw-text-center">
               <div></div>
+
+              <div className=" tw-pt-10">
+      <Link to="/available_housing" className="
+        
+          tw-bg-primary
+          tw-text-white
+          tw-px-6
+          tw-py-3
+          tw-rounded-lg
+          tw-font-semibold
+          tw-text-lg
+          tw-transition
+          tw-duration-300
+          hover:tw-bg-blue-100
+          focus:tw-ring-2
+          focus:tw-ring-blue-100
+          active:tw-scale-95
+          tw-shadow-lg
+          hover:tw-shadow-xl
+        ">
+        Find all Available Housing
+      </Link>
+    </div>
+
+
               <img
                 src={rentimage1}
                 className=" tw-rounded-3xl tw-w-full tw-mt-14  "
@@ -719,7 +745,7 @@ const Looking_for_housing = () => {
 
               <div className="">
                 {" "}
-                <h2>Find Your Perfect Rental Home</h2>
+                <h7 className="tw-text-light" style = {{fontSize:"1.6em", color:"#1F2437", fontWeight:"300"}} >Find Your Perfect Rental Home</h7>
                 <p>
                   Fill out the form with your preferences, and we'll show you
                   the best rental options. Start your search today and discover
@@ -736,7 +762,7 @@ const Looking_for_housing = () => {
 
               <div className="">
                 {" "}
-                <h2>Your Ideal Rental Is Just a Few Clicks Away</h2>
+                <h7 className="tw-text-light" style = {{fontSize:"1.6em", color:"#1F2437", fontWeight:"300"}} >Your Ideal Rental Is Just a Few Clicks Away</h7>
                 <p>
                   Enter your details, and we’ll present rental homes that match
                   your criteria. Finding the perfect place has never been
@@ -744,22 +770,7 @@ const Looking_for_housing = () => {
                 </p>
               </div>
 
-              <img
-                src={rentimage3}
-                className=" tw-rounded-3xl tw-w-full"
-
-                // keeps image fixed at the top of its container while scrolling
-              />
-
-              <div className="">
-                {" "}
-                <h2>Browse Homes That Fit Your Needs</h2>
-                <p>
-                  Complete the form, and we’ll match you with available rental
-                  properties. Find a home that suits your style and budget
-                  today.
-                </p>
-              </div>
+              
             </div>
           </div>
         </div>

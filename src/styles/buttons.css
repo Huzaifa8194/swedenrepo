@@ -2,7 +2,7 @@
   @apply tw-border-black tw-border tw-text-black  tw-rounded-full hover:tw-bg-blue hover:tw-border-blue hover:tw-text-white   tw-text-[14px] tw-capitalize tw-font-medium tw-px-[35px] tw-py-[13px] tw-cursor-pointer !important;
 }
 .btn-warning {
-  @apply tw-border-blue tw-border tw-text-black  tw-rounded-full hover:tw-bg-blue hover:tw-border-blue hover:tw-text-white   tw-text-[14px] tw-capitalize tw-font-medium tw-px-[35px] tw-py-[13px] tw-cursor-pointer;
+  @apply tw-border-blue tw-border tw-bg-primary tw-text-white  tw-rounded-full hover:tw-bg-blue hover:tw-border-blue hover:tw-text-white   tw-text-[14px] tw-capitalize tw-font-medium tw-px-[35px] tw-py-[13px] tw-cursor-pointer;
 }
 
 .btn-Plain {
@@ -14,11 +14,11 @@
 }
 
 .btn-dark {
-  @apply tw-border tw-rounded-full tw-bg-blue tw-border-blue tw-text-white   tw-text-[14px] tw-capitalize tw-font-medium tw-px-[25px] 2xl:tw-px-[35px] tw-py-[13px] tw-cursor-pointer !important;
+  @apply tw-border tw-rounded-full tw-bg-primary tw-border-primary tw-text-white   tw-text-[14px] tw-capitalize tw-font-medium tw-px-[25px] 2xl:tw-px-[35px] tw-py-[13px] tw-cursor-pointer !important;
 }
 
 .btn-light {
-  @apply tw-border tw-rounded-full tw-bg-[#EFB612] tw-border-[#EFB612] tw-text-white   tw-text-[14px] tw-capitalize tw-font-medium tw-px-[25px] 2xl:tw-px-[35px] tw-py-[13px] tw-cursor-pointer !important;
+  @apply tw-border tw-rounded-full tw-bg-white tw-border-black tw-text-black   tw-text-[14px] tw-capitalize tw-font-medium tw-px-[25px] 2xl:tw-px-[35px] tw-py-[13px] tw-cursor-pointer !important;
 }
 
 .btn-primary {

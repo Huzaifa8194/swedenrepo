@@ -12,11 +12,13 @@ import Header from "../../components/Header_New/Header";
 import { useTranslation } from "react-i18next";
 
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
-import rentimage1 from "../../assets/images/rentoutyourhouse1.png";
-import rentimage2 from "../../assets/images/rentoutyourhouse2.png";
-import rentimage3 from "../../assets/images/rentoutyourhouse3.png";
-import rentimage4 from "../../assets/images/rentoutyourhouse4.png";
-import rentimage5 from "../../assets/images/rentoutyourhouse5.png";
+import rentimage2 from "../../assets/iconscout/rentimage1.png";
+import rentimage1 from "../../assets/iconscout/rentimage2.png";
+import rentimage3 from "../../assets/iconscout/rentimage3.png";
+import rentimage4 from "../../assets/iconscout/rentimage4.png";
+import rentimage5 from "../../assets/iconscout/rentimage5.png";
+
+import { color } from "framer-motion";
 
 const Rent_out_your_housing = () => {
   const { t } = useTranslation();
@@ -35,9 +37,9 @@ const Rent_out_your_housing = () => {
         )}
         backgroundImage={homeBgImage}
       />
-      <section className=" md:tw-pt-8 tw-pt-8 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-[#F5FAFF]">
-        <section className="">
-          <div className="container tw-rounded-2xl tw-mb-1 px-4 tw-py-4 tw-shadow tw-bg-white">
+      <section className=" md:tw-pt-8 tw-pt-8 tw-rounded-2xl  px-4 tw-py-4 tw-shadow-2xl tw-bg-[#F5FAFF]">
+        <section className="tw-w-full">
+          <div className=" tw-rounded-2xl  px-4 tw-py-4 tw-shadow-lg tw-bg-white">
             <div className="row tw-py-8 ">
               <span className=" tw-flex tw-items-center tw-gap-2">
                 {" "}
@@ -47,6 +49,8 @@ const Rent_out_your_housing = () => {
               <h2>
                 List Your Property with <strong>Us</strong>
               </h2>
+
+             
 
               <p className="tw-text-gray">
                 Looking to rent out your property quickly and efficiently?
@@ -65,19 +69,29 @@ const Rent_out_your_housing = () => {
         <div className="container-fluid  tw-px-4 ">
           <div className="row tw-justify-left tw-items-start ">
             <div className="col-md-8 ">
-              <div className="  tw-pt-10   ">
-                <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  "> Details</h5>
-
-                  <h6 className=" tw-text-black ">
-                    {" "}
-                    <i class="fa fa-building"></i> FILL UP THE DETAILS OF YOUR
-                    HOUSE
-                  </h6>
-                </div>
+              <div className="  tw-pt-8 tw-pl-10  ">
+              
 
                 <form>
-                  <div className="row g-3 tw-pt-6 tw-rounded-2xl px-4 tw-py-4 tw-shadow-lg tw-bg-white border-t-2 border-black">
+                  <div className="row g-3 tw-pt-6  tw-rounded-2xl px-4 tw-py-4 tw-shadow-lg tw-bg-white border-t-2 border-black">
+                   
+                  <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                {" "}
+                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                FILL UP THE DETAILS OF YOUR HOUSE
+              </span>
+              <h2>
+              Details
+              </h2>
+                    </div>
+
+                    <div
+                      className="tw-border-t-2"
+                      style={{ borderColor: "rgba(145, 158, 171, 0.2)" }}
+                    ></div>
+                   
+                   
                     <div className="col-md-6">
                       {/* <label
                         htmlFor="first_name"
@@ -218,12 +232,15 @@ const Rent_out_your_housing = () => {
                       />
                     </div>
 
-                    <div className="row g-3 tw-rounded-md tw-py-4 tw-bg-white border-t-2 border-b-2 border-black">
-                      <h5 className="tw-text-black">BASIC NECESSITIES</h5>
-
-                      <h6 className="tw-text-gray">
-                        FILL UP THE BASIC NECESSITIES OF YOUR HOUSE
-                      </h6>
+                    <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                {" "}
+                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                FILL UP THE BASIC NECESSITIES OF YOUR HOUSE
+              </span>
+              <h2>
+              BASIC NECESSITIES
+              </h2>
                     </div>
 
                     <div
@@ -410,12 +427,15 @@ const Rent_out_your_housing = () => {
                       </select>
                     </div>
 
-                    <div className="row g-3  tw-rounded-md   tw-py-4  tw-bg-white ">
-                      <h5 className=" tw-text-black  "> CONTRACT DETAILS</h5>
-
-                      <h6 className=" tw-text-gray ">
-                        FILL UP THE CONTRACT DETAILS OF YOUR HOUSE
-                      </h6>
+                    <div className="row g-1 tw-rounded-md  tw-pt-10  tw-pb-4  tw-bg-white ">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                {" "}
+                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                FILL UP THE CONTRACT DETAILS OF YOUR HOUSE
+              </span>
+              <h2>
+              CONTRACT DETAILS
+              </h2>
                     </div>
                     <div
                       className="tw-border-t-2"
@@ -512,14 +532,15 @@ const Rent_out_your_housing = () => {
                       </select>
                     </div>
 
-                    <div className="row g-3  tw-rounded-md   tw-py-4  tw-bg-white ">
-                      <h5 className=" tw-text-black  ">
-                        PROPERTY DETAILS & PICTURES
-                      </h5>
-
-                      <h6 className=" tw-text-gray ">
-                        FILL UP THE PROPERTY DETAILS & PICTURES OF YOUR HOUSE
-                      </h6>
+                    <div className="row   tw-rounded-md  tw-pt-10 tw-pb-4  tw-bg-white ">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                {" "}
+                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                FILL UP THE PROPERTY DETAILS & PICTURES OF YOUR HOUSE
+              </span>
+              <h2>
+              PROPERTY DETAILS & PICTURES
+              </h2>
                     </div>
                     <div
                       className="tw-border-t-2"
@@ -571,12 +592,15 @@ const Rent_out_your_housing = () => {
                       />
                     </div>
 
-                    <div className="row g-3  tw-rounded-md   tw-py-4  tw-bg-white ">
-                      <h5 className=" tw-text-black  ">BANK DETAILS</h5>
-
-                      <h6 className=" tw-text-gray ">
-                        FILL UP THE PROPERTY BANK DETAILS
-                      </h6>
+                    <div className="row   tw-rounded-md  tw-pt-10 tw-pb-4  tw-bg-white ">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                {" "}
+                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                FILL UP THE PROPERTY BANK DETAILS
+              </span>
+              <h2>
+              BANK DETAILS
+              </h2> 
                     </div>
                     <div
                       className="tw-border-t-2"
@@ -619,12 +643,15 @@ const Rent_out_your_housing = () => {
                       />
                     </div>
 
-                    <div className="row g-3  tw-rounded-md   tw-py-4  tw-bg-white ">
-                      <h5 className=" tw-text-black  ">FURTHER BANK DETAILS</h5>
-
-                      <h6 className=" tw-text-gray ">
-                        FILL UP THE PROPERTY BANK DETAILS
-                      </h6>
+                    <div className="row   tw-rounded-md  tw-pt-10 tw-pb-4  tw-bg-white ">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                {" "}
+                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                FILL UP THE PROPERTY BANK DETAILS
+              </span>
+              <h2>
+              FURTHER BANK DETAILS
+              </h2>
                     </div>
 
                     <div
@@ -714,7 +741,7 @@ const Rent_out_your_housing = () => {
 
               <div className="">
                 {" "}
-                <h2>Maximize Your Property’s Potential</h2>
+                <h7 className="tw-text-light" style = {{fontSize:"1.6em", color:"#1F2437", fontWeight:"300"}} >Maximize Your Property’s Potential</h7>
                 <p>
                   Leverage our platform to showcase your property to a wide
                   range of potential tenants. Fill out the necessary
@@ -732,7 +759,7 @@ const Rent_out_your_housing = () => {
 
               <div className="">
                 {" "}
-                <h2>Personalized Search Experience</h2>
+                <h7 className="tw-text-light" style = {{fontSize:"1.6em", color:"#1F2437", fontWeight:"300"}} >Personalized Search Experience</h7>
                 <p>
                   We prioritize your preferences to show only the most relevant
                   listings. Whether it’s a cozy apartment or a spacious family
@@ -749,7 +776,7 @@ const Rent_out_your_housing = () => {
 
               <div className="">
                 {" "}
-                <h2>Trust and Transparency</h2>
+                <h7 className="tw-text-light" style = {{fontSize:"1.6em", color:"#1F2437", fontWeight:"300"}} >Trust and Transparency</h7>
                 <p>
                   Our goal is to make renting a hassle-free experience. We
                   provide clear information on each property, ensuring you feel
@@ -766,7 +793,7 @@ const Rent_out_your_housing = () => {
 
               <div className="">
                 {" "}
-                <h2>Rent Out Your Home with Ease</h2>
+                <h7 className="tw-text-light" style = {{fontSize:"1.6em", color:"#1F2437", fontWeight:"300"}} >Rent Out Your Home with Ease</h7>
                 <p>
                   Start the process of renting out your property by filling in
                   the details about your house. Our simple form helps you get
@@ -775,23 +802,7 @@ const Rent_out_your_housing = () => {
                 </p>
               </div>
 
-              <img
-                src={rentimage5}
-                className=" tw-rounded-3xl tw-w-full"
-
-                // keeps image fixed at the top of its container while scrolling
-              />
-
-              <div className="">
-                {" "}
-                <h2>List Your Home in Minutes</h2>
-                <p>
-                  Renting out your house doesn’t have to be complicated. Just
-                  provide the details about your property, and we’ll take care
-                  of the rest, connecting you with interested renters in no
-                  time.
-                </p>
-              </div>
+              
             </div>
           </div>
         </div>

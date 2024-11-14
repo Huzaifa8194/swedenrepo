@@ -53,6 +53,7 @@ import Work_permit from '../screens/assessment_register/Work_permit';
 import Student_assessments from '../screens/assessment_register/Student_assessments';
 import { useSelector } from 'react-redux';
 import Backdrop from '../components/Backdrop/Backdrop';
+import EORPayroll from '../screens/ServiceDetails/eorpayroll';
 const Routing = () => {
   // const ScrollToTop = () => {
   //   const location = useLocation();
@@ -80,6 +81,7 @@ const Routing = () => {
           <Route path="/new_in_sweden" element={<New_In_sweden />} />
           <Route path="/contact_us" element={<ContactUs />} />
           <Route path="/about_us" element={<AboutUs />} />
+          <Route path="/eorpayroll" element={<EORPayroll />} />
           <Route path="/set_up_your_account" element={<Set_up_your_account />} />
           <Route path="/book_your_appointment" element={<Book_your_appointment />} />
           <Route path="/rent_out_your_housing" element={<Rent_out_your_housing />} />
