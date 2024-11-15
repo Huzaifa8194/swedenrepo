@@ -67,7 +67,7 @@ const Rent_out_your_housing = () => {
         </section>
 
         <div className="container-fluid  tw-px-4 ">
-          <div className="row tw-justify-left tw-items-start ">
+          <div className="row tw-justify-left  tw-gap-5 tw-items-start ">
             <div className="col-md-8 ">
               <div className="  tw-pt-8 tw-pl-10  ">
               
@@ -81,9 +81,9 @@ const Rent_out_your_housing = () => {
                 <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                 FILL UP THE DETAILS OF YOUR HOUSE
               </span>
-              <h2>
+              <h7 className="tw-text-light" style = {{fontSize:"1.8em", color:"#1F2437", fontWeight:"300"}} >
               Details
-              </h2>
+              </h7>
                     </div>
 
                     <div
@@ -238,9 +238,9 @@ const Rent_out_your_housing = () => {
                 <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                 FILL UP THE BASIC NECESSITIES OF YOUR HOUSE
               </span>
-              <h2>
+              <h7 className="tw-text-light" style = {{fontSize:"1.8em", color:"#1F2437", fontWeight:"300"}} >
               BASIC NECESSITIES
-              </h2>
+              </h7>
                     </div>
 
                     <div
@@ -433,9 +433,9 @@ const Rent_out_your_housing = () => {
                 <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                 FILL UP THE CONTRACT DETAILS OF YOUR HOUSE
               </span>
-              <h2>
+              <h7 className="tw-text-light" style = {{fontSize:"1.8em", color:"#1F2437", fontWeight:"300"}} >
               CONTRACT DETAILS
-              </h2>
+              </h7>
                     </div>
                     <div
                       className="tw-border-t-2"
@@ -538,9 +538,9 @@ const Rent_out_your_housing = () => {
                 <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                 FILL UP THE PROPERTY DETAILS & PICTURES OF YOUR HOUSE
               </span>
-              <h2>
+              <h7 className="tw-text-light" style = {{fontSize:"1.8em", color:"#1F2437", fontWeight:"300"}} >
               PROPERTY DETAILS & PICTURES
-              </h2>
+              </h7>
                     </div>
                     <div
                       className="tw-border-t-2"
@@ -598,9 +598,9 @@ const Rent_out_your_housing = () => {
                 <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                 FILL UP THE PROPERTY BANK DETAILS
               </span>
-              <h2>
+              <h7 className="tw-text-light" style = {{fontSize:"1.8em", color:"#1F2437", fontWeight:"300"}} >
               BANK DETAILS
-              </h2> 
+              </h7> 
                     </div>
                     <div
                       className="tw-border-t-2"
@@ -649,9 +649,9 @@ const Rent_out_your_housing = () => {
                 <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                 FILL UP THE PROPERTY BANK DETAILS
               </span>
-              <h2>
+              <h7 className="tw-text-light" style = {{fontSize:"1.8em", color:"#1F2437", fontWeight:"300"}} >
               FURTHER BANK DETAILS
-              </h2>
+              </h7>
                     </div>
 
                     <div
@@ -732,12 +732,14 @@ const Rent_out_your_housing = () => {
             <div className="col-md-4  row gap-3 tw-justify-center tw-text-center">
              
              <div></div>
+           
              <img
                 src={rentimage1}
-                className=" tw-rounded-3xl tw-w-full tw-mt-14  "
+                className=" tw-rounded-3xl tw-w-full tw-mt-14 tw-bg-white tw-shadow-lg "
 
                 // keeps image fixed at the top of its container while scrolling
               />
+           
 
               <div className="">
                 {" "}
@@ -752,7 +754,7 @@ const Rent_out_your_housing = () => {
 
               <img
                 src={rentimage2}
-                className=" tw-rounded-3xl tw-w-full"
+                  className=" tw-rounded-3xl tw-w-full tw-mt-14 tw-bg-white tw-shadow-lg "
 
                 // keeps image fixed at the top of its container while scrolling
               />
@@ -769,7 +771,7 @@ const Rent_out_your_housing = () => {
 
               <img
                 src={rentimage3}
-                className=" tw-rounded-3xl tw-w-full"
+                 className=" tw-rounded-3xl tw-w-full tw-mt-14 tw-bg-white tw-shadow-lg "
 
                 // keeps image fixed at the top of its container while scrolling
               />
@@ -786,7 +788,7 @@ const Rent_out_your_housing = () => {
 
               <img
                 src={rentimage4}
-                className=" tw-rounded-3xl tw-w-full"
+                 className=" tw-rounded-3xl tw-w-full tw-mt-14 tw-bg-white tw-shadow-lg "
 
                 // keeps image fixed at the top of its container while scrolling
               />

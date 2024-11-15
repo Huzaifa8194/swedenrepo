@@ -185,76 +185,254 @@ const MarriageDivorce = () => {
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
                 <div className="  md:tw-pl-32 tw-pl-3">
-                  <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                    {' '}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> GET STARTED
-                  </span>
-                  <h2>
-                    <strong>IN YOUR NEW LIFE</strong>
-                  </h2>
 
-                  <p className=" tw-text-gray">
-                    Getting married is beautiful. But to make sure that it will be a good experience for both you and your partner, it is important to have legal control. We help you with that, so that you can just enjoy your upcoming marriage. To
-                    get married in Sweden you should be 18 years old according to the law.
-                  </p>
-                  <p className=" tw-text-gray">
-                    Before getting married you should check in Swedish Tax Agency that you can get married without any hindrance. You need to fill a form and submit it to your kommun. They will approve you to be married.
-                  </p>
 
-                  <div>
-                    <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> ACCORDING TO SWEDISH LAW
-                    </span>
-                    <h2>
-                      <strong>The Following Are Impediments To Marriage</strong>
-                    </h2>
 
-                    <ul className=" tw-p-0 tw-pt-4">
-                      <li className=" tw-flex tw-items-center tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className=" m-0 tw-text-gray">if you or your partner are under the age of 18</p>
-                      </li>
-                      <li className=" tw-flex tw-items-center tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className=" m-0 tw-text-gray">if you are closely related to the person you want to marry</p>
-                      </li>
-                      <li className=" tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">if you or your partner are already married, or are registered partners</p>
-                      </li>
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className=" m-0 tw-text-gray">Swedish law also forbids forced marriage. This means that no one can force anyone else to marry. Everyone has the right to decide who they want to marry.</p>
-                      </li>
-                    </ul>
 
-                    <p className=" tw-text-gray">
-                      Marriage is between two consented and happy people. Wedding can be conducted in kommun or in a mosque or church etc and can be conducted by a a priest, imam or a registrar, for example. Civil marriages are performed by a person
-                      who has been appointed by the county administrative board.
-                    </p>
-                    <p className=" tw-text-gray">
-                      A civil marriage is a ceremony that is unconnected to any religion. If the wedding is a religious ceremony performed by a celebrant who does not have the right to solemnise marriages, the marriage is not official in the eyes of
-                      the law. For it to become official, a civil marriage is also required.
-                    </p>
-                  </div>
 
-                  <div className="row">
-                    <div className="col-md-8 tw-mx-auto">
-                      <img src={banner} alt="" />
-                    </div>
-                  </div>
 
-                  <p className=" tw-text-gray">
-                    However, sometimes it is best to go separately and get divorced. Unfortunately, this can create some challenges, especially when you are not in your home country. In those cases, things usually get easier if a third party takes
-                    care of all the legal stuff, so you can both use your energy to get on well.
-                  </p>
+
+
+
+
+                <div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Marriage Assistance in Sweden: Expert Guidance for a Smooth and Compliant Process
+  </span>
+  <h2>
+    <strong> Getting Married in Sweden: Requirements and Process </strong>
+  </h2>
+  <p className="tw-text-gray">
+    Marriage in Sweden is an attractive option for both residents and non-residents, thanks to the country’s welcoming legal environment and clear processes. Sweden Relocators provides comprehensive marriage assistance, guiding you through every step and ensuring that all legal requirements are met, making your journey to marriage in Sweden as seamless as possible.
+  </p>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Key Requirements for Marriage in Sweden</h4>
+    </li>
+  </ul>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Application for Marriage License (Hindersprövning):</strong> Hindersprövning is a mandatory examination process conducted by the Swedish Tax Agency (Skatteverket) to ensure there are no legal obstacles to the marriage.
+        Couples must submit this application, which verifies that both parties are legally eligible to marry. Swedish law prohibits marriage between close relatives or anyone already married.
+        Once approved, Skatteverket issues a certificate that confirms you are free to marry. This certificate is valid for four months from the date of issuance and must be submitted to the officiant before the ceremony.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Identification Requirements:</strong> Both parties must provide a valid form of identification, such as a passport or national ID card. Foreign nationals should be prepared to show additional proof of identity if required.
+        If either party is not a Swedish resident, they may need a certificate of no impediment from their home country. Our legal team will help you verify and obtain all necessary documents.
+      </p>
+      <p><br /></p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Proof of Civil Status:</strong> If you or your partner have been married before, you’ll need to provide proof of divorce or a death certificate of a deceased spouse.
+        These documents may need to be translated into Swedish or English if issued in another language. Sweden Relocators can arrange certified translations for any foreign documents required for the application.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Special Permissions:</strong> If either partner is under 18, Swedish law requires a special permission, which is rarely granted. Sweden Relocators can advise on any exceptional cases requiring permission and assist in navigating the legal requirements.
+      </p>
+      <p><br /></p>
+    </li>
+  </ul>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">The Marriage Process: Step-by-Step Guide</h4>
+    </li>
+  </ul>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Step 1: Apply for Hindersprövning (Marriage License):</strong> The first step to getting married in Sweden is to apply for a Hindersprövning certificate from Skatteverket. This application ensures that there are no legal barriers to the marriage and confirms your eligibility to wed.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Step 2: Choose Your Marriage Ceremony Type:</strong> In Sweden, you can choose between a civil ceremony and a religious ceremony. Both types are legally recognized, but the process and location may vary.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Step 3: Submit Documents to the Officiant:</strong> You must submit your Hindersprövning certificate and proof of identity to the officiant before the marriage ceremony. Our team coordinates with officiants to ensure all required documents are in order, avoiding last-minute complications.
+      </p>
+      <p><br /></p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Step 4: Marriage Ceremony:</strong> On the day of the ceremony, you’ll need two witnesses who are at least 18 years old. If you’re traveling from abroad, we can assist in arranging witnesses if needed. The ceremony itself is typically brief and can be customized according to your preferences, especially in the case of civil weddings.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Step 5: Registration of Marriage:</strong> Once the marriage ceremony is completed, it must be registered with Skatteverket to be legally recognized in Sweden. Our team ensures that all paperwork is promptly filed so that your marriage is officially registered without delay. If you or your partner are foreign nationals, we’ll also advise on any additional steps required to register your marriage in your home country.
+      </p>
+      <p><br /></p>
+    </li>
+  </ul>
+</div>
+<div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Additional Services and Legal Support for Marriage in Sweden
+  </span>
+  <h2>
+    <strong> Prenuptial Agreements </strong>
+  </h2>
+  <p className="tw-text-gray">
+    Sweden operates under a marital property regime where all assets acquired during the marriage are typically considered joint property unless otherwise agreed upon. If you and your partner wish to maintain separate ownership of certain assets, a prenuptial agreement is essential.
+  </p>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Drafting and Legal Advice:</strong> Our lawyers can assist in drafting a prenuptial agreement that meets Swedish legal standards and protects both parties' assets and financial interests.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Property Rights and Financial Planning:</strong> We provide guidance on asset division, ensuring that each party’s rights are upheld in case of separation.
+      </p>
+      <p><br /></p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong> Translation and Verification of Foreign Documents </strong>
+  </h2>
+  <p className="tw-text-gray">
+    If either partner is a foreign national, it’s likely that certain documents will need to be translated into Swedish or English. Sweden Relocators facilitates the translation and notarization of all foreign documents, ensuring they meet Swedish legal requirements.
+  </p>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Certified Translations:</strong> We work with certified translators to provide official translations accepted by Swedish authorities.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Document Verification:</strong> Our legal team reviews all documentation for accuracy, ensuring that the marriage process proceeds smoothly.
+      </p>
+      <p><br /></p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong> Post-Marriage Support </strong>
+  </h2>
+  <p className="tw-text-gray">
+    For foreign nationals, additional steps may be required after marriage to comply with Swedish residency laws. We provide post-marriage services such as:
+  </p>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Residence Permit Guidance:</strong> For non-EU spouses, we assist with residence permit applications and help you understand your rights and obligations under Swedish immigration laws.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Registration of Marriage Abroad:</strong> If required, we can assist in registering your marriage in your home country, ensuring legal recognition both in Sweden and abroad.
+      </p>
+      <p><br /></p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong> Divorce Assistance in Sweden: Expert Legal Support for a Smooth Transition </strong>
+  </h2>
+  <p className="tw-text-gray">
+    While planning a marriage is an exciting milestone, circumstances can sometimes change. If you are facing a separation or divorce in Sweden, our experienced family lawyers at Sweden Relocators offer sensitive and professional assistance to guide you through this process. Divorce in Sweden is straightforward and operates under a no-fault principle, but there are still specific legal requirements, especially if children or shared assets are involved.
+  </p>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Filing for Divorce:</strong> Guidance through the application process for mutual or single-party divorce, including support with required documents.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Division of Assets:</strong> Assistance with fair division of marital assets, taking into account any prenuptial agreements or shared property.
+      </p>
+      <p><br /></p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Child Custody and Support Arrangements:</strong> Support in establishing child custody and child support arrangements that prioritize the welfare of your children.
+      </p>
+      <p><br /></p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Spousal Support and Maintenance:</strong> Guidance on determining whether spousal support is necessary, and assistance with negotiations.
+      </p>
+      <p><br /></p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong> Why Choose Sweden Relocators for Marriage and Divorce Assistance in Sweden? </strong>
+  </h2>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Experienced Family Lawyers:</strong> Our team includes skilled family law specialists who understand the specific nuances of marriage and divorce law in Sweden.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Personalized Support:</strong> We know every situation is unique. We offer tailored solutions to meet your individual needs, whether planning a marriage or undergoing a divorce.
+      </p>
+      <p><br /></p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Clear and Transparent Process:</strong> We provide full transparency regarding legal procedures, timelines, and costs so that you are fully informed.
+      </p>
+      <p><br /></p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Efficient Document Handling:</strong> From gathering required documents to filing applications, our team ensures that every detail is handled with precision, saving you time and reducing stress.
+      </p>
+      <p><br /></p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Confidentiality and Sensitivity:</strong> We prioritize confidentiality and provide a compassionate approach to help you through sensitive transitions.
+      </p>
+      <p><br /></p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong> Sign Up Today! </strong>
+  </h2>
+  <p className="tw-text-gray">
+    Whether you’re planning to get married or are seeking support through a divorce, Sweden Relocators is here to guide you. Contact us today to learn more about our marriage and divorce assistance services in Sweden, and let our experienced legal team help you navigate the process with confidence and care.
+  </p>
+</div>
+
+
+
+
+
+
+
+               
                 </div>
               </div>
 

@@ -262,9 +262,9 @@ const Looking_for_housing = () => {
           </section>
         </section>
       </div>
-      <section className=" tw-pb-8 tw-bg-[#F5FAFF]">
-        <div className="container-fluid  tw-bg-[#F5FAFF] ">
-          <div className="row tw-justify-start tw-items-start">
+      <section className=" tw-pb-8  tw-pr-12 tw-pl-4 tw-bg-[#F5FAFF]">
+      
+          <div className="row tw-gap-2 tw-justify-start tw-items-start">
             <div className="col-md-8 tw-mx-2">
               <div className=" tw-bg-[#F5FAFF] tw-pt-8 tw-pl-10">
                 <form>
@@ -275,7 +275,16 @@ const Looking_for_housing = () => {
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                         FILL UP THE DETAILS OF YOUR HOUSE
                       </span>
-                      <h2>Details</h2>
+                      <h7
+                        className="tw-text-light"
+                        style={{
+                          fontSize: "1.8em",
+                          color: "#1F2437",
+                          fontWeight: "300",
+                        }}
+                      >
+                        Details
+                      </h7>
                     </div>
 
                     <div className="col-md-6">
@@ -420,7 +429,7 @@ const Looking_for_housing = () => {
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                         Fill up your family details
                       </span>
-                      <h2>Family Details</h2>
+                      <h7 className="tw-text-light" style = {{fontSize:"1.8em", color:"#1F2437", fontWeight:"300"}} >Family Details</h7>
                     </div>
 
                     <div
@@ -492,7 +501,7 @@ const Looking_for_housing = () => {
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                         Fill up your contract details
                       </span>
-                      <h2>Contract Details</h2>
+                      <h7 className="tw-text-light" style = {{fontSize:"1.8em", color:"#1F2437", fontWeight:"300"}} >Contract Details</h7>
                     </div>
 
                     <div
@@ -632,7 +641,7 @@ const Looking_for_housing = () => {
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                         Fill up your Other Details
                       </span>
-                      <h2>Other Details</h2>
+                      <h7 className="tw-text-light" style = {{fontSize:"1.8em", color:"#1F2437", fontWeight:"300"}} >Other Details</h7>
                     </div>
 
                     <div
@@ -713,7 +722,9 @@ const Looking_for_housing = () => {
               <div></div>
 
               <div className=" tw-pt-10">
-      <Link to="/available_housing" className="
+                <Link
+                  to="/available_housing"
+                  className="
         
           tw-bg-primary
           tw-text-white
@@ -730,22 +741,31 @@ const Looking_for_housing = () => {
           active:tw-scale-95
           tw-shadow-lg
           hover:tw-shadow-xl
-        ">
-        Find all Available Housing
-      </Link>
-    </div>
-
+        "
+                >
+                  Find all Available Housing
+                </Link>
+              </div>
 
               <img
                 src={rentimage1}
-                className=" tw-rounded-3xl tw-w-full tw-mt-14  "
+                className=" tw-rounded-3xl tw-w-full tw-mt-14 tw-bg-white tw-shadow-lg   "
 
                 // keeps image fixed at the top of its container while scrolling
               />
 
               <div className="">
                 {" "}
-                <h7 className="tw-text-light" style = {{fontSize:"1.6em", color:"#1F2437", fontWeight:"300"}} >Find Your Perfect Rental Home</h7>
+                <h7
+                  className="tw-text-light"
+                  style={{
+                    fontSize: "1.6em",
+                    color: "#1F2437",
+                    fontWeight: "300",
+                  }}
+                >
+                  Find Your Perfect Rental Home
+                </h7>
                 <p>
                   Fill out the form with your preferences, and we'll show you
                   the best rental options. Start your search today and discover
@@ -755,25 +775,32 @@ const Looking_for_housing = () => {
 
               <img
                 src={rentimage2}
-                className=" tw-rounded-3xl tw-w-full"
+                className=" tw-rounded-3xl tw-w-full tw-shadow-lg tw-bg-white"
 
                 // keeps image fixed at the top of its container while scrolling
               />
 
               <div className="">
                 {" "}
-                <h7 className="tw-text-light" style = {{fontSize:"1.6em", color:"#1F2437", fontWeight:"300"}} >Your Ideal Rental Is Just a Few Clicks Away</h7>
+                <h7
+                  className="tw-text-light"
+                  style={{
+                    fontSize: "1.6em",
+                    color: "#1F2437",
+                    fontWeight: "300",
+                  }}
+                >
+                  Your Ideal Rental Is Just a Few Clicks Away
+                </h7>
                 <p>
                   Enter your details, and we’ll present rental homes that match
                   your criteria. Finding the perfect place has never been
                   easier.
                 </p>
               </div>
-
-              
             </div>
           </div>
-        </div>
+        
       </section>
       <Footer />
     </>

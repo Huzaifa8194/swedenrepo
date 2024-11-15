@@ -186,414 +186,447 @@ const FamilyRenuification = () => {
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
                 <div className="  md:tw-pl-32 tw-px-3">
-                  <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                    {' '}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> EU CITIZEN
-                  </span>
 
-                  <h2>
-                    <strong>Family Members</strong>
-                  </h2>
 
-                  <p className=" tw-text-gray">Family reunification is a recognized reason for the immigration of family members to a country where one or more family member already reside.</p>
-                  <p className=" tw-text-gray">As a family member of an EU/EEA citizen exercising their right of free movement,you can get a visa through a facilitated process to travel with your family member or to join him/her in Sweden.</p>
-                  <p className=" tw-text-gray">Family members are:</p>
 
-                  <ul className=" tw-p-0 tw-pt-4">
-                    <li className=" tw-flex tw-items-center tw-gap-3">
-                      <div>
-                        <GoTriangleRight className=" tw-text-blue" />
-                      </div>
-                      <p className=" m-0 tw-text-gray">Spouse/partner/common law spouse.</p>
-                    </li>
-                    <li className=" tw-flex  tw-gap-3">
-                      <div>
-                        <GoTriangleRight className=" tw-text-blue" />
-                      </div>
-                      <p className=" m-0 tw-text-gray">The direct descendants (children) who are under the age of 21 or are dependents, and those of the spouse or partner.</p>
-                    </li>
-                    <li className=" tw-flex  tw-gap-3">
-                      <div>
-                        <GoTriangleRight className=" tw-text-blue" />
-                      </div>
-                      <p className=" m-0 tw-text-gray">The dependent direct relatives in the ascending line (e.g. parents) and those of the spouse or partner.</p>
-                    </li>
-                    <li className=" tw-flex  tw-gap-3">
-                      <div>
-                        <GoTriangleRight className=" tw-text-blue" />
-                      </div>
-                      <p className=" m-0 tw-text-gray">You can apply for a short-stay Schengen visa (type C-Joining a Family Member) which will permit you to enter Sweden and the Schengen area.</p>
-                    </li>
 
-                    <li className=" tw-flex  tw-gap-3">
-                      <div>
-                        <GoTriangleRight className=" tw-text-blue" />
-                      </div>
-                      <p className=" m-0 tw-text-gray">Once in Sweden you should apply for a residence card for a family member of a EU/EEA citizen within three months for a Residence Card of a family member of a EU/EEA citizen.</p>
-                    </li>
-                  </ul>
 
-                  <div className="row">
-                    <div className="col-md-10 tw-mx-auto">
-                      <motion.img animate={imageVariants} className=" tw-w-full" src={banner} alt="" />
-                    </div>
-                  </div>
 
-                  <div>
-                    <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> SWEDISH-NORDIC FAMILY
-                    </span>
+                <div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Comprehensive Guide Under Swedish National Law
+  </span>
+  
+  <h2><strong> Family Reunification in Sweden:</strong></h2>
+  <p className="tw-text-gray">
+    Sweden’s family reunification laws allow individuals holding various types of residence permits—including work permits, business permits, PhD and student permits, and permanent residence permits—as well as refugees, to bring family members to Sweden. Each case type has specific requirements and is assessed under different provisions of Swedish national law. This guide provides a comprehensive overview of the requirements, laws, and application processes involved, with specific details for each permit type.
+  </p>
 
-                    <h2>
-                      <strong>Reunification</strong>
-                    </h2>
 
-                    <p className=" tw-text-gray">If you are Swedish or Nordic citizen, then you can apply for residence permit under national Laws. Requirements are slightly different than the above-mentioned EU residence card.</p>
-                    <p className=" tw-text-gray">
-                      The person who wants to invite his family to the country he should be residing and have enough income resources to provide financial support to the family and a standard house to live in. However, these mentainence requirements
-                      are not applicable in all cases.
-                    </p>
-                  </div>
-                  <div>
-                    <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STUDENT-WORK-BUSINESS PERMIT FAMILY
-                    </span>
 
-                    <h2>
-                      <strong>Reunification</strong>
-                    </h2>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+ Key Swedish laws
+  </span>
 
-                    <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> WHAT ARE
-                    </span>
+  <h2><strong>Governing Family Reunification</strong></h2>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h3 className="m-0 tw-text-gray">2.1 Main Legislative Framework</h3>
+    </li>
+  </ul>
+  
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Aliens Act (Utlänningslagen):</strong> The main legislation governing residence permits and family reunification for all non-Swedish citizens.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Temporary Aliens Act (Tillfälliga Utlänningslagen):</strong> A temporary law affecting family reunification requirements, primarily for refugees and individuals needing subsidiary protection.
+      </p>
+      <p><br /></p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Swedish Nationality Act (Lag om Svenskt Medborgarskap):</strong> Relevant for Swedish citizens and permanent residents inviting family members.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Social Insurance Code (Socialförsäkringsbalken):</strong> Provides guidelines on acceptable income sources for the maintenance requirement.
+        <p><br /></p>
+      </p>
+    </li>
+  </ul>
 
-                    <h2>
-                      <strong>Mentainence Requirements</strong>
-                    </h2>
 
-                    <div>
-                      <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> HOUSING
-                      </span>
 
-                      <h2>
-                        <strong>Requirements:</strong>
-                      </h2>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Eligibility for 
+  </span>
+  <h2><strong> Family Reunification</strong></h2>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h3 className="m-0 tw-text-gray">Eligible Family Members</h3>
+    </li>
+  </ul>
 
-                      <ul className=" tw-p-0  tw-list-disc    tw-pt-4">
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray">The person who wants to invite his family to the country he should be residing and have enough income resources to provide financial support to the family and a standard house to live in.</p>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray">If you rent your home, you have to send in a copy of your tenancy agreement. You must also enclose a rent invoice for the last month’s rent (1 month).</p>
-                        </li>
-                      </ul>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Who Can Be Sponsored for Family Reunification?</strong> Family reunification is generally available to the following family members:
+        <p><br /></p>
+        <ul className="tw-pl-6">
+          <li><strong>Spouse or Registered Partner:</strong> Legally married or registered partners.</li>
+          <li><strong>Cohabiting Partner:</strong> Long-term, unregistered partners may qualify if the relationship is well-documented.</li>
+          <li><strong>Children under 18:</strong> Minor children of the permit holder or their spouse/partner.</li>
+          <li><strong>Parents (for Minor Permit Holders):</strong> For permit holders under 18, parents or legal guardians may be eligible.</li>
+        </ul>
+        <p><br /></p>
+      </p>
+    </li>
+    
+  </ul>
 
-                      <p className=" tw-text-gray tw-font-medium">The agreement has to contain:</p>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h3 className="m-0 tw-text-gray">Maintenance and Housing Requirements:</h3>
+    </li>
+  </ul>
 
-                      <ul className=" tw-p-0 tw-pt-4">
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">Monthly rent</p>
-                        </li>
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">Number of rooms</p>
-                        </li>
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">Name of tenant</p>
-                        </li>
-                        <li className=" tw-flex  tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">Name of landlord</p>
-                        </li>
+<ul>
+  <li>
+      <p className="m-0 tw-text-gray">
+        <strong>3.2 </strong> The Maintenance Requirement (Försörjningskrav) is essential for most family reunification applications, ensuring the primary applicant has sufficient income and suitable housing to support family members.
+        <p><br /></p>
+      </p>
+    </li>
 
-                        <li className=" tw-flex  tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">Period of tenancy</p>
-                        </li>
-                        <li className=" tw-flex  tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">Signature of landlord.</p>
-                        </li>
-                      </ul>
+    </ul>
 
-                      <div>
-                        <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                          {' '}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> IF YOU ARE A
-                        </span>
 
-                        <h2>
-                          <strong>Sub-Tenant In Your Home</strong>
-                        </h2>
+    <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    for Family Reunification
+  </span>
 
-                        <p className=" tw-text-gray">
-                          If you are a sub-tenant in your home, you also have to send in documents showing that your landlord, housing cooperative association or rent tribunal has approved the let. When you rent as a sub-tenant, it is the
-                          property-owner who is the landlord, not the holder of the tenancy agreement. The agreement or contract must be signed.
-                        </p>
-                      </div>
+  <h2><strong> Application Process </strong></h2>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h3 className="m-0 tw-text-gray"> Step-by-Step Guide</h3>
+    </li>
+  </ul>
 
-                      <div>
-                        <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                          {' '}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> IF YOU
-                        </span>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Step 1: Prepare Documentation:</strong> Gather all required documents, such as passports, proof of relationship (marriage or birth certificates), housing agreements, and income verification.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Step 2: Submit Application:</strong> Applications are submitted online via the Swedish Migration Agency’s portal or at a Swedish embassy/consulate.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Step 3: Migration Agency Review:</strong> The Swedish Migration Agency verifies that all requirements are met, assessing the applicant's income, housing, and family eligibility.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Step 4: Decision and Notification:</strong> After assessment, the agency issues a decision. If approved, family members may receive residence permits matching the sponsor’s permit duration.
+        <p><br /></p>
+      </p>
+    </li>
+  </ul>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    for Family Reunification Cases
+  </span>
+  <h2><strong>Specific Legal Provisions </strong></h2>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h3 className="m-0 tw-text-gray">Relevant Legal Codes</h3>
+    </li>
+  </ul>
 
-                        <h2>
-                          <strong>Own Your Home</strong>
-                        </h2>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Aliens Act (Utlänningslagen):</strong> The Aliens Act serves as the primary legal framework for family reunification, covering income, housing, and relationship verification.
+        <p><br /></p>
+      </p>
+    </li>
 
-                        <p className=" tw-text-gray">
-                          If you own your home, you have to send in a copy of your purchase agreement or some other transfer document showing that you own the home. If the number of rooms is not stated in the document, you can attach a layout plan, a
-                          home specification or a similar document.
-                        </p>
-                        <p className=" tw-text-gray">
-                          You also have to send in documents showing what housing cost you have. Irrespective of whether you live in a cooperative (‘tenant-owner’) or owner-occupied home, you have to send in documents showing what interest
-                          expenditure you have and the size of your amortisation payments.
-                        </p>
-                        <p className=" tw-text-gray">
-                          If you live in a cooperative home, you also have to send in copies of documents showing the monthly charge and any other operating costs not included in the monthly charge, such as for heating, electricity and water.
-                        </p>
 
-                        <p className=" tw-text-gray">
-                          If you live in an owner-occupied home, you have to send in documents showing what operating costs you have. This can, for instance, be charges for heating, water, refuse collection, waste water, joint property management
-                          charges, property charges or other costs linked to your housing.
-                        </p>
-                      </div>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Temporary Aliens Act (Tillfälliga Utlänningslagen):</strong> Applies stricter maintenance requirements for refugees, emphasizing financial independence for sponsors beyond the three-month application period.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Social Insurance Code (Socialförsäkringsbalken):</strong> Defines acceptable sources of income, especially relevant for sponsors relying on benefits.
+        <p><br /></p>
+      </p>
+    </li>
+  </ul>
+</div>
+<div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Specific Legal Provisions for Family Reunification Cases
+  </span>
+  <h2>
+    <strong>Aliens Act (Utlänningslagen)</strong>
+  </h2>
 
-                      <div>
-                        <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                          {' '}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> IF YOU
-                        </span>
+  <p className="tw-text-gray">
+    The Aliens Act serves as the primary legal framework for family reunification, covering income, housing, and relationship verification.
+  </p>
 
-                        <h2>
-                          <strong>Are Employed</strong>
-                        </h2>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Maintenance and Housing Standards
+      </h4>
+    </li>
+  </ul>
 
-                        <p className=" tw-text-gray">If you are working, you need to send in a copy of your employment agreement or some other document showing your employment.</p>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        Ensures financial stability and proper living conditions.
+      </p>
+    </li>
+  </ul>
 
-                        <p className=" tw-text-gray">The document has to contain:</p>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Refugee Exemptions
+      </h4>
+    </li>
+  </ul>
 
-                        <ul className=" tw-p-0 tw-pt-4">
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Name of employee</p>
-                          </li>
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Form of employment (for example open-ended, fixed term, substitute)</p>
-                          </li>
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Level of employment</p>
-                          </li>
-                          <li className=" tw-flex  tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Wage</p>
-                          </li>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        Refugees and those with subsidiary protection may be exempt from some requirements.
+      </p>
+    </li>
+  </ul>
 
-                          <li className=" tw-flex  tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Employer</p>
-                          </li>
-                          <li className=" tw-flex  tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Signature of an authorised representative of your employer.</p>
-                          </li>
-                        </ul>
-                        <p className=" tw-text-gray">You also need to send in a copy of your most recent pay slip.</p>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Tillfälliga Utlänningslagen
+  </span>
 
-                        <p className=" tw-text-gray tw-font-semibold">It has to contain:</p>
+  <h2>
+    <strong>Temporary Aliens Act </strong>
+  </h2>
 
-                        <ul className=" tw-p-0 tw-pt-4">
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Name of wage earner (employee)</p>
-                          </li>
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Name of person paying the wage (employer)</p>
-                          </li>
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Net wage</p>
-                          </li>
-                          <li className=" tw-flex  tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Any wage supplements or wage deductions (leave or illness, for example).</p>
-                          </li>
-                        </ul>
-                      </div>
+  <p className="tw-text-gray">
+    The Temporary Aliens Act applies stricter maintenance requirements for refugees, emphasizing financial independence for sponsors beyond the three-month application period.
+  </p>
 
-                      <div>
-                        <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                          {' '}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> IF
-                        </span>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Relationship and Timing Criteria
+      </h4>
+    </li>
+  </ul>
 
-                        <h2>
-                          <strong>Temporary Employment</strong>
-                        </h2>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        Refugees must apply within three months of receiving status for certain exemptions.
+      </p>
+    </li>
+  </ul>
 
-                        <p className=" tw-text-gray">
-                          If your employment lasts for longer than one year, you need to send in a copy of your employment agreement and your most recent pay slip. If you have an hourly or on-call employment, you can send in a copy of your employment
-                          agreement and your three most recent pay slips.
-                        </p>
-                        <p className=" tw-text-gray">If your employment lasts for less than one year and you have had previous fixed-term employment, you also need to send in previous employment agreements for the past year.</p>
-                        <p className=" tw-text-gray">You can also send in documents to prove that you are a member of an unemployment benefit insurance fund, and that you will receive compensation from there in the event of unemployment.</p>
 
-                        <p className=" tw-text-gray">Employment agreements, or other documents showing your employment, have to contain:</p>
 
-                        <ul className=" tw-p-0 tw-pt-4">
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Name of employee</p>
-                          </li>
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Form of employment (for example open-ended, fixed term, substitute)</p>
-                          </li>
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Level of employment</p>
-                          </li>
-                          <li className=" tw-flex  tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Wage</p>
-                          </li>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Socialförsäkringsbalken
+  </span>
 
-                          <li className=" tw-flex  tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Employer</p>
-                          </li>
-                          <li className=" tw-flex  tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Signature of an authorised representative of your employer.</p>
-                          </li>
-                        </ul>
-                        <p className=" tw-text-gray">You also need to send in a copy of your most recent pay slip.</p>
 
-                        <p className=" tw-text-gray tw-font-semibold">Your pay slip has to contain:</p>
+  <h2>
+    <strong>Social Insurance Code</strong>
+  </h2>
 
-                        <ul className=" tw-p-0 tw-pt-4">
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Name of wage earner (employee)</p>
-                          </li>
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Name of person paying the wage (employer)</p>
-                          </li>
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Net wage</p>
-                          </li>
-                          <li className=" tw-flex  tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">Any wage supplements or wage deductions (leave or illness, for example).</p>
-                          </li>
-                        </ul>
-                      </div>
+  <p className="tw-text-gray">
+    The Social Insurance Code defines acceptable sources of income, especially relevant for sponsors relying on benefits.
+  </p>
 
-                      <div>
-                        <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                          {' '}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> IF
-                        </span>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Unemployment and Social Benefits
+      </h4>
+    </li>
+  </ul>
 
-                        <h2>
-                          <strong>Unemployment Insu­rance Fund</strong>
-                        </h2>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        For those relying on unemployment or social benefits, income requirements apply to ensure they meet financial criteria.
+      </p>
+    </li>
+  </ul>
 
-                        <p className=" tw-text-gray">
-                          You need to send in a copy of a decision from the unemployment insurance fund and account statements showing payments made to you. The documents should show how much benefit you receive and the period when you have the right
-                          to benefit.
-                        </p>
-                      </div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    How Sweden Relocators Can Help
+  </span>
+  <h2>
+    <strong>Our Services Include:</strong>
+  </h2>
 
-                      <div>
-                        <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                          {' '}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> IF
-                        </span>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Eligibility Assessment
+      </h4>
+    </li>
+  </ul>
 
-                        <h2>
-                          <strong>You Are Receiving Benefit From Försäk­rings­kassan</strong>
-                        </h2>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        We assess your specific permit type, income, housing, and family eligibility to determine the best approach.
+      </p>
+    </li>
+  </ul>
 
-                        <p className=" tw-text-gray">
-                          You need to send in a copy of a decision from the Försäkringskassan [the Swedish Social Insurance Agency] showing what type of benefit and how much benefit you are receiving. The documents should show the period when you
-                          have the right to benefit from Försäkringskassan.
-                        </p>
-                      </div>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Document Preparation
+      </h4>
+    </li>
+  </ul>
 
-                      <div>
-                        <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                          {' '}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> IF
-                        </span>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        Assistance in gathering all necessary documents, translating foreign documents if needed, and ensuring all information is complete and accurate.
+      </p>
+    </li>
+  </ul>
 
-                        <h2>
-                          <strong>Pension</strong>
-                        </h2>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Application Submission and Monitoring
+      </h4>
+    </li>
+  </ul>
 
-                        <p className=" tw-text-gray">
-                          You need to send in a copy of a decision showing what type of pension you have and how much pension you receive each month or year. This can, for example, be a decision from the Swedish Pensions Agency.
-                        </p>
-                      </div>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        Submitting your application on your behalf and following up with the Swedish Migration Agency.
+      </p>
+    </li>
+  </ul>
 
-                      <div>
-                        <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                          {' '}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> IF
-                        </span>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Appeals Support
+      </h4>
+    </li>
+  </ul>
 
-                        <h2>
-                          <strong>You Are Self-Employed</strong>
-                        </h2>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        If your application is denied, we provide guidance through the appeals process, strengthening your case to meet Swedish legal standards.
+      </p>
+    </li>
+  </ul>
 
-                        <p className=" tw-text-gray">
-                          If you are a sole trader or are a partner in a trading partnership or limited partnership, your income consists of your share of the surplus from your company after deduction of social security contributions. This usually
-                          means the surplus from business activities that you declare in your tax return.
-                        </p>
-                      </div>
+  <h2>
+    <strong>Why Choose Sweden Relocators?</strong>
+  </h2>
 
-                      <div className="row">
-                        <div className="col-md-6">
-                          <motion.img animate={imageVariants} className=" tw-w-full" src={banner2} alt="" />
-                        </div>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Expert Knowledge
+      </h4>
+    </li>
+  </ul>
 
-                        <div className="col-md-6">
-                          <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                            {' '}
-                            <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> WHO CAN
-                          </span>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        We have in-depth knowledge of Swedish family reunification laws and requirements.
+      </p>
+    </li>
+  </ul>
 
-                          <h2>
-                            <strong>Move With You</strong>
-                          </h2>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Personalized Support
+      </h4>
+    </li>
+  </ul>
 
-                          <p className=" tw-text-gray">
-                            Only your immediate family members can move with you if you have a temporary residence permit. Your immediate family members mean your spouse, children under the age of 18, registered partners, and cohabiting partners.
-                            Other family members and children who are above 18 are not eligible to move to Sweden or the EU on your behalf while you have a temporary residence permit. If you are under the age of 18, then your parents are counted as
-                            your immediate family members.
-                          </p>
-                        </div>
-                      </div>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        We tailor our assistance to your specific permit type and circumstances.
+      </p>
+    </li>
+  </ul>
 
-                      <p className=" tw-text-gray">
-                        In case you have a permanent residence permit or you are planning to get married to a person in Sweden, then that person can apply on your behalf for the residence permit. Persons other than your immediate family members like
-                        parents or siblings can also move to Sweden with you.
-                      </p>
-                    </div>
-                  </div>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Efficient Processing
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        By ensuring accuracy and compliance, we help you avoid delays or rejections, making the application process smoother and more efficient.
+      </p>
+    </li>
+  </ul>
+
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Contact Sweden Relocators
+  </span>
+  <h2>
+    <strong>Get in Touch Today</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    If you are ready to bring your family to Sweden and need guidance to navigate Swedish family reunification laws, Sweden Relocators is here to help. Contact us today for expert support, and let us guide you through the family reunification process in Sweden, ensuring all legal requirements are met for a successful application.
+  </p>
+</div>
+
+
+
+
+
+                  
                 </div>
               </div>
 

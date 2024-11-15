@@ -190,293 +190,318 @@ const WorkPermit = () => {
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
                 <div className="  md:tw-pl-32 tw-pl-3">
-                  <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                    {' '}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> FOR EMPLOYEE-EMPLOYER
-                  </span>
 
-                  <h2>
-                    <strong>Assistance</strong>
-                  </h2>
 
-                  <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                    {' '}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> FACING PROBLEMS WITH WORK PERMITS?
-                  </span>
 
-                  <h2>
-                    <strong>We Will Help You With Preparing Work Permit Applications</strong>
-                  </h2>
 
-                  <p className=" tw-text-gray tw-font-medium">
-                    Whether you are a Swedish company or foreign employer who is facing problems with working permits inside Sweden we have easy solutions for you. You won’t be wasting enough time on how to apply for the Swedish work permit. We will
-                    do it for you easily and conveniently. You will not have to wait for 12 months in case of incorrect or incomplete applications.
-                  </p>
 
-                  <p className=" tw-text-gray tw-font-medium">
-                    You can signup as Company if you want to hire someone from outside of Sweden or Non-Eu Citizen in Sweden, similarly if you have a job offer from any Swedish company just signup on www.sweden4allab.se and we will take care rest of
-                    the application process.
-                  </p>
 
-                  <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                    {' '}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> CITIZENS OF
-                  </span>
+                <div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Types of Work Permits in Sweden
+  </span>
+  <h2>
+    <strong>Overview of Work Permit Types</strong>
+  </h2>
 
-                  <h2>
-                    <strong>Non-EU Countries</strong>
-                  </h2>
+  <p className="tw-text-gray">
+    Sweden offers a variety of work permits tailored to different professional and personal needs. Below are the main categories and their key requirements.
+  </p>
 
-                  <p className=" tw-text-gray tw-font-medium">You have to be in Sweden or on the Swedish border in order to apply for asylum. It’s not possible to apply for asylum before you arrive, or at a Swedish embassy in another country.</p>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Standard Work Permit for Employment</h4>
+    </li>
+  </ul>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Job Offer:</strong> Must have a confirmed job offer from a Swedish employer.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Minimum Salary:</strong> SEK 30,000 before taxes or as per industry standards.
+      </p>
+      <p><br /></p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Advertisement Requirement:</strong> Job must be advertised in the EU/EEA for 10 days.
+      </p>
+      <p><br /></p>
+    </li>
+  </ul>
 
-                  <p className=" tw-text-gray tw-font-medium">Generally, citizens from countries outside the EU must apply for a work permit to work in Sweden.</p>
-                  <p className=" tw-text-gray tw-font-medium">
-                    There are a few exceptions to the rule. Citizens of Argentina, Australia, Chile, Canada, Hong Kong, New Zealand, South Korea and Uruguay aged 18–30 can also apply for a working holiday visa for up to one year.
-                  </p>
-                  <p className=" tw-text-gray tw-font-medium">
-                    For employment that lasts less than three months, citizens of certain countries must have both a work permit and a visa. Also note that employees in certain fields may be exempt from work permit regulations.
-                  </p>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">EU Blue Card</h4>
+    </li>
+  </ul>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Higher Education:</strong> Requires a university degree or 5 years of experience.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Salary Threshold:</strong> Must exceed the minimum salary for EU Blue Card.
+      </p>
+      <p><br /></p>
+    </li>
+  </ul>
 
-                  <div className="row">
-                    <div className="col-md-8 tw-mx-auto">
-                      <motion.img animate={imageVariants} className=" tw-w-full" src={banner} alt="" />
-                    </div>
-                  </div>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Seasonal Worker Permit (Berry Pickers and Plant Workers)</h4>
+    </li>
+  </ul>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Contract:</strong> Requires a contract for seasonal work up to 6 months.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Wages and Benefits:</strong> Must comply with collective agreements.
+      </p>
+      <p><br /></p>
+    </li>
+  </ul>
 
-                  <div>
-                    <h2>
-                      <strong>Citizens Of EU Countries</strong>
-                    </h2>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Au Pair Permit</h4>
+    </li>
+  </ul>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Age Requirement:</strong> Must be between 18 and 30 years old.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Language Study:</strong> Required to take Swedish courses.
+      </p>
+      <p><br /></p>
+    </li>
+  </ul>
 
-                    <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> PASSPORT
-                    </span>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Working Holiday Visa</h4>
+    </li>
+  </ul>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Eligible Countries:</strong> Includes Australia, New Zealand, South Korea, etc.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Age Range:</strong> Typically for 18-30 years old.
+      </p>
+      <p><br /></p>
+    </li>
+  </ul>
 
-                    <h2>
-                      <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> ID Is Required
-                      </span>
-                    </h2>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Self-Employment Permit</h4>
+    </li>
+  </ul>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Business Plan:</strong> Must show profitability within 2 years.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Experience:</strong> Relevant business experience is required.
+      </p>
+      <p><br /></p>
+    </li>
+  </ul>
 
-                    <p className=" tw-text-gray">EU citizens can look for a job and work without a permit. Their family can accompany them and can also work. However, you should have a valid passport to show your identity.</p>
-                  </div>
-                  <div>
-                    <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> PERMITS FOR
-                    </span>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Sports and Cultural Worker Permit</h4>
+    </li>
+  </ul>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Employment:</strong> Must have a job offer from a relevant Swedish organization.
+        <p><br /></p>
+      </p>
+    </li>
+  </ul>
 
-                    <h2>
-                      <strong>Family Members</strong>
-                    </h2>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Researcher Permit</h4>
+    </li>
+  </ul>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Host Agreement:</strong> Required with a Swedish research institution.
+        <p><br /></p>
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Funding:</strong> Proof of financial support for the research duration.
+      </p>
+      <p><br /></p>
+    </li>
+  </ul>
+</div>
+<div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Application Process and Waiting Times
+  </span>
+  <h2>
+    <strong>Overview of Application Process and Waiting Times</strong>
+  </h2>
 
-                    <p className=" tw-text-gray">
-                      If you are a non-EU citizen eligible to receive a work permit, your spouse/common law spouse/registered partner and children up to age 21 (as well as children over 21 who are financially dependent on you) have the right to join
-                      you in Sweden. They must apply for residence permits, either as part of your application or separately.
-                    </p>
+  <p className="tw-text-gray">
+    The application process and waiting times vary depending on the type of permit, your circumstances, and the current workload at the Swedish Migration Agency. General waiting times are as follows:
+  </p>
 
-                    <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> THE
-                    </span>
+  <ul className="tw-p-0 tw-pl-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <p className="m-0 tw-text-gray"><strong>Standard Work Permit:</strong> 1-4 months</p>
+    </li>
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <p className="m-0 tw-text-gray"><strong>EU Blue Card:</strong> 3-4 months</p>
+    </li>
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <p className="m-0 tw-text-gray"><strong>Seasonal Worker Permit:</strong> 1-3 months</p>
+    </li>
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <p className="m-0 tw-text-gray"><strong>Au Pair Permit:</strong> 1-2 months</p>
+    </li>
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <p className="m-0 tw-text-gray"><strong>Working Holiday Visa:</strong> 1-2 months</p>
+    </li>
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <p className="m-0 tw-text-gray"><strong>Self-Employment Permit:</strong> 3-6 months</p>
+    </li>
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <p className="m-0 tw-text-gray"><strong>Sports and Cultural Worker Permit:</strong> 1-2 months</p>
+    </li>
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <p className="m-0 tw-text-gray"><strong>Researcher Permit:</strong> 1-3 months</p>
+    </li>
+  </ul>
 
-                    <h2>
-                      <strong>Application Processes</strong>
-                    </h2>
+  <p className="tw-text-gray tw-pt-4">
+    Using our Work Permit Assessment Tool can help you identify the right permit and provide estimated processing times based on your case.
+  </p>
 
-                    <p className=" tw-text-gray">You will need to apply for your permit before entering Sweden, though in some cases you may be able to apply from within Sweden if you are already legally living in the country.</p>
+  <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Additional General Requirements for Work Permits
+  </span>
+  <h2>
+    <strong>Key General Requirements for Work Permits</strong>
+  </h2>
 
-                    <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> RECEIVE
-                    </span>
+  <p className="tw-text-gray">
+    For all work permits, applicants must meet these core requirements:
+  </p>
 
-                    <h2>
-                      <strong>An Offer Of Employment</strong>
-                    </h2>
+  <ul className="tw-p-0 tw-pl-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <p className="m-0 tw-text-gray"><strong>Valid Passport:</strong> Your passport must be valid for the entire period of your intended stay.</p>
+    </li>
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <p className="m-0 tw-text-gray"><strong>Insurance:</strong> Some permits, such as the Working Holiday and Au Pair permits, require health insurance.</p>
+    </li>
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <p className="m-0 tw-text-gray"><strong>Clean Criminal Record:</strong> Applicants with serious criminal records may face challenges in obtaining a permit.</p>
+    </li>
+  </ul>
 
-                    <p className=" tw-text-gray">which must have been approved by a relevant trade union.</p>
+  <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    How Sweden Relocators Can Assist You
+  </span>
+  <h2>
+    <strong>Comprehensive Support from Sweden Relocators</strong>
+  </h2>
 
-                    <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> COMPILE AND
-                    </span>
+  <p className="tw-text-gray">
+    Sweden Relocators provides full support for all types of work permits, ensuring a smooth and efficient process:
+  </p>
 
-                    <h2>
-                      <strong>Submit Your Application</strong>
-                    </h2>
+  <ul className="tw-p-0 tw-pl-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <p className="m-0 tw-text-gray"><strong>Eligibility Assessment:</strong> Use our Work Permit Assessment Tool to find the best permit for your circumstances.</p>
+    </li>
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <p className="m-0 tw-text-gray"><strong>Document Preparation:</strong> We assist in compiling and preparing the required documents, such as employment contracts, financial statements, and health insurance proof.</p>
+    </li>
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <p className="m-0 tw-text-gray"><strong>Application Submission and Tracking:</strong> We handle the submission of your application and keep you updated on its status through each stage.</p>
+    </li>
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <p className="m-0 tw-text-gray"><strong>Post-Permit Support:</strong> Once your permit is approved, we offer relocation support, including housing assistance, bank account setup, and registration with Swedish authorities.</p>
+    </li>
+  </ul>
 
-                    <p className=" tw-text-gray">either online or through a paper application submitted to your closest Swedish embassy or consulate. Your completed application must include</p>
+  <p className="tw-text-gray tw-pt-4">
+    For more information or to begin your work permit application, visit our Work Permit Section on our website. Contact Sweden Relocators today, and let us help you start your career journey in Sweden.
+  </p>
+</div>
+</div>
+</div>
 
-                    <div>
-                      <ul className=" tw-p-0 tw-pt-4">
-                        <li className=" tw-flex  tw-gap-3">
-                          <div>
-                            <GoTriangleRight className=" tw-text-blue" />
-                          </div>
-                          <p className=" m-0 tw-text-gray">A completed application form</p>
-                        </li>
-                        <li className=" tw-flex  tw-gap-3">
-                          <div>
-                            <GoTriangleRight className=" tw-text-blue" />
-                          </div>
-                          <p className=" m-0 tw-text-gray">
-                            Copies of the pages of your passport that show personal data, period of validity and whether you have permission to live in countries other than your country of origin (e.g. other visas or residence permits)
-                          </p>
-                        </li>
-                        <li className=" tw-flex  tw-gap-3">
-                          <div>
-                            <GoTriangleRight className=" tw-text-blue" />
-                          </div>
-                          <p className=" m-0 tw-text-gray">Your offer of employment and the statement from the trade union</p>
-                        </li>
-                        <li className=" tw-flex  tw-gap-3">
-                          <div>
-                            <GoTriangleRight className=" tw-text-blue" />
-                          </div>
 
-                          <p className=" m-0 tw-text-gray">An application fees</p>
-                        </li>
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <div>
-                            <GoTriangleRight className=" tw-text-blue" />
-                          </div>
-                          <p className=" m-0 tw-text-gray">The Migration Agency considers your application and informs you of its decision, see current waiting times.</p>
-                        </li>
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">Submit data for visa and residence permit card.</p>
-                        </li>
-                      </ul>
-                    </div>
 
-                    <div>
-                      <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> EXTENDING
-                      </span>
 
-                      <h2>
-                        <strong>A Work Permit</strong>
-                      </h2>
 
-                      <p className=" tw-text-gray">
-                        You can apply to extend your permit before your current permit expires. You can continue working until you get the decision if you had a permit to work for six months. For extending your work permit the conditions of the work
-                        permit should have been the same throughout the working period i.e salary equals 13000 SEK per month before taxes. You should also have health insurance, life insurance, occupational injury insurance, and occupational pension
-                        insurance for the entire period. You need to show the job satisfies the requirement and conditions of a work permit.
-                      </p>
-                      <p className=" tw-text-gray">
-                        You can apply for extension 4 months before your permit expires. If you change the conditions of your employment or change your workplace in the first 24 months of your work permit, your permit will not be valid and you will
-                        have to apply for a new work permit.
-                      </p>
 
-                      <p className=" tw-text-gray">You can change your workplace or employer after working 24 months without changing the line of profession.</p>
-                    </div>
 
-                    <div>
-                      <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> PERMANENT
-                      </span>
 
-                      <h2>
-                        <strong>Residence Permit</strong>
-                      </h2>
 
-                      <p className=" tw-text-gray">International students with a residence permit in Sweden can work alongside their studies. If they want to stay and work in Sweden after completing their studies, they need a work permit.</p>
-                      <p className=" tw-text-gray">If you have been working in same profession and working conditions as when you you applied for the first time for 4 years in last 7 years you can get permanent residence permit.</p>
-
-                      <p className=" tw-text-gray">Residence permit for your family members</p>
-                      <p className=" tw-text-gray">Your family members can also get the residence permit for the same duration as you. you will have to show that you can support them.</p>
-                    </div>
-
-                    <div>
-                      <h2>
-                        <strong>The Application Process</strong>
-                      </h2>
-
-                      <p className=" tw-text-gray">We provide you with a complete online transparent experience of your Sweden relocation process. All you have to do is to Sign Up to access your online portal from where your journey begins.</p>
-                    </div>
-
-                    <div>
-                      <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> CASE
-                      </span>
-
-                      <h2>
-                        <strong>History</strong>
-                      </h2>
-
-                      <p className=" tw-text-gray">
-                        We will study your background to determine whether you are suitable for the job offer you currently have. The company will also be investigated as per the requirements. We will suggest you with the most suitable service we can
-                        provide or the company as our client.
-                      </p>
-                    </div>
-
-                    <div>
-                      <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> PERMANENT
-                      </span>
-
-                      <h2>
-                        <strong>Residence Permit</strong>
-                      </h2>
-
-                      <p className=" tw-text-gray">International students with a residence permit in Sweden can work alongside their studies. If they want to stay and work in Sweden after completing their studies, they need a work permit.</p>
-                    </div>
-
-                    <div>
-                      <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> SERVICE
-                      </span>
-
-                      <h2>
-                        <strong>Charges</strong>
-                      </h2>
-
-                      <p className=" tw-text-gray">On My Page, you will find the total cost for the process with the service code. You can find your invoice under the Payment Section on the portal.</p>
-                    </div>
-
-                    <div>
-                      <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> FILE
-                      </span>
-
-                      <h2>
-                        <strong>Preparation</strong>
-                      </h2>
-
-                      <p className=" tw-text-gray">
-                        While preparing your file we take care of all the required documentation including the job offer/ anställningserbjudande, trade union’s opinion/ fackligt yttrande , insurances, etc. We take care of all these parts during the
-                        entire application. When the application has been submitted to the Swedish Migration Agency, you will receive a receipt and a control number.
-                      </p>
-                      <p className=" tw-text-gray">During the processing of the application at Migrationsverket we will regularly update you about your case.</p>
-                    </div>
-
-                    <div>
-                      <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> GRANTED
-                      </span>
-
-                      <h2>
-                        <strong>Work Permit</strong>
-                      </h2>
-
-                      <p className=" tw-text-gray">
-                        We inform and coordinate the above with you and with the applicant. We will help you through the whole process with our one window solution. We can even further assist you with settling in Sweden and relocating.
-                      </p>
-                      <p className=" tw-text-gray">The employment can begin as soon as the person arrives in Sweden.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
                 <div className="  md:tw-pr-32 tw-pr-4">

@@ -196,208 +196,1390 @@ const ServiceDetails = () => {
               <div className="row g-4">
                 <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
                   <div className="  md:tw-pl-32 tw-pl-3">
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> ASYLUM IN SWEDEN
-                    </span>
-                    <h2>
-                      <strong>What We Offer</strong>
-                    </h2>
+                    
 
-                    <p className=" tw-text-gray">If you are an asylum seeker and need an expert to take care of your asylum process at the Swedish Migration Agency, we are here for you</p>
-                    <p className=" tw-text-gray">WHY AN EXPERT?</p>
-                    <p className=" tw-text-gray">It is a 12-digit number issued by Skatteverket to the persons registered in Sweden when they are convinced that you can support yourself and your family during the first year of your stay.</p>
-                    <p className=" tw-text-gray">
-                      Personnummer is not only required to be a part of the social security and health care systems in Sweden, which is otherwise quite expensive to arrange through private insurance companies, but is often used as identification
-                      proof at all government offices, banks, insurances, subscriptions, collection of postal items at the post office etc.
-                    </p>
+                  <div>
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                        Comprehensive Assistance to Overturn Decisions
+
+                      </span>
+                      <h2>
+                        <strong>Appeal Process for a Denied Permit or Visa in Sweden</strong>
+                      </h2>
+
+                      <p className=" tw-text-gray tw-pl-8">
+                      If you have been denied entry or residency in Sweden—whether it’s for family reunification, a residence permit, business visa, citizenship, or other types of permits you have the right to appeal the decision made by the Swedish Migration Agency (Migrationsverket). Navigating the appeal process can be complex, and having an experienced professional by your side can significantly increase your chances of a positive outcome.
+<br/>
+<br/>
+Sweden Relocators specializes in helping clients appeal Migration Agency decisions. With our in-depth understanding of the appeal process, we provide expert guidance and support, giving you the best opportunity to have your case reconsidered and, ideally, reversed.
+
+                      </p>
+
+                      <p>
+                        <br />
+                      </p>
+                    </div>
+
 
                     <div>
                       <span className=" tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> ELIGIBILITY
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                        Why Appeals are 
+
                       </span>
                       <h2>
-                        <strong>WHO CAN APPLY FOR ASYLUM?</strong>
+                        <strong>Increasingly Necessary
+                        </strong>
                       </h2>
 
-                      <p className=" tw-text-gray">You have to be in Sweden or on the Sweden’s border in order to apply for asylum. It’s not possible to apply for asylum before you arrive in Sweden or at a Swedish embassy in another country.</p>
+                      <p className=" tw-text-gray tw-pl-8">
+                      Since the refugee crisis, Swedish authorities have tightened the requirements for permits, making it more challenging to gain entry or residence in Sweden. Many applicants are denied permits due to increasingly stringent documentation requirements or misunderstandings in their initial application. Sweden Relocators has successfully appealed numerous cases, helping clients obtain permits even after initial denials. Our aim is to assist you in challenging the decision and restoring your opportunity to live or work in Sweden.
+</p>
 
-                      <p className=" tw-text-gray">Asylum seeker’s application is examined individually and will be granted a residence permit only if one fulfills criteria of being a refugee.</p>
-                      <p className=" tw-text-gray">According the UN Refugee Convention and Swedish law, a person can be considered as a refugee if the person is facing oppression due of any of the following reasons:</p>
+                      <p>
+                        <br />
+                      </p>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                        <span className=" tw-flex tw-items-center tw-gap-2">
+                          {" "}
+                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                          How to Start 
+
+                        </span>
+                        <h2>
+                          <strong>The Appeal Process</strong>
+                        </h2>
+                        <p className=" tw-text-gray">
+                        To appeal a denied decision, you must submit a written appeal in Swedish or English. This document needs to include specific information and must be signed by the applicant or an authorized representative. Here’s how to begin:
+
+                        </p>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-12 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={banner}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div>
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                        What to Include in 
+                      </span>
+                      <h2>
+                        <strong>The Appeal Letter</strong>
+                      </h2>
+
+                      <p className=' tw-text-gray'>In your appeal letter, you should clearly state:
+                      </p>
 
                       <ul className=" tw-p-0 tw-pt-4">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">Race</p>
-                        </li>
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">Nationality (Language or Ethnic Group)</p>
-                        </li>
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">Number of members in the family</p>
-                        </li>
-                        <li className=" tw-flex  tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">Religion</p>
-                        </li>
-
-                        <li className=" tw-flex  tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">Political belief</p>
-                        </li>
-                        <li className=" tw-flex  tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">Gender</p>
-                        </li>
-                        <li className=" tw-flex  tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">Sexual orientation</p>
-                        </li>
-                        <li className=" tw-flex  tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">Membership of a particular social group</p>
+                          <h4 className=" m-0 tw-text-gray">
+                          Decision to be Appealed: 
+                          </h4>
                         </li>
                       </ul>
 
-                      <p className="  tw-text-gray">
-                        Sometime a group of people can be threatening to you as well, but this cannot be a sole reason for you to be granted a positive decision. You will be asked what can happen if you return to your country.
-                      </p>
-                      <p className="  tw-text-gray">If you are considered as a refugee, you get a residence permit for three years or 13 months.</p>
-                    </div>
-
-                    <div>
-                      <span className=" tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STEPS TO BE FOLLOWED
-                      </span>
-                      <h2>
-                        <strong>HOW DO YOU APPLY FOR ASYLUM IN SWEDEN?</strong>
-                      </h2>
-
-                      <p className=" tw-text-gray">STEP 1: To be able to apply for asylum you must either be in Sweden, or on the border to the country.</p>
-                      <p className=" tw-text-gray tw-py-2">
-                        STEP 2: After you have registered your application, you will be called for an initial meeting at the Migration agency. During this meeting you will be given an opportunity to choose your representative/lawyer. You can then
-                        choose us.
-                      </p>
-                      <p className=" tw-text-gray tw-py-2">
-                        STEP 3: In case you choose us as your representative, we will then be contacted by the Migration Agency and asked to prove your claim. We will then schedule a call with you to know more about your situation.
-                      </p>
-                      <p className=" tw-text-gray tw-py-2  tw-font-medium">
-                        As your representative, we will support you throughout the asylum process and act according to your interests. Our role becomes particularly important since you as an asylum seeker are not expected to have any knowledge of the
-                        Swedish legal system and may find it difficult to clarify your grounds for asylum and refugee status on your own.
-                      </p>
-                      <p className=" tw-text-gray tw-py-2  ">And for that reason, it is really important that you have a knowledgeable person to help you throughout the process.</p>
-                      <p className=" tw-text-gray tw-py-2  ">
-                        We not only take care of appealing for your decision at the Migration Court and the Migration Court of Appeal but will also provide you with a fully integrated relocation solution for your reunification with your family as
-                        well.
-                      </p>
-                    </div>
-
-                    <div className="row">
-                      <div className="col-md-6 tw-mx-auto">
-                        <motion.img animate={imageVariants} className=" tw-w-full" src={banner} alt="" />
-                      </div>
-                    </div>
-
-                    <div>
-                      <span className=" tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> FAMILY REUNIFICATION
-                      </span>
-                      <h2>
-                        <strong>Reunification For Refugees</strong>
-                      </h2>
-
-                      <p className=" tw-text-gray">Family reunification is a recognized reason for the immigration of family members to a country where one or more family members are already residing.</p>
-                    </div>
-                    <div>
-                      <h2>
-                        <strong>Who Have A Right To Family Reunification?</strong>
-                      </h2>
-
-                      <p className=" tw-text-gray">Your family can apply for residence permits to join you in Sweden if you have been granted:</p>
-
-                      <ul className=" tw-p-0  tw-list-disc    tw-pt-4">
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray">a permanent residence permit.</p>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray">a temporary residence permit as a refugee and have good chances of being granted a residence permit for a longer period</p>
-                        </li>
-
-                        <li className=" ">
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            a temporary residence permit due to impediments to enforcement or particularly or exceptionally distressing circumstances, and have good chances of being granted a residence permit for a longer period.
+                          Specify the exact decision you are challenging.
+
                           </p>
                         </li>
                       </ul>
 
-                      <p className=" tw-text-gray tw-font-medium">For EU/EEA CITIZEN</p>
-                      <p className=" tw-text-gray">
-                        As a family member of an EU/EEA citizen exercising your right of free movement in Europe can get a visa through a facilitated process to travel with your family member or to join him/her in Sweden.
-                      </p>
-                    </div>
-
-                    <div>
-                      <span className=" tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> FAMILY REUNIFICATION
-                      </span>
-                      <h2>
-                        <strong>In Case You Have A Temporary Residence Permit</strong>
-                      </h2>
-
-                      <p className=" tw-text-gray">
-                        At the time of applying for family reunification you must have a valid residence permit for the country which means, if your residence permit has expired and you have applied for its extension, then the Swedish Migration
-                        Agency will first decide that whether you have the right to continue the residence permit or not. It isn’t enough for you to have the title of a temporary resident or having a previous valid residence permit.
-                      </p>
-                      <p className=" tw-text-gray">
-                        Only you immediate family(your spouse, registered partner or cohabiting partner, and your children under the age of 18) can move to you if you have a temporary work permit. Only in exceptional cases it is possible to get a
-                        residence permit for other family members.
-                      </p>
-
-                      <p className=" tw-text-gray">
-                        One must fulfill maintainance requirement in order to apply for family reunification which means one should be able to financially support his/her family and also have a home of sufficient size and standard.
-                      </p>
-                    </div>
-
-                    <div>
-                      <span className=" tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> OUR ROLE
-                      </span>
-                      <h2>
-                        <strong>Who Have A Right To Family Reunification?</strong>
-                      </h2>
-
-                      <ul className=" tw-p-0   tw-list-decimal   tw-pt-4">
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray">Assistance with residence permit application.</p>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray">Information on required documentation.</p>
-                        </li>
-
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray">Information on required Government fees to pay.</p>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray">Registration at the Migration Board.</p>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray">Follow up after registration.</p>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray">Booking of appointment at the Migration Board.</p>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray">accompanied visits to Migration Boad for biometrics.</p>
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Requested Change: 
+                          </h4>
                         </li>
                       </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Clearly state how you would like the decision to be changed (e.g., approval of the permit).
+
+                          </p>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Personal Information: 
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Include your full name, date of birth, postal address, email, and phone number.
+
+                          </p>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          New Evidence or Arguments:
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Any new circumstances, supporting evidence, or arguments that you did not initially submit should be included in your appeal.
+
+                          </p>
+                        </li>
+                      </ul>
+
+
+                      <p className=" tw-text-gray">
+                        <br />
+                      </p>
                     </div>
+
+
+
+
+
+
+
+                    <div className="row tw-flex tw-items-center">
+                    <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-12 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={banner}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                        <span className=" tw-flex tw-items-center tw-gap-2">
+                          {" "}
+                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                          Authorization 
+                        </span>
+                        <h2>
+                          <strong>For a Representative                          </strong>
+                        </h2>
+                        <p className=" tw-text-gray">
+                        If someone else is submitting the appeal on your behalf (for instance, a legal representative from Sweden Relocators), you must provide a signed Power of Attorney (fullmakt) allowing them to act on your behalf. This document should be included with your appeal and must be an original copy.
+
+                        </p>
+                      </div>
+
+                     
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div>
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                        by Migrationsverket
+                      </span>
+                      <h2>
+                        <strong>Appeal Submission and Initial Review </strong>
+                      </h2>
+
+                      <p className=' tw-text-gray tw-pl-8'>Once your appeal is submitted, Migrationsverket will initially review the case again to determine if the decision can be changed based on the new information provided. The agency will verify that your appeal was submitted on time (within three weeks of the decision) and assess whether the initial decision may have overlooked any key information.
+
+                      </p>
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Timely Submission:
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          If the appeal is not submitted within three weeks, Migrationsverket may dismiss it, and you may need to submit a new application instead.
+
+
+                          </p>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Reconsideration: 
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          If Migrationsverket finds that new evidence or arguments justify a change in the decision, they will inform you and may grant the permit.
+
+
+                          </p>
+                        </li>
+                      </ul>
+
+                   <p className=" tw-text-gray">
+                        <br />
+                      </p>
+                    </div>
+
+                 
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div>
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                        at This Stage
+
+                      </span>
+                      <h2>
+                        <strong>Possible Outcomes  </strong>
+                      </h2>
+
+                    
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Positive Outcome: 
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          If Migrationsverket determines that the original decision can be changed, they will inform you, and the visa, permit, or other document will be issued.
+
+
+                          </p>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Forwarding the Appeal:
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          If the agency upholds the initial decision, your appeal will be forwarded to the Administrative Court in Gothenburg for further review.
+
+
+                          </p>
+                        </li>
+                      </ul>
+
+                   <p className=" tw-text-gray">
+                        <br />
+                      </p>
+                    </div>
+
+
+
+
+
+
+
+                    <div className="row tw-flex tw-items-center">
+                    <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-12 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={banner}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                        <span className=" tw-flex tw-items-center tw-gap-2">
+                          {" "}
+                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                          Next Steps 
+                        </span>
+                        <h2>
+                          <strong>If the Appeal is Forwarded to Court
+                          </strong>
+                        </h2>
+                        <p className=" tw-text-gray">
+                        If Migrationsverket does not alter the decision, your case will be sent to the Administrative Court (Förvaltningsrätten) in Gothenburg, along with all application documents and the appeal. The court will review the case independently and make a ruling.
+
+                        </p>
+                      </div>
+
+                     
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div>
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                       
+                      </span>
+                      <h2>
+                        <strong>Administrative Court Review
+                        </strong>
+                      </h2>
+
+                      <p className=' tw-text-gray tw-pl-8'>The court will examine the initial application, the reasons for the denial, and any new information or arguments presented in your appeal. The court may require additional documents or clarification to make a fair ruling.
+
+                      </p>
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Decision Notification: 
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Once the court has reached a decision, you will be notified at the address you specified in your application or appeal.
+
+
+                          </p>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Potential for Further Appeals: 
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          If the Administrative Court also denies the appeal, there may be additional options to appeal to the Migration Court of Appeal (Migrationsöverdomstolen) in specific cases, particularly if the case involves legal principles of wider importance.
+
+
+                          </p>
+                        </li>
+                      </ul>
+
+                   <p className=" tw-text-gray">
+                        <br />
+                      </p>
+                    </div>
+
+                 
+
+
+
+
+
+
+                    <div>
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                        for the Appeal Process
+
+                      </span>
+                      <h2>
+                        <strong>Estimated Timelines 
+                        </strong>
+                      </h2>
+
+                      <p className=' tw-text-gray tw-pl-8'>The duration of the appeal process varies:
+
+
+                      </p>
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Initial Review by Migrationsverket: 
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          If Migrationsverket decides to change its decision, you will generally be informed within a few days.
+
+
+                          </p>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Forwarding to the Administrative Court: 
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                           If the decision is not altered, the case is typically forwarded to the Administrative Court within a few weeks.
+
+
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Court Decision Timeline:
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          The Administrative Court's review can take several months, depending on the complexity of the case and the court’s workload.
+
+
+                          </p>
+                        </li>
+                      </ul>
+
+                   <p className=" tw-text-gray">
+                        <br />
+                      </p>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div>
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                        How Sweden Relocators Can Help You Through the Appeal Process
+                      </span>
+                      <h2>
+                        <strong> Our Services Include:
+                        </strong>
+                      </h2>
+
+                    
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Case Analysis and Consultation
+
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          We review your case and provide a detailed assessment of the reasons for the denial and the best approach for the appeal. Understanding why the permit was denied allows us to identify key points to address in the appeal.
+
+                            <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+
+            
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Document Preparation and Gathering Evidence
+
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Our legal team drafts a comprehensive appeal letter that addresses each aspect of the denial and presents compelling reasons for reconsideration. We ensure that all necessary documentation, including any required Power of Attorney, is complete and accurately presented.
+                            <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Representation and Follow-Up
+
+
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          If the appeal is forwarded to the Administrative Court, we act as your representative, managing all communication with the court and keeping you informed throughout the process.
+
+                           
+                          </p>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          We provide ongoing follow-up with Migrationsverket or the court to ensure your case moves forward smoothly.
+
+
+                            <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Legal Support for Further Appeals
+
+
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          If necessary, we guide you through the process of appealing to the Migration Court of Appeal in cases where this option is available.
+
+                           
+                          </p>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                        <strong>Our Services with Swedish Authorities
+                        </strong><br />
+                        <p>We understand that decisions from Swedish authorities can have a significant impact on your life, finances, and ability to work or reside in Sweden. Here’s how we can assist with appeals, applications, and communications with several key agencies:
+                        </p><br/>
+
+                        <strong>1. Swedish Tax Agency (Skatteverket)
+                        </strong><br/>
+                        <p>Skatteverket plays a central role in matters related to tax registration, personnummer (social security numbers), and residence permits for tax purposes. If you are facing issues with Skatteverket, such as rejected applications for a personnummer, tax disputes, or concerns regarding tax residency status, our team can help.
+                        </p>
+
+
+
+                            <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Personnummer Applications: 
+
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Assistance in gathering required documents, completing applications, and ensuring timely submission for personnummer or coordination numbers.
+         <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Tax Residency and Income Tax Disputes: 
+
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          
+                          
+                          Support in challenging tax residency status determinations or disputes related to income tax filings.
+
+                          
+                               <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+
+                      
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Property Tax and Business Tax Matters: 
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          
+                           Guidance on property or business tax filings, especially for entrepreneurs or individuals with complex tax situations.
+
+                          
+<br/>
+<strong>2. Swedish Social Insurance Agency (Försäkringskassan)
+</strong><br/>
+
+<p>Försäkringskassan manages social insurance benefits, including health insurance, parental leave, child benefits, and pensions. If you are struggling to access or appeal decisions related to these benefits, we can provide comprehensive support.
+</p>
+
+
+                               <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Parental Leave and Child Benefits:
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          
+                          Assistance with applications, appeals, and compliance to ensure you receive the benefits you’re entitled to.
+
+
+                               <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Sickness and Disability Benefits:
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Support in gathering medical documentation and challenging benefit denials.
+
+
+                               <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+                      
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Pension Eligibility:
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Guidance on navigating the Swedish pension system and appealing decisions on pension eligibility or amounts.
+
+                          
+<br/>
+<strong>3. Swedish Public Employment Service (Arbetsförmedlingen)
+
+</strong><br/>
+
+<p>3. Swedish Public Employment Service (Arbetsförmedlingen)
+If you are receiving unemployment benefits or support from Arbetsförmedlingen, you may face requirements or conditions to remain eligible. We help ensure that you meet these requirements and provide assistance if you encounter issues.
+</p>
+
+
+                               <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Activity Requirements: 
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Assistance in meeting activity requirements, including documentation and verification.
+
+
+
+                               <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Appeals for Unemployment Support:
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                           Support for those who believe they have been unfairly denied benefits or faced incorrect decisions regarding their eligibility.
+
+
+
+                               <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Job Search Assistance: 
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Guidance on Arbetsförmedlingen procedures and requirements to maintain benefits while seeking employment.
+
+                          
+<br/>
+<strong>4. Swedish Customs Agency (Tullverket)
+
+
+</strong><br/>
+
+<p>Tullverket handles customs and import/export regulations in Sweden, and decisions by this authority can significantly impact individuals or businesses involved in international trade.
+
+</p>
+
+
+                               <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Customs Disputes: 
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Assistance in resolving disputes related to customs duties, classifications, and import/export procedures.
+
+
+
+                               <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Personal Belongings and Vehicles:
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Guidance on importing personal belongings or vehicles, including compliance with customs regulations and addressing tax implications.
+
+
+
+                               <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Business Import/Export Compliance:
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Support for businesses with complex customs needs, ensuring compliance and avoiding costly penalties.
+
+                          
+<br/>
+<strong>5. Unemployment Insurance (A-Kassa)
+
+
+
+</strong><br/>
+
+<p>A-Kassa, or unemployment insurance funds, provides essential financial support for individuals who have lost their jobs. If you’re facing issues with your A-Kassa application, eligibility, or payments, our team can help.
+
+</p>
+
+
+                               <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Eligibility Disputes: 
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Assistance with challenges related to qualifying for A-Kassa benefits, including compliance with job search or activity requirements.
+
+
+
+                               <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Income-Related Benefit Appeals:
+                          </h4>
+                        </li>
+                      </ul>
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Help in resolving disputes over income-based benefits and ensuring you receive the correct amounts.
+
+
+
+                               <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+                                         </div>
+                                         
+
+
+
+
+
+
+
+
+
+
+
+
+                                         <div>
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      
+                      </span>
+                      <h2>
+                        <strong>   Contract Services Include:
+                        </strong>
+                      </h2>
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Contract Review and Explanation
+
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Detailed review of employment contracts, rental agreements, business contracts, and other legally binding documents.
+<br/>
+
+Explanation of terms, obligations, and potential risks, ensuring you fully understand the contract’s implications.
+
+
+                            <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Negotiation Support
+
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Advice on renegotiating terms that may not be in your favor, especially in employment, rental, or business agreements.
+<br>
+</br>
+Assistance in drafting counteroffers or proposing changes to terms, with a focus on protecting your interests.
+
+                            <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+
+                       
+                      </ul>
+
+
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Drafting and Customizing Contracts
+
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Help in creating contracts tailored to your needs, whether for business partnerships, freelance work, or personal agreements.
+                          <br>
+</br>
+Legal review and customization of standard templates to ensure compliance with Swedish law.
+
+
+                            <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+
+                       
+                      </ul>
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Dispute Resolution and Mediation
+
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                          Support in resolving contract disputes through negotiation, mediation, or, if necessary, legal action.
+                          <br>
+</br>
+Assistance in gathering evidence, understanding your rights, and presenting your case in disputes related to employment, rentals, or business contracts.
+
+
+
+                            <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+
+                       
+                      </ul>
+
+
+                   
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div>
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Why Choose
+                      </span>
+                      <h2>
+                        <strong>Sweden Relocators?
+                        </strong>
+                      </h2>
+
+                  
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Experience with Swedish Immigration Law: 
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                           
+
+                           Our team has successfully handled numerous appeals and is highly familiar with Swedish migration laws and policies, giving us a clear advantage in challenging decisions.
+
+                            <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Comprehensive Case Management:
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                           
+
+                          From consultation to representation, we handle every aspect of the appeal process, providing you with a single point of contact and peace of mind.
+
+                            <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+
+
+
+
+                      
+                      <ul className=" tw-p-0 tw-pt-4">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <GoTriangleRight className=" tw-text-blue" />
+                          <h4 className=" m-0 tw-text-gray">
+                          Personalized Approach:
+                          </h4>
+                        </li>
+                      </ul>
+
+                      <ul className=" tw-p-0 tw-pl-10">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                           
+
+                         Every case is unique. We take the time to understand your situation, ensure that your appeal is tailored to your specific needs, and focus on presenting the strongest possible case.
+
+                            <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+                    
+                    </div>
+
+
+
+
+
+
+
+
+
+ <div>
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                        Sweden Relocators for 
+                      </span>
+                      <h2>
+                        <strong>Expert Appeal Assistance
+                        </strong>
+                      </h2>
+
+                      <p className=" tw-text-gray tw-pl-8">
+                      If you’ve been denied a family reunification permit, residence permit, business visa, citizenship, or another document, Sweden Relocators is here to help you take the next steps. Our experienced team will work closely with you to build a strong case and guide you through the appeal process with professionalism and care. Contact us today to discuss your situation, and let us help you turn the decision around.
+
+                      </p>
+
+                      <p>
+                        <br />
+                      </p>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                      {/* END OF NEW CONTENT */}
+
+                    
                   </div>
                 </div>
 
