@@ -526,14 +526,14 @@ const Visit_visa = () => {
                   </div>
 
                   <div>
-                  <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
                   <h5 className=" tw-text-black  ">Personal Details</h5>
 
                   <h6 className=" tw-text-black ">
                     {" "}
                     <i class="fa fa-user"> </i>FILL UP THE PERSONAL DETAILS 
                   </h6>
-                </div>
+                </div> */}
 
                     <Assessment_modal
                       isModalOpen={isModalOpen}
@@ -541,7 +541,7 @@ const Visit_visa = () => {
                       // setUsers={setUsers}
                     />
 
-                    <form>
+                    {/* <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                         <div className="col-md-6 tw-pt-4">
                           <Input
@@ -574,7 +574,7 @@ const Visit_visa = () => {
                           />
                         </div>
                       </div>
-                    </form>
+                    </form> */}
                   </div>
 
                   {/* user info */}

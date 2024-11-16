@@ -273,7 +273,8 @@ const Looking_for_housing = () => {
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                        FILL UP THE DETAILS OF YOUR HOUSE
+                        Provide the details & We will assist you in finding the right place in
+Skåne & Copenhagen.
                       </span>
                       <h7
                         className="tw-text-light"
@@ -288,13 +289,6 @@ const Looking_for_housing = () => {
                     </div>
 
                     <div className="col-md-6">
-                      {/* <label
-                        htmlFor="first_name"
-                        className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
-                      >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
-                        Select Country
-                      </label> */}
 
                       <select
                         value={selectCountry}
@@ -311,14 +305,7 @@ const Looking_for_housing = () => {
                     </div>
                     {selectCountry === "Sweden - Skane" ? (
                       <div className="col-md-6">
-                        {/* <label
-                        htmlFor="first_name"
-                        className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
-                      >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
-                        Select Country
-                      </label> */}
-
+                     
                         <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                           <option>Select Skåne City</option>
                           <option value="Ängelholm">Ängelholm</option>
@@ -333,16 +320,10 @@ const Looking_for_housing = () => {
 
                     {selectCountry === "Denmark - Copenhagen" ? (
                       <div className="col-md-6">
-                        {/* <label
-                        htmlFor="first_name"
-                        className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
-                      >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
-                        Select Country
-                      </label> */}
+                       
 
                         <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                          <option>Select Denmark City</option>
+                          <option>Select Copenhagen City</option>
                           <option value="Ängelholm">Ängelholm</option>
                           <option value="Åstorp">Åstorp</option>
                           <option value="Båstad">Båstad</option>
@@ -354,18 +335,12 @@ const Looking_for_housing = () => {
                     ) : null}
 
                     <div className="col-md-6">
-                      {/* <label
-                        htmlFor="first_name"
-                        className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
-                      >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
-                        Select your type of house
-                      </label> */}
+                     
 
                       <select
                         value={housing}
                         name="housing"
-                        onChange={handleSelectChange}
+                        onChange={handleHousingChange}
                         className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                       >
                         <option>Select Housing Type</option>
@@ -377,39 +352,32 @@ const Looking_for_housing = () => {
                       </select>
                     </div>
 
+
+                    {housing != "Shared Beds"   ?
+                    (
                     <div className="col-md-6">
-                      {/* <label
-                        htmlFor="first_name"
-                        className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
-                      >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
-                        Select Floor
-                      </label> */}
+                      
 
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Select Required Floor?</option>
+                        <option>Number of Rooms required?</option>
 
-                        <option value={"Basement"}>Basement</option>
-                        <option value={"Ground Floor"}>Ground Floor</option>
+                        <option value={"1"}>1</option>
+                        <option value={"2"}>2</option>
                         <option value={"3"}>3</option>
                         <option value={"4"}>4</option>
                         <option value={"5"}>5</option>
+                        <option value={"5"}>6</option>
+                        <option value={"7+"}>7+</option>
                       </select>
-                    </div>
+                    </div>) : null}
 
-                    {housing === "Apartment" ? (
+                    {housing === "Apartment"  || housing === "Radhus" ? (
                       <>
                         <div className="col-md-6">
-                          {/* <label
-                        htmlFor="first_name"
-                        className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
-                      >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
-                        Select Floor
-                      </label> */}
+                        
 
                           <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>Number of Rooms Required?</option>
+                            <option>Number of Floor Required?</option>
 
                             <option value={"1"}>1</option>
                             <option value={"2"}>2</option>
@@ -417,7 +385,40 @@ const Looking_for_housing = () => {
                             <option value={"4"}>4</option>
                             <option value={"5"}>5</option>
                             <option value={"6"}>6</option>
-                            <option value={"6"}>7 or +</option>
+                            <option value={"7"}>7</option>
+                            <option value={"8"}>8</option>
+                            <option value={"9"}>9</option>
+                            <option value={"10"}>10</option>
+                            <option value={"11"}>11</option>
+                            <option value={"12"}>12</option>
+                            <option value={"13"}>13</option>
+                            <option value={"14"}>14</option>
+                            <option value={"15"}>15</option>
+                            <option value={"16"}>16</option>
+                            <option value={"17"}>17</option>
+                            <option value={"18+"}>18+</option>
+                          </select>
+                        </div>
+                      </>
+                    ) : null}
+
+
+
+
+{housing === "Shared Rooms" || housing === "Shared Beds"   ? (
+                      <>
+                        <div className="col-md-6">
+                        
+
+                          <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
+                            <option>Maximum beds in a room?</option>
+
+                            <option value={"1"}>1</option>
+                            <option value={"2"}>2</option>
+                            <option value={"3"}>3</option>
+                            <option value={"4"}>4</option>
+                            <option value={"5+"}>5+</option>
+                           
                           </select>
                         </div>
                       </>
@@ -456,14 +457,8 @@ const Looking_for_housing = () => {
                         <option value={"6"}>6 or +</option>
                       </select>
                     </div>
-                    <div className="col-md-6">
-                      {/* <label
-                        htmlFor="first_name"
-                        className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
-                      >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
-                        Is car parking included?
-                      </label> */}
+                    {/* <div className="col-md-6">
+                      
 
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>How many children do you have?</option>
@@ -474,16 +469,10 @@ const Looking_for_housing = () => {
                         <option value={"5"}>5</option>
                         <option value={"N/A"}>N/A</option>
                       </select>
-                    </div>
+                    </div> */}
 
-                    <div className="col-md-6">
-                      {/* <label
-                        htmlFor="first_name"
-                        className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
-                      >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
-                        Are pets allowed?
-                      </label> */}
+                    {/* <div className="col-md-6">
+                     
 
                       <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                         <option>Do you have infants?</option>
@@ -493,7 +482,7 @@ const Looking_for_housing = () => {
                         <option value={"4"}>4 or +</option>
                         <option value={"N/A"}>N/A</option>
                       </select>
-                    </div>
+                    </div> */}
 
                     <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
                       <span className=" tw-flex tw-items-center tw-gap-2">
@@ -536,15 +525,18 @@ const Looking_for_housing = () => {
                         Are you looking for deposit?
                       </label> */}
 
-                      <Input
-                        star={"*"}
-                        type={""}
-                        className={
-                          " tw-w-full border tw-py-3 tw-px-3 tw-rounded-xl  "
-                        }
-                        label={" How much rent you can pay?"}
-                        placeholder={""}
-                      />
+<Input
+  star={"*"}
+  type={"number"}
+  step="0.01"
+  min="0"
+  className={
+    "tw-w-full border tw-py-2.5 tw-px-3 tw-rounded-xl mt-2"
+  }
+  label={"How much rent can you pay?"}
+  placeholder={"How much rent can you pay?"}
+></Input>
+
                     </div>
 
                     <div className="col-md-6">
@@ -616,22 +608,16 @@ const Looking_for_housing = () => {
                     ) : null}
 
                     <div className="col-md-6">
-                      {/* <label
-                        htmlFor="first_name"
-                        className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
-                      >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
-                        What is the duration of rent out?
-                      </label> */}
+                     
 
                       <Input
                         star={"*"}
-                        type={""}
+                        type={"date"}
                         className={
                           " tw-w-full border tw-py-3 tw-px-3 tw-rounded-xl  "
                         }
                         label={"Expected moving date:"}
-                        placeholder={""}
+                        placeholder={"Expected moving date:"}
                       />
                     </div>
 

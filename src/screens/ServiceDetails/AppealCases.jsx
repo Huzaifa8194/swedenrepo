@@ -1,3 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React, { useEffect } from 'react';
 import Banner_Page from '../../components/Common/Banner_Page';
 import Navbar from '../../components/Header/Navbar';
@@ -190,130 +209,326 @@ const AppealCases = () => {
                 <div className="  md:tw-pl-32 tw-pl-3">
 
 
-                <span className=" tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> appeal cases
-                    </span>
-                  <p className=" tw-text-gray">
-                    Have you been denied family reunification? Residence permit? business visa? Citizenship? Identity card/personnummer? Visa? Or something completely different? let’s take a look at your case so that the decision can hopefully be
-                    overturned.
-                  </p>
-                  <p className=" tw-text-gray">
-                    It has become much more difficult to enter Sweden. After the refugee crisis, the authorities have tightened the requirements violently, and you may have been caught in that regard. We have appealed many cases to our clients and
-                    they have won their cases. We hope that we can help you as well.
-                  </p>
-
-                  <div>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> HOW TO
-                    </span>
-
-                    <h2>
-                      <strong>Appeal?</strong>
-                    </h2>
-
-
-                    <div className="row tw-flex tw-items-center tw-mb-6">
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-10 tw-mx-auto">
-                          <img src={banner} alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        
-                        <p className=" tw-text-gray">
-                        To appeal against the decision made on your visa case, you should write a letter in Swedish or English. You must sign the appeal. </p>
-                
-                        
-                      </div>
-                    </div>
 
 
 
 
-                   
-                  </div>
+                <div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Asylum in Sweden: Professional Support for a Secure Future
+  </span>
+  
+  <h2>
+    <strong>What We Offer</strong>
+  </h2>
+  
+  <p className="tw-text-gray">
+    If you are seeking asylum in Sweden, understanding the legal process and meeting requirements can be overwhelming. At [Your Company Name], our team of experienced immigration specialists is here to guide you through each stage of the asylum process at the Swedish Migration Agency, ensuring that your case is handled with the utmost care and professionalism.
+  </p>
 
-                
-                  <div>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>AFTER
-                    </span>
+  <h2>
+    <strong>Why Choose an Expert?</strong>
+  </h2>
 
-                    <h2>
-                      <strong>Sending The Appeal</strong>
-                    </h2>
+  <p className="tw-text-gray">
+    Navigating the asylum process in Sweden can be complex, with specific rules and timelines. Here’s how our expert team can make a difference for you:
+  </p>
+  
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Peace of Mind</h4>
+    </li>
+  </ul>
+  
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        With our professional team managing your case, you can focus on other aspects of settling into Sweden. We are committed to ensuring your asylum application is handled effectively and with compassion.
+      </p>
+    </li>
+  </ul>
 
-                    <p className=" tw-text-gray">
-                      After receiving your appeal, it is the Embassy that initially decides whether to review the decision. The Embassy will verify that the appeal came in on time and will go over the case again. If more than 3 weeks have passed, the
-                      appeal will be rejected; in that case you will have to submit a new visa application.
-                    </p>
-                  </div>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Clear and Transparent Guidance</h4>
+    </li>
+  </ul>
 
-                  <div>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>IF THE
-                    </span>
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        Our specialists simplify complex legal requirements, ensuring you understand every step. No matter how complicated your case may seem, our team is prepared to help you clarify and effectively present your grounds for asylum.
+      </p>
+    </li>
+  </ul>
 
-                    <h2>
-                      <strong>Embassy Changes The Decision</strong>
-                    </h2>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Immediate Access to a Legal Expert</h4>
+    </li>
+  </ul>
 
-                    <p className=" tw-text-gray">
-                      If the Embassy finds that the decision could be changed, you will be contacted. The decision can be changed if new information comes in or if the Embassy considers the decision to be wrong. In that case you will be notified, and
-                      the entry visa placed in your passport.
-                    </p>
-                  </div>
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        Our immigration lawyers will begin working on your case as soon as you reach out, providing an immediate response to your concerns and ensuring that your case is prioritized and processed swiftly.
+      </p>
+    </li>
+  </ul>
 
-                  <div>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>IF THE
-                    </span>
+  <h2>
+    <strong>Eligibility for Asylum in Sweden</strong>
+  </h2>
 
-                    <h2>
-                      <strong>Embassy Does Not Change The Decision, It Will Be Forwarded</strong>
-                    </h2>
+  <h2>
+    <strong>Who Can Apply for Asylum?</strong>
+  </h2>
+  
+  <p className="tw-text-gray">
+    To apply for asylum in Sweden, you must be physically present within the country or at its border. It is not possible to apply from another country or at a Swedish embassy abroad.
+  </p>
+  
+  <p className="tw-text-gray">
+    Every asylum seeker’s case is reviewed individually, with the Swedish Migration Agency granting a residence permit only if the applicant meets the criteria to be considered a refugee under both Swedish law and the United Nations Refugee Convention.
+  </p>
 
-                    <p className=" tw-text-gray">
-                      If the appeal came in on time and the Embassy sees no reason to change the decision, the case will be forwarded as soon as possible. Your application, the decision, and all other documents submitted in the case will be sent to
-                      the Administrative Court in Göteborg. The Administrative Court then makes a decision and notifies you at the address you specified in the application or in the appeal.
-                    </p>
-                    <p className=" tw-text-gray">After the case has been handed over to the court, all questions about the case should be addressed to them</p>
-                  </div>
+  <h2>
+    <strong>Refugee Definition and Criteria</strong>
+  </h2>
+  
+  <p className="tw-text-gray">
+    Under Swedish law and international guidelines, a person qualifies as a refugee if they face persecution or severe threats in their home country based on:
+  </p>
+  
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-text-gray">Race</li>
+    <li className="tw-text-gray">Nationality, Language, or Ethnic Group</li>
+    <li className="tw-text-gray">Religion</li>
+    <li className="tw-text-gray">Political Belief or Activism</li>
+    <li className="tw-text-gray">Gender Identity</li>
+    <li className="tw-text-gray">Sexual Orientation</li>
+    <li className="tw-text-gray">Membership in a Particular Social Group</li>
+  </ul>
+  
+  <p className="tw-text-gray">
+    If groups or individuals in your home country threaten you or your loved ones, this can impact your application. However, a positive decision requires clear evidence of persecution related to one of these factors. During the application process, you will be asked to describe the risks you face if you were to return to your country.
+  </p>
 
-                  <div>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>HOW
-                    </span>
+  <h2>
+    <strong>Possible Outcomes of Your Application</strong>
+  </h2>
 
-                    <h2>
-                      <strong>Long Will It Take</strong>
-                    </h2>
+  <p className="tw-text-gray">
+    If your case is accepted, you may receive a residence permit valid for either three years or 13 months, depending on the specifics of your situation.
+  </p>
+</div>
 
-                    <p className=" tw-text-gray">
-                      After receiving the appeal, if the Embassy wants to change its decision, you will be contacted in a few days. But if the Embassy decides not to change its decision and forwards it to the Migration Court in Sweden, the waiting
-                      time would be longer.
-                    </p>
-                    <p className=" tw-text-gray">
-                      After receiving your appeal, it is the Embassy that initially decides whether to review the decision. The Embassy will verify that the appeal came in on time and will go over the case again. If more than 3 weeks have passed, the
-                      appeal will be rejected; in that case you will have to submit a new visa application.
-                    </p>
-                    <p className=" tw-text-gray">
-                      Have you been denied family reunification? Residence permit? business visa? Citizenship? Identity card/personnummer? Visa? Or something completely different? let’s take a look at your case so that the decision can hopefully be
-                      overturned.
-                    </p>
-                    <p className=" tw-text-gray">
-                      It has become much more difficult to enter Sweden. After the refugee crisis, the authorities have tightened the requirements violently, and you may have been caught in that regard. We have appealed many cases to our clients and
-                      they have won their cases. We hope that we can help you as well.
-                    </p>
-                  </div>
+
+<div>
+  <span className=" tw-flex tw-items-center tw-gap-2">
+    <p className=" tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Steps to Apply for Asylum in Sweden
+  </span>
+  
+  <h2>
+    <strong>Step-by-Step Process</strong>
+  </h2>
+
+  <p className=" tw-text-gray">
+    Follow these essential steps to apply for asylum in Sweden and begin your journey toward protection and settlement.
+  </p>
+
+  <ul className=" tw-p-0 tw-pt-4">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className=" tw-text-blue" />
+      <h4 className=" m-0 tw-text-gray">Step 1: Presence in Sweden</h4>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pl-10">
+    <li>
+      <p className=" m-0 tw-text-gray">
+        You must be physically in Sweden or at the Swedish border to apply for asylum.
+      </p>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pt-4">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className=" tw-text-blue" />
+      <h4 className=" m-0 tw-text-gray">Step 2: Initial Meeting with Swedish Migration Agency</h4>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pl-10">
+    <li>
+      <p className=" m-0 tw-text-gray">
+        Once you submit your application, you will be invited to an initial meeting at the Swedish Migration Agency. During this meeting, you will have the opportunity to select your legal representative or lawyer. At this stage, you can choose our experienced team to support you.
+      </p>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pt-4">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className=" tw-text-blue" />
+      <h4 className=" m-0 tw-text-gray">Step 3: Role of Your Legal Representative</h4>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pl-10">
+    <li>
+      <p className=" m-0 tw-text-gray">
+        If you select us as your representative, we will be contacted by the Migration Agency to assist with your case. Our team will schedule a call with you to gather details about your background and reasons for seeking asylum. We will also prepare you for future interviews and document submissions.
+      </p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong>Our Role as Your Legal Representative</strong>
+  </h2>
+
+  <p className=" tw-text-gray">
+    As your legal representative, we will provide ongoing support and legal advice throughout the asylum process. Here’s how we help:
+  </p>
+
+  <ul className=" tw-p-0 tw-pt-4">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className=" tw-text-blue" />
+      <h4 className=" m-0 tw-text-gray">Support and Legal Advice</h4>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pl-10">
+    <li>
+      <p className=" m-0 tw-text-gray">
+        We provide ongoing support and legal advice to ensure that your rights are protected throughout the asylum process.
+      </p>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pt-4">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className=" tw-text-blue" />
+      <h4 className=" m-0 tw-text-gray">Clarifying Grounds for Asylum</h4>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pl-10">
+    <li>
+      <p className=" m-0 tw-text-gray">
+        We will help clarify your grounds for asylum to the Migration Agency, ensuring a smooth application process.
+      </p>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pt-4">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className=" tw-text-blue" />
+      <h4 className=" m-0 tw-text-gray">Navigating Appeals</h4>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pl-10">
+    <li>
+      <p className=" m-0 tw-text-gray">
+        If your initial application is denied, we can assist with appeals to both the Migration Court and the Migration Court of Appeal.
+      </p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong>Family Reunification for Refugees</strong>
+  </h2>
+
+  <p className=" tw-text-gray">
+    Sweden recognizes family reunification as an essential right for refugees. Here’s what you need to know:
+  </p>
+
+  <ul className=" tw-p-0 tw-pt-4">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className=" tw-text-blue" />
+      <h4 className=" m-0 tw-text-gray">Who Can Qualify for Family Reunification?</h4>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pl-10">
+    <li>
+      <p className=" m-0 tw-text-gray">
+        Your family may be eligible for family reunification if you hold a permanent or eligible temporary residence permit in Sweden.
+      </p>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pt-4">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className=" tw-text-blue" />
+      <h4 className=" m-0 tw-text-gray">For EU/EEA Citizens</h4>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pl-10">
+    <li>
+      <p className=" m-0 tw-text-gray">
+        If you are an EU/EEA citizen, you may benefit from a simplified family reunification process based on the right of free movement within Europe.
+      </p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong>How We Assist You with Family Reunification</strong>
+  </h2>
+
+  <p className=" tw-text-gray">
+    Our team provides complete support for the family reunification process, ensuring a smooth and efficient journey:
+  </p>
+
+  <ul className=" tw-p-0 tw-pt-4">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className=" tw-text-blue" />
+      <h4 className=" m-0 tw-text-gray">Application Preparation</h4>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pl-10">
+    <li>
+      <p className=" m-0 tw-text-gray">
+        We assist with preparing and submitting the residence permit application for your family members, ensuring all necessary documents are included.
+      </p>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pt-4">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className=" tw-text-blue" />
+      <h4 className=" m-0 tw-text-gray">Additional Support Services for Asylum Seekers</h4>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pl-10">
+    <li>
+      <p className=" m-0 tw-text-gray">
+        In addition to asylum and family reunification, we provide relocation assistance, translation services, legal aid, and counseling.
+      </p>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
               </div>
 

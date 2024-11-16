@@ -187,163 +187,343 @@ const BusinessPermit = () => {
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
                 <div className="  md:tw-pl-32 tw-pl-2">
-                  <span className=" tw-flex tw-items-center tw-gap-2">
-                    {' '}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STARTING YOUR OWN
-                  </span>
-                  <h2>
-                    <strong>Business In Sweden</strong>
-                  </h2>
 
-                  <span className=" tw-pt-5 tw-flex tw-items-center tw-gap-2">
-                    {' '}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> IF YOU ARE PLANNING ABOUT INVESTING
-                  </span>
-                  <h2>
-                    <strong>In Sweden, You Need To Apply For The Residence Permit</strong>
-                  </h2>
 
-                  <p className=" tw-text-gray tw-font-medium">
-                    We have a complete solution for all your problems while starting a new business or opening a franchise of your existing business at Sweden. Our mobile app Sweden for all AB will deliver the service of providing the resident permit
-                    that will align your plan easily. You will need a detailed plan for your business, bank statement which shows that you have enough capital to invest in your business along with other enough funds to show that you can support your
-                    family and you while staying at Sweden during the first two years.
-                  </p>
+                <div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Self-Employment Residence Permit in Sweden: Updated Requirements and Process by Migrationsverket
+  </span>
+  <h2>
+    <strong> A Comprehensive Guide for Non-EU/EEA Entrepreneurs </strong>
+  </h2>
 
-                  <p className=" tw-text-gray tw-font-medium">
-                    Sweden is known as the land of start-ups because the economic conditions of the country are detrimental to entrepreneurship. Swedish business culture is open and innovative, and starting a business there is relatively simple.
-                    Thus, Sweden excels in promoting the formation of ambitious start-ups on an unexpected level. After Silicon Valley, Stockholm is known for producing the second-highest revenues from tech companies per capita.
-                  </p>
+  <p className="tw-text-gray">
+    If you’re a non-EU/EEA citizen aiming to start or expand a business in Sweden, you will need a self-employment residence permit from the Swedish Migration Agency (Migrationsverket). This permit allows non-EU entrepreneurs to live in Sweden while building and running a business. Known for its strong economy, Sweden fosters an open business environment with a thriving start-up culture, robust infrastructure, and a skilled workforce, making it an ideal destination for entrepreneurs.
+  </p>
 
-                  <p className=" tw-text-gray tw-font-medium">
-                    Being the tech and innovation hub, there is a high survival rate for start-ups in Sweden with relatively fast growth. However, you can face some difficulties in understanding the business culture and the procedures for operating a
-                    business in Sweden.
-                  </p>
-                  <p className=" tw-text-gray tw-font-medium">
-                    Swedish market has been witnessing the growing number of foreign companies, especially in the past few years. Sweden has developed a strong and competitive capitalist economy with a generous and universal welfare system that is
-                    known as the Nordic Model. With its diverse and stable market, investors are attracted to the country’s growing economy. There are so many opportunities for business in the country and Business Sweden can help you to connect with
-                    other companies in the sector.
-                  </p>
-                  <p className=" tw-text-gray tw-font-medium">You can do business in different ways inside Sweden. Whether you can start your own business or become a partner with one or more other Firms/Corporations.</p>
-                  <p className=" tw-text-gray tw-font-medium">Non-Profit Associations and foundations also engage in business activities, although they are usually not started up for this purpose.</p>
-                  <p className=" tw-text-gray tw-font-medium">
-                    Some of the reasons that businesses have chosen the Swedish market as their destination are the world-class infrastructure, Low-level of corruption, highly-skilled workforce, capitalistic economy, and friendly business culture.
-                    Sweden’s business climate is very favorable and that’s why it is known as a country of innovation.
-                  </p>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Why Choose Sweden for Your Business?</h4>
+    </li>
+  </ul>
 
-                  <span className=" tw-flex tw-items-center tw-gap-2">
-                    {' '}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> CBENEFIT
-                  </span>
-                  <h2>
-                    <strong>From Business Culture</strong>
-                  </h2>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Innovative Environment:</strong> Sweden has a collaborative and transparent business culture that encourages innovation.
+        <p><br /></p>
+      </p>
+    </li>
 
-                  <p className=" tw-text-gray tw-font-medium">
-                    Compared with many other cultures, the Swedish business culture is more relaxed and casual. There isn’t too much bureaucracy and the country is quite free from corruption. You will be inspired much by working in this much relaxed
-                    and informal culture. You will learn a lot will build many fruitful business relationships. These cultural reforms can be beneficial for you as an entrepreneur in Sweden.
-                  </p>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Access to EU Markets:</strong> As an EU member, Sweden provides businesses access to a large and stable market.
+      </p>
+      <p><br /></p>
+    </li>
 
-                  <p className=" tw-text-gray tw-font-medium">
-                    Besides this, the Swedish government has made it a lot easier for people to borrow money from public or private lenders. Swedish are informal about names and being an expat, you should do the same. In short, the business culture,
-                    here in Sweden, is much favourable for new business opportunities.
-                  </p>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Supportive Financial Ecosystem:</strong> Swedish institutions offer various financing options for entrepreneurs, including public and private loans and grants.
+        <p><br /></p>
+      </p>
+    </li>
 
-                  <div className="row">
-                    <div className="col-md-10 tw-mx-auto">
-                      <img src={banner} alt="" />
-                    </div>
-                  </div>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>High-Quality Infrastructure:</strong> Sweden’s advanced infrastructure and digital capabilities make it a global hub for tech start-ups.
+        <p><br /></p>
+      </p>
+    </li>
+  </ul>
 
-                  <div>
-                    <h2>
-                      <strong>RESIDENCE PERMIT FOR PEOPLE</strong>
-                    </h2>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Types of Business Structures in Sweden</h4>
+    </li>
+  </ul>
 
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> PASSPORT
-                    </span>
-                    <h2>
-                      <strong>Who Have Their Own Business</strong>
-                    </h2>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Sole Trader (Enskild Firma):</strong> Ideal for single entrepreneurs who want a simple business setup.
+        <p><br /></p>
+      </p>
+    </li>
 
-                    <p className=" tw-text-gray">
-                      People who start their business in Sweden or become a partner of a company, doing so if they have to stay for more than 3 months, they need a residence permit. You should apply and get a residence permit before you arrive in
-                      Sweden.
-                    </p>
-                  </div>
-                  <div>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> RESIDENCE
-                    </span>
-                    <h2>
-                      <strong>Permit Requirements</strong>
-                    </h2>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Trading Partnership or Limited Partnership (Handelsbolag/Kommanditbolag):</strong> Suitable for businesses with more than one owner.
+      </p>
+      <p><br /></p>
+    </li>
 
-                    <ul className=" tw-p-0 tw-pt-4">
-                      <li className=" tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">A valid passport. Note that the permit is only valid until the passport expiry date.</p>
-                      </li>
-                      <li className=" tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">Copies of the passport showing your identity, passport validity and permits to reside in any other countries.</p>
-                      </li>
-                      <li className=" tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">Proof that you own at least 50% of the company and have ultimate responsibility over any decisions.</p>
-                      </li>
-                      <li className=" tw-flex tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className=" m-0 tw-text-gray">Bank statements proving that you have sufficient capital to buy or establish a business for at least the first two years in Sweden.</p>
-                      </li>
-                      <li className=" tw-flex t tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className=" m-0 tw-text-gray">Your company must be expected to create sufficient profits to support the company, yourself and your family.</p>
-                      </li>
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className=" m-0 tw-text-gray">
-                          A detailed account of your business plan, including contracts with customers / suppliers; a contract for business premises; business permits if required; an investment budget; a liquidity budget and a budgeted balance sheet
-                          (profit / loss).
-                        </p>
-                      </li>
-                      <li className=" tw-flex tw-gap-3">
-                        <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">You must have relevant experience in the sector, and in running your own business.</p>
-                      </li>
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className=" m-0 tw-text-gray">
-                          You have sufficient income to support yourself and your family for at least the first two years of the permit. This is estimated to be SEK 200,000; for your spouse SEK 100,000; and SEK 50,000 for every child who accompanies
-                          you.
-                        </p>
-                      </li>
-                      <li className=" tw-flex  tw-gap-3">
-                        <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">Proof of sufficient English and or Swedish language skills.</p>
-                      </li>
-                      <li className=" tw-flex  tw-gap-3">
-                        <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">Receipt of payment for the application.</p>
-                      </li>
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className=" m-0 tw-text-gray">If you want to be registered in Sweden, you need to live in Sweden for more than a year and have a valid permit for that time period.</p>
-                      </li>
-                    </ul>
-                  </div>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Limited Company (Aktiebolag):</strong> A popular choice for those seeking limited liability and tax benefits.
+        <p><br /></p>
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Economic Association (Ekonomisk Förening):</strong> Best for cooperatives and businesses focused on shared economic interests.
+        <p><br /></p>
+      </p>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+<div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Self-Employment Residence Permit in Sweden: Key Requirements and Process (Migrationsverket)
+  </span>
+
+  <h2><strong>Key Requirements for a Self-Employment Residence Permit</strong></h2>
+
+  <h3>1. Valid Passport</h3>
+  <p className="tw-text-gray">
+    You must hold a valid passport for the entire duration of the permit. The permit’s validity will not exceed the passport’s expiration date. Include copies of relevant passport pages to confirm identity, validity, and residence permits in any other countries.
+  </p>
+
+  <h3>2. Ownership and Business Control</h3>
+  <p className="tw-text-gray">
+    You must own at least 50% of the business and have full decision-making authority over its operations. You should also be actively involved in the day-to-day running of the business and have primary responsibility for its management and direction.
+  </p>
+
+  <h3>3. Financial Requirements for Business and Personal Support</h3>
+  <p className="tw-text-gray">
+    <strong>Initial Capital:</strong> You must provide bank statements showing sufficient funds to establish and operate the business for at least two years.
+  </p>
+  <p className="tw-text-gray">
+    <strong>Personal Support:</strong> You need sufficient personal income to support yourself and any accompanying family members for the first two years. Minimum estimated requirements are:
+    <ul className="tw-list-disc tw-ml-5">
+      <li>SEK 200,000 for yourself</li>
+      <li>SEK 100,000 for a spouse/partner</li>
+      <li>SEK 50,000 for each accompanying child</li>
+    </ul>
+  </p>
+
+  <h3>4. Viable Business Plan</h3>
+  <p className="tw-text-gray">
+    A detailed business plan is essential. Migrationsverket will assess your business plan for feasibility and profitability. Include:
+    <ul className="tw-list-disc tw-ml-5">
+      <li>Contracts with suppliers and clients</li>
+      <li>Premises lease agreements, if relevant</li>
+      <li>Necessary industry permits</li>
+      <li>Financial projections, such as an investment budget, liquidity budget, and a projected balance sheet (profit and loss)</li>
+    </ul>
+    The business must be expected to generate sufficient profits to cover both business operations and personal living expenses.
+  </p>
+
+  <h3>5. Relevant Experience and Skills</h3>
+  <p className="tw-text-gray">
+    Migrationsverket requires evidence that you have the necessary experience in the sector and skills to manage your business effectively. Provide documentation of previous work experience, education, or prior business ownership relevant to the industry you plan to enter.
+  </p>
+
+  <h3>6. Language Proficiency</h3>
+  <p className="tw-text-gray">
+    While not strictly required, it’s recommended to have proficiency in Swedish or English to facilitate communication within the Swedish business environment and with regulatory authorities.
+  </p>
+
+  <h3>7. Application Fee Payment</h3>
+  <p className="tw-text-gray">
+    The application fee for a self-employment residence permit must be paid, and a receipt of this payment should be included with your application.
+  </p>
+  <p className="tw-text-gray">
+    If you plan to live in Sweden for more than one year, you must also apply for a personnummer (Swedish personal identity number) by registering with the Swedish Tax Agency. This number is essential for accessing healthcare, opening bank accounts, and other essential services.
+  </p>
+
+  <h2><strong>Step-by-Step Application Process for a Self-Employment Permit</strong></h2>
+
+  <h3>Step 1: Gather Required Documentation</h3>
+  <p className="tw-text-gray">
+    Compile all necessary documents, including a valid passport, proof of business ownership, and your business plan. Ensure that all documents meet Migrationsverket’s standards and include translated copies if they’re not in Swedish or English.
+  </p>
+
+  <h3>Step 2: Submit the Application</h3>
+  <p className="tw-text-gray">
+    Submit your application online through the Migrationsverket e-service or at a Swedish embassy or consulate in your home country. Attach all supporting documents as required by Migrationsverket.
+  </p>
+  <p className="tw-text-gray">
+    <strong>Applicant Information:</strong> Include personal details, business information, and financial documentation.
+  </p>
+  <p className="tw-text-gray">
+    <strong>Business Plan and Financial Proof:</strong> Ensure that the business plan and bank statements are accurate and reflect your ability to run a sustainable business in Sweden.
+  </p>
+
+  <h3>Step 3: Migrationsverket Review and Evaluation</h3>
+  <p className="tw-text-gray">
+    The Migration Agency will evaluate your application based on:
+    <ul className="tw-list-disc tw-ml-5">
+      <li><strong>Financial Feasibility:</strong> Ensuring that you have enough capital to sustain the business.</li>
+      <li><strong>Business Viability:</strong> Reviewing your business plan to determine if it can reasonably generate enough profit.</li>
+      <li><strong>Personal and Business Background:</strong> Assessing your industry experience, language proficiency, and understanding of the Swedish business environment.</li>
+    </ul>
+  </p>
+
+  <h3>Step 4: Decision Notification</h3>
+  <p className="tw-text-gray">
+    Once the application has been reviewed, Migrationsverket will issue a decision. If approved, you will receive a residence permit for self-employment, valid for up to two years. Extensions may be granted based on the business’s financial success and your continued eligibility.
+  </p>
+
+  <h2><strong>Business Structures in Sweden</strong></h2>
+
+  <h3>Sole Trader (Enskild Firma)</h3>
+  <p className="tw-text-gray">
+    Ideal for individual entrepreneurs without partners.
+  </p>
+
+  <h3>Trading Partnership or Limited Partnership (Handelsbolag/Kommanditbolag)</h3>
+  <p className="tw-text-gray">
+    Suitable for partnerships or small family businesses.
+  </p>
+
+  <h3>Limited Company (Aktiebolag)</h3>
+  <p className="tw-text-gray">
+    Commonly chosen by those seeking to grow and scale their business, offering limited liability protection.
+  </p>
+
+  <h3>Economic Association (Ekonomisk Förening)</h3>
+  <p className="tw-text-gray">
+    Generally used by cooperatives or community-driven initiatives.
+  </p>
+
+  <h2><strong>Advantages of Sweden’s Business Environment</strong></h2>
+
+  <h3>Innovative Culture</h3>
+  <p className="tw-text-gray">
+    With low corruption levels and minimal bureaucracy, Sweden encourages entrepreneurial innovation.
+  </p>
+
+  <h3>Financial Accessibility</h3>
+  <p className="tw-text-gray">
+    Sweden offers a variety of financing options, including bank loans, government grants, and angel investors.
+  </p>
+
+  <h3>Access to Skilled Talent</h3>
+  <p className="tw-text-gray">
+    The country has a highly educated workforce, with strong technical and managerial skills, particularly beneficial for technology and innovation-focused ventures.
+  </p>
+
+  <h3>Established Infrastructure</h3>
+  <p className="tw-text-gray">
+    Sweden’s advanced infrastructure, efficient logistics, and extensive digital networks make it ideal for both domestic and international business operations.
+  </p>
+
+  <h2><strong>How Sweden Relocators Can Assist You</strong></h2>
+  <p className="tw-text-gray">
+    Navigating the requirements for a self-employment residence permit can be complex. Sweden Relocators provides comprehensive support to ensure a successful application process, from documentation assistance to business plan guidance.
+  </p>
+
+ </div>
+
+ <div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p> How Sweden Relocators Can Assist You
+  </span>
+  <h2>
+    <strong>Comprehensive Support for Your Self-Employment Residence Permit</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    Navigating the requirements for a self-employment residence permit can be complex. Sweden Relocators provides comprehensive support to ensure a successful application process, from documentation assistance to business plan guidance.
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Our Services Include</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Application Guidance:</strong> We assist with gathering and organizing required documentation, ensuring that all requirements are met according to Migrationsverket’s standards.
+        <p><br /></p>
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Business Plan Development:</strong> Our team helps you create a compelling business plan that demonstrates financial viability and aligns with Swedish market expectations.
+      </p>
+      <p><br /></p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Financial and Income Proof:</strong> Assistance in documenting financial assets to prove your ability to support both the business and your family.
+        <p><br /></p>
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Ongoing Support:</strong> We offer support throughout the application process, responding to inquiries from Migrationsverket and guiding you through any additional requirements.
+        <p><br /></p>
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Appeals Assistance:</strong> If your application is denied, we provide guidance on the appeals process, helping you strengthen your case for reconsideration.
+      </p>
+      <p><br /></p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Why Work with Sweden Relocators?</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Expert Knowledge:</strong> Our team stays updated on the latest requirements from Migrationsverket, providing accurate and effective guidance.
+        <p><br /></p>
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Personalized Service:</strong> We understand that every business is unique, and we tailor our support to meet the specific needs of your industry and personal situation.
+      </p>
+      <p><br /></p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Streamlined Process:</strong> By managing the complexities of the application process, we help you avoid delays and increase your likelihood of success.
+        <p><br /></p>
+      </p>
+    </li>
+  </ul>
+
+  <p className="tw-text-gray tw-pt-4">
+    If you’re ready to establish your business in Sweden and need support with the self-employment residence permit application, Sweden Relocators is here to help. Contact us today to start your business journey in Sweden with confidence, knowing that every aspect of your application is in good hands.
+  </p>
+</div>
+
+
+
+
+
                 </div>
               </div>
 

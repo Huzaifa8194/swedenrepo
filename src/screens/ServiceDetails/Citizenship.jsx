@@ -187,231 +187,814 @@ const Citizenship = () => {
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
                 <div className="  md:tw-pl-32 tw-pl-3">
-                  <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                    {' '}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> REQUIREMENTS FOR BECOMING
-                  </span>
-
-                  <h2>
-                    <strong>A Swedish Citizen By Application</strong>
-                  </h2>
-
-                  <p className=" tw-text-gray tw-font-medium">To be able to become a Swedish citizen, you have to</p>
-
-                  <ul className=" tw-p-0 tw-pt-4">
-                    <li className=" tw-flex tw-items-center tw-gap-3">
-                      <div>
-                        <GoTriangleRight className=" tw-text-blue" />
-                      </div>
-                      <p className=" m-0 tw-text-gray">be able to prove your identity</p>
-                    </li>
-                    <li className=" tw-flex tw-items-center tw-gap-3">
-                      <GoTriangleRight className=" tw-text-blue" />
-                      <p className=" m-0 tw-text-gray">be 18 years of age or older</p>
-                    </li>
-                    <li className=" tw-flex  tw-gap-3">
-                      <div>
-                        <GoTriangleRight className=" tw-text-blue" />
-                      </div>
-                      <p className=" m-0 tw-text-gray">have a permanent residence permit (a temporary residence permit is not applicable) or</p>
-                    </li>
-                    <li className=" tw-flex  tw-gap-3">
-                      <div>
-                        <GoTriangleRight className=" tw-text-blue" />
-                      </div>
-                      <p className=" m-0 tw-text-gray">You can apply for a short-stay Schengen visa (type C-Joining a Family Member) which will permit you to enter Sweden and the Schengen area.</p>
-                    </li>
-
-                    <li className=" tw-flex  tw-gap-3">
-                      <div>
-                        <GoTriangleRight className=" tw-text-blue" />
-                      </div>
-                      <p className=" m-0 tw-text-gray">have a right of residence or residence card (applies to you if you are an EU citizen or a close relative of an EU citizen)</p>
-                    </li>
-                    <li className=" tw-flex  tw-gap-3">
-                      <GoTriangleRight className=" tw-text-blue" />
-                      <p className=" m-0 tw-text-gray">lived in Sweden for a certain amount of time</p>
-                    </li>
-                    <li className=" tw-flex  tw-gap-3">
-                      <GoTriangleRight className=" tw-text-blue" />
-                      <p className=" m-0 tw-text-gray">have conducted yourself well while in Sweden.</p>
-                    </li>
-                  </ul>
-
-                  <div>
-                    <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> YOU MUST HAVE LIVED
-                    </span>
-                    <h2>
-                      <strong>In Sweden For A Certain Period</strong>
-                    </h2>
-
-                    <p className=" tw-text-gray">For becoming a Swedish citizen, you need to live in Sweden for a certain period of time.</p>
-
-                    <div className="row tw-flex tw-items-center tw-mb-6">
-                      
-                    <div className="col-md-5">
-                        
-                        <p className=" tw-text-gray">The required period can vary from case to case. Some people have to live for 5 year continuously. Other rules apply for those who are stateless or refugees.</p>
-                   
-                          
-                        </div>
-                      
-                      <div className="col-md-7">
-                        <div className="row ">
-                          <div className="col-md-10 tw-mx-auto">
-                          <img src={banner} alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      
-                    </div>
 
 
 
 
 
-                   </div>
-
-                 
-
-                  <div>
-                    <div>
-                      <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>CITIZENSHIP
-                      </span>
-
-                      <h2>
-                        <strong>For Adults</strong>
-                      </h2>
-
-                      <p className=" tw-text-gray ">When you have lived in Sweden for a specified period and meet the other requirements, you can apply for a Swedish citizenship.</p>
-
-                      <div className="">
-                        <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                          {' '}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>PERIOD OF
-                        </span>
-                        <h2>
-                          <strong>Residence</strong>
-                        </h2>
-
-                        <p className=" tw-text-gray ">
-                          To become a Swedish citizen, you need to live in Sweden for 5 years continuously and you want to continue living in future aswell. The time of the residence permit that leads to a permanent residence permit is counted as a
-                          period of habitual residence.
-                        </p>
-                        <p className=" tw-text-gray ">
-                          If you had a permanent residence permit or a residence permit for settlement when you entered Sweden, you count the duration of stay from your date of arrival. Otherwise, the duration of stay is calculated from the date on
-                          which you submitted your application for a residence permit and were approved. If your application was initially rejected and you then submitted a new application, the time is counted from the date on which you received
-                          approval.
-                        </p>
-                      </div>
-
-                      <div className="">
-                        <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                          {' '}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>EU/EEA CITIZENS
-                        </span>
-                        <h2>
-                          <strong>And Their Family Members</strong>
-                        </h2>
-
-
-                        <div className="row tw-flex tw-items-center tw-mb-6">
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-10 tw-mx-auto">
-                          <img src={banner2} alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        
-                      <p className=" tw-text-gray ">EU/EEA citizens and their family members should complete and fulfill the requirements of residence permit in order to get the Swedish citizenship.</p>
-                      </div>
-                        
-                      </div>
-                    </div>
 
 
 
 
-                       
 
-                     
 
-                      <div className=" tw-pt-5">
-                        <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                          {' '}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>RECORDS
-                        </span>
 
-                        <h2>
-                          <strong>Related You</strong>
-                        </h2>
 
-                        <p className=" tw-text-gray ">You need to conduct yourself well. Your past will be checked by the authorities. Any information about your debts and crimes will be checked by the Swedish Migration Agency.</p>
+                <div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p> 
+    Swedish Citizenship: Requirements, Application Process, and Waiting Times
+  </span>
 
-                        <p className=" tw-text-gray tw-font-medium">The information is requested from:</p>
+  <h2><strong>General Requirements for Swedish Citizenship</strong></h2>
+  <p className="tw-text-gray">
+    To qualify for Swedish citizenship, applicants must meet several key requirements:
+  </p>
 
-                        <ul className=" tw-p-0 tw-pt-4">
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">The Enforcement Authority (if you have debts)</p>
-                          </li>
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">The Police (if you committed a crime or are suspected of doing so) </p>
-                          </li>
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">The Security Service (security checks).</p>
-                          </li>
-                        </ul>
-                      </div>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Age Requirement</h4>
+    </li>
+  </ul>
 
-                      <div className=" tw-pt-5">
-                        <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                          {' '}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>YOU CAN GET YOUR CITIZENSHIP
-                        </span>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Age:</strong> You must be at least 18 years old to apply independently. Children under 18 can apply alongside a parent or guardian, with special considerations for adopted children.
+      </p>
+    </li>
+  </ul>
 
-                        <h2>
-                          <strong>Application Refused In The Situations Mentioned Below If You</strong>
-                        </h2>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Permanent Residence or Right of Residence</h4>
+    </li>
+  </ul>
 
-                        <p className=" tw-text-gray ">You need to conduct yourself well. Your past will be checked by the authorities. Any information about your debts and crimes will be checked by the Swedish Migration Agency.</p>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Residence Requirement:</strong> Applicants must hold either a permanent residence permit (permanent uppehållstillstånd) or permanent right of residence (permanent uppehållsrätt) if they are EU/EEA citizens.
+      </p>
+    </li>
+  </ul>
 
-                        <ul className=" tw-p-0 tw-pt-4">
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">have not paid taxes, fines or other charges</p>
-                          </li>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Residency Duration</h4>
+    </li>
+  </ul>
 
-                          <li className=" tw-flex tw-items-center tw-gap-3">
-                            <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">have not paid maintenance.</p>
-                          </li>
-                        </ul>
-                        <p className=" tw-text-gray">Having debts in private companies also lead to rejection in your application. You have to remain debt free at least for 2 years before you can apply for a Swedish citizenship.</p>
-                      </div>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Residency Duration:</strong> 
+        <ul>
+          <li>Non-EU/EEA Citizens: Must have lived continuously in Sweden for at least five years.</li>
+          <li>EU/EEA Citizens: Typically, a minimum of five years of continuous residence with a valid right of residence.</li>
+          <li>Nordic Citizens: Generally, two years of continuous residence is sufficient.</li>
+          <li>People with Refugee Status: For recognized refugees, the waiting period may be reduced to four years.</li>
+        </ul>
+      </p>
+    </li>
+  </ul>
 
-                      <div className=" tw-pt-5">
-                        <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                          {' '}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>DUAL
-                        </span>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Good Conduct</h4>
+    </li>
+  </ul>
 
-                        <h2>
-                          <strong>Nationality</strong>
-                        </h2>
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Good Conduct:</strong> Applicants are expected to demonstrate good conduct, meaning they should not have a recent criminal record, significant debts, or unresolved legal issues. Migrationsverket considers factors such as past fines, prison sentences, or financial obligations.
+      </p>
+    </li>
+  </ul>
 
-                        <p className=" tw-text-gray ">Swedish law allow a person to have dual nationality or even multiple nationalities. Having multiple or dual nationalities would not affect on the rights of being a Swede.</p>
-                      </div>
-                    </div>
-                  </div>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Ability to Support Yourself</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Self-Sufficiency:</strong> Generally, applicants should be financially independent and not rely on social assistance. This applies particularly to non-Nordic and non-EU/EEA applicants.
+      </p>
+    </li>
+  </ul>
+</div>
+<div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p> 
+    Specific Paths to Citizenship
+  </span>
+  
+  <h2>
+    <strong>Citizenship for Nordic Citizens</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    For citizens of Denmark, Finland, Iceland, and Norway, the process for Swedish citizenship is streamlined:
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Residency Requirement
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        Only two years of continuous residence in Sweden are required.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Simplified Application Process:</strong> Nordic citizens can apply directly to Migrationsverket or, if they meet the criteria, register at their local Tax Agency (Skatteverket) for simplified processing.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Automatic Naturalization:</strong> Some Nordic citizens may qualify for automatic naturalization under specific conditions.
+      </p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong>Citizenship for EU/EEA Citizens</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    EU/EEA citizens can apply for Swedish citizenship after five years of continuous residence in Sweden. Requirements include:
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Permanent Right of Residence
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        After five years of residence, EU/EEA citizens typically acquire a permanent right of residence (permanent uppehållsrätt), which is essential for the citizenship application.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Simplified Process:</strong> EU/EEA citizens may experience a slightly simplified process since they are not required to hold a residence permit due to their EU rights.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Proof of Good Conduct and Financial Independence:</strong> Similar to other applicants, EU/EEA citizens must demonstrate good conduct and generally be financially self-sufficient.
+      </p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong>Citizenship for Individuals with a Permanent Residence Permit</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    If you have been granted a permanent residence permit in Sweden, you may apply for citizenship once you fulfill the residency requirements:
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Five-Year Residence Requirement
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        Most applicants need five years of continuous residence. However, those with refugee status may qualify after four years.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Documentation of Residence and Income:</strong> You will need to provide evidence of your residence and financial stability during your time in Sweden.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Commitment to Stay in Sweden:</strong> Migrationsverket may consider factors like employment and social ties to assess your intention to remain in Sweden.
+      </p>
+    </li>
+  </ul>
+</div>
+
+
+<div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Specific Paths to Citizenship
+  </span>
+
+  <h2>
+    <strong>Application Process for Swedish Citizenship</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    The application process for Swedish citizenship involves several steps to ensure you meet the eligibility criteria. Here’s an overview of the process:
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Prepare Documentation</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Gather Documents:</strong> Gather all necessary documents, including a valid passport, proof of residence (such as rental agreements), employment records, and proof of income.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Submit Application</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Submit the Application:</strong> Applications can be submitted online via Migrationsverket’s e-service or in paper format. Ensure all information is accurate, and double-check for any required documents, as incomplete applications may delay processing.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Application Review</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Eligibility Check:</strong> Migrationsverket reviews the application and checks your eligibility. This review includes confirming your residence, examining your criminal record (if applicable), and verifying financial self-sufficiency.
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Additional Information:</strong> Migrationsverket may contact you to request additional documentation if necessary.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Decision and Notification</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Final Decision:</strong> Once the review is complete, Migrationsverket will issue a decision. If approved, you will receive a certificate of Swedish citizenship. If denied, you have the right to appeal the decision.
+      </p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong>Waiting Time for Citizenship Applications</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    The waiting time for Swedish citizenship applications can vary depending on your background and whether additional information is required. As of the latest data, the average processing times are:
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Standard Processing</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        Standard processing for non-EU/EEA citizens and those without special exemptions typically takes 18-36 months.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Nordic Citizens</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        Nordic citizens typically experience shorter processing times, often between 6-12 months due to simplified requirements.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">EU/EEA Citizens</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        EU/EEA citizens often have similar processing times to standard applicants, but cases are typically processed more quickly if all documentation is in order.
+      </p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong>How Sweden Relocators Can Assist with Your Citizenship Application</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    Navigating the Swedish citizenship application process can be complex and time-consuming. Sweden Relocators offers comprehensive services to help streamline your application. Here’s how we can assist:
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Eligibility Assessment</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        We evaluate your residency history, documentation, and circumstances to confirm your eligibility and advise on any additional requirements.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Document Preparation and Verification</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        We ensure that all required documents are accurate, complete, and up-to-date, including translation of foreign documents if necessary.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Application Submission and Monitoring</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        We submit your application and monitor its progress with Migrationsverket, providing updates and handling any requests for additional information.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Support for Appeal</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        If your application is denied, we guide you through the appeal process and help strengthen your case for reconsideration.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Guidance on Additional Requirements</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        We provide personalized advice to address specific issues such as criminal records, financial concerns, or extended absences.
+      </p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong>Why Choose Sweden Relocators?</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    Sweden Relocators offers expert knowledge and personalized services to ensure a smooth Swedish citizenship application process. Here’s why you should choose us:
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Expert Knowledge of Swedish Citizenship Laws</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        Our team is well-versed in the latest citizenship requirements, ensuring you have the best chance of success.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Comprehensive, Personalized Support</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        We tailor our services to meet your specific needs, whether you’re a Nordic citizen, EU resident, or permanent residence permit holder.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">Streamlined Application Process</h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        We handle the details, so you can have peace of mind knowing that every step is managed professionally and efficiently.
+      </p>
+    </li>
+  </ul>
+</div>
+
+
+
+<div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p> A Selection of Prime Citizenship-by-Investment Programs
+  </span>
+
+  <h2>
+    <strong>Citizenship-by-Investment Programs Overview</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    Citizenship-by-investment programs offer affluent individuals and families a second or even third passport, granting them expanded global mobility, business opportunities, and the same rights as local citizens. Here are some of the most credible and successful programs available, each providing unique benefits:
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        🇦🇬 Antigua and Barbuda
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Minimum Investment:</strong> USD 100,000
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Advantages:</strong>
+        Visa-free or visa-on-arrival access to 151 destinations, including popular business and lifestyle hubs. Quick processing times and multiple investment options. Favorable tax environment with no taxes on worldwide income or inheritance.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        🇦🇹 Austria
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Minimum Investment:</strong> EUR 3 million
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Advantages:</strong>
+        One of the world’s strongest passports with visa-free access to 187 destinations. Settlement rights in all EU member states. High standards of living and security, ideal for business and family life.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        🇨🇾 Cyprus
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Minimum Investment:</strong> EUR 2.15 million
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Advantages:</strong>
+        Visa-free access to 174 countries, including all EU states. Right to live, work, and study in all EU member countries. Strong legal and tax system, beneficial for business and family relocation.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        🇲🇹 Malta
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Minimum Investment:</strong> Approximately EUR 1 million
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Advantages:</strong>
+        Access to the entire EU with the right to live, work, and study in all member states. Visa-free or visa-on-arrival access to over 180 countries. High-quality healthcare and education systems, ideal for family settlement.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        🇲🇪 Montenegro
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Minimum Investment:</strong> EUR 350,000
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Advantages:</strong>
+        Visa-free or visa-on-arrival access to 124 countries, including Schengen Area countries. Exclusive program limited to 2,000 applicants. Gateway to Europe with favorable tax rates and growing economy.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        🇰🇳 St. Kitts and Nevis
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Minimum Investment:</strong> USD 150,000
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Advantages:</strong>
+        Visa-free or visa-on-arrival access to 156 destinations, including the UK and Schengen countries. Flexible and quick application process. No personal income tax, making it ideal for wealth preservation.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        🇱🇨 St. Lucia
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Minimum Investment:</strong> USD 100,000
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Advantages:</strong>
+        Visa-free or visa-on-arrival access to 146 countries worldwide. Fast processing, with citizenship granted in as little as four months. Attractive business environment with tax incentives and financial flexibility.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        🇹🇷 Turkey
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Minimum Investment:</strong> USD 250,000 in real estate
+      </p>
+    </li>
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Advantages:</strong>
+        Access to key Western markets and growing economic opportunities. Visa-free or visa-on-arrival access to 111 destinations, including parts of Asia, Africa, and the Middle East. Option to acquire dual citizenship, with passports granted within six to nine months.
+      </p>
+    </li>
+  </ul>
+</div>
+
+
+
+<div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+    Why Choose Citizenship by Investment?
+  </span>
+  
+  <h2>
+    <strong>Benefits of Citizenship by Investment</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    Each of these citizenship-by-investment programs offers distinct benefits tailored to the global elite:
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Enhanced Global Mobility
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        Freedom to travel visa-free or with visa-on-arrival to numerous destinations.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Security and Stability
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        Citizenship in politically stable countries with secure legal systems.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Business Opportunities
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        Access to markets across the EU, Schengen Area, and beyond, fostering international business opportunities.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Lifestyle Benefits
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        High standards of living, tax efficiency, access to quality healthcare and education, and diverse cultural experiences.
+      </p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong>Why Work With Sweden Relocators?</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    At Sweden Relocators, we help you select the right citizenship program based on your needs, guiding you through the entire application process for a smooth and efficient journey toward a second citizenship.
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Contact Sweden Relocators for Citizenship Assistance
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        Swedish citizenship offers a host of benefits and opportunities, and our team is here to make your application journey as smooth as possible. Contact Sweden Relocators today to discuss your path to citizenship in Sweden, and let us guide you through every step with confidence and clarity.
+      </p>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+
                 </div>
               </div>
 

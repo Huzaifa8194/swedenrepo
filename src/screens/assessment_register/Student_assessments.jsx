@@ -507,7 +507,7 @@ const Student_assessments = () => {
                   </div>
 
                   <div>
-                    <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
+                    {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
                       <h5 className=" tw-text-black  ">Persoanl Details</h5>
 
                       <h6 className=" tw-text-black ">
@@ -515,7 +515,7 @@ const Student_assessments = () => {
                         <i class="fa fa-building"></i> Fill up your personal
                         details.
                       </h6>
-                    </div>
+                    </div> */}
 
                     <Assessment_modal
                       isModalOpen={isModalOpen}
@@ -523,7 +523,7 @@ const Student_assessments = () => {
                       // setUsers={setUsers}
                     />
 
-                    <form>
+                    {/* <form>
                       <div className="row ">
                         <div className="col-md-6 tw-pt-4">
                           <Input
@@ -556,7 +556,7 @@ const Student_assessments = () => {
                           />
                         </div>
                       </div>
-                    </form>
+                    </form> */}
                   </div>
 
                   {/* user info */}

@@ -189,103 +189,347 @@ const CPRNumberDenmark = () => {
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
                 <div className="  md:tw-pl-32 tw-pl-2">
-                  <span className=" tw-flex tw-items-center tw-gap-2">
-                    {' '}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> CPR NUMBER
-                  </span>
-                  <h2>
-                    <strong>Danish ID Number</strong>
-                  </h2>
 
-                  <p className=" tw-text-gray">
-                    CPR (Centrale Personregister) number is unique to a person and is used as an ID in Denmark. A CPR number facilitates accurate linkage between all Danish national registers among all other things. Your CPR number consists of ten
-                    digits. The primary six digits are your date of birth and the last four are your unique identification number. The last digit of your CPR number indicates your sex. If it’s an odd digit you’re male, and if it’s a fair digit you’re
-                    female.
-                  </p>
 
-                  <div>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> CPR NUMBER REQUIREMENT
-                    </span>
-                    <h2>
-                      <strong>Why & When?</strong>
-                    </h2>
 
-                    <p className=" tw-text-gray tw-font-medium">WHY?</p>
-                    <p className=" tw-text-gray">
-                      Residents of Denmark are legally required to possess a CPR number. You may also notice that your CPR number grants you access to many services in Denmark. You may need it to open a checking account, get a Danish sign, borrow
-                      books at the library, cast off insurance and so on.
-                    </p>
 
-                    <p className=" tw-text-gray tw-font-medium">WHYWHEN?</p>
-                    <p className=" tw-text-gray">Non-EU/EEA citizens who intend to stay in Denmark for more than three months are required to register with the Danish Civil Registration System on arrival.</p>
-                    <p className=" tw-text-gray">
-                      Nordic citizens, citizens of EU and EEA countries and Switzerland are required to register with the Danish Civil Registration System and obtain a CPR number within six months of their arrival in Denmark.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-10 tw-mx-auto">
-                            <motion.img animate={imageVariants} className=" tw-w-full" src={banner} alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <span className=" tw-flex tw-items-center tw-gap-2">
-                          {' '}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> HOW TO GET
-                        </span>
-                        <h2>
-                          <strong>A CPR Number?</strong>
-                        </h2>
-                        <p className=" tw-text-gray">
-                          To obtain a CPR number you must have an address in Denmark, also present a range of documents counting on your current civil status (see below). Please note that if your documents aren’t in Danish, Norwegian, Swedish,
-                          English or German, you must bring an authorized translation of all these documents.
-                        </p>
-                
-                        
-                      </div>
-                    </div>
 
-                    <ul className=" tw-p-0 tw-pt-4">
-                    <p className=" tw-text-gray tw-font-medium">At Citizens’ Services you’ll be asked for:</p>
-                      <li className=" tw-flex tw-items-center tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className=" m-0 tw-text-gray">
-                          Your Danish residence and legal document (non-EU/EEA citizens), or certificate of registration (for EU/EEA and Swiss citizens). Nordic citizens must bring proof of their Nordic personal positive identification, e.g. your
-                          passport.
-                        </p>
-                      </li>
-                      <li className=" tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">In case, if you’re married, your marriage certificate or a licensed copy of it.</p>
-                      </li>
-                      <li className=" tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">In case, if you have got children, your child/children’s birth certificate(s).</p>
-                      </li>
 
-                      <li className=" tw-flex tw-items-center tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className=" m-0 tw-text-gray">In case, If you’re divorced your divorce certificate.</p>
-                      </li>
+                <div>
+  <span className=" tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    Relocate to Denmark: Obtaining a CPR (Danish ID) Number
+  </span>
+  <h2>
+    <strong> What is a CPR Number? </strong>
+  </h2>
 
-                      <li className=" tw-flex tw-items-center tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className=" m-0 tw-text-gray">In case, if you’re a widow/widower, the death certificate of your spouse.</p>
-                      </li>
-                    </ul>
-                    <div></div>
-                  </div>
+  <p className=" tw-text-gray">
+    A CPR (Centrale Personregister) number is a unique identification number in Denmark. It is essential for individuals residing in Denmark as it facilitates seamless access to numerous public and private services. With a CPR number, you can register for healthcare, open a bank account, access insurance, and even borrow books at the library.
+  </p>
+
+  <ul className=" tw-p-0 tw-pt-4">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className=" tw-text-blue" />
+      <h4 className=" m-0 tw-text-gray">
+        CPR Number Structure
+      </h4>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pl-10">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <p className=" m-0 tw-text-gray">
+        <strong>Ten-Digit Identifier:</strong> The CPR number is a ten-digit identifier used across various Danish national systems and databases. The first six digits correspond to your date of birth, while the last four form your unique identification. The last digit of the CPR number also indicates gender: odd numbers denote male and even numbers denote female.
+      </p>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pt-4">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className=" tw-text-blue" />
+      <h4 className=" m-0 tw-text-gray">
+        CPR Number Requirement: Why & When?
+      </h4>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pl-10">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <p className=" m-0 tw-text-gray">
+        <strong>Why Do You Need a CPR Number?</strong> Residents in Denmark are legally obligated to have a CPR number as it is essential for:
+        <ul className="tw-pl-5">
+          <li>Accessing healthcare services.</li>
+          <li>Opening a bank account.</li>
+          <li>Registering for insurance.</li>
+          <li>Borrowing books from libraries.</li>
+          <li>Accessing most public services and signing up for digital services such as e-Boks and NemID.</li>
+        </ul>
+        In Denmark, a CPR number is more than just an identification number; it serves as the gateway to integration into Danish society, allowing easy access to necessary services and a secure connection to national databases.
+      </p>
+    </li>
+
+    <li>
+      <p className=" m-0 tw-text-gray">
+        <strong>When is a CPR Number Required?</strong> 
+        <ul className="tw-pl-5">
+          <li>Non-EU/EEA Citizens: If you plan to stay in Denmark for more than three months, you are required to register with the Danish Civil Registration System upon arrival to obtain a CPR number.</li>
+          <li>Nordic Citizens, EU/EEA, and Swiss Citizens: If you are from a Nordic country, the EU, the EEA, or Switzerland and plan to stay in Denmark for more than six months, you must register with the Danish Civil Registration System to obtain your CPR number.</li>
+        </ul>
+      </p>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pt-4">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className=" tw-text-blue" />
+      <h4 className=" m-0 tw-text-gray">
+        How to Obtain a CPR Number
+      </h4>
+    </li>
+  </ul>
+
+  <ul className=" tw-p-0 tw-pl-10">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <p className=" m-0 tw-text-gray">
+        <strong>Required Documents:</strong> When you visit the Citizen’s Service Center to apply for your CPR number, be prepared with the following:
+        <ul className="tw-pl-5">
+          <li>Proof of Residence and Legal Documentation:</li>
+          <ul className="tw-pl-5">
+            <li>For non-EU/EEA citizens: Bring your Danish residence permit or another legal residence document.</li>
+            <li>For EU/EEA and Swiss citizens: Present your registration certificate.</li>
+            <li>For Nordic citizens: Bring proof of identification, such as a passport or Nordic ID.</li>
+          </ul>
+          <li>Marital Status Documentation:</li>
+          <ul className="tw-pl-5">
+            <li>If you are married: Bring your marriage certificate or an official copy.</li>
+            <li>If you are divorced: Provide your divorce certificate.</li>
+            <li>If you are a widow/widower: Present the death certificate of your deceased spouse.</li>
+          </ul>
+          <li>Birth Certificate for Children: If you have children, bring their birth certificate(s).</li>
+        </ul>
+      </p>
+    </li>
+  </ul>
+
+  <p className=" tw-text-gray">
+    Our team is here to assist with any questions or requirements as you navigate the process of relocating to Denmark and obtaining your CPR number. With our help, you can be assured of a smooth registration process so you can quickly access all essential services in Denmark.
+  </p>
+</div>
+<div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p> Relocating to Denmark: Comprehensive Support for a Smooth Transition
+  </span>
+  <h2>
+    <strong> A Smooth Transition to Denmark </strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    Moving to a new country can be both exciting and challenging. At Sweden Relocators, we provide specialized relocation assistance to make your move to Denmark as seamless as possible. Whether you're relocating for work, study, or family, our team offers a full range of services to help you settle comfortably. From securing essential documentation to finding housing, we cover every aspect of your relocation process so you can focus on enjoying your new start.
+  </p>
+
+  <h2>
+    <strong> Our Services for Relocation to Denmark </strong>
+  </h2>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        EU Residence Card Assistance
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Document Preparation:</strong> We ensure all necessary documents are prepared, verified, and translated if needed.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Application Submission:</strong> We manage your application process, scheduling any necessary appointments and handling paperwork to reduce delays.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Ongoing Support:</strong> From understanding eligibility requirements to addressing any inquiries from immigration authorities, our team is here to assist.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        CPR (Danish ID) Number Assistance
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Eligibility Assessment:</strong> We help determine when and how you should apply for a CPR number, depending on your citizenship and planned duration of stay.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Document Verification:</strong> Our team ensures that all required documents (residence permit, marriage certificates, children’s birth certificates, etc.) are complete and accurately translated if necessary.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Application Facilitation:</strong> We guide you through the process, from booking appointments at Citizen Service Centers to submitting your application.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        EU Certificate Assistance
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Requirements Guidance:</strong> We clarify which documents are needed based on your employment status, purpose of stay, and other personal factors.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Application Submission:</strong> We facilitate a swift submission process, coordinating appointments and completing necessary paperwork to meet all regulatory standards.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Follow-Up and Support:</strong> Our team monitors your application status and liaises with Danish authorities if additional information or documentation is needed.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Housing Assistance
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Personalized Housing Search:</strong> We identify rental options based on your preferences, whether you’re looking for an apartment in the city, family housing, or short-term rental options.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Lease Negotiation and Contract Review:</strong> We review rental contracts to ensure fair terms and assist with any negotiations to make the rental agreement beneficial to you.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Move-In Coordination:</strong> We help arrange move-in dates, utilities setup, and any other logistics to make your transition into your new home smooth and convenient.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Temporary Housing Solutions:</strong> For those needing immediate accommodation, we can arrange short-term housing options, so you have a comfortable place to stay while searching for a permanent home.
+      </p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong> Why Choose Sweden Relocators? </strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    Relocating to a new country involves more than just packing your bags. Each step of the process—securing legal documents, finding housing, and registering for local services—requires careful attention and local expertise. Sweden Relocators brings a wealth of knowledge and experience to ensure you settle into Denmark with ease.
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Comprehensive Service
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        From visa assistance to housing, we cover all aspects of your relocation, offering you a one-stop solution.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Expert Guidance
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        Our team of professionals is well-versed in Danish regulations, ensuring you meet every requirement and avoid common pitfalls.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Personalized Support
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        We understand that each move is unique. Our team tailors our services to fit your individual needs, preferences, and circumstances.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Prompt Communication
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        We prioritize clear, timely communication, keeping you informed at every stage of the process and available to answer your questions.
+      </p>
+    </li>
+  </ul>
+
+  <p className="tw-text-gray">
+    At Sweden Relocators, we are dedicated to making your relocation to Denmark as simple and successful as possible. Contact us today to begin your journey with reliable support and expert guidance.
+  </p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
                 </div>
               </div>
 

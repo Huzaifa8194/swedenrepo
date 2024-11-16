@@ -405,21 +405,21 @@ const Long_term_eu_status_assessment = () => {
 
 
                   <div>
-                  <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
                   <h5 className=" tw-text-black  ">Personal Details</h5>
 
                   <h6 className=" tw-text-black ">
                     {" "}
                     <i class="fa fa-user"> </i>FILL UP THE PERSONAL DETAILS 
                   </h6>
-                </div>
+                </div> */}
                     <Assessment_modal
                       isModalOpen={isModalOpen}
                       setIsModalOpen={setIsModalOpen}
                       // setUsers={setUsers}
                     />
 
-                    <form>
+                    {/* <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                         <div className="col-md-6 tw-pt-4">
                           <Input placeholder={'You Full Name'} star={'*'} className={' tw-w-full border tw-rounded-lg  tw-py-3.5 tw-px-3'} label={'Full Name'} />
@@ -431,7 +431,7 @@ const Long_term_eu_status_assessment = () => {
                           <Input placeholder={'your Address'} star={'*'} className={' tw-w-full border tw-py-3.5  tw-px-3 tw-rounded-lg'} label={'Your Email'} />
                         </div>
                       </div>
-                    </form>
+                    </form> */}
                   </div>
 
                   {/* user info */}
@@ -556,7 +556,7 @@ const Long_term_eu_status_assessment = () => {
                         </div>
 
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray "></label>
+                          <label className=" tw-text-sm  tw-text-gray ">Do you have permanent Residence?</label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                             <option value="">Select Country</option>
                             <option value="AF">Afghanistan</option>

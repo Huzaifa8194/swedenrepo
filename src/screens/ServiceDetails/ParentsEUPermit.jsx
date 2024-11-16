@@ -186,120 +186,567 @@ const ParentsEUPermit = () => {
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
                 <div className="  md:tw-pl-32 tw-px-3">
-                  <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                    {' '}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> FAMILY FROM
-                  </span>
-                  <h2>
-                    <strong>Outside The EU?</strong>
-                  </h2>
 
-                  <p className=" tw-text-gray">You have to be in Sweden or on the Swedish border in order to apply for asylum. It’s not possible to apply for asylum before you arrive, or at a Swedish embassy in another country.</p>
-                  <p className=" tw-text-gray">
-                    If your spouse/common-law spouse/registered partner/dependent children/dependent parents are not EU citizens, they will need to apply for residence cards, but this can also be done after moving to Sweden, at the same time as you
-                    register your right of residence.
-                  </p>
 
-                  <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                    {' '}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> LONG-TERM
-                  </span>
-                  <h2>
-                    <strong>EU Resident?</strong>
-                  </h2>
 
-                  <p className=" tw-text-gray">
-                    If you have lived in another EU country with a residence permit for at least five years, you qualify as a long-term resident and can apply, in that country, for a special EU residence permit. This makes it easier to move to
-                    another EU country.
-                  </p>
 
-                  <div className="row">
-                    <div className="col-md-10 tw-mx-auto">
-                      <img src={banner} alt="" />
-                    </div>
-                  </div>
 
-                  <div>
-                    <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> RESIDENCE PERMIT FOR
-                    </span>
-                    <h2>
-                      <strong>A Parent Or Other Family Member</strong>
-                    </h2>
 
-                    <p className=" tw-text-gray">
-                      The citizen of a Non- EU country who wants to move to a family member in Sweden, need a residence permit. In exceptional cases, it is possible to get a residence permit to move to a family member in Sweden or is not already or
-                      going to be your husband, wife or cohabiting partner. The family member in Sweden must have a permanent residence permit.
-                    </p>
-                  </div>
-                  <div>
-                    <div>
-                      <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> PARENTS OF
-                      </span>
-                      <h2>
-                        <strong>Children Under 18 Years</strong>
-                      </h2>
+                <div>
+  <span className=" tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    EU Residence Card for Dependent Parents and Other Family Members under Directive 2004/38/EC
+  </span>
+  <h2>
+    <strong>Understanding the EU Residence Card for Family Members</strong>
+  </h2>
 
-                      <p className=" tw-text-gray ">Parents of a child under 18 years who is in Sweden can move to sweden if they will live with the child.</p>
-                    </div>
+  <p className=" tw-text-gray">
+    Under EU Directive 2004/38/EC, EU/EEA citizens exercising their right of free movement in Sweden can apply for a residence card for their dependent family members from outside the EU, including parents and other family members. This directive aims to facilitate family unity by allowing EU citizens to bring family members who are economically or socially dependent on them to live in Sweden. Here’s an in-depth look at the requirements, application process, and specific cases for dependent parents and other family members.
+  </p>
 
-                    <div>
-                      <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>OTHER
-                      </span>
+  <ul className=" tw-p-0 tw-pt-4">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className=" tw-text-blue" />
+      <h4 className=" m-0 tw-text-gray">
+        Who Qualifies as a Dependent Family Member?
+      </h4>
+    </li>
+  </ul>
 
-                      <h2>
-                        <strong>Family Member</strong>
-                      </h2>
+  <ul className=" tw-p-0 tw-pl-10">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <p className=" m-0 tw-text-gray">
+        <strong>Dependent Parents:</strong> Parents of an EU citizen or their spouse/partner who rely on the EU citizen for financial support or other essential care.
+      </p>
+    </li>
 
-                      <div className="row">
-                        <div className="col-md-6">
-                          <p className=" tw-text-gray ">
-                            In exceptional cases, it is possible to get a residence permit so as to move to another family member in Sweden whom you have lived with in your home country, for example, if you are over the age of 18 years and your
-                            parents live here.
-                          </p>
-                          <p className=" tw-text-gray ">
-                            You must be able to prove that you and the family member have lived together immediately before your family member moved to Sweden and that you and the other family member were socially and emotionally dependent on each
-                            other when you lived in your home country, and it is therefore difficult for you to live apart.
-                          </p>
-                        </div>
-                        <div className="col-md-6">
-                          <div className="row">
-                            <div className="col-md-10 tw-mx-auto">
-                              <img src={banner2} alt="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+    <li>
+      <p className=" m-0 tw-text-gray">
+        <strong>Other Dependent Family Members:</strong> This may include siblings or extended relatives if there is a clear dependency relationship, particularly if the family member and the EU citizen lived together in the previous country of residence.
+      </p>
+    </li>
 
-                      <p className=" tw-text-gray ">
-                        The application must be submitted as soon as possible after your family member moved to Sweden and was given a permanent residence permit. The general rule is that it is not possible to get a residence permit if the
-                        application is made after a long period of time has passed or if dependency between you has arisen after your family member moved to Sweden.
-                      </p>
-                    </div>
+    <li>
+      <p className=" m-0 tw-text-gray">
+        <strong>Children or Stepchildren:</strong> Children over 21 may also qualify as dependent if they rely on the EU citizen for support, although this is assessed differently than minors.
+      </p>
+    </li>
+  </ul>
 
-                    <div>
-                      <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
-                        {' '}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>MAINTENANCE
-                      </span>
+  <ul className=" tw-p-0 tw-pt-4">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className=" tw-text-blue" />
+      <h4 className=" m-0 tw-text-gray">
+        Key Conditions for Eligibility
+      </h4>
+    </li>
+  </ul>
 
-                      <h2>
-                        <strong>Requirement</strong>
-                      </h2>
+  <ul className=" tw-p-0 tw-pl-10">
+    <li className=" tw-flex tw-items-center tw-gap-3">
+      <p className=" m-0 tw-text-gray">
+        <strong>Proof of Dependency:</strong> The applicant must provide evidence showing financial or personal dependency on the EU citizen. This could include proof of shared residence, regular financial support, or documentation of emotional and social dependence.
+      </p>
+    </li>
 
-                      <p className=" tw-text-gray ">
-                        The person you are going to live with in Sweden must be able to support both of you. He or she must also have a home of sufficient size and standard for you both to live in when you move to Sweden. The requirement concerning
-                        financial support and accommodation does not apply to children under 18 years. This means that if you are going to move to your child who lives in Sweden, there is no requirement that your child must be able to provide for
-                        you.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+    <li>
+      <p className=" m-0 tw-text-gray">
+        <strong>Living Together Previously:</strong> In cases involving extended family members (such as siblings or adult children), the applicant must show that they lived with the EU citizen in their home country immediately before the EU citizen moved to Sweden.
+      </p>
+    </li>
+
+    <li>
+      <p className=" m-0 tw-text-gray">
+        <strong>Timely Application:</strong> Applications should ideally be submitted as soon as possible after the EU citizen arrives in Sweden. Delayed applications may reduce the likelihood of approval, especially if the dependency has developed only after the EU citizen's relocation.
+      </p>
+    </li>
+  </ul>
+</div>
+
+
+<div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    Application Process for a Residence Card under Directive 2004/38/EC
+  </span>
+  
+  <h2>
+    <strong> Step 1: Prepare Documentation for Dependency and Relationship </strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    Gathering the necessary documentation is crucial. Key documents include:
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Proof of Identity
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Valid passport:</strong> The non-EU family member’s passport is required.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Proof of Relationship
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>For parents:</strong> Birth certificate of the EU citizen showing the parental relationship.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>For other family members:</strong> Documents showing the family relationship (e.g., birth certificates or family registers).
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Evidence of Dependency:</strong> This can include bank statements, proof of regular financial transfers, proof of shared housing, and any other documents that demonstrate reliance on the EU citizen for financial or emotional support.
+      </p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong> Step 2: Submit the Application </strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    The non-EU family member must apply for a residence card, which can be submitted to the Swedish Migration Agency (Migrationsverket) either online or through a Swedish embassy or consulate in the applicant's home country.
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Applicant Details
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        Information about the EU citizen, their residence status in Sweden, and the dependent’s personal details.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Supporting Documents
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        All required documents demonstrating the dependency relationship and proof of residence for the EU citizen in Sweden.
+      </p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong> Step 3: Migration Agency Review </strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    The Migration Agency will assess the relationship and dependency based on the evidence provided. They may request additional documentation or clarifications if needed.
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Verification of Dependency
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        Confirming that the non-EU family member is genuinely reliant on the EU citizen.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Family Relationship
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        Verifying the applicant’s family connection to the EU citizen and ensuring that dependency existed prior to moving to Sweden.
+      </p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong> Step 4: Decision and Residence Card Issuance </strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    If approved, the non-EU family member will receive a residence card valid for five years or the expected duration of the EU citizen’s residence in Sweden (whichever is shorter).
+  </p>
+
+  <p className="tw-text-gray">
+    The residence card permits the holder to live, work, and access healthcare in Sweden under the same conditions as EU family members.
+  </p>
+
+  <h2>
+    <strong> Specific Cases: Requirements for Dependent Parents and Other Family Members </strong>
+  </h2>
+
+  <h2>
+    <strong> Residence Permit for Dependent Parents </strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    For dependent parents, the primary conditions include demonstrating economic or health-related dependence on the EU citizen.
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Financial Support Evidence
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        Bank transfers, remittance receipts, or proof of regular financial support from the EU citizen.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Health-Related Dependency
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        Medical certificates or documentation of special needs that require close proximity to the EU citizen for support and care.
+      </p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong> Residence Permit for Other Dependent Family Members </strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    For other dependent family members (e.g., adult siblings or extended relatives), the requirements are typically more stringent.
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Proof of Shared Household
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        Evidence that the family member lived with the EU citizen prior to their relocation to Sweden, such as a joint lease or utility bills.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Emotional and Social Dependence
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        Affidavits or statements demonstrating a strong social and emotional bond may be required, especially if the relationship extends beyond financial dependence.
+      </p>
+    </li>
+  </ul>
+
+  <h2>
+    <strong> Maintenance Requirement for the EU Sponsor </strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    Under Swedish regulations, the EU citizen must be able to provide financial support and suitable accommodation for their non-EU family member.
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Stable Income
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        Proof of employment, regular income, or financial resources that demonstrate the EU citizen can support themselves and their dependent.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Housing Requirement
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li>
+      <p className="m-0 tw-text-gray">
+        The EU citizen must have suitable housing that meets Swedish standards for living space and privacy. This can include rental agreements, proof of homeownership, or a sublease with landlord approval.
+      </p>
+    </li>
+  </ul>
+
+  <p className="tw-text-gray">
+    Note: The maintenance requirement does not apply to minor children (under 18 years). This means that if a parent is applying to join a minor child in Sweden, the child does not need to meet income or housing requirements.
+  </p>
+</div>
+<div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    Additional Considerations
+  </span>
+  <h2>
+    <strong>Timeliness of the Application</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    Applications submitted soon after the EU citizen’s relocation to Sweden are more likely to succeed. Long delays in application submission may complicate the process, as authorities might question the existence of prior dependency. Ideally, applications for dependent family members should be submitted within a few months of the EU citizen’s arrival in Sweden.
+  </p>
+
+  
+
+
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+      Changes in Dependency Status
+      </h4>
+    </li>
+  </ul>
+
+
+  <p className="tw-text-gray">
+    If the dependency status changes (for example, if the non-EU family member becomes financially independent), it may impact the status of the residence card. The Swedish Migration Agency may periodically review these cases to ensure compliance with residency criteria.
+  </p>
+
+
+
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+      Renewing the Residence Card
+      </h4>
+    </li>
+  </ul>
+
+
+
+
+  <p className="tw-text-gray">
+    Residence cards for dependent family members are typically valid for up to five years. Renewal is possible, provided the dependency relationship continues and the EU citizen remains a resident of Sweden. Renewal applications should be submitted well in advance of the expiration date, with updated documentation demonstrating continued dependency.
+  </p>
+
+  <span className="tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    How Sweden Relocators Can Assist with EU Residence Card Applications
+  </span>
+  <h2>
+    <strong>Eligibility Assessment</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    We review your family’s specific circumstances to determine if your non-EU family members qualify as dependents under Swedish law.
+  </p>
+
+
+
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+      Document Preparation
+      </h4>
+    </li>
+  </ul>
+ 
+  <p className="tw-text-gray">
+    Our team helps gather and prepare all required documents, including proof of relationship, dependency, and financial support.
+  </p>
+
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+      Application Submission and Monitoring
+      </h4>
+    </li>
+  </ul>
+
+ 
+
+  <p className="tw-text-gray">
+    We assist with the application submission process and monitor progress with the Migration Agency to ensure timely updates.
+  </p>
+
+
+
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+      Appeals Support
+      </h4>
+    </li>
+  </ul>
+
+  <p className="tw-text-gray">
+    In cases of application denial, we offer guidance on the appeals process, helping strengthen your case for reconsideration.
+  </p>
+
+  <span className="tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    Benefits of Our Service
+  </span>
+
+
+
+
+
+  <h2>
+    <strong>Experienced Guidance</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    Familiarity with Directive 2004/38/EC and the Migration Agency’s requirements allows us to offer precise, effective advice.
+  </p>
+
+
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+      Comprehensive Support
+      </h4>
+    </li>
+  </ul>
+ 
+
+  <p className="tw-text-gray">
+    From eligibility verification to document preparation and appeal support, we handle every aspect of your application.
+  </p>
+
+
+
+
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+      Personalized Service
+      </h4>
+    </li>
+  </ul>
+ 
+
+
+  <p className="tw-text-gray">
+    Every case is unique, and we tailor our approach to your family’s specific needs, providing the most effective solutions.
+  </p>
+
+  <span className="tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    Contact Us
+  </span>
+  <h2>
+    <strong>If you need assistance with obtaining an EU residence card</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    If you need assistance with obtaining an EU residence card for your dependent parents or other family members, Sweden Relocators is here to help. Contact us today to discuss your family’s eligibility and learn how we can support your journey to bring your loved ones to Sweden.
+  </p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                               </div>
               </div>
 
               <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">

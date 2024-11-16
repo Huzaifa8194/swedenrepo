@@ -189,86 +189,213 @@ const BusinessVisit = () => {
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
                 <div className="  md:tw-pl-32 tw-pl-2">
-                  <span className=" tw-flex tw-items-center tw-gap-2">
-                    {' '}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> BUSINESS VISA TO SWEDEN
-                  </span>
-                  <h2>
-                    <strong>Short Official Or Business Trip To Sweden?</strong>
-                  </h2>
-
-                  <div className="row tw-flex tw-items-center tw-mb-6">
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-10 tw-mx-auto">
-                          <img src={banner} alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        
-                        <p className=" tw-text-gray">
-                        If you or your company is planning for your short visit/business trip to Sweden then we are here to assist you in getting your business visa. You can just relax and focus on your business while we do it all for you.
-                        </p>
-                
-                        
-                      </div>
-                    </div>
 
 
-                 
-                  <div>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> BASIC REQUIREMENTS (APPLICANT)
-                    </span>
-                    <h2>
-                      <strong>Documents To Be Submitted</strong>
-                    </h2>
+                <div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p> 
+    Documentation Requirements for Visa Application
+  </span>
 
-                    <p className=" tw-text-gray">The following are the requirements for business visa:</p>
+  <h2>
+    <strong> A Comprehensive List of Required Documents </strong>
+  </h2>
 
-                    <ul className=" tw-p-0 tw-pt-4">
-                      <li className=" tw-flex tw-items-center tw-gap-3">
-                        <p className=" tw-text-gray ">
-                          {' '}
-                          2. <b>Application form:</b> Duly filled and signed by the applicant.
-                        </p>
-                      </li>
+  <p className="tw-text-gray">
+    For your visa application, certain documents must be submitted to ensure a smooth process. Below is a guide detailing all necessary documents, including those for both applicants and sponsoring companies:
+  </p>
 
-                      <li className=" tw-flex tw-items-center tw-gap-3">
-                        <p className=" tw-text-gray ">
-                          {' '}
-                          2. <b>Photograph:</b> One recent color photograph in passport format(not older than 6 months) with white background, head on and uncovered head for gentleman.
-                        </p>
-                      </li>
-                    </ul>
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Personal Document Requirements
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Bank Statement:</strong> Submit an original bank statement from the last six months or proof of other assets if bank statements aren’t available.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Passport Requirements:</strong> Your passport must:
+        <ul>
+          <li>Have at least two blank pages.</li>
+          <li>Be valid for at least three months beyond the end of your planned trip.</li>
+          <li>Include all previous passports from the past seven years.</li>
+          <li>Include a photocopy of the biometric page and any recent Schengen visas.</li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Invitation Letter:</strong> A formal invitation from the Swedish company or individual on official letterhead. The letter should include:
+        <ul>
+          <li>Full address and contact details of the inviting company.</li>
+          <li>Name and position of the contact person or signatory.</li>
+          <li>Purpose and expected duration of your visit.</li>
+          <li>Details of who will bear travel and living expenses.</li>
+          <li>A statement guaranteeing that the applicant will depart Sweden before visa expiration.</li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Employment Certificate:</strong> Proof of employment, detailing:
+        <ul>
+          <li>Your employment start date.</li>
+          <li>Current position, salary, and purpose of travel.</li>
+          <li>Approval of leave for the duration of the visit.</li>
+        </ul>
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Medical Insurance:</strong> Travel insurance covering the entire Schengen area, valid for your entire stay. The policy should cover at least EUR 30,000 to cover expenses for emergency medical treatment, hospital care, repatriation, or death.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Travel Ticket Reservation:</strong> Provide round-trip flight reservations. Final tickets are not required but initial booking confirmation is mandatory.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Accommodation Proof:</strong> A confirmed hotel booking or another proof of accommodation (primary reservation required).
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Additional Requirements for Employers or Sponsoring Companies
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Commercial Registration and Tax Card:</strong> Original and copy of the company’s commercial registry and tax card, translated into English or Swedish, to confirm the legitimacy of the business.
+      </p>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        Additional Documents that May Be Required
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Movement Certificate:</strong> Required if you are a first-time traveler, your passport doesn’t cover the last seven years, or there’s a gap of more than three months between your current and previous passports.
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Other Embassy-Specified Documents:</strong> Additional paperwork may be requested by the embassy depending on individual circumstances.
+      </p>
+    </li>
+  </ul>
+</div>
+<div>
+  <span className="tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    Business Visa for Foreign Investors
+  </span>
+
+  <h2>
+    <strong>A Swedish Business Visa for Investors</strong>
+  </h2>
+
+  <p className="tw-text-gray">
+    A Swedish business visa is ideal for foreign nationals who wish to invest in Sweden and make periodic visits to manage business interests. This visa allows multiple entries and is valid for short stays of up to 90 days within a 180-day period, renewable for up to five years. This flexibility is especially beneficial for investors who need to oversee business developments or make frequent visits without obtaining a residence permit.
+  </p>
+
+  <p className="tw-text-gray">
+    For short-term business trips lasting less than three months, this visa is sufficient without the need for a residence permit. However, if you plan to stay longer or relocate for an extended period, a residence permit may be required.
+  </p>
+
+  <ul className="tw-p-0 tw-pt-4">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <GoTriangleRight className="tw-text-blue" />
+      <h4 className="m-0 tw-text-gray">
+        How We Assist You
+      </h4>
+    </li>
+  </ul>
+
+  <ul className="tw-p-0 tw-pl-10">
+    <li className="tw-flex tw-items-center tw-gap-3">
+      <p className="m-0 tw-text-gray">
+        <strong>Document Preparation and Submission:</strong> Assistance in gathering, verifying, and submitting all required documents to ensure a smooth process.
+        <p>
+          <br />
+        </p>
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Guidance on Financial Requirements:</strong> Advising on the proof of funds and financial documentation needed to meet Swedish visa requirements.
+      </p>
+      <p>
+        <br />
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Appointment Scheduling:</strong> Coordinating necessary appointments with the Swedish embassy or consulate for document submission and interviews.
+        <p>
+          <br />
+        </p>
+      </p>
+    </li>
+
+    <li>
+      <p className="m-0 tw-text-gray">
+        <strong>Ongoing Support and Updates:</strong> Regular updates on your visa status and timely responses to any additional embassy requests.
+        <p>
+          <br />
+        </p>
+      </p>
+    </li>
+  </ul>
+
+  <p className="tw-text-gray">
+    Our comprehensive visa service allows you to focus on your business objectives while we take care of the paperwork. Contact us today to learn more about how we can facilitate your short-term business visa to Sweden and support your professional success.
+  </p>
+</div>
 
 
 
 
-                    <div className="row tw-flex tw-items-center tw-mb-6">
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-10 tw-mx-auto">
-                          <img src={banner2} alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        
-                        <p className=" tw-text-gray">
-                        Foreign people who want to invest in Sweden and stay temporarily for that purpose can also apply for a business visa which is valid for multiple entries. With this visa they can travel back and forth to run their business
-                          for stays of up to 90 days during a 180 day period for up to five years. People who stay in sweden for less than 3 months for the purpose of business they don’t have to take a residence permit they can get a business visa. </p>
-                
-                        
-                      </div>
-                    </div>
 
 
 
-                   
-                  </div>
+
+                  
+             
                 </div>
               </div>
 

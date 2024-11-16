@@ -496,21 +496,21 @@ const Work_permit = () => {
                   {/*end*/}
 
                   <div>
-                  <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
                   <h5 className=" tw-text-black  ">Personal Details</h5>
 
                   <h6 className=" tw-text-black ">
                     {" "}
                     <i class="fa fa-user"> </i>FILL UP THE PERSONAL DETAILS 
                   </h6>
-                </div>
+                </div> */}
 
                     <Assessment_modal
                       isModalOpen={isModalOpen}
                       setIsModalOpen={setIsModalOpen}
                       // setUsers={setUsers}
                     />
-                    <form>
+                    {/* <form>
                       <div className="row  tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                         <div className="col-md-6 tw-pt-4">
                           <Input
@@ -543,7 +543,7 @@ const Work_permit = () => {
                           />
                         </div>
                       </div>
-                    </form>
+                    </form> */}
                   </div>
                   <div className=" tw-pt-8">
                   <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
@@ -589,12 +589,15 @@ const Work_permit = () => {
                       {workCategory === "WORK PERMIT OUTSIDE OF SWEDEN" && (
                         <div className=" row">
                           <div className="col-md-12">
-                            <div className="  tw-mt-4  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                              <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                              <p className=" m-0 tw-text-white tw-font-semibold">
-                                EDUCATIONAL BACKGROUND
-                              </p>
-                            </div>
+                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">
+                Educational Background</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>Give your educational background details. 
+                  </h6>
+                </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
@@ -630,12 +633,15 @@ const Work_permit = () => {
                             </select>
                           </div>
                           <div className="col-md-12">
-                            <div className="  tw-mt-4  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                              <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                              <p className=" m-0 tw-text-white tw-font-semibold">
-                                WORK EXPERIENCE IN YOUR FIELD
-                              </p>
-                            </div>
+                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">
+                 Work Expierence in your Field.</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>Give us details of your work expierience.
+                  </h6>
+                </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
@@ -664,12 +670,15 @@ const Work_permit = () => {
                           </div>
 
                           <div className="col-md-12">
-                            <div className="  tw-mt-4  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                              <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                              <p className=" m-0 tw-text-white tw-uppercase tw-font-semibold">
-                                Residence and Work Permit
-                              </p>
-                            </div>
+                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">
+                Residence and Work Permit</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>Give us details of your Residence and Work Permit 
+                  </h6>
+                </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
@@ -696,12 +705,15 @@ const Work_permit = () => {
                           </div>
 
                           <div className="col-md-12">
-                            <div className="  tw-mt-4  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                              <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                              <p className=" m-0 tw-text-white tw-font-semibold">
-                                ARE YOU APPLYING FOR YOUR FAMILY?
-                              </p>
-                            </div>
+                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">
+                  Are you Applying for your Family</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>Give us details about you applying
+                  </h6>
+                </div>
                           </div>
                           <div className="col-md-12 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
@@ -732,16 +744,19 @@ const Work_permit = () => {
                       {workCategory === "AU PAIR" && (
                         <div className="row">
                           <div className="col-md-12">
-                            <div className="  tw-mt-4  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                              <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                              <p className=" m-0 tw-text-white tw-font-semibold">
-                                AU PAIR
-                              </p>
-                            </div>
+                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">
+                 AU Pair</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>Give us details of your AU Pair
+                  </h6>
+                </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              x
+                              
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Are you single?</option>
@@ -823,12 +838,15 @@ const Work_permit = () => {
                       {workCategory === "WORKING HOLIDAYS" && (
                         <div className="row">
                           <div className="col-md-12">
-                            <div className="  tw-mt-4  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                              <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                              <p className=" m-0 tw-text-white tw-font-semibold">
-                                WORKING HOLIDAYS
-                              </p>
-                            </div>
+                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">
+                Working Holidays</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>Give us details of your working holidays. 
+                  </h6>
+                </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
@@ -893,12 +911,15 @@ const Work_permit = () => {
                       {workCategory === "ASYLUM - WORK PERMIT" && (
                         <div className="row">
                           <div className="col-md-12">
-                            <div className="  tw-mt-4  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                              <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                              <p className=" m-0 tw-text-white tw-font-semibold">
-                                ASYLUM WORK PERMIT
-                              </p>
-                            </div>
+                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">
+                 Asylum Work Permit</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>Give us details of your Asylum Work Permit
+                  </h6>
+                </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
@@ -1018,12 +1039,15 @@ const Work_permit = () => {
                       {workCategory === "STUDENT - WORK PERMIT" && (
                         <div className="row">
                           <div className="col-md-12">
-                            <div className="  tw-mt-4  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                              <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                              <p className=" m-0 tw-text-white tw-font-semibold">
-                                STUDENT & WORK PERMIT
-                              </p>
-                            </div>
+                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">
+                  Student & Work Permit</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>Give us your student and work permit details.
+                  </h6>
+                </div>
                           </div>
                           <div className="col-md-8 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
@@ -1066,12 +1090,15 @@ const Work_permit = () => {
                         <>
                           <div className="row">
                             <div className="col-md-12">
-                              <div className="  tw-mt-4  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                                <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                                <p className=" m-0 tw-text-white tw-uppercase tw-font-semibold">
-                                  EU Long Term Residence/Permanent Residence
-                                </p>
-                              </div>
+                            <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                  <h5 className=" tw-text-black  ">
+                 EU Long Term Residence/Permanent Residence</h5>
+
+                  <h6 className=" tw-text-black ">
+                    {" "}
+                    <i class="fa fa-user"> </i>Give us details of your EU Long Term Residence and Permanent Residence
+                  </h6>
+                </div>
                             </div>
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
