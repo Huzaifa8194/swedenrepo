@@ -1348,7 +1348,7 @@ const New_In_sweden = () => {
               </div>
 
               <div className="col-md-3  tw-pt-16   tw-bg-[#F5FAFF]   " style={{ position: 'sticky', top: '300px' }}>
-                <div className={`sm:tw-pr-28 tw-pr-0 ${isSticky ? ' md:tw-fixed tw-flex-initial  tw-bottom-0  md:tw-w-[30%] tw-w-full' : 'tw-relative'} `}>
+                <div className={`sm:tw-pr-20 tw-pr-0 ${isSticky ? ' md:tw-fixed tw-flex-initial  tw-bottom-0  md:tw-w-[30%] tw-w-full' : 'tw-relative'} `}>
                   <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                     {data?.map((item, index) => {
                       return (

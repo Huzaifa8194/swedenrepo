@@ -118,7 +118,7 @@ const Header = () => {
                     />
                     <NavListDesktop isTop={isTop} />
                   </div>
-                  <div className="tw-flex tw-justify-center tw-items-center tw-gap-5">
+                  <div className="tw-flex tw-justify-center tw-items-center tw-gap-1">
                     <Button
                       className={isTop ? "btn-Plain" : "btn-dark"}
                       label="Book an Appointment"
