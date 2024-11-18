@@ -598,9 +598,10 @@ const ServiceDetails = () => {
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                        Administrative
                       </span>
                       <h2 className="tw-text-left">
-                        <strong>Administrative Court Review</strong>
+                        <strong> Court Review</strong>
                       </h2>
 
                       <p className=" tw-text-gray tw-">
@@ -721,8 +722,7 @@ const ServiceDetails = () => {
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                        How Sweden Relocators Can Help You Through the Appeal
-                        Process
+                       SERVICES
                       </span>
                       <h2 className="tw-text-left">
                         <strong> Our Services Include:</strong>
@@ -826,10 +826,16 @@ const ServiceDetails = () => {
                             </p>
                            
 
-                            <strong className="tw-text-gray">
-                              1. Swedish Tax Agency (Skatteverket)
-                            </strong>
-                            <br />
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                        (Skatteverket)
+                      </span>
+                      <h2 className="tw-text-left">
+                        <strong>  1. Swedish Tax Agency </strong>
+                      </h2>
+
+                           
                             <p>
                               Skatteverket plays a central role in matters
                               related to tax registration, personnummer (social
@@ -893,11 +899,20 @@ const ServiceDetails = () => {
                             complex tax situations.
                             <br />
                             <br />
-                            <strong className="tw-text-gray">
-                              2. Swedish Social Insurance Agency
-                              (Försäkringskassan)
-                            </strong>
-                            <br />
+
+                            
+
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                        (Försäkringskassan)
+                      </span>
+                      <h2 className="tw-text-left">
+                        <strong>2. Swedish Social Insurance Agency</strong>
+                      </h2>
+
+
+                           
                             <p>
                               Försäkringskassan manages social insurance
                               benefits, including health insurance, parental
@@ -911,11 +926,16 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                   
+                   <div>
+                          
+
                           
                           <strong className="tw-text-gray">
                             Parental Leave and Child Benefits:
                           </strong>
+
+
+                          </div>
                        
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -958,11 +978,20 @@ const ServiceDetails = () => {
                             amounts.
                             <br />
                             <br />
-                            <strong className="tw-text-gray">
-                              3. Swedish Public Employment Service
-                              (Arbetsförmedlingen)
-                            </strong>
-                            <br />
+
+
+
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                        (Arbetsförmedlingen)
+                      </span>
+                      <h2 className="tw-text-left">
+                        <strong>  3. Swedish Public Employment Service</strong>
+                      </h2>
+
+
+                          
                             <p>
                               3. Swedish Public Employment Service
                               (Arbetsförmedlingen) If you are receiving
@@ -1025,10 +1054,18 @@ const ServiceDetails = () => {
                             employment.
                             <br />
                             <br />
-                            <strong className="tw-text-gray">
-                              4. Swedish Customs Agency (Tullverket)
-                            </strong>
-                            <br />
+
+
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                        (Tullverket)
+                      </span>
+                      <h2 className="tw-text-left">
+                        <strong>  4. Swedish Customs Agency </strong>
+                      </h2>
+
+                            
                             <p>
                               Tullverket handles customs and import/export
                               regulations in Sweden, and decisions by this
@@ -1085,10 +1122,16 @@ const ServiceDetails = () => {
                             Support for businesses with complex customs needs,
                             ensuring compliance and avoiding costly penalties.
                             <br /><br />
-                            <strong className="tw-text-gray">
-                              5. Unemployment Insurance (A-Kassa)
-                            </strong>
-                            <br />
+
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                        (A-Kassa)
+                      </span>
+                      <h2 className="tw-text-left">
+                        <strong> 5. Unemployment Insurance </strong>
+                      </h2>
+                           
                             <p>
                               A-Kassa, or unemployment insurance funds, provides
                               essential financial support for individuals who
@@ -1136,9 +1179,10 @@ const ServiceDetails = () => {
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                        Contract Services 
                       </span>
                       <h2 className="tw-text-left">
-                        <strong> Contract Services Include:</strong>
+                        <strong> Include:</strong>
                       </h2>
 
                      
