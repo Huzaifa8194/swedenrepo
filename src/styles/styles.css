@@ -1,5 +1,5 @@
 h2 {
-  @apply md:tw-text-[40px]       tw-font-light tw-text-primary  !important;
+  @apply md:tw-text-[30px]       tw-font-light tw-text-primary  !important;
 }
 strong {
   @apply tw-font-semibold  !important;
