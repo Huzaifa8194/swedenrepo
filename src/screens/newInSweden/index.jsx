@@ -203,7 +203,7 @@ const New_In_sweden = () => {
           <div className=" ">
             <div className="row g-4">
               <div className="col-md-9 tw-py-20 tw-bg-white tw-text-justify">
-                <div className="   md:tw-pl-[200px] tw-pl-[200px] tw-pr-[60px]">
+                <div className="   tw-pl-[11.5%] tw-pr-[3.5%]">
                   <span className=" tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>SOCIAL SECURITY NUMBER
