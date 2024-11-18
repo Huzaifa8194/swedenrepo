@@ -200,10 +200,10 @@ const New_In_sweden = () => {
 
       <div className=" ">
         <section className=" ">
-          <div className="container-fluid  ">
+          <div className=" ">
             <div className="row g-4">
-              <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
-                <div className="   md:tw-pl-32 tw-pl-3 md:tw-pr-8 pr-2">
+              <div className="col-md-9 tw-py-20 tw-bg-white tw-text-justify">
+                <div className="   md:tw-pl-[200px] tw-pl-[200px] tw-pr-[60px]">
                   <span className=" tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>SOCIAL SECURITY NUMBER
@@ -1347,7 +1347,7 @@ const New_In_sweden = () => {
                 </div>
               </div>
 
-              <div className="col-md-4  tw-pt-16   tw-bg-[#F5FAFF]   " style={{ position: 'sticky', top: '300px' }}>
+              <div className="col-md-3  tw-pt-16   tw-bg-[#F5FAFF]   " style={{ position: 'sticky', top: '300px' }}>
                 <div className={`sm:tw-pr-28 tw-pr-0 ${isSticky ? ' md:tw-fixed tw-flex-initial  tw-bottom-0  md:tw-w-[30%] tw-w-full' : 'tw-relative'} `}>
                   <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                     {data?.map((item, index) => {

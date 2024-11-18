@@ -75,7 +75,7 @@ const Header = () => {
             <Flex direction={"flex-direction-column"}>
               {/* Top bar section */}
               <div
-                className={`tw-z-20 top-bar ${isTop ? "visible" : "hidden"} tw-pt-[10px] tw-px-[50px]  2xl:tw-px-[60px] tw-bg-[#1f2437]`}
+                className={`tw-z-20 top-bar ${isTop ? "visible" : "hidden"} tw-pt-[10px] tw-px-[180px]  2xl:tw-px-[200px] tw-bg-[#1f2437]`}
               >
                 <Flex gap={"gap-large"} spaceBetween={"space-between"}>
                   <div className="tw-ml-2">
@@ -104,7 +104,7 @@ const Header = () => {
 
               {/* Navbar section */}
               <div
-                className={`tw-fixed tw-pb-[20px] tw-px-[50px] tw-pt-[70px]  2xl:tw-px-[60px] tw-bg-[#1f2437] tw-w-full  tw-transition-all tw-duration-500 tw-ease-in-out ${
+                className={`tw-fixed tw-pb-[20px] tw-px-[100px] tw-pt-[70px]  2xl:tw-px-[200px] tw-bg-[#1f2437] tw-w-full  tw-transition-all tw-duration-500 tw-ease-in-out ${
                   isTop ? "tw-translate-y-[0px]" : "tw-translate-y-[-52px] tw-pt-2 tw-bg-[#fff]"
                 }`}
               >
