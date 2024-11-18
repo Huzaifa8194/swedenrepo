@@ -104,7 +104,7 @@ const Header = () => {
 
               {/* Navbar section */}
               <div
-                className={`tw-fixed tw-pb-[20px] tw-px-[100px] tw-pt-[70px]  2xl:tw-px-[200px] tw-bg-[#1f2437] tw-w-full  tw-transition-all tw-duration-500 tw-ease-in-out ${
+                className={`tw-fixed tw-pb-[20px] tw-pl-[100px] tw-pt-[70px]  2xl:tw-pl-[200px] tw-pr-[100px] tw-bg-[#1f2437] tw-w-full  tw-transition-all tw-duration-500 tw-ease-in-out ${
                   isTop ? "tw-translate-y-[0px]" : "tw-translate-y-[-52px] tw-pt-2 tw-bg-[#fff]"
                 }`}
               >
