@@ -83,7 +83,7 @@ export const NavListDesktop = ({ isTop }) => {
   const { t} = useTranslation();
 
   return (
-    <div className="tw-flex tw-justify-center tw-items-center tw-gap-0 tw-relative tw-z-[1100]">
+    <div className="tw-flex tw-justify-center tw-items-center tw-gap-4 tw-relative tw-z-[1100]">
       {NavItems.map((item) => (
         <div
           key={item.id}

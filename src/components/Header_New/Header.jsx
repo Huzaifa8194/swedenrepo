@@ -72,10 +72,10 @@ const Header = () => {
       ) : (
         <div className="tw-relative tw-w-full">
           <Navbar>
-            <Flex direction={"flex-direction-column"}>
+            <Flex direction={"flex-direction-column "}>
               {/* Top bar section */}
               <div
-                className={`tw-z-20 top-bar ${isTop ? "visible" : "hidden"} tw-pt-[10px] tw-px-[9%]   tw-bg-[#1f2437]`}
+                className={`tw-z-20 top-bar ${isTop ? "visible" : "hidden"} tw-pt-[10px] tw-px-[15%]   tw-bg-[#1f2437]`}
               >
                 <Flex gap={"gap-large"} spaceBetween={"space-between"}>
                   <div className="tw-ml-2">
@@ -99,12 +99,23 @@ const Header = () => {
                       ></div>
                     </Flex>
                   </div>
+                  <div className="tw-flex tw-justify-center tw-items-center tw-gap-1">
+                    <Button
+                      className={isTop ? "btn-Plain" : "btn-dark"}
+                      label="Book an Appointment"
+                      onClick={() => (window.location.href = "/book_an_appointment")}
+                    />
+                    <Button
+                      className={isTop ? "btn-Transparent" : "btn-light"}
+                      label="Login"
+                    />
+                  </div>
                 </Flex>
               </div>
 
               {/* Navbar section */}
               <div
-                className={`tw-fixed tw-pb-[20px]  tw-pt-[70px]  tw-pl-[9%] tw-pr-[5%] tw-bg-[#1f2437] tw-w-full  tw-transition-all tw-duration-500 tw-ease-in-out ${
+                className={`tw-fixed tw-pb-[20px]  tw-pt-[70px]  tw-px-[15%]  tw-bg-[#1f2437] tw-w-full  tw-transition-all tw-duration-500 tw-ease-in-out ${
                   isTop ? "tw-translate-y-[0px]" : "tw-translate-y-[-52px] tw-pt-2 tw-bg-[#fff]"
                 }`}
               >
@@ -118,17 +129,7 @@ const Header = () => {
                     />
                     <NavListDesktop isTop={isTop} />
                   </div>
-                  <div className="tw-flex tw-justify-center tw-items-center tw-gap-1">
-                    <Button
-                      className={isTop ? "btn-Plain" : "btn-dark"}
-                      label="Book an Appointment"
-                      onClick={() => (window.location.href = "/book_an_appointment")}
-                    />
-                    <Button
-                      className={isTop ? "btn-Transparent" : "btn-light"}
-                      label="Login"
-                    />
-                  </div>
+                  
                 </Flex>
               </div>
             </Flex>
