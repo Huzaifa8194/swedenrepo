@@ -252,8 +252,8 @@ const ServiceDetails = () => {
           <div className="">
             <div className="">
               <div className="row g-4">
-                <div className="col-md-9 tw-py-20 tw-bg-white tw-text-justify">
-                  <div className="  md:tw-pl-[11.5%] tw-pl-3 tw-pr-[3.5%]">
+                <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
+                  <div className="  md:tw-pl-[22.5%] tw-pl-3 tw-pr-[3.5%]">
                     <div>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
@@ -1368,8 +1368,8 @@ const ServiceDetails = () => {
                   </div>
                 </div>
 
-                <div className="col-md-3  tw-pt-16  tw-bg-[#F5FAFF] " style={{ position: 'sticky', top: '300px' }}>
-                  <div className="  sm:tw-pr-20 tw-pr-4 tw-relative">
+                <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF] " style={{ position: 'sticky', top: '300px' }}>
+                  <div className="  sm:tw-pr-[50%] tw-pr-4 tw-relative">
                   <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                       {data?.map((item, index) => {
                         return (
