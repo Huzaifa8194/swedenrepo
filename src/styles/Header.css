@@ -53,7 +53,7 @@ body {
 }
 /* font weight classes */
 .css-font-weight-light {
-  font-weight: 300 !important;
+  font-weight: 900 !important;
 }
 .top-bar {
   transition: transform 0.3s ease-out;

@@ -75,7 +75,7 @@ const Header = () => {
             <Flex direction={"flex-direction-column "}>
               {/* Top bar section */}
               <div
-                className={`tw-z-20 top-bar ${isTop ? "visible" : "hidden"} tw-pt-[10px] tw-px-[15%]   tw-bg-[#1f2437]`}
+                className={`tw-z-20 top-bar ${isTop ? "visible" : "hidden"} tw-pt-[10px] tw-px-[7%]   tw-bg-[#1f2437]`}
               >
                 <Flex gap={"gap-large"} spaceBetween={"space-between"}>
                   <div className="tw-ml-2">
@@ -99,7 +99,28 @@ const Header = () => {
                       ></div>
                     </Flex>
                   </div>
+                  
+                </Flex>
+              </div>
+
+              {/* Navbar section */}
+              <div
+                className={`tw-fixed tw-pb-[20px]  tw-pt-[70px]  tw-px-[5.6%]  tw-bg-[#1f2437] tw-w-full  tw-transition-all tw-duration-500 tw-ease-in-out ${
+                  isTop ? "tw-translate-y-[0px]" : "tw-translate-y-[-52px] tw-pt-2 tw-bg-[#fff]"
+                }`}
+              >
+                <Flex spaceBetween={"space-between"}>
+                  <div className="tw-flex tw-justify-center tw-items-center tw-gap-0">
+                    <Image
+                      link={logo}
+                      alt="Sweden Relocators Logo"
+                      imageType={"brand-image-small"}
+                      href="/"
+                    />
+                    <NavListDesktop isTop={isTop} />
+                  </div>
                   <div className="tw-flex tw-justify-center tw-items-center tw-gap-1">
+                
                     <Button
                       className={isTop ? "btn-Plain" : "btn-dark"}
                       label="Book an Appointment"
@@ -109,25 +130,6 @@ const Header = () => {
                       className={isTop ? "btn-Transparent" : "btn-light"}
                       label="Login"
                     />
-                  </div>
-                </Flex>
-              </div>
-
-              {/* Navbar section */}
-              <div
-                className={`tw-fixed tw-pb-[20px]  tw-pt-[70px]  tw-px-[15%]  tw-bg-[#1f2437] tw-w-full  tw-transition-all tw-duration-500 tw-ease-in-out ${
-                  isTop ? "tw-translate-y-[0px]" : "tw-translate-y-[-52px] tw-pt-2 tw-bg-[#fff]"
-                }`}
-              >
-                <Flex spaceBetween={"space-between"}>
-                  <div className="tw-flex tw-justify-center tw-items-center tw-gap-5">
-                    <Image
-                      link={logo}
-                      alt="Sweden Relocators Logo"
-                      imageType={"brand-image-small"}
-                      href="/"
-                    />
-                    <NavListDesktop isTop={isTop} />
                   </div>
                   
                 </Flex>

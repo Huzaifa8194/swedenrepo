@@ -63,7 +63,7 @@ const Because_family = () => {
     {
       id: 'service3',
       title: t('COMPLETE ONLINE PORTAL & APP BASE SOLUTION'),
-      subtitle: t('Relocating To') +  '<strong>' + t('Sweden?') + '</strong>',
+      subtitle: t('Relocating To') +  '<strong> ' + t('Sweden?') + '</strong>',
       text: t(''),
       textTwo: t(''),
       description: [
@@ -98,7 +98,7 @@ const Because_family = () => {
     {
       id: 'service5',
       title: t('WORK PERMIT & EXTENSIONS'),
-      subtitle: t('Applying For') + '<strong>' + t('Work Permit?') + '</strong>',
+      subtitle: t('Applying For') + '<strong> ' + t('Work Permit?') + '</strong>',
       text: t('We will help you with preparing permit applications'),
       textTwo: t(''),
       description: [
@@ -111,7 +111,7 @@ const Because_family = () => {
     {
       id: 'service6',
       title: t('BUSINESS & INVESTMENT SOLUTIONS'),
-      subtitle: t('Business') +'<strong>' + t('In Sweden') + '</strong>',
+      subtitle: t('Business') +'<strong> ' + t('In Sweden') + '</strong>',
       text: t('If you are planning to invest in Sweden, you might need to apply for the residence permit'),
       textTwo: t(''),
       description: [
@@ -124,7 +124,7 @@ const Because_family = () => {
     {
       id: 'service7',
       title: t('EOR & Payroll Services'),
-      subtitle: t('EOR &') + '<strong>' + t(' Payroll Services') + '</strong>',
+      subtitle: t('EOR &') + '<br/><strong>' + t(' Payroll Services') + '</strong>',
       text: t(''),
       textTwo: t('How Payroll Services Work:'),
       description: [
@@ -145,7 +145,7 @@ const Because_family = () => {
     {
       id: 'service8',
       title: t('Why Choose Us'),
-      subtitle: t('Experienced Team Provide') + '<strong> '+ t('RELOCATION SERVICES') + '</strong>',
+      subtitle: t('Experienced Team Provide') + '<strong><br/> '+ t('RELOCATION SERVICES') + '</strong>',
       text: t(''),
       textTwo: t(''),
       description: [t('We are here to provide you complete Relocation Services, including Housing, Kids School, Visa Services, Registration for Social Benefits, Language School, Integration activities etc.')],
@@ -156,7 +156,7 @@ const Because_family = () => {
     {
       id: 'service9',
       title: t('INSTANT HOUSING SOLUTIONS'),
-      subtitle: t('Home Loans &')  + '<strong>' + t('Secure Home Rental Solutions') + '</strong>',
+      subtitle: t('Home Loans &')  + '<strong><br/>' + t('Secure Home Rental Solutions') + '</strong>',
       text: t(''),
       textTwo: t(''),
       description: [
@@ -169,7 +169,7 @@ const Because_family = () => {
     {
       id: 'service10',
       title: t('PROFESSIONAL LEGAL SERVICES BY LAWYERS'),
-      subtitle: t('We Can Provide Lawyers For') + ' <strong>' + t('Legal Issues') + '</strong>',
+      subtitle: t('We Can Provide Lawyers For') + ' <strong><br/>' + t('Legal Issues') + '</strong>',
       text: t(''),
       textTwo: t(''),
       description: [
@@ -182,7 +182,7 @@ const Because_family = () => {
     {
       id: 'service11',
       title: t('AU-PAIR SERVICES FOR NORDIC FAMILIES'),
-      subtitle: t('Solutions For Host Families') + ' & <strong>' + t('AU Pair') + '</strong>',
+      subtitle: t('Solutions For Host Families') + ' & <strong><br/>' + t('AU Pair') + '</strong>',
       text: t(''),
       textTwo: t(''),
       description: [

@@ -200,10 +200,10 @@ const New_In_sweden = () => {
 
       <div className=" ">
         <section className=" ">
-          <div className=" ">
+          <div className="container-fluid ">
             <div className="row g-4">
               <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
-                <div className="   tw-pl-[22.5%] tw-pr-[3.5%]">
+                <div className="   2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <span className=" tw-flex tw-items-center tw-gap-5">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>SOCIAL SECURITY NUMBER
@@ -1347,8 +1347,8 @@ const New_In_sweden = () => {
                 </div>
               </div>
 
-              <div className="col-md-4  tw-pt-16 tw-pr-[40%]  tw-bg-[#F5FAFF]  " style={{ position: 'sticky', top: '300px' }}>
-                <div className={`sm:tw-pr-[50%] tw-pr-0 ${isSticky ? ' md:tw-fixed tw-flex-initial  tw-bottom-0  md:tw-w-[30%] tw-w-full' : 'tw-relative'} `}>
+              <div className="col-md-4  tw-pt-16   tw-bg-[#F5FAFF]  " style={{ position: 'sticky', top: '300px' }}>
+                <div className={` md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative `}>
                   <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                     {data?.map((item, index) => {
                       return (

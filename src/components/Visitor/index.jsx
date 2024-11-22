@@ -18,7 +18,7 @@ const Visitor = () => {
                 <div className=" tw-text-center tw-py-2">
                   <span>{t('YOUR NEXT VISA APPLICATION IS ON ONE CLICK!')}</span>
                   <h2 className="title">
-                    {t('We Prepare Visa Applications &')} <strong>{t('Send Worldwide Via DHL')}</strong>
+                    {t('We Prepare Visa Applications &')} <strong><br/>{t('Send Worldwide Via DHL')}</strong>
                   </h2>
                   <p className=" tw-text-gray">{t('Submit to Embassy or Nearest FedEx Office')}</p>
                 </div>

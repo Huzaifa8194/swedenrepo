@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { NavItems } from '../../assets/data/Nav-List.jsx';
 import '../../styles/Header.css'; // Import the CSS file with variables
 import { IoIosArrowDown } from 'react-icons/io';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setBackDrop } from '../../store/reducers/addBackDrop.jsx';
 import { RxHamburgerMenu } from 'react-icons/rx';
@@ -80,9 +80,24 @@ export const NavListDesktop = ({ isTop }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch(); // Set up dispatch
 
+
+
   const { t} = useTranslation();
 
   return (
+
+
+    <>
+      <style>
+        {`
+          
+          @media (max-width: 1600px), (max-width: 119px) {
+            .dynamic-text-size {
+              font-size: 0.8em;
+            }
+          }
+        `}
+      </style>
     <div className="tw-flex tw-justify-center tw-items-center tw-gap-4 tw-relative tw-z-[1100]">
       {NavItems.map((item) => (
         <div
@@ -111,7 +126,7 @@ export const NavListDesktop = ({ isTop }) => {
               setHoveredItem(null);
             }}
           >
-            <li className={`${isTop ? 'tw-text-white' : 'tw-text-[#1f2437]'}  tw-text-[15px] 2xl:tw-text-[17px]`}>{t(item.name)}</li>
+            <li className={`${isTop ? 'tw-text-white tw-text-[1em]' : 'tw-text-[#1f2437]'}   font-extrabold dynamic-text-size`}>{t(item.name)}</li>
             {item.childLinks && <IoIosArrowDown color={isTop ? '#fff' : '#1f2437'} className={`tw-transition-transform tw-duration-300 ${hoveredItem === item.id ? 'tw-rotate-180' : ''}`} />}
           </ul>
           {hoveredItem === item.id && item.childLinks && (
@@ -122,6 +137,7 @@ export const NavListDesktop = ({ isTop }) => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 
@@ -221,8 +237,8 @@ export const NavListMobile = ({ openMenu, selectedNavItem, setSelectedNavItem, s
           ))}
         </div>
         <div className="tw-flex tw-justify-start tw-items-center tw-gap-5 tw-p-4">
-          <Button className={'btn-dark'} label={'Book an Appointment'} />
-          <Button className={'btn-light'} label={'Login'} />
+          <Button className={'btn-dark dynamic-text-size'} label={'Book an Appointment'} />
+          <Button className={'btn-light dynamic-text-size'} label={'Login'} />
         </div>
       </div>
     </>

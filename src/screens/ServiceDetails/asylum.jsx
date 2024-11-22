@@ -250,10 +250,10 @@ const ServiceDetails = () => {
       <div className=" ">
         <section className=" ">
           <div className="">
-            <div className="">
+            <div className="container-fluid">
               <div className="row g-4">
-                <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
-                  <div className="  md:tw-pl-[22.5%] tw-pl-3 tw-pr-[3.5%]">
+                <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
+                  <div className=" 2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                     <div>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
@@ -263,8 +263,13 @@ const ServiceDetails = () => {
                       <h2 className="tw-text-left">
                         <strong>
                           Appeal Process for a Denied Permit or Visa in Sweden
+        
                         </strong>
+                       
+                       
                       </h2>
+                      <br/>
+                      
 
                       <p className=" tw-text-gray tw-">
                         If you have been denied entry or residency in
@@ -285,7 +290,7 @@ const ServiceDetails = () => {
                         have your case reconsidered and, ideally, reversed.
                       </p>
                     </div>
-
+<br/>
                     <div>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
@@ -293,8 +298,11 @@ const ServiceDetails = () => {
                         Why Appeals are
                       </span>
                       <h2 className="tw-text-left">
+                          
                         <strong>Increasingly Necessary</strong>
+                        
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray tw-">
                         Since the refugee crisis, Swedish authorities have
@@ -309,6 +317,7 @@ const ServiceDetails = () => {
                         decision and restoring your opportunity to live or work
                         in Sweden.
                       </p>
+                      <br/>
                     </div>
 
                     <div className="row tw-flex tw-items-center">
@@ -321,6 +330,7 @@ const ServiceDetails = () => {
                         <h2 className="tw-text-left">
                           <strong>The Appeal Process</strong>
                         </h2>
+                        <br></br>
                         <p className=" tw-text-gray">
                           To appeal a denied decision, you must submit a written
                           appeal in Swedish or English. This document needs to
@@ -345,14 +355,18 @@ const ServiceDetails = () => {
                     </div>
 
                     <div>
+                      <br/>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                         What to Include in
                       </span>
                       <h2 className="tw-text-left">
+                    
                         <strong>The Appeal Letter</strong>
+                        
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">
                         In your appeal letter, you should clearly state:
@@ -447,6 +461,7 @@ const ServiceDetails = () => {
                         <h2 className="tw-text-left">
                           <strong>For a Representative </strong>
                         </h2>
+                        <br/>
                         <p className=" tw-text-gray">
                           If someone else is submitting the appeal on your
                           behalf (for instance, a legal representative from
@@ -459,14 +474,18 @@ const ServiceDetails = () => {
                     </div>
 
                     <div>
+                      <br></br>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                         by Migrationsverket
                       </span>
                       <h2 className="tw-text-left">
+                     
                         <strong>Appeal Submission and Initial Review </strong>
+                        
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray tw-">
                         Once your appeal is submitted, Migrationsverket will
@@ -516,6 +535,7 @@ const ServiceDetails = () => {
                     </div>
 
                     <div>
+                      <br></br>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
@@ -524,6 +544,7 @@ const ServiceDetails = () => {
                       <h2 className="tw-text-left">
                         <strong>Possible Outcomes </strong>
                       </h2>
+                      <br></br>
 
                      
                           
@@ -576,6 +597,7 @@ const ServiceDetails = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
+                        <br></br>
                         <span className=" tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
@@ -584,6 +606,7 @@ const ServiceDetails = () => {
                         <h2 className="tw-text-left">
                           <strong>If the Appeal is Forwarded to Court</strong>
                         </h2>
+                        <br></br>
                         <p className=" tw-text-gray">
                           If Migrationsverket does not alter the decision, your
                           case will be sent to the Administrative Court
@@ -595,6 +618,7 @@ const ServiceDetails = () => {
                     </div>
 
                     <div>
+                      <br></br>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
@@ -603,7 +627,7 @@ const ServiceDetails = () => {
                       <h2 className="tw-text-left">
                         <strong> Court Review</strong>
                       </h2>
-
+<br></br>
                       <p className=" tw-text-gray tw-">
                         The court will examine the initial application, the
                         reasons for the denial, and any new information or
@@ -652,6 +676,7 @@ const ServiceDetails = () => {
                     </div>
 
                     <div>
+                      <br></br>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
@@ -660,6 +685,7 @@ const ServiceDetails = () => {
                       <h2 className="tw-text-left">
                         <strong>Estimated Timelines</strong>
                       </h2>
+                      <br></br>
 
                       <p className=" tw-text-gray tw-">
                         The duration of the appeal process varies:
@@ -719,6 +745,7 @@ const ServiceDetails = () => {
                     </div>
 
                     <div>
+                      <br></br>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
@@ -727,6 +754,7 @@ const ServiceDetails = () => {
                       <h2 className="tw-text-left">
                         <strong> Our Services Include:</strong>
                       </h2>
+                      <br></br>
 
                    
                           
@@ -825,7 +853,7 @@ const ServiceDetails = () => {
                               agencies:
                             </p>
                            
-
+<br></br>
                             <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
@@ -834,6 +862,7 @@ const ServiceDetails = () => {
                       <h2 className="tw-text-left">
                         <strong>  1. Swedish Tax Agency </strong>
                       </h2>
+                      <br></br>
 
                            
                             <p>
@@ -901,7 +930,7 @@ const ServiceDetails = () => {
                             <br />
 
                             
-
+<br></br>
                             <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
@@ -910,6 +939,7 @@ const ServiceDetails = () => {
                       <h2 className="tw-text-left">
                         <strong>2. Swedish Social Insurance Agency</strong>
                       </h2>
+                      <br></br>
 
 
                            
@@ -980,7 +1010,7 @@ const ServiceDetails = () => {
                             <br />
 
 
-
+<br></br>
                             <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
@@ -989,7 +1019,7 @@ const ServiceDetails = () => {
                       <h2 className="tw-text-left">
                         <strong>  3. Swedish Public Employment Service</strong>
                       </h2>
-
+<br></br>
 
                           
                             <p>
@@ -1055,7 +1085,7 @@ const ServiceDetails = () => {
                             <br />
                             <br />
 
-
+<br></br>
                             <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
@@ -1064,6 +1094,7 @@ const ServiceDetails = () => {
                       <h2 className="tw-text-left">
                         <strong>  4. Swedish Customs Agency </strong>
                       </h2>
+                      <br></br>
 
                             
                             <p>
@@ -1123,6 +1154,7 @@ const ServiceDetails = () => {
                             ensuring compliance and avoiding costly penalties.
                             <br /><br />
 
+
                             <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
@@ -1131,6 +1163,7 @@ const ServiceDetails = () => {
                       <h2 className="tw-text-left">
                         <strong> 5. Unemployment Insurance </strong>
                       </h2>
+                      <br></br>
                            
                             <p>
                               A-Kassa, or unemployment insurance funds, provides
@@ -1174,7 +1207,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
                     </div>
-
+<br></br>
                     <div>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
@@ -1184,7 +1217,7 @@ const ServiceDetails = () => {
                       <h2 className="tw-text-left">
                         <strong> Include:</strong>
                       </h2>
-
+<br></br>
                      
                           
                           <strong className="tw-text-gray">
@@ -1274,6 +1307,7 @@ const ServiceDetails = () => {
                     </div>
 
                     <div>
+                      <br></br>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
@@ -1282,6 +1316,7 @@ const ServiceDetails = () => {
                       <h2 className="tw-text-left">
                         <strong>Sweden Relocators?</strong>
                       </h2>
+                      <br></br>
 
                     
                           
@@ -1341,6 +1376,7 @@ const ServiceDetails = () => {
                     </div>
 
                     <div>
+                      <br></br>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
@@ -1349,6 +1385,7 @@ const ServiceDetails = () => {
                       <h2 className="tw-text-left">
                         <strong>Expert Appeal Assistance</strong>
                       </h2>
+                      <br></br>
 
                       <p className=" tw-text-gray tw-">
                         If you’ve been denied a family reunification permit,
@@ -1369,7 +1406,7 @@ const ServiceDetails = () => {
                 </div>
 
                 <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF] " style={{ position: 'sticky', top: '300px' }}>
-                  <div className="  sm:tw-pr-[50%] tw-pr-4 tw-relative">
+                  <div className=" md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
                   <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                       {data?.map((item, index) => {
                         return (
