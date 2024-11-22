@@ -213,6 +213,7 @@ const StudyInEu = () => {
                       <img src={flag} alt="" />
                     </div>
                     <div className="col-md-9">
+                    <br/>
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STUDY
@@ -221,6 +222,8 @@ const StudyInEu = () => {
                       <h2>
                         <strong>In Sweden</strong>
                       </h2>
+                      
+                      <br/>
                     </div>
                   </div>
                   <div className="row">
@@ -236,6 +239,7 @@ const StudyInEu = () => {
                   <p className=" tw-text-gray">Following are 6 reasons why Sweden is considered an ideal place to study:</p>
 
                   <div>
+                    <br/>
                     <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> VISION
@@ -243,6 +247,7 @@ const StudyInEu = () => {
                     <h2>
                       <strong>Enhancement Of One’s Mind</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       Study in Sweden let you think independently and critically. It will enhance your ability to question the state of affairs by accessing information, seeking new perspectives and coming up with well-informed judgments. Because of
@@ -252,6 +257,7 @@ const StudyInEu = () => {
                   </div>
                   <div>
                     <div>
+                      <br/>
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> RICH
@@ -259,11 +265,13 @@ const StudyInEu = () => {
                       <h2>
                         <strong>Swedish History</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">
                         Sweden has contributed a lot to the history books, and many museums allow free entrance on a daily basis or on specially marked days throughout the year. Swedish History Museum, the largest museum in Sweden; where millions of
                         visitors and students come to see Sweden’s foremost gold and silver treasures, and incomparable medieval art.
                       </p>
+                      <br/>
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> LANGUAGE
@@ -271,6 +279,7 @@ const StudyInEu = () => {
                       <h2>
                         <strong>Proficiency</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">
                         Using Swedish, a rich and beautiful native language; in 2017, Swedes ranked second in the world for skills in English as an official language. As the world is getting more independent and businesses seek to extend the national
@@ -278,6 +287,7 @@ const StudyInEu = () => {
                         new cultural surroundings. Also, Sweden is a car-free country with an extensive network of buses, trains, subways, trams, boats, planes, and many more that can take you anywhere you want to go.
                       </p>
 
+                      <br/>
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> MALMÖ
@@ -286,6 +296,7 @@ const StudyInEu = () => {
                       <h2>
                         <strong>A Coastal City</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">
                         Malmö is among the top cities in Sweden having a free business environment and also a good place to live with outrageous rankings in housing, healthcare, and environmental quality. The University of Malmo founded in 1998,
@@ -294,6 +305,7 @@ const StudyInEu = () => {
                         an apartment in Malmo is in the 139th place of all 248 Teleport cities.
                       </p>
 
+                      <br/>
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STUDYING
@@ -302,6 +314,7 @@ const StudyInEu = () => {
                       <h2>
                         <strong>And Working In Sweden</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">
                         International students can comfortably get Sweden work permit. Unlike other countries, there’s no legal limit to the number of hours international students can work during their studies. After the completion of studies, you
@@ -313,9 +326,11 @@ const StudyInEu = () => {
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> EU
                       </span>
 
+                      <br/>
                       <h2>
                         <strong>Citizen’s Right</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">
                         Unless you are a citizen of a neighboring Nordic country, every foreigner will need to contemplate the different types of Swedish visas. When applying for a Swedish visa, you are not allowed to be in the country. This largely
@@ -333,17 +348,20 @@ const StudyInEu = () => {
                       </div>
                     </div>
 
+                    <br/>
                     <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> VISA
                     </span>
 
+
                     <h2>
                       <strong>Requirements For Students</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">Students from the EU/EEA can study in Sweden without any visa requirements. If you are from outside the EU/EEA, you may need to obtain a student visa.</p>
-
+                    <br/>
                     <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> JOB MARKET
@@ -351,6 +369,7 @@ const StudyInEu = () => {
                     <h2>
                       <strong>For Graduates</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       Sweden is home to several internationally successful corporations – think Volvo, IKEA or H&M – but also to some of the most exciting startups of recent years – think Skype or Spotify. The in-ternationality of such employers as
@@ -363,7 +382,7 @@ const StudyInEu = () => {
                         <h2>
                           <strong>Bachelor Programs</strong>
                         </h2>
-
+                       
                         <p className="  tw-text-gray">
                           Application for <b>online first admission</b> of bachelor’s regarding different programs starts from <b>16th of October to 15th of January</b> every year. After enrolling, the classes start in August.
                         </p>
@@ -376,7 +395,7 @@ const StudyInEu = () => {
                         <h2>
                           <strong>Maters Programs</strong>
                         </h2>
-
+                       
                         <p className="  tw-text-gray">
                           Application for <b>online first admission</b> of bachelor’s regarding different programs starts from <b>16th of October to 15th of January</b> every year. After enrolling, the classes start in August.
                         </p>
@@ -395,6 +414,7 @@ const StudyInEu = () => {
                       <h2>
                         <strong>English Proficiency</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">
                         There are no requirements of the language test such as TOEF and IELTS for the students who have studied at the university with IT-Engineering-Medical background. Students from Pakistan and India with their Swedish
@@ -411,6 +431,7 @@ const StudyInEu = () => {
                       <h2>
                         <strong>Requirement</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">
                         There are no requirements of the language test such as TOEF and IELTS for the students who have studied at the university with IT-Engineering-Medical background. Students from Pakistan and India with their Swedish
@@ -446,6 +467,7 @@ const StudyInEu = () => {
                           <img src={flag} alt="" />
                         </div>
                         <div className="col-md-9">
+                        <br/>
                           <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                             {' '}
                             <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STUDY
@@ -454,10 +476,12 @@ const StudyInEu = () => {
                           <h2>
                             <strong>In Denmark</strong>
                           </h2>
+                          <br/>
                         </div>
                       </div>
 
                       <div>
+                      <br/>
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {' '}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> FACTS AND FIGURES ABOUT
@@ -466,6 +490,7 @@ const StudyInEu = () => {
                         <h2>
                           <strong>Higher Education In Denmark</strong>
                         </h2>
+                        <br/>
 
                         <p className=" tw-text-gray">
                           Denmark boasts an advanced educational system with many world-class institutions. At some 30 higher education institutions, you can find well over 500 English-taught study programmes to choose from. Like many other
@@ -475,6 +500,7 @@ const StudyInEu = () => {
                       </div>
 
                       <div>
+                      <br/>
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {' '}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> JOB MARKET
@@ -483,11 +509,13 @@ const StudyInEu = () => {
                         <h2>
                           <strong>For Graduates</strong>
                         </h2>
+                        <br/>
 
                         <p className=" tw-text-gray">In Denmark requirements vary from programme to programme. Here is what you need to know about how and when to apply.</p>
                       </div>
 
                       <div>
+                      <br/>
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {' '}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> ASSESSMENT OF
@@ -496,11 +524,13 @@ const StudyInEu = () => {
                         <h2>
                           <strong>Your Qualifications</strong>
                         </h2>
+                        <br/>
 
                         <p className=" tw-text-gray">Non-Danish citizens who do not have a Danish entrance examination are eligi-ble for admission if they have qualifications recognized as being comparable to Danish entrance qualifications.</p>
                       </div>
 
                       <div>
+                      <br/>
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {' '}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
@@ -510,9 +540,11 @@ const StudyInEu = () => {
                         <h2>
                           <strong>Your Qualifications Visit Student Assessment Tool</strong>
                         </h2>
+                        <br/>
                       </div>
 
                       <div>
+                      <br/>
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {' '}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> GENERAL
@@ -521,6 +553,7 @@ const StudyInEu = () => {
                         <h2>
                           <strong>Admission Requirements</strong>
                         </h2>
+                        <br/>
 
                         <p className=" tw-text-gray">
                           All higher education programmes in Denmark require a high standard of Eng-lish. Applicants to English-taught undergraduate and postgraduate programmes must, as a minimum, prove English proficiency comparable to ‘English B’
@@ -535,6 +568,7 @@ const StudyInEu = () => {
                       </div>
 
                       <div>
+                      <br/>
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {' '}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> BASED UPON A ROUGH AVERAGE OF PREVIOUS REQUIREMENTS
@@ -543,6 +577,7 @@ const StudyInEu = () => {
                         <h2>
                           <strong>Here Is An Estimate Of The Ranges You Can Expect</strong>
                         </h2>
+                        <br/>
 
                         <p className=" tw-text-gray">
                           Applicants who are native English speakers must also submit proof of English proficiency equivalent to at least English B level in Denmark. Educational insti-tutions can offer a specially designed test for these applicants,
@@ -555,6 +590,7 @@ const StudyInEu = () => {
                           <img src={flag4} alt="" />
                         </div>
                         <div className="col-md-9">
+                        
                           <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                             {' '}
                             <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STUDY
@@ -563,10 +599,12 @@ const StudyInEu = () => {
                           <h2>
                             <strong>In United Kingdom</strong>
                           </h2>
+                          <br/>
                         </div>
                       </div>
 
                       <div>
+                      <br/>
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {' '}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> HOW TO
@@ -575,6 +613,7 @@ const StudyInEu = () => {
                         <h2>
                           <strong>Apply</strong>
                         </h2>
+                        <br/>
 
                         <p className=" tw-text-gray">
                           In order to gain admission to an undergraduate program at a UK university, students need to apply between 1 September and 30 June in the year preceding the year which academic study is to commence. This must be done through
@@ -588,7 +627,7 @@ const StudyInEu = () => {
                             <img src={banner3} alt="" />
                           </div>
                         </div>
-
+                        <br/>
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {' '}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> ENTRY
@@ -597,6 +636,7 @@ const StudyInEu = () => {
                         <h2>
                           <strong>Qualifications</strong>
                         </h2>
+                        <br/>
 
                         <p className=" tw-text-gray">As per the qualification guidelines provided by the UK National Agency, universities assess your application before offering a place on the course.</p>
                         <ul className=" tw-p-0 tw-pt-4">
@@ -648,6 +688,7 @@ const StudyInEu = () => {
                           <img src={flag3} alt="" />
                         </div>
                         <div className="col-md-9">
+                        
                           <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                             {' '}
                             <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STUDY
@@ -656,10 +697,12 @@ const StudyInEu = () => {
                           <h2>
                             <strong>In Czech Republic</strong>
                           </h2>
+                          <br/>
                         </div>
                       </div>
 
                       <div>
+                      <br/>
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {' '}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> ADMISSION
@@ -668,6 +711,7 @@ const StudyInEu = () => {
                         <h2>
                           <strong>Requirements</strong>
                         </h2>
+                        <br/>
 
                         <p className=" tw-text-gray">
                           The basic condition for entering studies is the successful completion of the previous level of study (certificate of graduation from a secondary school for Bachelor’s (3 years) and long-cycle Master’s degree programmes (5-6
@@ -688,6 +732,7 @@ const StudyInEu = () => {
                           <img src={flag2} alt="" />
                         </div>
                         <div className="col-md-9">
+                       
                           <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                             {' '}
                             <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STUDY
@@ -696,10 +741,12 @@ const StudyInEu = () => {
                           <h2>
                             <strong>In Norway</strong>
                           </h2>
+                          <br/>
                         </div>
                       </div>
 
                       <div>
+                      <br/>
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {' '}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> APPLICATION
@@ -708,6 +755,7 @@ const StudyInEu = () => {
                         <h2>
                           <strong>& Admission</strong>
                         </h2>
+                        <br/>
 
                         <p className=" tw-text-gray">Applications and admissions to higher education in Norway is handled by each institution, and the different institutions may have different requirements and deadlines.</p>
                         <p className=" tw-text-gray">
@@ -717,6 +765,7 @@ const StudyInEu = () => {
                       </div>
 
                       <div>
+                      <br/>
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {' '}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> DEGREE SEEKING STUDENTS
@@ -725,6 +774,7 @@ const StudyInEu = () => {
                         <h2>
                           <strong>Academic Requirements</strong>
                         </h2>
+                        <br/>
 
                         <p className=" tw-text-gray">Bachelor’s/ undergraduate studies</p>
                         <p className=" tw-text-gray">
@@ -745,6 +795,7 @@ const StudyInEu = () => {
                       </div>
 
                       <div>
+                      <br/>
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {' '}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> DEGREE SEEKING STUDENTS
@@ -752,7 +803,7 @@ const StudyInEu = () => {
 
                         <h2>
                           <strong>Language Requirements</strong>
-                        </h2>
+                        </h2> <br/>
 
                         <p className=" tw-text-gray">
                           For courses where the language of instruction is English all applicants should ex-pect to document their language skills according to the requirements set by the institutions. Beware that the requirements may vary from
@@ -768,6 +819,7 @@ const StudyInEu = () => {
                           <img src={flag1} alt="" />
                         </div>
                         <div className="col-md-9">
+                       
                           <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                             {' '}
                             <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STUDY
@@ -776,10 +828,12 @@ const StudyInEu = () => {
                           <h2>
                             <strong>In Finland</strong>
                           </h2>
+                          <br/>
                         </div>
                       </div>
 
                       <div>
+                      <br/>
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {' '}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> BACHELOR’S AND
@@ -788,6 +842,7 @@ const StudyInEu = () => {
                         <h2>
                           <strong>Master’s Admissions</strong>
                         </h2>
+                        <br/>
 
                         <p className=" tw-text-gray">
                           Applying for higher education degree studies in Finland is done online at Studyin-fo.fi. That is also where you can search for the available English-taught degree programme options. There is no application fee, applying is
@@ -800,6 +855,7 @@ const StudyInEu = () => {
                       </div>
 
                       <div>
+                      <br/>
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {' '}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> WHEN TO
@@ -808,6 +864,7 @@ const StudyInEu = () => {
                         <h2>
                           <strong>Apply</strong>
                         </h2>
+                        <br/>
 
                         <p className=" tw-text-gray">
                           Applications for bachelor’s and master’s programmes are usually submitted at Studyinfo.fi between late November and mid-January, for studies starting in September. Some degree programmes can however have their application
@@ -817,6 +874,7 @@ const StudyInEu = () => {
                       </div>
 
                       <div>
+                      <br/>
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {' '}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> WHEN TO
@@ -825,6 +883,7 @@ const StudyInEu = () => {
                         <h2>
                           <strong>To Apply</strong>
                         </h2>
+                        <br/>
 
                         <p className=" tw-text-gray">
                           When applying for bachelor’s programmes, you usually need to hold such school-leaving certificates that make you eligible to apply for higher education in your home country. You’ll need your upper secondary school
@@ -842,6 +901,7 @@ const StudyInEu = () => {
                       </div>
 
                       <div>
+                      <br/>
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {' '}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> ADMISSION
@@ -850,6 +910,7 @@ const StudyInEu = () => {
                         <h2>
                           <strong>Results</strong>
                         </h2>
+                        <br/>
 
                         <p className=" tw-text-gray">
                           After the application period and any entrance exams are over, the universities you have applied to will process your application and make a final admission decision. The admissions decision schedule is available in the

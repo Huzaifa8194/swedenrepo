@@ -213,17 +213,19 @@ const New_In_sweden = () => {
                     <strong>Personnummer</strong>
                   </h2>
 
+                  <br/>
                   <p className=" tw-text-gray">
                     If you are new in Sweden then the first thing you must to do is to register yourself with swedish tax authority ‘Skatteverket’ to get your social security number also called as personal identity number or personnummer. As an
-                    EU/EEA-citizen you are entitled to live, work and study in Sweden with or without a personnummer.
+                    EU/EEA-citizen you are entitled to live, work and study in Sweden with or without a personnummer. It is a 12-digit number issued by Skatteverket to the persons registered in Sweden when they are convinced that you can support yourself and your family during the first year of your stay.
                   </p>
-                  <p className=" tw-text-gray">It is a 12-digit number issued by Skatteverket to the persons registered in Sweden when they are convinced that you can support yourself and your family during the first year of your stay.</p>
+                 
                   <p className=" tw-text-gray">
                     Personnummer is not only required to be a part of the social security and health care systems in Sweden, which is otherwise quite expensive to arrange through private insurance companies, but is often used as identification proof
                     at all government offices, banks, insurances, subscriptions, collection of postal items at the post office etc.
                   </p>
 
                   <div>
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>TAKE
@@ -232,6 +234,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>All These Into Consideration</strong>
                     </h2>
+                    <br/>
 
                     <ul className=" tw-p-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -275,6 +278,7 @@ const New_In_sweden = () => {
                   </div>
 
                   <div>
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>IDENTIFICATION CARD
@@ -283,6 +287,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>Swedish ID Card</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">Once you have received your Social Security number, you need to book an appointment with Swedish tax authority-Skatteverket to apply for a Swedish ID card.</p>
                     <p className=" tw-text-gray">
@@ -292,6 +297,7 @@ const New_In_sweden = () => {
                   </div>
 
                   <div>
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>OPENING OF A
@@ -300,6 +306,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>Bank Account</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       <strong>General requirements:</strong>
@@ -341,6 +348,7 @@ const New_In_sweden = () => {
                   </div>
 
                   <div>
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>OPENING OF A
@@ -349,6 +357,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>Bank Account</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       <strong>Specific requirements:</strong>
@@ -362,7 +371,7 @@ const New_In_sweden = () => {
                       </div>
                       <div className=" col-md-7">
                         <ul className=" tw-p-0 tw-pt-4">
-                          <li className=" tw-flex  tw-gap-3">
+                        <li className=" tw-flex  tw-gap-3">
                             <div>
                               <GoTriangleRight className=" tw-text-blue" />
                             </div>
@@ -374,11 +383,6 @@ const New_In_sweden = () => {
                             </div>
                             <p className=" m-0 tw-text-gray">An admission decision confirmation from your university, showing the duration of your studies.</p>
                           </li>
-                        </ul>
-                      </div>
-
-                      <div className="col-md-12">
-                        <ul className=" tw-p-0 tw-pt-4">
                           <li className=" tw-flex  tw-gap-3">
                             <div>
                               <GoTriangleRight className=" tw-text-blue" />
@@ -406,10 +410,17 @@ const New_In_sweden = () => {
                           </li>
                         </ul>
                       </div>
+
+                      <div className="col-md-12">
+                        <ul className=" tw-p-0 tw-pt-4">
+                       
+                        </ul>
+                      </div>
                     </div>
                   </div>
 
                   <div>
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>BEFORE
@@ -418,6 +429,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>Visiting A Bank …</strong>
                     </h2>
+                    <br/>
 
                     <ul className=" tw-p-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -463,6 +475,7 @@ const New_In_sweden = () => {
                   </div>
 
                   <div className=" tw-pt-6">
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>HOW TO GET A
@@ -471,6 +484,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong> Driving License</strong>
                     </h2>
+                    <br/>
 
                     <div className="row">
                       <div className=" col-md-5">
@@ -498,6 +512,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>Steps To Get A License</strong>
                     </h2>
+                    <br/>
 
                     <ul className=" tw-p-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -536,6 +551,7 @@ const New_In_sweden = () => {
                   </div>
 
                   <div className=" tw-pt-6">
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>LOOKING
@@ -544,6 +560,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>For Work In Sweden</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       {' '}
@@ -554,6 +571,7 @@ const New_In_sweden = () => {
                   </div>
 
                   <div>
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>SWEDISH EDUCATION SYSTEM
@@ -562,6 +580,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>School Admissions</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       Swedish preschools emphasises the importance of play in child’s developement. There is a great focus on basic values and individual needs such as playing together, tolerance and being considerate for others. Preschool is
@@ -585,6 +604,7 @@ const New_In_sweden = () => {
                   </div>
 
                   <div>
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>PARENTAL
@@ -593,6 +613,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>Allowance</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       Parental benefit/allowance is the money you receive to be able to be at home with your child instead of working, seeking work, or studying after childbirth. Both the parents are granted 480 days of leave per child in total(240
@@ -602,6 +623,7 @@ const New_In_sweden = () => {
                   </div>
 
                   <div>
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>MOTHER AND CHILD CARE
@@ -610,6 +632,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>Maternity Clinics</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       The maternity clinic (barnmorskemottagningen) is primary health care facility for pregnant women which are responsible for women’s health care throughout the pregnancy and for child’s health care before, during and after birth.
@@ -618,6 +641,7 @@ const New_In_sweden = () => {
                   </div>
 
                   <div>
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>CHILD
@@ -626,6 +650,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>Health Care Centre</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       At the child health centre or barnavårdscentralen (BVC), you can get tips about your child’s development, breastfeeding, food and illnesses. When you come home after childbirth, you can contact the child health centre to make an
@@ -634,6 +659,7 @@ const New_In_sweden = () => {
                   </div>
 
                   <div>
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>CHILD
@@ -642,6 +668,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>Care Allowance (Barnbidrag)</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       Children who are born in Sweden or started living in Sweden before their first birthday are entitled to receive child allowance starting from one month after their birth. The allowance is paid to both parents until the child
@@ -650,6 +677,7 @@ const New_In_sweden = () => {
                   </div>
 
                   <div>
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>REGISTER
@@ -658,6 +686,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>With Försäkringskassan</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       You need to register with Försäkringskassan (the Swedish Social Insurance Agency) to qualify for various benefits for eg. child care allowance, unemployment benefit, parental benefit, etc. Read more at www.forsakringskassan.se
@@ -665,6 +694,7 @@ const New_In_sweden = () => {
                   </div>
 
                   <div>
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>HEALTH CARE
@@ -673,6 +703,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>Health Centre</strong>
                     </h2>
+                    <br/>
 
                     <div className="row tw-items-center">
                       <div className="col-md-5">
@@ -687,7 +718,8 @@ const New_In_sweden = () => {
                     </div>
                   </div>
 
-                  <div className=" tw-pt-6">
+                  <div className=" tw-pt-6"><br/>
+
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>COSTS
@@ -696,6 +728,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>And Fees</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       The costs and fees for visiting a vårdcentral vary from county to county. But the costs of a visit is usually between 100 – 300 SEK and normally free for everyone under 20. Don’t forget to cancel an appointment if you don’t need
@@ -704,6 +737,7 @@ const New_In_sweden = () => {
                   </div>
 
                   <div className=" tw-pt-6">
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>COSTS
@@ -712,6 +746,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>Is Covered?</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       Anyone, registered as resident in Sweden, is entitled to free dental care up to and including the 31 of December of the year you turn 23. Adults on the other hand, pay a large part of their dental care costs themselves, starting
@@ -723,6 +758,7 @@ const New_In_sweden = () => {
                   </div>
 
                   <div className=" tw-pt-6">
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>WHERE DO
@@ -731,11 +767,13 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>I Find A Dentist?</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">You will get a list with all the dentists affiliated with the public dental service – Folktandvården.</p>
                   </div>
 
                   <div>
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>LANGUAGE
@@ -744,6 +782,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>Courses</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       <strong>Learn Swedish in Sweden</strong>
@@ -772,6 +811,7 @@ const New_In_sweden = () => {
                   </div>
 
                   <div className=" tw-pt-6">
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>UNEMPLOYMENT
@@ -780,6 +820,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>Insurance</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">Payouts of unemployment insurance take two forms, a basic benefit or an income-related benefit. Registered yourself for A-Kassa as soon you start your work.</p>
 
@@ -795,6 +836,7 @@ const New_In_sweden = () => {
                   </div>
 
                   <div className=" tw-pt-6">
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>RECOGNITION OF
@@ -803,6 +845,7 @@ const New_In_sweden = () => {
                     <h2>
                       <strong>Higher Education Qualifications</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       The European Commission has devised a system known as ECTS (European Credit Transfer System) . It allows for the transfer of higher education credits between European countries. The Swedish Council for Higher Education (UHR)
@@ -884,6 +927,7 @@ const New_In_sweden = () => {
                     </ul>
 
                     <div className=" tw-pt-6">
+                    <br/>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>MIGRATIONSVERKET
@@ -892,6 +936,7 @@ const New_In_sweden = () => {
                       <h2>
                         <strong>(Migration Agency)</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">
                         Migrationsverket (Migration Agency) is the authority to turn to if you want to visit, live in or seek asylum in Sweden, or if you want to become a Swedish citizen. Migrationsverket is also responsible for the settlement of
@@ -900,6 +945,7 @@ const New_In_sweden = () => {
                     </div>
 
                     <div className=" tw-pt-6">
+                    <br/>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>SKATTEVERKET
@@ -908,6 +954,7 @@ const New_In_sweden = () => {
                       <h2>
                         <strong>(Tax Agency)</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">
                         Skatteverket (The Tax Agency) is in charge of tax matters but is also responsible for Sweden’s population register. Skatteverket does your folkbokföring (registration), You can als apply for a Swedish ID card
@@ -915,6 +962,7 @@ const New_In_sweden = () => {
                     </div>
 
                     <div className=" tw-pt-6">
+                    <br/>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>ARBETSFÖRMEDLINGEN
@@ -923,6 +971,7 @@ const New_In_sweden = () => {
                       <h2>
                         <strong>(Public Employment Service)</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">Arbetsförmedlingen (the Public Employment Service) is mainly responsible for labor related issues.</p>
                       <p className=" tw-text-gray tw-font-semibold">Arbetsförmedlingen has three main services for Newly arrived people:</p>
@@ -950,6 +999,7 @@ const New_In_sweden = () => {
                     </div>
 
                     <div className=" tw-pt-6">
+                    <br/>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>FÖRSÄKRINGSKASSAN
@@ -958,6 +1008,7 @@ const New_In_sweden = () => {
                       <h2>
                         <strong>(Social Insurance Agency)</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">
                         Försäkringskassan (the social insurance Agency) is in charge for the social insurance in Sweden and their main task is to ensure you get the benefits and allowances you are entitled to. The social insurance covers everyone who
@@ -997,6 +1048,7 @@ const New_In_sweden = () => {
                     </div>
 
                     <div className=" tw-pt-6">
+                    <br/>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>SKOLVERKET
@@ -1005,6 +1057,7 @@ const New_In_sweden = () => {
                       <h2>
                         <strong>(National Agency For Education)</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">
                         Skolverket (National Agency for Education) is the central authority for education in Sweden. They offer an English- language guide to the Swedish school system. They also process applications for teachers with foreign
@@ -1013,6 +1066,7 @@ const New_In_sweden = () => {
                     </div>
 
                     <div className=" tw-pt-6">
+                    <br/>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>JORDBRUKSVERKET
@@ -1021,15 +1075,18 @@ const New_In_sweden = () => {
                       <h2>
                         <strong>(Board Of Agriculture)</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">Jordbruksverket is in charge of agricultural and horticultural matters in Sweden. They are the authority to turn to if you want to bring your dog or cat to Sweden.</p>
                     </div>
 
                     <div className=" tw-pt-6">
+                    <br/>
                       <span>TULLVERKET</span>
                       <h2>
                         <strong>(Customs)</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">
                         Tullverket (Customs) is charge of the flows of goods in and out of Sweden. Check with Tullverket when bringing or shipping goods in and out of Sweden. They have a guide in English especially for Newbies.
@@ -1037,6 +1094,7 @@ const New_In_sweden = () => {
                     </div>
 
                     <div className=" tw-pt-6">
+                    <br/>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>TRANSPORTSTYRELSEN (TRANSPORT AGENCY)
@@ -1045,6 +1103,7 @@ const New_In_sweden = () => {
                       <h2>
                         <strong>& Trafikverket (Transport Administration)</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">
                         Transportstyrelsen and Trafikverket are in charge of everything concerning driving licenses as well as other transport- and traffic-related rules and regulations in Sweden. If you want to find out more visit their common
@@ -1053,6 +1112,7 @@ const New_In_sweden = () => {
                     </div>
 
                     <div className=" tw-pt-6">
+                    <br/>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>KOMMUNERNA
@@ -1061,6 +1121,7 @@ const New_In_sweden = () => {
                       <h2>
                         <strong>(The Municipalities)</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">
                         Kommunerna (the municipalities) fill an important and complex task in Sweden. They are responsible for the SFI teaching, Komvux (adult education) and samhällsorientering (social orientation). Yet, they are also responsible for
@@ -1102,6 +1163,7 @@ const New_In_sweden = () => {
                     </div>
 
                     <div className=" tw-pt-6">
+                    <br/>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>LÄNSSTYRELSERNA
@@ -1110,6 +1172,7 @@ const New_In_sweden = () => {
                       <h2>
                         <strong>(The County Administrative Boards)</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray">
                         Länsstyrelserna (the county administrative boards) represent the government in the county. Their task is to coordinate and supervise the work of the different actors and authorities and thereby ensure that national goals and
@@ -1118,6 +1181,7 @@ const New_In_sweden = () => {
                     </div>
 
                     <div className=" tw-pt-6">
+                    <br/>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>LANDSTINGEN
@@ -1126,6 +1190,7 @@ const New_In_sweden = () => {
                       <h2>
                         <strong>(The County Councils)</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-pt-8 tw-text-gray">Landstingen (the county councils) are in charge of everything concerning healthcare matters in Sweden.</p>
                       <p className="  tw-text-gray tw-pt-6   tw-font-semibold">Länsstyrelserna (The County administrative boards)</p>
@@ -1138,6 +1203,7 @@ const New_In_sweden = () => {
                     </div>
 
                     <div>
+                    <br/>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>ACCOMODATION
@@ -1146,6 +1212,7 @@ const New_In_sweden = () => {
                       <h2>
                         <strong>Finding Home</strong>
                       </h2>
+                      <br/>
 
                       <div className="row tw-items-center">
                         <div className="col-md-6">
@@ -1176,6 +1243,7 @@ const New_In_sweden = () => {
                     </div>
 
                     <div className=" tw-pt-6">
+                    <br/>
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>USEFULL
@@ -1184,6 +1252,7 @@ const New_In_sweden = () => {
                       <h2>
                         <strong>LINKS</strong>
                       </h2>
+                      <br/>
                       <ul className=" tw-p-0">
                         <li className=" ">
                           <p className=" m-0 tw-text-gray tw-font-semibold">Personnummer & ID card</p>

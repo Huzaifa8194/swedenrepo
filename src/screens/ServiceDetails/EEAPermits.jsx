@@ -183,8 +183,8 @@ const EEAPermits = () => {
         <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
-              <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
-                <div className="  md:tw-pl-32 tw-pl-3">
+              <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
+                <div className="  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>EEA
@@ -192,6 +192,7 @@ const EEAPermits = () => {
                   <h2>
                     <strong>Family Permit</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     Any EU citizen getting a residence in the UK according to the EU rules, can bring their family with them. The EEA permit allows the family member to work in the UK. The permit is valid for only 6 months.
@@ -224,6 +225,8 @@ const EEAPermits = () => {
                  
 
                   <div>
+                  <br/>
+
                     <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>HOW TO QUALIFY FOR THE
@@ -231,6 +234,7 @@ const EEAPermits = () => {
                     <h2>
                       <strong>EEA Family Permit</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       You can apply for an EEA permit if you are a family member of an EU citizen or a Swiss citizen. You can stay in Uk for more than 3 months if your EU family member sponsors you or has a permanent residence in the UK. It is also
@@ -239,6 +243,8 @@ const EEAPermits = () => {
                   </div>
                   <div>
                     <div>
+                    <br/>
+
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>WHO IS A
@@ -246,6 +252,7 @@ const EEAPermits = () => {
                       <h2>
                         <strong>Family Member</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray ">
                         You must be the EEA citizen’s spouse or civil partner, or the child or grandchild under 21 of the EU national or his spouse/civil partner. Dependent parents, grandparents, children or grandchildren over 21 (of the EU national
@@ -254,6 +261,8 @@ const EEAPermits = () => {
                     </div>
 
                     <div>
+                    <br/>
+
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>EXTENDED
@@ -262,6 +271,8 @@ const EEAPermits = () => {
                       <h2>
                         <strong>Family Member</strong>
                       </h2>
+                      <br/>
+
 
                       <p className=" tw-text-gray ">
                         It is also possible to apply as an extended family member of the EU national. It can be, for example, an unmarried partner who has been in a relationship with the EU citizen and has, in general, lived with him/her for at least
@@ -280,6 +291,7 @@ const EEAPermits = () => {
                       <h2>
                         <strong>Right Of Residence</strong>
                       </h2>
+                      <br/>
 
                       <p className=" tw-text-gray ">It is possible to apply for an EEA Family Permit if you have a derivative right of residence.</p>
                       <p className=" tw-text-gray  tw-font-medium ">You will have a derivative right of residence if you are:</p>
@@ -326,6 +338,7 @@ const EEAPermits = () => {
                     </div>
 
                     <div>
+                      <br/>
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>RETAINED
@@ -333,7 +346,7 @@ const EEAPermits = () => {
                       <h2>
                         <strong>Right Of Residence</strong>
                       </h2>
-
+<br/>
                       <p className=" tw-text-gray ">
                         One can apply for an EEA Family Permit if you previously had a right to reside in the UK as the family member of an EEA national who either had a permanent right of residence in the UK or was a worker, student, self-employed
                         person, self-sufficient person or someone looking for work in the UK.
@@ -341,6 +354,8 @@ const EEAPermits = () => {
                     </div>
 
                     <div>
+                    <br/>
+
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>YOU CAN RECEIVE A RETAINED
@@ -348,6 +363,8 @@ const EEAPermits = () => {
                       <h2>
                         <strong>Right Of Residence In One Of The Following Ways</strong>
                       </h2>
+                      <br/>
+
 
                       <ul className=" tw-p-0 tw-pt-4">
                         <li className=" tw-flex tw-gap-3">
@@ -381,6 +398,8 @@ const EEAPermits = () => {
                     </div>
 
                     <div>
+                    <br/>
+
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>SPECIFIC REQUIREMENTS
@@ -388,6 +407,8 @@ const EEAPermits = () => {
                       <h2>
                         <strong>In Cases Of Divorces</strong>
                       </h2>
+                      <br/>
+
 
                       <p className=" tw-text-gray">It is only possible to apply if you were in the UK as the EEA national’s family member on the date the divorce/civil partnership was ended and one of the following applies;</p>
 
@@ -440,7 +461,7 @@ const EEAPermits = () => {
               </div>
 
               <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-                <div className="   md:tw-pr-32 tw-pr-4">
+                <div className="   md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
                   <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                     {data?.map((item, index) => {
                       return (

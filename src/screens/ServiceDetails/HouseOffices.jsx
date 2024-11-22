@@ -186,8 +186,8 @@ const HouseOffices = () => {
         <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
-              <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
-                <div className="  md:tw-pl-32 tw-pl-3">
+              <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
+                <div className=" 2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div className="row">
                     <div className="col-md-6">
                       <div className="row">
@@ -197,21 +197,43 @@ const HouseOffices = () => {
                       </div>
                     </div>
                     <div className="col-md-6">
+
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    Simplifying
+  </span>
+  <h2>
+    <strong>  Your Housing Journey
+    </strong>
+  </h2>
+  <br/>
+
+
+
                       <p className=" tw-text-gray">
                         We offer housing assistance. We look at the person’s income and character before we handle their application and we have our own online system for this purpose. We make sure you get your apartment through a smooth process.
                       </p>
                     </div>
                   </div>
 
+<br/>
+                  <span className=" tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    Relocation
+  </span>
+  <h2>
+    <strong> Made Easy Across Four Countries </strong>
+  </h2>
+  <br/>
+
+
                   <p className=" tw-text-gray tw-pt-8">
                     We are a relocation company based in four different countries Sweden, Denmark, Pakistan and India. Our head office is in Malmö. Buying and renting requires a lot of research and is associated with uncertainty. That’s why we offer
                     you an easy and painless solution where you can get a place to live without any worries.
                   </p>
-
-                  <p className=" tw-text-gray">
-                    We are a relocation company based in four different countries Sweden, Denmark, Pakistan and India. Our head office is in Malmö. Buying and renting requires a lot of research and is associated with uncertainty. That’s why we offer
-                    you an easy and painless solution where you can get a place to live without any worries.
-                  </p>
+                 
 
                   <div className=" row tw-mx-auto">
                     <div className=" col-md-10 max-auto">
@@ -219,41 +241,129 @@ const HouseOffices = () => {
                     </div>
                   </div>
 
+
+<br/>
+                  <span className=" tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    Navigating
+  </span>
+  <h2>
+    <strong>  Sweden’s Competitive Housing Market
+    </strong>
+  </h2>
+  <br/>
                   <p className=" tw-text-gray tw-pt-8">
                     Finding housing in Sweden is much more difficult than in other EU countries. Renting a house is having so much competition in Sweden that there is a specific black market for leasing the house or apartment on a long-term basis.
                     You will have to struggle in finding the apartment in Malmö or Stockholm as these are the busiest cities. Foreigners who intend to live in Sweden for a longer period of time may opt for buying a house rather than being a part of
                     this renting fray.
                   </p>
 
+<br/>
+                  <span className=" tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    Understanding
+  </span>
+  <h2>
+    <strong>  First-Hand and Second-Hand Rentals
+    </strong>
+  </h2>
+  <br/>
+
                   <p className=" tw-text-gray">
                     While you start to search for a house or apartment in Sweden, you will come across the terms known as first-hand and second-hand rentals. These two terms refer to the apartments rented directly from the landlord (first-hand
                     rentals) or rented and/or sublet through a tenant (second-hand rentals). First-hand rentals are really scarce and in some famous areas, there might be years’ long waiting lists. Sublets or second-hand rentals may be the best
                     option in this case, but you should know that you can be allowed to stay in that unit or house for only one year.
                   </p>
+
+
+<br/>
+                  <span className=" tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    Sweden’s
+  </span>
+  <h2>
+    <strong>  Diverse Housing Options
+    </strong>
+  </h2>
+  <br/>
                   <p className=" tw-text-gray">
                     A great benefit of Swedish housing is that you can hardly go wrong with any type of housing situation. There are a lot of options in any area of the country to choose from, whether you are looking for an apartment in the
                     countryside or in the city. You will have a lot of different options like standalone homes or high-rise apartments depending upon your choice. You can also find furnishes as well as unfurnished house and it depends upon the
                     duration of your stay in Scandinavian or Nordic countries.Rental process in Sweden.
                   </p>
+
+
+                  <br/>
+
+                  <span className=" tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    Tackling
+  </span>
+  <h2>
+    <strong>  Housing Challenges in Sweden
+    </strong>
+  </h2>
+  <br/>
                   <p className=" tw-text-gray">
                     Whether you are looking for a house on rent as a foreigner in Sweden or you are a native Swede, the biggest problem, in any case, is the lack of housing opportunities. This is the case in most of the Scandinavian countries and
                     specifically in Swedish cities causing serious problems for students and expats.
                   </p>
+
+
+<br/>
+                  <span className=" tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    Essential
+  </span>
+  <h2>
+    <strong>  Requirements for Renting in Sweden
+    </strong>
+  </h2>
+  <br/>
                   <p className=" tw-text-gray">
                     You may find a first-hand lease or second-hand rentals. You need to have the personummer, an employment contract, and proof of enough income to afford the house in order to get the house on rent. If your income is too low
                     according to the lender, then you may have to provide a guarantor.
                   </p>
+
+
+                  <span className=" tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    Short-Term
+  </span>
+  <h2>
+    <strong> Rental Solutions
+    </strong>
+  </h2>
+  <br/>
                   <p className=" tw-text-gray">
                     A subletting rental will have similar requirements and procedures as that of the landlords. However, you need to ensure that second-hand leasing has been approved by the landlord otherwise it will be considered as illegal. If you
                     caught in violation of this rule, then you may find yourself evicted.
                   </p>
+
+<br/>
+                  <span className=" tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    How
+  </span>
+  <h2>
+    <strong> We Can Help
+    </strong>
+  </h2>
+  <br/>
                   <p className=" tw-text-gray">In the meantime, while looking for a house on rent, you can opt for short-term rentals as the average price won’t vary much from annual rental prices in Sweden.</p>
                   <p className=" tw-text-gray">This is where we come to help you finding your new house .</p>
                 </div>
               </div>
 
               <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-                <div className=" md:tw-pr-32 tw-pr-4 ">
+                <div className="  md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative ">
                   <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                     {data?.map((item, index) => {
                       return (
