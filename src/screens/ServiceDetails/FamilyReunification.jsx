@@ -12,6 +12,13 @@ import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import { useTranslation } from "react-i18next";
 import Header from "../../components/Header_New/Header";
 
+
+import fr1 from "../../assets/iconscout/fr1.png";
+import fr2 from "../../assets/iconscout/fr2.png";
+import fr3 from "../../assets/iconscout/fr3.png";
+import fr4 from "../../assets/iconscout/fr4.png";
+import fr5 from "../../assets/iconscout/fr5.png";
+
 const FamilyRenuification = () => {
   const { t } = useTranslation();
   const { id } = useParams();
@@ -274,7 +281,10 @@ const FamilyRenuification = () => {
                     </p>
 
                   <br/>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+
+                  <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Key Swedish laws
                     </span>
@@ -282,6 +292,23 @@ const FamilyRenuification = () => {
                     <h2>
                       <strong>Governing Family Reunification</strong>
                     </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={fr1}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  
                     <br/>
 
                     <strong className="m-0 tw-text-gray">
@@ -350,14 +377,38 @@ const FamilyRenuification = () => {
                     </ul>
 
 
+
+                    
+
+
 <br/>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+<div className="row tw-flex tw-items-center">
+                    
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={fr2}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Eligibility for
                     </span>
                     <h2>
                       <strong> Family Reunification</strong>
                     </h2>
+                      </div>
+                    </div>
+
+                
                   <br/>
                     
                         <strong className="m-0 tw-text-gray">
@@ -440,7 +491,11 @@ const FamilyRenuification = () => {
                     </ul>
 
 <br/>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+
+
+<div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       for Family Reunification
                     </span>
@@ -448,6 +503,24 @@ const FamilyRenuification = () => {
                     <h2>
                       <strong> Application Process </strong>
                     </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={fr3}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    
                     <br/>
                   
                         <strong className="m-0 tw-text-gray">
@@ -512,13 +585,36 @@ const FamilyRenuification = () => {
                       </li>
                     </ul>
                     <br/>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+
+
+                    <div className="row tw-flex tw-items-center">
+                    
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={fr4}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       for Family Reunification Cases
                     </span>
                     <h2>
                       <strong>Specific Legal Provisions </strong>
                     </h2>
+                      </div>
+                    </div>
+
+
+                   
                     <br/>
                     
 
@@ -674,7 +770,11 @@ const FamilyRenuification = () => {
                     </ul>
 
 <br/>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+
+
+<div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Our
                     </span>
@@ -682,6 +782,24 @@ const FamilyRenuification = () => {
                       <strong> Services Include:</strong>
                     </h2>
                     <br/>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={fr5}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  
 
                   
                         <strong className="m-0 tw-text-gray">

@@ -8,6 +8,17 @@ import banner from "../../assets/images/business-startup.png";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import { useTranslation } from "react-i18next";
 
+
+import { imageVariants } from "../../utils/motion";
+import { motion } from "framer-motion";
+
+
+import bp1 from "../../assets/iconscout/bp1.png";
+import bp2 from "../../assets/iconscout/bp2.png";
+import bp3 from "../../assets/iconscout/bp3.png";
+import bp4 from "../../assets/iconscout/bp4.png";
+import bp5 from "../../assets/iconscout/bp5.png";
+
 import Header from "../../components/Header_New/Header";
 
 const BusinessPermit = () => {
@@ -277,7 +288,11 @@ const BusinessPermit = () => {
                     </p>
 
                     <br />
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Why Choose
@@ -285,6 +300,24 @@ const BusinessPermit = () => {
                     <h2>
                       <strong> Sweden for Your Business? </strong>
                     </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={bp1}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                   
                     <br />
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-0">
@@ -324,7 +357,24 @@ const BusinessPermit = () => {
                     </ul>
 
                     <br />
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+                    <div className="row tw-flex tw-items-center">
+                  
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={bp2}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Types of
@@ -332,6 +382,12 @@ const BusinessPermit = () => {
                     <h2>
                       <strong> Business Structures in Sweden </strong>
                     </h2>
+                      </div>
+                    </div>
+
+
+
+                  
 
                     <br />
 
@@ -385,7 +441,11 @@ const BusinessPermit = () => {
                   <br />
                   <div>
                     <br />
-                    <span className="tw-flex tw-items-center tw-gap-2">
+
+
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Self-Employment Residence Permit in Sweden
                     </span>
@@ -395,6 +455,23 @@ const BusinessPermit = () => {
                         Key Requirements for a Self-Employment Residence Permit
                       </strong>
                     </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={bp3}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  
                     <br />
 
                     <strong className="tw-text-gray">1. Valid Passport</strong>
@@ -538,14 +615,37 @@ const BusinessPermit = () => {
                     </p>
 
                     <br />
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Step-by-Step Application
-                    </span>
-                    <h2>
-                      <strong> Process for a Self-Employment Permit </strong>
-                    </h2>
+                    <div className="row tw-flex tw-items-center">
+                   
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={bp4}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+          
+          <span className=" tw-flex tw-items-center tw-gap-2">
+          {" "}
+          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+          Step-by-Step Application
+        </span>
+        <h2>
+          <strong> Process for a Self-Employment Permit </strong>
+        </h2>
+          </div>
+                    </div>
+
+
+
+
                     <br />
 
                     <strong className="tw-text-gray">
@@ -708,7 +808,12 @@ const BusinessPermit = () => {
 
                   <div>
                     <br />
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+          
+                      <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Our
@@ -716,6 +821,23 @@ const BusinessPermit = () => {
                     <h2>
                       <strong> Services Include </strong>
                     </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={bp5}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
                     <br />
 
                     <ul className="tw-p-0 tw-pl-0">

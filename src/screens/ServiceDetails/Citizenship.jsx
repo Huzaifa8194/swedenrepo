@@ -8,6 +8,17 @@ import banner from "../../assets/images/security-check-in-airport.png";
 import banner2 from "../../assets/images/travel-vacation.png";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import { useTranslation } from "react-i18next";
+import { imageVariants } from "../../utils/motion";
+import { motion } from "framer-motion";
+
+import cp1 from "../../assets/iconscout/cp1.png";
+import cp2 from "../../assets/iconscout/cp2.png";
+import cp3 from "../../assets/iconscout/cp3.png";
+import cp4 from "../../assets/iconscout/cp4.png";
+import cp5 from "../../assets/iconscout/cp5.png";
+import cp6 from "../../assets/iconscout/cp6.png";
+import cp7 from "../../assets/iconscout/cp7.png";
+
 
 import Header from "../../components/Header_New/Header";
 import { MdHdrStrong } from "react-icons/md";
@@ -251,7 +262,12 @@ const Citizenship = () => {
               <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
                 <div className="   2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+
+
+
+                  <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Swedish Citizenship: Requirements, Application Process,
                       and Waiting Times
@@ -262,6 +278,24 @@ const Citizenship = () => {
                         General Requirements for Swedish Citizenship
                       </strong>
                     </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={cp1}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  
                     <br/>
                     <p className="tw-text-gray">
                       To qualify for Swedish citizenship, applicants must meet
@@ -384,7 +418,24 @@ const Citizenship = () => {
                   </div>
                   <div>
                   <br/>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+
+                  <div className="row tw-flex tw-items-center">
+                      
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={cp2}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Specific Paths to Citizenship
                     </span>
@@ -392,6 +443,12 @@ const Citizenship = () => {
                     <h2>
                       <strong>Citizenship for Nordic Citizens</strong>
                     </h2>
+                      </div>
+                    </div>
+
+
+
+                  
                     <br/>
 
                     <p className="tw-text-gray">
@@ -504,7 +561,11 @@ const Citizenship = () => {
 
 
 <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+<div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+          
+                      <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Citizenship for Individuals
@@ -513,6 +574,23 @@ const Citizenship = () => {
     <strong>  With a Permanent Residence
     Permit </strong>
   </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={cp3}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
 
 <br/>
 
@@ -567,16 +645,37 @@ const Citizenship = () => {
 
                   <div>
                     <br/>
-                    <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Specific Paths to Citizenship
-                    </span>
 
-                    <h2>
-                      <strong>
-                        Application Process for Swedish Citizenship
-                      </strong>
-                    </h2>
+                    <div className="row tw-flex tw-items-center">
+                  
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={cp4}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+          
+          <span className="tw-flex tw-items-center tw-gap-2">
+          <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+          Specific Paths to Citizenship
+        </span>
+
+        <h2>
+          <strong>
+            Application Process for Swedish Citizenship
+          </strong>
+        </h2>
+          </div>
+                    </div>
+
                     <br/>
 
                     <p className="tw-text-gray">
@@ -668,8 +767,10 @@ const Citizenship = () => {
                     </ul>
 
 <br/>
-
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+<div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+          
+                      <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Waiting Time for
@@ -677,6 +778,24 @@ const Citizenship = () => {
   <h2>
     <strong>Citizenship Applications </strong>
   </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={cp5}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
 
 <br/>
                     
@@ -735,7 +854,24 @@ const Citizenship = () => {
 
 
 <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+<div className="row tw-flex tw-items-center">
+                   
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={cp6}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     How Sweden Relocators Can
@@ -744,6 +880,11 @@ const Citizenship = () => {
     <strong> Assist with Your Citizenship
     Application </strong>
   </h2>
+                      </div>
+                    </div>
+
+
+                    
   <br/>
 
                 
@@ -902,7 +1043,12 @@ const Citizenship = () => {
 
                   <div>
                     <br/>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+
+
+
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       A Selection of Prime Citizenship-by-Investment Programs
                     </span>
@@ -912,6 +1058,24 @@ const Citizenship = () => {
                         Citizenship-by-Investment Programs Overview
                       </strong>
                     </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={cp7}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  
                     <br/>
 
                     <p className="tw-text-gray">

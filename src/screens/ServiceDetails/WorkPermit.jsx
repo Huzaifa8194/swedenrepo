@@ -8,6 +8,13 @@ import banner from "../../assets/images/programmers-building-mobile-application.
 import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
 
+
+import wp1 from "../../assets/iconscout/wp1.png";
+import wp2 from "../../assets/iconscout/wp2.png";
+import wp3 from "../../assets/iconscout/wp3.png";
+import wp4 from "../../assets/iconscout/wp4.png";
+
+
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
 import { useTranslation } from "react-i18next";
@@ -253,13 +260,35 @@ const WorkPermit = () => {
               <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
                 <div className="2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+
+                  <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Types of Work Permits in Sweden
                     </span>
                     <h2>
                       <strong>Overview of Work Permit Types</strong>
                     </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={wp1}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                  
                     <br/>
 
                     <p className="tw-text-gray">
@@ -521,7 +550,23 @@ const WorkPermit = () => {
                   </div>
                   <div>
                     <br/>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+                    <div className="row tw-flex tw-items-center">
+                    
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={wp2}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Application Process and Waiting Times
                     </span>
@@ -530,6 +575,11 @@ const WorkPermit = () => {
                         Overview of Application Process and Waiting Times
                       </strong>
                     </h2>
+                      </div>
+                    </div>
+
+
+                
                     <br/>
 
                     <p className="tw-text-gray">
@@ -598,13 +648,34 @@ const WorkPermit = () => {
                     </p>
 
 <br/>
-                    <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
+<div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+          
+                      <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Additional General Requirements for Work Permits
                     </span>
                     <h2>
                       <strong>Key General Requirements for Work Permits</strong>
                     </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={wp3}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
                     <br/>
 
                     <p className="tw-text-gray">
@@ -640,7 +711,25 @@ const WorkPermit = () => {
 
 
 <br/>
-                    <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
+
+
+<div className="row tw-flex tw-items-center">
+                    
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={wp4}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       How Sweden Relocators Can Assist You
                     </span>
@@ -649,6 +738,11 @@ const WorkPermit = () => {
                         Comprehensive Support from Sweden Relocators
                       </strong>
                     </h2>
+                      </div>
+                    </div>
+
+
+                  
                     <br/>
 
                     <p className="tw-text-gray">

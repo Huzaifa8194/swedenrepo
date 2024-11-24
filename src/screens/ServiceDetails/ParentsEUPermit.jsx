@@ -10,6 +10,19 @@ import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import Header from "../../components/Header_New/Header";
 import { useTranslation } from "react-i18next";
 
+
+import { imageVariants } from "../../utils/motion";
+import { motion } from "framer-motion";
+
+
+import pe1 from "../../assets/iconscout/pe1.png";
+import pe2 from "../../assets/iconscout/pe2.png";
+import pe3 from "../../assets/iconscout/pe3.png";
+import pe4 from "../../assets/iconscout/pe4.png";
+import pe5 from "../../assets/iconscout/pe5.png";
+import pe6 from "../../assets/iconscout/pe6.png";
+
+
 const ParentsEUPermit = () => {
   const { t } = useTranslation();
   const { id } = useParams();
@@ -281,7 +294,9 @@ const ParentsEUPermit = () => {
 
 
                     <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Who
@@ -289,6 +304,24 @@ const ParentsEUPermit = () => {
   <h2>
     <strong> Qualifies as a Dependent Family Member? </strong>
   </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={pe1}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    
   <br/>
                  
 
@@ -322,14 +355,38 @@ const ParentsEUPermit = () => {
                     </ul>
 
                     <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Key
-  </span>
-  <h2>
-    <strong>    Conditions for Eligibility </strong>
-  </h2>
+
+
+                    <div className="row tw-flex tw-items-center">
+                
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={pe2}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+          
+          <span className=" tw-flex tw-items-center tw-gap-2">
+{" "}
+<p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+Key
+</span>
+<h2>
+<strong>    Conditions for Eligibility </strong>
+</h2>
+          </div>
+                    </div>
+
+                  
+
   <br/>
 
 
@@ -370,8 +427,10 @@ const ParentsEUPermit = () => {
                   </div>
 
                   <div>
-                  <br/>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+                  <br/>  <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+          
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Step 1:
@@ -384,6 +443,23 @@ const ParentsEUPermit = () => {
                         Relationship{" "}
                       </strong>
                     </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={pe3}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
                     <br/>
 
                     <p className="tw-text-gray">
@@ -438,7 +514,10 @@ const ParentsEUPermit = () => {
 
 
                     <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Step 2:
@@ -446,6 +525,25 @@ const ParentsEUPermit = () => {
   <h2>
     <strong>Submit the Application </strong>
   </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={pe3}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                  
   <br/>
 
 
@@ -568,7 +666,24 @@ const ParentsEUPermit = () => {
 
                     <br/>
 
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+                    <div className="row tw-flex tw-items-center">
+                    
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={pe5}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Specific Cases:
@@ -577,6 +692,11 @@ const ParentsEUPermit = () => {
     <strong>    Requirements for Dependent Parents and
     Other Family Members </strong>
   </h2>
+                      </div>
+                    </div>
+
+
+                  
   <br/>
                   
 
@@ -737,7 +857,12 @@ const ParentsEUPermit = () => {
                   </div>
                   <div>
                     <br/>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+
+
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+          
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Additional Considerations
@@ -745,6 +870,23 @@ const ParentsEUPermit = () => {
                     <h2>
                       <strong>Timeliness of the Application</strong>
                     </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={pe6}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
                     <br/>
 
                     <p className="tw-text-gray">

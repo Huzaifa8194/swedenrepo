@@ -6,9 +6,18 @@ import { GoTriangleRight } from "react-icons/go";
 import { Link, useParams } from "react-router-dom";
 import banner from "../../assets/images/family-time-at-home.png";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
-
+import { imageVariants } from "../../utils/motion";
+import { motion } from "framer-motion";
 import Header from "../../components/Header_New/Header";
 import { useTranslation } from "react-i18next";
+
+
+
+import md1 from "../../assets/iconscout/md1.png";
+import md2 from "../../assets/iconscout/md2.png";
+import md3 from "../../assets/iconscout/md3.png";
+import md4 from "../../assets/iconscout/md4.png";
+import md5 from "../../assets/iconscout/md5.png";
 
 const MarriageDivorce = () => {
   const { t } = useTranslation();
@@ -272,7 +281,11 @@ const MarriageDivorce = () => {
                     </p>
 
 <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+<div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+          
+                      <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Key Requirements 
@@ -280,6 +293,24 @@ const MarriageDivorce = () => {
   <h2>
     <strong> For Marriage in Sweden</strong>
   </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={md1}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
   <br/>
 
                    
@@ -351,7 +382,24 @@ const MarriageDivorce = () => {
 
 
 <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+<div className="row tw-flex tw-items-center">
+                     
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={md2}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Step-by-Step Guide
@@ -359,6 +407,11 @@ const MarriageDivorce = () => {
   <h2>
     <strong>The Marriage Process </strong>
   </h2>
+                      </div>
+                    </div>
+
+
+                   
   <br/>
 
                     <ul className="tw-p-0 ">
@@ -479,7 +532,9 @@ const MarriageDivorce = () => {
                     </ul>
 
 <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+<div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Translation and
@@ -487,6 +542,26 @@ const MarriageDivorce = () => {
   <h2>
     <strong> Verification of Foreign Documents </strong>
   </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={md3}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                   
   <br/>
 
                     
@@ -519,7 +594,26 @@ const MarriageDivorce = () => {
                     </ul>
 
 <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+
+
+<div className="row tw-flex tw-items-center">
+                     
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={md4}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Post-Marriage
@@ -527,6 +621,11 @@ const MarriageDivorce = () => {
   <h2>
     <strong>Support </strong>
   </h2>
+                      </div>
+                    </div>
+
+
+                  
   <br/>
 
 
@@ -559,7 +658,9 @@ const MarriageDivorce = () => {
                     </ul>
 
 <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+<div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Divorce Assistance in Sweden
@@ -568,6 +669,27 @@ const MarriageDivorce = () => {
     <strong>Expert Legal Support for a
     Smooth Transition </strong>
   </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={md5}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+
+                    
   <br/>
                   
                    

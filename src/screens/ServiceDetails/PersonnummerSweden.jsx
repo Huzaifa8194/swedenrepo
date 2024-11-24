@@ -10,6 +10,13 @@ import { motion } from "framer-motion";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import { useTranslation } from "react-i18next";
 
+
+import pn1 from "../../assets/iconscout/pn1.png";
+import pn2 from "../../assets/iconscout/pn2.png";
+import pn3 from "../../assets/iconscout/pn3.png";
+import pn4 from "../../assets/iconscout/pn4.png";
+import pn5 from "../../assets/iconscout/pn5.png";
+
 import Header from "../../components/Header_New/Header";
 
 const PersonnumerSweden = () => {
@@ -275,7 +282,10 @@ const PersonnumerSweden = () => {
                       vital services.
                     </p>
                     <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Why You
@@ -283,6 +293,24 @@ const PersonnumerSweden = () => {
   <h2>
     <strong> Need a Personnummer</strong>
   </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={pn1}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                   
   <br/>
 
                   
@@ -333,14 +361,38 @@ const PersonnumerSweden = () => {
                       </li>
                     </ul>
                     <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Structure of 
-  </span>
-  <h2>
-    <strong>The Personnummer </strong>
-  </h2>
+
+
+
+                    <div className="row tw-flex tw-items-center">
+                  
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={pn2}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+          
+          <span className=" tw-flex tw-items-center tw-gap-2">
+{" "}
+<p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+Structure of 
+</span>
+<h2>
+<strong>The Personnummer </strong>
+</h2>
+          </div>
+                    </div>
+
+
 
   <br/>
 
@@ -394,13 +446,35 @@ const PersonnumerSweden = () => {
 
                   <div>
                   <br/>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+
+                  <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+          
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Steps to Apply for a Personnummer
                     </span>
                     <h2>
                       <strong> A Step-by-Step Guide </strong>
                     </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={pn3}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
                     <br/>
                     <p className="tw-text-gray">
                       If you are planning to stay in Sweden for more than one
@@ -464,7 +538,26 @@ const PersonnumerSweden = () => {
 
 
                     <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+
+
+                    <div className="row tw-flex tw-items-center">
+                     
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={pn4}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Swedish ID Card
@@ -472,6 +565,11 @@ const PersonnumerSweden = () => {
   <h2>
     <strong> Your Key to Accessing Services </strong>
   </h2>
+                      </div>
+                    </div>
+
+
+                   
   <br/>
 
 
@@ -575,7 +673,11 @@ const PersonnumerSweden = () => {
 
 
                     <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+          
+                      <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Challenges
@@ -583,6 +685,24 @@ const PersonnumerSweden = () => {
   <h2>
     <strong>Without a Personnummer and ID Card </strong>
   </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={pn5}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
   <br/>
 
                

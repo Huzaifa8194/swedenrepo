@@ -9,6 +9,13 @@ import banner2 from "../../assets/images/man-searching-air-ticket-for-summer-tra
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import { useTranslation } from "react-i18next";
 
+import { imageVariants } from "../../utils/motion";
+import { motion } from "framer-motion";
+
+import bv1 from "../../assets/iconscout/passport.png";
+import bv2 from "../../assets/iconscout/passport2.png";
+import bv3 from "../../assets/iconscout/bv3.png";
+
 import Header from "../../components/Header_New/Header";
 
 const BusinessVisit = () => {
@@ -272,7 +279,11 @@ const BusinessVisit = () => {
                       both applicants and sponsoring companies:
                     </p>
                     <br></br>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Personal
@@ -280,6 +291,27 @@ const BusinessVisit = () => {
                     <h2>
                       <strong>Document Requirements </strong>
                     </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={bv1}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+
+                
                     <br></br>
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -465,7 +497,10 @@ const BusinessVisit = () => {
 
 
                     <br></br>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Additional Documents
@@ -473,6 +508,26 @@ const BusinessVisit = () => {
                     <h2>
                       <strong> that May Be Required</strong>
                     </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={bv2}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                   
                     <br></br>
 
 
@@ -497,8 +552,30 @@ const BusinessVisit = () => {
                     </ul>
                   </div>
                   <div>
+
+                    
                   <br></br>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+
+
+
+                  <div className="row tw-flex tw-items-center">
+                     
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={bv3}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-md-6">
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Business Visa for Foreign Investors
@@ -507,6 +584,13 @@ const BusinessVisit = () => {
                     <h2>
                       <strong>A Swedish Business Visa for Investors</strong>
                     </h2>
+                      </div>
+                 
+                    </div>
+
+
+
+
                     <br></br>
 
                     <p className="tw-text-gray">

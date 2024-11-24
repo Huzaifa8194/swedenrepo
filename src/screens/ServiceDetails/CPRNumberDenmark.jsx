@@ -11,6 +11,14 @@ import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
 import { useTranslation } from "react-i18next";
 
+
+
+import cprimage from "../../assets/iconscout/online-registration.png";
+
+import cprimage2 from "../../assets/iconscout/graphic-designer.png";
+import cprimage3 from "../../assets/iconscout/international-and-interurban-human-migration.png";
+import cprimage4 from "../../assets/iconscout/passport.png";
+
 import Header from "../../components/Header_New/Header";
 
 const CPRNumberDenmark = () => {
@@ -251,6 +259,13 @@ const CPRNumberDenmark = () => {
             <div className="row g-4">
               <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
                 <div className="  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
+                  
+                  
+                  
+                  
+                  
+                  
+                  
                   <div>
                   
                     <span className=" tw-flex tw-items-center tw-gap-2">
@@ -274,6 +289,12 @@ const CPRNumberDenmark = () => {
                     </p>
 
                    <br></br>
+
+
+
+                   <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
@@ -297,6 +318,35 @@ const CPRNumberDenmark = () => {
                         </p>
                       </li>
                     </ul>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={cprimage}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                  
+
+
 <br></br>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
@@ -406,7 +456,24 @@ const CPRNumberDenmark = () => {
                     </ul>
 
 <br></br>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+
+
+<div className="row tw-flex tw-items-center">
+<div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={cprimage2}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       How to
@@ -414,6 +481,15 @@ const CPRNumberDenmark = () => {
                     <h2>
                       <strong>Obtain a CPR Number </strong>
                     </h2>
+          
+                      </div>
+
+                  
+                    </div>
+
+
+
+                  
                     <br></br>
 
                     <ul className=" tw-p-0 ">
@@ -504,14 +580,42 @@ const CPRNumberDenmark = () => {
                   </div>
                   <div>
                     <br></br>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+
+
+
+
+
+
+
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Relocating to Denmark: Comprehensive Support for a Smooth
-                      Transition
+                      A Smooth Transition
                     </span>
                     <h2>
-                      <strong> A Smooth Transition to Denmark </strong>
+                      <strong>  to Denmark </strong>
                     </h2>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={cprimage3}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                  
                     <br></br>
 
                     <p className="tw-text-gray">
@@ -527,7 +631,23 @@ const CPRNumberDenmark = () => {
                     </p>
 
 <br></br>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+
+
+<div className="row tw-flex tw-items-center">
+<div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={cprimage4}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Our Services
@@ -535,6 +655,13 @@ const CPRNumberDenmark = () => {
                     <h2>
                       <strong>For Relocation to Denmark </strong>
                     </h2>
+                      </div>
+
+                     
+                    </div>
+
+
+                  
                     <br></br>
 
                    
@@ -544,10 +671,10 @@ const CPRNumberDenmark = () => {
                    
 
                     <ul className="tw-p-0 ">
-                      <li className="tw-flex  tw-gap-3">
+                      <li className="tw-flex tw-pt-4 tw-gap-3">
                       <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Document Preparation:</> We ensure all
+                          Document Preparation: We ensure all
                           necessary documents are prepared, verified, and
                           translated if needed.
                         </p>
@@ -581,7 +708,7 @@ const CPRNumberDenmark = () => {
                       
 
                     <ul className="tw-p-0 ">
-                      <li className="tw-flex  tw-gap-3">
+                      <li className="tw-flex tw-pt-4 tw-gap-3">
                       <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
                           <>Eligibility Assessment:</> We help
@@ -620,7 +747,7 @@ const CPRNumberDenmark = () => {
                     
 
                     <ul className="tw-p-0 ">
-                      <li className="tw-flex  tw-gap-3">
+                      <li className="tw-flex tw-pt-4 tw-gap-3">
                       <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
                           <strong>Requirements Guidance:</strong> We clarify
@@ -655,7 +782,7 @@ const CPRNumberDenmark = () => {
                      
 
                     <ul className="tw-p-0 ">
-                    <li className="tw-flex  tw-gap-3">
+                    <li className="tw-flex tw-pt-4 tw-gap-3">
                     <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
                           <>Personalized Housing Search:</> We
