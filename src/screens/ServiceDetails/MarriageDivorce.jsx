@@ -282,10 +282,9 @@ const MarriageDivorce = () => {
 
 <br/>
 
-<div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-          
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+
+
+                    <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Key Requirements 
@@ -293,28 +292,16 @@ const MarriageDivorce = () => {
   <h2>
     <strong> For Marriage in Sweden</strong>
   </h2>
-                      </div>
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={md1}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
 
   <br/>
 
                    
                     <ul className="tw-p-0 ">
+
+
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+          
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           <strong>
@@ -336,6 +323,24 @@ const MarriageDivorce = () => {
                           </p>
                         </p>
                       </li>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={md1}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                     
                       <li>
                         <p className="m-0 tw-text-gray">
                           <strong>Identification Requirements:</strong> Both
@@ -383,23 +388,8 @@ const MarriageDivorce = () => {
 
 <br/>
 
-<div className="row tw-flex tw-items-center">
-                     
 
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={md2}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Step-by-Step Guide
@@ -407,9 +397,6 @@ const MarriageDivorce = () => {
   <h2>
     <strong>The Marriage Process </strong>
   </h2>
-                      </div>
-                    </div>
-
 
                    
   <br/>
@@ -473,7 +460,11 @@ const MarriageDivorce = () => {
                           </p>
                         </p>
                       </li>
-                      <li>
+
+
+                      <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                     <li>
                         <p className="m-0 tw-text-gray">
                           <strong>Step 5: Registration of Marriage:</strong>{" "}
                           Once the marriage ceremony is completed, it must be
@@ -487,6 +478,24 @@ const MarriageDivorce = () => {
                         </p>
                        
                       </li>
+                     </div>
+
+                     <div className="col-md-6">
+                       <div className="row ">
+                         <div className="col-md-9 tw-mx-auto">
+                           <motion.img
+                             animate={imageVariants}
+                             className=" tw-w-full"
+                             src={md2}
+                             alt=""
+                           />
+                         </div>
+                       </div>
+                     </div>
+                     
+                   </div>
+
+                     
                     </ul>
                   </div>
                   <div>
@@ -532,9 +541,8 @@ const MarriageDivorce = () => {
                     </ul>
 
 <br/>
-<div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+
+                    <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Translation and
@@ -542,6 +550,20 @@ const MarriageDivorce = () => {
   <h2>
     <strong> Verification of Foreign Documents </strong>
   </h2>
+
+
+                   
+  <br/>
+  <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      
+                      <p className="tw-text-gray">
+                      If either partner is a foreign national, it’s likely that
+                      certain documents will need to be translated into Swedish
+                      or English. Sweden Relocators facilitates the translation
+                      and notarization of all foreign documents, ensuring they
+                      meet Swedish legal requirements.
+                    </p>
                       </div>
 
                       <div className="col-md-6">
@@ -558,20 +580,7 @@ const MarriageDivorce = () => {
                       </div>
                     </div>
 
-
-
-
-                   
-  <br/>
-
-                    
-                    <p className="tw-text-gray">
-                      If either partner is a foreign national, it’s likely that
-                      certain documents will need to be translated into Swedish
-                      or English. Sweden Relocators facilitates the translation
-                      and notarization of all foreign documents, ensuring they
-                      meet Swedish legal requirements.
-                    </p>
+                  
                     <ul className="tw-p-0 ">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
@@ -597,7 +606,27 @@ const MarriageDivorce = () => {
 
 
 
-<div className="row tw-flex tw-items-center">
+
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+    {" "}
+    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+    Post-Marriage
+  </span>
+  <h2>
+    <strong>Support </strong>
+  </h2>
+                  
+  <br/>
+
+
+                    <p className="tw-text-gray">
+                      For foreign nationals, additional steps may be required
+                      after marriage to comply with Swedish residency laws. We
+                      provide post-marriage services such as:
+                    </p>
+
+
+                    <div className="row tw-flex tw-items-center">
                      
 
                       <div className="col-md-6">
@@ -613,37 +642,15 @@ const MarriageDivorce = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Post-Marriage
-  </span>
-  <h2>
-    <strong>Support </strong>
-  </h2>
-                      </div>
-                    </div>
-
-
-                  
-  <br/>
-
-
-                    <p className="tw-text-gray">
-                      For foreign nationals, additional steps may be required
-                      after marriage to comply with Swedish residency laws. We
-                      provide post-marriage services such as:
-                    </p>
-                    <ul className="tw-p-0 ">
+                    
+                      <ul className="tw-p-0 ">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           <strong>Residence Permit Guidance:</strong> For non-EU
                           spouses, we assist with residence permit applications
                           and help you understand your rights and obligations
                           under Swedish immigration laws.
-                          <p>
-                            <br />
-                          </p>
+                         
                         </p>
                       </li>
                       <li>
@@ -656,11 +663,15 @@ const MarriageDivorce = () => {
                       
                       </li>
                     </ul>
+                      </div>
+                    </div>
+
 
 <br/>
-<div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+
+
+
+                    <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Divorce Assistance in Sweden
@@ -669,6 +680,24 @@ const MarriageDivorce = () => {
     <strong>Expert Legal Support for a
     Smooth Transition </strong>
   </h2>
+
+
+                    
+  <br/>
+                  
+  <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <p className="tw-text-gray">
+                      While planning a marriage is an exciting milestone,
+                      circumstances can sometimes change. If you are facing a
+                      separation or divorce in Sweden, our experienced family
+                      lawyers at Sweden Relocators offer sensitive and
+                      professional assistance to guide you through this process.
+                      Divorce in Sweden is straightforward and operates under a
+                      no-fault principle, but there are still specific legal
+                      requirements, especially if children or shared assets are
+                      involved.
+                    </p>
                       </div>
 
                       <div className="col-md-6">
@@ -684,26 +713,7 @@ const MarriageDivorce = () => {
                         </div>
                       </div>
                     </div>
-
-
-
-
-
-                    
-  <br/>
-                  
                    
-                    <p className="tw-text-gray">
-                      While planning a marriage is an exciting milestone,
-                      circumstances can sometimes change. If you are facing a
-                      separation or divorce in Sweden, our experienced family
-                      lawyers at Sweden Relocators offer sensitive and
-                      professional assistance to guide you through this process.
-                      Divorce in Sweden is straightforward and operates under a
-                      no-fault principle, but there are still specific legal
-                      requirements, especially if children or shared assets are
-                      involved.
-                    </p>
                     <ul className="tw-p-0 ">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">

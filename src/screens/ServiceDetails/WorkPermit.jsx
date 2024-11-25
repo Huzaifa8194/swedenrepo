@@ -261,15 +261,26 @@ const WorkPermit = () => {
                 <div className="2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
 
-                  <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <span className="tw-flex tw-items-center tw-gap-2">
+                  
+                    <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Types of Work Permits in Sweden
                     </span>
                     <h2>
                       <strong>Overview of Work Permit Types</strong>
                     </h2>
+
+
+                  
+                    <br/>
+
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <p className="tw-text-gray">
+                      Sweden offers a variety of work permits tailored to
+                      different professional and personal needs. Below are the
+                      main categories and their key requirements.
+                    </p>
                       </div>
 
                       <div className="col-md-6">
@@ -286,16 +297,7 @@ const WorkPermit = () => {
                       </div>
                     </div>
 
-
-
-                  
-                    <br/>
-
-                    <p className="tw-text-gray">
-                      Sweden offers a variety of work permits tailored to
-                      different professional and personal needs. Below are the
-                      main categories and their key requirements.
-                    </p>
+                    
 
                    
                         <strong className="m-0 tw-text-gray">
@@ -550,23 +552,9 @@ const WorkPermit = () => {
                   </div>
                   <div>
                     <br/>
-                    <div className="row tw-flex tw-items-center">
-                    
+                  
 
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={wp2}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                      <span className="tw-flex tw-items-center tw-gap-2">
+                    <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Application Process and Waiting Times
                     </span>
@@ -575,10 +563,6 @@ const WorkPermit = () => {
                         Overview of Application Process and Waiting Times
                       </strong>
                     </h2>
-                      </div>
-                    </div>
-
-
                 
                     <br/>
 
@@ -589,6 +573,23 @@ const WorkPermit = () => {
                       times are as follows:
                     </p>
 
+
+                    <div className="row tw-flex tw-items-center">
+                    
+
+                    <div className="col-md-6">
+                      <div className="row ">
+                        <div className="col-md-9 tw-mx-auto">
+                          <motion.img
+                            animate={imageVariants}
+                            className=" tw-w-full"
+                            src={wp2}
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
                     <ul className="tw-p-0 ">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
@@ -640,6 +641,10 @@ const WorkPermit = () => {
                         </p>
                       </li>
                     </ul>
+                    </div>
+                  </div>
+
+                    
 
                     <p className="tw-text-gray tw-pt-4">
                       Using our Work Permit Assessment Tool can help you
@@ -647,32 +652,14 @@ const WorkPermit = () => {
                       times based on your case.
                     </p>
 
-<br/>
-<div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-          
-                      <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
+<br/>  <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Additional General Requirements for Work Permits
                     </span>
                     <h2>
                       <strong>Key General Requirements for Work Permits</strong>
                     </h2>
-                      </div>
 
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={wp3}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
 
 
 
@@ -682,8 +669,9 @@ const WorkPermit = () => {
                       For all work permits, applicants must meet these core
                       requirements:
                     </p>
-
-                    <ul className="tw-p-0 ">
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <ul className="tw-p-0 ">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
@@ -709,12 +697,8 @@ const WorkPermit = () => {
                       </li>
                     </ul>
 
-
-<br/>
-
-
-<div className="row tw-flex tw-items-center">
                     
+                      </div>
 
                       <div className="col-md-6">
                         <div className="row ">
@@ -722,14 +706,22 @@ const WorkPermit = () => {
                             <motion.img
                               animate={imageVariants}
                               className=" tw-w-full"
-                              src={wp4}
+                              src={wp3}
                               alt=""
                             />
                           </div>
                         </div>
                       </div>
-                      <div className="col-md-6">
-                      <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
+                    </div>
+                    
+
+<br/>
+
+
+
+
+
+                    <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       How Sweden Relocators Can Assist You
                     </span>
@@ -738,18 +730,31 @@ const WorkPermit = () => {
                         Comprehensive Support from Sweden Relocators
                       </strong>
                     </h2>
-                      </div>
-                    </div>
-
-
-                  
                     <br/>
 
                     <p className="tw-text-gray">
                       Sweden Relocators provides full support for all types of
                       work permits, ensuring a smooth and efficient process:
                     </p>
+                    
 
+
+                    <div className="row tw-flex tw-items-center">
+                    
+
+                    <div className="col-md-6">
+                      <div className="row ">
+                        <div className="col-md-9 tw-mx-auto">
+                          <motion.img
+                            animate={imageVariants}
+                            className=" tw-w-full"
+                            src={wp4}
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
                     <ul className="tw-p-0 ">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
@@ -786,6 +791,11 @@ const WorkPermit = () => {
                         </p>
                       </li>
                     </ul>
+                    </div>
+                  </div>
+
+
+                   
 
                     <p className="tw-text-gray tw-pt-4">
                       For more information or to begin your work permit

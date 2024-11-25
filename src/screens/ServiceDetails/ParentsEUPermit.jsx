@@ -294,9 +294,7 @@ const ParentsEUPermit = () => {
 
 
                     <br/>
-                    <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Who
@@ -304,21 +302,7 @@ const ParentsEUPermit = () => {
   <h2>
     <strong> Qualifies as a Dependent Family Member? </strong>
   </h2>
-                      </div>
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={pe1}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                   
 
 
                     
@@ -334,6 +318,22 @@ const ParentsEUPermit = () => {
                         </p>
                       </li>
 
+                      <div className="row tw-flex tw-items-center">
+                    
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={pe1}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
                       <li>
                         <p className=" m-0 tw-text-gray">
                           <strong>Other Dependent Family Members:</strong> This
@@ -352,12 +352,22 @@ const ParentsEUPermit = () => {
                           differently than minors.
                         </p>
                       </li>
+                    </div>
+                    </div>
+                     
                     </ul>
 
                     <br/>
 
-
-                    <div className="row tw-flex tw-items-center">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+{" "}
+<p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+Key
+</span>
+<h2>
+<strong>    Conditions for Eligibility </strong>
+</h2>
+                    {/* <div className="row tw-flex tw-items-center">
                 
 
                       <div className="col-md-6">
@@ -374,16 +384,9 @@ const ParentsEUPermit = () => {
                       </div>
                       <div className="col-md-6">
           
-          <span className=" tw-flex tw-items-center tw-gap-2">
-{" "}
-<p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-Key
-</span>
-<h2>
-<strong>    Conditions for Eligibility </strong>
-</h2>
+        
           </div>
-                    </div>
+                    </div> */}
 
                   
 
@@ -427,10 +430,9 @@ Key
                   </div>
 
                   <div>
-                  <br/>  <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-          
-                      <span className="tw-flex tw-items-center tw-gap-2">
+                  <br/>  
+                  
+                  <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Step 1:
@@ -443,22 +445,8 @@ Key
                         Relationship{" "}
                       </strong>
                     </h2>
-                      </div>
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={pe3}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
+                  
+               
 
                     <br/>
 
@@ -480,6 +468,8 @@ Key
                       </li>
                     </ul>
 
+                   
+
                         <strong className="m-0 tw-text-gray">
                           Proof of Relationship
                         </strong>
@@ -492,8 +482,23 @@ Key
                           EU citizen showing the parental relationship.
                         </p>
                       </li>
+                      <div className="row tw-flex tw-items-center">
+                     
 
-                      <li>
+                     <div className="col-md-6">
+                       <div className="row ">
+                         <div className="col-md-9 tw-mx-auto">
+                           <motion.img
+                             animate={imageVariants}
+                             className=" tw-w-full"
+                             src={pe3}
+                             alt=""
+                           />
+                         </div>
+                       </div>
+                     </div>
+                     <div className="col-md-6">
+                     <li>
                         <p className="m-0 tw-text-gray">
                           <strong>For other family members:</strong> Documents
                           showing the family relationship (e.g., birth
@@ -510,14 +515,16 @@ Key
                           for financial or emotional support.
                         </p>
                       </li>
+                   
+         </div>
+                   </div>
+
+                   
                     </ul>
 
 
                     <br/>
-
-                    <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Step 2:
@@ -525,6 +532,9 @@ Key
   <h2>
     <strong>Submit the Application </strong>
   </h2>
+                    {/* <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                  
                       </div>
 
                       <div className="col-md-6">
@@ -539,7 +549,7 @@ Key
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
 
 
 
@@ -667,23 +677,9 @@ Key
                     <br/>
 
 
-                    <div className="row tw-flex tw-items-center">
-                    
+                 
 
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={pe5}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Specific Cases:
@@ -692,10 +688,6 @@ Key
     <strong>    Requirements for Dependent Parents and
     Other Family Members </strong>
   </h2>
-                      </div>
-                    </div>
-
-
                   
   <br/>
                   
@@ -728,6 +720,24 @@ Key
                       </li>
                     </ul>
 
+
+
+                    <div className="row tw-flex tw-items-center">
+                    
+
+                    <div className="col-md-6">
+                      <div className="row ">
+                        <div className="col-md-9 tw-mx-auto">
+                          <motion.img
+                            animate={imageVariants}
+                            className=" tw-w-full"
+                            src={pe5}
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
                     <ul className="tw-p-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
@@ -778,6 +788,10 @@ Key
                         </p>
                       </li>
                     </ul>
+                    </div>
+                  </div>
+
+                  
 
                     <ul className="tw-p-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -859,10 +873,7 @@ Key
                     <br/>
 
 
-                    <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-          
-                      <span className="tw-flex tw-items-center tw-gap-2">
+                    <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Additional Considerations
@@ -870,8 +881,15 @@ Key
                     <h2>
                       <strong>Timeliness of the Application</strong>
                     </h2>
-                      </div>
 
+
+       
+
+
+                    <br/>
+
+
+                    <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
                         <div className="row ">
                           <div className="col-md-9 tw-mx-auto">
@@ -884,12 +902,8 @@ Key
                           </div>
                         </div>
                       </div>
-                    </div>
-
-
-                    <br/>
-
-                    <p className="tw-text-gray">
+                      <div className="col-md-6">
+                      <p className="tw-text-gray">
                       Applications submitted soon after the EU citizen’s
                       relocation to Sweden are more likely to succeed. Long
                       delays in application submission may complicate the
@@ -899,6 +913,10 @@ Key
                       the EU citizen’s arrival in Sweden.
                     </p>
 
+          </div>
+                    </div>
+
+                
                   
                         <strong className="m-0 tw-text-gray">
                           Changes in Dependency Status

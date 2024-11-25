@@ -459,21 +459,8 @@ const CPRNumberDenmark = () => {
 
 
 
-<div className="row tw-flex tw-items-center">
-<div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={cprimage2}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+
+                    <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       How to
@@ -481,12 +468,6 @@ const CPRNumberDenmark = () => {
                     <h2>
                       <strong>Obtain a CPR Number </strong>
                     </h2>
-          
-                      </div>
-
-                  
-                    </div>
-
 
 
                   
@@ -500,6 +481,7 @@ const CPRNumberDenmark = () => {
                           number, be prepared with the following:
                           <ul className="tw-pl-0">
                             <li>Proof of Residence and Legal Documentation:</li>
+
                             <ul className="tw-pl-0">
                               <li className=" tw-flex  tw-gap-3">
                                 <div>
@@ -522,6 +504,25 @@ const CPRNumberDenmark = () => {
                                 </p>
                               </li>
                             </ul>
+                            
+
+
+                            <div className="row tw-flex tw-items-center">
+<div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={cprimage2}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                     
+                               
                             <li>Marital Status Documentation:</li>
                             <ul className="tw-pl-0">
                               <li className=" tw-flex  tw-gap-3">
@@ -564,6 +565,14 @@ const CPRNumberDenmark = () => {
                                 </p>
                               </li>
                             </ul>
+          
+                      </div>
+
+                  
+                    </div>
+
+
+                         
                             <li></li>
                           </ul>
                         </p>
@@ -583,19 +592,37 @@ const CPRNumberDenmark = () => {
 
 
 
-
-
-
-
-                    <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <span className="tw-flex tw-items-center tw-gap-2">
+                    <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       A Smooth Transition
                     </span>
                     <h2>
                       <strong>  to Denmark </strong>
                     </h2>
+
+
+                   
+
+
+
+
+                  
+                    <br></br>
+
+
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <p className="tw-text-gray">
+                      Moving to a new country can be both exciting and
+                      challenging. At Sweden Relocators, we provide specialized
+                      relocation assistance to make your move to Denmark as
+                      seamless as possible. Whether you're relocating for work,
+                      study, or family, our team offers a full range of services
+                      to help you settle comfortably. From securing essential
+                      documentation to finding housing, we cover every aspect of
+                      your relocation process so you can focus on enjoying your
+                      new start.
+                    </p>
                       </div>
 
                       <div className="col-md-6">
@@ -611,43 +638,14 @@ const CPRNumberDenmark = () => {
                         </div>
                       </div>
                     </div>
-
-
-
-
                   
-                    <br></br>
-
-                    <p className="tw-text-gray">
-                      Moving to a new country can be both exciting and
-                      challenging. At Sweden Relocators, we provide specialized
-                      relocation assistance to make your move to Denmark as
-                      seamless as possible. Whether you're relocating for work,
-                      study, or family, our team offers a full range of services
-                      to help you settle comfortably. From securing essential
-                      documentation to finding housing, we cover every aspect of
-                      your relocation process so you can focus on enjoying your
-                      new start.
-                    </p>
 
 <br></br>
 
 
-<div className="row tw-flex tw-items-center">
-<div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={cprimage4}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+
+
+                    <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Our Services
@@ -655,12 +653,6 @@ const CPRNumberDenmark = () => {
                     <h2>
                       <strong>For Relocation to Denmark </strong>
                     </h2>
-                      </div>
-
-                     
-                    </div>
-
-
                   
                     <br></br>
 
@@ -836,7 +828,21 @@ const CPRNumberDenmark = () => {
                     </h2>
                     <br></br>
 
-                    <p className="tw-text-gray">
+                    <div className="row tw-flex tw-items-center">
+<div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={cprimage4}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <p className="tw-text-gray">
                       Relocating to a new country involves more than just
                       packing your bags. Each step of the process—securing legal
                       documents, finding housing, and registering for local
@@ -844,6 +850,12 @@ const CPRNumberDenmark = () => {
                       Sweden Relocators brings a wealth of knowledge and
                       experience to ensure you settle into Denmark with ease.
                     </p>
+                      </div>
+
+                     
+                    </div>
+
+                    
 
                     <p className="tw-text-gray">
                       <strong>Comprehensive Service</strong>

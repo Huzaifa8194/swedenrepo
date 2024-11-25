@@ -289,10 +289,7 @@ const BusinessPermit = () => {
 
                     <br />
 
-
-                    <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Why Choose
@@ -300,22 +297,7 @@ const BusinessPermit = () => {
                     <h2>
                       <strong> Sweden for Your Business? </strong>
                     </h2>
-                      </div>
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={bp1}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
+                    
 
                    
                     <br />
@@ -329,23 +311,46 @@ const BusinessPermit = () => {
                         </p>
                       </li>
 
-                      <li>
-                        <p className="m-0 tw-text-gray tw-pt-4">
-                          <strong>Access to EU Markets:</strong>
-                          <br /> As an EU member, Sweden provides businesses
-                          access to a large and stable market.
-                        </p>
-                      </li>
 
-                      <li>
-                        <p className="m-0 tw-text-gray tw-pt-4">
-                          <strong>Supportive Financial Ecosystem:</strong>{" "}
-                          <br />
-                          Swedish institutions offer various financing options
-                          for entrepreneurs, including public and private loans
-                          and grants.
-                        </p>
-                      </li>
+
+                      <div className="row tw-flex tw-items-center">
+                     
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={bp1}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                    
+                    <li>
+                      <p className="m-0 tw-text-gray tw-pt-4">
+                        <strong>Access to EU Markets:</strong>
+                        <br /> As an EU member, Sweden provides businesses
+                        access to a large and stable market.
+                      </p>
+                    </li>
+
+                    <li>
+                      <p className="m-0 tw-text-gray tw-pt-4">
+                        <strong>Supportive Financial Ecosystem:</strong>{" "}
+                        <br />
+                        Swedish institutions offer various financing options
+                        for entrepreneurs, including public and private loans
+                        and grants.
+                      </p>
+                    </li>
+                    </div>
+                    </div>
+
+
 
                       <li>
                         <p className="m-0 tw-text-gray tw-pt-4">
@@ -358,23 +363,9 @@ const BusinessPermit = () => {
 
                     <br />
 
-                    <div className="row tw-flex tw-items-center">
-                  
+                   
 
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={bp2}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Types of
@@ -382,12 +373,6 @@ const BusinessPermit = () => {
                     <h2>
                       <strong> Business Structures in Sweden </strong>
                     </h2>
-                      </div>
-                    </div>
-
-
-
-                  
 
                     <br />
 
@@ -400,7 +385,23 @@ const BusinessPermit = () => {
                         </p>
                       </li>
 
-                      <li className="tw-pt-4">
+                      <div className="row tw-flex tw-items-center">
+                  
+
+                  <div className="col-md-6">
+                    <div className="row ">
+                      <div className="col-md-9 tw-mx-auto">
+                        <motion.img
+                          animate={imageVariants}
+                          className=" tw-w-full"
+                          src={bp2}
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                  <li className="tw-pt-4">
                         <p className="m-0 tw-text-gray">
                           <strong>
                             Trading Partnership or Limited Partnership
@@ -421,6 +422,11 @@ const BusinessPermit = () => {
                           and tax benefits.
                         </p>
                       </li>
+                  </div>
+                </div>
+
+
+                    
 
                       <li className="tw-pt-4">
                         <p className="m-0 tw-text-gray">
@@ -442,10 +448,7 @@ const BusinessPermit = () => {
                   <div>
                     <br />
 
-
-                    <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <span className="tw-flex tw-items-center tw-gap-2">
+                    <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Self-Employment Residence Permit in Sweden
                     </span>
@@ -455,7 +458,13 @@ const BusinessPermit = () => {
                         Key Requirements for a Self-Employment Residence Permit
                       </strong>
                     </h2>
-                      </div>
+                    
+
+                  
+                    <br />
+
+                    <div className="row tw-flex tw-items-center">
+                    
 
                       <div className="col-md-6">
                         <div className="row ">
@@ -469,12 +478,8 @@ const BusinessPermit = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
-
-                  
-                    <br />
-
-                    <strong className="tw-text-gray">1. Valid Passport</strong>
+                      <div className="col-md-6">
+                      <strong className="tw-text-gray">1. Valid Passport</strong>
                     <p className="tw-text-gray tw-pt-4">
                       You must hold a valid passport for the entire duration of
                       the permit. The permit’s validity will not exceed the
@@ -482,6 +487,10 @@ const BusinessPermit = () => {
                       passport pages to confirm identity, validity, and
                       residence permits in any other countries.
                     </p>
+                      </div>
+                    </div>
+
+                 
 
                     <strong className="tw-text-gray">
                       2. Ownership and Business Control
@@ -615,24 +624,8 @@ const BusinessPermit = () => {
                     </p>
 
                     <br />
-                    <div className="row tw-flex tw-items-center">
-                   
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={bp4}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-          
-          <span className=" tw-flex tw-items-center tw-gap-2">
+                  
+                    <span className=" tw-flex tw-items-center tw-gap-2">
           {" "}
           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
           Step-by-Step Application
@@ -640,9 +633,6 @@ const BusinessPermit = () => {
         <h2>
           <strong> Process for a Self-Employment Permit </strong>
         </h2>
-          </div>
-                    </div>
-
 
 
 
@@ -659,7 +649,24 @@ const BusinessPermit = () => {
                       Swedish or English.
                     </p>
 
-                    <strong className="tw-text-gray">
+
+                    <div className="row tw-flex tw-items-center">
+                   
+
+                   <div className="col-md-6">
+                     <div className="row ">
+                       <div className="col-md-9 tw-mx-auto">
+                         <motion.img
+                           animate={imageVariants}
+                           className=" tw-w-full"
+                           src={bp4}
+                           alt=""
+                         />
+                       </div>
+                     </div>
+                   </div>
+                   <div className="col-md-6">
+                   <strong className="tw-text-gray">
                       Step 2: Submit the Application
                     </strong>
                     <p className="tw-text-gray tw-pt-4">
@@ -678,6 +685,11 @@ const BusinessPermit = () => {
                       your ability to run a sustainable business in Sweden.
                     </p>
 
+     
+       </div>
+                 </div>
+
+                  
                     <strong className="tw-text-gray">
                       Step 3: Migrationsverket Review and Evaluation
                     </strong>
@@ -808,12 +820,7 @@ const BusinessPermit = () => {
 
                   <div>
                     <br />
-
-
-                    <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-          
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Our
@@ -821,22 +828,7 @@ const BusinessPermit = () => {
                     <h2>
                       <strong> Services Include </strong>
                     </h2>
-                      </div>
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={bp5}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
+                   
 
                     <br />
 
@@ -859,14 +851,39 @@ const BusinessPermit = () => {
                         </p>
                       </li>
 
+
+
+
+                      <div className="row tw-flex tw-items-center">
+                    
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={bp5}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
                       <li>
-                        <p className="m-0 tw-text-gra tw-pt-4">
+                        <p className="m-0 tw-text-gray tw-pt-4">
                           <strong>Financial and Income Proof:</strong> <br />
                           Assistance in documenting financial assets to prove
                           your ability to support both the business and your
                           family.
                         </p>
                       </li>
+                   
+                      </div>
+                    </div>
+
+
+                    
 
                       <li>
                         <p className="m-0 tw-text-gray tw-pt-4">

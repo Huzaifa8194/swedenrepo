@@ -277,10 +277,7 @@ const GlobalVisitVisas = () => {
                     </p>
                     <br />
 
-
-                    <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Greece
@@ -288,7 +285,17 @@ const GlobalVisitVisas = () => {
                     <h2>
                       <strong> Golden Visa Program</strong>
                     </h2>
-                      </div>
+                 
+
+
+                   
+                    <br />
+
+                    <ul className="tw-p-0 ">
+
+
+                    <div className="row tw-flex tw-items-center">
+                     
 
                       <div className="col-md-6">
                         <div className="row ">
@@ -302,13 +309,7 @@ const GlobalVisitVisas = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
-
-
-                   
-                    <br />
-
-                    <ul className="tw-p-0 ">
+                      <div className="col-md-6">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           <strong>Why Choose Greece?</strong> Greece, with its
@@ -326,86 +327,22 @@ const GlobalVisitVisas = () => {
                           </p>
                         </p>
                       </li>
+                      </div>
+                    </div>
+                    <strong>
+                            Key Benefits of the Greece Golden Visa:
+                          </strong>
+                     
                       <li>
                         <p className="m-0 tw-text-gray">
                           
-                        <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <strong>
-                            Key Benefits of the Greece Golden Visa:
-                          </strong>
-                      </div>
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={gv2}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                       
 
                           
                           
                        
 
-                          <ul className="tw-pl-0">
-                            <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                              Affordable Investment Threshold: A minimum
-                              investment of €250,000 in real estate, one of the
-                              lowest investment thresholds in Europe.
-                            </li>
-                            <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                              Residency for Family Members: The main applicant’s
-                              spouse, children under 21, and dependent parents
-                              of both the investor and spouse can also be
-                              included under the same visa.
-                            </li>
-                            <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                              Fast Processing Time: Residency permits are
-                              typically issued within 2-3 months after the
-                              investment.
-                            </li>
-                            <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                              No Minimum Stay Requirement: Unlike many other
-                              residency programs, Greece does not impose a
-                              minimum stay requirement for Golden Visa holders,
-                              allowing flexibility.
-                            </li>
-                            <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                              Visa-Free Schengen Travel: Residency in Greece
-                              allows visa-free travel to all 27 Schengen
-                              countries.
-                            </li>
-                            <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                              Pathway to Citizenship: Apply for Greek
-                              citizenship after seven years of residence,
-                              provided specific requirements are met.
-                            </li>
-                          </ul>
+                          
                           <p>
                             <br />
                           </p>
@@ -485,33 +422,11 @@ const GlobalVisitVisas = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-
-
-                        <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <strong>
+                        <strong>
                             Key Benefits of the Portugal Golden Visa:
                           </strong>
-                      </div>
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={gv3}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                      
                           <ul className="tw-pl-0">
-                            <li className=" tw-flex  tw-gap-3">
+                          <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
@@ -528,6 +443,23 @@ const GlobalVisitVisas = () => {
                               financially dependent), and parents in the same
                               application.
                             </li>
+                          <div className="row tw-flex tw-items-center">
+                       <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={gv3}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                    
+                 
+                          
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
@@ -543,14 +475,20 @@ const GlobalVisitVisas = () => {
                               Low Minimum Stay Requirement: Only requires an
                               average of 7 days per year in Portugal.
                             </li>
-                            <li className=" tw-flex  tw-gap-3">
+                          
+                           
+                        
+                    </div>
+                    </div>
+                    
+                    <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
                               Visa-Free Schengen Travel: Grants visa-free access
                               to all Schengen countries.
                             </li>
-                            <li className=" tw-flex  tw-gap-3">
+                     <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
@@ -558,7 +496,11 @@ const GlobalVisitVisas = () => {
                               safety, healthcare, education, and quality of
                               life, ideal for families and retirees.
                             </li>
-                          </ul>
+
+                    </ul>
+
+                      
+                       
                           <p>
                             <br />
                           </p>
@@ -613,33 +555,15 @@ const GlobalVisitVisas = () => {
                       <br />
 
 
-                      <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={gv4}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                      <span className="tw-flex tw-items-center tw-gap-2">
+                  
+
+                    <span className="tw-flex tw-items-center tw-gap-2">
                         <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                         Steps to
                       </span>
                       <h2>
                         <strong> Apply for a Golden Visa</strong>
                       </h2>
-                      </div>
-
-                     
-                    </div>
-
-
                      
                       <br />
                       <p className="tw-text-gray">
@@ -653,7 +577,7 @@ const GlobalVisitVisas = () => {
                       </strong>
 
                       <ul className="tw-p-0 ">
-                        <li className=" tw-flex  tw-gap-3">
+                      <li className=" tw-flex  tw-gap-3">
                           <div>
                             <GoTriangleRight className=" tw-text-blue" />
                           </div>
@@ -674,6 +598,22 @@ const GlobalVisitVisas = () => {
                             background checks, and identification.
                           </p>
                         </li>
+                      <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={gv4}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      
+                      
 
                         <li className=" tw-flex  tw-gap-3">
                           <div>
@@ -718,7 +658,10 @@ const GlobalVisitVisas = () => {
                           </p>
                         </li>
 
-                        <li className=" tw-flex  tw-gap-3">
+                       
+                      </div> 
+                    </div>
+                    <li className=" tw-flex  tw-gap-3">
                           <div>
                             <GoTriangleRight className=" tw-text-blue" />
                           </div>

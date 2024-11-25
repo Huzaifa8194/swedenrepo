@@ -280,10 +280,7 @@ const BusinessVisit = () => {
                     </p>
                     <br></br>
 
-
-                    <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Personal
@@ -291,21 +288,7 @@ const BusinessVisit = () => {
                     <h2>
                       <strong>Document Requirements </strong>
                     </h2>
-                      </div>
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={bv1}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                   
 
 
 
@@ -329,8 +312,23 @@ const BusinessVisit = () => {
                           must:
                           <ul className="tw-pl-0">
 
+                          <div className="row tw-flex tw-items-center">
+                     
 
-                          <li className=" tw-flex  tw-gap-3">
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={bv1}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
@@ -369,6 +367,9 @@ const BusinessVisit = () => {
                               years.
                               </p>
                             </li>
+                      </div>
+                    </div>
+                          
 
 
                           </ul>
@@ -496,11 +497,7 @@ const BusinessVisit = () => {
                     </ul>
 
 
-                    <br></br>
-
-                    <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                    <br></br> <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Additional Documents
@@ -508,22 +505,8 @@ const BusinessVisit = () => {
                     <h2>
                       <strong> that May Be Required</strong>
                     </h2>
-                      </div>
 
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={bv2}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
+                  
 
 
 
@@ -542,13 +525,33 @@ const BusinessVisit = () => {
                         </p>
                       </li>
 
-                      <li>
+                      <div className="row tw-flex tw-items-center">
+                     
+
+                     <div className="col-md-6">
+                       <div className="row ">
+                         <div className="col-md-9 tw-mx-auto">
+                           <motion.img
+                             animate={imageVariants}
+                             className=" tw-w-full"
+                             src={bv2}
+                             alt=""
+                           />
+                         </div>
+                       </div>
+                     </div>
+                     <div className="col-md-6">
+                    
+                     <li>
                         <p className="m-0 tw-text-gray">
                           <br/><strong>Other Embassy-Specified Documents:</strong>{" "}<br/>
                           Additional paperwork may be requested by the embassy
                           depending on individual circumstances.
                         </p>
                       </li>
+                    </div>
+                   </div>
+
                     </ul>
                   </div>
                   <div>
@@ -558,24 +561,9 @@ const BusinessVisit = () => {
 
 
 
-                  <div className="row tw-flex tw-items-center">
-                     
+               
 
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={bv3}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="col-md-6">
-                      <span className="tw-flex tw-items-center tw-gap-2">
+                    <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Business Visa for Foreign Investors
@@ -584,25 +572,43 @@ const BusinessVisit = () => {
                     <h2>
                       <strong>A Swedish Business Visa for Investors</strong>
                     </h2>
-                      </div>
-                 
-                    </div>
-
-
-
 
                     <br></br>
 
+                    <div className="row tw-flex tw-items-center">
                     <p className="tw-text-gray">
-                      A Swedish business visa is ideal for foreign nationals who
+                    A Swedish business visa is ideal for foreign nationals who
                       wish to invest in Sweden and make periodic visits to
-                      manage business interests. This visa allows multiple
+                      manage business interests.
+                      </p>
+
+                     <div className="col-md-6">
+                       <div className="row ">
+                         <div className="col-md-9 tw-mx-auto">
+                           <motion.img
+                             animate={imageVariants}
+                             className=" tw-w-full"
+                             src={bv2}
+                             alt=""
+                           />
+                         </div>
+                       </div>
+                     </div>
+
+                     <div className="col-md-6">
+                     <p className="tw-text-gray">
+                     This visa allows multiple
                       entries and is valid for short stays of up to 90 days
                       within a 180-day period, renewable for up to five years.
                       This flexibility is especially beneficial for investors
                       who need to oversee business developments or make frequent
                       visits without obtaining a residence permit.
                     </p>
+                     </div>
+                
+                   
+                   </div>
+
 
                     <p className="tw-text-gray">
                       For short-term business trips lasting less than three

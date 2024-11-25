@@ -13,6 +13,12 @@ import { useTranslation } from "react-i18next";
 
 import Header from "../../components/Header_New/Header";
 
+
+import md2 from "../../assets/iconscout/md2.png";
+import bp2 from "../../assets/iconscout/bp2.png";
+import cp1 from "../../assets/iconscout/cp1.png";
+
+
 const ServiceDetails = () => {
   const { t } = useTranslation();
 
@@ -346,7 +352,7 @@ const ServiceDetails = () => {
                             <motion.img
                               animate={imageVariants}
                               className=" tw-w-full"
-                              src={banner}
+                              src={md2}
                               alt=""
                             />
                           </div>
@@ -446,7 +452,7 @@ const ServiceDetails = () => {
                             <motion.img
                               animate={imageVariants}
                               className=" tw-w-full"
-                              src={banner}
+                              src={cp1}
                               alt=""
                             />
                           </div>
@@ -590,7 +596,7 @@ const ServiceDetails = () => {
                             <motion.img
                               animate={imageVariants}
                               className=" tw-w-full"
-                              src={banner}
+                              src={bp2}
                               alt=""
                             />
                           </div>

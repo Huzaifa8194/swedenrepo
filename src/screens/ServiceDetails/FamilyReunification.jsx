@@ -281,10 +281,7 @@ const FamilyRenuification = () => {
                     </p>
 
                   <br/>
-
-                  <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <span className="tw-flex tw-items-center tw-gap-2">
+                  <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Key Swedish laws
                     </span>
@@ -292,7 +289,30 @@ const FamilyRenuification = () => {
                     <h2>
                       <strong>Governing Family Reunification</strong>
                     </h2>
-                      </div>
+                    
+                
+                  
+                    <br/>
+
+                    <strong className="m-0 tw-mb-8 tw-text-gray">
+                      2.1 Main Legislative Framework
+                    </strong>
+
+                      
+                    <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
+                        <p className="m-0 tw-text-gray">
+                          <>Aliens Act (Utlänningslagen):</> The
+                          main legislation governing residence permits and
+                          family reunification for all non-Swedish citizens.
+                         
+                        </p>
+                      </li>
+                    <ul className="tw-p-0 tw-pl-0">
+                    <div className="row tw-flex tw-pt-4 tw-items-center">
+                      
 
                       <div className="col-md-6">
                         <div className="row ">
@@ -306,28 +326,8 @@ const FamilyRenuification = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
-
+                      <div className="col-md-6">
                   
-                    <br/>
-
-                    <strong className="m-0 tw-text-gray">
-                      2.1 Main Legislative Framework
-                    </strong>
-
-
-                    <ul className="tw-p-0 tw-pl-0">
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <>Aliens Act (Utlänningslagen):</> The
-                          main legislation governing residence permits and
-                          family reunification for all non-Swedish citizens.
-                         
-                        </p>
-                      </li>
                      
                       <li className=" tw-flex  tw-gap-3">
                               <div>
@@ -359,7 +359,11 @@ const FamilyRenuification = () => {
                         </p>
                       </li>
                       
-                      <li className=" tw-flex  tw-gap-3">
+                    
+                   
+                      </div>
+                    </div>
+                    <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
@@ -369,12 +373,12 @@ const FamilyRenuification = () => {
                           </>{" "}
                           Provides guidelines on acceptable income sources for
                           the maintenance requirement.
-                          <p>
-                            <br />
-                          </p>
+                         
                         </p>
                       </li>
                     </ul>
+
+                 
 
 
 
@@ -382,31 +386,14 @@ const FamilyRenuification = () => {
 
 
 <br/>
-<div className="row tw-flex tw-items-center">
-                    
 
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={fr2}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                      <span className="tw-flex tw-items-center tw-gap-2">
+                    <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Eligibility for
                     </span>
                     <h2>
                       <strong> Family Reunification</strong>
                     </h2>
-                      </div>
-                    </div>
 
                 
                   <br/>
@@ -425,44 +412,68 @@ const FamilyRenuification = () => {
                           Family reunification is generally available to the
                           following family members:
                          
+
                           <ul className="tw-pl-0">
+                          <div className="row tw-flex tw-items-center">
+                    
+
+                    <div className="col-md-6">
+                      <div className="row ">
+                        <div className="col-md-9 tw-mx-auto">
+                          <motion.img
+                            animate={imageVariants}
+                            className=" tw-w-full"
+                            src={fr2}
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div className="col-md-6"> 
                            
-                          <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                              <>Spouse or Registered Partner:</>{" "}
-                              Legally married or registered partners.
-                            </li>
+                           <li className=" tw-flex  tw-gap-3">
+                               <div>
+                                 <GoTriangleRight className=" tw-text-blue" />
+                               </div>
+                               <>Spouse or Registered Partner:</>{" "}
+                               Legally married or registered partners.
+                             </li>
+                             
+                           <li className=" tw-flex  tw-gap-3">
+                               <div>
+                                 <GoTriangleRight className=" tw-text-blue" />
+                               </div>
+                               <>Cohabiting Partner:</> Long-term,
+                               unregistered partners may qualify if the
+                               relationship is well-documented.
+                             </li>
+                           
+                           
                             
-                          <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                              <>Cohabiting Partner:</> Long-term,
-                              unregistered partners may qualify if the
-                              relationship is well-documented.
-                            </li>
-                          
-                            <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                              <>Children under 18:</> Minor children
-                              of the permit holder or their spouse/partner.
-                            </li>
-                           
-                          <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                              <>
-                                Parents (for Minor Permit Holders):
-                              </>{" "}
-                              For permit holders under 18, parents or legal
-                              guardians may be eligible.
-                            </li>
-                          </ul>
+                                       </div>
+                  </div>
+                  <li className=" tw-flex  tw-gap-3">
+                               <div>
+                                 <GoTriangleRight className=" tw-text-blue" />
+                               </div>
+                               <>Children under 18:</> Minor children
+                               of the permit holder or their spouse/partner.
+                             </li>
+                  <li className=" tw-flex  tw-gap-3">
+                               <div>
+                                 <GoTriangleRight className=" tw-text-blue" />
+                               </div>
+                               <>
+                                 Parents (for Minor Permit Holders):
+                               </>{" "}
+                               For permit holders under 18, parents or legal
+                               guardians may be eligible.
+                             </li>
+                           </ul>
+                         
+                  
+                         
                         
                         </p>
                       </li>
@@ -491,11 +502,7 @@ const FamilyRenuification = () => {
                     </ul>
 
 <br/>
-
-
-<div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <span className="tw-flex tw-items-center tw-gap-2">
+<span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       for Family Reunification
                     </span>
@@ -503,21 +510,8 @@ const FamilyRenuification = () => {
                     <h2>
                       <strong> Application Process </strong>
                     </h2>
-                      </div>
 
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={fr3}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+
 
 
                     
@@ -528,9 +522,9 @@ const FamilyRenuification = () => {
                           Step-by-Step Guide
                         </strong>
                       
-                     
-
-                    <ul className="tw-p-0 tw-pl-0">
+                        <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <ul className="tw-p-0 tw-pl-0">
                      
                     <li className=" tw-flex  tw-gap-3">
                               <div>
@@ -584,8 +578,25 @@ const FamilyRenuification = () => {
                         </p>
                       </li>
                     </ul>
-                    <br/>
+                      </div>
 
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={fr3}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  
+                    <br/>
+{/* 
 
                     <div className="row tw-flex tw-items-center">
                     
@@ -603,17 +614,17 @@ const FamilyRenuification = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                      <span className="tw-flex tw-items-center tw-gap-2">
+                     
+                      </div>
+                    </div> */}
+
+                    <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       for Family Reunification Cases
                     </span>
                     <h2>
                       <strong>Specific Legal Provisions </strong>
                     </h2>
-                      </div>
-                    </div>
-
-
                    
                     <br/>
                     
@@ -771,10 +782,7 @@ const FamilyRenuification = () => {
 
 <br/>
 
-
-<div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <span className="tw-flex tw-items-center tw-gap-2">
+<span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Our
                     </span>
@@ -783,20 +791,6 @@ const FamilyRenuification = () => {
                     </h2>
                     <br/>
                       </div>
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={fr5}
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
 
 
                   
@@ -817,7 +811,23 @@ const FamilyRenuification = () => {
                     </ul>
 
                    
-                        <strong className="m-0 tw-text-gray">
+
+                    <div className="row tw-flex tw-items-center">
+                     
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={fr5}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <strong className="m-0 tw-text-gray">
                           Document Preparation
                         </strong>
                    
@@ -847,6 +857,11 @@ const FamilyRenuification = () => {
                       </li>
                     </ul>
 
+                      </div>
+                    
+
+
+                        
                  
                         <strong className="m-0 tw-text-gray">Appeals Support</strong>
                       
