@@ -350,47 +350,92 @@ const LanguageSelector = () => {
 
   const handleLanguageChange = (lang) => {
     let langCode;
+    let langText;
+    
     switch (lang) {
       case 'English':
         langCode = 'en';
+        langText = 'English';
         break;
       case 'German':
         langCode = 'de';
+        langText = 'German';
         break;
       case 'Danish':
         langCode = 'da';
+        langText = 'Danish';
         break;
       case 'Swedish':
         langCode = 'sv';
+        langText = 'Swedish';
         break;
       case 'Spanish':
-        langCode = 'es'; 
+        langCode = 'es';
+        langText = 'Spanish';
         break;
       case 'Greek':
         langCode = 'gr';
+        langText = 'Greek';
         break;
       case 'Persian':
         langCode = 'pr';
+        langText = 'Persian';
         break;
       case 'Arabic':
         langCode = 'ar';
+        langText = 'Arabic';
         break;
       case 'Urdu':
         langCode = 'ur';
+        langText = 'Urdu';
         break;
       case 'Punjabi':
         langCode = 'pn';
+        langText = 'Punjabi';
         break;
       default:
         console.error('Language not recognized:', lang);
+        return;  // Exit early if language is not recognized
     }
+  
+    // Get the iframe containing the Google Translate widget
+  const iframe = document.querySelectorAll('iframe'); // Update this selector if you have multiple iframes
+  
+  console.log(iframe);
+  if (iframe) {
+    try {
+      // Access the iframe's content document
+      const iframeDoc = iframe[1].contentDocument || iframe[2].contentWindow.document;
+      console.log("IFRAME DOC: ", iframeDoc);
 
-    i18n.changeLanguage(langCode);
-    setSelectedLanguage(lang); // Update the selected language state
+      // Find the <span> with the matching text content inside the iframe
+      const langSpan = Array.from(iframeDoc.querySelectorAll('span')).find(span => {
+
+        console.log("SPAN FOUND ARE" + span);
+        return span.textContent.trim().toLowerCase() === langText.toLowerCase();
+      });
+
+
+
+
+      if (langSpan) {
+        langSpan.click();
+        console.log(`Language clicked: ${langText}`);
+      } else {
+        console.error(`No <span> found for language: ${langText}`);
+      }
+    } catch (error) {
+      console.error('Error accessing iframe content:', error);
+    }
+  } else {
+    console.error('Iframe not found');
+  }
+  
     setIsOpen(false);
     console.log("Current language:", langCode);
   };
-
+  
+  
   const handleMouseEnter = () => {
     setIsOpen(true);
   };
@@ -398,14 +443,14 @@ const LanguageSelector = () => {
   const handleMouseLeave = (e) => {
    
    console.log("testing");
-    // if (
-    //   buttonRef.current &&
-    //   dropdownRef.current &&
-    //   //!buttonRef.current.contains(e.relatedTarget) &&
-    //   //!dropdownRef.current.contains(e.relatedTarget)
-    // ) {
-    //   setIsOpen(false);
-    // }
+    if (
+      buttonRef.current &&
+      dropdownRef.current &&
+      !buttonRef.current.contains(e.relatedTarget) &&
+    !dropdownRef.current.contains(e.relatedTarget)
+    ) {
+      setIsOpen(false);
+    }
   };
 
   return (

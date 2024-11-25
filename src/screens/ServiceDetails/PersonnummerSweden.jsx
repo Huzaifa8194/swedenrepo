@@ -264,7 +264,7 @@ const PersonnumerSweden = () => {
                       (Personnummer): Essential for Life in Sweden
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>A Critical Overview</strong>
                     </h2>
                     <br />
@@ -286,7 +286,7 @@ const PersonnumerSweden = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Why You
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> Need a Personnummer</strong>
                     </h2>
 
@@ -376,7 +376,7 @@ const PersonnumerSweden = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                           Structure of
                         </span>
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>The Personnummer </strong>
                         </h2>
 
@@ -404,6 +404,7 @@ const PersonnumerSweden = () => {
                               className=" tw-w-full"
                               src={pn2}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -459,7 +460,7 @@ const PersonnumerSweden = () => {
                           <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                           Steps to Apply for a Personnummer
                         </span>
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong> A Step-by-Step Guide </strong>
                         </h2>
                    
@@ -495,6 +496,7 @@ const PersonnumerSweden = () => {
                               className=" tw-w-full"
                               src={pn3}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -540,7 +542,7 @@ const PersonnumerSweden = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                           Swedish ID Card
                         </span>
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong> Your Key to Accessing Services </strong>
                         </h2>
                   
@@ -567,6 +569,7 @@ const PersonnumerSweden = () => {
                               className=" tw-w-full"
                               src={pn4}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -646,7 +649,7 @@ const PersonnumerSweden = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                           Challenges
                         </span>
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>Without a Personnummer and ID Card </strong>
                         </h2>
                    
@@ -684,6 +687,7 @@ const PersonnumerSweden = () => {
                              className=" tw-w-full"
                              src={pn5}
                              alt=""
+                             style={{ maxWidth: "450px" }}
                            />
                          </div>
                        </div>
@@ -734,7 +738,7 @@ const PersonnumerSweden = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       How
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> Sweden Relocators Can Assist You </strong>
                     </h2>
                     <br />
@@ -816,7 +820,7 @@ const PersonnumerSweden = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Be sure to
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Contact Us </strong>
                     </h2>
                     <br />

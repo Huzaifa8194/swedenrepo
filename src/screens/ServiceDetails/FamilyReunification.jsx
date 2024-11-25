@@ -263,7 +263,7 @@ const FamilyRenuification = () => {
                       Comprehensive Guide Under Swedish National Law
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> Family Reunification in Sweden:</strong>
                     </h2>
                     <br/>
@@ -286,7 +286,7 @@ const FamilyRenuification = () => {
                       Key Swedish laws
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Governing Family Reunification</strong>
                     </h2>
                     
@@ -322,6 +322,7 @@ const FamilyRenuification = () => {
                               className=" tw-w-full"
                               src={fr1}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -391,7 +392,7 @@ const FamilyRenuification = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Eligibility for
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> Family Reunification</strong>
                     </h2>
 
@@ -425,6 +426,7 @@ const FamilyRenuification = () => {
                             className=" tw-w-full"
                             src={fr2}
                             alt=""
+                            style={{ maxWidth: "450px" }}
                           />
                         </div>
                       </div>
@@ -507,7 +509,7 @@ const FamilyRenuification = () => {
                       for Family Reunification
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> Application Process </strong>
                     </h2>
 
@@ -588,6 +590,7 @@ const FamilyRenuification = () => {
                               className=" tw-w-full"
                               src={fr3}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -622,7 +625,7 @@ const FamilyRenuification = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       for Family Reunification Cases
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Specific Legal Provisions </strong>
                     </h2>
                    
@@ -673,7 +676,7 @@ const FamilyRenuification = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Specific Legal Provisions for Family Reunification Cases
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Aliens Act (Utlänningslagen)</strong>
                     </h2>
                     <br/>
@@ -720,7 +723,7 @@ const FamilyRenuification = () => {
                       Tillfälliga Utlänningslagen
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Temporary Aliens Act </strong>
                     </h2>
                     <br/>
@@ -753,7 +756,7 @@ const FamilyRenuification = () => {
                       Socialförsäkringsbalken
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Social Insurance Code</strong>
                     </h2>
                     <br/>
@@ -786,7 +789,7 @@ const FamilyRenuification = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Our
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> Services Include:</strong>
                     </h2>
                     <br/>
@@ -822,6 +825,7 @@ const FamilyRenuification = () => {
                               className=" tw-w-full"
                               src={fr5}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -882,7 +886,7 @@ const FamilyRenuification = () => {
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Why
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong>  Choose Sweden Relocators?</strong>
   </h2>
   <br/>
@@ -937,7 +941,7 @@ const FamilyRenuification = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Contact Sweden Relocators
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Get in Touch Today</strong>
                     </h2>
                     <br/>

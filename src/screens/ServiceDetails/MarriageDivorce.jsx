@@ -263,7 +263,7 @@ const MarriageDivorce = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Requirements and Process
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>
                         {" "}
                         Getting Married in Sweden{" "}
@@ -289,7 +289,7 @@ const MarriageDivorce = () => {
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Key Requirements 
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong> For Marriage in Sweden</strong>
   </h2>
 
@@ -333,6 +333,7 @@ const MarriageDivorce = () => {
                               className=" tw-w-full"
                               src={md1}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -394,7 +395,7 @@ const MarriageDivorce = () => {
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Step-by-Step Guide
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong>The Marriage Process </strong>
   </h2>
 
@@ -488,6 +489,7 @@ const MarriageDivorce = () => {
                              className=" tw-w-full"
                              src={md2}
                              alt=""
+                             style={{ maxWidth: "450px" }}
                            />
                          </div>
                        </div>
@@ -505,7 +507,7 @@ const MarriageDivorce = () => {
                       Additional Services and Legal Support for Marriage in
                       Sweden
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> Prenuptial Agreements </strong>
                     </h2>
                     <br/>
@@ -547,7 +549,7 @@ const MarriageDivorce = () => {
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Translation and
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong> Verification of Foreign Documents </strong>
   </h2>
 
@@ -574,6 +576,7 @@ const MarriageDivorce = () => {
                               className=" tw-w-full"
                               src={md3}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -612,7 +615,7 @@ const MarriageDivorce = () => {
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Post-Marriage
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong>Support </strong>
   </h2>
                   
@@ -637,6 +640,7 @@ const MarriageDivorce = () => {
                               className=" tw-w-full"
                               src={md4}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -676,7 +680,7 @@ const MarriageDivorce = () => {
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Divorce Assistance in Sweden
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong>Expert Legal Support for a
     Smooth Transition </strong>
   </h2>
@@ -708,6 +712,7 @@ const MarriageDivorce = () => {
                               className=" tw-w-full"
                               src={md5}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -766,7 +771,7 @@ const MarriageDivorce = () => {
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Why Choose Sweden Relocators
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong>For Marriage and Divorce
     Assistance in Sweden?</strong>
   </h2>
@@ -827,7 +832,7 @@ const MarriageDivorce = () => {
                       </li>
                     </ul>
                     <br/>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> Sign Up Today! </strong>
                     </h2>
                     <br/>

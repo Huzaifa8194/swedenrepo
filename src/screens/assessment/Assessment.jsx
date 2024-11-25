@@ -4,22 +4,29 @@ import Banner_Page from "../../components/Common/Banner_Page";
 import Footer from "../../components/Footer/Footer";
 import Button from "../../components/Button";
 import { GoTriangleRight } from "react-icons/go";
+
+
+
+
 import assess1 from "../../assets/images/BusinessAssessment.png";
 import assess2 from "../../assets/images/VisitVisaAssessment.png";
 import assess3 from "../../assets/images/StudyAssesmment.png";
-import camera from "../../assets/images/no-picture-taking.png";
+
 import assess4 from "../../assets/images/WorkPermit.png";
 import assess5 from "../../assets/images/ass5.png";
 import assess6 from "../../assets/images/ass6.png";
+
+
+import camera from "../../assets/images/no-picture-taking.png";
+
 import { Link } from "react-router-dom";
-import Header from '../../components/Header_New/Header';
-import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
+import Header from "../../components/Header_New/Header";
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
 import { useTranslation } from "react-i18next";
 
 const Assessment = () => {
-
-const { t} = useTranslation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -68,7 +75,7 @@ const { t} = useTranslation();
       Link: "/long_term_eu_status_assessment",
     },
   ];
-  
+
   const data2 = [
     {
       id: 1,
@@ -288,7 +295,6 @@ const { t} = useTranslation();
     <>
       <Header />
 
-
       <style>
         {`
           .custom-bg {
@@ -296,15 +302,17 @@ const { t} = useTranslation();
           }
         `}
       </style>
-      <Banner_Page 
-  highlightText={t("Assessments")} 
-  regularText={t("Relocating is easier with guidance tailored to your needs. Our assessments provide clarity and confidence for your move. Trust us to make every step simpler and more informed.")} 
-  backgroundImage={homeBgImage} 
-/>
+      <Banner_Page
+        highlightText={t("Assessments")}
+        regularText={t(
+          "Relocating is easier with guidance tailored to your needs. Our assessments provide clarity and confidence for your move. Trust us to make every step simpler and more informed."
+        )}
+        backgroundImage={homeBgImage}
+      />
       <section className=" md:tw-pt-4 tw-pt-8">
         <div className="container-fluid ">
-          <div className="row tw-px-0">
-            <div className="tw-px-0">
+          <div className="row 2xl:tw-pl-[8%] md:tw-pl-[1%] tw-pl-3 tw-pr-[3.5%] 2xl:tw-pr-[8%] md:tw-pr-[1%] ">
+            <div className="tw-px-0 tw-text-justify">
               <div className=" tw-bg-white  md:tw-pl-32 tw-pl-10 md:tw-pr-32 tw-pr-10 tw-pt-14">
                 <div className=" ">
                   <span>
@@ -323,36 +331,28 @@ const { t} = useTranslation();
                     Check Your Eligibility Before Proceeding with Our Services
                   </h1>
 
-
-
                   <div className="row tw-flex tw-items-center tw-justify-center tw-mb-6 tw-px-20">
-                     
-                      <div className="col-md-4">
-
+                    <div className="col-md-4">
                       <div className="row ">
-                          <div className="col-md-10 tw-mx-auto">
+                        <div className="col-md-10 tw-mx-auto">
                           <img src={assess3} alt="" />
-                          </div>
                         </div>
-                        
-                        
-                        
-                      </div>
-
-                      <div className="col-md-8">
-                      <p className=" tw-text-gray">
-                        Welcome to our fully digital eligibility assessment tool!
-                    Designed to streamline the process of relocating to Sweden,
-                    this tool helps you determine whether you meet the basic
-                    requirements for your desired Visa or Residence Permit. Our
-                    web portal and app offer a completely online experience,
-                    ensuring that every step of your relocation journey is
-                    convenient and transparent. </p>
-                       
                       </div>
                     </div>
 
-                  
+                    <div className="col-md-8">
+                      <p className=" tw-text-gray">
+                        Welcome to our fully digital eligibility assessment
+                        tool! Designed to streamline the process of relocating
+                        to Sweden, this tool helps you determine whether you
+                        meet the basic requirements for your desired Visa or
+                        Residence Permit. Our web portal and app offer a
+                        completely online experience, ensuring that every step
+                        of your relocation journey is convenient and
+                        transparent.{" "}
+                      </p>
+                    </div>
+                  </div>
 
                   <div className="tw-mx-8 tw-my-4">
                     <div className="tw-flex tw-items-start">
@@ -475,47 +475,50 @@ const { t} = useTranslation();
                   Important Information:
                 </h1>
 
-                
-
-
                 <div className=" tw-bg-white tw-shadow-lg tw-rounded-md tw-py-4  tw-mb-4  px-3">
                   <p className="  tw-text-gray text-sm tw-m-0">
-                  <i class="fa fa-circle-exclamation"></i>
-                    <h5 style={{ display: "inline" }}>Legal Changes</h5>
-                    <br /> Please note that laws and regulations may change,
-                    which could affect your eligibility assessment results.
+                    <i class="fa fa-circle-exclamation"></i>
+                    <h5 className="tw-pl-1" style={{ display: "inline" }}>
+                      Legal Changes
+                    </h5>
+                    <br />{" "}
+                    <p className="tw-pt-4">
+                      Please note that laws and regulations may change, which
+                      could affect your eligibility assessment results.
+                    </p>
                   </p>
-                  
                 </div>
 
-
-               
-
-
                 <div className=" tw-bg-white tw-shadow-lg tw-rounded-md tw-py-4  tw-mb-4  px-3">
                   <p className="  tw-text-gray text-sm tw-m-0">
-                  <i class="fa fa-circle-exclamation"></i>
-                    <h5 style={{ display: "inline" }}>Cost-Effective Alternatives</h5>
-                    <br /> While you can apply for visas or residence permits
-                    directly through official government websites at a lower
-                    cost, our services provide comprehensive support to maximize
-                    your chances of success.
+                    <i class="fa fa-circle-exclamation"></i>
+                    <h5 className="tw-pl-1" style={{ display: "inline" }}>
+                      Cost-Effective Alternatives
+                    </h5>
+                    <br />{" "}
+                    <p className="tw-pt-4">
+                      While you can apply for visas or residence permits
+                      directly through official government websites at a lower
+                      cost, our services provide comprehensive support to
+                      maximize your chances of success.
+                    </p>
                   </p>
-                  
                 </div>
 
-
-
                 <div className=" tw-bg-white tw-shadow-lg tw-rounded-md tw-py-4  tw-mb-4  px-3">
                   <p className="  tw-text-gray text-sm tw-m-0">
-                  <i class="fa fa-circle-exclamation"></i>
-                    <h5 style={{ display: "inline" }}>Expert Guidance</h5>
-                    <br /> Our experienced Migration and Relocation consultants
-                    will guide you through each step, ensuring your
-                    documentation is accurate and complete while helping you
-                    develop a solid strategy for your application.
+                    <i class="fa fa-circle-exclamation"></i>
+                    <h5 className="tw-pl-1" style={{ display: "inline" }}>
+                      Expert Guidance
+                    </h5>
+                    <br />{" "}
+                    <p className="tw-pt-4">
+                      Our experienced Migration and Relocation consultants will
+                      guide you through each step, ensuring your documentation
+                      is accurate and complete while helping you develop a solid
+                      strategy for your application.
+                    </p>
                   </p>
-                  
                 </div>
 
                 <div className="row  g-4 tw-py-12">
@@ -549,21 +552,33 @@ const { t} = useTranslation();
                   })}
                 </div>
 
-                <h6 className=" tw-text-gray tw-mb-3 text-xl">Service Fees:</h6>
+                <h6 className=" tw-text-gray tw-mb-3 text-xl"></h6>
 
                 <div className=" tw-bg-white tw-shadow-lg tw-rounded-md tw-py-4  tw-mb-4  px-3">
                   <p className="  tw-text-gray text-sm tw-m-0">
-                  Our professional services come with a fee, and detailed pricing information is available on our web portal and app. If you have any questions or need further clarification, please feel free to contact us using the message section.
-
+                    <strong>Service Fees:</strong>
+                    <br />
+                    <br />
+                    Our professional services come with a fee, and detailed
+                    pricing information is available on our web portal and app.
+                    If you have any questions or need further clarification,
+                    please feel free to contact us using the message section.
                   </p>
                 </div>
 
                 <div className=" tw-bg-blue tw-rounded-md tw-py-4 tw-mb-12  px-3">
                   <h6 className=" tw-text-white tw-m-0">
                     {" "}
-                    <i class="fa fa-calendar"></i><h5 style = {{ display: "inline" }}>Our Recommendation</h5><br/>
-We always recommend using the assessment tool before engaging in our services to ensure you're on the right track and to make the most informed decisions about your relocation journey.
-
+                   
+                    <strong className="tw-pl-0" style={{ display: "inline" }}>
+                      Our Recommendation
+                    </strong>
+                    <br />
+                    <p className="tw-pt-4">
+                    We always recommend using the assessment tool before
+                    engaging in our services to ensure you're on the right track
+                    and to make the most informed decisions about your
+                    relocation journey.</p>
                   </h6>
                 </div>
               </div>

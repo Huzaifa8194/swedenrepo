@@ -259,7 +259,7 @@ const GlobalVisitVisas = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Greece and Portugal
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> Your Pathway to European Residency</strong>
                     </h2>
                     <br></br>
@@ -282,7 +282,7 @@ const GlobalVisitVisas = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Greece
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> Golden Visa Program</strong>
                     </h2>
                  
@@ -305,6 +305,7 @@ const GlobalVisitVisas = () => {
                               className=" tw-w-full"
                               src={gv1}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -397,7 +398,7 @@ const GlobalVisitVisas = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Portugal
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> Golden Visa Program</strong>
                     </h2>
                     <br />
@@ -452,6 +453,7 @@ const GlobalVisitVisas = () => {
                               className=" tw-w-full"
                               src={gv3}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -561,7 +563,7 @@ const GlobalVisitVisas = () => {
                         <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                         Steps to
                       </span>
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong> Apply for a Golden Visa</strong>
                       </h2>
                      
@@ -607,6 +609,7 @@ const GlobalVisitVisas = () => {
                               className=" tw-w-full"
                               src={gv4}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -679,7 +682,7 @@ const GlobalVisitVisas = () => {
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                         Additional Considerations
                       </span>
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong> For Investors </strong>
                       </h2>
                       <br />

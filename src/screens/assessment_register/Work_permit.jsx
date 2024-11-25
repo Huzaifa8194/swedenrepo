@@ -277,8 +277,8 @@ const Work_permit = () => {
       <section className=" ">
         <div className="container-fluid ">
           <div className="row g-5">
-            <div className="col-md-8    tw-py-10 tw-bg-white">
-              <div className="row tw-pt-6  md:tw-pl-32 tw-pl-3">
+            <div className="col-md-8    tw-py-12 tw-bg-white tw-text-justify">
+              <div className="row tw-pt-6  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                 <div className="col-lg-12">
                   {/* user info */}
 
@@ -296,7 +296,8 @@ const Work_permit = () => {
                         Find Out Your Eligibility for a Work Permit in Sweden
                       </strong>
                     </h2>
-                    <h4>Who Should Use This Tool?</h4>
+                    <br/>
+                    <strong className="tw-text-gray">Who Should Use This Tool?</strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
@@ -369,7 +370,23 @@ const Work_permit = () => {
                       </li>
                     </ul>
 
-                    <h4>Why Use the Eligibility Tool? </h4>
+                    <br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Why
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Use the Eligibility Tool?
+                      </strong>
+                    </h2>
+                    <br/>
+
+
+
+                   
                     <p className="tw-text-gray">
                       This tool is designed to help you understand the
                       requirements and eligibility criteria for obtaining a work
@@ -409,7 +426,23 @@ const Work_permit = () => {
                       </li>
                     </ul>
 
-                    <h4>Complete Visa and Permit Application Support </h4>
+
+                    <br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Complete
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Visa and Permit Application Support
+                      </strong>
+                    </h2>
+                    <br/>
+
+
+                  
 
                     <p className="tw-text-gray">
                       We offer comprehensive support for your move to Sweden
@@ -451,7 +484,23 @@ const Work_permit = () => {
                       </li>
                     </ul>
 
-                    <h4>How We Use the Information</h4>
+
+
+                    <br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      How
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      We Use the Information
+                      </strong>
+                    </h2>
+                    <br/>
+
+                  
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
@@ -484,7 +533,22 @@ const Work_permit = () => {
                       </li>
                     </ul>
 
-                    <h4>Get Started </h4>
+
+                    <br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Get Started 
+                      </strong>
+                    </h2>
+                    <br/>
+
+                   
                     <p className=" tw-text-gray">
                       Use the eligibility tool on our web portal or app to take
                       the first step toward your work journey in Sweden, whether
@@ -496,7 +560,7 @@ const Work_permit = () => {
                   {/*end*/}
 
                   <div>
-                  {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                    {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
                   <h5 className=" tw-text-black  ">Personal Details</h5>
 
                   <h6 className=" tw-text-black ">
@@ -546,18 +610,22 @@ const Work_permit = () => {
                     </form> */}
                   </div>
                   <div className=" tw-pt-8">
-                  <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">
-                  WORK PERMIT CATEGORIES</h5>
-
-                  <h6 className=" tw-text-black ">
-                    {" "}
-                    <i class="fa fa-user"> </i>FILL UP THE WORK PERMIT CATEGORY DETAILS 
-                  </h6>
-                </div>
-
+                 
                     <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black ">
+                        
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                     Work Permit Categories
+                      </strong>
+                    </h2>
+                        
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray "></label>
                           <select
@@ -587,22 +655,22 @@ const Work_permit = () => {
                       </div>
 
                       {workCategory === "WORK PERMIT OUTSIDE OF SWEDEN" && (
-                        <div className=" row">
+                        <div className=" row row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white">
                           <div className="col-md-12">
-                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">
-                Educational Background</h5>
+                          <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
 
-                  <h6 className=" tw-text-black ">
-                    {" "}
-                    <i class="fa fa-user"> </i>Give your educational background details. 
-                  </h6>
-                </div>
+                    <h2 className="tw-text-left">
+                      <strong>
+                     Educational Background
+                      </strong>
+                    </h2>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                             
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option> Education Level</option>
                               <option value="Matriculation/Secondary">
@@ -623,9 +691,7 @@ const Work_permit = () => {
                           </div>
 
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Educational Certificate available</option>
                               <option value="yes">Yes</option>
@@ -633,20 +699,22 @@ const Work_permit = () => {
                             </select>
                           </div>
                           <div className="col-md-12">
-                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">
-                 Work Expierence in your Field.</h5>
+                            <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
 
-                  <h6 className=" tw-text-black ">
-                    {" "}
-                    <i class="fa fa-user"> </i>Give us details of your work expierience.
-                  </h6>
-                </div>
+                    <h2 className="tw-text-left">
+                      <strong>
+                     Work Expierence In Your Field
+                      </strong>
+                    </h2>
+                            </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                             
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
 
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option> Did you have a job experience?</option>
@@ -658,9 +726,7 @@ const Work_permit = () => {
                           <div className=" col-md-6"></div>
 
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
 
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Experience Certificate available</option>
@@ -670,20 +736,22 @@ const Work_permit = () => {
                           </div>
 
                           <div className="col-md-12">
-                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">
-                Residence and Work Permit</h5>
+                            <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
 
-                  <h6 className=" tw-text-black ">
-                    {" "}
-                    <i class="fa fa-user"> </i>Give us details of your Residence and Work Permit 
-                  </h6>
-                </div>
+                    <h2 className="tw-text-left">
+                      <strong>
+                     Residence and Work Permit
+                      </strong>
+                    </h2>
+                            </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                             
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option> Are you outside of Sweden?</option>
                               <option value="yes">Yes</option>
@@ -694,9 +762,7 @@ const Work_permit = () => {
                           <div className=" col-md-6"></div>
 
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                             
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option> Did you work in Sweden before?</option>
                               <option value="yes">Yes</option>
@@ -705,35 +771,40 @@ const Work_permit = () => {
                           </div>
 
                           <div className="col-md-12">
-                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">
-                  Are you Applying for your Family</h5>
+                            <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in 
+                    </span>
 
-                  <h6 className=" tw-text-black ">
-                    {" "}
-                    <i class="fa fa-user"> </i>Give us details about you applying
-                  </h6>
-                </div>
+                    <h2 className="tw-text-left">
+                      <strong>
+                     Are you Applying for your Family
+                      </strong>
+                    </h2>
+                            </div>
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Do you have savings or assets in case if your
-                              salary is lower than requirements?</option>
+                              <option>
+                                Do you have savings or assets in case if your
+                                salary is lower than requirements?
+                              </option>
                               <option value="yes">Yes</option>
                               <option value="no">No</option>
                             </select>
                           </div>
 
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Have you applied any sort of Schengen visa or
-                              residence permit in past 2 years and got rejected?</option>
+                              <option>
+                                Have you applied any sort of Schengen visa or
+                                residence permit in past 2 years and got
+                                rejected?
+                              </option>
                               <option value="yes">Yes</option>
                               <option value="no">No</option>
                             </select>
@@ -744,20 +815,22 @@ const Work_permit = () => {
                       {workCategory === "AU PAIR" && (
                         <div className="row">
                           <div className="col-md-12">
-                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">
-                 AU Pair</h5>
+                            <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
 
-                  <h6 className=" tw-text-black ">
-                    {" "}
-                    <i class="fa fa-user"> </i>Give us details of your AU Pair
-                  </h6>
-                </div>
+                    <h2 className="tw-text-left">
+                      <strong>
+                     AU Pair
+                      </strong>
+                    </h2>
+                            </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Are you single?</option>
                               <option value="yes">Yes</option>
@@ -766,9 +839,7 @@ const Work_permit = () => {
                           </div>
 
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Are you between 18 and 30 years?</option>
                               <option value="yes">Yes</option>
@@ -776,34 +847,36 @@ const Work_permit = () => {
                             </select>
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                             
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option> Do you have a Proof that you have signed or
-                              applied for a health insurance policy?</option>
+                              <option>
+                                {" "}
+                                Do you have a Proof that you have signed or
+                                applied for a health insurance policy?
+                              </option>
                               <option value="yes">Yes</option>
                               <option value="no">No</option>
                             </select>
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Are you able to show that you have a distinct
-                              interest in or use for Swedish language studies?</option>
+                              <option>
+                                Are you able to show that you have a distinct
+                                interest in or use for Swedish language studies?
+                              </option>
                               <option value="yes">Yes</option>
                               <option value="no">No</option>
                             </select>
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                             
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option> Are Do you have a certificate of admission/Offer
-                              Letter to the course of study concerned?</option>
+                              <option>
+                                {" "}
+                                Are Do you have a certificate of admission/Offer
+                                Letter to the course of study concerned?
+                              </option>
                               <option value="yes">Yes</option>
                               <option value="no">No</option>
                             </select>
@@ -838,20 +911,22 @@ const Work_permit = () => {
                       {workCategory === "WORKING HOLIDAYS" && (
                         <div className="row">
                           <div className="col-md-12">
-                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">
-                Working Holidays</h5>
+                            <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
 
-                  <h6 className=" tw-text-black ">
-                    {" "}
-                    <i class="fa fa-user"> </i>Give us details of your working holidays. 
-                  </h6>
-                </div>
+                    <h2 className="tw-text-left">
+                      <strong>
+                     Working Holidays
+                      </strong>
+                    </h2>
+                            </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Are you single?</option>
                               <option value="yes">Yes</option>
@@ -884,23 +959,23 @@ const Work_permit = () => {
                             </select>
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option value="">Do you Have a return ticket or enough money to buy
-                              one?</option>
+                              <option value="">
+                                Do you Have a return ticket or enough money to
+                                buy one?
+                              </option>
                               <option value="yes">Yes</option>
                               <option value="no">No</option>
                             </select>
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Do you have a comprehensive health insurance that
-                              applies to care in Sweden?</option>
+                              <option>
+                                Do you have a comprehensive health insurance
+                                that applies to care in Sweden?
+                              </option>
                               <option value="yes">Yes</option>
                               <option value="no">No</option>
                             </select>
@@ -911,27 +986,31 @@ const Work_permit = () => {
                       {workCategory === "ASYLUM - WORK PERMIT" && (
                         <div className="row">
                           <div className="col-md-12">
-                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">
-                 Asylum Work Permit</h5>
+                            <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
 
-                  <h6 className=" tw-text-black ">
-                    {" "}
-                    <i class="fa fa-user"> </i>Give us details of your Asylum Work Permit
-                  </h6>
-                </div>
+                    <h2 className="tw-text-left">
+                      <strong>
+                     Asylum Work Permit
+                      </strong>
+                    </h2>
+                            </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              
-                            </label>
+                            <label className=" tw-text-sm  tw-text-gray "></label>
                             <select
                               value={applying}
                               onChange={handleWorkApplyingChange}
                               className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                             >
-                              <option>Did you already worked in Sweden before applying
-                              the asylum?</option>
+                              <option>
+                                Did you already worked in Sweden before applying
+                                the asylum?
+                              </option>
                               <option value="yes">Yes</option>
                               <option value="no">No</option>
                             </select>
@@ -940,41 +1019,44 @@ const Work_permit = () => {
                           {applying === "no" ? (
                             <>
                               <div className="col-md-12 tw-pt-4">
-                                <label className=" tw-text-sm  tw-text-gray ">
-                                 
-                                </label>
+                                <label className=" tw-text-sm  tw-text-gray "></label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option> Did Your asylum case has been refused and you
-                                  want to apply for work permit?</option>
+                                  <option>
+                                    {" "}
+                                    Did Your asylum case has been refused and
+                                    you want to apply for work permit?
+                                  </option>
                                   <option value="yes">Yes</option>
                                   <option value="no">No</option>
                                 </select>
                               </div>
 
                               <div className="col-md-8 tw-pt-4">
-                                <label className=" tw-text-sm  tw-text-gray ">
-                                  
-                                </label>
+                                <label className=" tw-text-sm  tw-text-gray "></label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option>Did you get the permission of work in Sweden?</option>
+                                  <option>
+                                    Did you get the permission of work in
+                                    Sweden?
+                                  </option>
                                   <option value="yes">Yes</option>
                                   <option value="no">No</option>
                                 </select>
                               </div>
 
                               <div className="col-md-6 tw-pt-4">
-                                <label className=" tw-text-sm  tw-text-gray ">
-                               
-                                </label>
+                                <label className=" tw-text-sm  tw-text-gray "></label>
                                 <Input
-                            placeholder={" When did you got the negative decision?"}
-                           
-                            type = {"date"}
-                            className={
-                              " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
-                            }
-                            label={" When did you got the negative decision?"}
-                          />
+                                  placeholder={
+                                    " When did you got the negative decision?"
+                                  }
+                                  type={"date"}
+                                  className={
+                                    " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                  }
+                                  label={
+                                    " When did you got the negative decision?"
+                                  }
+                                />
                               </div>
 
                               <div className="col-md-8 tw-pt-4">
@@ -1039,15 +1121,19 @@ const Work_permit = () => {
                       {workCategory === "STUDENT - WORK PERMIT" && (
                         <div className="row">
                           <div className="col-md-12">
-                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">
-                  Student & Work Permit</h5>
+                            <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
 
-                  <h6 className=" tw-text-black ">
-                    {" "}
-                    <i class="fa fa-user"> </i>Give us your student and work permit details.
-                  </h6>
-                </div>
+                    <h2 className="tw-text-left">
+                      <strong>
+                     Student and Work Permit
+                      </strong>
+                    </h2>
+                            </div>
                           </div>
                           <div className="col-md-8 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
@@ -1090,15 +1176,21 @@ const Work_permit = () => {
                         <>
                           <div className="row">
                             <div className="col-md-12">
-                            <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">
-                 EU Long Term Residence/Permanent Residence</h5>
+                              <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                                
 
-                  <h6 className=" tw-text-black ">
-                    {" "}
-                    <i class="fa fa-user"> </i>Give us details of your EU Long Term Residence and Permanent Residence
-                  </h6>
-                </div>
+                                <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      EU Long Term Residence/Permanent Residence
+                      </strong>
+                    </h2>
+                              </div>
                             </div>
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
@@ -1264,7 +1356,7 @@ const Work_permit = () => {
             </div>
 
             <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-              <div className="  md:tw-pr-28 tw-pr-4">
+              <div className="   md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-sticky">
                 <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                   {data?.map((item, index) => {
                     return (

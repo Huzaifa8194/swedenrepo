@@ -264,7 +264,7 @@ const BusinessVisit = () => {
                       Documentation Requirements for Visa Application
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>
                         {" "}
                         A Comprehensive List of Required Documents{" "}
@@ -285,7 +285,7 @@ const BusinessVisit = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Personal
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Document Requirements </strong>
                     </h2>
                    
@@ -323,6 +323,7 @@ const BusinessVisit = () => {
                               className=" tw-w-full"
                               src={bv1}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -480,7 +481,7 @@ const BusinessVisit = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Additional Requirements
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>for Employers or Sponsoring Companies </strong>
                     </h2>
                     <br></br>
@@ -502,7 +503,7 @@ const BusinessVisit = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Additional Documents
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> that May Be Required</strong>
                     </h2>
 
@@ -536,6 +537,7 @@ const BusinessVisit = () => {
                              className=" tw-w-full"
                              src={bv2}
                              alt=""
+                             style={{ maxWidth: "450px" }}
                            />
                          </div>
                        </div>
@@ -569,7 +571,7 @@ const BusinessVisit = () => {
                       Business Visa for Foreign Investors
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>A Swedish Business Visa for Investors</strong>
                     </h2>
 
@@ -590,6 +592,7 @@ const BusinessVisit = () => {
                              className=" tw-w-full"
                              src={bv2}
                              alt=""
+                             style={{ maxWidth: "450px" }}
                            />
                          </div>
                        </div>

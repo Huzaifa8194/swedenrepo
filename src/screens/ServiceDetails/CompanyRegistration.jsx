@@ -254,7 +254,7 @@ const CompanyRegistration = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Comprehensive Guide to Company Registration in Sweden
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Setting Up Your Business in Sweden</strong>
                     </h2>
                     <p className="tw-text-gray">
@@ -281,7 +281,7 @@ const CompanyRegistration = () => {
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Why
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong>                            is Company Registration Important?
     </strong>
   </h2>
@@ -355,7 +355,7 @@ const CompanyRegistration = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Comprehensive Guide to Company Registration in Sweden
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Setting Up Your Business in Sweden</strong>
                     </h2>
                     <p className="tw-text-gray">
@@ -374,7 +374,7 @@ const CompanyRegistration = () => {
                       company registration is necessary.
                     </p>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Types of Companies in Sweden</strong>
                     </h2>
                     <p className="tw-text-gray">
@@ -720,7 +720,7 @@ const CompanyRegistration = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       The Company Registration Process in Sweden
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Step-by-Step Guide</strong>
                     </h2>
 
@@ -850,7 +850,7 @@ const CompanyRegistration = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Our 
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Services Include:</strong>
                     </h2>
 
@@ -913,7 +913,7 @@ const CompanyRegistration = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Why Choose Sweden Relocators?
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Trusted Expertise</strong>
                     </h2>
 
@@ -978,7 +978,7 @@ const CompanyRegistration = () => {
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Apply for
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong> Your Global Visit Visa Today </strong>
   </h2>
                     

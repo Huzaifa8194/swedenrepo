@@ -267,7 +267,7 @@ const BusinessPermit = () => {
                       Self-Employment Residence Permit in Sweden
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>
                         {" "}
                         A Guide for Non-EU/EEA Entrepreneurs{" "}
@@ -294,7 +294,7 @@ const BusinessPermit = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Why Choose
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> Sweden for Your Business? </strong>
                     </h2>
                     
@@ -324,6 +324,7 @@ const BusinessPermit = () => {
                               className=" tw-w-full"
                               src={bp1}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -370,7 +371,7 @@ const BusinessPermit = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Types of
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> Business Structures in Sweden </strong>
                     </h2>
 
@@ -396,6 +397,7 @@ const BusinessPermit = () => {
                           className=" tw-w-full"
                           src={bp2}
                           alt=""
+                          style={{ maxWidth: "450px" }}
                         />
                       </div>
                     </div>
@@ -453,7 +455,7 @@ const BusinessPermit = () => {
                       Self-Employment Residence Permit in Sweden
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>
                         Key Requirements for a Self-Employment Residence Permit
                       </strong>
@@ -474,6 +476,7 @@ const BusinessPermit = () => {
                               className=" tw-w-full"
                               src={bp3}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -630,7 +633,7 @@ const BusinessPermit = () => {
           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
           Step-by-Step Application
         </span>
-        <h2>
+        <h2 className = "tw-text-left">
           <strong> Process for a Self-Employment Permit </strong>
         </h2>
 
@@ -661,6 +664,7 @@ const BusinessPermit = () => {
                            className=" tw-w-full"
                            src={bp4}
                            alt=""
+                           style={{ maxWidth: "450px" }}
                          />
                        </div>
                      </div>
@@ -742,7 +746,7 @@ const BusinessPermit = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Other
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Business Structures in Sweden </strong>
                     </h2>
 
@@ -825,7 +829,7 @@ const BusinessPermit = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Our
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> Services Include </strong>
                     </h2>
                    
@@ -865,6 +869,7 @@ const BusinessPermit = () => {
                               className=" tw-w-full"
                               src={bp5}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -910,7 +915,7 @@ const BusinessPermit = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Why
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> Work with Sweden Relocators? </strong>
                     </h2>
 

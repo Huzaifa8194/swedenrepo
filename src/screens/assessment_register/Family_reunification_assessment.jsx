@@ -286,8 +286,8 @@ const Family_reunification_assessment = () => {
       <section className="">
         <div className="container-fluid ">
           <div className="row g-5">
-            <div className="col-md-8    tw-py-10 tw-bg-white">
-              <div className="row tw-pt-6  md:tw-pl-32 tw-pl-3">
+            <div className="col-md-8    tw-py-12 tw-bg-white tw-text-justify">
+              <div className="row tw-pt-6  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                 <div className="col-lg-12">
                   {/* user info */}
 
@@ -297,14 +297,13 @@ const Family_reunification_assessment = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Family Reunification
                     </span>
-
                     <h2>
-                      <strong>
+                      <strong className = "tw-text-left">
                         Find Out Your Eligibility for Family Reunification in
                         Sweden
                       </strong>
                     </h2>
-                    <h4>Who Should Use This Tool?</h4>
+                    <strong className = "tw-text-gray">Who Should Use This Tool?</strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
@@ -327,7 +326,7 @@ const Family_reunification_assessment = () => {
                       </li>
                     </ul>
 
-                    <h4>Why Use the Eligibility Tool? </h4>
+                    <strong className = "tw-text-gray">Why Use the Eligibility Tool? </strong>
                     <p className=" tw-text-gray">
                       This tool is designed to help you understand the
                       requirements and eligibility criteria for bringing your
@@ -365,7 +364,20 @@ const Family_reunification_assessment = () => {
                       </li>
                     </ul>
 
-                    <h4>How We Use the Information</h4>
+                    <br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      How
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      We Use the Information
+                      </strong>
+                    </h2>
+
+                    <br/>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
@@ -398,7 +410,21 @@ const Family_reunification_assessment = () => {
                       </li>
                     </ul>
 
-                    <h4>Get Started </h4>
+                    <br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Get Started
+                      </strong>
+                    </h2>
+                    <br/>
+
+                  
                     <p className=" tw-text-gray">
                     Use the eligibility tool to take the first step toward reuniting with your family in Sweden as an EU citizen or long-term EU resident!
 
@@ -458,17 +484,23 @@ const Family_reunification_assessment = () => {
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-                  <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">Relocate to Sweden</h5>
-
-                  <h6 className=" tw-text-black ">
-                    {" "}
-                    <i class="fa fa-user"> </i>FILL UP THE PERSONAL DETAILS 
-                  </h6>
-                </div>
+               
 
                     <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                        
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                     Relocate to Sweden
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Personal Details
+                      </strong>
+                    </h2>
+                        
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
                             
@@ -648,14 +680,18 @@ const Family_reunification_assessment = () => {
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-                  <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">Family Documents</h5>
+                  <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                  <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
 
-                  <h6 className=" tw-text-black ">
-                    {" "}
-                    <i class="fa fa-user"> </i>FILL UP THE Family Documents
-                  </h6>
-                </div>
+                    <h2 className="tw-text-left">
+                      <strong>
+                     Family Documents
+                      </strong>
+                    </h2>
 
                     <div className="tw-flex tw-items-center tw-gap-2 tw-pt-3">
                       <input
@@ -668,7 +704,7 @@ const Family_reunification_assessment = () => {
                         I am single or I want to move by myself first
                       </p>
                     </div>
-
+                  
                     {!isSingle && (
                       <form>
                         <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
@@ -718,6 +754,8 @@ const Family_reunification_assessment = () => {
                       </form>
                     )}
                   </div>
+                  </div>
+
 
                   <Button
                     onClick={openModal}
@@ -731,7 +769,7 @@ const Family_reunification_assessment = () => {
             </div>
 
             <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-              <div className="  md:tw-pr-28 tw-pr-4">
+              <div className="  md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
                 <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                   {data?.map((item, index) => {
                     return (

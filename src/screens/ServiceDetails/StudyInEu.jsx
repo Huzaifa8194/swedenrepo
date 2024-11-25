@@ -210,7 +210,7 @@ const StudyInEu = () => {
                 <div className="  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div className="row">
                     <div className="col-md-3">
-                      <img src={flag} alt="" />
+                      <img src={flag} alt=""  style={{ maxWidth: "450px" }} />
                     </div>
                     <div className="col-md-9">
                     <br/>
@@ -219,7 +219,7 @@ const StudyInEu = () => {
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STUDY
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>In Sweden</strong>
                       </h2>
                       
@@ -228,7 +228,7 @@ const StudyInEu = () => {
                   </div>
                   <div className="row">
                     <div className="col-md-10 tw-mx-auto">
-                      <img src={banner} alt="" />
+                      <img src={banner} alt=""  style={{ maxWidth: "450px" }}/>
                     </div>
                   </div>
                   <p className=" tw-text-gray">
@@ -244,7 +244,7 @@ const StudyInEu = () => {
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> VISION
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Enhancement Of One’s Mind</strong>
                     </h2>
                     <br/>
@@ -262,7 +262,7 @@ const StudyInEu = () => {
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> RICH
                       </span>
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>Swedish History</strong>
                       </h2>
                       <br/>
@@ -276,7 +276,7 @@ const StudyInEu = () => {
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> LANGUAGE
                       </span>
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>Proficiency</strong>
                       </h2>
                       <br/>
@@ -293,7 +293,7 @@ const StudyInEu = () => {
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> MALMÖ
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>A Coastal City</strong>
                       </h2>
                       <br/>
@@ -311,7 +311,7 @@ const StudyInEu = () => {
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STUDYING
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>And Working In Sweden</strong>
                       </h2>
                       <br/>
@@ -327,7 +327,7 @@ const StudyInEu = () => {
                       </span>
 
                       <br/>
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>Citizen’s Right</strong>
                       </h2>
                       <br/>
@@ -344,7 +344,7 @@ const StudyInEu = () => {
                     </div>
                     <div className="row">
                       <div className="col-md-9 tw-mx-auto">
-                        <img src={banner2} alt="" />
+                        <img src={banner2} alt="" style={{ maxWidth: "450px" }} />
                       </div>
                     </div>
 
@@ -355,7 +355,7 @@ const StudyInEu = () => {
                     </span>
 
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Requirements For Students</strong>
                     </h2>
                     <br/>
@@ -366,7 +366,7 @@ const StudyInEu = () => {
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> JOB MARKET
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>For Graduates</strong>
                     </h2>
                     <br/>
@@ -379,7 +379,7 @@ const StudyInEu = () => {
 
                     <div className=" row tw-pt-5">
                       <div className="col-md-6">
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>Bachelor Programs</strong>
                         </h2>
                        
@@ -392,7 +392,7 @@ const StudyInEu = () => {
                         </p>
                       </div>
                       <div className="col-md-6">
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>Maters Programs</strong>
                         </h2>
                        
@@ -411,7 +411,7 @@ const StudyInEu = () => {
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> LETTER OF
                       </span>
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>English Proficiency</strong>
                       </h2>
                       <br/>
@@ -428,7 +428,7 @@ const StudyInEu = () => {
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> ENGLISH
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>Requirement</strong>
                       </h2>
                       <br/>
@@ -464,7 +464,7 @@ const StudyInEu = () => {
 
                       <div className="row tw-pt-4">
                         <div className="col-md-3">
-                          <img src={flag} alt="" />
+                          <img src={flag} alt=""  style={{ maxWidth: "450px" }} />
                         </div>
                         <div className="col-md-9">
                         <br/>
@@ -473,7 +473,7 @@ const StudyInEu = () => {
                             <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STUDY
                           </span>
 
-                          <h2>
+                          <h2 className = "tw-text-left">
                             <strong>In Denmark</strong>
                           </h2>
                           <br/>
@@ -487,7 +487,7 @@ const StudyInEu = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> FACTS AND FIGURES ABOUT
                         </span>
 
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>Higher Education In Denmark</strong>
                         </h2>
                         <br/>
@@ -506,7 +506,7 @@ const StudyInEu = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> JOB MARKET
                         </span>
 
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>For Graduates</strong>
                         </h2>
                         <br/>
@@ -521,7 +521,7 @@ const StudyInEu = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> ASSESSMENT OF
                         </span>
 
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>Your Qualifications</strong>
                         </h2>
                         <br/>
@@ -537,7 +537,7 @@ const StudyInEu = () => {
                           FOR AN OFFICIAL ASSESSMENT OF
                         </span>
 
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>Your Qualifications Visit Student Assessment Tool</strong>
                         </h2>
                         <br/>
@@ -550,7 +550,7 @@ const StudyInEu = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> GENERAL
                         </span>
 
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>Admission Requirements</strong>
                         </h2>
                         <br/>
@@ -574,7 +574,7 @@ const StudyInEu = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> BASED UPON A ROUGH AVERAGE OF PREVIOUS REQUIREMENTS
                         </span>
 
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>Here Is An Estimate Of The Ranges You Can Expect</strong>
                         </h2>
                         <br/>
@@ -587,7 +587,7 @@ const StudyInEu = () => {
 
                       <div className="row tw-pt-4">
                         <div className="col-md-3">
-                          <img src={flag4} alt="" />
+                          <img src={flag4} alt=""  style={{ maxWidth: "450px" }}/>
                         </div>
                         <div className="col-md-9">
                         
@@ -596,7 +596,7 @@ const StudyInEu = () => {
                             <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STUDY
                           </span>
 
-                          <h2>
+                          <h2 className = "tw-text-left">
                             <strong>In United Kingdom</strong>
                           </h2>
                           <br/>
@@ -610,7 +610,7 @@ const StudyInEu = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> HOW TO
                         </span>
 
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>Apply</strong>
                         </h2>
                         <br/>
@@ -624,7 +624,7 @@ const StudyInEu = () => {
 
                         <div className="row">
                           <div className="col-md-10 tw-mx-auto">
-                            <img src={banner3} alt="" />
+                            <img src={banner3} alt=""  style={{ maxWidth: "450px" }} />
                           </div>
                         </div>
                         <br/>
@@ -633,7 +633,7 @@ const StudyInEu = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> ENTRY
                         </span>
 
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>Qualifications</strong>
                         </h2>
                         <br/>
@@ -685,7 +685,7 @@ const StudyInEu = () => {
 
                       <div className="row tw-pt-4">
                         <div className="col-md-3">
-                          <img src={flag3} alt="" />
+                          <img src={flag3} alt="" style={{ maxWidth: "450px" }} />
                         </div>
                         <div className="col-md-9">
                         
@@ -694,7 +694,7 @@ const StudyInEu = () => {
                             <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STUDY
                           </span>
 
-                          <h2>
+                          <h2 className = "tw-text-left">
                             <strong>In Czech Republic</strong>
                           </h2>
                           <br/>
@@ -708,7 +708,7 @@ const StudyInEu = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> ADMISSION
                         </span>
 
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>Requirements</strong>
                         </h2>
                         <br/>
@@ -729,7 +729,7 @@ const StudyInEu = () => {
 
                       <div className="row tw-pt-4">
                         <div className="col-md-3">
-                          <img src={flag2} alt="" />
+                          <img src={flag2} alt=""  style={{ maxWidth: "450px" }}/>
                         </div>
                         <div className="col-md-9">
                        
@@ -738,7 +738,7 @@ const StudyInEu = () => {
                             <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STUDY
                           </span>
 
-                          <h2>
+                          <h2 className = "tw-text-left">
                             <strong>In Norway</strong>
                           </h2>
                           <br/>
@@ -752,7 +752,7 @@ const StudyInEu = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> APPLICATION
                         </span>
 
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>& Admission</strong>
                         </h2>
                         <br/>
@@ -771,7 +771,7 @@ const StudyInEu = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> DEGREE SEEKING STUDENTS
                         </span>
 
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>Academic Requirements</strong>
                         </h2>
                         <br/>
@@ -801,7 +801,7 @@ const StudyInEu = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> DEGREE SEEKING STUDENTS
                         </span>
 
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>Language Requirements</strong>
                         </h2> <br/>
 
@@ -816,7 +816,7 @@ const StudyInEu = () => {
 
                       <div className="row tw-pt-4">
                         <div className="col-md-3">
-                          <img src={flag1} alt="" />
+                          <img src={flag1} alt="" style={{ maxWidth: "450px" }} />
                         </div>
                         <div className="col-md-9">
                        
@@ -825,7 +825,7 @@ const StudyInEu = () => {
                             <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> STUDY
                           </span>
 
-                          <h2>
+                          <h2 className = "tw-text-left">
                             <strong>In Finland</strong>
                           </h2>
                           <br/>
@@ -839,7 +839,7 @@ const StudyInEu = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> BACHELOR’S AND
                         </span>
 
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>Master’s Admissions</strong>
                         </h2>
                         <br/>
@@ -861,7 +861,7 @@ const StudyInEu = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> WHEN TO
                         </span>
 
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>Apply</strong>
                         </h2>
                         <br/>
@@ -880,7 +880,7 @@ const StudyInEu = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> WHEN TO
                         </span>
 
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>To Apply</strong>
                         </h2>
                         <br/>
@@ -907,7 +907,7 @@ const StudyInEu = () => {
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> ADMISSION
                         </span>
 
-                        <h2>
+                        <h2 className = "tw-text-left">
                           <strong>Results</strong>
                         </h2>
                         <br/>

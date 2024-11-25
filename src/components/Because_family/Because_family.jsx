@@ -31,7 +31,7 @@ const Because_family = () => {
     {
       id: 'service1',
       title: t('EU RESIDENCE CARD'),
-      subtitle: t('Family <strong>Reunification</strong>'),
+      subtitle: t('Family <br/><strong>Reunification</strong>'),
       text: t(''),
       textTwo: t(''),
       description: [
@@ -47,7 +47,7 @@ const Because_family = () => {
     {
       id: 'service2',
       title: t('SOFTWARE BASE SOLUTION'),
-      subtitle: t('Apply Online <strong>Now</strong>'),
+      subtitle: t('Apply Online <br/><strong>Now</strong>'),
       text: t(''),
       textTwo: t(''),
       description: [
@@ -63,7 +63,7 @@ const Because_family = () => {
     {
       id: 'service3',
       title: t('COMPLETE ONLINE PORTAL & APP BASE SOLUTION'),
-      subtitle: t('Relocating To') +  '<strong> ' + t('Sweden?') + '</strong>',
+      subtitle: t('Relocating To') +  '<strong><br/>' + t('Sweden?') + '</strong>',
       text: t(''),
       textTwo: t(''),
       description: [
@@ -79,7 +79,7 @@ const Because_family = () => {
     {
       id: 'service4',
       title: t('STEP-BY-STEP ASSISTANCE'),
-      subtitle: t('Departure-Arrival') +  '<strong>' + ' '+ t('Services') + '</strong>',
+      subtitle: t('Departure-Arrival') +  '<strong>' + '<br/> '+ t('Services') + '</strong>',
       text: t(''),
       textTwo: t(''),
       description: [
@@ -98,7 +98,7 @@ const Because_family = () => {
     {
       id: 'service5',
       title: t('WORK PERMIT & EXTENSIONS'),
-      subtitle: t('Applying For') + '<strong> ' + t('Work Permit?') + '</strong>',
+      subtitle: t('Applying For') + '<strong><br/>' + t('Work Permit?') + '</strong>',
       text: t('We will help you with preparing permit applications'),
       textTwo: t(''),
       description: [
@@ -111,7 +111,7 @@ const Because_family = () => {
     {
       id: 'service6',
       title: t('BUSINESS & INVESTMENT SOLUTIONS'),
-      subtitle: t('Business') +'<strong> ' + t('In Sweden') + '</strong>',
+      subtitle: t('Business') +'<strong> <br/>' + t('In Sweden') + '</strong>',
       text: t('If you are planning to invest in Sweden, you might need to apply for the residence permit'),
       textTwo: t(''),
       description: [

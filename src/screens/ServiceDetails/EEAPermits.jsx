@@ -189,7 +189,7 @@ const EEAPermits = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>EEA
                   </span>
-                  <h2>
+                  <h2 className = "tw-text-left">
                     <strong>Family Permit</strong>
                   </h2>
                   <br/>
@@ -231,7 +231,7 @@ const EEAPermits = () => {
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>HOW TO QUALIFY FOR THE
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>EEA Family Permit</strong>
                     </h2>
                     <br/>
@@ -249,7 +249,7 @@ const EEAPermits = () => {
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>WHO IS A
                       </span>
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>Family Member</strong>
                       </h2>
                       <br/>
@@ -268,7 +268,7 @@ const EEAPermits = () => {
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>EXTENDED
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>Family Member</strong>
                       </h2>
                       <br/>
@@ -288,7 +288,7 @@ const EEAPermits = () => {
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>DERIVATIVE
                       </span>
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>Right Of Residence</strong>
                       </h2>
                       <br/>
@@ -343,7 +343,7 @@ const EEAPermits = () => {
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>RETAINED
                       </span>
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>Right Of Residence</strong>
                       </h2>
 <br/>
@@ -360,7 +360,7 @@ const EEAPermits = () => {
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>YOU CAN RECEIVE A RETAINED
                       </span>
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>Right Of Residence In One Of The Following Ways</strong>
                       </h2>
                       <br/>
@@ -404,7 +404,7 @@ const EEAPermits = () => {
                         {' '}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>SPECIFIC REQUIREMENTS
                       </span>
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>In Cases Of Divorces</strong>
                       </h2>
                       <br/>

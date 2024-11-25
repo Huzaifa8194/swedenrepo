@@ -38,7 +38,13 @@ const ServiceCat = () => {
             <div className="section-title title-style-center_text">
               <div className="title-header">
                 <h5>What we do</h5>
-                <div style={{ color: "white", fontSize: "2.5em", fontWeight: "200" }}>
+                <div
+                  style={{
+                    color: "white",
+                    fontSize: "2.5em",
+                    fontWeight: "200",
+                  }}
+                >
                   We Provide Experts Create Great
                   <br />
                   Value for <strong>Visa Categories</strong>
@@ -63,16 +69,17 @@ const ServiceCat = () => {
                     </div>
                     <div className="featured-content">
                       <div className="featured-title">
-                        <h5>Skilled Worker Visa</h5>
+                        <h5>Asylum</h5>
                       </div>
                       <div className="featured-desc">
                         <p>
-                          For the persons whose jobs require a minimum work
-                          experience.
+                          You have to be in Sweden or on the Swedish border in
+                          order to apply for asylum and we will process it for
+                          you.
                         </p>
                       </div>
                       <div className="cmt-di_links">
-                        <a href="#" className="di_link">
+                        <a href="/asylum" className="di_link">
                           <i className="ti ti-angle-right"></i>
                         </a>
                         <span className="di_num">
@@ -102,7 +109,7 @@ const ServiceCat = () => {
                         </p>
                       </div>
                       <div className="cmt-di_links">
-                        <a href="#" className="di_link">
+                        <a href="/business-visit" className="di_link">
                           <i className="ti ti-angle-right"></i>
                         </a>
                         <span className="di_num">
@@ -132,7 +139,7 @@ const ServiceCat = () => {
                         </p>
                       </div>
                       <div className="cmt-di_links">
-                        <a href="#" className="di_link">
+                        <a href="/work-permit" className="di_link">
                           <i className="ti ti-angle-right"></i>
                         </a>
                         <span className="di_num">
@@ -153,16 +160,15 @@ const ServiceCat = () => {
                     </div>
                     <div className="featured-content">
                       <div className="featured-title">
-                        <h5>Green Card</h5>
+                        <h5>Citizenship</h5>
                       </div>
                       <div className="featured-desc">
                         <p>
-                          For the permanent residents visa documents issued
-                          under to immigration.
+                         People who have lived in sweden for a period of time can apply for citizenship.
                         </p>
                       </div>
                       <div className="cmt-di_links">
-                        <a href="#" className="di_link">
+                        <a href="/citizenship" className="di_link">
                           <i className="ti ti-angle-right"></i>
                         </a>
                         <span className="di_num">
@@ -192,7 +198,7 @@ const ServiceCat = () => {
                         </p>
                       </div>
                       <div className="cmt-di_links">
-                        <a href="#" className="di_link">
+                        <a href="/study-in-eu" className="di_link">
                           <i className="ti ti-angle-right"></i>
                         </a>
                         <span className="di_num">

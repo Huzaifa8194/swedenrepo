@@ -49,7 +49,7 @@ const Blog = () => {
                 <div className="title-header tw-text-center">
                   <span>{t('Blog Corner')}</span>
                   <h2 className="title">
-                    {t('In Your')} <strong>{t('Inbox News')}</strong>
+                    {t('In Your')} <br/><strong>{t('Inbox News')}</strong>
                   </h2>
                 </div>
               </div>

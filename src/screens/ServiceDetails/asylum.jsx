@@ -354,6 +354,7 @@ const ServiceDetails = () => {
                               className=" tw-w-full"
                               src={md2}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -454,6 +455,7 @@ const ServiceDetails = () => {
                               className=" tw-w-full"
                               src={cp1}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -598,6 +600,7 @@ const ServiceDetails = () => {
                               className=" tw-w-full"
                               src={bp2}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>

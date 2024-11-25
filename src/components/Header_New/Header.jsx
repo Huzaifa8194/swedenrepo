@@ -4,6 +4,8 @@ import Button from "../Button";
 import { useEffect, useState } from "react";
 import MobileHeader from "./MobileHeader";
 import { useLocation } from "react-router-dom";  // Import useLocation hook
+import LanguageSelector from "../language/LanguageSelector";
+import './style.css'; // Import the CSS file
 
 const Header = () => {
   const [isTop, setIsTop] = useState(true);
@@ -12,6 +14,8 @@ const Header = () => {
 
   const location = useLocation(); // Detect route changes
 
+
+  
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
@@ -31,42 +35,16 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
 
-  // Initialize Google Translate when script is added and on location change
-  useEffect(() => {
-    const loadGoogleTranslate = () => {
-      // If the script is not already loaded, load it
-      if (!document.querySelector("#google-translate-script")) {
-        const script = document.createElement("script");
-        script.id = "google-translate-script";
-        script.type = "text/javascript";
-        script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-        document.body.appendChild(script);
-      }
-
-      // Initialize Google Translate after script loads
-      window.googleTranslateElementInit = () => {
-        const existingTranslateElement = document.querySelector("#google_translate_element");
-        if (existingTranslateElement) {
-          existingTranslateElement.innerHTML = ''; // Clear previous instance
-        }
-
-        new window.google.translate.TranslateElement(
-          {
-            pageLanguage: "en",
-            layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: true,
-          },
-          "google_translate_element"
-        );
-      };
-    };
-
-    loadGoogleTranslate();
-  }, [location]); // Dependency on location ensures it reinitializes on route change
+ 
+  
+ 
 
   return (
     <>
+
+    
       {isBelow1300px ? (
         <MobileHeader />
       ) : (
@@ -88,18 +66,13 @@ const Header = () => {
                         Amiralsgatan 86E 214 37 Malmö, Sweden
                       </Typography>
                       {/* Google Translate container */}
-                      <div
-                        id="google_translate_element"
-                        style={{
-                          zIndex: 1000,
-                          width: "10px",
-                          height: "10px",
-                          color: "white",
-                        }}
-                      ></div>
+
+                    
+                      
+
                     </Flex>
                   </div>
-                  
+                
                 </Flex>
               </div>
 

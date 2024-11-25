@@ -29,15 +29,15 @@ const AboutUs = () => {
 
       <div className="">
         <section className="tw-bg-[#F5FAFF]">
-          <div className="container tw-py-14">
-            <div className="row">
+          <div className=" tw-py-14">
+            <div className="row 2xl:tw-pl-[15%] md:tw-pl-[10%] tw-pl-3 2xl:tw-pr-[15%] md:tw-pr-[10%] tw-pr-[3.5%] ">
               <div className="col-md-6">
                 <span className="tw-flex tw-items-center tw-gap-2">
                   <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                   {t('About Us')}
                 </span>
                 <h2>
-                  {t('Welcome To')} <strong>{t('SWEDEN RELOCATORS AB')}</strong>
+                  {t('Welcome To')} <br/><strong>{t('SWEDEN RELOCATORS AB')}</strong>
                 </h2>
 
                 <p className="tw-text-gray ">

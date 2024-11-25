@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Banner_Page from '../../components/Common/Banner_Page';
 import Navbar from '../../components/Header/Navbar';
 import Footer from '../../components/Footer/Footer';
-import Tabs from '../../components/Tabs';
+import Tabs from '../../components/Tabs2';
 import san from '../../assets/images/san.webp';
 import san2 from '../../assets/images/san2.webp';
 import p1 from '../../assets/images/p1.jpg';

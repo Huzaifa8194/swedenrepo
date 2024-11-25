@@ -14,6 +14,24 @@ import './style/main.css';
 import './style/megamenu.css';
 import './style/responsive.css';
 
+
+import asylumphoto from "../../assets/iconscout/asylum.png";
+import personnumberphoto from "../../assets/iconscout/personnummber.png";
+import businesspermit from "../../assets/iconscout/businesspermit.png";
+import citzenship from "../../assets/iconscout/citizenship.png";
+import eapermit from "../../assets/iconscout/eapermit.png";
+import parents from "../../assets/iconscout/parents.png";
+import marrigedivorce from "../../assets/iconscout/marrigedivorce.png";
+import companyreg from "../../assets/iconscout/companyreg.png";
+import houses from "../../assets/iconscout/houses.png";
+import relocation from "../../assets/iconscout/relocation.png";
+import appeals from "../../assets/iconscout/appeals.png";
+import investment from "../../assets/iconscout/investment.png";
+import directinvestment from "../../assets/iconscout/directinvestment.png";
+import DCI from "../../assets/iconscout/property.png";
+import goldenvisa from "../../assets/iconscout/goldenvisa.png";
+import cpr from "../../assets/iconscout/cpr.png";
+
 import { useEffect, useState } from 'react';
 
 const ProgressBar = ({ title, percentage }) => {
@@ -52,17 +70,27 @@ const SkillSection = () => {
                 <div className="ttm_single_image-wrapper">
                   <img
                     className="img-fluid"
-                    src="https://via.placeholder.com/275x530.jpg"
+                    src={houses}
+                    alt="single_01"
+                  />
+                </div>
+                <div className="ttm_single_image-wrapper tw-pt-8">
+                  <img
+                    className="img-fluid"
+                    src={cpr}
                     alt="single_01"
                   />
                 </div>
               </div>
+              
               <div className="cmt-box-col-wrapper">
+                
+                
                 {/* ttm_single_image-wrapper */}
                 <div className="ttm_single_image-wrapper pb-20">
                   <img
                     className="img-fluid"
-                    src="https://via.placeholder.com/270x200.jpg"
+                    src= {asylumphoto}
                     alt="single_02"
                   />
                 </div>
@@ -70,10 +98,11 @@ const SkillSection = () => {
                 <div className="ttm_single_image-wrapper">
                   <img
                     className="img-fluid"
-                    src="https://via.placeholder.com/270x310.jpg"
+                    src= {citzenship}
                     alt="single_03"
                   />
                 </div>
+                
               </div>
             </div>
             <div className="m-auto cmt-textcolor-white pt-15 pb-0 mt_190 pr-30 pl-30 z-index-1 cmt-bgcolor-skincolor">

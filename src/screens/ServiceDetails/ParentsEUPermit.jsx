@@ -270,7 +270,7 @@ const ParentsEUPermit = () => {
                       EU Residence Card for Dependent Parents and Other Family
                       Members under Directive 2004/38/EC
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>
                         Understanding the EU Residence Card for Family Members
                       </strong>
@@ -299,7 +299,7 @@ const ParentsEUPermit = () => {
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Who
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong> Qualifies as a Dependent Family Member? </strong>
   </h2>
                    
@@ -364,7 +364,7 @@ const ParentsEUPermit = () => {
 <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
 Key
 </span>
-<h2>
+<h2 className = "tw-text-left">
 <strong>    Conditions for Eligibility </strong>
 </h2>
                     {/* <div className="row tw-flex tw-items-center">
@@ -438,7 +438,7 @@ Key
                       Step 1:
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>
                         {" "}
                          Prepare Documentation for Dependency and
@@ -529,7 +529,7 @@ Key
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Step 2:
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong>Submit the Application </strong>
   </h2>
                     {/* <div className="row tw-flex tw-items-center">
@@ -602,7 +602,7 @@ Key
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Step 3:
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong>Migration Agency Review  </strong>
   </h2>
   <br/>
@@ -652,7 +652,7 @@ Key
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Step 4:
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong>   Decision and Residence Card Issuance</strong>
   </h2>
 
@@ -684,7 +684,7 @@ Key
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Specific Cases:
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong>    Requirements for Dependent Parents and
     Other Family Members </strong>
   </h2>
@@ -819,7 +819,7 @@ Key
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Maintenance
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong>Requirement for the EU Sponsor </strong>
   </h2>
 <br/>
@@ -878,7 +878,7 @@ Key
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Additional Considerations
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Timeliness of the Application</strong>
                     </h2>
 
@@ -952,7 +952,7 @@ Key
                       How Sweden Relocators Can Assist with EU Residence Card
                       Applications
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Eligibility Assessment</strong>
                     </h2>
                     <br/>
@@ -1003,7 +1003,7 @@ Key
                       Benefits of Our Service
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Experienced Guidance</strong>
                     </h2>
                     <br/>

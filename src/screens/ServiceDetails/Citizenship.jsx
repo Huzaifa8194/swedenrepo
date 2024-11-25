@@ -269,7 +269,7 @@ const Citizenship = () => {
                       and Waiting Times
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>
                         General Requirements for Swedish Citizenship
                       </strong>
@@ -375,6 +375,7 @@ const Citizenship = () => {
                               className=" tw-w-full"
                               src={cp1}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -425,7 +426,7 @@ const Citizenship = () => {
                       Specific Paths to Citizenship
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Citizenship for Nordic Citizens</strong>
                     </h2>
                  
@@ -456,6 +457,7 @@ const Citizenship = () => {
                               className=" tw-w-full"
                               src={cp2}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -505,7 +507,7 @@ const Citizenship = () => {
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Citizenship
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong>For EU/EEA Citizens </strong>
   </h2>
 
@@ -570,7 +572,7 @@ const Citizenship = () => {
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Citizenship for Individuals
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong>  With a Permanent Residence
     Permit </strong>
   </h2>
@@ -609,6 +611,7 @@ const Citizenship = () => {
                           className=" tw-w-full"
                           src={cp3}
                           alt=""
+                          style={{ maxWidth: "450px" }}
                         />
                       </div>
                     </div>
@@ -657,7 +660,7 @@ const Citizenship = () => {
           Specific Paths to Citizenship
         </span>
 
-        <h2>
+        <h2 className = "tw-text-left">
           <strong>
             Application Process for Swedish Citizenship
           </strong>
@@ -698,6 +701,7 @@ const Citizenship = () => {
                           className=" tw-w-full"
                           src={cp4}
                           alt=""
+                          style={{ maxWidth: "450px" }}
                         />
                       </div>
                     </div>
@@ -779,7 +783,7 @@ const Citizenship = () => {
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Waiting Time for
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong>Citizenship Applications </strong>
   </h2>
 
@@ -806,6 +810,7 @@ const Citizenship = () => {
                               className=" tw-w-full"
                               src={cp5}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -869,7 +874,7 @@ const Citizenship = () => {
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     How Sweden Relocators Can
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong> Assist with Your Citizenship
     Application </strong>
   </h2>
@@ -911,6 +916,7 @@ const Citizenship = () => {
                               className=" tw-w-full"
                               src={cp6}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -988,7 +994,7 @@ const Citizenship = () => {
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Why Choose 
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong>Sweden Relocators? </strong>
   </h2>
 <br/>
@@ -1055,7 +1061,7 @@ const Citizenship = () => {
                       A Selection of Prime Citizenship-by-Investment Programs
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>
                         Citizenship-by-Investment Programs Overview
                       </strong>
@@ -1077,6 +1083,7 @@ const Citizenship = () => {
                               className=" tw-w-full"
                               src={cp7}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -1345,7 +1352,7 @@ const Citizenship = () => {
                       Why Choose Citizenship by Investment?
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Benefits of Citizenship by Investment</strong>
                     </h2>
 
@@ -1420,7 +1427,7 @@ const Citizenship = () => {
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
     Why Work With
   </span>
-  <h2>
+  <h2 className = "tw-text-left">
     <strong>Sweden Relocators? </strong>
   </h2>
 

@@ -266,7 +266,7 @@ const WorkPermit = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Types of Work Permits in Sweden
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Overview of Work Permit Types</strong>
                     </h2>
 
@@ -285,6 +285,7 @@ const WorkPermit = () => {
                               className=" tw-w-full"
                               src={wp1}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -559,7 +560,7 @@ const WorkPermit = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Application Process and Waiting Times
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>
                         Overview of Application Process and Waiting Times
                       </strong>
@@ -586,6 +587,7 @@ const WorkPermit = () => {
                             className=" tw-w-full"
                             src={wp2}
                             alt=""
+                            style={{ maxWidth: "450px" }}
                           />
                         </div>
                       </div>
@@ -657,7 +659,7 @@ const WorkPermit = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Additional General Requirements for Work Permits
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Key General Requirements for Work Permits</strong>
                     </h2>
 
@@ -709,6 +711,7 @@ const WorkPermit = () => {
                               className=" tw-w-full"
                               src={wp3}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -726,7 +729,7 @@ const WorkPermit = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       How Sweden Relocators Can Assist You
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>
                         Comprehensive Support from Sweden Relocators
                       </strong>
@@ -751,6 +754,7 @@ const WorkPermit = () => {
                             className=" tw-w-full"
                             src={wp4}
                             alt=""
+                            style={{ maxWidth: "450px" }}
                           />
                         </div>
                       </div>

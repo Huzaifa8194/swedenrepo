@@ -311,8 +311,8 @@ const Student_assessments = () => {
       <section className=" ">
         <div className="container-fluid ">
           <div className="row g-5">
-            <div className="col-md-8    tw-py-10 tw-bg-white">
-              <div className="row tw-pt-6  md:tw-pl-32 tw-pl-3">
+            <div className="col-md-8    tw-py-12 tw-bg-white tw-text-justify">
+              <div className="row tw-pt-6  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                 <div className="col-lg-12">
                   {/* user info */}
 
@@ -328,7 +328,10 @@ const Student_assessments = () => {
                         Find Out Your Eligibility to Study in Sweden
                       </strong>
                     </h2>
-                    <h4>Who Should Use This Tool?</h4>
+                    <br />
+                    <strong className="tw-text-gray">
+                      Who Should Use This Tool?
+                    </strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
@@ -372,7 +375,22 @@ const Student_assessments = () => {
                       </li>
                     </ul>
 
-                    <h4>Why Use the Eligibility Tool? </h4>
+                    <br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Why
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Use the Eligibility Tool?
+                      </strong>
+                    </h2>
+                    <br/>
+
+
+                  
                     <p className="tw-text-gray">
                       This tool is designed to help you understand the
                       requirements and eligibility criteria for studying in
@@ -409,7 +427,7 @@ const Student_assessments = () => {
                         </p>
                       </li>
                     </ul>
-                    <h5>Important Note </h5>
+                    <h5 className="tw-text-gray italic">Important Note </h5>
                     <p className="tw-text-gray">
                       {" "}
                       This assessment is designed to guide you through the
@@ -419,7 +437,22 @@ const Student_assessments = () => {
                       universityadmissions.se website.
                     </p>
 
-                    <h4>Complete Study Permit and Relocation Support </h4>
+
+                    <br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Complete
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Study Permit and Relocation Support{" "}
+                      </strong>
+                    </h2>
+                    <br/>
+
+                    
 
                     <p className="tw-text-gray">
                       We offer end-to-end support for your study journey and
@@ -463,8 +496,23 @@ const Student_assessments = () => {
                       </li>
                     </ul>
 
-                    <h4>How We Use the Information</h4>
+                    <br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      How
+                    </span>
 
+                    <h2 className="tw-text-left">
+                      <strong>
+                      We Use the Information
+                      </strong>
+                    </h2>
+                    <br/>
+
+
+
+                   
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
@@ -497,7 +545,23 @@ const Student_assessments = () => {
                       </li>
                     </ul>
 
-                    <h4>Get Started </h4>
+
+                    <br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                    
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Get Started
+                      </strong>
+                    </h2>
+                    <br/>
+
+
+                   
                     <p className=" tw-text-gray">
                       Use the eligibility tool on our web portal or app to take
                       the first step toward your educational journey in Sweden.
@@ -561,20 +625,17 @@ const Student_assessments = () => {
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-                    <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
-                      <h5 className=" tw-text-black  ">
-                        Educational Background
-                      </h5>
-
-                      <h6 className=" tw-text-black ">
-                        {" "}
-                        <i class="fa fa-building"></i> Fill up your Educational
-                        Background.
-                      </h6>
-                    </div>
-
                     <form>
-                      <div className="row ">
+                      <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
+                        <span className=" tw-flex tw-items-center tw-gap-2">
+                          {" "}
+                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                          Fill in your
+                        </span>
+
+                        <h2 className="tw-text-left">
+                          <strong>Educational Background</strong>
+                        </h2>
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray "></label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
@@ -745,19 +806,22 @@ const Student_assessments = () => {
 
                             {/* user info */}
                             <div className=" tw-pt-8">
-                              <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
-                                <h5 className=" tw-text-black  ">
-                                Higher Secondary Education (Matriculation)
-                                </h5>
-
-                                <h6 className=" tw-text-black ">
-                                  {" "}
-                                  <i class="fa fa-building"></i> Fill up Higher Secondary Education (Matriculation).
-                                </h6>
-                              </div>
+                              
 
                               <form>
                                 <div className="row ">
+                                  <span className=" tw-flex tw-items-center tw-gap-2">
+                                    {" "}
+                                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                                    Fill in your
+                                  </span>
+
+                                  <h2 className="tw-text-left">
+                                    <strong>
+                                      Higher Secondary Education (Matriculation)
+                                    </strong>
+                                  </h2>
+
                                   <div className="col-md-6 tw-pt-4">
                                     <label className=" tw-text-sm  tw-text-gray "></label>
                                     <select
@@ -854,19 +918,25 @@ const Student_assessments = () => {
                     <>
                       {/* user info */}
                       <div className=" tw-pt-8">
-                      <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
-                                <h5 className=" tw-text-black  ">
-                                Higher Secondary Education (Matriculation)
-                                </h5>
-
-                                <h6 className=" tw-text-black ">
-                                  {" "}
-                                  <i class="fa fa-building"></i> Fill up Higher Secondary Education (Matriculation).
-                                </h6>
-                              </div>
+                       
+                        
 
                         <form>
-                          <div className="row ">
+                        <div className="row tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
+                           
+                        <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Higher Secondary Education (Matriculation)
+                    
+                      </strong>
+                    </h2>
+                           
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
@@ -941,19 +1011,26 @@ const Student_assessments = () => {
 
                       {/* user info */}
                       <div className=" tw-pt-8">
-                      <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
-                                <h5 className=" tw-text-black  ">
-                                English Proficiency Test
-                                </h5>
-
-                                <h6 className=" tw-text-black ">
-                                  {" "}
-                                  <i class="fa fa-building"></i> Fill up English Proficiency Test details.
-                                </h6>
-                              </div>
+                       
+                       
+                     
+                       
 
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                            
+                          <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      English Proficiency Test
+                      </strong>
+                    </h2>
+                            
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
@@ -986,19 +1063,25 @@ const Student_assessments = () => {
                     <>
                       {/* user info */}
                       <div className=" tw-pt-8">
-                      <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
-                                <h5 className=" tw-text-black  ">
-                                Higher Secondary Education (Matriculation)
-                                </h5>
 
-                                <h6 className=" tw-text-black ">
-                                  {" "}
-                                  <i class="fa fa-building"></i> Fill up Higher Secondary Education (Matriculation).
-                                </h6>
-                              </div>
+                    
+                       
 
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                            
+                          <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Higher Secondary Education (Matriculation)
+                      </strong>
+                    </h2>
+                            
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
@@ -1159,19 +1242,26 @@ const Student_assessments = () => {
 
                       {/* user info */}
                       <div className=" tw-pt-8">
-                      <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
-                                <h5 className=" tw-text-black  ">
-                                Higher Secondary Education (Matriculation)
-                                </h5>
 
-                                <h6 className=" tw-text-black ">
-                                  {" "}
-                                  <i class="fa fa-building"></i> Fill up Higher Secondary Education (Matriculation).
-                                </h6>
-                              </div>
+
+                    
+                       
 
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                          <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Higher Secondary Education (Matriculation)
+                      </strong>
+                    </h2>
+                            
+                            
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
@@ -1206,19 +1296,24 @@ const Student_assessments = () => {
                     <>
                       {/* user info */}
                       <div className=" tw-pt-8">
-                      <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
-                                <h5 className=" tw-text-black  ">
-                                Higher Secondary Education (Matriculation)
-                                </h5>
-
-                                <h6 className=" tw-text-black ">
-                                  {" "}
-                                  <i class="fa fa-building"></i> Fill up Higher Secondary Education (Matriculation).
-                                </h6>
-                              </div>
+                    
+                       
 
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                           
+                          <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Higher Secondary Education (Matriculation)
+                      </strong>
+                    </h2>
+                           
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
@@ -1478,21 +1573,24 @@ const Student_assessments = () => {
                         </form>
                       </div>
 
-                      {/* user info */}
+                      {/* user info */}  
                       <div className=" tw-pt-8">
-                      <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
-                                <h5 className=" tw-text-black  ">
-                                Higher Secondary Education (Matriculation)
-                                </h5>
-
-                                <h6 className=" tw-text-black ">
-                                  {" "}
-                                  <i class="fa fa-building"></i> Fill up Higher Secondary Education (Matriculation).
-                                </h6>
-                              </div>
+                        
 
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                           
+                          <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Higher Secondary Education (Matriculation)
+                      </strong>
+                    </h2>
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray "></label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
@@ -1534,7 +1632,7 @@ const Student_assessments = () => {
             </div>
 
             <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-              <div className="  md:tw-pr-28 tw-pr-4">
+              <div className="   md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
                 <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                   {data?.map((item, index) => {
                     return (

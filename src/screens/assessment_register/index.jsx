@@ -432,8 +432,8 @@ const Assessment_register = () => {
       <section className=" ">
         <div className="container-fluid ">
           <div className="row g-5">
-            <div className="col-md-8    tw-py-10 tw-bg-white">
-              <div className="row tw-pt-6  md:tw-pl-32 tw-pl-3">
+            <div className="col-md-8    tw-py-12 tw-bg-white tw-text-justify">
+              <div className="row tw-pt-6 2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                 <div className="col-lg-12">
                   <div>
                     <span className=" tw-flex tw-items-center tw-gap-2">
@@ -442,13 +442,14 @@ const Assessment_register = () => {
                       Business visa assessment
                     </span>
 
-                    <h2>
+                    <h2 className="tw-text-left">
                       <strong>
                         Find Out Your Eligibility for a Business or
                         Self-Employed Permit in Sweden
                       </strong>
                     </h2>
-                    <h4>Who Should Fill Out the Assessment Form?</h4>
+                    <br/>
+                    <strong className="tw-text-gray">Who Should Fill Out the Assessment Form?</strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
@@ -480,8 +481,23 @@ const Assessment_register = () => {
                       </li>
                     </ul>
 
-                    <h4>Why Complete the Assessment Form?</h4>
-                    <p>
+
+<br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Why
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Complete the Assessment Form?
+                      </strong>
+                    </h2>
+
+
+                   <br/>
+                    <p className="tw-text-gray">
                       Filling out the assessment form allows us to gather
                       essential details about:
                     </p>
@@ -516,7 +532,21 @@ const Assessment_register = () => {
                       </li>
                     </ul>
 
-                    <h4>How We Use the Information</h4>
+
+<br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      How
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      We Use the Information
+                      </strong>
+                    </h2>
+
+                   <br/>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
@@ -610,21 +640,26 @@ const Assessment_register = () => {
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-                    <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                      <h5 className=" tw-text-black  ">
-                        {" "}
-                        EDUCATIONAL & BUSINESS BACKGROUND
-                      </h5>
+                    <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow-lg tw-bg-white ">
+                     
+                     
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
 
-                      <h6 className=" tw-text-black ">
-                        {" "}
-                        <i class="fa fa-user"> </i>FILL UP THE EDUCATIONAL &
-                        BUSINESS BACKGROUND OF YOUR HOUSE
-                      </h6>
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Educational & Business Background
+                      </strong>
+                    </h2>
+                     
+                     
                     </div>
 
                     <form>
-                      <div className="row  g-3 pt-4 tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                      <div className="row  g-3 pt-4 tw-rounded-2xl px-4 tw-py-4 tw-shadow-lg tw-bg-white border-t-2 border-black">
                         <div className="col-md-6">
                           <select
                             className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
@@ -960,21 +995,26 @@ const Assessment_register = () => {
                     <>
                       {/* user info */}
                       <div className=" tw-pt-8">
-                        <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                          <h5 className=" tw-text-black  ">
-                            {" "}
-                            Business plan Assessment
-                          </h5>
+                        <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow-lg tw-bg-white ">
+                          
 
-                          <h6 className=" tw-text-black ">
-                            {" "}
-                            <i class="fa fa-user"> </i>Fill out your Business
-                            Plan Assessment.
-                          </h6>
+                         
+
+                          <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Business plan Assessment
+                      </strong>
+                    </h2>
                         </div>
 
                         <form>
-                          <div className="row  g-4 tw-pt-4 tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                          <div className="row  g-4 tw-pt-4 tw-rounded-2xl px-4 tw-py-4 tw-shadow-lg tw-bg-white border-t-2 border-black">
                             <div className="col-md-6">
                               <label className=" tw-text-sm  tw-text-gray "></label>
                               <select
@@ -1066,21 +1106,31 @@ const Assessment_register = () => {
                     <>
                       {/* user info */}
                       <div className=" tw-pt-8">
-                        <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                          <h5 className=" tw-text-black  ">
-                            {" "}
-                            Business plan Assessment
-                          </h5>
+                        <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow-lg tw-bg-white ">
+                          
+                          
+                        <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
 
-                          <h6 className=" tw-text-black ">
-                            {" "}
-                            <i class="fa fa-user"> </i>Fill out your Business
-                            Plan Assessment.
-                          </h6>
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Business plan Assessment
+                      </strong>
+                    </h2>
+
+
+
+
+                   
+                          
+                         
                         </div>
 
                         <form>
-                          <div className="row  g-4 tw-pt-4 tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                          <div className="row  g-4 tw-pt-4 tw-rounded-2xl px-4 tw-py-4 tw-shadow-lg tw-bg-white border-t-2 border-black">
                             <div className="col-md-6">
                               <label className=" tw-text-sm  tw-text-gray ">
                                 Do you know someone in Sweden who is willing to
@@ -1585,17 +1635,24 @@ const Assessment_register = () => {
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-                    <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                      <h5 className=" tw-text-black  "> Language skill</h5>
-
-                      <h6 className=" tw-text-black ">
-                        {" "}
-                        <i class="fa fa-user"> </i>FILL UP THE Language skill
-                      </h6>
-                    </div>
+                   
 
                     <form>
-                      <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                      
+                      <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow-lg tw-bg-white border-t-2 border-black">
+                       
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                     Language Skill
+                      </strong>
+                    </h2>
+                       
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray "></label>
                           <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
@@ -1639,13 +1696,13 @@ const Assessment_register = () => {
             </div>
 
             <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-              <div className="  md:tw-pr-28 tw-pr-4">
+              <div className="  md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
                 <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                   {data?.map((item, index) => {
                     return (
                       <Link
                         to={`${item?.Link}`}
-                        className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
+                        className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
                       >
                         <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
                           {item?.title}

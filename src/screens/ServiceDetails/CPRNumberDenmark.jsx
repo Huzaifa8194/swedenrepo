@@ -273,7 +273,7 @@ const CPRNumberDenmark = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Relocate to Denmark: Obtaining a CPR (Danish ID) Number
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> What is a CPR Number? </strong>
                     </h2>
                     <br></br>
@@ -300,7 +300,7 @@ const CPRNumberDenmark = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       What is
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>CPR Number Structure </strong>
                     </h2>
                     <br></br>
@@ -328,6 +328,7 @@ const CPRNumberDenmark = () => {
                               className=" tw-w-full"
                               src={cprimage}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -353,7 +354,7 @@ const CPRNumberDenmark = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Why & When?
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> CPR Number Requirement </strong>
                     </h2>
                     <br></br>
@@ -465,7 +466,7 @@ const CPRNumberDenmark = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       How to
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Obtain a CPR Number </strong>
                     </h2>
 
@@ -516,6 +517,7 @@ const CPRNumberDenmark = () => {
                               className=" tw-w-full"
                               src={cprimage2}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -596,7 +598,7 @@ const CPRNumberDenmark = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       A Smooth Transition
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>  to Denmark </strong>
                     </h2>
 
@@ -633,6 +635,7 @@ const CPRNumberDenmark = () => {
                               className=" tw-w-full"
                               src={cprimage3}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
@@ -650,7 +653,7 @@ const CPRNumberDenmark = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Our Services
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>For Relocation to Denmark </strong>
                     </h2>
                   
@@ -823,7 +826,7 @@ const CPRNumberDenmark = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Why Choose
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong> Sweden Relocators? </strong>
                     </h2>
                     <br></br>
@@ -837,6 +840,7 @@ const CPRNumberDenmark = () => {
                               className=" tw-w-full"
                               src={cprimage4}
                               alt=""
+                              style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>

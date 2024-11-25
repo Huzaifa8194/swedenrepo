@@ -324,8 +324,8 @@ const Visit_visa = () => {
       <section className="">
         <div className="container-fluid ">
           <div className="row   g-5">
-            <div className="col-md-8    tw-py-10 tw-bg-white">
-              <div className="row tw-pt-6  md:tw-pl-32 tw-pl-3">
+            <div className="col-md-8    tw-py-12 tw-bg-white tw-text-justify">
+              <div className="row tw-pt-6  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                 <div className="col-lg-12">
                   {/* user info */}
                   <div>
@@ -340,7 +340,8 @@ const Visit_visa = () => {
                         Find Out Your Eligibility for a Visit Visa to Sweden
                       </strong>
                     </h2>
-                    <h4>Who Should Use This Tool?</h4>
+                    <br/>
+                    <strong className = "tw-text-gray">Who Should Use This Tool?</strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
@@ -380,7 +381,23 @@ const Visit_visa = () => {
                       </li>
                     </ul>
 
-                    <h4>Why Use the Eligibility Tool? </h4>
+
+                    <br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Why
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Use the Eligibility Tool?
+                      </strong>
+                    </h2>
+                    <br/>
+
+
+                 
                     <p className="tw-text-gray">
                       This tool is designed to help you understand the
                       requirements and eligibility criteria for different types
@@ -418,7 +435,22 @@ const Visit_visa = () => {
                       </li>
                     </ul>
 
-                    <h4>Complete Schengen Visa File Preparation </h4>
+                    <br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Complete
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Schengen Visa File Preparation
+                      </strong>
+                    </h2>
+                    <br/>
+
+
+                    
 
                     <p className="tw-text-gray">
                       We handle the entire process of preparing your Schengen
@@ -458,7 +490,7 @@ const Visit_visa = () => {
                       </li>
                     </ul>
 
-                    <h4>File Delivery Options</h4>
+                    <strong className = "tw-text-gray">File Delivery Options</strong>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
@@ -483,8 +515,20 @@ const Visit_visa = () => {
                       </li>
                     </ul>
 
-                    <h4>How We Use the Information
-                    </h4>
+
+                    <br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      How
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      We Use the Information
+                      </strong>
+                    </h2>
+                    <br/>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
@@ -518,7 +562,23 @@ const Visit_visa = () => {
                       </li>
                     </ul>
 
-                    <h4>Get Started </h4>
+
+                    <br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                      Get Started
+                      </strong>
+                    </h2>
+                    <br/>
+
+
+                   
                     <p className=" tw-text-gray">
                     Use the eligibility tool to take the first step toward your visit to Sweden, whether it’s to see loved ones, attend a conference, or for a short-term business trip!
 
@@ -579,17 +639,23 @@ const Visit_visa = () => {
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-                  <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">Applicant Assessment</h5>
-
-                  <h6 className=" tw-text-black ">
-                    {" "}
-                    <i class="fa fa-user"> </i>FILL UP THE APPLICANT ASSESSMENT DETAILS 
-                  </h6>
-                </div>
+                 
 
                     <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                        
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
+
+                    <h2 className="tw-text-left">
+                      <strong>
+                     Applicant Assessment
+                      </strong>
+                    </h2> 
+                        
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
                             {" "}
@@ -1077,13 +1143,19 @@ const Visit_visa = () => {
                   {/* user info */}
                   <div className=" tw-pt-8">
                      <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">Family Document Details</h5>
+                 
+                     <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Fill in your
+                    </span>
 
-                  <h6 className=" tw-text-black ">
-                    {" "}
-                    <i class="fa fa-user"> </i>FILL UP THE FAMILY DOCUMENT DETAILS 
-                  </h6>
-                </div>
+                    <h2 className="tw-text-left">
+                      <strong>
+                     Family Document detail
+                      </strong>
+                    </h2>
+              
 
                     <div className="tw-flex tw-items-center tw-gap-2 tw-pt-3">
                       <input
@@ -1187,6 +1259,7 @@ const Visit_visa = () => {
                       </form>
                     )}
                   </div>
+                  </div>
 
                   <Button
                     onClick={openModal}
@@ -1200,7 +1273,7 @@ const Visit_visa = () => {
             </div>
 
             <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-              <div className="  md:tw-pr-28 tw-pr-4">
+              <div className="  md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
                 <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                   {data?.map((item, index) => {
                     return (

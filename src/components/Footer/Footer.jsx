@@ -22,8 +22,8 @@ const Footer = () => {
         {/*footer start*/}
         <footer className="footer tw-z-50   tw-bg-primary">
           <div className="first-footer tw-pt-12">
-            <div className="container tw-px-0">
-              <div className="row">
+            <div className="tw-pl-[3%] 2xl:tw-pl-[15%] md:tw-pl-[10%] 2xl:tw-pr-[15%] md:tw-pr-[10%] tw-px-0">
+              <div className="row ">
                 <div className="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
                   <div className="widget widget_text mr-25 res-991-mr-0">
                     <h5 className=" tw-text-white">{t('About Us')}</h5>
