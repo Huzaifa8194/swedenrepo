@@ -206,8 +206,8 @@ const StudyInEu = () => {
         <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
-              <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
-                <div className="  md:tw-pl-32 tw-pl-3">
+              <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
+                <div className="  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div className="row">
                     <div className="col-md-3">
                       <img src={flag} alt="" />
@@ -926,7 +926,7 @@ const StudyInEu = () => {
               </div>
 
               <div className="col-md-4  tw-pt-16   tw-bg-[#F5FAFF]  " style={{ position: 'sticky', top: '300px' }}>
-                <div className={`tw-pr-28 ${isSticky ? ' md:tw-fixed tw-flex-initial  tw-bottom-0  md:tw-w-[30%] tw-w-full' : 'tw-relative'} `}>
+                <div className={"md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative"}>
                   <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                     {data?.map((item, index) => {
                       return (
