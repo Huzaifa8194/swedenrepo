@@ -275,13 +275,7 @@ const WorkPermit = () => {
                     <br/>
 
                     <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                      <p className="tw-text-gray">
-                      Sweden offers a variety of work permits tailored to
-                      different professional and personal needs. Below are the
-                      main categories and their key requirements.
-                    </p>
-                      </div>
+                     
 
                       <div className="col-md-6">
                         <div className="row ">
@@ -294,6 +288,13 @@ const WorkPermit = () => {
                             />
                           </div>
                         </div>
+                      </div>
+                      <div className="col-md-6">
+                      <p className="tw-text-gray">
+                      Sweden offers a variety of work permits tailored to
+                      different professional and personal needs. Below are the
+                      main categories and their key requirements.
+                    </p>
                       </div>
                     </div>
 
