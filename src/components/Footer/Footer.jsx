@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="first-footer tw-pt-12">
             <div className="tw-pl-[3%] 2xl:tw-pl-[15%] md:tw-pl-[10%] 2xl:tw-pr-[15%] md:tw-pr-[10%] tw-px-0">
               <div className="row ">
-                <div className="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
+                <div className="col-xs-12  col-sm-6 col-md-6 col-lg-3 widget-area">
                   <div className="widget widget_text mr-25 res-991-mr-0">
                     <h5 className=" tw-text-white">{t('About Us')}</h5>
                     <hr className=" tw-border-blue tw-border-2   tw-opacity-80 m-0 tw-w-7" />
@@ -137,13 +137,13 @@ const Footer = () => {
                 <div className="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
                   <div className="widget widget_nav_menu clearfix">
                     <h5 className="tw-text-white">{t('Useful Links')}</h5>
-                    <hr className=" tw-border-blue tw-border-2   tw-opacity-80 m-0 tw-w-5" />
-                    <ul className="  p-0 tw-mt-6">
+                    <hr className=" tw-border-blue tw-border-2 tw-pb-4  tw-opacity-80 m-0 tw-w-5" />
+                    <ul className="  tw-pt-4">
                       <li className=" tw-flex tw-items-center  tw-gap-2">
                         <hr className=" tw-w-3 tw-opacity-75  tw-border-white  tw-border-2" />
                         <Link
                           to={"/about_us"}
-                          className=" tw-text-white tw-uppercase tw-font-light"
+                          className=" tw-text-white tw-uppercase tw-font-light "
                         >
                           {t('About US')}
                         </Link>
@@ -233,7 +233,7 @@ const Footer = () => {
                 <div className="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
                   <div className="widget widget-recent-post clearfix">
                     <h5 className="widget-title tw-text-white">{t('Media & News')}</h5>
-                    <hr className=" tw-border-blue tw-border-2   tw-opacity-80 m-0 tw-w-5" />
+                    {/* <hr className=" tw-border-blue tw-border-2   tw-opacity-80 m-0 tw-w-5" /> */}
                     <ul className=" p-0 tw-mt-6 ">
                       <li className=" tw-flex tw-gap-4 ">
                         <Link to="">
@@ -301,7 +301,7 @@ const Footer = () => {
                 <div className="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
                   <div className="widget contact_map clearfix">
                     <h5 className="widget-title tw-text-white">{t('Get in Touch')}</h5>
-                    <hr className=" tw-border-blue tw-border-2   tw-opacity-80 m-0 tw-w-5" />
+                    {/* <hr className=" tw-border-blue tw-border-2   tw-opacity-80 m-0 tw-w-5" /> */}
                     <div className=" tw-mt-5">
                       <img
                         width={257}

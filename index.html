@@ -1,15 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME - SWEDEN RELOCATORS</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Google Translate Script -->
-    <script id="google-translate-script" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script
+      id="google-translate-script"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
     <script>
       // Initialize Google Translate
       function googleTranslateElementInit() {
@@ -27,50 +39,59 @@
   </head>
   <body>
     <!-- Root Element for React -->
+
+    <style>
+      #goog-gt-tt {
+        display: none;
+      }
+
+      td {
+        display: none;
+      }
+
+      .goog-te-combo {
+        padding: 8px 12px !important;
+        border: 1px solid #ccc;
+        border-radius: 4px !important;
+        font-size: 14px !important;
+        font-family: "Roboto", sans-serif;
+        background-color: green !important;
+        color: #333;
+        cursor: pointer;
+      }
+      #google_translate_element {
+        box-sizing: border-box;
+        width: 100vw;
+        top: 0px;
+        left: 83%;
+      }
+
+      @media (max-width: 640px) {
+        #google_translate_element {
+          box-sizing: border-box;
+         
+          top: 0px;
+          left: 50%;
+          right: 60%;
+        }
+      }
+    </style>
+
     <div
-    id="google_translate_element"
-    style="display: block; position: relative; z-index: 2147483647;"
-  ></div>
-  
-
-  <style>
-
-#goog-gt-tt
-{
-  display: none;
-}
-
-td
-{
-  display: none;
-}
-
-
-.goog-te-combo {
-    padding: 8px 12px !important;
-    border: 1px solid #ccc;
-    border-radius: 4px !important;
-    font-size: 14px !important;
-    font-family: 'Roboto', sans-serif;
-    background-color: green !important;
-    color: #333;
-    cursor: pointer;
-  }
-    #google_translate_element {
-      top: 0px;
-      left: 83%;
-    }
-  
-  
-  
-  
-    
-  </style>
-
+      id="google_translate_element"
+      style="
+        display: inline-block;
+        position: relative;
+        z-index: 10000;
+        max-width: 0px;
+        margin: 0px;
+        padding: 0px;
+        max-height: 0px;
+      "
+    ></div>
     <div id="root"></div>
-    
+
     <!-- Google Translate Placeholder -->
-   
 
     <!-- Main Script -->
     <script type="module" src="/src/main.jsx"></script>

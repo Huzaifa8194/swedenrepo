@@ -26,6 +26,9 @@ import as3 from "../../assets/iconscout/as3.png";
 import as4 from "../../assets/iconscout/as4.png";
 
 
+
+import FeatureSection from "../../components/AssessFeatured";
+
 import camera from "../../assets/images/no-picture-taking.png";
 
 import { Link } from "react-router-dom";
@@ -530,7 +533,7 @@ const Assessment = () => {
                   </p>
                 </div>
 
-                <div className="row  g-4 tw-py-12">
+                {/* <div className="row  g-4 tw-py-12">
                   {data?.map((item, index) => {
                     return (
                       <>
@@ -559,7 +562,9 @@ const Assessment = () => {
                       </>
                     );
                   })}
-                </div>
+                </div> */}
+
+                <FeatureSection/>
 
                 <h6 className=" tw-text-gray tw-mb-3 text-xl"></h6>
 
