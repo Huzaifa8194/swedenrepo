@@ -11,6 +11,14 @@ import { useTranslation } from "react-i18next";
 
 import Header from "../../components/Header_New/Header";
 
+
+import { motion } from "framer-motion";
+import { imageVariants } from "../../utils/motion";
+import ap1 from "../../assets/iconscout/ap1.png";
+import ap2 from "../../assets/iconscout/ap2.png";
+import ap3 from "../../assets/iconscout/ap3.png";
+
+
 const AppealCases = () => {
   const { t } = useTranslation();
 
@@ -398,6 +406,24 @@ const AppealCases = () => {
                       threats in their home country based on:
                     </p>
 
+                     <div className="row tw-flex tw-items-center">
+                    
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={ap1}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                        
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-text-gray">Race</li>
                       <li className="tw-text-gray">
@@ -413,6 +439,9 @@ const AppealCases = () => {
                         Membership in a Particular Social Group
                       </li>
                     </ul>
+                        </div>
+                    </div>
+
 
                     <p className="tw-text-gray">
                       If groups or individuals in your home country threaten you
@@ -481,8 +510,26 @@ const AppealCases = () => {
                       </li>
                     </ul>
 
-                 
-                        <strong className=" m-0 tw-text-gray">
+
+                    <div className="row tw-flex tw-items-center">
+                     
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={ap2}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-md-6">
+                      <strong className=" m-0 tw-text-gray">
                           Step 2: Initial Meeting with Swedish Migration Agency
                         </strong>
                     
@@ -499,6 +546,11 @@ const AppealCases = () => {
                         </p>
                       </li>
                     </ul>
+                      </div>
+                    </div>
+
+                 
+                        
 
                
                         <strong className=" m-0 tw-text-gray">
@@ -559,7 +611,25 @@ const AppealCases = () => {
                     </ul>
 
                   
-                        <strong className=" m-0 tw-text-gray">
+
+                    <div className="row tw-flex tw-items-center">
+                     
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={ap3}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <strong className=" m-0 tw-text-gray">
                           Clarifying Grounds for Asylum
                         </strong>
                     
@@ -589,6 +659,9 @@ const AppealCases = () => {
                         </p>
                       </li>
                     </ul>
+                      </div>
+                    </div>
+                     
 
 
                     <br/>
