@@ -238,9 +238,9 @@ const Looking_for_housing = () => {
         backgroundImage={homeBgImage}
       />
       <div className=" tw-pt-8 tw-bg-[#F5FAFF]">
-        <section className=" tw-px-6 tw-bg-[#F5FAFF]">
-          <section className=" tw-rounded-2xl tw-mb-1 px-4 tw-py-4 tw-shadow tw-bg-white">
-            <div className="tw-w-full">
+        <section className=" tw-px-6 tw-bg-[#F5FAFF] 2xl:tw-pl-[14%] md:tw-pl-[10%] tw-pl-3 tw-pr-[3.5%] 2xl:tw-pr-[15%] md:tw-pr-[10%]">
+          <section className=" tw-rounded-2xl tw-mb-1 px-4 tw-py-4 tw-shadow tw-bg-white ">
+            <div className="tw-w-full ">
               <span className=" tw-flex tw-items-center tw-gap-2">
                 {" "}
                 <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
@@ -266,7 +266,7 @@ const Looking_for_housing = () => {
       
           <div className="row tw-gap-2 tw-justify-start tw-items-start">
             <div className="col-md-8 tw-mx-2">
-              <div className=" tw-bg-[#F5FAFF] tw-pt-8 tw-pl-10">
+              <div className=" tw-bg-[#F5FAFF] tw-pt-8 tw-pl-10 2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[0%]">
                 <form>
                   <div className="row g-3 tw-pt-6  tw-rounded-2xl px-4 tw-py-4 tw-shadow-lg tw-bg-white border-t-2 border-black">
                     <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
@@ -704,10 +704,10 @@ Skåne & Copenhagen.
               </div>
             </div>
 
-            <div className="col-md-4  row gap-3 tw-justify-center tw-text-center">
-              <div></div>
+            <div className="col-md-3    gap-3 tw-justify-center tw-text-center">
+              <div className="tw-pr-[22.5%]">
 
-              <div className=" tw-pt-10">
+              <div className=" tw-pt-6 tw-pb-0">
                 <Link
                   to="/available_housing"
                   className="
@@ -716,9 +716,10 @@ Skåne & Copenhagen.
           tw-text-white
           tw-px-6
           tw-py-3
+          tw-w-full
           tw-rounded-lg
           tw-font-semibold
-          tw-text-lg
+          tw-text-md
           tw-transition
           tw-duration-300
           hover:tw-bg-blue-100
@@ -729,7 +730,7 @@ Skåne & Copenhagen.
           hover:tw-shadow-xl
         "
                 >
-                  Find all Available Housing
+                  Available Housing
                 </Link>
               </div>
 
@@ -745,7 +746,7 @@ Skåne & Copenhagen.
                 <h7
                   className="tw-text-light"
                   style={{
-                    fontSize: "1.6em",
+                    fontSize: "1.3em",
                     color: "#1F2437",
                     fontWeight: "300",
                   }}
@@ -771,18 +772,20 @@ Skåne & Copenhagen.
                 <h7
                   className="tw-text-light"
                   style={{
-                    fontSize: "1.6em",
+                    fontSize: "1.3em",
                     color: "#1F2437",
                     fontWeight: "300",
                   }}
                 >
-                  Your Ideal Rental Is Just a Few Clicks Away
+                  Your Ideal Rental 
                 </h7>
                 <p>
                   Enter your details, and we’ll present rental homes that match
                   your criteria. Finding the perfect place has never been
                   easier.
                 </p>
+              </div>
+
               </div>
             </div>
           </div>

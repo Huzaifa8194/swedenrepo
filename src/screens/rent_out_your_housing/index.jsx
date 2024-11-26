@@ -38,9 +38,9 @@ const Rent_out_your_housing = () => {
         backgroundImage={homeBgImage}
       />
       <section className=" md:tw-pt-8 tw-pt-8   px-4 tw-py-4 tw-shadow-2xl tw-bg-[#F5FAFF] ">
-        <section className="tw-w-full  2xl:tw-pl-[14%] md:tw-pl-[10%] tw-pl-3 tw-pr-[3.5%] 2xl:tw-pr-[15%] md:tw-pr-[10%]">
-          <div className="   px-4 tw-py-4  tw-bg-[#F5FAFF] ">
-            <div className="row tw-py-8 tw-bg-white tw-rounded-2xl tw-shadow-lg">
+        <section className="tw-w-full tw-px-8  2xl:tw-pl-[14%] md:tw-pl-[10%] tw-pl-3 tw-pr-[3.5%] 2xl:tw-pr-[15%] md:tw-pr-[10%]">
+          <div className="    px-10 tw-py-4  tw-bg-[#F5FAFF] ">
+            <div className="tw-px-8 tw-py-8 tw-bg-white tw-rounded-2xl tw-shadow-lg">
               <span className=" tw-flex tw-items-center tw-gap-2">
                 {" "}
                 <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
@@ -67,7 +67,7 @@ const Rent_out_your_housing = () => {
         <div className="container-fluid  tw-px-4 ">
           <div className="row tw-justify-left  tw-gap-5 tw-items-start ">
             <div className="col-md-8 ">
-              <div className="  tw-pt-8 tw-pl-10   2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
+              <div className="  tw-pt-8 tw-pl-10   2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[0%]">
                 <form>
                   <div className="row g-3 tw-pt-6  tw-rounded-2xl px-4 tw-py-4 tw-shadow-lg tw-bg-white border-t-2 border-black">
                     <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
@@ -796,8 +796,8 @@ Contract Details                      </h7>
               </div>
             </div>
 
-            <div className="col-md-2   row gap-3 tw-ml-12 tw-justify-center tw-text-center md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4">
-              <div></div>
+            <div className="col-md-3    gap-3 tw-justify-center tw-text-center">
+              <div className="tw-pr-[22.5%]">
 
               <img
                 src={rentimage1}
@@ -811,7 +811,7 @@ Contract Details                      </h7>
                 <h7
                   className="tw-text-light"
                   style={{
-                    fontSize: "1.6em",
+                    fontSize: "1.3em",
                     color: "#1F2437",
                     fontWeight: "300",
                     
@@ -839,7 +839,7 @@ Contract Details                      </h7>
                 <h7
                   className="tw-text-light"
                   style={{
-                    fontSize: "1.6em",
+                    fontSize: "1.3em",
                     color: "#1F2437",
                     fontWeight: "300",
                   }}
@@ -865,7 +865,7 @@ Contract Details                      </h7>
                 <h7
                   className="tw-text-light"
                   style={{
-                    fontSize: "1.6em",
+                    fontSize: "1.3em",
                     color: "#1F2437",
                     fontWeight: "300",
                   }}
@@ -891,7 +891,7 @@ Contract Details                      </h7>
                 <h7
                   className="tw-text-light"
                   style={{
-                    fontSize: "1.6em",
+                    fontSize: "1.3em",
                     color: "#1F2437",
                     fontWeight: "300",
                   }}
@@ -904,6 +904,7 @@ Contract Details                      </h7>
                   started quickly, so you can start earning from your space
                   without the stress.
                 </p>
+              </div>
               </div>
             </div>
           </div>
