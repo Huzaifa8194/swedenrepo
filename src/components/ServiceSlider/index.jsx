@@ -2,6 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import servicebanner1 from "../../assets/iconscout/servicebanner1.png";
 import servicebanner2 from "../../assets/iconscout/servicebanner_2.png";
+import video1 from '../../assets/images/hero_video.mp4';
+import VideoPlayer from '../videoPlayer';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './style/bootstrap.min.css';
@@ -21,14 +23,14 @@ const slides = [
   {
     title: "TRAVELS IMMIGARTATION & VISA",
     subtitle: "World Brilliant Student Immigration & Visa Company",
-    image: servicebanner1,
+    image: video1,
     buttonLabel: "Book a consultation!",
     buttonLabel2: "Contact Us",
   },
   {
     title: "Welcome To The Fastest Way",
     subtitle: "Get A Visa & Immigration",
-    image: servicebanner2,
+    image: video1,
     buttonLabel: "Book a consultation!",
     buttonLabel2: "Contact Us",
   },
@@ -51,6 +53,7 @@ const ServiceSlider = () => {
     <Slider {...settings}>
       {slides.map((slide, index) => (
         <div key={index} className="slider-slide" style={{ position: 'relative' }}>
+           <VideoPlayer src={video1} className = "slider-image"/>
           <img src={slide.image} alt={`Slide ${index + 1}`} className="slider-image" />
           <div className="slider-content">
             <h3 className="slider-title">{slide.title}</h3>

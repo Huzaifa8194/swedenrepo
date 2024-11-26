@@ -37,10 +37,10 @@ const Rent_out_your_housing = () => {
         )}
         backgroundImage={homeBgImage}
       />
-      <section className=" md:tw-pt-8 tw-pt-8 tw-rounded-2xl  px-4 tw-py-4 tw-shadow-2xl tw-bg-[#F5FAFF]">
-        <section className="tw-w-full">
-          <div className=" tw-rounded-2xl  px-4 tw-py-4 tw-shadow-lg tw-bg-white">
-            <div className="row tw-py-8 ">
+      <section className=" md:tw-pt-8 tw-pt-8   px-4 tw-py-4 tw-shadow-2xl tw-bg-[#F5FAFF] ">
+        <section className="tw-w-full  2xl:tw-pl-[14%] md:tw-pl-[10%] tw-pl-3 tw-pr-[3.5%] 2xl:tw-pr-[15%] md:tw-pr-[10%]">
+          <div className="   px-4 tw-py-4  tw-bg-[#F5FAFF] ">
+            <div className="row tw-py-8 tw-bg-white tw-rounded-2xl tw-shadow-lg">
               <span className=" tw-flex tw-items-center tw-gap-2">
                 {" "}
                 <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
@@ -67,7 +67,7 @@ const Rent_out_your_housing = () => {
         <div className="container-fluid  tw-px-4 ">
           <div className="row tw-justify-left  tw-gap-5 tw-items-start ">
             <div className="col-md-8 ">
-              <div className="  tw-pt-8 tw-pl-10  ">
+              <div className="  tw-pt-8 tw-pl-10   2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                 <form>
                   <div className="row g-3 tw-pt-6  tw-rounded-2xl px-4 tw-py-4 tw-shadow-lg tw-bg-white border-t-2 border-black">
                     <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
@@ -703,8 +703,8 @@ Contract Details                      </h7>
 
                     </div>
 
-                    <div className="row   tw-rounded-md  tw-pt-10 tw-pb-4  tw-bg-white ">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                    <div className="row   tw-rounded-md  tw-pt-10 tw-pb-4  tw-bg-white " >
+                      <span className=" tw-flex tw-items-center tw-justify-ns tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                         Fill out your bank details.
@@ -796,17 +796,17 @@ Contract Details                      </h7>
               </div>
             </div>
 
-            <div className="col-md-4  row gap-3 tw-justify-center tw-text-center">
+            <div className="col-md-2   row gap-3 tw-ml-12 tw-justify-center tw-text-center md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4">
               <div></div>
 
               <img
                 src={rentimage1}
-                className=" tw-rounded-3xl tw-w-full tw-mt-14 tw-bg-white tw-shadow-lg "
-
+                className=" tw-rounded-3xl tw-w-full tw-mt-14 tw-bg-white tw-shadow-lg   "
+              
                 // keeps image fixed at the top of its container while scrolling
               />
 
-              <div className="">
+              <div className="" >
                 {" "}
                 <h7
                   className="tw-text-light"
@@ -814,6 +814,7 @@ Contract Details                      </h7>
                     fontSize: "1.6em",
                     color: "#1F2437",
                     fontWeight: "300",
+                    
                   }}
                 >
                   Maximize Your Property’s Potential
@@ -829,11 +830,11 @@ Contract Details                      </h7>
               <img
                 src={rentimage2}
                 className=" tw-rounded-3xl tw-w-full tw-mt-14 tw-bg-white tw-shadow-lg "
-
+             
                 // keeps image fixed at the top of its container while scrolling
               />
 
-              <div className="">
+              <div className=""  >
                 {" "}
                 <h7
                   className="tw-text-light"
@@ -855,11 +856,11 @@ Contract Details                      </h7>
               <img
                 src={rentimage3}
                 className=" tw-rounded-3xl tw-w-full tw-mt-14 tw-bg-white tw-shadow-lg "
-
+              
                 // keeps image fixed at the top of its container while scrolling
               />
 
-              <div className="">
+              <div className=""  >
                 {" "}
                 <h7
                   className="tw-text-light"
@@ -881,11 +882,11 @@ Contract Details                      </h7>
               <img
                 src={rentimage4}
                 className=" tw-rounded-3xl tw-w-full tw-mt-14 tw-bg-white tw-shadow-lg "
-
+                
                 // keeps image fixed at the top of its container while scrolling
               />
 
-              <div className="">
+              <div className=""  >
                 {" "}
                 <h7
                   className="tw-text-light"

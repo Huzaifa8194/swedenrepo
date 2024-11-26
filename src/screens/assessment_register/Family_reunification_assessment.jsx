@@ -503,7 +503,7 @@ const Family_reunification_assessment = () => {
                         
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                            
+                          Are you EU Citizen?
                           </label>
                           <select
                             name="location"
@@ -520,7 +520,8 @@ const Family_reunification_assessment = () => {
                         {location === "yes" ? (
                           <div className="col-md-12 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                             
+                            Are you already moved to Sweden or planning to
+                            move in coming 90 Days Period?
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option value=""> Are you already moved to Sweden or planning to
@@ -535,7 +536,7 @@ const Family_reunification_assessment = () => {
                           <>
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
-                               
+                              Which Citizenship you have?
                               </label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option value=""> Which Citizenship you have?</option>
@@ -572,7 +573,8 @@ const Family_reunification_assessment = () => {
 
                             <div className="col-md-12 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
-                                
+                              Do you have permanent Residence permit from
+                              below mentioned countries?
                               </label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option value="">Do you have permanent Residence permit from
@@ -612,7 +614,7 @@ const Family_reunification_assessment = () => {
 
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                           
+                          Do you have valid Personnummer in Sweden?
                           </label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                             <option value=""> Do you have valid Personnummer in Sweden?</option>
@@ -622,7 +624,7 @@ const Family_reunification_assessment = () => {
                         </div>
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                            
+                          Did you applied for Personnummer and got rejected?
                           </label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                             <option>Did you applied for Personnummer and got rejected?</option>
@@ -633,7 +635,8 @@ const Family_reunification_assessment = () => {
 
                         <div className="col-md-12 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                            
+                          Do you have your own Apartment in Sweden OR do you
+                          have first hand rental apartment?
                           </label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                             <option>Do you have your own Apartment in Sweden OR do you
@@ -645,7 +648,7 @@ const Family_reunification_assessment = () => {
 
                         <div className="col-md-12 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                           
+                          Are you planning to stay permanently in Sweden?
                           </label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                             <option value=""> Are you planning to stay permanently in Sweden?</option>
@@ -655,7 +658,7 @@ const Family_reunification_assessment = () => {
                         </div>
                         <div className="col-md-12 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                            
+                          Do you have full time work in Sweden or Denmark?
                           </label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                             <option value="">Do you have full time work in Sweden or Denmark?</option>
@@ -665,7 +668,8 @@ const Family_reunification_assessment = () => {
                         </div>
                         <div className="col-md-12 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                           
+                          Did you applied for your family visa and got
+                          rejected?
                           </label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                             <option> Did you applied for your family visa and got
@@ -710,7 +714,7 @@ const Family_reunification_assessment = () => {
                         <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              
+                            Did your Spouse have valid National Passport?
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Did your Spouse have valid National Passport?</option>
@@ -720,7 +724,7 @@ const Family_reunification_assessment = () => {
                           </div>
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              
+                            Did your Children have valid national passport?
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Did your Children have valid national passport?</option>
@@ -730,7 +734,8 @@ const Family_reunification_assessment = () => {
                           </div>
                           <div className="col-md-8 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              
+                            Did your spouse have marriage certificate and is
+                            your marriage registered in your home country?
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Did your spouse have marriage certificate and is
@@ -741,7 +746,8 @@ const Family_reunification_assessment = () => {
                           </div>
                           <div className="col-md-12 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                             
+                            If you are not EU citizen, do you have birth
+                            certificate of your children?
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option> If you are not EU citizen, do you have birth

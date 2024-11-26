@@ -6,7 +6,7 @@ import { GoTriangleRight } from 'react-icons/go';
 import Accordion from '../../components/Accordion/Accordion';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
-
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import Header from '../../components/Header_New/Header';
 
 
@@ -410,11 +410,17 @@ const FAQs = () => {
   };
   return (
     <>
-      <Navbar />
-      <Banner_Page title={'FAQs'} />
+      <Header />
+      <Banner_Page
+        highlightText={("FAQs")}
+        regularText={(
+          "Got Questions? We’ve Got Answers – Explore Our FAQs."
+        )}
+        backgroundImage={homeBgImage}
+      />
 
-      <section className=" tw-mt-44">
-        <div className="container tw-py-5">
+      <section className=" tw-mt-12">
+        <div className="container tw-pb-5">
           <div className="row g-5">
             <div className="col-md-7">
               <div>
@@ -437,16 +443,16 @@ const FAQs = () => {
                 <form className=" tw-pt-2">
                   <div className="row g-2">
                     <div className="col-md-12">
-                      <Input placeholder={'Your Name'} className={' tw-bg-white  tw-p-3.5 tw-rounded-none  tw-w-full'} />
+                      <Input placeholder={'Your Name'} label={'Your Name'}  className={' tw-bg-white  tw-p-3.5 tw-rounded  tw-w-full'} />
                     </div>
                     <div className="col-md-12">
-                      <Input placeholder={'Email Id'} className={' tw-bg-white tw-p-3.5 tw-rounded-none  tw-w-full'} />
+                      <Input placeholder={'Email Id'} label={'Email'}  className={' tw-bg-white tw-p-3.5 tw-rounded  tw-w-full'} />
                     </div>
                     <div className="col-md-12">
-                      <Input placeholder={'Cell phone'} className={' tw-bg-white tw-p-3.5 tw-rounded-none  tw-w-full'} />
+                      <Input placeholder={'Cell phone'} label={'Cellphone'} className={' tw-bg-white tw-p-3.5 tw-rounded  tw-w-full'} />
                     </div>
                     <div className="col-md-12 tw-pt-2">
-                      <textarea rows={6} className="  tw-w-full  tw-outline-none tw-bg-white   tw-p-3.5 " placeholder="Message"></textarea>
+                      <textarea rows={6} className="  tw-w-full  tw-outline-none tw-bg-white tw-rounded  tw-p-3.5 " placeholder="Message"></textarea>
                     </div>
                     <div className="col-md-12">
                       <Button label={'Submit Request'} className={' tw-rounded-full  tw-bg-blue tw-text-white tw-w-full tw-py-3'} />

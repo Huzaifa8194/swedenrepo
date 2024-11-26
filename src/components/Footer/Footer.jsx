@@ -52,7 +52,7 @@ const Footer = () => {
                     </div>
 
                     <hr className=" tw-border  tw-border-gray" />
-                    <div className=" ">
+                    <div className=" tw-flex tw-justify-center">
                       <ul className="list-inline p-0  tw-flex tw-gap-2 cmt-textcolor-skincolor">
                         <li className="social-facebook tw-w-12 tw-h-9 tw-flex tw-justify-center tw-items-center ">
                           <Link

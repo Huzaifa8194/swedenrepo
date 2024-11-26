@@ -637,7 +637,7 @@ const Student_assessments = () => {
                           <strong>Educational Background</strong>
                         </h2>
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray "></label>
+                          <label className=" tw-text-sm  tw-text-gray ">Country</label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                             <option>Country</option>
                             <option value="AF">Afghanistan</option>
@@ -753,7 +753,7 @@ const Student_assessments = () => {
                         </div>
 
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray "></label>
+                          <label className=" tw-text-sm  tw-text-gray ">Select Level of Studies</label>
                           <select
                             name="chooseType"
                             value={chooseType}
@@ -779,7 +779,7 @@ const Student_assessments = () => {
                         </div>
 
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray "></label>
+                          <label className=" tw-text-sm  tw-text-gray ">Total no of years of study</label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                             <option>Total no of years of study</option>
                             <option value="10 Year">10 Year</option>
@@ -823,7 +823,7 @@ const Student_assessments = () => {
                                   </h2>
 
                                   <div className="col-md-6 tw-pt-4">
-                                    <label className=" tw-text-sm  tw-text-gray "></label>
+                                    <label className=" tw-text-sm  tw-text-gray "> English Language Proficiency Test</label>
                                     <select
                                       onChange={handleSelectChange}
                                       name="others"
@@ -855,7 +855,7 @@ const Student_assessments = () => {
                                   {others === "IELTS" ? (
                                     <>
                                       <div className="col-md-6 tw-pt-4">
-                                        <label className=" tw-text-sm  tw-text-gray "></label>
+                                        <label className=" tw-text-sm  tw-text-gray ">Over all IELTS Score</label>
                                         <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                           <option>Over all IELTS Score</option>
 
@@ -938,7 +938,7 @@ const Student_assessments = () => {
                     </h2>
                            
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Subject</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Subject</option>
 
@@ -995,7 +995,7 @@ const Student_assessments = () => {
                               </select>
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Grade</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Grade</option>
                                 <option value="A">A</option>
@@ -1032,7 +1032,7 @@ const Student_assessments = () => {
                     </h2>
                             
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray "> English Language Proficiency Test</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>
                                   English Language Proficiency Test
@@ -1083,7 +1083,7 @@ const Student_assessments = () => {
                     </h2>
                             
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Subject</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Subject</option>
 
@@ -1117,7 +1117,7 @@ const Student_assessments = () => {
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Percentage</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Percentage</option>
                                 <option value="33">33</option>
@@ -1141,7 +1141,7 @@ const Student_assessments = () => {
                               </select>
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Select Grade</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Select Grade</option>
                                 <option value="A">A</option>
@@ -1168,7 +1168,7 @@ const Student_assessments = () => {
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Subject</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Subject</option>
 
@@ -1202,7 +1202,7 @@ const Student_assessments = () => {
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Percentage</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Percentage</option>
                                 <option value="33">33</option>
@@ -1226,7 +1226,7 @@ const Student_assessments = () => {
                               </select>
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Select Grade</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Select Grade</option>
                                 <option value="A">A</option>
@@ -1263,7 +1263,7 @@ const Student_assessments = () => {
                             
                             
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">English Language Proficiency Test</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>
                                   {" "}
@@ -1315,7 +1315,7 @@ const Student_assessments = () => {
                     </h2>
                            
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Subject</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Subject</option>
 
@@ -1349,7 +1349,7 @@ const Student_assessments = () => {
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Select Percentage</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Select Percentage</option>
                                 <option value="33">33</option>
@@ -1373,7 +1373,7 @@ const Student_assessments = () => {
                               </select>
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Select Grade</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Select Grade</option>
                                 <option value="A">A</option>
@@ -1400,7 +1400,7 @@ const Student_assessments = () => {
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Subject</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Subject</option>
 
@@ -1434,7 +1434,7 @@ const Student_assessments = () => {
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Select Percentage</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Select Percentage</option>
                                 <option value="33">33</option>
@@ -1458,7 +1458,7 @@ const Student_assessments = () => {
                               </select>
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Select Grade</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Select Grade</option>
                                 <option value="A">A</option>
@@ -1485,7 +1485,7 @@ const Student_assessments = () => {
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Subject</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Subject</option>
 
@@ -1535,7 +1535,7 @@ const Student_assessments = () => {
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Select Percentage</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Select Percentage</option>
                                 <option value="33">33</option>
@@ -1559,7 +1559,7 @@ const Student_assessments = () => {
                               </select>
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray ">Select Grade</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>Select Grade</option>
                                 <option value="A">A</option>
@@ -1592,7 +1592,7 @@ const Student_assessments = () => {
                       </strong>
                     </h2>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
+                              <label className=" tw-text-sm  tw-text-gray "> English Language Proficiency Test</label>
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                 <option>
                                   {" "}

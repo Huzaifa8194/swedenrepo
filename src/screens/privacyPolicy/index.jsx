@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Banner_Page from '../../components/Common/Banner_Page';
 import Navbar from '../../components/Header/Navbar';
 import Footer from '../../components/Footer/Footer';
-
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
 import Header from '../../components/Header_New/Header';
 
@@ -12,11 +12,17 @@ const PrivacyPolicy = () => {
   }, []);
   return (
     <>
-      <Navbar />
-      <Banner_Page title={'PRIVACY POLICY'} />
+      <Header />
+      <Banner_Page
+        highlightText={("Privacy Policy")}
+        regularText={(
+          "Your Privacy Matters – Explore Our Policies for Transparency and Trust."
+        )}
+        backgroundImage={homeBgImage}
+      />
 
-      <section className=" tw-mt-44">
-        <div className="container tw-py-5">
+      <section className=" tw-mt-12">
+        <div className="container tw-pb-5">
           <div className="row">
             <div className="col-md-12">
               <h3>Who we are</h3>

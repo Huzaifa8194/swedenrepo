@@ -659,7 +659,7 @@ const Visit_visa = () => {
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
                             {" "}
-                            
+                            Do you have National Passport?
                           </label>
                           <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                             <option>Do you have National Passport? </option>
@@ -671,7 +671,7 @@ const Visit_visa = () => {
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
                             {" "}
-                           
+                            Did you visit Schengen Countries before?
                           </label>
 
                           <select
@@ -690,7 +690,7 @@ const Visit_visa = () => {
                           <>
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
-                                
+                              How many time you visited the Schengen States?
                               </label>
 
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
@@ -705,7 +705,7 @@ const Visit_visa = () => {
 
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
-                              
+                              Visiting Family Friend
                               </label>
 
                               <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
@@ -731,7 +731,7 @@ const Visit_visa = () => {
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
                             {" "}
-                            
+                            Have you got any refusal for Schengen Countries?
                           </label>
 
                           <select
@@ -787,7 +787,8 @@ const Visit_visa = () => {
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
                             {" "}
-                           
+                            Is any of your close relative living in Schengen
+                            Countries and you want to visit him/her?
                           </label>
 
                           <select
@@ -806,7 +807,8 @@ const Visit_visa = () => {
                         {residencePermit === "yes" ? (
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                             
+                            Relation with the EU person( Like Parents,
+                              Siblings, Family friend)
                             </label>
 
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
@@ -826,7 +828,8 @@ const Visit_visa = () => {
 
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                          
+                          Are you dependent on the person who is living in
+                            Schengen Countries?
                           </label>
                           <select
                             name="depents"
@@ -864,7 +867,8 @@ const Visit_visa = () => {
                         ) : null}
                         <div className="col-md-12 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                           
+                          Do you have an invitation from any Individual
+                          Business Group, Company, Organisation?
                           </label>
                           <select
                             name="separateAssets"
@@ -902,7 +906,7 @@ const Visit_visa = () => {
                         ) : null}
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                           
+                          Can you support yourself for this trip?
                           </label>
                           <select
                             name="investmentAmount"
@@ -918,7 +922,7 @@ const Visit_visa = () => {
                         {investmentAmount === "no" ? (
                           <div className="col-md-3 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              
+                            Funded by Organizer?
                             </label>
                             <select
                               name="coordinationNumber"
@@ -957,7 +961,7 @@ const Visit_visa = () => {
 
                         <div className="col-md-6 tw-pt-4">
                           <label className=" tw-text-sm  tw-text-gray ">
-                            
+                          Choose Employee Type?
                           </label>
                           <select
                             name="personnummer"
@@ -980,17 +984,17 @@ const Visit_visa = () => {
                             <div className="row">
                               <div className="col-md-3 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  t
+                                Proof of enrolment
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option value="">Proof of enrolmen</option>
+                                  <option value="">Proof of enrolment</option>
                                   <option value="yes">Yes</option>
                                   <option value="no">No</option>
                                 </select>
                               </div>
                               <div className="col-md-3 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  
+                                Invitation for visit
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                   <option value="">Invitation for visit</option>
@@ -1001,7 +1005,8 @@ const Visit_visa = () => {
 
                               <div className="col-md-6 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                 
+                                No objection letter from
+                                School/College/University
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                   <option value=""> No objection letter from
@@ -1019,7 +1024,7 @@ const Visit_visa = () => {
                             <div className="row">
                               <div className="col-md-4 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  
+                                Registration Certificate
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                   <option value="">Registration Certificate</option>
@@ -1029,7 +1034,7 @@ const Visit_visa = () => {
                               </div>
                               <div className="col-md-4 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  
+                                Available Assets
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                   <option value="">Available Assets</option>
@@ -1050,7 +1055,7 @@ const Visit_visa = () => {
 
                               <div className="col-md-4 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  
+                                Tax Returns of 2 to 3 Years
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                   <option value="">Tax Returns of 2 to 3 Years</option>
@@ -1087,17 +1092,17 @@ const Visit_visa = () => {
                             <div className="row">
                               <div className="col-md-3 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  
+                                Nature of Job
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option value="">Nature of Jobn</option>
+                                  <option value="">Nature of Job</option>
                                   <option value="Permanent">Permanent</option>
                                   <option value="Temporary">Temporary</option>
                                 </select>
                               </div>
                               <div className="col-md-3 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  
+                                Monthly Salary
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                   <option value="">Monthly Salary</option>
@@ -1115,7 +1120,7 @@ const Visit_visa = () => {
 
                               <div className="col-md-3 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  
+                                Job Contract
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                   <option value="">Job Contract</option>
@@ -1125,7 +1130,7 @@ const Visit_visa = () => {
                               </div>
                               <div className="col-md-3 tw-pt-4">
                                 <label className=" tw-text-sm  tw-text-gray ">
-                                  
+                                Vacations Letter
                                 </label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                   <option value="">Vacations Letter</option>
@@ -1174,7 +1179,7 @@ const Visit_visa = () => {
                         <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              
+                            Did your Spouse have valid National Passport?
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Did your Spouse have valid National Passport?</option>
@@ -1195,7 +1200,7 @@ const Visit_visa = () => {
                           </div>
                           <div className="col-md-8 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                             
+                            Do you have Family Registration Certificate?
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Do you have Family Registration Certificate?</option>
@@ -1205,7 +1210,8 @@ const Visit_visa = () => {
                           </div>
                           <div className="col-md-12 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              
+                            Do you as main applicant support your family as
+                            trip?
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Do you as main applicant support your family as
@@ -1216,7 +1222,7 @@ const Visit_visa = () => {
                           </div>
                           <div className="col-md-6 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                             
+                            Do you have children?
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option> Do you have children?</option>
@@ -1226,7 +1232,8 @@ const Visit_visa = () => {
                           </div>
                           <div className="col-md-12 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              
+                            If you are not EU citizen, do you have birth
+                            certificate of your childrens?
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>If you are not EU citizen, do you have birth
@@ -1237,7 +1244,7 @@ const Visit_visa = () => {
                           </div>
                           <div className="col-md-12 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              
+                            Does your spouse have any income, Savings?
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Does your spouse have any income, Savings?</option>
@@ -1247,7 +1254,7 @@ const Visit_visa = () => {
                           </div>
                           <div className="col-md-12 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              
+                            Someone else will support you for this trip
                             </label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Someone else will support you for this trip</option>

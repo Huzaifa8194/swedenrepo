@@ -12,6 +12,8 @@ import blog4 from '../../assets/images/blog/b4.png';
 import blog5 from '../../assets/images/blog/b5.png';
 import blog6 from '../../assets/images/blog/b6.jpg';
 import { GoTriangleRight } from 'react-icons/go';
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
+
 
 import Header from '../../components/Header_New/Header';
 
@@ -217,12 +219,18 @@ const Blogs = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={'Blogs'} />
-      <section className=" md:tw-mt-36 tw-mt-48">
+      <Banner_Page
+        highlightText={("Blogs")}
+        regularText={(
+          "Stay Informed and Inspired – Explore Our Latest Articles."
+        )}
+        backgroundImage={homeBgImage}
+      />
+      <section className=" md:tw-pt-0 tw-pt-0">
         <div className="container-fluid ">
-          <div className="row g-5">
+          <div className="row g-5 ">
             <div className="col-md-8    tw-py-10 tw-bg-white">
-              <div className="row tw-pt-6  md:tw-pl-32 tw-px-4">
+              <div className="row tw-pt-6  2xl:tw-pl-[21.5%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                 {data?.map((item, index) => {
                   return (
                     <div className="col-lg-6">
@@ -266,7 +274,7 @@ const Blogs = () => {
             </div>
 
             <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-              <div className="  md:tw-pr-32 tw-pr-4">
+              <div className="  md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 ">
                 <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                   {data2?.map((item, index) => {
                     return (

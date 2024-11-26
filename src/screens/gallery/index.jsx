@@ -413,21 +413,21 @@ const Gallery = ({
       <Header />
       <Banner_Page 
   highlightText={"Gallery"} 
-  regularText={"Have questions? We’re here to help! Reach out for personalized guidance on your relocation journey. Together, we’ll make Sweden feel like home."} 
+  regularText={"Capture the Moments – Explore Our Stunning Gallery."} 
   backgroundImage={homeBgImage} 
 />
-      <section className=" tw-bg-[#F5FAFF] tw-rounded-2xl">
-        <div className="container-fluid tw-rounded-2xl ">
-          <div className="row g-5 tw-shadow-2xl">
+      <section className=" tw-bg-[#F5FAFF] tw-rounded-2xl ">
+        <div className="container-fluid tw-rounded-2xl  ">
+          <div className="row g-5  tw-shadow-2xl">
             <div className="col-md-8  tw-rounded-2xl tw-shadow-2xl  tw-py-10 tw-bg-white">
-              <div className=" tw-relative tw-pl-32">
+              <div className=" tw-relative 2xl:tw-pl-[21.5%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                 <Tabs tabs={tabData} defaultTab={defaultTab} />
               </div>
 
             </div>
 
             <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-              <div className="  md:tw-pr-32 tw-pr-4">
+              <div className="  md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4">
                 <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                   {data?.map((item, index) => {
                     return (

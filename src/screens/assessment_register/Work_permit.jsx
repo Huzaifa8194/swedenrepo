@@ -627,7 +627,7 @@ const Work_permit = () => {
                     </h2>
                         
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray "></label>
+                          <label className=" tw-text-sm  tw-text-gray ">Select Category</label>
                           <select
                             value={workCategory}
                             onChange={handleWorkCategoryChange}
@@ -670,7 +670,7 @@ const Work_permit = () => {
                     </h2>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray ">Education Level</label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option> Education Level</option>
                               <option value="Matriculation/Secondary">
@@ -691,7 +691,7 @@ const Work_permit = () => {
                           </div>
 
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray ">Educational Certificate available</label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Educational Certificate available</option>
                               <option value="yes">Yes</option>
@@ -714,7 +714,7 @@ const Work_permit = () => {
                             </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray "> Did you have a job experience?</label>
 
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option> Did you have a job experience?</option>
@@ -726,7 +726,7 @@ const Work_permit = () => {
                           <div className=" col-md-6"></div>
 
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray ">Experience Certificate available</label>
 
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Experience Certificate available</option>
@@ -751,7 +751,7 @@ const Work_permit = () => {
                             </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray ">Are you outside of Sweden?</label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option> Are you outside of Sweden?</option>
                               <option value="yes">Yes</option>
@@ -762,7 +762,7 @@ const Work_permit = () => {
                           <div className=" col-md-6"></div>
 
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray ">Did you work in Sweden before?</label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option> Did you work in Sweden before?</option>
                               <option value="yes">Yes</option>
@@ -786,7 +786,8 @@ const Work_permit = () => {
                             </div>
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray "> Do you have savings or assets in case if your
+                            salary is lower than requirements?</label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>
                                 Do you have savings or assets in case if your
@@ -798,7 +799,9 @@ const Work_permit = () => {
                           </div>
 
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray "> Have you applied any sort of Schengen visa or
+                                residence permit in past 2 years and got
+                                rejected?</label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>
                                 Have you applied any sort of Schengen visa or
@@ -830,7 +833,7 @@ const Work_permit = () => {
                             </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray ">Are you single?</label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Are you single?</option>
                               <option value="yes">Yes</option>
@@ -839,7 +842,7 @@ const Work_permit = () => {
                           </div>
 
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray ">Are you between 18 and 30 years?</label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Are you between 18 and 30 years?</option>
                               <option value="yes">Yes</option>
@@ -847,7 +850,9 @@ const Work_permit = () => {
                             </select>
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray "> {" "}
+                                Do you have a Proof that you have signed or
+                                applied for a health insurance policy?</label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>
                                 {" "}
@@ -859,7 +864,8 @@ const Work_permit = () => {
                             </select>
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray "> Are you able to show that you have a distinct
+                            interest in or use for Swedish language studies?</label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>
                                 Are you able to show that you have a distinct
@@ -870,7 +876,8 @@ const Work_permit = () => {
                             </select>
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray "> Are Do you have a certificate of admission/Offer
+                            Letter to the course of study concerned?</label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>
                                 {" "}
@@ -926,7 +933,7 @@ const Work_permit = () => {
                             </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray ">Are you single?</label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>Are you single?</option>
                               <option value="yes">Yes</option>
@@ -959,7 +966,8 @@ const Work_permit = () => {
                             </select>
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray "> Do you Have a return ticket or enough money to
+                            buy one?</label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option value="">
                                 Do you Have a return ticket or enough money to
@@ -970,7 +978,8 @@ const Work_permit = () => {
                             </select>
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray "> Do you have a comprehensive health insurance
+                            that applies to care in Sweden?</label>
                             <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                               <option>
                                 Do you have a comprehensive health insurance
@@ -1001,7 +1010,8 @@ const Work_permit = () => {
                             </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "></label>
+                            <label className=" tw-text-sm  tw-text-gray "> Did you already worked in Sweden before applying
+                            the asylum?</label>
                             <select
                               value={applying}
                               onChange={handleWorkApplyingChange}
@@ -1019,7 +1029,9 @@ const Work_permit = () => {
                           {applying === "no" ? (
                             <>
                               <div className="col-md-12 tw-pt-4">
-                                <label className=" tw-text-sm  tw-text-gray "></label>
+                                <label className=" tw-text-sm  tw-text-gray "> {" "}
+                                    Did Your asylum case has been refused and
+                                    you want to apply for work permit?</label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                   <option>
                                     {" "}
@@ -1032,7 +1044,8 @@ const Work_permit = () => {
                               </div>
 
                               <div className="col-md-8 tw-pt-4">
-                                <label className=" tw-text-sm  tw-text-gray "></label>
+                                <label className=" tw-text-sm  tw-text-gray ">  Did you get the permission of work in
+                                Sweden?</label>
                                 <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
                                   <option>
                                     Did you get the permission of work in

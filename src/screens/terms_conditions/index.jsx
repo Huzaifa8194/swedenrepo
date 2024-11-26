@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Banner_Page from '../../components/Common/Banner_Page';
 import Navbar from '../../components/Header/Navbar';
 import Footer from '../../components/Footer/Footer';
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
 
 import Header from '../../components/Header_New/Header';
@@ -12,10 +13,17 @@ const Terms_conditions = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={'TERMS & CONDITIONS'} />
+      <Banner_Page
+        highlightText={("Terms & Conditions")}
+        regularText={(
+          "Understand Your Rights – Review Our Terms and Conditions Today."
+        )}
+        backgroundImage={homeBgImage}
+      />
 
-      <section className=" tw-mt-44">
-        <div className="container tw-py-5">
+
+      <section className=" tw-mt-12">
+        <div className="container tw-pb-5">
           <div className="row">
             <div className="col-md-12">
               <h5>1. Team and Services</h5>
