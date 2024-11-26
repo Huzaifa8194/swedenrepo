@@ -171,7 +171,7 @@ export const NavListChildLinks = ({ item, navigate, hoveredItem, dispatch, setBa
       ))}
       {childLinks.length > 16 && (
         <div className="tw-col-span-full tw-flex tw-justify-center tw-items-center">
-          <Button className="btn-primary" label="See More Services" />
+          <a href = "/services"><Button className="btn-primary" label="See More Services" /></a>
         </div>
       )}
     </div>
