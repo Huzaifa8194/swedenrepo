@@ -5,6 +5,8 @@ import Footer from "../../components/Footer/Footer";
 import Button from "../../components/Button";
 import { GoTriangleRight } from "react-icons/go";
 
+import tick from "../../assets/iconscout/tick.svg";
+import cross from "../../assets/iconscout/cross.svg";
 
 
 
@@ -15,6 +17,13 @@ import assess3 from "../../assets/images/StudyAssesmment.png";
 import assess4 from "../../assets/images/WorkPermit.png";
 import assess5 from "../../assets/images/ass5.png";
 import assess6 from "../../assets/images/ass6.png";
+
+
+
+import as1 from "../../assets/iconscout/as1.png";
+import as2 from "../../assets/iconscout/as2.png";
+import as3 from "../../assets/iconscout/as3.png";
+import as4 from "../../assets/iconscout/as4.png";
 
 
 import camera from "../../assets/images/no-picture-taking.png";
@@ -356,7 +365,7 @@ const Assessment = () => {
 
                   <div className="tw-mx-8 tw-my-4">
                     <div className="tw-flex tw-items-start">
-                      <img src={camera} alt="" className="tw-w-24" />
+                      <img src={as1} alt="" className="tw-w-24" />
                       <div className="tw-ml-8">
                         <h5 className="tw-pt-2">Complete the Assessment</h5>
                         <p className="tw-text-gray">
@@ -372,7 +381,7 @@ const Assessment = () => {
 
                   <div className="tw-mx-8 tw-my-4">
                     <div className="tw-flex tw-items-start">
-                      <img src={camera} alt="" className="tw-w-24" />
+                      <img src={as2} alt="" className="tw-w-24" />
                       <div className="tw-ml-8">
                         <h5 className="tw-pt-2">Instant Results</h5>
                         <p className="tw-text-gray">
@@ -386,7 +395,7 @@ const Assessment = () => {
 
                   <div className="tw-mx-8 tw-my-4">
                     <div className="tw-flex tw-items-start">
-                      <img src={camera} alt="" className="tw-w-24" />
+                      <img src={as3} alt="" className="tw-w-24" />
                       <div className="tw-ml-8">
                         <h5 className="tw-pt-2">Detailed Results Available</h5>
                         <p className="tw-text-gray">
@@ -402,7 +411,7 @@ const Assessment = () => {
 
                   <div className="tw-mx-8 tw-my-4">
                     <div className="tw-flex tw-items-start">
-                      <img src={camera} alt="" className="tw-w-24" />
+                      <img src={as4} alt="" className="tw-w-24" />
                       <div className="tw-ml-8">
                         <h5 className="tw-pt-2">
                           Full Control and Transparency
@@ -433,7 +442,7 @@ const Assessment = () => {
                 <div className="tw-flex tw-flex-wrap tw-mx-8 tw-my-4">
                   <div className="tw-flex-1 tw-mx-4">
                     <div className="tw-flex tw-items-start">
-                      <img src={camera} alt="" className="tw-w-24" />
+                      <img src={tick} alt="" className="tw-w-24" />
                       <div className="tw-ml-8">
                         <h5 className="tw-pt-2">If Eligible</h5>
                         <p className="tw-text-gray">
@@ -447,7 +456,7 @@ const Assessment = () => {
 
                   <div className="tw-flex-1 tw-mx-4">
                     <div className="tw-flex tw-items-start">
-                      <img src={camera} alt="" className="tw-w-24" />
+                      <img src={cross} alt="" className="tw-w-24" />
                       <div className="tw-ml-8">
                         <h5 className="tw-pt-2">
                           If Not Eligible or Uncertain
