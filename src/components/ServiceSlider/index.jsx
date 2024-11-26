@@ -1,5 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
+import servicebanner1 from "../../assets/iconscout/servicebanner1.png";
+import servicebanner2 from "../../assets/iconscout/servicebanner_2.png";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './style/bootstrap.min.css';
@@ -19,14 +21,14 @@ const slides = [
   {
     title: "TRAVELS IMMIGARTATION & VISA",
     subtitle: "World Brilliant Student Immigration & Visa Company",
-    image: "https://via.placeholder.com/1920x700?text=1920x700+rev_slider-01.jpg",
+    image: servicebanner1,
     buttonLabel: "Book a consultation!",
     buttonLabel2: "Contact Us",
   },
   {
     title: "Welcome To The Fastest Way",
     subtitle: "Get A Visa & Immigration",
-    image: "https://via.placeholder.com/1920x700?text=1920x700+rev_slider-02.jpg",
+    image: servicebanner2,
     buttonLabel: "Book a consultation!",
     buttonLabel2: "Contact Us",
   },

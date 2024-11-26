@@ -9,6 +9,8 @@ import banner2 from "../../assets/images/office-interior-design.png";
 import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
 
+import ho1 from "../../assets/iconscout/ho1.png";
+
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import { useTranslation } from "react-i18next";
 import Header from "../../components/Header_New/Header";
@@ -295,7 +297,7 @@ const HouseOffices = () => {
                   <h2 className="tw-text-left">
                     <strong> Made Easy Across Four Countries </strong>
                   </h2>
-                  <br />
+                 
 
                   <p className=" tw-text-gray tw-pt-8">
                     We are a relocation company based in four different
@@ -306,11 +308,7 @@ const HouseOffices = () => {
                     place to live without any worries.
                   </p>
 
-                  <div className=" row tw-mx-auto">
-                    <div className=" col-md-10 max-auto">
-                      <img src={banner2} alt="" style={{ maxWidth: "600px" }}/>
-                    </div>
-                  </div>
+                 
 
                   <br />
                   <span className=" tw-flex tw-items-center tw-gap-2">
@@ -321,8 +319,11 @@ const HouseOffices = () => {
                   <h2 className="tw-text-left">
                     <strong> Sweden’s Competitive Housing Market</strong>
                   </h2>
-                  <br />
-                  <p className=" tw-text-gray tw-pt-8">
+
+
+                  <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      <p className=" tw-text-gray tw-pt-8">
                     Finding housing in Sweden is much more difficult than in
                     other EU countries. Renting a house is having so much
                     competition in Sweden that there is a specific black market
@@ -333,6 +334,24 @@ const HouseOffices = () => {
                     for buying a house rather than being a part of this renting
                     fray.
                   </p>
+                      </div>
+
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={ho1}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                 
 
                   <br />
                   <span className=" tw-flex tw-items-center tw-gap-2">

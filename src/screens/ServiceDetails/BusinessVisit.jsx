@@ -590,7 +590,7 @@ const BusinessVisit = () => {
                            <motion.img
                              animate={imageVariants}
                              className=" tw-w-full"
-                             src={bv2}
+                             src={bv3}
                              alt=""
                              style={{ maxWidth: "450px" }}
                            />

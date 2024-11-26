@@ -253,12 +253,12 @@ const ServiceDetails = () => {
         backgroundImage={homeBgImage}
       />
 
-      <div className=" ">
-        <section className=" ">
-          <div className="">
-            <div className="container-fluid">
-              <div className="row g-4">
-                <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
+      <div className=" tw-relative">
+        <section className=" tw-relative">
+          <div className="tw-relative">
+            <div className="container-fluid tw-relative">
+              <div className="row g-4 tw-relative">
+                <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify tw-relative">
                   <div className=" 2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                     <div>
                       <span className=" tw-flex tw-items-center tw-gap-2">
@@ -1414,25 +1414,29 @@ const ServiceDetails = () => {
                   </div>
                 </div>
 
-                <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF] " style={{ position: 'sticky', top: '300px' }}>
-                  <div className=" md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
-                  <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
-                      {data?.map((item, index) => {
-                        return (
-                          <Link
-                            to={`${item?.Link}`}
-                            className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
-                          >
-                            <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
-                              {item?.title}
-                            </p>
-                            <GoTriangleRight className="tw-text-gray" />
-                          </Link>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                </div>
+                <div
+  className="col-md-4 tw-pt-16 tw-bg-[#F5FAFF] tw-sticky tw-top-0 tw-h-auto md:tw-w-[40%] 2xl:tw-w-[50%] tw-z-10"
+>
+  <div className="md:tw-pr-[40%] 2xl:tw-pr-[50%] tw-pr-4">
+    <ul className="tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
+      {data?.map((item, index) => {
+        return (
+          <Link
+            to={`${item?.Link}`}
+            className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
+            key={index}
+          >
+            <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
+              {item?.title}
+            </p>
+            <GoTriangleRight className="tw-text-gray" />
+          </Link>
+        );
+      })}
+    </ul>
+  </div>
+</div>
+
               </div>
             </div>
           </div>

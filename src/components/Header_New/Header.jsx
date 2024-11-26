@@ -12,6 +12,16 @@ const Header = () => {
   const [isScreenTab, setIsScreenTab] = useState(window.innerWidth);
   const [isBelow1300px, setIsBelow1300px] = useState(window.innerWidth < 1320);
 
+
+  useEffect(() => {
+    const translateElement = document.getElementById("google_translate_element");
+    const targetContainer = document.querySelector(".langtest");
+
+    if (translateElement && targetContainer) {
+      targetContainer.appendChild(translateElement);
+    }
+  }, []); // Empt
+
   const location = useLocation(); // Detect route changes
 
 
@@ -55,7 +65,7 @@ const Header = () => {
               <div
                 className={`tw-z-20 top-bar ${isTop ? "visible" : "hidden"} tw-pt-[10px] tw-px-[7%]   tw-bg-[#1f2437]`}
               >
-                <Flex gap={"gap-large"} spaceBetween={"space-between"}>
+                <Flex className="langtest" gap={"gap-large"} spaceBetween={"space-between"}>
                   <div className="tw-ml-2">
                     <Flex gap={"gap-small"}>
                       <Typography variant={"p"} color={"white"} fontSize={"base-small"}>
