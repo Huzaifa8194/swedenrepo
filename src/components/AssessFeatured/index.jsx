@@ -21,6 +21,15 @@ import assess4 from "../../assets/images/WorkPermit.png";
 import assess5 from "../../assets/images/ass5.png";
 import assess6 from "../../assets/images/ass6.png";
 
+
+
+import _as1 from "../../assets/iconscout/_as1.png";
+import _as2 from "../../assets/iconscout/_as2.png";
+import _as3 from "../../assets/iconscout/_as3.png";
+import _as4 from "../../assets/iconscout/_as4.png";
+import _as5 from "../../assets/iconscout/_as5.png";
+import _as6 from "../../assets/iconscout/_as6.png";
+
 import asylumphoto from "../../assets/iconscout/asylum.png";
 import personnumberphoto from "../../assets/iconscout/personnummber.png";
 import businesspermit from "../../assets/iconscout/businesspermit.png";
@@ -81,24 +90,24 @@ const FeatureSection = () => {
           <Slider {...settings} className=" slick_slider">
             {[
               {
-                img: asylumphoto,
-                flag: asylumphoto,
+                img: _as1,
+                flag: _as1,
                 country: 'Business Visa Assessment"',
                 description:
                   "Evaluate your eligibility for a Swedish business visa, tailored for entrepreneurs and professionals aiming to explore Sweden's business opportunities.",
                 to: "/assessment_register",
               },
               {
-                img: assess5,
-                flag: assess5,
+                img: _as3,
+                flag: _as3,
                 country: "Visit Visa Assessment",
                 description:
                   "Check your qualifications for a Swedish visit visa, perfect for short-term travel or exploring Sweden's culture and attractions.",
                 to: "/visit_visa",
               },
               {
-                img: personnumberphoto,
-                flag: personnumberphoto,
+                img: _as2,
+                flag: _as2,
                 country: "Study in Sweden Assesmment",
                 description:
                   "Determine your readiness for a Swedish student visa, helping you pursue academic opportunities in one of Europe’s most innovative education systems.",
@@ -158,24 +167,24 @@ const FeatureSection = () => {
           <Slider {...settings} className=" slick_slider">
             {[
               {
-                img: cpr,
-                flag: cpr,
+                img: _as4,
+                flag: _as4,
                 country: "Work Permit Assesmment",
                 to: "/Work_permit",
                 description:
                   "Assess your qualifications for a Swedish work permit, designed for professionals seeking employment opportunities in Sweden’s thriving job market.",
               },
               {
-                img: assess4,
-                flag: assess4,
+                img: _as5,
+                flag: _as5,
                 country: "Family Reunification Assessment",
                 to: "/family_reunification_assessment",
                 description:
                   "Explore your eligibility to reunite with family members in Sweden through a comprehensive family reunification visa evaluation.",
               },
               {
-                img: businesspermit,
-                flag: businesspermit,
+                img: _as6,
+                flag: _as6,
                 country: "Long Term EU Status Assessment",
                 to: "/long_term_eu_status_assessment",
                 description:

@@ -25,6 +25,10 @@ import as2 from "../../assets/iconscout/ass1.png";
 import as3 from "../../assets/iconscout/ass3.png";
 import as4 from "../../assets/iconscout/ass4.png";
 
+import _as1 from "../../assets/iconscout/_as1.png";
+import _as2 from "../../assets/iconscout/_as2.png";
+
+
 import ass5 from "../../assets/iconscout/ass5.png";
 
 import FeatureSection from "../../components/AssessFeatured";
@@ -47,7 +51,7 @@ const Assessment = () => {
     {
       id: 1,
       title: t("Business Visa Assessment"),
-      image: assess1,
+      image: _as1,
       Icon: <i className="fa fa-building tw-mt-1" aria-hidden="true"></i>,
       Link: "/assessment_register",
     },
@@ -61,7 +65,7 @@ const Assessment = () => {
     {
       id: 3,
       title: t("Study in Sweden Assesmment"),
-      image: assess3,
+      image: _as2,
       Icon: <i className="fa fa-male tw-mt-1" aria-hidden="true"></i>,
       Link: "/student_assessments",
     },
