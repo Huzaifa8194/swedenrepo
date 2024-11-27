@@ -22,6 +22,12 @@ import New_Listings from "../../components/New_listings";
 import { FaCamera } from "react-icons/fa6";
 import Popular from "../../components/Popular";
 
+import howitwork1 from "../../assets/iconscout/howitwork1.png"
+import howitwork2 from "../../assets/iconscout/howitwork2.png"
+import howitwork3 from "../../assets/iconscout/howitwork3.png"
+import howitwork4 from "../../assets/iconscout/howitwork4.png"
+
+
 import Header from '../../components/Header_New/Header';
 const Housing = () => {
   useEffect(() => {
@@ -113,7 +119,7 @@ const Housing = () => {
                 <div className=" col ">
                 <div className="tw-mx-8 tw-mb-4 p-4 tw-bg-white tw-rounded-2xl tw-shadow-lg">
                     <div className="tw-flex tw-items-start">
-                      <img src={camera} alt="" className="tw-w-24" />
+                      <img src={howitwork1} alt="" className="tw-w-24" />
                       <div className="tw-ml-8">
                         <h5 className="tw-pt-2">Photos</h5>
                         <p className="tw-text-gray">
@@ -130,7 +136,7 @@ const Housing = () => {
 
                   <div className="tw-mx-8 tw-my-4 p-4  tw-rounded-2xl tw-shadow-lg">
                     <div className="tw-flex tw-items-start">
-                      <img src={rent} alt="" className="tw-w-24" />
+                      <img src={howitwork2} alt="" className="tw-w-24" />
                       <div className="tw-ml-8">
                         <h5 className="tw-pt-2">Rental Agreements</h5>
                         <p className="tw-text-gray">
@@ -148,7 +154,7 @@ const Housing = () => {
 
                   <div className="tw-mx-8 tw-my-4 p-4 tw-rounded-2xl tw-shadow-lg">
                     <div className="tw-flex tw-items-start">
-                      <img src={payments} alt="" className="tw-w-24" />
+                      <img src={howitwork3} alt="" className="tw-w-24" />
                       <div className="tw-ml-8">
                         <h5 className="tw-pt-2">Security Deposit</h5>
                         <p className="tw-text-gray">
@@ -166,7 +172,7 @@ const Housing = () => {
 
                   <div className="tw-mx-8 tw-my-4 tw-rounded-2xl tw-shadow-lg tw-p-4">
                     <div className="tw-flex tw-items-start">
-                      <img src={serviceimage} alt="" className="tw-w-24" />
+                      <img src={howitwork4} alt="" className="tw-w-24" />
                       <div className="tw-ml-8">
                         <h5 className="tw-pt-2">Service Charges (Tenants)</h5>
                         <p className="tw-text-gray">
