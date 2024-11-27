@@ -10,6 +10,7 @@ import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
 
 import ho1 from "../../assets/iconscout/ho1.png";
+import ho2 from "../../assets/iconscout/ho2.png";
 
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import { useTranslation } from "react-i18next";
@@ -260,7 +261,7 @@ const HouseOffices = () => {
                           <motion.img
                             animate={imageVariants}
                             className=" tw-w-full"
-                            src={banner}
+                            src={ho2}
                             alt=""
                             style={{ maxWidth: "450px" }}
                           />

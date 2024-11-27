@@ -274,6 +274,9 @@ const WorkPermit = () => {
                   
                     <br/>
 
+
+                    <p className="tw-text-gray">Sweden provides a range of work permits designed to accommodate diverse professional and personal circumstances. These permits cater to various categories of workers, each with specific eligibility criteria and requirements. For skilled professionals, there are permits targeting sectors with labor shortages, such as IT, healthcare, and engineering, often requiring a formal job offer and a salary meeting Swedish standards</p>
+
                     <div className="row tw-flex tw-items-center">
                      
 
@@ -292,9 +295,7 @@ const WorkPermit = () => {
                       </div>
                       <div className="col-md-6">
                       <p className="tw-text-gray">
-                      Sweden offers a variety of work permits tailored to
-                      different professional and personal needs. Below are the
-                      main categories and their key requirements.
+                      Entrepreneurs and self-employed individuals can apply for permits that allow them to establish and run businesses in Sweden, provided they demonstrate a viable business plan and sufficient financial resources. Seasonal workers, such as those in agriculture or hospitality, can access permits for temporary employment. Additionally, permits are available for researchers, students transitioning to work, and family members accompanying a permit holder, making Sweden an attractive destination for both individuals and families seeking professional opportunities.
                     </p>
                       </div>
                     </div>
@@ -663,15 +664,14 @@ const WorkPermit = () => {
                       <strong>Key General Requirements for Work Permits</strong>
                     </h2>
 
+                    <p className = "tw-text-gray">To obtain a work permit in Sweden, applicants must meet several general requirements to ensure compliance with Swedish immigration laws and labor standards. A valid job offer from a Swedish employer is essential, and the terms of employment must align with Swedish collective agreements or industry standards, including a minimum salary of at least SEK 13,000 per month before taxes. The employer must also advertise the position within the EU/EEA for at least ten days before offering it to a non-EU/EEA applicant. </p>
 
 
 
-                    <br/>
 
-                    <p className="tw-text-gray">
-                      For all work permits, applicants must meet these core
-                      requirements:
-                    </p>
+                   
+
+                  
                     <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
                       <ul className="tw-p-0 ">

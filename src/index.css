@@ -9,7 +9,7 @@ body {
 }
 
 section {
-  overflow-x: hidden !important;
+  overflow-x: visible !important;
 }
 i {
   margin-right: 7px;

@@ -19,7 +19,6 @@ import cp5 from "../../assets/iconscout/cp5.png";
 import cp6 from "../../assets/iconscout/cp6.png";
 import cp7 from "../../assets/iconscout/cp7.png";
 
-
 import Header from "../../components/Header_New/Header";
 import { MdHdrStrong } from "react-icons/md";
 
@@ -262,79 +261,70 @@ const Citizenship = () => {
               <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
                 <div className="   2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
-
-                  <span className="tw-flex tw-items-center tw-gap-2">
+                    <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Swedish Citizenship: Requirements, Application Process,
                       and Waiting Times
                     </span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong>
                         General Requirements for Swedish Citizenship
                       </strong>
                     </h2>
 
-               
-
-                  
-                    <br/>
+                    <br />
                     <p className="tw-text-gray">
                       To qualify for Swedish citizenship, applicants must meet
                       several key requirements:
                     </p>
 
-                    
-                        <strong className="m-0 tw-text-gray">Age Requirement</strong>
-                     
+                    <strong className="m-0 tw-text-gray">
+                      Age Requirement
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong></strong> You must be at least 18 years
-                          old to apply independently. Children under 18 can
-                          apply alongside a parent or guardian, with special
+                          <strong></strong> You must be at least 18 years old to
+                          apply independently. Children under 18 can apply
+                          alongside a parent or guardian, with special
                           considerations for adopted children.
                         </p>
                       </li>
                     </ul>
 
-                   
-                        <strong className="m-0 tw-text-gray">
-                          Permanent Residence or Right of Residence
-                        </strong>
-                      
+                    <strong className="m-0 tw-text-gray">
+                      Permanent Residence or Right of Residence
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <>Residence Requirement:</> Applicants
-                          must hold either a permanent residence permit
-                          (permanent uppehållstillstånd) or permanent right of
-                          residence (permanent uppehållsrätt) if they are EU/EEA
-                          citizens.
+                          <>Residence Requirement:</> Applicants must hold
+                          either a permanent residence permit (permanent
+                          uppehållstillstånd) or permanent right of residence
+                          (permanent uppehållsrätt) if they are EU/EEA citizens.
                         </p>
                       </li>
                     </ul>
 
-                   
-                        <strong className="m-0 tw-text-gray">Residency Duration</strong>
-                   
+                    <strong className="m-0 tw-text-gray">
+                      Residency Duration
+                    </strong>
 
                     <ul className="tw-p-0 tw-pt-4 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                         
                           <ul className="tw-pl-0">
-                            
-                          <li className=" tw-flex  tw-gap-3">
+                            <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
                               Non-EU/EEA Citizens: Must have lived continuously
                               in Sweden for at least five years.
                             </li>
-                          
+
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
@@ -343,16 +333,16 @@ const Citizenship = () => {
                               years of continuous residence with a valid right
                               of residence.
                             </li>
-                            
-                          <li className=" tw-flex  tw-gap-3">
+
+                            <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
                               Nordic Citizens: Generally, two years of
                               continuous residence is sufficient.
                             </li>
-                            
-                          <li className=" tw-flex  tw-gap-3">
+
+                            <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
@@ -365,8 +355,6 @@ const Citizenship = () => {
                       </li>
                     </ul>
                     <div className="row tw-flex tw-items-center">
-                     
-
                       <div className="col-md-6">
                         <div className="row ">
                           <div className="col-md-9 tw-mx-auto">
@@ -381,74 +369,80 @@ const Citizenship = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                      <strong className="m-0 tw-text-gray">Good Conduct</strong>
-                      
-                      <ul className="tw-p-0 tw-pt-4 tw-pl-0" >
-                        <li className="tw-flex tw-items-center tw-gap-3">
-                          <p className="m-0 tw-text-gray">
-                            <strong></strong> Applicants are expected
-                            to demonstrate good conduct, meaning they should not
-                            have a recent criminal record, significant debts, or
-                            unresolved legal issues. Migrationsverket considers
-                            factors such as past fines, prison sentences, or
-                            financial obligations.
-                          </p>
-                        </li>
-                      </ul>
-  
-                     </div>
+                        <strong className="m-0 tw-text-gray">
+                          Good Conduct
+                        </strong>
+
+                        <ul className="tw-p-0 tw-pt-4 tw-pl-0">
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <p className="m-0 tw-text-gray">
+                              <strong></strong> Applicants are expected to
+                              demonstrate good conduct, meaning they should not
+                              have a recent criminal record, significant debts,
+                              or unresolved legal issues. Migrationsverket
+                              considers factors such as past fines, prison
+                              sentences, or financial obligations when assessing
+                              the applicant’s eligibility. This requirement
+                              ensures that individuals seeking to stay or invest
+                              in Sweden maintain a positive legal and financial
+                              standing, reflecting the country's commitment to
+                              upholding the integrity of its immigration and
+                              business systems. Applicants may be required to
+                              provide documentation or disclosures related to
+                              their legal history and financial status as part
+                              of the application process.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
 
-
-                  
-                      
-                 
-                        <strong className="m-0 tw-text-gray">
-                          Ability to Support Yourself
-                        </strong>
-                    
+                    <strong className="m-0 tw-text-gray">
+                      Ability to Support Yourself
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong></strong> Generally,
-                          applicants should be financially independent and not
-                          rely on social assistance. This applies particularly
-                          to non-Nordic and non-EU/EEA applicants.
+                          <strong></strong> Generally, applicants should be
+                          financially independent and not rely on social
+                          assistance. This applies particularly to non-Nordic
+                          and non-EU/EEA applicants.
                         </p>
                       </li>
                     </ul>
                   </div>
                   <div>
-                  <br/>
-                  <span className="tw-flex tw-items-center tw-gap-2">
+                    <br />
+                    <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Specific Paths to Citizenship
                     </span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong>Citizenship for Nordic Citizens</strong>
                     </h2>
-                 
 
-
-
-                  
-                    <br/>
+                    <br />
 
                     <p className="tw-text-gray">
                       For citizens of Denmark, Finland, Iceland, and Norway, the
                       process for Swedish citizenship is streamlined:
                     </p>
 
-                   
-                        <strong className="m-0 tw-text-gray">
-                          Residency Requirement
-                        </strong>
+                    <strong className="m-0 tw-text-gray">
+                      Residency Requirement
+                    </strong>
 
-                        <div className="row tw-flex tw-items-center">
-                      
-
+                    <p className="tw-text-gray">
+                      {" "}
+                      Only two years of continuous residence in Sweden are
+                      required to qualify for certain residency benefits or
+                      permits. This relatively short period makes it easier for
+                      individuals to establish themselves in Sweden and access
+                      various opportunities,
+                    </p>
+                    <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
                         <div className="row ">
                           <div className="col-md-9 tw-mx-auto">
@@ -463,55 +457,52 @@ const Citizenship = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                      <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Only two years of continuous residence in Sweden are
-                          required.
-                        </p>
-                      </li>
+                        <ul className="tw-p-0 tw-pl-0 tw-pt-4">
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <p className="m-0 tw-text-gray">
+                              such as applying for permanent residency or other
+                              long-term residence options
+                            </p>
+                          </li>
 
-                    
-                      <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                        <p className="m-0 tw-text-gray">
-                          <>Simplified Application Process:</>{" "}
-                          Nordic citizens can apply directly to Migrationsverket
-                          or, if they meet the criteria, register at their local
-                          Tax Agency (Skatteverket) for simplified processing.
-                        </p>
-                      </li>
+                          <li className=" tw-flex tw-pt-4 tw-gap-3">
+                            <div>
+                              <GoTriangleRight className=" tw-text-blue" />
+                            </div>
+                            <p className="m-0 tw-text-gray">
+                              <>Simplified Application Process:</> Nordic
+                              citizens can apply directly to Migrationsverket
+                              or, if they meet the criteria, register at their
+                              local Tax Agency (Skatteverket) for simplified
+                              processing.
+                            </p>
+                          </li>
 
-                     
-                      <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                        <p className="m-0 tw-text-gray">
-                          <>Automatic Naturalization:</> Some Nordic
-                          citizens may qualify for automatic naturalization
-                          under specific conditions.
-                        </p>
-                      </li>
-                    </ul>
+                          <li className=" tw-flex  tw-gap-3">
+                            <div>
+                              <GoTriangleRight className=" tw-text-blue" />
+                            </div>
+                            <p className="m-0 tw-text-gray">
+                              <>Automatic Naturalization:</> Some Nordic
+                              citizens may qualify for automatic naturalization
+                              under specific conditions.
+                            </p>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                      
 
-                  
-<p><br/></p>
+                    <p>
+                      <br />
+                    </p>
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Citizenship
-  </span>
-  <h2 className = "tw-text-left">
-    <strong>For EU/EEA Citizens </strong>
-  </h2>
-
-                  
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Citizenship
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong>For EU/EEA Citizens </strong>
+                    </h2>
 
                     <p className="tw-text-gray">
                       EU/EEA citizens can apply for Swedish citizenship after
@@ -519,11 +510,9 @@ const Citizenship = () => {
                       include:
                     </p>
 
-                   
-                        <strong className="m-0 tw-text-gray">
-                          Permanent Right of Residence
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-gray">
+                      Permanent Right of Residence
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -535,28 +524,24 @@ const Citizenship = () => {
                         </p>
                       </li>
 
-                     
                       <li className=" tw-flex tw-pt-4 tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0  tw-text-gray">
-                          <>Simplified Process:</> EU/EEA citizens
-                          may experience a slightly simplified process since
-                          they are not required to hold a residence permit due
-                          to their EU rights.
+                          <>Simplified Process:</> EU/EEA citizens may
+                          experience a slightly simplified process since they
+                          are not required to hold a residence permit due to
+                          their EU rights.
                         </p>
                       </li>
 
-                    
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
-                          <>
-                            Proof of Good Conduct and Financial Independence:
-                          </>{" "}
+                          <>Proof of Good Conduct and Financial Independence:</>{" "}
                           Similar to other applicants, EU/EEA citizens must
                           demonstrate good conduct and generally be financially
                           self-sufficient.
@@ -564,108 +549,101 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
+                    <br />
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Citizenship for Individuals
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong> With a Permanent Residence Permit </strong>
+                    </h2>
 
+                    <br />
 
-<br/>
-<span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Citizenship for Individuals
-  </span>
-  <h2 className = "tw-text-left">
-    <strong>  With a Permanent Residence
-    Permit </strong>
-  </h2>
-
-
-
-<br/>
-
-                   
                     <p className="tw-text-gray">
                       If you have been granted a permanent residence permit in
                       Sweden, you may apply for citizenship once you fulfill the
                       residency requirements:
                     </p>
 
-                        <strong className="m-0 tw-text-gray">
-                          Five-Year Residence Requirement
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-gray">
+                      Five-Year Residence Requirement
+                    </strong>
+
                     <ul className="tw-p-0 tw-pt-4 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           Most applicants need five years of continuous
-                          residence. However, those with refugee status may
-                          qualify after four years.
+                          residence in Sweden to qualify for permanent
+                          residency. However, those with refugee status may
+                          qualify after just four years, reflecting Sweden's
+                          commitment to supporting individuals who have fled
+                          conflict or persecution. This shorter residency
+                          requirement for refugees is designed to help them
+                          integrate into Swedish society more quickly and
+                          establish stability after seeking asylum.
                         </p>
                       </li>
                       <div className="row tw-flex tw-items-center">
-                  
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-9 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full"
+                                src={cp3}
+                                alt=""
+                                style={{ maxWidth: "450px" }}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <li className=" tw-flex tw-pt-4  tw-gap-3">
+                            <div>
+                              <GoTriangleRight className=" tw-text-blue" />
+                            </div>
+                            <p className="m-0 tw-text-gray">
+                              <strong>
+                                Documentation of Residence and Income:
+                              </strong>{" "}
+                              You will need to provide evidence of your
+                              residence and financial stability during your time
+                              in Sweden.
+                            </p>
+                          </li>
 
-                  <div className="col-md-6">
-                    <div className="row ">
-                      <div className="col-md-9 tw-mx-auto">
-                        <motion.img
-                          animate={imageVariants}
-                          className=" tw-w-full"
-                          src={cp3}
-                          alt=""
-                          style={{ maxWidth: "450px" }}
-                        />
+                          <li className=" tw-flex  tw-gap-3">
+                            <div>
+                              <GoTriangleRight className=" tw-text-blue" />
+                            </div>
+                            <p className="m-0 tw-text-gray">
+                              <strong>Commitment to Stay in Sweden:</strong>{" "}
+                              Migrationsverket may consider factors like
+                              employment and social ties to assess your
+                              intention to remain in Sweden.
+                            </p>
+                          </li>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                  <li className=" tw-flex tw-pt-4  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>
-                            Documentation of Residence and Income:
-                          </strong>{" "}
-                          You will need to provide evidence of your residence
-                          and financial stability during your time in Sweden.
-                        </p>
-                      </li>
-
-                    
-                      <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Commitment to Stay in Sweden:</strong>{" "}
-                          Migrationsverket may consider factors like employment
-                          and social ties to assess your intention to remain in
-                          Sweden.
-                        </p>
-                      </li>
-    
-      </div>
-                </div>
-
-                     
-                     
                     </ul>
                   </div>
 
                   <div>
-                    <br/>
+                    <br />
 
-                  
                     <span className="tw-flex tw-items-center tw-gap-2">
-          <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-          Specific Paths to Citizenship
-        </span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Specific Paths to Citizenship
+                    </span>
 
-        <h2 className = "tw-text-left">
-          <strong>
-            Application Process for Swedish Citizenship
-          </strong>
-        </h2>
-                    <br/>
+                    <h2 className="tw-text-left">
+                      <strong>
+                        Application Process for Swedish Citizenship
+                      </strong>
+                    </h2>
+                    <br />
 
                     <p className="tw-text-gray">
                       The application process for Swedish citizenship involves
@@ -673,133 +651,124 @@ const Citizenship = () => {
                       Here’s an overview of the process:
                     </p>
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Prepare Documentation
-                        </strong>
-                 
+                    <strong className="m-0 tw-text-gray">
+                      Prepare Documentation
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4 ">
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong> </strong> Gather all
-                          necessary documents, including a valid passport, proof
-                          of residence (such as rental agreements), employment
-                          records, and proof of income.
+                          <strong> </strong> Gather all necessary documents,
+                          including a valid passport, proof of residence (such
+                          as rental agreements), employment records, and proof
+                          of income.
                         </p>
                       </li>
                     </ul>
 
                     <div className="row tw-flex tw-items-center">
-                  
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={cp4}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                        <strong className="m-0 tw-text-gray">
+                          Submit Application
+                        </strong>
 
-                  <div className="col-md-6">
-                    <div className="row ">
-                      <div className="col-md-9 tw-mx-auto">
-                        <motion.img
-                          animate={imageVariants}
-                          className=" tw-w-full"
-                          src={cp4}
-                          alt=""
-                          style={{ maxWidth: "450px" }}
-                        />
+                        <ul className="tw-p-0 tw-pt-4 tw-pl-0">
+                          <li>
+                            <p className="m-0 tw-text-gray">
+                              Applications can be submitted online via
+                              Migrationsverket’s e-service or in paper format.
+                              Ensure all information is accurate, and
+                              double-check for any required documents, as
+                              incomplete applications may delay processing.
+                            </p>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                  </div>
-                  <div className="col-md-6">
-                  <strong className="m-0 tw-text-gray">Submit Application</strong>
-                     
 
-                     <ul className="tw-p-0 tw-pt-4 tw-pl-0">
-                       <li>
-                         <p className="m-0 tw-text-gray">
-                         Applications
-                           can be submitted online via Migrationsverket’s
-                           e-service or in paper format. Ensure all information
-                           is accurate, and double-check for any required
-                           documents, as incomplete applications may delay
-                           processing.
-                         </p>
-                       </li>
-                     </ul>
- 
-  
-      </div>
-                </div>
-
-                 
-                      
-                   
-                        <strong className="m-0 tw-text-gray">Application Review</strong>
-                      
+                    <strong className="m-0 tw-text-gray">
+                      Application Review
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                     
-                    <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
-                         Migrationsverket
-                          reviews the application and checks your eligibility.
-                          This review includes confirming your residence,
-                          examining your criminal record (if applicable), and
-                          verifying financial self-sufficiency.
+                          Migrationsverket reviews the application and checks
+                          your eligibility. This review includes confirming your
+                          residence, examining your criminal record (if
+                          applicable), and verifying financial self-sufficiency.
                         </p>
                       </li>
-                     
+
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
-                         
                           Migrationsverket may contact you to request additional
                           documentation if necessary.
                         </p>
                       </li>
                     </ul>
 
-                
-                        <strong className="m-0 tw-text-gray">
-                          Decision and Notification
-                        </strong>
-                      
+                    <strong className="m-0 tw-text-gray">
+                      Decision and Notification
+                    </strong>
+
                     <ul className="tw-p-0 tw-pl-10">
                       <li>
                         <p className="m-0 tw-text-gray">
-                           Once the review is
-                          complete, Migrationsverket will issue a decision. If
-                          approved, you will receive a certificate of Swedish
-                          citizenship. If denied, you have the right to appeal
-                          the decision.
+                          Once the review is complete, Migrationsverket will
+                          issue a decision. If approved, you will receive a
+                          certificate of Swedish citizenship. If denied, you
+                          have the right to appeal the decision.
                         </p>
                       </li>
                     </ul>
 
-<br/>
-<span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Waiting Time for
-  </span>
-  <h2 className = "tw-text-left">
-    <strong>Citizenship Applications </strong>
-  </h2>
+                    <br />
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Waiting Time for
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong>Citizenship Applications </strong>
+                    </h2>
 
+                    <br />
 
-
-<br/>
-                    
-<div className="row tw-flex tw-items-center">
+                    <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
-          
-                      <p className="tw-text-gray">
-                      The waiting time for Swedish citizenship applications can
-                      vary depending on your background and whether additional
-                      information is required. As of the latest data, the
-                      average processing times are:
-                    </p>
+                        <p className="tw-text-gray">
+                          The waiting time for Swedish citizenship applications
+                          can vary depending on your background and whether
+                          additional information is required. As of the latest
+                          data, the average processing time for straightforward
+                          applications is typically between 12 to 24 months.
+                          However, more complex cases, such as those involving
+                          individuals with criminal records or unresolved legal
+                          issues, may take longer due to the need for additional
+                          checks and documentation. Applicants with refugee or
+                          protected status may experience a slightly shorter
+                          processing time, usually within 12 to 18 months.
+                        </p>
                       </div>
 
                       <div className="col-md-6">
@@ -817,14 +786,9 @@ const Citizenship = () => {
                       </div>
                     </div>
 
-
-                   
-
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Standard Processing
-                        </strong>
-                    
+                    <strong className="m-0 tw-text-gray">
+                      Standard Processing
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
@@ -836,9 +800,9 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                  
-                        <strong className="m-0 tw-text-gray">Nordic Citizens</strong>
-                     
+                    <strong className="m-0 tw-text-gray">
+                      Nordic Citizens
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
@@ -850,9 +814,9 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                  
-                        <strong className="m-0 tw-text-gray">EU/EEA Citizens</strong>
-                      
+                    <strong className="m-0 tw-text-gray">
+                      EU/EEA Citizens
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
@@ -864,25 +828,21 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-
-
-<br/>
-
+                    <br />
 
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    How Sweden Relocators Can
-  </span>
-  <h2 className = "tw-text-left">
-    <strong> Assist with Your Citizenship
-    Application </strong>
-  </h2>
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      How Sweden Relocators Can
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong>
+                        {" "}
+                        Assist with Your Citizenship Application{" "}
+                      </strong>
+                    </h2>
 
-                    
-  <br/>
-
-                
+                    <br />
 
                     <p className="tw-text-gray">
                       Navigating the Swedish citizenship application process can
@@ -891,11 +851,9 @@ const Citizenship = () => {
                       application. Here’s how we can assist:
                     </p>
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Eligibility Assessment
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-gray">
+                      Eligibility Assessment
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
@@ -922,44 +880,40 @@ const Citizenship = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                   
-                      <strong className="m-0 tw-text-gray">
+                        <strong className="m-0 tw-text-gray">
                           Document Preparation and Verification
                         </strong>
-                     
 
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li>
-                        <p className="m-0 tw-text-gray">
-                          We ensure that all required documents are accurate,
-                          complete, and up-to-date, including translation of
-                          foreign documents if necessary.
-                        </p>
-                      </li>
-                    </ul>
+                        <ul className="tw-p-0 tw-pl-0 tw-pt-4">
+                          <li>
+                            <p className="m-0 tw-text-gray">
+                              We ensure that all required documents are
+                              accurate, complete, and up-to-date, including
+                              translation of foreign documents if necessary.
+                            </p>
+                          </li>
+                        </ul>
 
-                  
                         <strong className="m-0 tw-text-gray">
                           Application Submission and Monitoring
                         </strong>
-                    
 
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li>
-                        <p className="m-0 tw-text-gray">
-                          We submit your application and monitor its progress
-                          with Migrationsverket, providing updates and handling
-                          any requests for additional information.
-                        </p>
-                      </li>
-                    </ul>
+                        <ul className="tw-p-0 tw-pl-0 tw-pt-4">
+                          <li>
+                            <p className="m-0 tw-text-gray">
+                              We submit your application and monitor its
+                              progress with Migrationsverket, providing updates
+                              and handling any requests for additional
+                              information.
+                            </p>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                   
 
-                   
-                        <strong className="m-0 tw-text-gray">Support for Appeal</strong>
-                    
+                    <strong className="m-0 tw-text-gray">
+                      Support for Appeal
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
@@ -971,11 +925,9 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                   
-                        <strong className="m-0 tw-text-gray">
-                          Guidance on Additional Requirements
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-gray">
+                      Guidance on Additional Requirements
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
@@ -987,17 +939,16 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-
-<br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Why Choose 
-  </span>
-  <h2 className = "tw-text-left">
-    <strong>Sweden Relocators? </strong>
-  </h2>
-<br/>
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Why Choose
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong>Sweden Relocators? </strong>
+                    </h2>
+                    <br />
 
                     <p className="tw-text-gray">
                       Sweden Relocators offers expert knowledge and personalized
@@ -1005,11 +956,9 @@ const Citizenship = () => {
                       application process. Here’s why you should choose us:
                     </p>
 
-                 
-                        <strong className="m-0 tw-text-gray">
-                          Expert Knowledge of Swedish Citizenship Laws
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-gray">
+                      Expert Knowledge of Swedish Citizenship Laws
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
@@ -1021,11 +970,9 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Comprehensive, Personalized Support
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-gray">
+                      Comprehensive, Personalized Support
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
@@ -1037,11 +984,9 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                 
-                        <strong className="m-0 tw-text-gray">
-                          Streamlined Application Process
-                        </strong>
-                    
+                    <strong className="m-0 tw-text-gray">
+                      Streamlined Application Process
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
@@ -1055,26 +1000,20 @@ const Citizenship = () => {
                   </div>
 
                   <div>
-                    <br/>
+                    <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       A Selection of Prime Citizenship-by-Investment Programs
                     </span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong>
                         Citizenship-by-Investment Programs Overview
                       </strong>
                     </h2>
 
-                 
-
-
-                  
-                    <br/>
+                    <br />
                     <div className="row tw-flex tw-items-center">
-                  
-
                       <div className="col-md-6">
                         <div className="row ">
                           <div className="col-md-9 tw-mx-auto">
@@ -1089,40 +1028,42 @@ const Citizenship = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                      <p className="tw-text-gray">
-                      Citizenship-by-investment programs offer affluent
-                      individuals and families a second or even third passport,
-                      granting them expanded global mobility, business
-                      opportunities, and the same rights as local citizens. Here
-                      are some of the most credible and successful programs
-                      available, each providing unique benefits:
-                    </p>
+                        <p className="tw-text-gray">
+                          Citizenship-by-investment programs offer affluent
+                          individuals and families the opportunity to acquire a
+                          second or even third passport, granting them expanded
+                          global mobility, business opportunities, and the same
+                          rights as local citizens. These programs typically
+                          require a significant financial investment in the host
+                          country, such as through real estate, business
+                          ventures, or government bonds, in exchange for
+                          citizenship. The benefits of these programs extend
+                          beyond the ability to travel visa-free to various
+                          countries; they also provide access to improved
+                          healthcare, education, and tax advantages.
+                        </p>
                       </div>
                     </div>
-                    <br/>
-                 
+                    <br />
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          🇦🇬 Antigua and Barbuda
-                        </strong>
-                    
+                    <strong className="m-0 tw-text-gray">
+                      🇦🇬 Antigua and Barbuda
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                     
-                    <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Minimum Investment:</strong> USD 100,000
                         </p>
                       </li>
-                    
+
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Advantages:</strong>
                           Visa-free or visa-on-arrival access to 151
@@ -1134,25 +1075,22 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                  
-                        <strong className="m-0 tw-text-gray">🇦🇹 Austria</strong>
-                      
+                    <strong className="m-0 tw-text-gray">🇦🇹 Austria</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      
-                    <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Minimum Investment:</strong> EUR 3 million
                         </p>
                       </li>
-                     
+
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Advantages:</strong>
                           One of the world’s strongest passports with visa-free
@@ -1163,26 +1101,22 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                
-                       
-                        <strong className="m-0 tw-text-gray">🇨🇾 Cyprus</strong>
-                    
+                    <strong className="m-0 tw-text-gray">🇨🇾 Cyprus</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                     
-                    <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Minimum Investment:</strong> EUR 2.15 million
                         </p>
                       </li>
-                     
+
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Advantages:</strong>
                           Visa-free access to 174 countries, including all EU
@@ -1193,26 +1127,23 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                  
-                        <strong className="m-0 tw-text-gray">🇲🇹 Malta</strong>
-                    
+                    <strong className="m-0 tw-text-gray">🇲🇹 Malta</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                     
-                    <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Minimum Investment:</strong> Approximately EUR
                           1 million
                         </p>
                       </li>
-                     
+
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Advantages:</strong>
                           Access to the entire EU with the right to live, work,
@@ -1224,25 +1155,22 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                   
-                        <strong className="m-0 tw-text-gray">🇲🇪 Montenegro</strong>
-                     
+                    <strong className="m-0 tw-text-gray">🇲🇪 Montenegro</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                    
-                    <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Minimum Investment:</strong> EUR 350,000
                         </p>
                       </li>
-                     
+
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Advantages:</strong>
                           Visa-free or visa-on-arrival access to 124 countries,
@@ -1253,27 +1181,24 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          🇰🇳 St. Kitts and Nevis
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-gray">
+                      🇰🇳 St. Kitts and Nevis
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                     
-                    <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Minimum Investment:</strong> USD 150,000
                         </p>
                       </li>
-                    
+
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Advantages:</strong>
                           Visa-free or visa-on-arrival access to 156
@@ -1284,25 +1209,22 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                
-                        <strong className="m-0 tw-text-gray">🇱🇨 St. Lucia</strong>
-                      
+                    <strong className="m-0 tw-text-gray">🇱🇨 St. Lucia</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      
-                    <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Minimum Investment:</strong> USD 100,000
                         </p>
                       </li>
-                     
+
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Advantages:</strong>
                           Visa-free or visa-on-arrival access to 146 countries
@@ -1314,25 +1236,23 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                        <strong className="m-0 tw-text-gray">🇹🇷 Turkey</strong>
-                     
+                    <strong className="m-0 tw-text-gray">🇹🇷 Turkey</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                     
-                    <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Minimum Investment:</strong> USD 250,000 in
                           real estate
                         </p>
                       </li>
-                     
+
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Advantages:</strong>
                           Access to key Western markets and growing economic
@@ -1346,27 +1266,25 @@ const Citizenship = () => {
                   </div>
 
                   <div>
-                    <br/>
+                    <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Why Choose Citizenship by Investment?
                     </span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong>Benefits of Citizenship by Investment</strong>
                     </h2>
 
-<br/>
+                    <br />
                     <p className="tw-text-gray">
                       Each of these citizenship-by-investment programs offers
                       distinct benefits tailored to the global elite:
                     </p>
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Enhanced Global Mobility
-                        </strong>
-                  
+                    <strong className="m-0 tw-text-gray">
+                      Enhanced Global Mobility
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -1377,11 +1295,9 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                   
-                        <strong className="m-0 tw-text-gray">
-                          Security and Stability
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-gray">
+                      Security and Stability
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -1392,10 +1308,9 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                        <strong className="m-0 tw-text-gray">
-                          Business Opportunities
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-gray">
+                      Business Opportunities
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -1407,9 +1322,9 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                 
-                        <strong className="m-0 tw-text-gray">Lifestyle Benefits</strong>
-                      
+                    <strong className="m-0 tw-text-gray">
+                      Lifestyle Benefits
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -1421,18 +1336,18 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-<br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Why Work With
-  </span>
-  <h2 className = "tw-text-left">
-    <strong>Sweden Relocators? </strong>
-  </h2>
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Why Work With
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong>Sweden Relocators? </strong>
+                    </h2>
 
-<br/>
-                  
+                    <br />
+
                     <p className="tw-text-gray">
                       At Sweden Relocators, we help you select the right
                       citizenship program based on your needs, guiding you
@@ -1440,11 +1355,9 @@ const Citizenship = () => {
                       efficient journey toward a second citizenship.
                     </p>
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Contact Sweden Relocators for Citizenship Assistance
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-gray">
+                      Contact Sweden Relocators for Citizenship Assistance
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">

@@ -6,9 +6,14 @@ import { GoTriangleRight } from "react-icons/go";
 import { Link, useParams } from "react-router-dom";
 import banner from "../../assets/images/online-contract-signing.png";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
+import { imageVariants } from "../../utils/motion";
+import { motion } from "framer-motion";
 
 import { useTranslation } from "react-i18next";
 import Header from "../../components/Header_New/Header";
+
+import cr1 from "../../assets/iconscout/cr1.png";
+import cr2 from "../../assets/iconscout/cr2.png";
 
 const CompanyRegistration = () => {
   const { t } = useTranslation();
@@ -250,6 +255,7 @@ const CompanyRegistration = () => {
               <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
                 <div className="  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
+                    <br/>
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Comprehensive Guide to Company Registration in Sweden
@@ -257,6 +263,7 @@ const CompanyRegistration = () => {
                     <h2 className = "tw-text-left">
                       <strong>Setting Up Your Business in Sweden</strong>
                     </h2>
+                    <br/>
                     <p className="tw-text-gray">
                       Setting up a business in Sweden offers access to one of
                       Europe’s most stable economies, a supportive business
@@ -275,7 +282,7 @@ const CompanyRegistration = () => {
 
 
 
-
+<br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
@@ -285,6 +292,7 @@ const CompanyRegistration = () => {
     <strong>                            is Company Registration Important?
     </strong>
   </h2>
+  <br/>
 
 
                     <ul className="tw-p-0 tw-pl-0">
@@ -350,14 +358,30 @@ const CompanyRegistration = () => {
                     </ul>
                   </div>
 
-                  <div>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+                  <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-12 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={cr1}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                        <br/>
+                      <span className="tw-flex tw-items-center tw-gap-2">
+
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Comprehensive Guide to Company Registration in Sweden
+                      Setting up
                     </span>
                     <h2 className = "tw-text-left">
-                      <strong>Setting Up Your Business in Sweden</strong>
-                    </h2>
+                      <strong>Your Business in Sweden</strong>
+                    </h2><br/>
                     <p className="tw-text-gray">
                       Setting up a business in Sweden offers access to one of
                       Europe’s most stable economies, a supportive business
@@ -367,16 +391,20 @@ const CompanyRegistration = () => {
                       the company and allows it to engage in business
                       activities, enter contracts, and access essential
                       services.
-                    </p>
-                    <p className="tw-text-gray">
                       This guide covers the various types of companies in
                       Sweden, the pros and cons of each, and why and when
                       company registration is necessary.
                     </p>
-
+                 
+                      </div>
+                    </div>
+                  <div>
+                   
+<br/>
                     <h2 className = "tw-text-left">
                       <strong>Types of Companies in Sweden</strong>
                     </h2>
+                    <br/>
                     <p className="tw-text-gray">
                       Sweden offers several types of business structures, each
                       with specific advantages, disadvantages, and requirements.
@@ -716,6 +744,7 @@ const CompanyRegistration = () => {
                   </div>
 
                   <div>
+                    <br/>
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       The Company Registration Process in Sweden
@@ -723,12 +752,32 @@ const CompanyRegistration = () => {
                     <h2 className = "tw-text-left">
                       <strong>Step-by-Step Guide</strong>
                     </h2>
+                    <br/>
 
-                    <p className="tw-text-gray">
-                      Setting up a company in Sweden involves several key steps
-                      to ensure your business is compliant with local
-                      regulations. Here’s how the process works:
+                    <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-12 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={cr2}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <p className="tw-text-gray">
+                      Setting up a company in Sweden involves several key steps to ensure compliance with local regulations. First, choose your business structure, such as a limited liability company (AB) or sole proprietorship. Register your business with the Swedish Companies Registration Office (Bolagsverket) and obtain a Swedish tax ID (organisationsnummer) from the Swedish Tax Agency (Skatteverket). Depending on your business, you may also need to register for VAT and social security contributions. After registration, open a corporate bank account and ensure compliance with Swedish labor laws and business practices. These steps ensure your company operates legally and efficiently in Sweden.
                     </p>
+                      </div>
+                    </div>
+
+
+
+                 
 
                    
                         <strong className="m-0 tw-text-gray">
@@ -845,6 +894,7 @@ const CompanyRegistration = () => {
                         </p>
                       </li>
                     </ul>
+                    <br/>
 
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
@@ -853,6 +903,7 @@ const CompanyRegistration = () => {
                     <h2 className = "tw-text-left">
                       <strong>Services Include:</strong>
                     </h2>
+                    <br/>
 
 
                  
@@ -908,14 +959,16 @@ const CompanyRegistration = () => {
                         </p>
                       </li>
                     </ul>
-
+<br/>
                     <span className="tw-flex tw-items-center tw-gap-2">
+                      
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Why Choose Sweden Relocators?
                     </span>
                     <h2 className = "tw-text-left">
                       <strong>Trusted Expertise</strong>
                     </h2>
+                    <br/>
 
                     <p className="tw-text-gray">
                       Choose Sweden Relocators for a seamless, personalized, and
@@ -973,6 +1026,8 @@ const CompanyRegistration = () => {
 
                   <div>
 
+
+<br/>
                   <span className=" tw-flex tw-items-center tw-gap-2">
     {" "}
     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
@@ -981,6 +1036,8 @@ const CompanyRegistration = () => {
   <h2 className = "tw-text-left">
     <strong> Your Global Visit Visa Today </strong>
   </h2>
+  <br/>
+
                     
 
                     <p className="tw-text-gray tw-pl-0">

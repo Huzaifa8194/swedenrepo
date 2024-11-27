@@ -18,6 +18,7 @@ import Header from '../../components/Header_New/Header';
 const New_In_sweden = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+   
   }, []);
   const data = [
     {
@@ -173,21 +174,55 @@ const New_In_sweden = () => {
   ];
 
   const [isSticky, setIsSticky] = useState(false);
+  const [topOffset, setTopOffset] = useState('30%');
 
+  
   useEffect(() => {
+
+
+     const updateTopOffset = () => {
+      if (window.innerWidth < 1800 && window.innerWidth > 1600) {
+        setTopOffset('-100%');
+      } 
+      else if (window.innerWidth < 1600 && window.innerWidth > 1400) {
+        setTopOffset('-100%');
+      }
+      else if (window.innerWidth >1800) {
+        setTopOffset('-65%');
+      }
+      else if (window.innerWidth < 1400 && window.innerWidth > 1000) {
+        setTopOffset('-150%');
+      }
+      else 
+      {
+        setTopOffset('-100%');
+      }
+    };
+     updateTopOffset();
+
+
+     window.addEventListener('scroll', updateTopOffset);
     const handleScroll = () => {
       const bottomSpace = document.documentElement.offsetHeight - (window.scrollY + window.innerHeight);
-      setIsSticky(window.scrollY > 1100 && bottomSpace > 685);
+      setIsSticky(window.scrollY > 1000 );
+
+      
+
+      console.log("BOTTOM SPACE: " + bottomSpace );
+      console.log("WINDOWY: "+ window.scrollY);
+      console.log("OFFSET " +topOffset )
+      console.log("INNER WIDTH " + window.innerWidth)
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', updateTopOffset);
     };
   }, []);
 
   return (
-    <>
+    <div style={{position: 'relative'}}>
       <Header />
       <Banner_Page 
         highlightText= {"New in Sweden"}
@@ -202,7 +237,9 @@ const New_In_sweden = () => {
         <section className=" ">
           <div className="container-fluid ">
             <div className="row g-4">
-              <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
+              
+
+            <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
                 <div className="   2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <span className=" tw-flex tw-items-center tw-gap-5">
                     {' '}
@@ -1416,8 +1453,16 @@ const New_In_sweden = () => {
                 </div>
               </div>
 
-              <div className="col-md-4  tw-pt-16   tw-bg-[#F5FAFF]  " style={{ position: 'sticky', top: '300px' }}>
-                <div className={` md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative `}>
+              <div className="col-md-4  tw-pt-16   tw-bg-[#F5FAFF]  " style={{ position: 'relative'}}>
+              <div
+  className={`md:tw-pr-[40%] 2xl:tw-pr-[50%] tw-pr-4`}
+  style={{
+    position: isSticky ? 'sticky' : 'static', // Apply sticky only if isSticky is true
+    top: isSticky ? topOffset : 'auto', // Only apply top offset when sticky
+  }}
+>
+  {/* Your content goes here */}
+
                   <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                     {data?.map((item, index) => {
                       return (
@@ -1436,7 +1481,7 @@ const New_In_sweden = () => {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 

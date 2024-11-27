@@ -18,6 +18,7 @@ import fr2 from "../../assets/iconscout/fr2.png";
 import fr3 from "../../assets/iconscout/fr3.png";
 import fr4 from "../../assets/iconscout/fr4.png";
 import fr5 from "../../assets/iconscout/fr5.png";
+import fr6 from "../../assets/iconscout/fr6.png";
 
 const FamilyRenuification = () => {
   const { t } = useTranslation();
@@ -937,7 +938,24 @@ const FamilyRenuification = () => {
                     </ul>
 
 <br/>
-                    <span className="tw-flex tw-items-center tw-gap-2">
+
+
+<div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-12 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={fr6}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Contact Sweden Relocators
                     </span>
@@ -954,6 +972,10 @@ const FamilyRenuification = () => {
                       reunification process in Sweden, ensuring all legal
                       requirements are met for a successful application.
                     </p>
+                      </div>
+                    </div>
+
+                   
                   </div>
                 </div>
               </div>

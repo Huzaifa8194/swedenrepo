@@ -4,9 +4,10 @@ import Navbar from '../../components/Header/Navbar';
 import Footer from '../../components/Footer/Footer';
 import { GoTriangleRight } from 'react-icons/go';
 import { Link, useParams } from 'react-router-dom';
-import banner from '../../assets/images/startup-incubation.png';
-import banner2 from '../../assets/images/study-material.png';
-import banner3 from '../../assets/images/educational-books.png';
+import banner from '../../assets/iconscout/st1.png';
+import banner2 from '../../assets/iconscout/st2.png';
+import banner3 from '../../assets/iconscout/st3.png';
+import sweden from "../../assets/iconscout/sweden.svg";
 import flag from '../../assets/images/Denmark-1.png';
 import flag1 from '../../assets/images/icons8-finland-80.png';
 import flag2 from '../../assets/images/Norway.png';
@@ -210,7 +211,7 @@ const StudyInEu = () => {
                 <div className="  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div className="row">
                     <div className="col-md-3">
-                      <img src={flag} alt=""  style={{ maxWidth: "450px" }} />
+                      <img src={sweden} alt=""  style={{ maxWidth: "100px" }} />
                     </div>
                     <div className="col-md-9">
                     <br/>
@@ -228,7 +229,7 @@ const StudyInEu = () => {
                   </div>
                   <div className="row">
                     <div className="col-md-10 tw-mx-auto">
-                      <img src={banner} alt=""  style={{ maxWidth: "450px" }}/>
+                      <img src={banner} alt="" className='tw-justify-self-center' style={{ maxWidth: "450px" }}/>
                     </div>
                   </div>
                   <p className=" tw-text-gray">
@@ -344,7 +345,7 @@ const StudyInEu = () => {
                     </div>
                     <div className="row">
                       <div className="col-md-9 tw-mx-auto">
-                        <img src={banner2} alt="" style={{ maxWidth: "450px" }} />
+                        <img src={banner2} alt="" className='tw-justify-self-center' style={{ maxWidth: "450px" }} />
                       </div>
                     </div>
 
@@ -624,7 +625,7 @@ const StudyInEu = () => {
 
                         <div className="row">
                           <div className="col-md-10 tw-mx-auto">
-                            <img src={banner3} alt=""  style={{ maxWidth: "450px" }} />
+                            <img src={banner3} alt="" className='tw-justify-self-center' style={{ maxWidth: "450px" }} />
                           </div>
                         </div>
                         <br/>

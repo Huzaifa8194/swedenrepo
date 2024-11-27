@@ -4,8 +4,8 @@ import Navbar from '../../components/Header/Navbar';
 import Footer from '../../components/Footer/Footer';
 import { GoTriangleRight } from 'react-icons/go';
 import { Link, useParams } from 'react-router-dom';
-import banner from '../../assets/images/family-playing-games-in-park.png';
-import banner2 from '../../assets/images/happy-family-jumping-together.png';
+import banner from '../../assets/iconscout/relocate2.png';
+import banner2 from '../../assets/iconscout/relocate1.png';
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
 import { useTranslation } from "react-i18next";
@@ -185,8 +185,8 @@ const EUCitizensRelocation = () => {
         <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
-              <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
-                <div className="  md:tw-pl-32 tw-pl-2">
+              <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
+                <div className="  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> WHAT IS
@@ -246,7 +246,7 @@ const EUCitizensRelocation = () => {
 
                   <div className="row">
                     <div className="col-md-10 tw-mx-auto">
-                      <img src={banner} alt="" />
+                      <img src={banner} alt="" className = "tw-justify-self-center" style={{maxWidth :'450px'}}/>
                     </div>
                   </div>
 
@@ -291,7 +291,7 @@ const EUCitizensRelocation = () => {
                     <div className="col-md-6">
                       <div className="row">
                         <div className="col-md-10 tw-mx-auto">
-                          <img src={banner2} alt="" />
+                          <img src={banner2} className = "tw-justify-self-center" alt="" style={{maxWidth :'450px'}}/>
                         </div>
                       </div>
                     </div>
@@ -460,7 +460,7 @@ const EUCitizensRelocation = () => {
               </div>
 
               <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-                <div className="  md:tw-pr-32 tw-pr-4">
+                <div className=" md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
                   <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                     {data?.map((item, index) => {
                       return (

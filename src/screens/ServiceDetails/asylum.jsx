@@ -13,10 +13,12 @@ import { useTranslation } from "react-i18next";
 
 import Header from "../../components/Header_New/Header";
 
+import ap1 from "../../assets/iconscout/ap1.png";
+import ap2 from "../../assets/iconscout/ap2.png";
+import ap3 from "../../assets/iconscout/ap3.png";
+import ap4 from "../../assets/iconscout/ap4.png";
 
-import md2 from "../../assets/iconscout/md2.png";
-import bp2 from "../../assets/iconscout/bp2.png";
-import cp1 from "../../assets/iconscout/cp1.png";
+
 
 
 const ServiceDetails = () => {
@@ -298,6 +300,26 @@ const ServiceDetails = () => {
                     </div>
 <br/>
                     <div>
+                     
+
+
+
+
+                      <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-12 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={ap3}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
@@ -309,7 +331,6 @@ const ServiceDetails = () => {
                         
                       </h2>
                       <br/>
-
                       <p className=" tw-text-gray tw-">
                         Since the refugee crisis, Swedish authorities have
                         tightened the requirements for permits, making it more
@@ -323,12 +344,14 @@ const ServiceDetails = () => {
                         decision and restoring your opportunity to live or work
                         in Sweden.
                       </p>
+                      </div>
+                    </div>
+                     
                       <br/>
                     </div>
 
-                    <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                        <span className=" tw-flex tw-items-center tw-gap-2">
+
+                    <span className=" tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                           How to Start
@@ -344,6 +367,10 @@ const ServiceDetails = () => {
                           applicant or an authorized representative. Here’s how
                           to begin:
                         </p>
+
+                    {/* <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                      
                       </div>
 
                       <div className="col-md-6">
@@ -352,14 +379,14 @@ const ServiceDetails = () => {
                             <motion.img
                               animate={imageVariants}
                               className=" tw-w-full"
-                              src={md2}
+                              src={ap1}
                               alt=""
                               style={{ maxWidth: "450px" }}
                             />
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
 
                     <div>
                       <br/>
@@ -389,14 +416,29 @@ const ServiceDetails = () => {
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            Specify the exact decision you are challenging.
+                          Clearly outline the specific decision you are contesting, providing as much detail as possible. This includes identifying the exact ruling, action, or determination made by the responsible authority or organization that you believe is incorrect or unjust. Be sure to mention any relevant dates, reference numbers, or case identifiers associated with the decision to ensure clarity.
                           </p>
                         </li>
                       </ul>
 
                       
-                          
-                          <strong className="tw-text-gray">
+
+                      <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-12 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={ap4}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <strong className="tw-text-gray">
                             Requested Change:
                           </strong>
                        
@@ -442,26 +484,17 @@ const ServiceDetails = () => {
                           </p>
                         </li>
                       </ul>
+                      </div>
+                    </div>
+                          
+                          
 
                      
                     </div>
 
-                    <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-12 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={cp1}
-                              alt=""
-                              style={{ maxWidth: "450px" }}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <span className=" tw-flex tw-items-center tw-gap-2">
+
+<br/><p><br/></p>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                           Authorization
@@ -478,8 +511,24 @@ const ServiceDetails = () => {
                           behalf. This document should be included with your
                           appeal and must be an original copy.
                         </p>
+                    {/* <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-12 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={ap2}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                      <div className="col-md-6">
+                        
+                      </div>
+                    </div> */}
 
                     <div>
                       <br></br>
@@ -598,7 +647,7 @@ const ServiceDetails = () => {
                             <motion.img
                               animate={imageVariants}
                               className=" tw-w-full"
-                              src={bp2}
+                              src={ap2}
                               alt=""
                               style={{ maxWidth: "450px" }}
                             />
@@ -805,8 +854,22 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                 
-                          <strong className="tw-text-gray">
+                      <div className="row tw-flex  tw-items-center">
+                      <div className="col-md-6 tw-justify-center">
+                        <div className="row ">
+                          <div className="col-md-12 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full "
+                              src={ap1}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <strong className="tw-text-gray">
                             Representation and Follow-Up
                           </strong>
                      
@@ -846,6 +909,13 @@ const ServiceDetails = () => {
                           </p>
                         </li>
                       </ul>
+                      </div>
+                    </div>
+
+
+
+                 
+                     
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">

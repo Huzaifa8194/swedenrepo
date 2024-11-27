@@ -13,11 +13,11 @@ import { useTranslation } from "react-i18next";
 
 
 
-import cprimage from "../../assets/iconscout/online-registration.png";
+import cprimage from "../../assets/iconscout/cprimage.png";
 
-import cprimage2 from "../../assets/iconscout/graphic-designer.png";
-import cprimage3 from "../../assets/iconscout/international-and-interurban-human-migration.png";
-import cprimage4 from "../../assets/iconscout/passport.png";
+import cprimage2 from "../../assets/iconscout/cprimage2.png";
+import cprimage3 from "../../assets/iconscout/cprimage3.png";
+import cprimage4 from "../../assets/iconscout/cprimage4.png";
 
 import Header from "../../components/Header_New/Header";
 
@@ -477,10 +477,10 @@ const CPRNumberDenmark = () => {
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <p className=" m-0 tw-text-gray">
-                          <strong>Required Documents:</strong> When you visit
+                          <strong>Required Documents:</strong><br/> When you visit
                           the Citizen’s Service Center to apply for your CPR
                           number, be prepared with the following:
-                          <ul className="tw-pl-0">
+                          <ul className="tw-pl-0 tw-pt-4">
                             <li>Proof of Residence and Legal Documentation:</li>
 
                             <ul className="tw-pl-0">
@@ -515,7 +515,7 @@ const CPRNumberDenmark = () => {
                             <motion.img
                               animate={imageVariants}
                               className=" tw-w-full"
-                              src={cprimage2}
+                              src={cprimage3}
                               alt=""
                               style={{ maxWidth: "450px" }}
                             />
@@ -633,7 +633,7 @@ const CPRNumberDenmark = () => {
                             <motion.img
                               animate={imageVariants}
                               className=" tw-w-full"
-                              src={cprimage3}
+                              src={cprimage2}
                               alt=""
                               style={{ maxWidth: "450px" }}
                             />

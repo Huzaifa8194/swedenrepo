@@ -12,8 +12,8 @@ import { useTranslation } from "react-i18next";
 import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
 
-import bv1 from "../../assets/iconscout/passport.png";
-import bv2 from "../../assets/iconscout/passport2.png";
+import bv1 from "../../assets/iconscout/bv1.png";
+import bv2 from "../../assets/iconscout/bv2.png";
 import bv3 from "../../assets/iconscout/bv3.png";
 
 import Header from "../../components/Header_New/Header";
@@ -299,18 +299,13 @@ const BusinessVisit = () => {
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Bank Statement:</strong><br/>  Submit an original
-                          bank statement from the last six months or proof of
-                          other assets if bank statements aren’t available.
+                          <strong>Bank Statement:</strong><br/>  To complete your application or prove your financial stability, you may be required to submit an original bank statement from the last six months. This document should clearly show your account activity, balance, and transactions during that period. If bank statements are unavailable, you can alternatively provide proof of other assets, such as investment portfolios, property ownership, or other financial documents that demonstrate your financial capacity. 
                         </p>
                       </li>
                       
 
-                      <li>
-                        <p className="m-0 tw-text-gray">
-                        <br/><strong>Passport Requirements:</strong><br/>  Your passport
-                          must:
-                          <ul className="tw-pl-0">
+                   
+                       
 
                           <div className="row tw-flex tw-items-center">
                      
@@ -329,6 +324,11 @@ const BusinessVisit = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
+                      <li>
+                      <p className="m-0 tw-text-gray">
+                        <br/><strong>Passport Requirements:</strong><br/>  Your passport
+                          must:
+                          <ul className="tw-pl-0">
                       <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
@@ -368,14 +368,15 @@ const BusinessVisit = () => {
                               years.
                               </p>
                             </li>
+                            </ul>
+                        </p>
+                      </li>
                       </div>
                     </div>
                           
 
 
-                          </ul>
-                        </p>
-                      </li>
+                          
 
                       <li>
                         <p className="m-0 tw-text-gray">
@@ -518,11 +519,7 @@ const BusinessVisit = () => {
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Movement Certificate:</strong><br/> Required if you
-                          are a first-time traveler, your passport doesn’t cover
-                          the last seven years, or there’s a gap of more than
-                          three months between your current and previous
-                          passports.
+                          <strong>Movement Certificate:</strong><br/> A movement certificate is required in specific circumstances, such as when you are a first-time traveler to Sweden, your passport does not cover the last seven years, or there is a gap of more than three months between your current and previous passports. This document helps the Swedish authorities track your travel history and verify your eligibility for entry or a visa. It serves as proof of your movement between countries, ensuring that you meet the necessary requirements for visa processing.
                         </p>
                       </li>
 
@@ -547,8 +544,7 @@ const BusinessVisit = () => {
                      <li>
                         <p className="m-0 tw-text-gray">
                           <br/><strong>Other Embassy-Specified Documents:</strong>{" "}<br/>
-                          Additional paperwork may be requested by the embassy
-                          depending on individual circumstances.
+                          Depending on your individual situation, the embassy may request additional paperwork to process your visa or permit application. These documents could include, but are not limited to, proof of accommodation, travel insurance, employment contracts, or financial documentation. The specific requirements will vary based on the type of visa or permit you are applying for, as well as your personal circumstances. It is important to carefully review the embassy's guidelines and provide any additional documentation as requested to ensure a smooth application process.
                         </p>
                       </li>
                     </div>
@@ -579,9 +575,8 @@ const BusinessVisit = () => {
 
                     <div className="row tw-flex tw-items-center">
                     <p className="tw-text-gray">
-                    A Swedish business visa is ideal for foreign nationals who
-                      wish to invest in Sweden and make periodic visits to
-                      manage business interests.
+                 
+A Swedish business visa is ideal for foreign nationals who wish to invest in Sweden and make periodic visits to manage their business interests. This visa allows entrepreneurs and investors to enter Sweden for short-term stays, enabling them to oversee operations, meet with business partners, and participate in key business activities without the need for long-term residency. While the business visa does not grant permission to work in Sweden, it provides flexibility for individuals involved in the management, development, or oversight of a Swedish business. 
                       </p>
 
                      <div className="col-md-6">
@@ -600,12 +595,7 @@ const BusinessVisit = () => {
 
                      <div className="col-md-6">
                      <p className="tw-text-gray">
-                     This visa allows multiple
-                      entries and is valid for short stays of up to 90 days
-                      within a 180-day period, renewable for up to five years.
-                      This flexibility is especially beneficial for investors
-                      who need to oversee business developments or make frequent
-                      visits without obtaining a residence permit.
+                     This visa allows multiple entries and is valid for short stays of up to 90 days within a 180-day period, renewable for up to five years. This flexibility is especially beneficial for investors who need to oversee business developments or make frequent visits without obtaining a residence permit. Additionally, the visa provides the opportunity to plan business trips around key events and projects in Sweden, ensuring ongoing engagement with local operations while maintaining compliance with visa regulations. This makes it a practical solution for those managing investments or business interests in Sweden on a regular basis.
                     </p>
                      </div>
                 

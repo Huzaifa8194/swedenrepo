@@ -4,7 +4,7 @@ import Navbar from '../../components/Header/Navbar';
 import Footer from '../../components/Footer/Footer';
 import { GoTriangleRight } from 'react-icons/go';
 import { Link, useParams } from 'react-router-dom';
-import banner from '../../assets/images/signing-contract.png';
+import banner from '../../assets/iconscout/prr1.png';
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
 import Header from '../../components/Header_New/Header';
@@ -181,8 +181,8 @@ const PermanentResidence = () => {
         <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
-              <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
-                <div className="  md:tw-pl-32 tw-pl-3">
+              <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
+                <div className="  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <span className=" tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> PERMANENT RIGHT OF
@@ -190,10 +190,12 @@ const PermanentResidence = () => {
                   <h2>
                     <strong>Residence For EU Citizens</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">If you lived in Sweden for more than 5 years with the EU right of residence you can get the permanent residence permit.</p>
 
                   <div>
+                    <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> DIFFERENT WAYS FOR
@@ -201,6 +203,7 @@ const PermanentResidence = () => {
                     <h2>
                       <strong>Permanent Right Of Residence</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       As an EU citizen you have right of residence if you work, study, have your own company or have sufficient means to support yourself. If you have right of residence of living with someone you should live for 5 years with them.
@@ -243,6 +246,7 @@ const PermanentResidence = () => {
                   </div>
 
                   <div>
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> FOR
@@ -251,6 +255,7 @@ const PermanentResidence = () => {
                     <h2>
                       <strong>Dependents</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       For dependents, the process is a bit different. Permanent residence for dependents can only be granted either in conjunction with the main applicant being granted permanent residence (if the applications were submitted together)
@@ -260,10 +265,11 @@ const PermanentResidence = () => {
 
                   <div className="row">
                     <div className="col-md-10 tw-mx-auto">
-                      <img src={banner} alt="" />
+                      <img src={banner} alt="" className='tw-justify-self-center' style={{maxWidth: '400px'}} />
                     </div>
                   </div>
                   <div>
+                  <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> PERMANENT RESIDENCE CARDS FOR
@@ -271,13 +277,14 @@ const PermanentResidence = () => {
                     <h2>
                       <strong>EU Citizens Family Members Who Are Non-EU Citizens</strong>
                     </h2>
+                    <br/>
 
                     <p className=" tw-text-gray">
                       As a close relative of an EU citizen, when you have lived in Sweden for five years with your close relative and they have had right of residence throughout this period, you have permanent right of residence.
                     </p>
 
                     <p className=" tw-text-gray">you can apply for a permanent residence card.</p>
-
+                    <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> REQUIREMENTS FOR
@@ -285,9 +292,11 @@ const PermanentResidence = () => {
                     <h2>
                       <strong>Permanent Residence Card</strong>
                     </h2>
+                    <br/>
                   </div>
 
                   <div>
+                  <br/>
                     <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> TO BE ELIGIBLE FOR
@@ -295,6 +304,7 @@ const PermanentResidence = () => {
                     <h2>
                       <strong>A Permanent Residence Card</strong>
                     </h2>
+                    <br/>
 
                     <ul className=" tw-p-0 tw-pt-4">
                       <li className=" tw-flex tw-items-center tw-gap-3">
@@ -314,6 +324,7 @@ const PermanentResidence = () => {
                   </div>
 
                   <div>
+                  <br/>
                     <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> HOWEVER, HAVING A PERMANENT
@@ -321,6 +332,7 @@ const PermanentResidence = () => {
                     <h2>
                       <strong>Residence Permit Does Not Entitle You To</strong>
                     </h2>
+                    <br/>
 
                     <ul className=" tw-p-0 tw-pt-4">
                       <li className=" tw-flex tw-items-center tw-gap-3">
@@ -349,7 +361,7 @@ const PermanentResidence = () => {
               </div>
 
               <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-                <div className="  md:tw-pr-32 tw-pr-4">
+                <div className="  md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4">
                   <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                     {data?.map((item, index) => {
                       return (

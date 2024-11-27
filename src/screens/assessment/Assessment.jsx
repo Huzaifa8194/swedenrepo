@@ -20,10 +20,10 @@ import assess6 from "../../assets/images/ass6.png";
 
 
 
-import as1 from "../../assets/iconscout/as1.png";
-import as2 from "../../assets/iconscout/as2.png";
-import as3 from "../../assets/iconscout/as3.png";
-import as4 from "../../assets/iconscout/as4.png";
+import as1 from "../../assets/iconscout/ass2.png";
+import as2 from "../../assets/iconscout/ass1.png";
+import as3 from "../../assets/iconscout/ass3.png";
+import as4 from "../../assets/iconscout/ass4.png";
 
 
 

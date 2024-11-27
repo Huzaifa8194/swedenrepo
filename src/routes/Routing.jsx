@@ -70,7 +70,7 @@ const Routing = () => {
   const isBackDropTrue = useSelector((state) => state.dropBackDropReducer.isDropBackDropTrue);
   return (
     <div>
-      <Backdrop isBackDropTrue={isBackDropTrue} />
+      {/* <Backdrop isBackDropTrue={isBackDropTrue} /> */}
       <BrowserRouter>
         {/* <ScrollToTop /> */}
         <Routes>

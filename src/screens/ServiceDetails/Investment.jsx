@@ -9,9 +9,18 @@ import { imageVariants } from '../../utils/motion';
 import { motion } from 'framer-motion';
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
+import inv5 from "../../assets/iconscout/inv5.png";
+
 import { useTranslation } from "react-i18next";
 
 import Header from '../../components/Header_New/Header';
+
+
+import inv1 from "../../assets/iconscout/inv1.png";
+import inv2 from "../../assets/iconscout/inv2.png";
+import inv3 from "../../assets/iconscout/inv3.png";
+import inv4 from "../../assets/iconscout/inv4.png";
+
 
 
 const Investment = () => {
@@ -186,14 +195,22 @@ const Investment = () => {
         <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
-              <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
-                <div className="  md:tw-pl-32 tw-pl-3">
-                  <div className="row">
-                    <div className="col-md-10 tw-mx-auto">
-                      <motion.img animate={imageVariants} className=" tw-w-full" src={banner} alt="" />
-                    </div>
-                  </div>
+              <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
+                <div className="   2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
+                 
+                <br/>
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Investment
+                    </span>
 
+                    <h2 className="tw-text-left">
+                      <strong>
+                     Oppurtunities in Sweden
+                      </strong>
+                    </h2>
+                    <br/>
                   <p className="  tw-text-gray">
                     Swedish market has been witnessing the growing number of foreign companies, especially in the past few years. Sweden has developed a strong and competitive capitalist economy with a generous and universal welfare system that is
                     known as the Nordic Model. With its diverse and stable market, investors are attracted to the country’s growing economy.
@@ -202,11 +219,18 @@ const Investment = () => {
                     There are so many opportunities for business in the country and Future Concerns can help you to connect with other companies in the sector.Some of the reasons that businesses have chosen the Swedish market as their destination are
                     the world-class infrastructure, Low-level of corruption, highly-skilled workforce, capitalistic economy, and friendly business culture.
                   </p>
+
+                  <div className="row">
+                    <div className="col-md-10 tw-mx-auto">
+                      <motion.img animate={imageVariants} className="tw-justify-self-center tw-w-full" src={inv1} alt="" style = {{maxWidth: "450px"}} />
+                    </div>
+                  </div>
                   <p className="  tw-text-gray">
                     Sweden’s business climate is very favorable and that’s why it is known as a country of innovation.Many successful and innovative businesses have emerged from Sweden like Ericsson, Sandvik, Spotify, Klarna and many more Sweden has
                     developed a highly competitive capitalist economy with a generous and universal welfare system known as the Nordic Model, making it a very unique opportunity for international investors.
                   </p>
 
+<br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> WE HAVE SCOURED SOME IMPORTANT STEPS
@@ -214,6 +238,7 @@ const Investment = () => {
                   <h2>
                     <strong>To Look For Business Opportunities In Sweden, Which Are:</strong>
                   </h2>
+                  <br/>
 
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
@@ -222,6 +247,7 @@ const Investment = () => {
                   <h2>
                     <strong>Required Research</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     In Sweden’s online society, the information is easily accessible, so you should do proper research before investing in any business in Sweden. Statistics Sweden is a website where you can look for anything from the demographics of
@@ -229,6 +255,8 @@ const Investment = () => {
                   </p>
                   <p className=" tw-text-gray">You can also check with the trade organization to get information about the size of the market, types of companies, rules and regulations of that particular sector, and general stats of the market.</p>
 
+
+<br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>BUILD
@@ -237,13 +265,36 @@ const Investment = () => {
                     <strong>Your Network</strong>
                   </h2>
 
+<br/>
                   <p className=" tw-text-gray">
                     The key to a successful start-up or business is to build networks with relevant organizations or people in a particular sector. By doing this you will be getting the related information of starting and doing business in Sweden as
                     well as you will get to know the work methodologies of competitors.Besides friends, relatives, and colleagues in Sweden, try to find people with similar ideas and thoughts. You could contact the local branch of Swedish Jobs and
                     Society Foundation or Sweden Business, which help-out new businesses in Sweden to expand their network.
                   </p>
 
-                  <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
+
+<br/>
+
+
+
+
+
+<div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-12 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={inv2}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>FRANCHISE
                   </span>
@@ -251,12 +302,17 @@ const Investment = () => {
                   <h2>
                     <strong>Or Business</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     A franchisee receives support and help from the parent company and a business person has to do everything on his own. Investment opportunities can be of both type and it is your own choice whether you want to start your own new
                     business or want to get a franchise.There are various opportunities for business ventures in Sweden and you should search for business ventures and should invest in the most suitable one. Both have their pros and cons.
                   </p>
 
+                      </div>
+                    </div>
+               
+<br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>GO
@@ -264,6 +320,7 @@ const Investment = () => {
                   <h2>
                     <strong>For It</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     When you have collected all the details and made your mind that where you want to invest in, you should grab the opportunity as soon as possible. The right opportunity might not be in the area where you are residing, and you have
@@ -276,6 +333,8 @@ const Investment = () => {
                     international investors should consider before investing in Sweden.
                   </p>
 
+<br/>
+
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>INVEST IN
@@ -283,17 +342,44 @@ const Investment = () => {
                   <h2>
                     <strong>SWEDISH REAL ESTATE</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     Investing in Swedish real estate is the best choice if you are looking for sustainable investment opportunities, a stable business environment, and an open society. Investment in real estate in Sweden is a profitable choice
                     because the big cities in Sweden are experiencing remarkable growth rates in real estate prices.
                   </p>
+
+
+
+
+<div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-12 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={inv3}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                     
                   <p className=" tw-text-gray">
                     Sweden ranks as most business-friendly and logistically efficient nation worldwide, transporting goods and linking manufacturers and consumers with international markets. A fundamental aspect of the Swedish economy is its open and
                     liberal approach to doing business. The country offers a globalized business environment that makes it easy for overseas organizations to work within. Accomplished professionals, sophisticated business procedures and receptiveness
                     to international partnerships allow an unsurpassed ease of operation. Moreover, 85% of the Swedish population are proficient in English.
                   </p>
+                      </div>
+                    </div>
 
+                
+
+
+<br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>INVESTMENT IN
@@ -301,6 +387,7 @@ const Investment = () => {
                   <h2>
                     <strong>Swedish Real Estate Makes A Great Profit</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">Sweden is a valued destination for international retail businesses. The Swedish economy is the strongest in Europe. Sweden has experienced robust growth in retail sales for 19 consecutive years.</p>
                   <p className=" tw-text-gray">
@@ -308,19 +395,45 @@ const Investment = () => {
                     for a diverse range of businesses, especially regarding international retailers, who view Stockholm as one of the most desirable areas to do business in the Scandinavian region.
                   </p>
 
-                  <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
+<br/>
+
+<div className="row tw-flex tw-items-center">
+<div className="col-md-6">
+                      <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>INVEST IN
                   </span>
                   <h2>
                     <strong>DIGITAL TECHNOLOGIES</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     Sweden is a launch pad for going digital as gamechanging technologies revolutionise more and more industries. By tapping into Sweden’s world class technology skills, innovation clusters and vibrant startup scene, international
                     companies can accelerate their journey to a connected, low-carbon future.
                   </p>
 
+
+                      </div>
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-12 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={inv4}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+
+
+               
+<br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>MARKETS
@@ -328,6 +441,7 @@ const Investment = () => {
                   <h2>
                     <strong>SWEDEN DIGITAL TECHNOLOGIES</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     Today’s hyper-connected world is often taken for granted and most people rarely think about what makes all the technology around us work. This may seem paradoxical given the accelerating growth of the ICT industry and global focus
@@ -345,6 +459,8 @@ const Investment = () => {
                     Apple, Amazon, Facebook, Fujitsu, Google, HCL, HP, IBM, Microsoft, Nvidia, Samsung and Tata are just a few global players who have invested heavily in Sweden.
                   </p>
 
+
+<br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>SMART
@@ -352,6 +468,7 @@ const Investment = () => {
                   <h2>
                     <strong>INDUSTRY</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     Sweden is at the forefront of the global race toward Industry 4.0. By tapping into the nation’s automation expertise, thriving industrial clusters and clean energy, manufacturers large and small can lead the way to a greener and
@@ -364,6 +481,8 @@ const Investment = () => {
                     per cent are employed by foreign-owned companies. Total exports account for 50 per cent of the nation’s GDP.
                   </p>
 
+
+<br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>FOOD
@@ -371,6 +490,7 @@ const Investment = () => {
                   <h2>
                     <strong>INDUSTRY</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     Choosing a sustainable lifestyle, including the food you eat, clothes and furniture you buy, comes as second nature to many Swedes. The Creative Industries ecosystem is all about amplifying the impact and international growth of
@@ -379,6 +499,8 @@ const Investment = () => {
                     and globally competitive food industry by 2030, and to stimulate growth and job creation across the country.
                   </p>
 
+
+<br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>GOING
@@ -386,17 +508,38 @@ const Investment = () => {
                   <h2>
                     <strong>PLANT-BASED</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     Circularity and healthy, increasingly plant-based food have become major focal points for today’s food producers. Swedish food tech startups and many established companies are now at the forefront of developing plant-based protein
                     products, using the Swedish agricultural tradition to transform traditional crops like oat, peas and lupin into new, healthy food and beverage products. Surveys have shown that one in every five Swedes under the age of 30 identify
                     as either vegan or vegetarian which has spurred demand for vegan brands.
                   </p>
-                  <p className=" tw-text-gray">
+
+                  <div className="row tw-flex tw-items-center">
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-12 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={inv5}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <p className=" tw-text-gray">
                     Companies that started out small in Sweden (think Oatly) have broken into major consumer markets abroad such as the US and China. Meanwhile, Sweden’s AgTech sector has rapidly expanded. Collaboration initiatives are ramping up to
                     shape tomorrow’s agriculture by introducing sensors, artificial intelligence, Internet of Things and other digital technologies that will optimise food production and harvests. There are at least 20 startups today in the AgTech
                     sector, several of which are addressing global challenges in the food production system.
                   </p>
+                      </div>
+                    </div>
+
+                 
                   <p className=" tw-text-gray">
                     Another thriving sector in food is aquatec h. Sweden is currently building a land-based fish farming industry powered by renewable energy, where aquaculture systems use water that is recirculated through mechanical and biological
                     filters.
@@ -404,6 +547,8 @@ const Investment = () => {
 
                   <p className=" tw-text-gray tw-font-medium">OTHER WAYS TO INVEST IN SWEDEN ARE AS FOLLOWS</p>
 
+
+<br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>OPEN A
@@ -411,6 +556,7 @@ const Investment = () => {
                   <h2>
                     <strong>Boutique</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     Boutique business is one of the thriving small-scale businesses in the fashion industry that an aspiring entrepreneur can start in Sweden. Interest in fashion is big in Sweden and the country is headquartering famous brands like
@@ -421,6 +567,7 @@ const Investment = () => {
                     boutique is well located and stocked with quality clothes and fashion accessories, you are likely not going to struggle to attract customers.
                   </p>
 
+<br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>RETAIL OF
@@ -428,6 +575,7 @@ const Investment = () => {
                   <h2>
                     <strong>Shoes, Sandals, Slippers And Belts</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     Aside from running a boutique which is a good small-scale business in the fashion industry, opening a store where shoes, sandals, slippers and belts are sold is yet another easy to setup business that an entrepreneur should
@@ -438,6 +586,8 @@ const Investment = () => {
                     general leather works as it relates to fashion.
                   </p>
 
+
+<br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>OPEN A
@@ -445,6 +595,7 @@ const Investment = () => {
                   <h2>
                     <strong>Perfume Store</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     It is safe to say that wearing a nice smelling perfume from a good perfume designer gives one confidence. Retailing of perfumes from different designers is yet another profitable small-scale business that an entrepreneur can
@@ -455,6 +606,7 @@ const Investment = () => {
                     are able to secure a good location perhaps in a busy market, you won’t struggle to make daily sales.
                   </p>
 
+<br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>RETAILING OF
@@ -462,6 +614,7 @@ const Investment = () => {
                   <h2>
                     <strong>Jewelries And Fashion Accessories</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     If you have cash and you are looking for a viable small-scale business to start in Sweden, then you should look towards starting your own jewelry and fashion accessories shop; a shop where you can sell necklaces, rings, earrings,
@@ -472,6 +625,8 @@ const Investment = () => {
                     family members and friends or even a place where people meet to network.
                   </p>
 
+
+<br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>OPEN A
@@ -479,6 +634,7 @@ const Investment = () => {
                   <h2>
                     <strong>Consignment Shop</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     There are several stuffs that can be sold in a consignment shop and if you are looking towards starting a business in Sweden that requires minimal startup capital, a business that is thriving and profitable, then you should
@@ -489,6 +645,8 @@ const Investment = () => {
                     be an ideal place to start this type of business in Sweden.
                   </p>
 
+
+<br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>OPEN A
@@ -496,6 +654,7 @@ const Investment = () => {
                   <h2>
                     <strong>Bridal Shop</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     A bridal shop is a place where everything about weddings are sold. Wedding gown, shoes, veil and other wedding accessories are part of what you will find in a typical bridal shop. Retailing of wedding gowns and other wedding
@@ -503,6 +662,8 @@ const Investment = () => {
                   </p>
                   <p className=" tw-text-gray">So, if you are looking towards starting a small- scale business in Sweden, a business that does not require training or special skills to manage, then one of your options is to open a wedding shop</p>
 
+
+<br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>OPEN A
@@ -510,6 +671,7 @@ const Investment = () => {
                   <h2>
                     <strong>Restaurant</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     Restaurant business is yet another thriving business that can be started on a small-scale in Sweden. Just ensure that you have a blend of both local and international dishes in your restaurant and you will attract both locals and
@@ -519,6 +681,7 @@ const Investment = () => {
                     Swedish traditional dishes, some of which are hundreds of years old, are still an important part of Swedish everyday meals, in spite of the fact that modern-day Swedish cuisine adopts many international dishes.
                   </p>
 
+<br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>OPEN A
@@ -526,6 +689,7 @@ const Investment = () => {
                   <h2>
                     <strong>Sport Shop</strong>
                   </h2>
+                  <br/>
 
                   <p className=" tw-text-gray">
                     Sport activities are a national movement with half of the population actively participating in organized sporting activities. The two main spectator sports are football and ice hockey. In essence, if you are interested in starting
@@ -537,7 +701,7 @@ const Investment = () => {
               </div>
 
               <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-                <div className="  md:tw-pr-32 tw-pr-4">
+                <div className="  md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4">
                   <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                     {data?.map((item, index) => {
                       return (

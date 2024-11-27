@@ -19,6 +19,12 @@ import ap2 from "../../assets/iconscout/ap2.png";
 import ap3 from "../../assets/iconscout/ap3.png";
 
 
+import asa1 from "../../assets/iconscout/asa1.png";
+import asa2 from "../../assets/iconscout/asa2.png";
+import asa3 from "../../assets/iconscout/asa3.png";
+
+
+
 const AppealCases = () => {
   const { t } = useTranslation();
 
@@ -415,7 +421,7 @@ const AppealCases = () => {
                             <motion.img
                               animate={imageVariants}
                               className=" tw-w-full"
-                              src={ap1}
+                              src={asa1}
                               alt=""
                               style={{ maxWidth: "450px" }}
                             />
@@ -520,7 +526,7 @@ const AppealCases = () => {
                             <motion.img
                               animate={imageVariants}
                               className=" tw-w-full"
-                              src={ap2}
+                              src={asa2}
                               alt=""
                               style={{ maxWidth: "450px" }}
                             />
@@ -621,7 +627,7 @@ const AppealCases = () => {
                             <motion.img
                               animate={imageVariants}
                               className=" tw-w-full"
-                              src={ap3}
+                              src={asa3}
                               alt=""
                               style={{ maxWidth: "450px" }}
                             />

@@ -16,6 +16,8 @@ import pn3 from "../../assets/iconscout/pn3.png";
 import pn4 from "../../assets/iconscout/pn4.png";
 import pn5 from "../../assets/iconscout/pn5.png";
 
+import pn6 from "../../assets/iconscout/pn6.png";
+
 import Header from "../../components/Header_New/Header";
 
 const PersonnumerSweden = () => {
@@ -264,7 +266,7 @@ const PersonnumerSweden = () => {
                       (Personnummer): Essential for Life in Sweden
                     </span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong>A Critical Overview</strong>
                     </h2>
                     <br />
@@ -286,7 +288,7 @@ const PersonnumerSweden = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Why You
                     </span>
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong> Need a Personnummer</strong>
                     </h2>
 
@@ -330,64 +332,7 @@ const PersonnumerSweden = () => {
                           <strong className="tw-pt-4">
                             Opening a Bank Account:
                           </strong>
-                          <br /> Banks generally require a personnummer to open
-                          an account, which is necessary for receiving salary
-                          payments, paying bills, and managing finances.
-                          <br />
-                          <br />
-                        </p>
-                      </li>
-
-                      <li>
-                        <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4">
-                            Education and Social Services:
-                          </strong>{" "}
-                          <br />
-                          Children need a personnummer to enroll in schools, and
-                          adults need it to access various social services,
-                          including unemployment benefits, parental leave, and
-                          pensions.
-                          <br />
-                          <br />
-                        </p>
-                      </li>
-
-                      <li>
-                        <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4">Swedish ID Card:</strong>{" "}
-                          <br />
-                          Once you have a personnummer, you can apply for a
-                          Swedish ID card, which simplifies daily activities
-                          like shopping, picking up packages, or accessing
-                          public services.
-                          <br />
-                        </p>
-                      </li>
-                    </ul>
-                    <br />
-
-                 
-
-
-
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-                          {" "}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                          Structure of
-                        </span>
-                        <h2 className = "tw-text-left">
-                          <strong>The Personnummer </strong>
-                        </h2>
-
-                    <br />
-
-                    <ul className="tw-p-0 tw-pl-0">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4">First Six Digits:</strong>
-                          <br /> Represent the individual’s birthdate in the
-                          format YYMMDD.
+                          <br /> In Sweden, having a personnummer is typically a prerequisite for opening a bank account. This account is essential for managing everyday financial activities, such as receiving salary payments, paying household bills, and handling personal finances. Without a bank account, it can be challenging to navigate Sweden’s largely cashless economy, as most transactions—both personal and professional—are conducted electronically. 
                           <br />
                           <br />
                         </p>
@@ -398,13 +343,13 @@ const PersonnumerSweden = () => {
                       <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
                         <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
+                          <div className="col-md-12 tw-mx-auto">
                             <motion.img
                               animate={imageVariants}
-                              className=" tw-w-full"
-                              src={pn2}
+                              className="tw-justify-self-center tw-w-full"
+                              src={pn6}
                               alt=""
-                              style={{ maxWidth: "450px" }}
+                              style={{ maxWidth: "300px" }}
                             />
                           </div>
                         </div>
@@ -412,23 +357,17 @@ const PersonnumerSweden = () => {
                       <div className="col-md-6">
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4">Last Four Digits:</strong>{" "}
+                          <strong className="tw-pt-4">
+                            Education and Social Services:
+                          </strong>{" "}
                           <br />
-                          Serve as a unique identifier, which also includes
-                          information about gender. Odd numbers designate males,
-                          while even numbers designate females.
-                          <br />
-                          <br />
-                        </p>
-                      </li>
-
-                      <li>
-                        <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4">Century Marker:</strong>
-                          <br /> A hyphen ("-") is used between the birthdate
-                          and the unique identifier. When a person turns 100,
-                          the hyphen is replaced with a plus sign (“+”) to
-                          distinguish their century of birth.
+                          A personnummer plays a crucial role in accessing both
+                          educational and social welfare systems in Sweden. For
+                          children, it is essential for school enrollment,
+                          enabling them to participate in Sweden’s comprehensive
+                          education system. For adults, the personnummer serves
+                          as a gateway to a wide range of social services, such
+                          as applying for unemployment benefits.
                           <br />
                           <br />
                         </p>
@@ -436,18 +375,94 @@ const PersonnumerSweden = () => {
                       </div>
                     </div>
 
+                    
 
-                   
+                      <li>
+                        <p className="m-0 tw-text-gray">
+                          <strong className="tw-pt-4">Swedish ID Card:</strong>{" "}
+                          <br />
+                          
+Swedish ID Card:
+After obtaining a personnummer, you become eligible to apply for a Swedish ID card, which serves as an official form of identification. This card significantly simplifies various aspects of daily life, such as verifying your identity when shopping, collecting packages from postal services, or accessing public facilities and services.
+                          <br />
+                        </p>
+                      </li>
+                    </ul>
+                    <br />
+
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Structure of
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong>The Personnummer </strong>
+                    </h2>
+
+                    <br />
+
+                    <ul className="tw-p-0 tw-pl-0">
+                      <li className="tw-flex tw-items-center tw-gap-3">
+                        <p className="m-0 tw-text-gray">
+                          <strong className="tw-pt-4">First Six Digits:</strong>
+                          <br /> The first six digits of the personnummer represent the individual’s birthdate in the format YYMMDD. This means the numbers correspond to the year, month, and day of birth, providing a clear and standardized way to identify a person's date of birth at a glance. This structure makes the personnummer both practical and easy to interpret across various systems and services in Sweden.
+                          <br />
+                          <br />
+                        </p>
+                      </li>
+
+                      <div className="row tw-flex tw-items-center">
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-9 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full"
+                                src={pn2}
+                                alt=""
+                                style={{ maxWidth: "450px" }}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <li>
+                            <p className="m-0 tw-text-gray">
+                              <strong className="tw-pt-4">
+                                Last Four Digits:
+                              </strong>{" "}
+                              <br />
+                              Serve as a unique identifier, which also includes
+                              information about gender. Odd numbers designate
+                              males, while even numbers designate females.
+                              <br />
+                              <br />
+                            </p>
+                          </li>
+
+                          <li>
+                            <p className="m-0 tw-text-gray">
+                              <strong className="tw-pt-4">
+                                Century Marker:
+                              </strong>
+                              <br /> A hyphen ("-") is used between the
+                              birthdate and the unique identifier. When a person
+                              turns 100, the hyphen is replaced with a plus sign
+                              (“+”) to distinguish their century of birth.
+                              <br />
+                              <br />
+                            </p>
+                          </li>
+                        </div>
+                      </div>
 
                       <li>
                         <p className="m-0 tw-text-gray">
                           <strong>
                             Coordination Number (samordningsnummer):
                           </strong>{" "}
-                          For those staying temporarily in Sweden or without a
-                          registered residence, a Coordination Number is
-                          available. It is structured similarly to the
-                          personnummer but with 60 added to the day of birth.
+                          <br/>
+                          For individuals who are staying temporarily in Sweden or do not have a registered residence, a Coordination Number, known as a samordningsnummer, is issued. This number serves as an alternative to the personnummer, enabling access to essential services and integration into administrative systems. It is structured similarly to the personnummer, with the key difference being that 60 is added to the day of birth. 
                           <br />
                         </p>
                       </li>
@@ -457,13 +472,13 @@ const PersonnumerSweden = () => {
                   <div>
                     <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
-                          <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                          Steps to Apply for a Personnummer
-                        </span>
-                        <h2 className = "tw-text-left">
-                          <strong> A Step-by-Step Guide </strong>
-                        </h2>
-                   
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                      Steps to Apply for a Personnummer
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong> A Step-by-Step Guide </strong>
+                    </h2>
+
                     <br />
                     <p className="tw-text-gray">
                       If you are planning to stay in Sweden for more than one
@@ -483,11 +498,7 @@ const PersonnumerSweden = () => {
                       </li>
                     </ul>
 
-
-
                     <div className="row tw-flex tw-items-center">
-                      
-
                       <div className="col-md-6">
                         <div className="row ">
                           <div className="col-md-9 tw-mx-auto">
@@ -502,33 +513,35 @@ const PersonnumerSweden = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                      <strong className="m-0 tw-text-gray">
-                      Identification Documents
-                    </strong>
-                    <ul className="tw-p-0 tw-pl-0">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          A passport or national ID card is typically required.
-                          For non-EU citizens, additional documentation such as
-                          a residence permit is often necessary.
-                        </p>
-                      </li>
-                    </ul>
-                    <strong className="m-0 tw-text-gray">
-                      Supporting Documents for Family Members
-                    </strong>
-                    <ul className="tw-p-0 tw-pl-0">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          If you’re moving with your family, each family member
-                          will need their identification documents and proof of
-                          relationship (such as marriage or birth certificates).
-                        </p>
-                      </li>
-                    </ul>
+                        <strong className="m-0 tw-text-gray">
+                          Identification Documents
+                        </strong>
+                        <ul className="tw-p-0 tw-pl-0">
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <p className="m-0 tw-text-gray">
+                              A passport or national ID card is typically
+                              required. For non-EU citizens, additional
+                              documentation such as a residence permit is often
+                              necessary.
+                            </p>
+                          </li>
+                        </ul>
+                        <strong className="m-0 tw-text-gray">
+                          Supporting Documents for Family Members
+                        </strong>
+                        <ul className="tw-p-0 tw-pl-0">
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <p className="m-0 tw-text-gray">
+                              If you’re moving with your family, each family
+                              member will need their identification documents
+                              and proof of relationship (such as marriage or
+                              birth certificates).
+                            </p>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                   
+
                     <p className="tw-text-gray">
                       The approval process can vary, and it may take several
                       weeks for your application to be processed. Once approved,
@@ -536,16 +549,15 @@ const PersonnumerSweden = () => {
                     </p>
                     <br />
 
-
                     <span className=" tw-flex tw-items-center tw-gap-2">
-                          {" "}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                          Swedish ID Card
-                        </span>
-                        <h2 className = "tw-text-left">
-                          <strong> Your Key to Accessing Services </strong>
-                        </h2>
-                  
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Swedish ID Card
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong> Your Key to Accessing Services </strong>
+                    </h2>
+
                     <br />
                     <p className="tw-text-gray">
                       Once you have your personnummer, you can apply for a
@@ -560,60 +572,63 @@ const PersonnumerSweden = () => {
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
 
 
+                    <li className=" tw-flex  tw-gap-3">
+                            <div>
+                              <GoTriangleRight className=" tw-text-blue" />
+                            </div>
+                            <p className="m-0 tw-text-gray">
+                              <strong>Personnummer:</strong> Only residents with
+                              a personnummer can apply for the ID card.
+                            </p>
+                          </li>
+
+                          <li className=" tw-flex  tw-gap-3">
+                            <div>
+                              <GoTriangleRight className=" tw-text-blue" />
+                            </div>
+                            <p className="m-0 tw-text-gray">
+                              <strong>Proof of Payment:</strong> A fee
+                              (currently around 400 SEK) must be paid before
+                              your appointment.
+                            </p>
+                          </li>
+
+                          <li className=" tw-flex  tw-gap-3">
+                            <div>
+                              <GoTriangleRight className=" tw-text-blue" />
+                            </div>
+                            <p className="m-0 tw-text-gray">
+                              <strong>Proof of Identity:</strong> If you are a
+                              new resident, Skatteverket may require a witness
+                              or additional documents to verify your identity.
+                            </p>
+                          </li>
+                      
+                    </ul>
+                    <p className="tw-text-gray">The Swedish ID card provides a practical solution for navigating daily life with ease. It allows you to verify your identity in various situations, such as at banks, when shopping, or signing important documents. It also simplifies tasks like collecting packages from delivery points or accessing healthcare services</p>
+                   
+                 
+
+
                     <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={pn4}
-                              alt=""
-                              style={{ maxWidth: "450px" }}
-                            />
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-9 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full"
+                                src={pn4}
+                                alt=""
+                                style={{ maxWidth: "450px" }}
+                              />
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="col-md-6">
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Personnummer:</strong> Only residents with a
-                          personnummer can apply for the ID card.
-                        </p>
-                      </li>
-
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Proof of Payment:</strong> A fee (currently
-                          around 400 SEK) must be paid before your appointment.
-                        </p>
-                      </li>
-
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Proof of Identity:</strong> If you are a new
-                          resident, Skatteverket may require a witness or
-                          additional documents to verify your identity.
-                        </p>
-                      </li>
-                      </div>
-                    </div>
-                     
-                    </ul>
-                    <p className="tw-text-gray">This ID card allows you to:</p>
-                    <strong className="m-0 tw-text-gray">
+                        <div className="col-md-6">
+                        <strong className="m-0 tw-text-gray">
                       Open and Manage Bank Accounts
                     </strong>
-                    <ul className="tw-p-0 ">
+                        <ul className="tw-p-0 ">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           Most banks in Sweden require the Swedish ID card as
@@ -643,16 +658,19 @@ const PersonnumerSweden = () => {
                         </p>
                       </li>
                     </ul>
+                        </div>
+                      </div>
+                    
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
-                          {" "}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                          Challenges
-                        </span>
-                        <h2 className = "tw-text-left">
-                          <strong>Without a Personnummer and ID Card </strong>
-                        </h2>
-                   
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Challenges
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong>Without a Personnummer and ID Card </strong>
+                    </h2>
+
                     <br />
                     <p className="tw-text-gray">
                       Without a personnummer, integrating into Swedish society
@@ -675,51 +693,48 @@ const PersonnumerSweden = () => {
                       </li>
                     </ul>
 
-
                     <div className="row tw-flex tw-items-center">
-                     
-
-                     <div className="col-md-6">
-                       <div className="row ">
-                         <div className="col-md-9 tw-mx-auto">
-                           <motion.img
-                             animate={imageVariants}
-                             className=" tw-w-full"
-                             src={pn5}
-                             alt=""
-                             style={{ maxWidth: "450px" }}
-                           />
-                         </div>
-                       </div>
-                     </div>
-                     <div className="col-md-6">
-                     <strong className="m-0 tw-text-gray">
-                      Limited Access to Healthcare
-                    </strong>
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          While emergency healthcare is available, many regular
-                          services require a personnummer for full access and
-                          standard rates.
-                        </p>
-                      </li>
-                    </ul>
-                    
-                    <strong className="m-0 tw-text-gray">
-                      Difficulty in Renting Housing
-                    </strong>
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Many landlords require a personnummer for signing
-                          lease agreements.
-                        </p>
-                      </li>
-                    </ul>
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={pn5}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
                       </div>
-                   </div>
-                    
+                      <div className="col-md-6">
+                        <strong className="m-0 tw-text-gray">
+                          Limited Access to Healthcare
+                        </strong>
+                        <ul className="tw-p-0 tw-pl-0 tw-pt-4">
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <p className="m-0 tw-text-gray">
+                              While emergency healthcare is available, many
+                              regular services require a personnummer for full
+                              access and standard rates.
+                            </p>
+                          </li>
+                        </ul>
+
+                        <strong className="m-0 tw-text-gray">
+                          Difficulty in Renting Housing
+                        </strong>
+                        <ul className="tw-p-0 tw-pl-0 tw-pt-4">
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <p className="m-0 tw-text-gray">
+                              Many landlords require a personnummer for signing
+                              lease agreements.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
                     <strong className="m-0 tw-text-gray">
                       Educational Access for Children
                     </strong>
@@ -738,7 +753,7 @@ const PersonnumerSweden = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       How
                     </span>
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong> Sweden Relocators Can Assist You </strong>
                     </h2>
                     <br />
@@ -820,7 +835,7 @@ const PersonnumerSweden = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Be sure to
                     </span>
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong>Contact Us </strong>
                     </h2>
                     <br />

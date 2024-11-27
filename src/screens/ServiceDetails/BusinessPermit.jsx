@@ -306,8 +306,7 @@ const BusinessPermit = () => {
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           <strong>Innovative Environment:</strong>
-                          <br /> Sweden has a collaborative and transparent
-                          business culture that encourages innovation.
+                          <br /> Sweden has a collaborative and transparent business culture that fosters innovation and creativity. The country's emphasis on open communication, mutual respect, and a flat organizational structure allows for free flow of ideas and encourages teamwork. Swedish businesses often prioritize sustainability, ethical practices, and long-term value, which aligns with a broader societal focus on innovation and social responsibility. The culture supports entrepreneurial initiatives and offers a strong ecosystem of resources.
                         </p>
                       </li>
 
@@ -334,8 +333,7 @@ const BusinessPermit = () => {
                     <li>
                       <p className="m-0 tw-text-gray tw-pt-4">
                         <strong>Access to EU Markets:</strong>
-                        <br /> As an EU member, Sweden provides businesses
-                        access to a large and stable market.
+                        <br /> As an EU member, Sweden offers businesses the significant advantage of access to a large and stable market. Companies operating in Sweden can freely trade within the European Union, benefiting from the absence of trade barriers, customs duties, and tariffs. 
                       </p>
                     </li>
 
@@ -343,9 +341,7 @@ const BusinessPermit = () => {
                       <p className="m-0 tw-text-gray tw-pt-4">
                         <strong>Supportive Financial Ecosystem:</strong>{" "}
                         <br />
-                        Swedish institutions offer various financing options
-                        for entrepreneurs, including public and private loans
-                        and grants.
+                        Sweden’s financial ecosystem is highly supportive of entrepreneurs and startups, offering a wide range of financing options to help businesses grow and thrive. Swedish institutions, both public and private, provide various loans, grants, and investment opportunities.
                       </p>
                     </li>
                     </div>
@@ -385,7 +381,7 @@ const BusinessPermit = () => {
                           simple business setup.
                         </p>
                       </li>
-
+{/* 
                       <div className="row tw-flex tw-items-center">
                   
 
@@ -403,7 +399,11 @@ const BusinessPermit = () => {
                     </div>
                   </div>
                   <div className="col-md-6">
-                  <li className="tw-pt-4">
+                 
+                  </div>
+                </div> */}
+
+                <li className="tw-pt-4">
                         <p className="m-0 tw-text-gray">
                           <strong>
                             Trading Partnership or Limited Partnership
@@ -424,10 +424,6 @@ const BusinessPermit = () => {
                           and tax benefits.
                         </p>
                       </li>
-                  </div>
-                </div>
-
-
                     
 
                       <li className="tw-pt-4">
@@ -849,9 +845,7 @@ const BusinessPermit = () => {
                       <li>
                         <p className="m-0 tw-text-gray tw-pt-4">
                           <strong>Business Plan Development:</strong>
-                          <br /> Our team helps you create a compelling business
-                          plan that demonstrates financial viability and aligns
-                          with Swedish market expectations.
+                          <br />  Our team helps you create a compelling business plan that not only demonstrates financial viability but also aligns with Swedish market expectations. We work closely with you to develop a detailed strategy that highlights your business model.
                         </p>
                       </li>
 
@@ -878,9 +872,7 @@ const BusinessPermit = () => {
                       <li>
                         <p className="m-0 tw-text-gray tw-pt-4">
                           <strong>Financial and Income Proof:</strong> <br />
-                          Assistance in documenting financial assets to prove
-                          your ability to support both the business and your
-                          family.
+                          We assist you in documenting your financial assets to demonstrate your ability to support both your business and your family in Sweden. This includes preparing detailed financial statements, such as bank account balances, investment records, and proof of income, to show that you have sufficient resources to cover your living expenses, business operations, and any associated costs. We help you compile the necessary documentation to meet Swedish immigration requirements, ensuring that you can demonstrate financial stability and sustainability. 
                         </p>
                       </li>
                    

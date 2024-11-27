@@ -12,6 +12,10 @@ import Header from '../../components/Header_New/Header';
 import { useTranslation } from "react-i18next";
 
 
+import ep1 from "../../assets/iconscout/ep1.png";
+import ep2 from "../../assets/iconscout/ep2.png";
+
+
 const EEAPermits = () => {
   const { t } = useTranslation();
   const { id } = useParams();
@@ -204,7 +208,7 @@ const EEAPermits = () => {
                       <div className="col-md-6">
                         <div className="row ">
                           <div className="col-md-10 tw-mx-auto">
-                          <img src={banner} alt="" />
+                          <img src={ep1} alt="" />
                           </div>
                         </div>
                       </div>
@@ -332,7 +336,7 @@ const EEAPermits = () => {
 
                       <div className="row">
                         <div className="col-md-7 tw-mx-auto">
-                          <img src={banner2} alt="" />
+                          <img src={ep2} alt="" />
                         </div>
                       </div>
                     </div>
