@@ -25,7 +25,7 @@ import as2 from "../../assets/iconscout/ass1.png";
 import as3 from "../../assets/iconscout/ass3.png";
 import as4 from "../../assets/iconscout/ass4.png";
 
-
+import ass5 from "../../assets/iconscout/ass5.png";
 
 import FeatureSection from "../../components/AssessFeatured";
 
@@ -347,7 +347,7 @@ const Assessment = () => {
                     <div className="col-md-4">
                       <div className="row ">
                         <div className="col-md-10 tw-mx-auto">
-                          <img src={assess3} alt="" />
+                          <img src={ass5} alt="" />
                         </div>
                       </div>
                     </div>
