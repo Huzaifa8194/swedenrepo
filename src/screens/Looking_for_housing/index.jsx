@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { GoTriangleRight } from "react-icons/go";
 import { useTranslation } from "react-i18next";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
-import rentimage1 from "../../assets/iconscout/rentimage1.png";
+import rentimage1 from "../../assets/iconscout/rentimage6.png";
 import rentimage4 from "../../assets/iconscout/rentimage2.png";
 import rentimage2 from "../../assets/iconscout/rentimage5.png";
 import rentimage3 from "../../assets/iconscout/rentimage3.png";
@@ -736,7 +736,7 @@ Skåne & Copenhagen.
 
               <img
                 src={rentimage1}
-                className=" tw-rounded-3xl tw-w-full tw-mt-14 tw-bg-white tw-shadow-lg   "
+                className=" tw-rounded-xl tw-w-full tw-mt-14 tw-bg-white tw-shadow-lg   "
 
                 // keeps image fixed at the top of its container while scrolling
               />
@@ -762,7 +762,7 @@ Skåne & Copenhagen.
 
               <img
                 src={rentimage2}
-                className=" tw-rounded-3xl tw-w-full tw-shadow-lg tw-bg-white"
+                className=" tw-rounded-xl tw-w-full tw-shadow-lg tw-bg-white"
 
                 // keeps image fixed at the top of its container while scrolling
               />
