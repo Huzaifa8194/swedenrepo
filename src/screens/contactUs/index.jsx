@@ -70,7 +70,7 @@ const ContactUs = () => {
                 <div className="title-header">
                   <span>Why Choose Us</span>
                   <h2>
-                    Get In
+                    Get In<br/>
                     <strong>Touch?</strong>
                   </h2>
                 </div>

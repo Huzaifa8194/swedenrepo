@@ -193,6 +193,10 @@ const New_In_sweden = () => {
       else if (window.innerWidth < 1400 && window.innerWidth > 1000) {
         setTopOffset('-150%');
       }
+      else if (window.innerWidth < 900)
+      {
+        setTopOffset('-340%');
+      }
       else 
       {
         setTopOffset('-100%');

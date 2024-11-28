@@ -41,6 +41,9 @@
     <!-- Root Element for React -->
 
     <style>
+
+
+
       #goog-gt-tt {
         display: none;
       }
@@ -77,14 +80,25 @@
     background-color: #e8e8e8;
 }
 
-      @media (max-width: 640px) {
+      @media (max-width: 1300px) {
         #google_translate_element {
-          box-sizing: border-box;
-         
-          top: 0px;
-          left: 50%;
-          right: 60%;
+        
+         display: none !important;
+       
         }
+      }
+
+
+      @media (max-width: 800px)
+      {
+        html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+   
+}
+
       }
     </style>
 
@@ -103,9 +117,6 @@
     ></div>
     <div id="root"></div>
 
-    <!-- Google Translate Placeholder -->
-
-    <!-- Main Script -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

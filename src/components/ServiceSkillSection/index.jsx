@@ -123,7 +123,7 @@ const SkillSection = () => {
                 <div className="title-header">
                   <h5>ABOUT consultant</h5>
                   <h2 className="title">
-                    Immigration Services From <strong>Experienced Agents.</strong>
+                    Immigration Services From <br/><strong>Experienced Agents.</strong>
                   </h2>
                 </div>
                 <div className="title-desc">

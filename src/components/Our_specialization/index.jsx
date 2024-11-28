@@ -1,6 +1,8 @@
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import businessman from "../../assets/iconscout/businessman.svg";
+
 
 const Our_specialization = () => {
   const { t } = useTranslation();
@@ -84,7 +86,7 @@ const Our_specialization = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 tw-pt-4">
                 <div className="">
                   <div className="tw-flex tw-gap-10 tw-pb-4 tw-text-center">
                     <i className="flaticon-family-1 tw-text-5xl tw-m-0 tw-text-blue"></i>
@@ -96,15 +98,15 @@ const Our_specialization = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-6 tw-pt-4">
                 <div className="">
-                  <div className="tw-flex tw-gap-10 tw-pb-4 tw-text-center">
-                    <i className="flaticon-business-man tw-text-5xl tw-m-0 tw-text-blue"></i>
-                    <h5>{t('Investment Solutions')}</h5>
+                  <div className="tw-flex tw-gap-0 tw-pb-1 tw-text-center">
+                    <img src = {businessman} style = {{maxWidth: '3rem', marginBottom: '0px'}}/>
+                    <h5 style={{margin: '0px'}}>{t('Investment Solutions')}</h5>
                   </div>
                   <hr className="tw-border-gray" />
                   <p className="tw-text-gray">
-                    {t('There are various opportunities for business ventures, Look for the best opportunity. We provide you assistance with the right investments in Sweden. You can use the business section on the portal.')}
+                    {t('There are various opportunities for business ventures, Look for the best opportunity to boost your business.')}
                   </p>
                 </div>
               </div>
