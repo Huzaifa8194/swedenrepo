@@ -11,19 +11,15 @@ import { useTranslation } from "react-i18next";
 
 import Header from "../../components/Header_New/Header";
 
-
 import { motion } from "framer-motion";
 import { imageVariants } from "../../utils/motion";
 import ap1 from "../../assets/iconscout/ap1.png";
 import ap2 from "../../assets/iconscout/ap2.png";
 import ap3 from "../../assets/iconscout/ap3.png";
 
-
 import asa1 from "../../assets/iconscout/asa1.png";
 import asa2 from "../../assets/iconscout/asa2.png";
 import asa3 from "../../assets/iconscout/asa3.png";
-
-
 
 const AppealCases = () => {
   const { t } = useTranslation();
@@ -285,30 +281,25 @@ const AppealCases = () => {
                       the utmost care and professionalism.
                     </p>
 
-                    <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <br />
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Why
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Choose an Expert?
-                      </strong>
+                      <strong>Choose an Expert?</strong>
                     </h2>
-                    <br/>
+                    <br />
 
-                   
                     <p className="tw-text-gray">
                       Navigating the asylum process in Sweden can be complex,
                       with specific rules and timelines. Here’s how our expert
                       team can make a difference for you:
                     </p>
 
-                  
-                        <strong className="m-0 tw-text-gray">Peace of Mind</strong>
-                     
+                    <strong className="m-0 tw-text-gray">Peace of Mind</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
@@ -321,10 +312,9 @@ const AppealCases = () => {
                       </li>
                     </ul>
 
-                                         <strong className="m-0 tw-text-gray">
-                          Clear and Transparent Guidance
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-gray">
+                      Clear and Transparent Guidance
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
@@ -338,11 +328,9 @@ const AppealCases = () => {
                       </li>
                     </ul>
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Immediate Access to a Legal Expert
-                        </strong>
-                   
+                    <strong className="m-0 tw-text-gray">
+                      Immediate Access to a Legal Expert
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
@@ -355,23 +343,17 @@ const AppealCases = () => {
                       </li>
                     </ul>
 
-                  
-                    <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <br />
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Who
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Can Apply for Asylum?
-                      </strong>
+                      <strong>Can Apply for Asylum?</strong>
                     </h2>
-                    <br/>
-
-
-                  
+                    <br />
 
                     <p className="tw-text-gray">
                       To apply for asylum in Sweden, you must be physically
@@ -388,23 +370,17 @@ const AppealCases = () => {
                       Refugee Convention.
                     </p>
 
-
-
-                    <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <br />
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Refugee
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Definition and Criteria
-                      </strong>
+                      <strong>Definition and Criteria</strong>
                     </h2>
-                    <br/>
-
-                  
+                    <br />
 
                     <p className="tw-text-gray">
                       Under Swedish law and international guidelines, a person
@@ -412,9 +388,7 @@ const AppealCases = () => {
                       threats in their home country based on:
                     </p>
 
-                     <div className="row tw-flex tw-items-center">
-                    
-
+                    <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
                         <div className="row ">
                           <div className="col-md-9 tw-mx-auto">
@@ -429,25 +403,23 @@ const AppealCases = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        
-                    <ul className="tw-p-0 tw-pl-0">
-                      <li className="tw-text-gray">Race</li>
-                      <li className="tw-text-gray">
-                        Nationality, Language, or Ethnic Group
-                      </li>
-                      <li className="tw-text-gray">Religion</li>
-                      <li className="tw-text-gray">
-                        Political Belief or Activism
-                      </li>
-                      <li className="tw-text-gray">Gender Identity</li>
-                      <li className="tw-text-gray">Sexual Orientation</li>
-                      <li className="tw-text-gray">
-                        Membership in a Particular Social Group
-                      </li>
-                    </ul>
-                        </div>
+                        <ul className="tw-p-0 tw-pl-0">
+                          <li className="tw-text-gray">Race</li>
+                          <li className="tw-text-gray">
+                            Nationality, Language, or Ethnic Group
+                          </li>
+                          <li className="tw-text-gray">Religion</li>
+                          <li className="tw-text-gray">
+                            Political Belief or Activism
+                          </li>
+                          <li className="tw-text-gray">Gender Identity</li>
+                          <li className="tw-text-gray">Sexual Orientation</li>
+                          <li className="tw-text-gray">
+                            Membership in a Particular Social Group
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-
 
                     <p className="tw-text-gray">
                       If groups or individuals in your home country threaten you
@@ -458,22 +430,17 @@ const AppealCases = () => {
                       risks you face if you were to return to your country.
                     </p>
 
-
-                    <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <br />
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Possible
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Outcomes of Your Application
-                      </strong>
+                      <strong>Outcomes of Your Application</strong>
                     </h2>
-                    <br/>
-
-                    
+                    <br />
 
                     <p className="tw-text-gray">
                       If your case is accepted, you may receive a residence
@@ -482,10 +449,9 @@ const AppealCases = () => {
                     </p>
                   </div>
 
-
                   <div>
-                    <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <br />
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       <p className=" tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Steps to Apply for Asylum in Sweden
                     </span>
@@ -493,19 +459,16 @@ const AppealCases = () => {
                     <h2 className="tw-text-left">
                       <strong>Step-by-Step Process</strong>
                     </h2>
-                    <br/>
+                    <br />
 
                     <p className=" tw-text-gray">
                       Follow these essential steps to apply for asylum in Sweden
                       and begin your journey toward protection and settlement.
                     </p>
 
-                 
-                       
-                        <strong className=" m-0 tw-text-gray">
-                          Step 1: Presence in Sweden
-                        </strong>
-                     
+                    <strong className=" m-0 tw-text-gray">
+                      Step 1: Presence in Sweden
+                    </strong>
 
                     <ul className=" tw-p-0 tw-pl-0">
                       <li>
@@ -516,10 +479,7 @@ const AppealCases = () => {
                       </li>
                     </ul>
 
-
                     <div className="row tw-flex tw-items-center">
-                     
-
                       <div className="col-md-6">
                         <div className="row ">
                           <div className="col-md-9 tw-mx-auto">
@@ -535,34 +495,28 @@ const AppealCases = () => {
                       </div>
 
                       <div className="col-md-6">
-                      <strong className=" m-0 tw-text-gray">
+                        <strong className=" m-0 tw-text-gray">
                           Step 2: Initial Meeting with Swedish Migration Agency
                         </strong>
-                    
 
-                    <ul className=" tw-p-0 tw-pl-0">
-                      <li>
-                        <p className=" m-0 tw-text-gray">
-                          Once you submit your application, you will be invited
-                          to an initial meeting at the Swedish Migration Agency.
-                          During this meeting, you will have the opportunity to
-                          select your legal representative or lawyer. At this
-                          stage, you can choose our experienced team to support
-                          you.
-                        </p>
-                      </li>
-                    </ul>
+                        <ul className=" tw-p-0 tw-pl-0">
+                          <li>
+                            <p className=" m-0 tw-text-gray">
+                              Once you submit your application, you will be
+                              invited to an initial meeting at the Swedish
+                              Migration Agency. During this meeting, you will
+                              have the opportunity to select your legal
+                              representative or lawyer. At this stage, you can
+                              choose our experienced team to support you.
+                            </p>
+                          </li>
+                        </ul>
                       </div>
                     </div>
 
-                 
-                        
-
-               
-                        <strong className=" m-0 tw-text-gray">
-                          Step 3: Role of Your Legal Representative
-                        </strong>
-                     
+                    <strong className=" m-0 tw-text-gray">
+                      Step 3: Role of Your Legal Representative
+                    </strong>
 
                     <ul className=" tw-p-0 tw-pl-0">
                       <li>
@@ -577,22 +531,17 @@ const AppealCases = () => {
                       </li>
                     </ul>
 
-
-                    <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <br />
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Our
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Role as Your Legal Representative
-                      </strong>
+                      <strong>Role as Your Legal Representative</strong>
                     </h2>
-                    <br/>
-
-                   
+                    <br />
 
                     <p className=" tw-text-gray">
                       As your legal representative, we will provide ongoing
@@ -600,11 +549,9 @@ const AppealCases = () => {
                       Here’s how we help:
                     </p>
 
-                  
-                        <strong className=" m-0 tw-text-gray">
-                          Support and Legal Advice
-                        </strong>
-                 
+                    <strong className=" m-0 tw-text-gray">
+                      Support and Legal Advice
+                    </strong>
 
                     <ul className=" tw-p-0 tw-pl-0">
                       <li>
@@ -616,11 +563,7 @@ const AppealCases = () => {
                       </li>
                     </ul>
 
-                  
-
                     <div className="row tw-flex tw-items-center">
-                     
-
                       <div className="col-md-6">
                         <div className="row ">
                           <div className="col-md-9 tw-mx-auto">
@@ -635,68 +578,56 @@ const AppealCases = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                      <strong className=" m-0 tw-text-gray">
+                        <strong className=" m-0 tw-text-gray">
                           Clarifying Grounds for Asylum
                         </strong>
-                    
 
-                    <ul className=" tw-p-0 tw-pl-0">
-                      <li>
-                        <p className=" m-0 tw-text-gray">
-                          We will help clarify your grounds for asylum to the
-                          Migration Agency, ensuring a smooth application
-                          process.
-                        </p>
-                      </li>
-                    </ul>
+                        <ul className=" tw-p-0 tw-pl-0">
+                          <li>
+                            <p className=" m-0 tw-text-gray">
+                              We will help clarify your grounds for asylum to
+                              the Migration Agency, ensuring a smooth
+                              application process.
+                            </p>
+                          </li>
+                        </ul>
 
-                   
                         <strong className=" m-0 tw-text-gray">
                           Navigating Appeals
                         </strong>
-                     
 
-                    <ul className=" tw-p-0 tw-pl-0">
-                      <li>
-                        <p className=" m-0 tw-text-gray">
-                          If your initial application is denied, we can assist
-                          with appeals to both the Migration Court and the
-                          Migration Court of Appeal.
-                        </p>
-                      </li>
-                    </ul>
+                        <ul className=" tw-p-0 tw-pl-0">
+                          <li>
+                            <p className=" m-0 tw-text-gray">
+                              If your initial application is denied, we can
+                              assist with appeals to both the Migration Court
+                              and the Migration Court of Appeal.
+                            </p>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                     
 
-
-                    <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <br />
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Family
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Reunification for Refugees
-                      </strong>
+                      <strong>Reunification for Refugees</strong>
                     </h2>
-                    <br/>
-
-                 
+                    <br />
 
                     <p className=" tw-text-gray">
                       Sweden recognizes family reunification as an essential
                       right for refugees. Here’s what you need to know:
                     </p>
 
-              
-                        <strong className=" m-0 tw-text-gray">
-                          Who Can Qualify for Family Reunification?
-                        </strong>
-                    
-                   
+                    <strong className=" m-0 tw-text-gray">
+                      Who Can Qualify for Family Reunification?
+                    </strong>
 
                     <ul className=" tw-p-0 tw-pl-0">
                       <li>
@@ -708,11 +639,9 @@ const AppealCases = () => {
                       </li>
                     </ul>
 
-                
-                        <strong className=" m-0 tw-text-gray">
-                          For EU/EEA Citizens
-                        </strong>
-                    
+                    <strong className=" m-0 tw-text-gray">
+                      For EU/EEA Citizens
+                    </strong>
 
                     <ul className=" tw-p-0 tw-pl-0">
                       <li>
@@ -724,23 +653,17 @@ const AppealCases = () => {
                       </li>
                     </ul>
 
-
-                    <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <br />
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       How
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      We Assist You with Family Reunification
-                      </strong>
+                      <strong>We Assist You with Family Reunification</strong>
                     </h2>
-                    <br/>
-
-
-                  
+                    <br />
 
                     <p className=" tw-text-gray">
                       Our team provides complete support for the family
@@ -748,11 +671,9 @@ const AppealCases = () => {
                       journey:
                     </p>
 
-                 
-                        <strong className=" m-0 tw-text-gray">
-                          Application Preparation
-                        </strong>
-                     
+                    <strong className=" m-0 tw-text-gray">
+                      Application Preparation
+                    </strong>
 
                     <ul className=" tw-p-0 tw-pl-0">
                       <li>
@@ -764,10 +685,9 @@ const AppealCases = () => {
                       </li>
                     </ul>
 
-                        <strong className=" m-0 tw-text-gray">
-                          Additional Support Services for Asylum Seekers
-                        </strong>
-                      
+                    <strong className=" m-0 tw-text-gray">
+                      Additional Support Services for Asylum Seekers
+                    </strong>
 
                     <ul className=" tw-p-0 tw-pl-0">
                       <li>
@@ -778,6 +698,25 @@ const AppealCases = () => {
                         </p>
                       </li>
                     </ul>
+
+                    <Link to="/register" className="tw-text-center tw-pt-4">
+                      <h2 className="tw-text-center tw-pt-4">
+                        <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
+                          Sign Up{" "}
+                        </strong>
+                        <strong> Today!</strong>
+                      </h2>
+                    </Link>
+                    <br />
+                    <p className="tw-text-gray">
+                      Sign up today and simplify your journey! Whether you're
+                      seeking assistance with relocation, permits, visas, legal
+                      processes, or settling into a new life, we're here to
+                      help. Our comprehensive services cover everything from
+                      work and study opportunities to family reunifications,
+                      business support, and much more. Let us guide you every
+                      step of the way—start your seamless experience now!
+                    </p>
                   </div>
                 </div>
               </div>

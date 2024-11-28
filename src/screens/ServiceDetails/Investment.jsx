@@ -235,7 +235,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> WE HAVE SCOURED SOME IMPORTANT STEPS
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>To Look For Business Opportunities In Sweden, Which Are:</strong>
                   </h2>
                   <br/>
@@ -244,7 +244,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>DO THE
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>Required Research</strong>
                   </h2>
                   <br/>
@@ -261,7 +261,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>BUILD
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>Your Network</strong>
                   </h2>
 
@@ -299,7 +299,7 @@ const Investment = () => {
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>FRANCHISE
                   </span>
 
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>Or Business</strong>
                   </h2>
                   <br/>
@@ -317,7 +317,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>GO
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>For It</strong>
                   </h2>
                   <br/>
@@ -339,7 +339,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>INVEST IN
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>SWEDISH REAL ESTATE</strong>
                   </h2>
                   <br/>
@@ -384,7 +384,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>INVESTMENT IN
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>Swedish Real Estate Makes A Great Profit</strong>
                   </h2>
                   <br/>
@@ -403,7 +403,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>INVEST IN
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>DIGITAL TECHNOLOGIES</strong>
                   </h2>
                   <br/>
@@ -438,7 +438,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>MARKETS
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>SWEDEN DIGITAL TECHNOLOGIES</strong>
                   </h2>
                   <br/>
@@ -465,7 +465,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>SMART
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>INDUSTRY</strong>
                   </h2>
                   <br/>
@@ -487,7 +487,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>FOOD
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>INDUSTRY</strong>
                   </h2>
                   <br/>
@@ -505,7 +505,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>GOING
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>PLANT-BASED</strong>
                   </h2>
                   <br/>
@@ -553,7 +553,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>OPEN A
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>Boutique</strong>
                   </h2>
                   <br/>
@@ -572,7 +572,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>RETAIL OF
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>Shoes, Sandals, Slippers And Belts</strong>
                   </h2>
                   <br/>
@@ -592,7 +592,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>OPEN A
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'> 
                     <strong>Perfume Store</strong>
                   </h2>
                   <br/>
@@ -611,7 +611,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>RETAILING OF
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'> 
                     <strong>Jewelries And Fashion Accessories</strong>
                   </h2>
                   <br/>
@@ -631,7 +631,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>OPEN A
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>Consignment Shop</strong>
                   </h2>
                   <br/>
@@ -651,7 +651,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>OPEN A
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>Bridal Shop</strong>
                   </h2>
                   <br/>
@@ -668,7 +668,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>OPEN A
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>Restaurant</strong>
                   </h2>
                   <br/>
@@ -686,7 +686,7 @@ const Investment = () => {
                     {' '}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>OPEN A
                   </span>
-                  <h2>
+                  <h2 className='tw-text-left'>
                     <strong>Sport Shop</strong>
                   </h2>
                   <br/>
@@ -698,6 +698,15 @@ const Investment = () => {
                   <p className=" tw-text-gray">Just ensure that your shop is stocked with a wide range of sporting goods and above all, your shop must be strategically located if you intend maximizing profits from this line of business</p>
                   <p className=" tw-text-gray">If you are an investor who is interested and is either living abroad or in Sweden, you can feel free to contact us</p>
                 </div>
+                <Link to = '/register' className="tw-text-center tw-pt-4">
+                    <h2 className = "tw-text-center tw-pt-4">
+                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
+                    </h2>
+                    </Link>
+                    <br/>
+                    <p className="tw-text-gray">
+                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
+                    </p>
               </div>
 
               <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">

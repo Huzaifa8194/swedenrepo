@@ -289,7 +289,7 @@ const BusinessPermit = () => {
 
                     <br />
 
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Why Choose
@@ -362,7 +362,7 @@ const BusinessPermit = () => {
 
                    
 
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Types of
@@ -624,7 +624,7 @@ const BusinessPermit = () => {
 
                     <br />
                   
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
           {" "}
           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
           Step-by-Step Application
@@ -737,7 +737,7 @@ const BusinessPermit = () => {
 
                     <br />
 
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Other
@@ -820,7 +820,7 @@ const BusinessPermit = () => {
 
                   <div>
                     <br />
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Our
@@ -902,7 +902,7 @@ const BusinessPermit = () => {
                     </ul>
 
                     <br />
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Why
@@ -957,6 +957,16 @@ const BusinessPermit = () => {
                       today to start your business journey in Sweden with
                       confidence, knowing that every aspect of your application
                       is in good hands.
+                    </p>
+
+                    <Link to = '/register' className="tw-text-center tw-pt-4">
+                    <h2 className = "tw-text-center tw-pt-4">
+                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
+                    </h2>
+                    </Link>
+                    <br/>
+                    <p className="tw-text-gray">
+                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
                     </p>
                   </div>
                 </div>

@@ -285,18 +285,11 @@ const PermanentResidence = () => {
 
                     <p className=" tw-text-gray">you can apply for a permanent residence card.</p>
                     <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-                      {' '}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> REQUIREMENTS FOR
-                    </span>
-                    <h2>
-                      <strong>Permanent Residence Card</strong>
-                    </h2>
-                    <br/>
+                    
                   </div>
 
                   <div>
-                  <br/>
+                 
                     <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                       {' '}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p> TO BE ELIGIBLE FOR
@@ -355,6 +348,15 @@ const PermanentResidence = () => {
                     <p className="  tw-text-gray">
                       The Swedish Migrations Board – Migrationsverket, has the right to revoke your permanent residence permit if you move to another country or spend more than one year outside of Sweden. It is therefore important to check with the
                       Migrationsverket before you leave Sweden,if you are planning to spend more than one year abroad.
+                    </p>
+                    <Link to = '/register' className="tw-text-center tw-pt-4">
+                    <h2 className = "tw-text-center tw-pt-4">
+                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
+                    </h2>
+                    </Link>
+                    <br/>
+                    <p className="tw-text-gray">
+                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
                     </p>
                   </div>
                 </div>

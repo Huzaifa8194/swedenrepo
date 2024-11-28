@@ -83,7 +83,7 @@ const AboutUs = () => {
                 <div>
                   <VideoPlayer src={video1} />
                 </div>
-                <div className="tw-mt-6">
+                <div className="tw-mt-10">
                   <VideoPlayer src={video2} />
                 </div>
               </div>

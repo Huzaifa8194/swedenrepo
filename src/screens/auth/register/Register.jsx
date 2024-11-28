@@ -6,6 +6,8 @@ import Input from '../../../components/Input';
 import { Link } from 'react-router-dom';
 import Button from '../../../components/Button';
 import Header from '../../../components/Header_New/Header';
+import homeBgImage from "../../../assets/images/bg-image/col-bgimage-1.png";
+
 const Register = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -13,8 +15,14 @@ const Register = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={'Setup Your Account - Sign Up'} />
-      <section className=" md:tw-pt-40 tw-pt-48">
+      <Banner_Page
+        highlightText={("Sign Up")}
+        regularText={(
+          "Create an account today and make your relocation dreams come true!"
+        )}
+        backgroundImage={homeBgImage}
+      />
+      <section className=" md:tw-pt-12 tw-pt-12">
         <div className="container py-5">
           <div className=" row  tw-items-center ">
             <div className="col-md-8">

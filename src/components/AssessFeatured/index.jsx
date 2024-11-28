@@ -1,5 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
+import logo from "../../assets/images/SwedenRelocators.png";
+import newlogo from "../../assets/iconscout/newlogo.png";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./style/bootstrap.min.css";
@@ -13,6 +16,7 @@ import "./style/shortcodes.css";
 import "./style/main.css";
 import "./style/megamenu.css";
 import "./style/responsive.css";
+import { Link } from "react-router-dom";
 
 import assess1 from "../../assets/images/BusinessAssessment.png";
 import assess2 from "../../assets/images/VisitVisaAssessment.png";
@@ -91,7 +95,7 @@ const FeatureSection = () => {
             {[
               {
                 img: _as1,
-                flag: _as1,
+                flag: newlogo,
                 country: 'Business Visa Assessment"',
                 description:
                   "Evaluate your eligibility for a Swedish business visa, tailored for entrepreneurs and professionals aiming to explore Sweden's business opportunities.",
@@ -99,7 +103,7 @@ const FeatureSection = () => {
               },
               {
                 img: _as3,
-                flag: _as3,
+                flag: newlogo,
                 country: "Visit Visa Assessment",
                 description:
                   "Check your qualifications for a Swedish visit visa, perfect for short-term travel or exploring Sweden's culture and attractions.",
@@ -107,7 +111,7 @@ const FeatureSection = () => {
               },
               {
                 img: _as2,
-                flag: _as2,
+                flag: newlogo,
                 country: "Study in Sweden Assesmment",
                 description:
                   "Determine your readiness for a Swedish student visa, helping you pursue academic opportunities in one of Europe’s most innovative education systems.",
@@ -150,13 +154,18 @@ const FeatureSection = () => {
                       <div className="featured-desc" style = {{height: '100px'}}>
                         <p>{feature.description}</p>
                       </div>
-                      <a
-                        className="cmt-btn cmt-btn-size-sm btn-inline cmt-btn-color-skincolor"
-                        href={feature.to}
-                        tabIndex="-1"
-                      >
-                        Read More
-                      </a>
+                     <div className="tw-pt-4">
+                        <Link
+                  to= {feature.to}
+                  className="
+        
+         
+          btn-dark
+        "
+                >
+                  Make An Assessment
+                </Link></div>
+                      
                     </div>
                   </div>
                 </div>
@@ -168,7 +177,7 @@ const FeatureSection = () => {
             {[
               {
                 img: _as4,
-                flag: _as4,
+                flag: newlogo,
                 country: "Work Permit Assesmment",
                 to: "/Work_permit",
                 description:
@@ -176,7 +185,7 @@ const FeatureSection = () => {
               },
               {
                 img: _as5,
-                flag: _as5,
+                flag: newlogo,
                 country: "Family Reunification Assessment",
                 to: "/family_reunification_assessment",
                 description:
@@ -184,7 +193,7 @@ const FeatureSection = () => {
               },
               {
                 img: _as6,
-                flag: _as6,
+                flag: newlogo,
                 country: "Long Term EU Status Assessment",
                 to: "/long_term_eu_status_assessment",
                 description:
@@ -224,13 +233,17 @@ const FeatureSection = () => {
                       <div className="featured-desc" style = {{height: '100px'}}>
                         <p>{feature.description}</p>
                       </div>
-                      <a
-                        className="cmt-btn cmt-btn-size-sm btn-inline cmt-btn-color-skincolor"
-                        href={feature.to}
-                        tabIndex="-1"
-                      >
-                        Read More
-                      </a>
+                      <div className="tw-pt-4">
+                        <Link
+                  to={feature.to}
+                  className="
+        
+         
+          btn-dark
+        "
+                >
+                  Make An Assessment
+                </Link></div>
                     </div>
                   </div>
                 </div>
@@ -245,7 +258,7 @@ const FeatureSection = () => {
             <div className="text-center mt-35 res-991-mt-20">
               <a
                 className="cmt-btn cmt-btn-size-md cmt-btn-shape-round cmt-btn-style-border cmt-btn-color-dark"
-                href="#"
+                href="/register"
               >
                 View More Assessments!
               </a>

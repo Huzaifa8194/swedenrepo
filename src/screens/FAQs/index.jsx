@@ -4,7 +4,7 @@ import Navbar from '../../components/Header/Navbar';
 import Footer from '../../components/Footer/Footer';
 import { GoTriangleRight } from 'react-icons/go';
 import Accordion from '../../components/Accordion/Accordion';
-import Input from '../../components/Input';
+import Input from '../../components/Input2';
 import Button from '../../components/Button';
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import Header from '../../components/Header_New/Header';

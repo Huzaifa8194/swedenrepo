@@ -24,6 +24,23 @@ import assess6 from "../../assets/images/ass6.png";
 
 
 
+import serv1 from "../../assets/iconscout/serv1.png";
+import serv2 from "../../assets/iconscout/serv2.png";
+import serv3 from "../../assets/iconscout/serv3.png";
+import serv4 from "../../assets/iconscout/serv4.png";
+import serv5 from "../../assets/iconscout/serv5.png";
+import serv6 from "../../assets/iconscout/serv6.png";
+import serv7 from "../../assets/iconscout/serv7.png";
+import serv8 from "../../assets/iconscout/serv8.png";
+import serv9 from "../../assets/iconscout/serv9.png";
+import serv10 from "../../assets/iconscout/serv10.png";
+import serv11 from "../../assets/iconscout/serv11.png";
+import serv12 from "../../assets/iconscout/serv12.png";
+import serv13 from "../../assets/iconscout/serv13.png";
+
+import newlogo from "../../assets/iconscout/newlogo.png";
+
+
 
 import asylumphoto from "../../assets/iconscout/asylum.png";
 import personnumberphoto from "../../assets/iconscout/personnummber.png";
@@ -108,23 +125,23 @@ const FeatureSection = () => {
         <Slider {...settings} className=" slick_slider">
           {[
             {
-              img: asylumphoto,
-              flag: asylumphoto,
+              img: serv1,
+              flag: newlogo,
               country: 'Asylum',
               description: 'You have to be in Sweden or on the Swedish border in order to apply for asylum and we will process it for you.',
               to: '/asylum',
             },
             {
-              img: assess5,
-              flag: assess5,
+              img: serv2,
+              flag: newlogo,
               country: 'Family Reunification',
               description: 'Family reunification is a recognized reason for the immigration of family members to a country.',
               to: '/family-reunification',
             },
             {
-              img: personnumberphoto,
-              flag: personnumberphoto,
-              country: 'Personnummer Sweden',
+              img: serv3,
+              flag: newlogo,
+              country: 'Relocate to Sweden',
               description: 'The personal identification is a number that the Swedish Tax Agency assigns to person registered in Sweden.',
               to: '/personnumer-sweden',
             },
@@ -164,22 +181,22 @@ const FeatureSection = () => {
         <Slider {...settings} className=" slick_slider">
           {[
             {
-              img: cpr,
-              flag: cpr,
-              country: 'CPR Number Denmark',
+              img: serv4,
+              flag: newlogo,
+              country: 'Relocate to Denmark',
               to: '/cpr-number-denmark',
               description: 'CPR stands for Det Centrale Personregister, which translates to the Civil Registration System in short CPR.',
             },
             {
-              img: assess4,
-              flag: assess4,
+              img: serv5,
+              flag: newlogo,
               country: 'Work Permit',
               to: '/work-permit',
               description: 'Permit To Work refers to management systems used to ensure that work is done safely and efficiently.',
             },
             {
-              img: businesspermit,
-              flag: businesspermit,
+              img: serv6,
+              flag: newlogo,
               country: 'Business Permit',
               to: '/business-permit',
               description: 'Swedish business culture is open and innovative, and starting a business there is relatively simple',
@@ -220,22 +237,22 @@ const FeatureSection = () => {
         <Slider {...settings} className=" slick_slider">
           {[
             {
-              img: assess3,
-              flag: assess3,
+              img: serv7,
+              flag: newlogo,
               to: '/business-visit',
               country: 'Business Visit',
               description: 'Foreign people who want to invest in Sweden and stay temporarily for that purpose can apply for business visa.',
             },
             {
-              img: citzenship,
-              flag: citzenship,
+              img: serv8,
+              flag: newlogo,
               to: '/citizenship',
               country: 'Citizenship',
               description: 'When you have lived in Sweden for a specified period and meet requirements, you can apply for Swedish citizenship.',
             },
             {
-              img: assess3,
-              flag: assess3,
+              img: serv9,
+              flag: newlogo,
               to: '/study-in-eu',
               country: 'Study in EU',
               description: 'If you are thinking about studying abroad, then visit Sweden. Sweden is well known for its world-class academic opportunities.',
@@ -274,22 +291,22 @@ const FeatureSection = () => {
         <Slider {...settings} className=" slick_slider">
           {[
             {
-              img:  assess2,
-              flag: assess2,
+              img:  serv10,
+              flag: newlogo,
               to: '/global-visit-visas',
               country: 'Global Visit Visas',
               description: 'For visiting Sweden for a short period you will need a visit visa. Sweden follows the same visa rules as others.',
             },
             {
-              img: eapermit,
-              flag: eapermit,
+              img: serv11,
+              flag: newlogo,
               to: '/eea-permits',
               country: 'EEA Permits',
               description: 'Any EU citizen getting residence in the UK according to the EU rules, can bring their family with them.',
             },
             {
-              img: parents,
-              flag: parents,
+              img: serv12,
+              flag: newlogo,
               to: '/parents-eu-permit',
               country: 'Parents EU Permit',
               description: 'Parents of a child under 18 years who is in Sweden can move to sweden if they will live with the child.',
@@ -329,22 +346,22 @@ const FeatureSection = () => {
         <Slider {...settings} className=" slick_slider">
           {[
             {
-              img: marrigedivorce,
-              flag: marrigedivorce,
+              img: serv13,
+              flag: newlogo,
               to: '/marriage-divorce',
               country: 'Marriage & Divorce',
               description: 'Getting married is beautiful. But to make sure that it will be a good experience, it is important to have legal control.',
             },
             {
               img: companyreg,
-              flag: companyreg,
+              flag: newlogo,
               to: '/company-registration',
               country: 'Company Registration',
               description: 'If you are planning to register your company inside Sweden, you can reach us anytime if you have some queries about it.',
             },
             {
               img: houses,
-              flag: houses,
+              flag: newlogo,
               to: '/house-offices',
               country: 'House & Offices',
               description: 'we offer you an easy and painless solution where you can get a place to live without any worries.',
@@ -385,21 +402,21 @@ const FeatureSection = () => {
           {[
             {
               img: appeals,
-              flag: appeals,
+              flag: newlogo,
               to: '/appeal-cases',
               country: 'Appeal Cases',
               description: 'Have you been denied? let’s take a look at your case so that the decision can hopefully be overturned.',
             },
             {
               img: relocation,
-              flag: relocation,
+              flag: newlogo,
               to: '/eu-family-reunification',
               country: 'EU Citizens Relocation',
               description: 'Family reunification means that a family that has been split up can apply to be allowed to live together.',
             },
             {
               img: investment,
-              flag: investment,
+              flag: newlogo,
               to: '/investment',
               country: 'Investment',
               description: 'There are various opportunities for business ventures, Look for the best opportunity, grab it and do your best.',
@@ -439,21 +456,21 @@ const FeatureSection = () => {
           {[
             {
               img: directinvestment,
-              flag: directinvestment,
+              flag: newlogo,
               to: '/direct-citizenship-by-investments',
               country: 'Direct Citizenship by Investments',
               description: 'citizenship-by-investment programs provide ultra-wealthy families with the privilege of a second or third passport.',
             },
             {
               img: DCI,
-              flag: DCI,
+              flag: newlogo,
               to: '/permanent-residence',
               country: 'Permanent Residence',
               description: 'If you lived in Sweden for more than 5 years with the EU right of residence you can get the permanent residence permit.',
             },
             {
               img: goldenvisa,
-              flag: goldenvisa,
+              flag: newlogo,
                to: '/golden-visa-greece-portugal',
               country: 'Golden Visa (Greece - Portugal)',
               description: 'As a member state of the EU, They offer its residents and citizens a number of reassuring benefits.',

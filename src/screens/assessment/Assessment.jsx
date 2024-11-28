@@ -6,6 +6,9 @@ import Button from "../../components/Button";
 import { GoTriangleRight } from "react-icons/go";
 
 import tick from "../../assets/iconscout/tick.svg";
+import tick2 from "../../assets/iconscout/tick2.svg";
+import help from "../../assets/iconscout/help.svg";
+import info from "../../assets/iconscout/information.svg";
 import cross from "../../assets/iconscout/cross.svg";
 
 
@@ -335,11 +338,11 @@ const Assessment = () => {
                     --Assessment
                     <br />
                   </span>
-                  <h1 className="tw-mt-2 tw-font-bold tw-text-2xl md:tw-flex tw-block tw-gap-2  tw-text-gray-dark tw-m-0 ">
+                  <h1 className="tw-mt-2 tw-items-center tw-font-bold tw-text-2xl md:tw-flex tw-block tw-gap-2  tw-text-gray-dark tw-m-0 ">
                     {" "}
                     <img
                       src={
-                        "https://swedenrelocators.se/pages/assets/web/images/background/results.png"
+                        tick2
                       }
                       className=" tw-w-10"
                       alt=""
@@ -432,12 +435,14 @@ const Assessment = () => {
                       </div>
                     </div>
                   </div>
+                  <div className="tw-pt-4"></div>
+                  <FeatureSection/>
 
-                  <h1 className="tw-py-8 tw-mt-2 tw-font-bold tw-text-2xl md:tw-flex tw-block tw-gap-2  tw-text-gray-dark tw-m-0">
+                  <h1 className="tw-py-8 tw-mt-2 tw-items-center tw-font-bold tw-text-2xl md:tw-flex tw-block tw-gap-2  tw-text-gray-dark tw-m-0">
                     {" "}
                     <img
                       src={
-                        "https://swedenrelocators.se/pages/assets/web/images/background/results.png"
+                        help
                       }
                       className=" tw-w-10"
                       alt=""
@@ -479,11 +484,11 @@ const Assessment = () => {
                   </div>
                 </div>
 
-                <h1 className="tw-py-8 tw-mt-2 tw-font-bold tw-text-2xl md:tw-flex tw-block tw-gap-2  tw-text-gray-dark tw-m-0">
+                <h1 className="tw-py-8 tw-mt-2 tw-font-bold tw-items-center tw-text-2xl md:tw-flex tw-block tw-gap-2  tw-text-gray-dark tw-m-0">
                   {" "}
                   <img
                     src={
-                      "https://swedenrelocators.se/pages/assets/web/images/background/results.png"
+                     info
                     }
                     className=" tw-w-10"
                     alt=""
@@ -492,13 +497,14 @@ const Assessment = () => {
                 </h1>
 
                 <div className=" tw-bg-white tw-shadow-lg tw-rounded-md tw-py-4  tw-mb-4  px-3">
-                  <p className="  tw-text-gray text-sm tw-m-0">
-                    <i class="fa fa-circle-exclamation"></i>
+                  <p className="  tw-text-black  text-sm tw-m-0">
+                  <i class="fa fa-circle-exclamation" style={{color: '#807DFB'}}></i>
+                 
                     <h5 className="tw-pl-1" style={{ display: "inline" }}>
                       Legal Changes
                     </h5>
                     <br />{" "}
-                    <p className="tw-pt-4">
+                    <p className="tw-pt-4 tw-text-gray">
                       Please note that laws and regulations may change, which
                       could affect your eligibility assessment results.
                     </p>
@@ -506,13 +512,13 @@ const Assessment = () => {
                 </div>
 
                 <div className=" tw-bg-white tw-shadow-lg tw-rounded-md tw-py-4  tw-mb-4  px-3">
-                  <p className="  tw-text-gray text-sm tw-m-0">
-                    <i class="fa fa-circle-exclamation"></i>
+                  <p className="  tw-text-black text-sm tw-m-0">
+                  <i class="fa fa-circle-exclamation" style={{color: '#807DFB'}}></i>
                     <h5 className="tw-pl-1" style={{ display: "inline" }}>
                       Cost-Effective Alternatives
                     </h5>
                     <br />{" "}
-                    <p className="tw-pt-4">
+                    <p className="tw-pt-4 tw-text-gray">
                       While you can apply for visas or residence permits
                       directly through official government websites at a lower
                       cost, our services provide comprehensive support to
@@ -522,13 +528,13 @@ const Assessment = () => {
                 </div>
 
                 <div className=" tw-bg-white tw-shadow-lg tw-rounded-md tw-py-4  tw-mb-4  px-3">
-                  <p className="  tw-text-gray text-sm tw-m-0">
-                    <i class="fa fa-circle-exclamation"></i>
+                  <p className="  tw-text-black text-sm tw-m-0">
+                  <i class="fa fa-circle-exclamation" style={{color: '#807DFB'}}></i>
                     <h5 className="tw-pl-1" style={{ display: "inline" }}>
                       Expert Guidance
                     </h5>
                     <br />{" "}
-                    <p className="tw-pt-4">
+                    <p className="tw-pt-4 tw-text-gray">
                       Our experienced Migration and Relocation consultants will
                       guide you through each step, ensuring your documentation
                       is accurate and complete while helping you develop a solid
@@ -537,6 +543,7 @@ const Assessment = () => {
                   </p>
                 </div>
 
+<div className="tw-pt-8"></div>
                 {/* <div className="row  g-4 tw-py-12">
                   {data?.map((item, index) => {
                     return (
@@ -568,37 +575,10 @@ const Assessment = () => {
                   })}
                 </div> */}
 
-                <FeatureSection/>
+            
 
-                <h6 className=" tw-text-gray tw-mb-3 text-xl"></h6>
-
-                <div className=" tw-bg-white tw-shadow-lg tw-rounded-md tw-py-4  tw-mb-4  px-3">
-                  <p className="  tw-text-gray text-sm tw-m-0">
-                    <strong>Service Fees:</strong>
-                    <br />
-                    <br />
-                    Our professional services come with a fee, and detailed
-                    pricing information is available on our web portal and app.
-                    If you have any questions or need further clarification,
-                    please feel free to contact us using the message section.
-                  </p>
-                </div>
-
-                <div className=" tw-bg-blue tw-rounded-md tw-py-4 tw-mb-12  px-3">
-                  <h6 className=" tw-text-white tw-m-0">
-                    {" "}
-                   
-                    <strong className="tw-pl-0" style={{ display: "inline" }}>
-                      Our Recommendation
-                    </strong>
-                    <br />
-                    <p className="tw-pt-4">
-                    We always recommend using the assessment tool before
-                    engaging in our services to ensure you're on the right track
-                    and to make the most informed decisions about your
-                    relocation journey.</p>
-                  </h6>
-                </div>
+               
+               
               </div>
             </div>
           </div>

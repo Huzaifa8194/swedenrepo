@@ -7,6 +7,7 @@ import Input from '../../../components/Input';
 import { Link } from 'react-router-dom';
 import Button from '../../../components/Button';
 import Header from '../../../components/Header_New/Header';
+import homeBgImage from "../../../assets/images/bg-image/col-bgimage-1.png";
 const Login = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -14,8 +15,14 @@ const Login = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={'Login'} />
-      <section className=" tw-pt-40">
+      <Banner_Page
+        highlightText={("Log In")}
+        regularText={(
+          "Login to your account to make your relocation dream come true!"
+        )}
+        backgroundImage={homeBgImage}
+      />
+      <section className=" tw-pt-12">
         <div className="container py-5">
           <div className="row">
             <div className="col-md-5">

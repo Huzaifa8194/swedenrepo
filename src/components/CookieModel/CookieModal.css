@@ -1,0 +1,89 @@
+.cookie-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dim background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.cookie-modal-content {
+  max-width: 40%;
+  height: fit-content;
+  max-height: 60%;
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Disable horizontal scrolling if not needed */
+  width: 90%; /* Ensure responsiveness */
+  background: white;
+  color: black;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  scrollbar-width: thin; /* For Firefox: Thin scrollbar */
+  scrollbar-color: #007bff #f0f0f0; /* For Firefox: Thumb and track color */
+}
+
+/* Webkit scrollbar styles (Chrome, Edge, Safari) */
+.cookie-modal-content::-webkit-scrollbar {
+  width: 10px; /* Scrollbar width */
+}
+
+.cookie-modal-content::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* Scrollbar thumb color */
+  border-radius: 5px; /* Round edges */
+}
+
+.cookie-modal-content::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.cookie-modal-content::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Scrollbar track color */
+  border-radius: 5px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabs button {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.tabs button.active {
+  border-bottom: 2px solid #007bff;
+  font-weight: bold;
+}
+
+.tab-content {
+  padding: 15px 0;
+}
+
+.accept-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  float: right;
+}
+
+.accept-btn:hover {
+  background-color: #0056b3;
+}

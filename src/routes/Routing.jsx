@@ -54,6 +54,7 @@ import Student_assessments from '../screens/assessment_register/Student_assessme
 import { useSelector } from 'react-redux';
 import Backdrop from '../components/Backdrop/Backdrop';
 import EORPayroll from '../screens/ServiceDetails/eorpayroll';
+import Logistics from '../screens/ServiceDetails/logistics';
 const Routing = () => {
   // const ScrollToTop = () => {
   //   const location = useLocation();
@@ -79,6 +80,7 @@ const Routing = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/new_in_sweden" element={<New_In_sweden />} />
+          <Route path="/logistics" element={<Logistics />} />
           <Route path="/contact_us" element={<ContactUs />} />
           <Route path="/about_us" element={<AboutUs />} />
           <Route path="/eorpayroll" element={<EORPayroll />} />

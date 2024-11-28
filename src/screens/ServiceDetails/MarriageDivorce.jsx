@@ -832,17 +832,15 @@ const MarriageDivorce = () => {
                       </li>
                     </ul>
                     <br/>
-                    <h2 className = "tw-text-left">
-                      <strong> Sign Up Today! </strong>
+
+                    <Link to = '/register' className="tw-text-center">
+                    <h2 className = "tw-text-center">
+                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
                     </h2>
+                    </Link>
                     <br/>
                     <p className="tw-text-gray">
-                      Whether you’re planning to get married or are seeking
-                      support through a divorce, Sweden Relocators is here to
-                      guide you. Contact us today to learn more about our
-                      marriage and divorce assistance services in Sweden, and
-                      let our experienced legal team help you navigate the
-                      process with confidence and care.
+                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
                     </p>
                   </div>
                 </div>

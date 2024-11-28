@@ -18,9 +18,6 @@ import ap2 from "../../assets/iconscout/ap2.png";
 import ap3 from "../../assets/iconscout/ap3.png";
 import ap4 from "../../assets/iconscout/ap4.png";
 
-
-
-
 const ServiceDetails = () => {
   const { t } = useTranslation();
 
@@ -263,7 +260,7 @@ const ServiceDetails = () => {
                 <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify tw-relative">
                   <div className=" 2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                     <div>
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                      <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                         Comprehensive Assistance to Overturn Decisions
@@ -271,13 +268,9 @@ const ServiceDetails = () => {
                       <h2 className="tw-text-left">
                         <strong>
                           Appeal Process for a Denied Permit or Visa in Sweden
-        
                         </strong>
-                       
-                       
                       </h2>
-                      <br/>
-                      
+                      <br />
 
                       <p className=" tw-text-gray tw-">
                         If you have been denied entry or residency in
@@ -298,75 +291,67 @@ const ServiceDetails = () => {
                         have your case reconsidered and, ideally, reversed.
                       </p>
                     </div>
-<br/>
+                    <br />
                     <div>
-                     
-
-
-
-
                       <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-12 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={ap3}
-                              alt=""
-                              style={{ maxWidth: "450px" }}
-                            />
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-12 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full"
+                                src={ap3}
+                                alt=""
+                                style={{ maxWidth: "450px" }}
+                              />
+                            </div>
                           </div>
                         </div>
+                        <div className="col-md-6">
+                          <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
+                            {" "}
+                            <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                            Why Appeals are
+                          </span>
+                          <h2 className="tw-text-left">
+                            <strong>Increasingly Necessary</strong>
+                          </h2>
+                          <br />
+                          <p className=" tw-text-gray tw-">
+                            Since the refugee crisis, Swedish authorities have
+                            tightened the requirements for permits, making it
+                            more challenging to gain entry or residence in
+                            Sweden. Many applicants are denied permits due to
+                            increasingly stringent documentation requirements or
+                            misunderstandings in their initial application.
+                            Sweden Relocators has successfully appealed numerous
+                            cases, helping clients obtain permits even after
+                            initial denials. Our aim is to assist you in
+                            challenging the decision and restoring your
+                            opportunity to live or work in Sweden.
+                          </p>
+                        </div>
                       </div>
-                      <div className="col-md-6">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
-                        {" "}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                        Why Appeals are
-                      </span>
-                      <h2 className="tw-text-left">
-                          
-                        <strong>Increasingly Necessary</strong>
-                        
-                      </h2>
-                      <br/>
-                      <p className=" tw-text-gray tw-">
-                        Since the refugee crisis, Swedish authorities have
-                        tightened the requirements for permits, making it more
-                        challenging to gain entry or residence in Sweden. Many
-                        applicants are denied permits due to increasingly
-                        stringent documentation requirements or
-                        misunderstandings in their initial application. Sweden
-                        Relocators has successfully appealed numerous cases,
-                        helping clients obtain permits even after initial
-                        denials. Our aim is to assist you in challenging the
-                        decision and restoring your opportunity to live or work
-                        in Sweden.
-                      </p>
-                      </div>
-                    </div>
-                     
-                      <br/>
+
+                      <br />
                     </div>
 
-
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-                          {" "}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                          How to Start
-                        </span>
-                        <h2 className="tw-text-left">
-                          <strong>The Appeal Process</strong>
-                        </h2>
-                        <br></br>
-                        <p className=" tw-text-gray">
-                          To appeal a denied decision, you must submit a written
-                          appeal in Swedish or English. This document needs to
-                          include specific information and must be signed by the
-                          applicant or an authorized representative. Here’s how
-                          to begin:
-                        </p>
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      How to Start
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong>The Appeal Process</strong>
+                    </h2>
+                    <br></br>
+                    <p className=" tw-text-gray">
+                      To appeal a denied decision, you must submit a written
+                      appeal in Swedish or English. This document needs to
+                      include specific information and must be signed by the
+                      applicant or an authorized representative. Here’s how to
+                      begin:
+                    </p>
 
                     {/* <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
@@ -389,128 +374,119 @@ const ServiceDetails = () => {
                     </div> */}
 
                     <div>
-                      <br/>
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                      <br />
+                      <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                         What to Include in
                       </span>
                       <h2 className="tw-text-left">
-                    
                         <strong>The Appeal Letter</strong>
-                        
                       </h2>
-                      <br/>
+                      <br />
 
                       <p className=" tw-text-gray">
                         In your appeal letter, you should clearly state:
                       </p>
 
-                   
-                          
-                          <strong className="tw-text-gray">
-                            Decision to be Appealed:
-                          </strong>
-                       
+                      <strong className="tw-text-gray">
+                        Decision to be Appealed:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                          Clearly outline the specific decision you are contesting, providing as much detail as possible. This includes identifying the exact ruling, action, or determination made by the responsible authority or organization that you believe is incorrect or unjust. Be sure to mention any relevant dates, reference numbers, or case identifiers associated with the decision to ensure clarity.
+                            Clearly outline the specific decision you are
+                            contesting, providing as much detail as possible.
+                            This includes identifying the exact ruling, action,
+                            or determination made by the responsible authority
+                            or organization that you believe is incorrect or
+                            unjust. Be sure to mention any relevant dates,
+                            reference numbers, or case identifiers associated
+                            with the decision to ensure clarity.
                           </p>
                         </li>
                       </ul>
-
-                      
 
                       <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-12 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={ap4}
-                              alt=""
-                              style={{ maxWidth: "450px" }}
-                            />
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-12 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full"
+                                src={ap4}
+                                alt=""
+                                style={{ maxWidth: "450px" }}
+                              />
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="col-md-6">
-                      <strong className="tw-text-gray">
+                        <div className="col-md-6">
+                          <strong className="tw-text-gray">
                             Requested Change:
                           </strong>
-                       
 
-                      <ul className=" tw-p-0 ">
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Clearly state how you would like the decision to be
-                            changed (e.g., approval of the permit).
-                          </p>
-                        </li>
-                      </ul>
+                          <ul className=" tw-p-0 ">
+                            <li className=" tw-flex tw-items-center tw-gap-3">
+                              <p className=" m-0 tw-text-gray">
+                                Clearly state how you would like the decision to
+                                be changed (e.g., approval of the permit).
+                              </p>
+                            </li>
+                          </ul>
 
-                      
-                          
                           <strong className="tw-text-gray">
                             Personal Information:
                           </strong>
-                      
 
-                      <ul className=" tw-p-0 ">
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Include your full name, date of birth, postal
-                            address, email, and phone number.
-                          </p>
-                        </li>
-                      </ul>
+                          <ul className=" tw-p-0 ">
+                            <li className=" tw-flex tw-items-center tw-gap-3">
+                              <p className=" m-0 tw-text-gray">
+                                Include your full name, date of birth, postal
+                                address, email, and phone number.
+                              </p>
+                            </li>
+                          </ul>
 
-                   
-                          
                           <strong className="tw-text-gray">
                             New Evidence or Arguments:
                           </strong>
-                       
 
-                      <ul className=" tw-p-0 ">
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Any new circumstances, supporting evidence, or
-                            arguments that you did not initially submit should
-                            be included in your appeal.
-                          </p>
-                        </li>
-                      </ul>
+                          <ul className=" tw-p-0 ">
+                            <li className=" tw-flex tw-items-center tw-gap-3">
+                              <p className=" m-0 tw-text-gray">
+                                Any new circumstances, supporting evidence, or
+                                arguments that you did not initially submit
+                                should be included in your appeal.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                          
-                          
 
-                     
-                    </div>
-
-
-<br/><p><br/></p>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-                          {" "}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                          Authorization
-                        </span>
-                        <h2 className="tw-text-left">
-                          <strong>For a Representative </strong>
-                        </h2>
-                        <br/>
-                        <p className=" tw-text-gray">
-                          If someone else is submitting the appeal on your
-                          behalf (for instance, a legal representative from
-                          Sweden Relocators), you must provide a signed Power of
-                          Attorney (fullmakt) allowing them to act on your
-                          behalf. This document should be included with your
-                          appeal and must be an original copy.
-                        </p>
+                    <br />
+                    <p>
+                      <br />
+                    </p>
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Authorization
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong>For a Representative </strong>
+                    </h2>
+                    <br />
+                    <p className=" tw-text-gray">
+                      If someone else is submitting the appeal on your behalf
+                      (for instance, a legal representative from Sweden
+                      Relocators), you must provide a signed Power of Attorney
+                      (fullmakt) allowing them to act on your behalf. This
+                      document should be included with your appeal and must be
+                      an original copy.
+                    </p>
                     {/* <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
                         <div className="row ">
@@ -532,17 +508,15 @@ const ServiceDetails = () => {
 
                     <div>
                       <br></br>
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                      <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                         by Migrationsverket
                       </span>
                       <h2 className="tw-text-left">
-                     
                         <strong>Appeal Submission and Initial Review </strong>
-                        
                       </h2>
-                      <br/>
+                      <br />
 
                       <p className=" tw-text-gray tw-">
                         Once your appeal is submitted, Migrationsverket will
@@ -554,12 +528,9 @@ const ServiceDetails = () => {
                         overlooked any key information.
                       </p>
 
-                  
-                          
-                          <strong className="tw-text-gray">
-                            Timely Submission:
-                          </strong>
-                        
+                      <strong className="tw-text-gray">
+                        Timely Submission:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -571,12 +542,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                 
-                          
-                          <strong className="tw-text-gray">
-                            Reconsideration:
-                          </strong>
-                       
+                      <strong className="tw-text-gray">Reconsideration:</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -587,13 +553,11 @@ const ServiceDetails = () => {
                           </p>
                         </li>
                       </ul>
-
-                     
                     </div>
 
                     <div>
                       <br></br>
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                      <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                         at This Stage
@@ -603,12 +567,9 @@ const ServiceDetails = () => {
                       </h2>
                       <br></br>
 
-                     
-                          
-                          <strong className="tw-text-gray">
-                            Positive Outcome:
-                          </strong>
-                      
+                      <strong className="tw-text-gray">
+                        Positive Outcome:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -620,12 +581,9 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                    
-                          
-                          <strong className="tw-text-gray">
-                            Forwarding the Appeal:
-                          </strong>
-                      
+                      <strong className="tw-text-gray">
+                        Forwarding the Appeal:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -636,8 +594,6 @@ const ServiceDetails = () => {
                           </p>
                         </li>
                       </ul>
-
-                     
                     </div>
 
                     <div className="row tw-flex tw-items-center">
@@ -656,7 +612,7 @@ const ServiceDetails = () => {
                       </div>
                       <div className="col-md-6">
                         <br></br>
-                        <span className=" tw-flex tw-items-center tw-gap-2">
+                        <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                           Next Steps
@@ -677,7 +633,7 @@ const ServiceDetails = () => {
 
                     <div>
                       <br></br>
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                      <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                         Administrative
@@ -685,7 +641,7 @@ const ServiceDetails = () => {
                       <h2 className="tw-text-left">
                         <strong> Court Review</strong>
                       </h2>
-<br></br>
+                      <br></br>
                       <p className=" tw-text-gray tw-">
                         The court will examine the initial application, the
                         reasons for the denial, and any new information or
@@ -694,12 +650,9 @@ const ServiceDetails = () => {
                         fair ruling.
                       </p>
 
-                      
-                          
-                          <strong className="tw-text-gray">
-                            Decision Notification:
-                          </strong>
-                       
+                      <strong className="tw-text-gray">
+                        Decision Notification:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -711,12 +664,9 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      
-                          
-                          <strong className="tw-text-gray">
-                            Potential for Further Appeals:
-                          </strong>
-                       
+                      <strong className="tw-text-gray">
+                        Potential for Further Appeals:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -729,13 +679,11 @@ const ServiceDetails = () => {
                           </p>
                         </li>
                       </ul>
-
-                     
                     </div>
 
                     <div>
                       <br></br>
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                      <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                         for the Appeal Process
@@ -749,12 +697,9 @@ const ServiceDetails = () => {
                         The duration of the appeal process varies:
                       </p>
 
-                    
-                          
-                          <strong className="tw-text-gray">
-                            Initial Review by Migrationsverket:
-                          </strong>
-                       
+                      <strong className="tw-text-gray">
+                        Initial Review by Migrationsverket:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -765,12 +710,9 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                   
-                          
-                          <strong className="tw-text-gray">
-                            Forwarding to the Administrative Court:
-                          </strong>
-                     
+                      <strong className="tw-text-gray">
+                        Forwarding to the Administrative Court:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -782,12 +724,9 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                    
-                          
-                          <strong className="tw-text-gray">
-                            Court Decision Timeline:
-                          </strong>
-                      
+                      <strong className="tw-text-gray">
+                        Court Decision Timeline:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -798,28 +737,23 @@ const ServiceDetails = () => {
                           </p>
                         </li>
                       </ul>
-
-                     
                     </div>
 
                     <div>
                       <br></br>
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                      <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                       SERVICES
+                        SERVICES
                       </span>
                       <h2 className="tw-text-left">
                         <strong> Our Services Include:</strong>
                       </h2>
                       <br></br>
 
-                   
-                          
-                          <strong className="tw-text-gray">
-                            Case Analysis and Consultation
-                          </strong>
-                      
+                      <strong className="tw-text-gray">
+                        Case Analysis and Consultation
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -829,17 +763,14 @@ const ServiceDetails = () => {
                             best approach for the appeal. Understanding why the
                             permit was denied allows us to identify key points
                             to address in the appeal.
-                           
                           </p>
                         </li>
                       </ul>
 
-                     
-                          
-                          <strong className="tw-text-gray">
-                            Document Preparation and Gathering Evidence
-                          </strong>
-                      
+                      <strong className="tw-text-gray">
+                        Document Preparation and Gathering Evidence
+                      </strong>
+
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
@@ -849,80 +780,72 @@ const ServiceDetails = () => {
                             ensure that all necessary documentation, including
                             any required Power of Attorney, is complete and
                             accurately presented.
-                           
                           </p>
                         </li>
                       </ul>
 
                       <div className="row tw-flex  tw-items-center">
-                      <div className="col-md-6 tw-justify-center">
-                        <div className="row ">
-                          <div className="col-md-12 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full "
-                              src={ap1}
-                              alt=""
-                              style={{ maxWidth: "450px" }}
-                            />
+                        <div className="col-md-6 tw-justify-center">
+                          <div className="row ">
+                            <div className="col-md-12 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full "
+                                src={ap1}
+                                alt=""
+                                style={{ maxWidth: "450px" }}
+                              />
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="col-md-6">
-                      <strong className="tw-text-gray">
+                        <div className="col-md-6">
+                          <strong className="tw-text-gray">
                             Representation and Follow-Up
                           </strong>
-                     
-                      <ul className=" tw-p-0 ">
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            If the appeal is forwarded to the Administrative
-                            Court, we act as your representative, managing all
-                            communication with the court and keeping you
-                            informed throughout the process.
-                          </p>
-                        </li>
-                      </ul>
-                      <ul className=" tw-p-0 ">
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            We provide ongoing follow-up with Migrationsverket
-                            or the court to ensure your case moves forward
-                            smoothly.
-                           
-                          </p>
-                        </li>
-                      </ul>
 
-                   
-                          
+                          <ul className=" tw-p-0 ">
+                            <li className=" tw-flex tw-items-center tw-gap-3">
+                              <p className=" m-0 tw-text-gray">
+                                If the appeal is forwarded to the Administrative
+                                Court, we act as your representative, managing
+                                all communication with the court and keeping you
+                                informed throughout the process.
+                              </p>
+                            </li>
+                          </ul>
+                          <ul className=" tw-p-0 ">
+                            <li className=" tw-flex tw-items-center tw-gap-3">
+                              <p className=" m-0 tw-text-gray">
+                                We provide ongoing follow-up with
+                                Migrationsverket or the court to ensure your
+                                case moves forward smoothly.
+                              </p>
+                            </li>
+                          </ul>
+
                           <strong className="tw-text-gray">
                             Legal Support for Further Appeals
                           </strong>
-                     
-                      <ul className=" tw-p-0 ">
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            If necessary, we guide you through the process of
-                            appealing to the Migration Court of Appeal in cases
-                            where this option is available.
-                          </p>
-                        </li>
-                      </ul>
+
+                          <ul className=" tw-p-0 ">
+                            <li className=" tw-flex tw-items-center tw-gap-3">
+                              <p className=" m-0 tw-text-gray">
+                                If necessary, we guide you through the process
+                                of appealing to the Migration Court of Appeal in
+                                cases where this option is available.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                    </div>
 
-
-
-                 
-                     
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
                             <strong className="tw-text-gray">
                               Our Services with Swedish Authorities
                             </strong>
-                           
+
                             <p>
                               We understand that decisions from Swedish
                               authorities can have a significant impact on your
@@ -931,19 +854,18 @@ const ServiceDetails = () => {
                               applications, and communications with several key
                               agencies:
                             </p>
-                           
-<br></br>
-                            <span className=" tw-flex tw-items-center tw-gap-2">
-                        {" "}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                        (Skatteverket)
-                      </span>
-                      <h2 className="tw-text-left">
-                        <strong>  1. Swedish Tax Agency </strong>
-                      </h2>
-                      <br></br>
 
-                           
+                            <br></br>
+                            <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
+                              {" "}
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                              (Skatteverket)
+                            </span>
+                            <h2 className="tw-text-left">
+                              <strong> 1. Swedish Tax Agency </strong>
+                            </h2>
+                            <br></br>
+
                             <p>
                               Skatteverket plays a central role in matters
                               related to tax registration, personnummer (social
@@ -953,52 +875,42 @@ const ServiceDetails = () => {
                               personnummer, tax disputes, or concerns regarding
                               tax residency status, our team can help.
                             </p>
-
-                           
                           </p>
                         </li>
                       </ul>
 
-                      
-                          
-                          <strong className="tw-text-gray">
-                            Personnummer Applications:
-                          </strong>
-                        
+                      <strong className="tw-text-gray">
+                        Personnummer Applications:
+                      </strong>
+
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
                             Assistance in gathering required documents,
                             completing applications, and ensuring timely
                             submission for personnummer or coordination numbers.
-                           
                           </p>
                         </li>
                       </ul>
 
-                   
-                          
-                          <strong className="tw-text-gray">
-                            Tax Residency and Income Tax Disputes:
-                          </strong>
-                       
+                      <strong className="tw-text-gray">
+                        Tax Residency and Income Tax Disputes:
+                      </strong>
+
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
                             Support in challenging tax residency status
                             determinations or disputes related to income tax
                             filings.
-                           
                           </p>
                         </li>
                       </ul>
 
-                    
-                          
-                          <strong className="tw-text-gray">
-                            Property Tax and Business Tax Matters:
-                          </strong>
-                       
+                      <strong className="tw-text-gray">
+                        Property Tax and Business Tax Matters:
+                      </strong>
+
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
@@ -1007,21 +919,18 @@ const ServiceDetails = () => {
                             complex tax situations.
                             <br />
                             <br />
-
-                            
-<br></br>
-                            <span className=" tw-flex tw-items-center tw-gap-2">
-                        {" "}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                        (Försäkringskassan)
-                      </span>
-                      <h2 className="tw-text-left">
-                        <strong>2. Swedish Social Insurance Agency</strong>
-                      </h2>
-                      <br></br>
-
-
-                           
+                            <br></br>
+                            <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
+                              {" "}
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                              (Försäkringskassan)
+                            </span>
+                            <h2 className="tw-text-left">
+                              <strong>
+                                2. Swedish Social Insurance Agency
+                              </strong>
+                            </h2>
+                            <br></br>
                             <p>
                               Försäkringskassan manages social insurance
                               benefits, including health insurance, parental
@@ -1030,55 +939,43 @@ const ServiceDetails = () => {
                               to these benefits, we can provide comprehensive
                               support.
                             </p>
-                           
                           </p>
                         </li>
                       </ul>
 
-                   <div>
-                          
+                      <div>
+                        <strong className="tw-text-gray">
+                          Parental Leave and Child Benefits:
+                        </strong>
+                      </div>
 
-                          
-                          <strong className="tw-text-gray">
-                            Parental Leave and Child Benefits:
-                          </strong>
-
-
-                          </div>
-                       
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
                             Assistance with applications, appeals, and
                             compliance to ensure you receive the benefits you’re
                             entitled to.
-                           
                           </p>
                         </li>
                       </ul>
 
-                    
-                          
-                          <strong className="tw-text-gray">
-                            Sickness and Disability Benefits:
-                          </strong>
-                    
+                      <strong className="tw-text-gray">
+                        Sickness and Disability Benefits:
+                      </strong>
+
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
                             Support in gathering medical documentation and
                             challenging benefit denials.
-                           
                           </p>
                         </li>
                       </ul>
 
-                      
-                          
-                          <strong className="tw-text-gray">
-                            Pension Eligibility:
-                          </strong>
-                      
+                      <strong className="tw-text-gray">
+                        Pension Eligibility:
+                      </strong>
+
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
@@ -1087,20 +984,19 @@ const ServiceDetails = () => {
                             amounts.
                             <br />
                             <br />
-
-
-<br></br>
-                            <span className=" tw-flex tw-items-center tw-gap-2">
-                        {" "}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                        (Arbetsförmedlingen)
-                      </span>
-                      <h2 className="tw-text-left">
-                        <strong>  3. Swedish Public Employment Service</strong>
-                      </h2>
-<br></br>
-
-                          
+                            <br></br>
+                            <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
+                              {" "}
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                              (Arbetsförmedlingen)
+                            </span>
+                            <h2 className="tw-text-left">
+                              <strong>
+                                {" "}
+                                3. Swedish Public Employment Service
+                              </strong>
+                            </h2>
+                            <br></br>
                             <p>
                               3. Swedish Public Employment Service
                               (Arbetsförmedlingen) If you are receiving
@@ -1110,51 +1006,41 @@ const ServiceDetails = () => {
                               you meet these requirements and provide assistance
                               if you encounter issues.
                             </p>
-                           
                           </p>
                         </li>
                       </ul>
 
-                    
-                          
-                          <strong className="tw-text-gray">
-                            Activity Requirements:
-                          </strong>
-                       
+                      <strong className="tw-text-gray">
+                        Activity Requirements:
+                      </strong>
+
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
                             Assistance in meeting activity requirements,
                             including documentation and verification.
-                           
                           </p>
                         </li>
                       </ul>
 
-                   
-                    
-                          
-                          <strong className="tw-text-gray">
-                            Appeals for Unemployment Support:
-                          </strong>
-                      
+                      <strong className="tw-text-gray">
+                        Appeals for Unemployment Support:
+                      </strong>
+
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
                             Support for those who believe they have been
                             unfairly denied benefits or faced incorrect
                             decisions regarding their eligibility.
-                           
                           </p>
                         </li>
                       </ul>
 
-                    
-                          
-                          <strong className="tw-text-gray">
-                            Job Search Assistance:
-                          </strong>
-                       
+                      <strong className="tw-text-gray">
+                        Job Search Assistance:
+                      </strong>
+
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
@@ -1163,87 +1049,73 @@ const ServiceDetails = () => {
                             employment.
                             <br />
                             <br />
-
-<br></br>
-                            <span className=" tw-flex tw-items-center tw-gap-2">
-                        {" "}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                        (Tullverket)
-                      </span>
-                      <h2 className="tw-text-left">
-                        <strong>  4. Swedish Customs Agency </strong>
-                      </h2>
-                      <br></br>
-
-                            
+                            <br></br>
+                            <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
+                              {" "}
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                              (Tullverket)
+                            </span>
+                            <h2 className="tw-text-left">
+                              <strong> 4. Swedish Customs Agency </strong>
+                            </h2>
+                            <br></br>
                             <p>
                               Tullverket handles customs and import/export
                               regulations in Sweden, and decisions by this
                               authority can significantly impact individuals or
                               businesses involved in international trade.
                             </p>
-                           
                           </p>
                         </li>
                       </ul>
 
-                    
-                          
-                          <strong className="tw-text-gray">
-                            Customs Disputes:
-                          </strong>
-                       
+                      <strong className="tw-text-gray">
+                        Customs Disputes:
+                      </strong>
+
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
                             Assistance in resolving disputes related to customs
                             duties, classifications, and import/export
                             procedures.
-                           
                           </p>
                         </li>
                       </ul>
 
-                   
-                          
-                          <strong className="tw-text-gray">
-                            Personal Belongings and Vehicles:
-                          </strong>
-                     
+                      <strong className="tw-text-gray">
+                        Personal Belongings and Vehicles:
+                      </strong>
+
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
                             Guidance on importing personal belongings or
                             vehicles, including compliance with customs
                             regulations and addressing tax implications.
-                           
                           </p>
                         </li>
                       </ul>
 
-                      
-                          
-                          <strong className="tw-text-gray">
-                            Business Import/Export Compliance:
-                          </strong>
+                      <strong className="tw-text-gray">
+                        Business Import/Export Compliance:
+                      </strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
                             Support for businesses with complex customs needs,
                             ensuring compliance and avoiding costly penalties.
-                            <br /><br />
-
-
-                            <span className=" tw-flex tw-items-center tw-gap-2">
-                        {" "}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                        (A-Kassa)
-                      </span>
-                      <h2 className="tw-text-left">
-                        <strong> 5. Unemployment Insurance </strong>
-                      </h2>
-                      <br></br>
-                           
+                            <br />
+                            <br />
+                            <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
+                              {" "}
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                              (A-Kassa)
+                            </span>
+                            <h2 className="tw-text-left">
+                              <strong> 5. Unemployment Insurance </strong>
+                            </h2>
+                            <br></br>
                             <p>
                               A-Kassa, or unemployment insurance funds, provides
                               essential financial support for individuals who
@@ -1251,58 +1123,51 @@ const ServiceDetails = () => {
                               your A-Kassa application, eligibility, or
                               payments, our team can help.
                             </p>
-                           
                           </p>
                         </li>
                       </ul>
 
-                          
-                          <strong className="tw-text-gray">
-                            Eligibility Disputes:
-                          </strong>
+                      <strong className="tw-text-gray">
+                        Eligibility Disputes:
+                      </strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
                             Assistance with challenges related to qualifying for
                             A-Kassa benefits, including compliance with job
                             search or activity requirements.
-                           
                           </p>
                         </li>
                       </ul>
 
-                          
-                          <strong className="tw-text-gray">
-                            Income-Related Benefit Appeals:
-                          </strong>
+                      <strong className="tw-text-gray">
+                        Income-Related Benefit Appeals:
+                      </strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
                             Help in resolving disputes over income-based
                             benefits and ensuring you receive the correct
                             amounts.
-                           
                           </p>
                         </li>
                       </ul>
                     </div>
-<br></br>
+                    <br></br>
                     <div>
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                      <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                        Contract Services 
+                        Contract Services
                       </span>
                       <h2 className="tw-text-left">
                         <strong> Include:</strong>
                       </h2>
-<br></br>
-                     
-                          
-                          <strong className="tw-text-gray">
-                            Contract Review and Explanation
-                          </strong>
-                       
+                      <br></br>
+
+                      <strong className="tw-text-gray">
+                        Contract Review and Explanation
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -1314,17 +1179,13 @@ const ServiceDetails = () => {
                             Explanation of terms, obligations, and potential
                             risks, ensuring you fully understand the contract’s
                             implications.
-                           
                           </p>
                         </li>
                       </ul>
 
-                      
-                          
-                          <strong className="tw-text-gray">
-                            Negotiation Support
-                          </strong>
-                      
+                      <strong className="tw-text-gray">
+                        Negotiation Support
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -1336,17 +1197,13 @@ const ServiceDetails = () => {
                             Assistance in drafting counteroffers or proposing
                             changes to terms, with a focus on protecting your
                             interests.
-                           
                           </p>
                         </li>
                       </ul>
 
-                     
-                          
-                          <strong className="tw-text-gray">
-                            Drafting and Customizing Contracts
-                          </strong>
-                        
+                      <strong className="tw-text-gray">
+                        Drafting and Customizing Contracts
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -1357,17 +1214,13 @@ const ServiceDetails = () => {
                             <br></br>
                             Legal review and customization of standard templates
                             to ensure compliance with Swedish law.
-                           
                           </p>
                         </li>
                       </ul>
 
-                      
-                          
-                          <strong className="tw-text-gray">
-                            Dispute Resolution and Mediation
-                          </strong>
-                       
+                      <strong className="tw-text-gray">
+                        Dispute Resolution and Mediation
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -1379,7 +1232,6 @@ const ServiceDetails = () => {
                             Assistance in gathering evidence, understanding your
                             rights, and presenting your case in disputes related
                             to employment, rentals, or business contracts.
-                           
                           </p>
                         </li>
                       </ul>
@@ -1387,7 +1239,7 @@ const ServiceDetails = () => {
 
                     <div>
                       <br></br>
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                      <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                         Why Choose
@@ -1397,12 +1249,9 @@ const ServiceDetails = () => {
                       </h2>
                       <br></br>
 
-                    
-                          
-                          <strong className="tw-text-gray">
-                            Experience with Swedish Immigration Law:
-                          </strong>
-                       
+                      <strong className="tw-text-gray">
+                        Experience with Swedish Immigration Law:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -1411,17 +1260,13 @@ const ServiceDetails = () => {
                             and is highly familiar with Swedish migration laws
                             and policies, giving us a clear advantage in
                             challenging decisions.
-                           
                           </p>
                         </li>
                       </ul>
 
-                     
-                          
-                          <strong className="tw-text-gray">
-                            Comprehensive Case Management:
-                          </strong>
-                       
+                      <strong className="tw-text-gray">
+                        Comprehensive Case Management:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -1429,17 +1274,13 @@ const ServiceDetails = () => {
                             From consultation to representation, we handle every
                             aspect of the appeal process, providing you with a
                             single point of contact and peace of mind.
-                           
                           </p>
                         </li>
                       </ul>
 
-                    
-                          
-                          <strong className="tw-text-gray">
-                            Personalized Approach:
-                          </strong>
-                       
+                      <strong className="tw-text-gray">
+                        Personalized Approach:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -1448,7 +1289,6 @@ const ServiceDetails = () => {
                             your situation, ensure that your appeal is tailored
                             to your specific needs, and focus on presenting the
                             strongest possible case.
-                           
                           </p>
                         </li>
                       </ul>
@@ -1456,7 +1296,7 @@ const ServiceDetails = () => {
 
                     <div>
                       <br></br>
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                      <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                         Sweden Relocators for
@@ -1476,37 +1316,51 @@ const ServiceDetails = () => {
                         today to discuss your situation, and let us help you
                         turn the decision around.
                       </p>
-
-                     
+                      <Link to="/register" className="tw-text-center tw-pt-4">
+                        <h2 className="tw-text-center tw-pt-4">
+                          <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
+                            Sign Up{" "}
+                          </strong>
+                          <strong> Today!</strong>
+                        </h2>
+                      </Link>
+                      <br />
+                      <p className="tw-text-gray">
+                        Sign up today and simplify your journey! Whether you're
+                        seeking assistance with relocation, permits, visas,
+                        legal processes, or settling into a new life, we're here
+                        to help. Our comprehensive services cover everything
+                        from work and study opportunities to family
+                        reunifications, business support, and much more. Let us
+                        guide you every step of the way—start your seamless
+                        experience now!
+                      </p>
                     </div>
 
                     {/* END OF NEW CONTENT */}
                   </div>
                 </div>
 
-                <div
-  className="col-md-4 tw-pt-16 tw-bg-[#F5FAFF] tw-sticky tw-top-0 tw-h-auto md:tw-w-[40%] 2xl:tw-w-[50%] tw-z-10"
->
-  <div className="md:tw-pr-[40%] 2xl:tw-pr-[50%] tw-pr-4">
-    <ul className="tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
-      {data?.map((item, index) => {
-        return (
-          <Link
-            to={`${item?.Link}`}
-            className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
-            key={index}
-          >
-            <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
-              {item?.title}
-            </p>
-            <GoTriangleRight className="tw-text-gray" />
-          </Link>
-        );
-      })}
-    </ul>
-  </div>
-</div>
-
+                <div className="col-md-4 tw-pt-16 tw-bg-[#F5FAFF] tw-sticky tw-top-0 tw-h-auto md:tw-w-[40%] 2xl:tw-w-[50%] tw-z-10">
+                  <div className="md:tw-pr-[40%] 2xl:tw-pr-[50%] tw-pr-4">
+                    <ul className="tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
+                      {data?.map((item, index) => {
+                        return (
+                          <Link
+                            to={`${item?.Link}`}
+                            className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
+                            key={index}
+                          >
+                            <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
+                              {item?.title}
+                            </p>
+                            <GoTriangleRight className="tw-text-gray" />
+                          </Link>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

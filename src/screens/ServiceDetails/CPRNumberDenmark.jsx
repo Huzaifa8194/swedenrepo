@@ -247,7 +247,7 @@ const CPRNumberDenmark = () => {
     <>
       <Header />
       <Banner_Page
-        highlightText={t("CPR Number Denmark")}
+        highlightText={t("Relocate to Denmark")}
         regularText={t(
           "Secure your Danish CPR number seamlessly. We provide guidance to ensure a smooth process for your official identification."
         )}
@@ -904,6 +904,15 @@ const CPRNumberDenmark = () => {
                       relocation to Denmark as simple and successful as
                       possible. Contact us today to begin your journey with
                       reliable support and expert guidance.
+                    </p>
+                    <Link to = '/register' className="tw-text-center tw-pt-4">
+                    <h2 className = "tw-text-center tw-pt-4">
+                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
+                    </h2>
+                    </Link>
+                    <br/>
+                    <p className="tw-text-gray">
+                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
                     </p>
                   </div>
                 </div>

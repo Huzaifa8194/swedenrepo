@@ -10,6 +10,8 @@ import './styles/animate.css';
 import "./styles/animate.css";
 import './i18n';
 
+import CookieModal from "./components/CookieModel";
+
 
 import SnackbarProvider from './components/snackbar/snackbar-provider';
 
@@ -20,30 +22,9 @@ import { SettingsDrawer, SettingsProvider } from './components/settings';
 function App() {
   return (
     <>
-    {/* <SettingsProvider
-          defaultSettings={{
-            themeMode: 'light', // 'light' | 'dark'
-            themeDirection: 'ltr', //  'rtl' | 'ltr'
-            themeContrast: 'default', // 'default' | 'bold'
-            themeLayout: 'vertical', // 'vertical' | 'horizontal' | 'mini'
-            themeColorPresets: 'default', // 'default' | 'cyan' | 'purple' | 'blue' | 'orange' | 'red'
-            themeStretch: false,
-          }}
-        >
-      <Routing />
-      </SettingsProvider> */}
-
-
-
-                  {/* <ProgressBar /> */}
+   
                   <Routing />
-              
-
-
-
-
-
-
+                  <CookieModal />
 
       
     </>

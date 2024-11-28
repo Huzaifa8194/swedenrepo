@@ -43,7 +43,7 @@ export const servicesChildLinks = [
   },
   {
     id: 3,
-    title: 'Personnummer Sweden',
+    title: 'Relocate to Sweden',
     description: 'The personal identification is a number that the Swedish Tax Agency assigns to person registered in Sweden.',
     icons: <CgSweden color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
 
@@ -51,7 +51,7 @@ export const servicesChildLinks = [
   },
   {
     id: 4,
-    title: 'CPR Number Denmark',
+    title: 'Relocate to Denmark',
     description: 'CPR stands for Det Centrale Personregister, which translates to the Civil Registration System ',
     icons: <GiIdCard color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
     Link: '/cpr-number-denmark',
@@ -130,10 +130,10 @@ export const servicesChildLinks = [
   },
   {
     id: 14,
-    title: 'House & Offices',
-    description: 'we offer you an easy and painless solution where you can get a place to live without any worries.',
+    title: 'EOR & Payroll',
+    description: 'we offer you an easy and painless solution where you can get eor and payroll.',
     icons: <HiMiniBuildingOffice2 color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
-    Link: '/house-offices',
+    Link: '/eorpayroll',
   },
   {
     id: 15,

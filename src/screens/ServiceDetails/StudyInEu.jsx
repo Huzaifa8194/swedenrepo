@@ -920,6 +920,15 @@ const StudyInEu = () => {
                         <p className=" tw-text-gray">
                           Once you have been accepted as a student, you will receive an official letter of ad-mission from the institution in question. Remember to follow the guidelines given by the university to confirm your study place.
                         </p>
+                        <Link to = '/register' className="tw-text-center tw-pt-4">
+                    <h2 className = "tw-text-center tw-pt-4">
+                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
+                    </h2>
+                    </Link>
+                    <br/>
+                    <p className="tw-text-gray">
+                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
+                    </p>
                       </div>
                     </div>
                   </div>

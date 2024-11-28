@@ -112,6 +112,7 @@ const Header = () => {
                     <Button
                       className={isTop ? "btn-Transparent" : "btn-light"}
                       label="Login"
+                      onClick={() => (window.location.href = "/login")}
                     />
                   </div>
                   

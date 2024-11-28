@@ -495,7 +495,7 @@ const Citizenship = () => {
                     <p>
                       <br />
                     </p>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Citizenship
@@ -550,7 +550,7 @@ const Citizenship = () => {
                     </ul>
 
                     <br />
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Citizenship for Individuals
@@ -743,7 +743,7 @@ const Citizenship = () => {
                     </ul>
 
                     <br />
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Waiting Time for
@@ -830,7 +830,7 @@ const Citizenship = () => {
 
                     <br />
 
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       How Sweden Relocators Can
@@ -940,7 +940,7 @@ const Citizenship = () => {
                     </ul>
 
                     <br />
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Why Choose
@@ -998,380 +998,17 @@ const Citizenship = () => {
                       </li>
                     </ul>
                   </div>
-
-                  <div>
-                    <br />
-                    <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      A Selection of Prime Citizenship-by-Investment Programs
-                    </span>
-
-                    <h2 className="tw-text-left">
-                      <strong>
-                        Citizenship-by-Investment Programs Overview
-                      </strong>
+                  <Link to = '/register' className="tw-text-center tw-pt-4">
+                    <h2 className = "tw-text-center tw-pt-4">
+                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
                     </h2>
-
-                    <br />
-                    <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={cp7}
-                              alt=""
-                              style={{ maxWidth: "450px" }}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <p className="tw-text-gray">
-                          Citizenship-by-investment programs offer affluent
-                          individuals and families the opportunity to acquire a
-                          second or even third passport, granting them expanded
-                          global mobility, business opportunities, and the same
-                          rights as local citizens. These programs typically
-                          require a significant financial investment in the host
-                          country, such as through real estate, business
-                          ventures, or government bonds, in exchange for
-                          citizenship. The benefits of these programs extend
-                          beyond the ability to travel visa-free to various
-                          countries; they also provide access to improved
-                          healthcare, education, and tax advantages.
-                        </p>
-                      </div>
-                    </div>
-                    <br />
-
-                    <strong className="m-0 tw-text-gray">
-                      🇦🇬 Antigua and Barbuda
-                    </strong>
-
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Minimum Investment:</strong> USD 100,000
-                        </p>
-                      </li>
-
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Advantages:</strong>
-                          Visa-free or visa-on-arrival access to 151
-                          destinations, including popular business and lifestyle
-                          hubs. Quick processing times and multiple investment
-                          options. Favorable tax environment with no taxes on
-                          worldwide income or inheritance.
-                        </p>
-                      </li>
-                    </ul>
-
-                    <strong className="m-0 tw-text-gray">🇦🇹 Austria</strong>
-
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Minimum Investment:</strong> EUR 3 million
-                        </p>
-                      </li>
-
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Advantages:</strong>
-                          One of the world’s strongest passports with visa-free
-                          access to 187 destinations. Settlement rights in all
-                          EU member states. High standards of living and
-                          security, ideal for business and family life.
-                        </p>
-                      </li>
-                    </ul>
-
-                    <strong className="m-0 tw-text-gray">🇨🇾 Cyprus</strong>
-
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Minimum Investment:</strong> EUR 2.15 million
-                        </p>
-                      </li>
-
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Advantages:</strong>
-                          Visa-free access to 174 countries, including all EU
-                          states. Right to live, work, and study in all EU
-                          member countries. Strong legal and tax system,
-                          beneficial for business and family relocation.
-                        </p>
-                      </li>
-                    </ul>
-
-                    <strong className="m-0 tw-text-gray">🇲🇹 Malta</strong>
-
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Minimum Investment:</strong> Approximately EUR
-                          1 million
-                        </p>
-                      </li>
-
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Advantages:</strong>
-                          Access to the entire EU with the right to live, work,
-                          and study in all member states. Visa-free or
-                          visa-on-arrival access to over 180 countries.
-                          High-quality healthcare and education systems, ideal
-                          for family settlement.
-                        </p>
-                      </li>
-                    </ul>
-
-                    <strong className="m-0 tw-text-gray">🇲🇪 Montenegro</strong>
-
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Minimum Investment:</strong> EUR 350,000
-                        </p>
-                      </li>
-
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Advantages:</strong>
-                          Visa-free or visa-on-arrival access to 124 countries,
-                          including Schengen Area countries. Exclusive program
-                          limited to 2,000 applicants. Gateway to Europe with
-                          favorable tax rates and growing economy.
-                        </p>
-                      </li>
-                    </ul>
-
-                    <strong className="m-0 tw-text-gray">
-                      🇰🇳 St. Kitts and Nevis
-                    </strong>
-
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Minimum Investment:</strong> USD 150,000
-                        </p>
-                      </li>
-
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Advantages:</strong>
-                          Visa-free or visa-on-arrival access to 156
-                          destinations, including the UK and Schengen countries.
-                          Flexible and quick application process. No personal
-                          income tax, making it ideal for wealth preservation.
-                        </p>
-                      </li>
-                    </ul>
-
-                    <strong className="m-0 tw-text-gray">🇱🇨 St. Lucia</strong>
-
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Minimum Investment:</strong> USD 100,000
-                        </p>
-                      </li>
-
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Advantages:</strong>
-                          Visa-free or visa-on-arrival access to 146 countries
-                          worldwide. Fast processing, with citizenship granted
-                          in as little as four months. Attractive business
-                          environment with tax incentives and financial
-                          flexibility.
-                        </p>
-                      </li>
-                    </ul>
-
-                    <strong className="m-0 tw-text-gray">🇹🇷 Turkey</strong>
-
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Minimum Investment:</strong> USD 250,000 in
-                          real estate
-                        </p>
-                      </li>
-
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Advantages:</strong>
-                          Access to key Western markets and growing economic
-                          opportunities. Visa-free or visa-on-arrival access to
-                          111 destinations, including parts of Asia, Africa, and
-                          the Middle East. Option to acquire dual citizenship,
-                          with passports granted within six to nine months.
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <br />
-                    <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Why Choose Citizenship by Investment?
-                    </span>
-
-                    <h2 className="tw-text-left">
-                      <strong>Benefits of Citizenship by Investment</strong>
-                    </h2>
-
-                    <br />
+                    </Link>
+                    <br/>
                     <p className="tw-text-gray">
-                      Each of these citizenship-by-investment programs offers
-                      distinct benefits tailored to the global elite:
+                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
                     </p>
 
-                    <strong className="m-0 tw-text-gray">
-                      Enhanced Global Mobility
-                    </strong>
-
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Freedom to travel visa-free or with visa-on-arrival to
-                          numerous destinations.
-                        </p>
-                      </li>
-                    </ul>
-
-                    <strong className="m-0 tw-text-gray">
-                      Security and Stability
-                    </strong>
-
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Citizenship in politically stable countries with
-                          secure legal systems.
-                        </p>
-                      </li>
-                    </ul>
-
-                    <strong className="m-0 tw-text-gray">
-                      Business Opportunities
-                    </strong>
-
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Access to markets across the EU, Schengen Area, and
-                          beyond, fostering international business
-                          opportunities.
-                        </p>
-                      </li>
-                    </ul>
-
-                    <strong className="m-0 tw-text-gray">
-                      Lifestyle Benefits
-                    </strong>
-
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          High standards of living, tax efficiency, access to
-                          quality healthcare and education, and diverse cultural
-                          experiences.
-                        </p>
-                      </li>
-                    </ul>
-
-                    <br />
-                    <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Why Work With
-                    </span>
-                    <h2 className="tw-text-left">
-                      <strong>Sweden Relocators? </strong>
-                    </h2>
-
-                    <br />
-
-                    <p className="tw-text-gray">
-                      At Sweden Relocators, we help you select the right
-                      citizenship program based on your needs, guiding you
-                      through the entire application process for a smooth and
-                      efficient journey toward a second citizenship.
-                    </p>
-
-                    <strong className="m-0 tw-text-gray">
-                      Contact Sweden Relocators for Citizenship Assistance
-                    </strong>
-
-                    <ul className="tw-p-0 tw-pl-0 tw-pt-4">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Swedish citizenship offers a host of benefits and
-                          opportunities, and our team is here to make your
-                          application journey as smooth as possible. Contact
-                          Sweden Relocators today to discuss your path to
-                          citizenship in Sweden, and let us guide you through
-                          every step with confidence and clarity.
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
+                
                 </div>
               </div>
 

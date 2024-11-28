@@ -246,7 +246,7 @@ const PersonnumerSweden = () => {
     <>
       <Header />
       <Banner_Page
-        highlightText={t("Personnummer Sweden")}
+        highlightText={t("Relocate to Sweden")}
         regularText={t(
           "Get your unique Swedish identity number to unlock essential services. Let us simplify the registration process for you."
         )}
@@ -846,6 +846,16 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                       can assist you with the application process, ensuring a
                       smooth transition into the Swedish system and allowing you
                       to fully enjoy life in Sweden.
+                    </p>
+
+                    <Link to = '/register' className="tw-text-center tw-pt-4">
+                    <h2 className = "tw-text-center tw-pt-4">
+                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
+                    </h2>
+                    </Link>
+                    <br/>
+                    <p className="tw-text-gray">
+                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
                     </p>
                   </div>
                 </div>

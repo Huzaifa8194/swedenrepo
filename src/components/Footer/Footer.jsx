@@ -351,10 +351,15 @@ const Footer = () => {
                             className=" m-0 tw-text-white"
                           >
                             info@swedenrelocators.se
-                          </Link>
+                            </Link>
                         </div>
                         <div className="featured-desc">
+                        <Link
+                            to={"mailto:info@swedenrelocators.se"}
+                            className=" m-0 tw-text-white"
+                          >
                           <p className=" tw-text-white">{t('Drop Us Link Line')}</p>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -377,9 +382,15 @@ const Footer = () => {
                         >
                           <p className=" m-0 tw-text-white">+46 723 276 276</p>
                         </Link>
+
+                        <Link
+                          to={"tel:+46 723 276 276"}
+                          
+                        >
                         <div className="featured-desc">
                           <p className=" tw-text-white">{t('Call Us Now!')}</p>
                         </div>
+                        </Link>
                       </div>
                     </div>
                     {/* featured-icon-box end*/}
@@ -405,7 +416,10 @@ const Footer = () => {
                           </Link>
                         </div>
                         <div className="featured-desc">
+                          
+                          <Link to={"https://goo.gl/maps/djSuGUoQN6Bd72ri7"}>
                           <p className="  tw-text-gray">{t('Get Direction')}</p>
+                          </Link>
                         </div>
                       </div>
                     </div>
