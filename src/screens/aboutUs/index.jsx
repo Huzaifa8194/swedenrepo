@@ -3,7 +3,7 @@ import Banner_Page from "../../components/Common/Banner_Page";
 import Navbar from "../../components/Header/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Our_specialization from "../../components/Our_specialization";
-import VideoPlayer from "../../components/videoPlayerresponsive";
+import VideoPlayer from "../../components/videoPlayer";
 import { useTranslation } from "react-i18next";
 import Header from "../../components/Header_New/Header";
 import video1 from "../../assets/images/video/about_video1.mp4";
