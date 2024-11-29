@@ -31,7 +31,7 @@ const Rent_out_your_housing = () => {
     <>
       <Header />
       <Banner_Page
-        highlightText={t("Rent Out Your House")}
+        highlightText={t("Lease your Property")}
         regularText={t(
           "Maximize your rental potential with ease. We provide support for listing and renting out your property efficiently."
         )}

@@ -14,7 +14,7 @@ const Hero = () => {
   const { t} = useTranslation();
 
   return (
-    <section className="tw-relative  tw-bg-homeHero tw-bg-cover tw-bg-center md:tw-bg-left tw-bg-no-repeat tw-h-full xl:tw-py-24 2xl:tw-min-h-[900px] tw-py-10">
+    <section className="tw-relative  tw-bg-homeHero tw-bg-cover tw-bg-center md:tw-bg-left tw-bg-no-repeat tw-h-full xl:tw-py-24 2xl:tw-min-h-[970px] tw-py-10">
       <div className="tw-hidden xl:tw-block tw-absolute tw-left-[400px] tw-top-[150px] tw-z-20">
         <img src="/src/assets/images/slides/slider-02.png" alt="" />
       </div>

@@ -159,9 +159,9 @@ const FeatureSection = () => {
                     <div className="featured-content-icon_img-block">
                       <img className="img-fluid tw-h-[200px]" src={feature.flag} alt="image" />
                     </div>
-                    <div className="featured-title">
+                    <div className="featured-title ">
                       <h5>
-                        <a href={feature.to}tabIndex="-1">{feature.country}</a>
+                        <a href={feature.to} style = {{color:'black'}} tabIndex="-1">{feature.country}</a>
                       </h5>
                     </div>
                     <div className="featured-desc">
@@ -216,7 +216,7 @@ const FeatureSection = () => {
                     </div>
                     <div className="featured-title">
                       <h5>
-                        <a href={feature.to} tabIndex="-1">{feature.country}</a>
+                        <a href={feature.to} style = {{color:'black'}} tabIndex="-1">{feature.country}</a>
                       </h5>
                     </div>
                     <div className="featured-desc">
@@ -272,7 +272,7 @@ const FeatureSection = () => {
                     </div>
                     <div className="featured-title">
                       <h5>
-                        <a href={feature.to} tabIndex="-1">{feature.country}</a>
+                        <a href={feature.to} style = {{color:'black'}} tabIndex="-1">{feature.country}</a>
                       </h5>
                     </div>
                     <div className="featured-desc">
@@ -326,7 +326,7 @@ const FeatureSection = () => {
                     </div>
                     <div className="featured-title">
                       <h5>
-                        <a href={feature.to} tabIndex="-1">{feature.country}</a>
+                        <a href={feature.to} style = {{color:'black'}} tabIndex="-1">{feature.country}</a>
                       </h5>
                     </div>
                     <div className="featured-desc">
@@ -381,7 +381,7 @@ const FeatureSection = () => {
                     </div>
                     <div className="featured-title">
                       <h5>
-                        <a href={feature.to} tabIndex="-1">{feature.country}</a>
+                        <a href={feature.to} style = {{color:'black'}} tabIndex="-1">{feature.country}</a>
                       </h5>
                     </div>
                     <div className="featured-desc">
@@ -436,7 +436,7 @@ const FeatureSection = () => {
                     </div>
                     <div className="featured-title">
                       <h5>
-                        <a href={feature.to} tabIndex="-1">{feature.country}</a>
+                        <a href={feature.to} style = {{color:'black'}} tabIndex="-1">{feature.country}</a>
                       </h5>
                     </div>
                     <div className="featured-desc">
@@ -490,7 +490,7 @@ const FeatureSection = () => {
                     </div>
                     <div className="featured-title">
                       <h5>
-                        <a href={feature.to} tabIndex="-1">{feature.country}</a>
+                        <a href={feature.to} style = {{color:'black'}} tabIndex="-1">{feature.country}</a>
                       </h5>
                     </div>
                     <div className="featured-desc">

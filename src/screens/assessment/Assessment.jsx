@@ -436,7 +436,9 @@ const Assessment = () => {
                     </div>
                   </div>
                   <div className="tw-pt-4"></div>
+                  <div >
                   <FeatureSection/>
+                  </div>
 
                   <h1 className="tw-py-8 tw-mt-2 tw-items-center tw-font-bold tw-text-2xl md:tw-flex tw-block tw-gap-2  tw-text-gray-dark tw-m-0">
                     {" "}

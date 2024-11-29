@@ -255,15 +255,15 @@ const CompanyRegistration = () => {
               <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
                 <div className="  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
-                    <br/>
+                    <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Comprehensive Guide to Company Registration in Sweden
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong>Setting Up Your Business in Sweden</strong>
+                    <h2 className="tw-text-left">
+                      <strong className ='tw-text-black'>Setting Up Your Business in Sweden</strong>
                     </h2>
-                    <br/>
+                    <br />
                     <p className="tw-text-gray">
                       Setting up a business in Sweden offers access to one of
                       Europe’s most stable economies, a supportive business
@@ -280,28 +280,24 @@ const CompanyRegistration = () => {
                       company registration is necessary.
                     </p>
 
-
-
-<br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Why
-  </span>
-  <h2 className = "tw-text-left">
-    <strong>                            is Company Registration Important?
-    </strong>
-  </h2>
-  <br/>
-
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Why
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong className ='tw-text-black'> is Company Registration Important?</strong>
+                    </h2>
+                    <br />
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Legal Recognition:</strong><br/> Registering your
-                          company gives it legal status in Sweden, allowing it
-                          to enter contracts, open bank accounts, and conduct
-                          business legally.
+                          <strong className ='tw-text-black'>Legal Recognition:</strong>
+                          <br /> Registering your company gives it legal status
+                          in Sweden, allowing it to enter contracts, open bank
+                          accounts, and conduct business legally.
                           <p>
                             <br />
                           </p>
@@ -310,10 +306,11 @@ const CompanyRegistration = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Tax Compliance:</strong><br/> Registered companies
-                          are eligible to apply for VAT registration and must
-                          comply with Swedish tax regulations, enabling
-                          transparent financial operations.
+                          <strong className ='tw-text-black'>Tax Compliance:</strong>
+                          <br /> Registered companies are eligible to apply for
+                          VAT registration and must comply with Swedish tax
+                          regulations, enabling transparent financial
+                          operations.
                         </p>
                         <p>
                           <br />
@@ -322,10 +319,11 @@ const CompanyRegistration = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Access to Benefits:</strong><br/> Registered
-                          companies can benefit from government incentives, tax
-                          deductions, and access to loans and financing from
-                          Swedish financial institutions.
+                          <strong className ='tw-text-black'>Access to Benefits:</strong>
+                          <br /> Registered companies can benefit from
+                          government incentives, tax deductions, and access to
+                          loans and financing from Swedish financial
+                          institutions.
                           <p>
                             <br />
                           </p>
@@ -334,10 +332,11 @@ const CompanyRegistration = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Credibility and Trust:</strong><br/> Registered
-                          companies are more trusted by customers, suppliers,
-                          and partners, as they demonstrate a commitment to
-                          legal compliance and transparency.
+                          <strong className ='tw-text-black'>Credibility and Trust:</strong>
+                          <br /> Registered companies are more trusted by
+                          customers, suppliers, and partners, as they
+                          demonstrate a commitment to legal compliance and
+                          transparency.
                           <p>
                             <br />
                           </p>
@@ -346,10 +345,11 @@ const CompanyRegistration = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Limited Liability:</strong><br/> Certain company
-                          types, like limited companies (Aktiebolag), provide
-                          limited liability protection, shielding the owner’s
-                          personal assets from business debts and obligations.
+                          <strong className ='tw-text-black'>Limited Liability:</strong>
+                          <br /> Certain company types, like limited companies
+                          (Aktiebolag), provide limited liability protection,
+                          shielding the owner’s personal assets from business
+                          debts and obligations.
                           <p>
                             <br />
                           </p>
@@ -359,52 +359,49 @@ const CompanyRegistration = () => {
                   </div>
 
                   <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-12 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={cr1}
-                              alt=""
-                              style={{ maxWidth: "450px" }}
-                            />
-                          </div>
+                    <div className="col-md-6">
+                      <div className="row ">
+                        <div className="col-md-12 tw-mx-auto">
+                          <motion.img
+                            animate={imageVariants}
+                            className=" tw-w-full"
+                            src={cr1}
+                            alt=""
+                            style={{ maxWidth: "450px" }}
+                          />
                         </div>
                       </div>
-                      <div className="col-md-6">
-                        <br/>
-                      <span className="tw-flex tw-items-center tw-gap-2">
-
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Setting up
-                    </span>
-                    <h2 className = "tw-text-left">
-                      <strong>Your Business in Sweden</strong>
-                    </h2><br/>
-                    <p className="tw-text-gray">
-                      Setting up a business in Sweden offers access to one of
-                      Europe’s most stable economies, a supportive business
-                      culture, and a highly skilled workforce. Company
-                      registration is an essential step for anyone planning to
-                      operate a business in Sweden, as it legally establishes
-                      the company and allows it to engage in business
-                      activities, enter contracts, and access essential
-                      services.
-                      This guide covers the various types of companies in
-                      Sweden, the pros and cons of each, and why and when
-                      company registration is necessary.
-                    </p>
-                 
-                      </div>
                     </div>
+                    <div className="col-md-6">
+                      <br />
+                      <span className="tw-flex tw-items-center tw-gap-2">
+                        <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                        Setting up
+                      </span>
+                      <h2 className="tw-text-left">
+                        <strong className ='tw-text-black'>Your Business in Sweden</strong>
+                      </h2>
+                      <br />
+                      <p className="tw-text-gray">
+                        Setting up a business in Sweden offers access to one of
+                        Europe’s most stable economies, a supportive business
+                        culture, and a highly skilled workforce. Company
+                        registration is an essential step for anyone planning to
+                        operate a business in Sweden, as it legally establishes
+                        the company and allows it to engage in business
+                        activities, enter contracts, and access essential
+                        services. This guide covers the various types of
+                        companies in Sweden, the pros and cons of each, and why
+                        and when company registration is necessary.
+                      </p>
+                    </div>
+                  </div>
                   <div>
-                   
-<br/>
-                    <h2 className = "tw-text-left">
-                      <strong>Types of Companies in Sweden</strong>
+                    <br />
+                    <h2 className="tw-text-left">
+                      <strong className ='tw-text-black'>Types of Companies in Sweden</strong>
                     </h2>
-                    <br/>
+                    <br />
                     <p className="tw-text-gray">
                       Sweden offers several types of business structures, each
                       with specific advantages, disadvantages, and requirements.
@@ -412,347 +409,353 @@ const CompanyRegistration = () => {
                       and risk tolerance.
                     </p>
 
-                   
-                      <strong className = "tw-text-gray">1. Sole Trader (Enskild Firma)</strong>
-                  
+                    <strong className="tw-text-black">
+                      1. Sole Trader (Enskild Firma)
+                    </strong>
+
                     <p className="tw-text-gray">
                       A sole trader business is owned and managed by an
                       individual, making it the simplest business form in
                       Sweden. It is ideal for freelancers, consultants, and
                       small businesses with minimal capital requirements.
                     </p>
-                    <p className = "tw-text-gray">Advantages:</p>
+                    <p className="tw-text-gray">Advantages:</p>
                     <ul className="tw-pl-0">
-                     
-                    <li className=" tw-flex tw-text-gray tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex tw-text-gray tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Simple to set up and maintain.
                       </li>
                       <li className=" tw-flex tw-text-gray tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Full control over business decisions.
                       </li>
                       <li className=" tw-flex tw-text-gray tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Lower administrative and regulatory requirements.
                       </li>
                       <li className=" tw-flex tw-text-gray tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Profits are taxed as personal income, which can simplify
                         tax filing.
                       </li>
                     </ul>
                     <p className="tw-text-gray">Disadvantages:</p>
                     <ul className="tw-pl-0">
-                    <li className=" tw-flex tw-text-gray tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex tw-text-gray tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Unlimited liability: The owner is personally liable for
                         all business debts and obligations.
                       </li>
                       <li className=" tw-flex tw-text-gray tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Limited access to capital: Often restricted to personal
                         funds or small loans.
                       </li>
                       <li className=" tw-flex tw-text-gray tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         May lack credibility for large clients or investors
                         compared to incorporated entities.
                       </li>
                     </ul>
                     <p className="tw-text-gray">
-                      <strong>When to Register:</strong><br/> Ideal for individuals
-                      starting a small business or working as freelancers.
-                      Registration is generally recommended if you intend to
-                      trade under a business name or need a VAT number.
+                      <strong className ='tw-text-gray'>When to Register:</strong>
+                      <br /> Ideal for individuals starting a small business or
+                      working as freelancers. Registration is generally
+                      recommended if you intend to trade under a business name
+                      or need a VAT number.
                     </p>
 
-                    
-                      <strong className="tw-text-gray">2. Limited Company (Aktiebolag or AB)</strong>
-                   
+                    <strong className="tw-text-black">
+                      2. Limited Company (Aktiebolag or AB)
+                    </strong>
+
                     <p className="tw-text-gray">
                       A limited company (AB) is a separate legal entity from its
                       shareholders, offering limited liability protection. This
                       is the most popular structure for start-ups, small
                       businesses, and large corporations alike.
                     </p>
-                    <p  className="tw-text-gray">Advantages:</p>
+                    <p className="tw-text-gray">Advantages:</p>
                     <ul className="tw-pl-0">
-                     
-                    <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex tw-text-gray  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Limited liability: Shareholders are not personally
                         liable for business debts beyond their investment.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Easier to attract investors: Credibility and potential
                         for issuing shares.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Flexibility in growth: Suitable for businesses with
                         plans to expand or seek external funding.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Tax benefits: Company profits are taxed at a corporate
                         rate, which can be more favorable for larger earnings.
                       </li>
                     </ul>
-                    <p  className="tw-text-gray">Disadvantages:</p>
+                    <p className="tw-text-gray">Disadvantages:</p>
                     <ul className="tw-pl-0">
-                    <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex tw-text-gray  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Higher initial capital requirement: Minimum share
                         capital of SEK 25,000.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         More complex administration: Requires annual reports,
                         board meetings, and compliance with corporate
                         regulations.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Shareholder obligations: Shareholders have specific
                         responsibilities, such as attending annual general
                         meetings and approving financial statements.
                       </li>
                     </ul>
                     <p className="tw-text-gray">
-                      <strong>When to Register:</strong><br/> Registering a limited
-                      company is ideal when seeking external investments,
-                      minimizing personal risk, or planning to grow the business
-                      significantly. It is also a suitable structure if you need
-                      to protect your personal assets.
+                      <strong className ='tw-text-gray'>When to Register:</strong>
+                      <br /> Registering a limited company is ideal when seeking
+                      external investments, minimizing personal risk, or
+                      planning to grow the business significantly. It is also a
+                      suitable structure if you need to protect your personal
+                      assets.
                     </p>
 
-                   
-                      <strong  className="tw-text-gray">3. Trading Partnership (Handelsbolag)</strong>
-                    
+                    <strong className="tw-text-black">
+                      3. Trading Partnership (Handelsbolag)
+                    </strong>
+
                     <p className="tw-text-gray">
                       A trading partnership is a business owned by two or more
                       individuals. Each partner shares equal responsibility for
                       the business’s debts and obligations unless agreed
                       otherwise.
                     </p>
-                    <p  className="tw-text-gray">Advantages:</p>
+                    <p className="tw-text-gray">Advantages:</p>
                     <ul className="tw-pl-0">
-                    <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex tw-text-gray  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Simple to establish with minimal initial capital.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Shared decision-making and responsibility among
                         partners.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Profits are taxed as personal income, which can be
                         favorable depending on income level.
                       </li>
                     </ul>
-                    <p  className="tw-text-gray">Disadvantages:</p>
+                    <p className="tw-text-gray">Disadvantages:</p>
                     <ul className="tw-pl-0">
-                    <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex tw-text-gray  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Unlimited liability: Partners are jointly and
                         individually liable for business debts.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Shared risk: One partner’s decisions can impact the
                         financial obligations of others.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Potential for disputes: Without a clear partnership
                         agreement, disagreements can disrupt the business.
                       </li>
                     </ul>
                     <p className="tw-text-gray">
-                      <strong>When to Register:</strong> A trading partnership
+                      <strong className ='tw-text-gray'>When to Register:</strong> A trading partnership
                       is suitable for two or more individuals who wish to
                       collaborate on a business with shared control. Registering
                       is important to establish legal recognition and define
                       each partner’s roles and liabilities.
                     </p>
 
-                 
-                      <strong className="tw-text-gray">4. Limited Partnership (Kommanditbolag)</strong>
-                  
+                    <strong className="tw-text-black">
+                      4. Limited Partnership (Kommanditbolag)
+                    </strong>
+
                     <p className="tw-text-gray">
                       A limited partnership includes both general and limited
                       partners. General partners have full control and unlimited
                       liability, while limited partners have limited liability
                       and typically no involvement in management.
                     </p>
-                    <p  className="tw-text-gray">Advantages:</p>
+                    <p className="tw-text-gray">Advantages:</p>
                     <ul className="tw-pl-0">
-                    <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex tw-text-gray  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Flexibility: Allows for different levels of involvement
                         and risk among partners.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Limited liability for silent partners: Reduced financial
                         risk for limited partners.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Clear roles: Defined responsibilities for general and
                         limited partners.
                       </li>
                     </ul>
-                    <p  className="tw-text-gray">Disadvantages:</p>
+                    <p className="tw-text-gray">Disadvantages:</p>
                     <ul className="tw-pl-0">
-                    <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex tw-text-gray  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Unlimited liability for general partners: Risk for those
                         with active control over business operations.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Shared control: Requires a strong partnership agreement
                         to prevent disputes.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Profits taxed as personal income: Can be less favorable
                         for high-revenue businesses.
                       </li>
                     </ul>
                     <p className="tw-text-gray">
-                      <strong>When to Register:</strong> A limited partnership
+                      <strong className ='tw-text-gray'>When to Register:</strong> A limited partnership
                       is best for businesses with multiple partners where one or
                       more partners wish to limit their financial risk.
                       Registering establishes legal definitions of roles and
                       responsibilities, helping to prevent disputes.
                     </p>
 
-                      <strong  className="tw-text-gray">
-                        5. Economic Association (Ekonomisk Förening)
-                      </strong>
-                    
+                    <strong className="tw-text-black">
+                      5. Economic Association (Ekonomisk Förening)
+                    </strong>
+
                     <p className="tw-text-gray">
                       An economic association is a cooperative entity formed by
                       at least three members who collaborate to promote shared
                       economic interests, such as housing cooperatives or joint
                       ventures.
                     </p>
-                    <p  className="tw-text-gray">Advantages:</p>
+                    <p className="tw-text-gray">Advantages:</p>
                     <ul className="tw-pl-0">
-                    <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex tw-text-gray  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Shared benefits and risk: Members share profits and
                         responsibilities.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Limited liability for members: Members are not
                         personally liable beyond their contributions.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Flexibility for cooperatives: Ideal for community-driven
                         projects and joint ventures.
                       </li>
                     </ul>
-                    <p  className="tw-text-gray">Disadvantages:</p>
+                    <p className="tw-text-gray">Disadvantages:</p>
                     <ul className="tw-pl-0">
-                    <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex tw-text-gray  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Minimum member requirement: Must have at least three
                         members, which can limit flexibility.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         Administrative requirements: Requires annual reports,
                         member meetings, and compliance with cooperative
                         regulations.
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>Potential conflict</li>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
+                        Potential conflict
+                      </li>
                     </ul>
                   </div>
 
                   <div>
-                    <br/>
+                    <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       The Company Registration Process in Sweden
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong>Step-by-Step Guide</strong>
+                    <h2 className="tw-text-left">
+                      <strong className ='tw-text-black'>Step-by-Step Guide</strong>
                     </h2>
-                    <br/>
+                    <br />
 
                     <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
@@ -769,29 +772,35 @@ const CompanyRegistration = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                      <p className="tw-text-gray">
-                      Setting up a company in Sweden involves several key steps to ensure compliance with local regulations. First, choose your business structure, such as a limited liability company (AB) or sole proprietorship. Register your business with the Swedish Companies Registration Office (Bolagsverket) and obtain a Swedish tax ID (organisationsnummer) from the Swedish Tax Agency (Skatteverket). Depending on your business, you may also need to register for VAT and social security contributions. After registration, open a corporate bank account and ensure compliance with Swedish labor laws and business practices. These steps ensure your company operates legally and efficiently in Sweden.
-                    </p>
+                        <p className="tw-text-gray">
+                          Setting up a company in Sweden involves several key
+                          steps to ensure compliance with local regulations.
+                          First, choose your business structure, such as a
+                          limited liability company (AB) or sole proprietorship.
+                          Register your business with the Swedish Companies
+                          Registration Office (Bolagsverket) and obtain a
+                          Swedish tax ID (organisationsnummer) from the Swedish
+                          Tax Agency (Skatteverket). Depending on your business,
+                          you may also need to register for VAT and social
+                          security contributions. After registration, open a
+                          corporate bank account and ensure compliance with
+                          Swedish labor laws and business practices. These steps
+                          ensure your company operates legally and efficiently
+                          in Sweden.
+                        </p>
                       </div>
                     </div>
 
-
-
-                 
-
-                   
-                        <strong className="m-0 tw-text-gray">
-                          Step 1: Choose the Business Structure
-                        </strong>
-                   
+                    <strong className="m-0 tw-text-black">
+                      Step 1: Choose the Business Structure
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                           Assess the advantages,
-                          disadvantages, and legal requirements of different
-                          structures to choose the best fit for your business
-                          goals and risk tolerance.
+                          Assess the advantages, disadvantages, and legal
+                          requirements of different structures to choose the
+                          best fit for your business goals and risk tolerance.
                           <p>
                             <br />
                           </p>
@@ -799,18 +808,15 @@ const CompanyRegistration = () => {
                       </li>
                     </ul>
 
-                 
-                        <strong className="m-0 tw-text-gray">
-                          Step 2: Register the Company Name
-                        </strong>
-                   
+                    <strong className="m-0 tw-text-black">
+                      Step 2: Register the Company Name
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          Ensure the chosen name
-                          adheres to Swedish conventions and is distinct from
-                          existing businesses.
+                          Ensure the chosen name adheres to Swedish conventions
+                          and is distinct from existing businesses.
                           <p>
                             <br />
                           </p>
@@ -818,19 +824,16 @@ const CompanyRegistration = () => {
                       </li>
                     </ul>
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Step 3: File for Registration
-                        </strong>
-                    
+                    <strong className="m-0 tw-text-black">
+                      Step 3: File for Registration
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                         Submit necessary forms
-                          and documents to Bolagsverket, including founder
-                          identification, proof of share capital, and articles
-                          of association.
+                          Submit necessary forms and documents to Bolagsverket,
+                          including founder identification, proof of share
+                          capital, and articles of association.
                           <p>
                             <br />
                           </p>
@@ -838,18 +841,15 @@ const CompanyRegistration = () => {
                       </li>
                     </ul>
 
-                   
-                        <strong className="m-0 tw-text-gray">
-                          Step 4: Apply for Tax Registration
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-black">
+                      Step 4: Apply for Tax Registration
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          Register with
-                          Skatteverket for VAT, employer taxes, and other
-                          obligations post-registration.
+                          Register with Skatteverket for VAT, employer taxes,
+                          and other obligations post-registration.
                           <p>
                             <br />
                           </p>
@@ -857,18 +857,15 @@ const CompanyRegistration = () => {
                       </li>
                     </ul>
 
-                   
-                        <strong className="m-0 tw-text-gray">
-                          Step 5: Apply for Necessary Permits
-                        </strong>
-                    
+                    <strong className="m-0 tw-text-black">
+                      Step 5: Apply for Necessary Permits
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                           Secure any
-                          required permits relevant to your sector, such as
-                          those for food services or construction.
+                          Secure any required permits relevant to your sector,
+                          such as those for food services or construction.
                           <p>
                             <br />
                           </p>
@@ -876,42 +873,37 @@ const CompanyRegistration = () => {
                       </li>
                     </ul>
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Step 6: Open a Business Bank Account
-                        </strong>
-                  
+                    <strong className="m-0 tw-text-black">
+                      Step 6: Open a Business Bank Account
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          Establish an account
-                          with a Swedish bank using registration documents and
-                          VAT number to manage finances and transactions.
+                          Establish an account with a Swedish bank using
+                          registration documents and VAT number to manage
+                          finances and transactions.
                           <p>
                             <br />
                           </p>
                         </p>
                       </li>
                     </ul>
-                    <br/>
+                    <br />
 
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Our 
+                      Our
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong>Services Include:</strong>
+                    <h2 className="tw-text-left">
+                      <strong className ='tw-text-black'>Services Include:</strong>
                     </h2>
-                    <br/>
-
-
-                 
+                    <br />
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Business Structure Advisory:</strong> Expert
+                          <strong className ='tw-text-black'>Business Structure Advisory:</strong> Expert
                           guidance on selecting the most suitable structure for
                           your business.
                           <p>
@@ -921,7 +913,7 @@ const CompanyRegistration = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Registration Assistance:</strong> Full
+                          <strong className ='tw-text-black'>Registration Assistance:</strong> Full
                           management of the application and documentation
                           process with Bolagsverket and Skatteverket.
                         </p>
@@ -931,7 +923,7 @@ const CompanyRegistration = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Tax Registration and Compliance:</strong>{" "}
+                          <strong className ='tw-text-black'>Tax Registration and Compliance:</strong>{" "}
                           Support with VAT and tax filings to maintain legal
                           compliance.
                           <p>
@@ -941,7 +933,7 @@ const CompanyRegistration = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Permit Application:</strong> Assistance with
+                          <strong className ='tw-text-black'>Permit Application:</strong> Assistance with
                           obtaining any necessary permits specific to your
                           industry.
                           <p>
@@ -951,7 +943,7 @@ const CompanyRegistration = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Ongoing Support:</strong> Continued advisory
+                          <strong className ='tw-text-black'>Ongoing Support:</strong> Continued advisory
                           and administrative help as your business grows.
                           <p>
                             <br />
@@ -959,16 +951,15 @@ const CompanyRegistration = () => {
                         </p>
                       </li>
                     </ul>
-<br/>
+                    <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Why Choose Sweden Relocators?
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong>Trusted Expertise</strong>
+                    <h2 className="tw-text-left">
+                      <strong className ='tw-text-black'>Trusted Expertise</strong>
                     </h2>
-                    <br/>
+                    <br />
 
                     <p className="tw-text-gray">
                       Choose Sweden Relocators for a seamless, personalized, and
@@ -978,7 +969,7 @@ const CompanyRegistration = () => {
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Experienced Team:</strong> Our specialists are
+                          <strong className ='tw-text-black'>Experienced Team:</strong> Our specialists are
                           knowledgeable in Swedish corporate law and business
                           practices.
                           <p>
@@ -989,7 +980,7 @@ const CompanyRegistration = () => {
 
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>All-In-One Service: </strong> From document
+                          <strong className ='tw-text-black'>All-In-One Service: </strong> From document
                           preparation to travel arrangements and follow-up, we
                           manage every step of the application.
                           <p>
@@ -1000,7 +991,7 @@ const CompanyRegistration = () => {
 
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Simplified Future Applications: </strong> Your
+                          <strong className ='tw-text-black'>Simplified Future Applications: </strong> Your
                           data remains securely stored, allowing you to apply
                           for visas to other countries with minimal additional
                           input, streamlining subsequent applications.
@@ -1012,7 +1003,7 @@ const CompanyRegistration = () => {
 
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Real-Time Tracking and Updates: </strong> Our
+                          <strong className ='tw-text-black'>Real-Time Tracking and Updates: </strong> Our
                           portal and app keep you updated at every stage, so
                           you’re always informed on the progress of your
                           application.
@@ -1025,20 +1016,16 @@ const CompanyRegistration = () => {
                   </div>
 
                   <div>
-
-
-<br/>
-                  <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Apply for
-  </span>
-  <h2 className = "tw-text-left">
-    <strong> Your Global Visit Visa Today </strong>
-  </h2>
-  <br/>
-
-                    
+                    <br />
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Apply for
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong className ='tw-text-black'> Your Global Visit Visa Today </strong>
+                    </h2>
+                    <br />
 
                     <p className="tw-text-gray tw-pl-0">
                       With Sweden Relocators, applying for a visit visa to any
@@ -1050,14 +1037,23 @@ const CompanyRegistration = () => {
                       Let Sweden Relocators handle the details, so you can focus
                       on planning your journey.
                     </p>
-                    <Link to = '/register' className="tw-text-center tw-pt-4">
-                    <h2 className = "tw-text-center tw-pt-4">
-                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
-                    </h2>
+                    <Link to="/register" className="tw-text-center tw-pt-4">
+                    <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
+                        <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
+                          Sign Up{" "}
+                        </strong>
+                        <strong className ='tw-text-black'> Today!</strong>
+                      </h5>
                     </Link>
-                    <br/>
+                    <br />
                     <p className="tw-text-gray">
-                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
+                      Sign up today and simplify your journey! Whether you're
+                      seeking assistance with relocation, permits, visas, legal
+                      processes, or settling into a new life, we're here to
+                      help. Our comprehensive services cover everything from
+                      work and study opportunities to family reunifications,
+                      business support, and much more. Let us guide you every
+                      step of the way—start your seamless experience now!
                     </p>
                   </div>
                 </div>{" "}

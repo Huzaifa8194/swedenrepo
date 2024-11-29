@@ -116,10 +116,10 @@ export const servicesChildLinks = [
   },
   {
     id: 0,
-    title: 'Marriage & Divorce',
-    description: 'Getting married is beautiful. But to make sure that it will be a good experience, it is important to have legal control.        ',
+    title: 'Logistics',
+    description: 'Streamline your move with our comprehensive logistics solutions, ensuring a hassle-free relocation experience.        ',
     icons: <GoLaw color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
-    Link: '/marriage-divorce',
+    Link: '/logistics',
   },
   {
     id: 13,
@@ -195,7 +195,7 @@ export const housingChildLinks = [
   },
   {
     id: 3,
-    title: 'Rent Out Your House',
+    title: 'Lease your property',
     description: 'If youre looking to rent out your house.',
     icons: <MdOutlineBedroomParent color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
     Link: '/rent_out_your_housing',

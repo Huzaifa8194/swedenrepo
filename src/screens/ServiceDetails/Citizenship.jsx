@@ -279,7 +279,7 @@ const Citizenship = () => {
                       several key requirements:
                     </p>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Age Requirement
                     </strong>
 
@@ -294,7 +294,7 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Permanent Residence or Right of Residence
                     </strong>
 
@@ -309,7 +309,7 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Residency Duration
                     </strong>
 
@@ -369,7 +369,7 @@ const Citizenship = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-gray">
+                        <strong className="m-0 tw-text-black">
                           Good Conduct
                         </strong>
 
@@ -397,7 +397,7 @@ const Citizenship = () => {
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Ability to Support Yourself
                     </strong>
 
@@ -430,7 +430,7 @@ const Citizenship = () => {
                       process for Swedish citizenship is streamlined:
                     </p>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Residency Requirement
                     </strong>
 
@@ -510,7 +510,7 @@ const Citizenship = () => {
                       include:
                     </p>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Permanent Right of Residence
                     </strong>
 
@@ -567,7 +567,7 @@ const Citizenship = () => {
                       residency requirements:
                     </p>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Five-Year Residence Requirement
                     </strong>
 
@@ -651,7 +651,7 @@ const Citizenship = () => {
                       Here’s an overview of the process:
                     </p>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Prepare Documentation
                     </strong>
 
@@ -681,7 +681,7 @@ const Citizenship = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-gray">
+                        <strong className="m-0 tw-text-black">
                           Submit Application
                         </strong>
 
@@ -699,7 +699,7 @@ const Citizenship = () => {
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Application Review
                     </strong>
 
@@ -727,7 +727,7 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Decision and Notification
                     </strong>
 
@@ -786,7 +786,7 @@ const Citizenship = () => {
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Standard Processing
                     </strong>
 
@@ -800,7 +800,7 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Nordic Citizens
                     </strong>
 
@@ -814,7 +814,7 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       EU/EEA Citizens
                     </strong>
 
@@ -851,7 +851,7 @@ const Citizenship = () => {
                       application. Here’s how we can assist:
                     </p>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Eligibility Assessment
                     </strong>
 
@@ -880,7 +880,7 @@ const Citizenship = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-gray">
+                        <strong className="m-0 tw-text-black">
                           Document Preparation and Verification
                         </strong>
 
@@ -894,7 +894,7 @@ const Citizenship = () => {
                           </li>
                         </ul>
 
-                        <strong className="m-0 tw-text-gray">
+                        <strong className="m-0 tw-text-black">
                           Application Submission and Monitoring
                         </strong>
 
@@ -911,7 +911,7 @@ const Citizenship = () => {
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Support for Appeal
                     </strong>
 
@@ -925,7 +925,7 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Guidance on Additional Requirements
                     </strong>
 
@@ -956,7 +956,7 @@ const Citizenship = () => {
                       application process. Here’s why you should choose us:
                     </p>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Expert Knowledge of Swedish Citizenship Laws
                     </strong>
 
@@ -970,7 +970,7 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Comprehensive, Personalized Support
                     </strong>
 
@@ -984,7 +984,7 @@ const Citizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Streamlined Application Process
                     </strong>
 
@@ -998,17 +998,24 @@ const Citizenship = () => {
                       </li>
                     </ul>
                   </div>
-                  <Link to = '/register' className="tw-text-center tw-pt-4">
-                    <h2 className = "tw-text-center tw-pt-4">
-                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
-                    </h2>
-                    </Link>
-                    <br/>
-                    <p className="tw-text-gray">
-                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
-                    </p>
-
-                
+                  <Link to="/register" className="tw-text-center tw-pt-4">
+                  <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
+                      <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
+                        Sign Up{" "}
+                      </strong>
+                      <strong> Today!</strong>
+                    </h5>
+                  </Link>
+                  <br />
+                  <p className="tw-text-gray">
+                    Sign up today and simplify your journey! Whether you're
+                    seeking assistance with relocation, permits, visas, legal
+                    processes, or settling into a new life, we're here to help.
+                    Our comprehensive services cover everything from work and
+                    study opportunities to family reunifications, business
+                    support, and much more. Let us guide you every step of the
+                    way—start your seamless experience now!
+                  </p>
                 </div>
               </div>
 

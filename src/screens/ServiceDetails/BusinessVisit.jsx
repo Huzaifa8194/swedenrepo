@@ -265,7 +265,7 @@ const BusinessVisit = () => {
                     </span>
 
                     <h2 className = "tw-text-left">
-                      <strong>
+                      <strong className='tw-text-black'>
                         {" "}
                         A Comprehensive List of Required Documents{" "}
                       </strong>
@@ -286,7 +286,7 @@ const BusinessVisit = () => {
                       Personal
                     </span>
                     <h2 className = "tw-text-left">
-                      <strong>Document Requirements </strong>
+                      <strong className='tw-text-black'>Document Requirements </strong>
                     </h2>
                    
 
@@ -299,7 +299,7 @@ const BusinessVisit = () => {
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Bank Statement:</strong><br/>  To complete your application or prove your financial stability, you may be required to submit an original bank statement from the last six months. This document should clearly show your account activity, balance, and transactions during that period. If bank statements are unavailable, you can alternatively provide proof of other assets, such as investment portfolios, property ownership, or other financial documents that demonstrate your financial capacity. 
+                          <strong className='tw-text-black'>Bank Statement:</strong><br/>  To complete your application or prove your financial stability, you may be required to submit an original bank statement from the last six months. This document should clearly show your account activity, balance, and transactions during that period. If bank statements are unavailable, you can alternatively provide proof of other assets, such as investment portfolios, property ownership, or other financial documents that demonstrate your financial capacity. 
                         </p>
                       </li>
                       
@@ -326,7 +326,7 @@ const BusinessVisit = () => {
                       <div className="col-md-6">
                       <li>
                       <p className="m-0 tw-text-gray">
-                        <br/><strong>Passport Requirements:</strong><br/>  Your passport
+                        <br/><strong className='tw-text-black'>Passport Requirements:</strong><br/>  Your passport
                           must:
                           <ul className="tw-pl-0">
                       <li className=" tw-flex  tw-gap-3">
@@ -380,7 +380,7 @@ const BusinessVisit = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                         <br/> <strong>Invitation Letter:</strong><br/>  A formal
+                         <br/> <strong className='tw-text-black'>Invitation Letter:</strong><br/>  A formal
                           invitation from the Swedish company or individual on
                           official letterhead. The letter should include:
                           <ul className = "tw-pl-0">
@@ -425,7 +425,7 @@ const BusinessVisit = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                        <br/><strong>Employment Certificate:</strong><br/>  Proof of
+                        <br/><strong className='tw-text-black'>Employment Certificate:</strong><br/>  Proof of
                           employment, detailing:
                           <ul className = "tw-pl-0">
                           <li className=" tw-flex  tw-gap-3">
@@ -450,7 +450,7 @@ const BusinessVisit = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                        <br/><strong>Medical Insurance:</strong><br/>  Travel insurance
+                        <br/><strong className='tw-text-black'>Medical Insurance:</strong><br/>  Travel insurance
                           covering the entire Schengen area, valid for your
                           entire stay. The policy should cover at least EUR
                           30,000 to cover expenses for emergency medical
@@ -460,7 +460,7 @@ const BusinessVisit = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                        <br/><strong>Travel Ticket Reservation:</strong><br/>  Provide
+                        <br/><strong className='tw-text-black'>Travel Ticket Reservation:</strong><br/>  Provide
                           round-trip flight reservations. Final tickets are not
                           required but initial booking confirmation is
                           mandatory.
@@ -469,7 +469,7 @@ const BusinessVisit = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                        <br/> <strong>Accommodation Proof:</strong><br/> A confirmed
+                        <br/> <strong className='tw-text-black'>Accommodation Proof:</strong><br/> A confirmed
                           hotel booking or another proof of accommodation
                           (primary reservation required).
                         </p>
@@ -483,14 +483,14 @@ const BusinessVisit = () => {
                       Additional Requirements
                     </span>
                     <h2 className = "tw-text-left">
-                      <strong>for Employers or Sponsoring Companies </strong>
+                      <strong className='tw-text-black'>for Employers or Sponsoring Companies </strong>
                     </h2>
                     <br></br>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Commercial Registration and Tax Card:</strong>{" "}
+                          <strong className='tw-text-black'>Commercial Registration and Tax Card:</strong>{" "}
                           Original and copy of the company’s commercial registry
                           and tax card, translated into English or Swedish, to
                           confirm the legitimacy of the business.
@@ -505,7 +505,7 @@ const BusinessVisit = () => {
                       Additional Documents
                     </span>
                     <h2 className = "tw-text-left">
-                      <strong> that May Be Required</strong>
+                      <strong className='tw-text-black'> that May Be Required</strong>
                     </h2>
 
                   
@@ -519,7 +519,7 @@ const BusinessVisit = () => {
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Movement Certificate:</strong><br/> A movement certificate is required in specific circumstances, such as when you are a first-time traveler to Sweden, your passport does not cover the last seven years, or there is a gap of more than three months between your current and previous passports. This document helps the Swedish authorities track your travel history and verify your eligibility for entry or a visa. It serves as proof of your movement between countries, ensuring that you meet the necessary requirements for visa processing.
+                          <strong className='tw-text-black'>Movement Certificate:</strong><br/> A movement certificate is required in specific circumstances, such as when you are a first-time traveler to Sweden, your passport does not cover the last seven years, or there is a gap of more than three months between your current and previous passports. This document helps the Swedish authorities track your travel history and verify your eligibility for entry or a visa. It serves as proof of your movement between countries, ensuring that you meet the necessary requirements for visa processing.
                         </p>
                       </li>
 
@@ -543,7 +543,7 @@ const BusinessVisit = () => {
                     
                      <li>
                         <p className="m-0 tw-text-gray">
-                          <br/><strong>Other Embassy-Specified Documents:</strong>{" "}<br/>
+                          <br/><strong className='tw-text-black'>Other Embassy-Specified Documents:</strong>{" "}<br/>
                           Depending on your individual situation, the embassy may request additional paperwork to process your visa or permit application. These documents could include, but are not limited to, proof of accommodation, travel insurance, employment contracts, or financial documentation. The specific requirements will vary based on the type of visa or permit you are applying for, as well as your personal circumstances. It is important to carefully review the embassy's guidelines and provide any additional documentation as requested to ensure a smooth application process.
                         </p>
                       </li>
@@ -568,7 +568,7 @@ const BusinessVisit = () => {
                     </span>
 
                     <h2 className = "tw-text-left">
-                      <strong>A Swedish Business Visa for Investors</strong>
+                      <strong className='tw-text-black'>A Swedish Business Visa for Investors</strong>
                     </h2>
 
                     <br></br>
@@ -667,7 +667,7 @@ A Swedish business visa is ideal for foreign nationals who wish to invest in Swe
                     </p>
                     <Link to = '/register' className="tw-text-center tw-pt-4">
                     <h2 className = "tw-text-center tw-pt-4">
-                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
+                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong className='tw-text-black'> Today!</strong>
                     </h2>
                     </Link>
                     <br/>

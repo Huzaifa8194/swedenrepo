@@ -267,7 +267,9 @@ const PersonnumerSweden = () => {
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>A Critical Overview</strong>
+                      <strong className="tw-text-black">
+                        A Critical Overview
+                      </strong>
                     </h2>
                     <br />
 
@@ -289,7 +291,10 @@ const PersonnumerSweden = () => {
                       Why You
                     </span>
                     <h2 className="tw-text-left">
-                      <strong> Need a Personnummer</strong>
+                      <strong className="tw-text-black">
+                        {" "}
+                        Need a Personnummer
+                      </strong>
                     </h2>
 
                     {/* <div className="row tw-flex tw-items-center">
@@ -316,7 +321,7 @@ const PersonnumerSweden = () => {
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4">
+                          <strong className="tw-pt-4 tw-text-black">
                             Access to Healthcare:
                           </strong>
                           <br /> The personnummer is required to register with
@@ -329,61 +334,72 @@ const PersonnumerSweden = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4">
+                          <strong className="tw-pt-4 tw-text-black">
                             Opening a Bank Account:
                           </strong>
-                          <br /> In Sweden, having a personnummer is typically a prerequisite for opening a bank account. This account is essential for managing everyday financial activities, such as receiving salary payments, paying household bills, and handling personal finances. Without a bank account, it can be challenging to navigate Sweden’s largely cashless economy, as most transactions—both personal and professional—are conducted electronically. 
+                          <br /> In Sweden, having a personnummer is typically a
+                          prerequisite for opening a bank account. This account
+                          is essential for managing everyday financial
+                          activities, such as receiving salary payments, paying
+                          household bills, and handling personal finances.
+                          Without a bank account, it can be challenging to
+                          navigate Sweden’s largely cashless economy, as most
+                          transactions—both personal and professional—are
+                          conducted electronically.
                           <br />
                           <br />
                         </p>
                       </li>
-
-
 
                       <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-12 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className="tw-justify-self-center tw-w-full"
-                              src={pn6}
-                              alt=""
-                              style={{ maxWidth: "300px" }}
-                            />
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-12 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className="tw-justify-self-center tw-w-full"
+                                src={pn6}
+                                alt=""
+                                style={{ maxWidth: "300px" }}
+                              />
+                            </div>
                           </div>
                         </div>
+                        <div className="col-md-6">
+                          <li>
+                            <p className="m-0 tw-text-gray">
+                              <strong className="tw-pt-4 tw-text-black">
+                                Education and Social Services:
+                              </strong>{" "}
+                              <br />
+                              A personnummer plays a crucial role in accessing
+                              both educational and social welfare systems in
+                              Sweden. For children, it is essential for school
+                              enrollment, enabling them to participate in
+                              Sweden’s comprehensive education system. For
+                              adults, the personnummer serves as a gateway to a
+                              wide range of social services, such as applying
+                              for unemployment benefits.
+                              <br />
+                              <br />
+                            </p>
+                          </li>
+                        </div>
                       </div>
-                      <div className="col-md-6">
+
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4">
-                            Education and Social Services:
+                          <strong className="tw-pt-4 tw-text-black">
+                            Swedish ID Card:
                           </strong>{" "}
                           <br />
-                          A personnummer plays a crucial role in accessing both
-                          educational and social welfare systems in Sweden. For
-                          children, it is essential for school enrollment,
-                          enabling them to participate in Sweden’s comprehensive
-                          education system. For adults, the personnummer serves
-                          as a gateway to a wide range of social services, such
-                          as applying for unemployment benefits.
-                          <br />
-                          <br />
-                        </p>
-                      </li>
-                      </div>
-                    </div>
-
-                    
-
-                      <li>
-                        <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4">Swedish ID Card:</strong>{" "}
-                          <br />
-                          
-Swedish ID Card:
-After obtaining a personnummer, you become eligible to apply for a Swedish ID card, which serves as an official form of identification. This card significantly simplifies various aspects of daily life, such as verifying your identity when shopping, collecting packages from postal services, or accessing public facilities and services.
+                          Swedish ID Card: After obtaining a personnummer, you
+                          become eligible to apply for a Swedish ID card, which
+                          serves as an official form of identification. This
+                          card significantly simplifies various aspects of daily
+                          life, such as verifying your identity when shopping,
+                          collecting packages from postal services, or accessing
+                          public facilities and services.
                           <br />
                         </p>
                       </li>
@@ -396,7 +412,9 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                       Structure of
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>The Personnummer </strong>
+                      <strong className="tw-text-black">
+                        The Personnummer{" "}
+                      </strong>
                     </h2>
 
                     <br />
@@ -404,8 +422,17 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4">First Six Digits:</strong>
-                          <br /> The first six digits of the personnummer represent the individual’s birthdate in the format YYMMDD. This means the numbers correspond to the year, month, and day of birth, providing a clear and standardized way to identify a person's date of birth at a glance. This structure makes the personnummer both practical and easy to interpret across various systems and services in Sweden.
+                          <strong className="tw-pt-4 tw-text-black">
+                            First Six Digits:
+                          </strong>
+                          <br /> The first six digits of the personnummer
+                          represent the individual’s birthdate in the format
+                          YYMMDD. This means the numbers correspond to the year,
+                          month, and day of birth, providing a clear and
+                          standardized way to identify a person's date of birth
+                          at a glance. This structure makes the personnummer
+                          both practical and easy to interpret across various
+                          systems and services in Sweden.
                           <br />
                           <br />
                         </p>
@@ -428,7 +455,7 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                         <div className="col-md-6">
                           <li>
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-pt-4">
+                              <strong className="tw-pt-4 tw-text-black">
                                 Last Four Digits:
                               </strong>{" "}
                               <br />
@@ -442,7 +469,7 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
 
                           <li>
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-pt-4">
+                              <strong className="tw-pt-4 tw-text-black">
                                 Century Marker:
                               </strong>
                               <br /> A hyphen ("-") is used between the
@@ -458,11 +485,18 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>
+                          <strong className="tw-text-black">
                             Coordination Number (samordningsnummer):
                           </strong>{" "}
-                          <br/>
-                          For individuals who are staying temporarily in Sweden or do not have a registered residence, a Coordination Number, known as a samordningsnummer, is issued. This number serves as an alternative to the personnummer, enabling access to essential services and integration into administrative systems. It is structured similarly to the personnummer, with the key difference being that 60 is added to the day of birth. 
+                          <br />
+                          For individuals who are staying temporarily in Sweden
+                          or do not have a registered residence, a Coordination
+                          Number, known as a samordningsnummer, is issued. This
+                          number serves as an alternative to the personnummer,
+                          enabling access to essential services and integration
+                          into administrative systems. It is structured
+                          similarly to the personnummer, with the key difference
+                          being that 60 is added to the day of birth.
                           <br />
                         </p>
                       </li>
@@ -476,7 +510,10 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                       Steps to Apply for a Personnummer
                     </span>
                     <h2 className="tw-text-left">
-                      <strong> A Step-by-Step Guide </strong>
+                      <strong className="tw-text-black">
+                        {" "}
+                        A Step-by-Step Guide{" "}
+                      </strong>
                     </h2>
 
                     <br />
@@ -485,7 +522,7 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                       year, you can apply for a personnummer at the local
                       Skatteverket office. The requirements include:
                     </p>
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Proof of Residence in Sweden
                     </strong>
                     <ul className="tw-p-0 tw-pl-0">
@@ -513,7 +550,7 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-gray">
+                        <strong className="m-0 tw-text-black">
                           Identification Documents
                         </strong>
                         <ul className="tw-p-0 tw-pl-0">
@@ -526,7 +563,7 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                             </p>
                           </li>
                         </ul>
-                        <strong className="m-0 tw-text-gray">
+                        <strong className="m-0 tw-text-black">
                           Supporting Documents for Family Members
                         </strong>
                         <ul className="tw-p-0 tw-pl-0">
@@ -555,7 +592,10 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                       Swedish ID Card
                     </span>
                     <h2 className="tw-text-left">
-                      <strong> Your Key to Accessing Services </strong>
+                      <strong className="tw-text-black">
+                        {" "}
+                        Your Key to Accessing Services{" "}
+                      </strong>
                     </h2>
 
                     <br />
@@ -566,101 +606,110 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                       issued by Skatteverket and is recognized by banks,
                       healthcare providers, and other institutions.
                     </p>
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Requirements for Obtaining an ID Card
                     </strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
+                        <p className="m-0 tw-text-gray">
+                          <strong className="tw-text-gray">
+                            Personnummer:
+                          </strong>{" "}
+                          Only residents with a personnummer can apply for the
+                          ID card.
+                        </p>
+                      </li>
 
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
+                        <p className="m-0 tw-text-gray">
+                          <strong className="tw-text-gray">
+                            Proof of Payment:
+                          </strong>{" "}
+                          A fee (currently around 400 SEK) must be paid before
+                          your appointment.
+                        </p>
+                      </li>
 
-                    <li className=" tw-flex  tw-gap-3">
-                            <div>
-                              <GoTriangleRight className=" tw-text-blue" />
-                            </div>
-                            <p className="m-0 tw-text-gray">
-                              <strong>Personnummer:</strong> Only residents with
-                              a personnummer can apply for the ID card.
-                            </p>
-                          </li>
-
-                          <li className=" tw-flex  tw-gap-3">
-                            <div>
-                              <GoTriangleRight className=" tw-text-blue" />
-                            </div>
-                            <p className="m-0 tw-text-gray">
-                              <strong>Proof of Payment:</strong> A fee
-                              (currently around 400 SEK) must be paid before
-                              your appointment.
-                            </p>
-                          </li>
-
-                          <li className=" tw-flex  tw-gap-3">
-                            <div>
-                              <GoTriangleRight className=" tw-text-blue" />
-                            </div>
-                            <p className="m-0 tw-text-gray">
-                              <strong>Proof of Identity:</strong> If you are a
-                              new resident, Skatteverket may require a witness
-                              or additional documents to verify your identity.
-                            </p>
-                          </li>
-                      
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
+                        <p className="m-0 tw-text-gray">
+                          <strong className="tw-text-gray">
+                            Proof of Identity:
+                          </strong>{" "}
+                          If you are a new resident, Skatteverket may require a
+                          witness or additional documents to verify your
+                          identity.
+                        </p>
+                      </li>
                     </ul>
-                    <p className="tw-text-gray">The Swedish ID card provides a practical solution for navigating daily life with ease. It allows you to verify your identity in various situations, such as at banks, when shopping, or signing important documents. It also simplifies tasks like collecting packages from delivery points or accessing healthcare services</p>
-                   
-                 
-
+                    <p className="tw-text-gray">
+                      The Swedish ID card provides a practical solution for
+                      navigating daily life with ease. It allows you to verify
+                      your identity in various situations, such as at banks,
+                      when shopping, or signing important documents. It also
+                      simplifies tasks like collecting packages from delivery
+                      points or accessing healthcare services
+                    </p>
 
                     <div className="row tw-flex tw-items-center">
-                        <div className="col-md-6">
-                          <div className="row ">
-                            <div className="col-md-9 tw-mx-auto">
-                              <motion.img
-                                animate={imageVariants}
-                                className=" tw-w-full"
-                                src={pn4}
-                                alt=""
-                                style={{ maxWidth: "450px" }}
-                              />
-                            </div>
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={pn4}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
                           </div>
                         </div>
-                        <div className="col-md-6">
-                        <strong className="m-0 tw-text-gray">
-                      Open and Manage Bank Accounts
-                    </strong>
-                        <ul className="tw-p-0 ">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Most banks in Sweden require the Swedish ID card as
-                          primary identification.
-                        </p>
-                      </li>
-                    </ul>
-                    <strong className="m-0 tw-text-gray">
-                      Sign Up for Services and Contracts
-                    </strong>
-                    <ul className="tw-p-0 ">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          From mobile phone plans to internet service, having a
-                          Swedish ID card simplifies verification.
-                        </p>
-                      </li>
-                    </ul>
-                    <strong className="m-0 tw-text-gray">
-                      Access Health Services Easily
-                    </strong>
-                    <ul className="tw-p-0 ">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          The ID card is commonly used for identity verification
-                          in healthcare facilities.
-                        </p>
-                      </li>
-                    </ul>
-                        </div>
                       </div>
-                    
+                      <div className="col-md-6">
+                        <strong className="m-0 tw-text-black">
+                          Open and Manage Bank Accounts
+                        </strong>
+                        <ul className="tw-p-0 ">
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <p className="m-0 tw-text-gray">
+                              Most banks in Sweden require the Swedish ID card
+                              as primary identification.
+                            </p>
+                          </li>
+                        </ul>
+                        <strong className="m-0 tw-text-black">
+                          Sign Up for Services and Contracts
+                        </strong>
+                        <ul className="tw-p-0 ">
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <p className="m-0 tw-text-gray">
+                              From mobile phone plans to internet service,
+                              having a Swedish ID card simplifies verification.
+                            </p>
+                          </li>
+                        </ul>
+                        <strong className="m-0 tw-text-black">
+                          Access Health Services Easily
+                        </strong>
+                        <ul className="tw-p-0 ">
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <p className="m-0 tw-text-gray">
+                              The ID card is commonly used for identity
+                              verification in healthcare facilities.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
@@ -668,7 +717,9 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                       Challenges
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>Without a Personnummer and ID Card </strong>
+                      <strong className="tw-text-black">
+                        Without a Personnummer and ID Card{" "}
+                      </strong>
                     </h2>
 
                     <br />
@@ -678,7 +729,7 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                       designed to rely on this system. Common challenges
                       include:
                     </p>
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Banking Restrictions
                     </strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
@@ -708,7 +759,7 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-gray">
+                        <strong className="m-0 tw-text-black">
                           Limited Access to Healthcare
                         </strong>
                         <ul className="tw-p-0 tw-pl-0 tw-pt-4">
@@ -721,7 +772,7 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                           </li>
                         </ul>
 
-                        <strong className="m-0 tw-text-gray">
+                        <strong className="m-0 tw-text-black">
                           Difficulty in Renting Housing
                         </strong>
                         <ul className="tw-p-0 tw-pl-0 tw-pt-4">
@@ -735,7 +786,7 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Educational Access for Children
                     </strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
@@ -754,7 +805,10 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                       How
                     </span>
                     <h2 className="tw-text-left">
-                      <strong> Sweden Relocators Can Assist You </strong>
+                      <strong className="tw-text-black">
+                        {" "}
+                        Sweden Relocators Can Assist You{" "}
+                      </strong>
                     </h2>
                     <br />
                     <p className="tw-text-gray">
@@ -763,7 +817,7 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                       Swedish administrative procedures. Sweden Relocators
                       offers a full suite of services to simplify the process:
                     </p>
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Document Preparation
                     </strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
@@ -775,7 +829,7 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                         </p>
                       </li>
                     </ul>
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Application Assistance
                     </strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
@@ -787,7 +841,7 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                         </p>
                       </li>
                     </ul>
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Swedish ID Card Application
                     </strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
@@ -799,7 +853,7 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                         </p>
                       </li>
                     </ul>
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Bank Account Setup
                     </strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
@@ -811,7 +865,7 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                         </p>
                       </li>
                     </ul>
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Coordination Number Assistance
                     </strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
@@ -836,7 +890,7 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                       Be sure to
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>Contact Us </strong>
+                      <strong className="tw-text-black">Contact Us </strong>
                     </h2>
                     <br />
                     <p className="tw-text-gray">
@@ -848,14 +902,23 @@ After obtaining a personnummer, you become eligible to apply for a Swedish ID ca
                       to fully enjoy life in Sweden.
                     </p>
 
-                    <Link to = '/register' className="tw-text-center tw-pt-4">
-                    <h2 className = "tw-text-center tw-pt-4">
-                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
-                    </h2>
+                    <Link to="/register" className="tw-text-center tw-pt-4">
+                    <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
+                        <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
+                          Sign Up{" "}
+                        </strong>
+                        <strong className="tw-text-black"> Today!</strong>
+                      </h5>
                     </Link>
-                    <br/>
+                    <br />
                     <p className="tw-text-gray">
-                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
+                      Sign up today and simplify your journey! Whether you're
+                      seeking assistance with relocation, permits, visas, legal
+                      processes, or settling into a new life, we're here to
+                      help. Our comprehensive services cover everything from
+                      work and study opportunities to family reunifications,
+                      business support, and much more. Let us guide you every
+                      step of the way—start your seamless experience now!
                     </p>
                   </div>
                 </div>

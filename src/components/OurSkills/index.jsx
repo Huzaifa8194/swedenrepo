@@ -108,7 +108,7 @@ const OurSkills = () => {
                         </h3>
                       </div>
                       <div className="featured-desc">
-                        <p className=" tw-text-gray  tw-font-normal">{item?.description}</p>
+                        <p className=" tw-text-gray tw-text-justify  tw-font-normal">{item?.description}</p>
                       </div>
                       <div className="cmt-serviceboxbox-readmore tw-pb-5">
                         <Link className=" tw-font-medium" to={`${item?.Link}`}>

@@ -84,6 +84,12 @@ const FeatureSection = () => {
   };
 
   return (
+
+
+
+    <section className="cmt-row features-section cmt-bgcolor-white bg-img1 cmt-bg cmt-bgimage-yes cmt-bg-pattern clearfix">
+    
+    <div className="container">
     <section
       className=" tw-bg-white cmt-row features-section cmt-bgcolor-grey bg-img1 cmt-bg cmt-bgimage-yes cmt-bg-pattern clearfix"
       style={{ backgroundColor: "white", padding: "5px" }}
@@ -266,6 +272,9 @@ const FeatureSection = () => {
           </div>
         </div>
       </div>
+    </section>
+    </div>
+    
     </section>
   );
 };

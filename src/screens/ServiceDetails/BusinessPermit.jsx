@@ -8,10 +8,8 @@ import banner from "../../assets/images/business-startup.png";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import { useTranslation } from "react-i18next";
 
-
 import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
-
 
 import bp1 from "../../assets/iconscout/bp1.png";
 import bp2 from "../../assets/iconscout/bp2.png";
@@ -267,8 +265,8 @@ const BusinessPermit = () => {
                       Self-Employment Residence Permit in Sweden
                     </span>
 
-                    <h2 className = "tw-text-left">
-                      <strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
                         {" "}
                         A Guide for Non-EU/EEA Entrepreneurs{" "}
                       </strong>
@@ -294,64 +292,86 @@ const BusinessPermit = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Why Choose
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong> Sweden for Your Business? </strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        {" "}
+                        Sweden for Your Business?{" "}
+                      </strong>
                     </h2>
-                    
 
-                   
                     <br />
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Innovative Environment:</strong>
-                          <br /> Sweden has a collaborative and transparent business culture that fosters innovation and creativity. The country's emphasis on open communication, mutual respect, and a flat organizational structure allows for free flow of ideas and encourages teamwork. Swedish businesses often prioritize sustainability, ethical practices, and long-term value, which aligns with a broader societal focus on innovation and social responsibility. The culture supports entrepreneurial initiatives and offers a strong ecosystem of resources.
+                          <strong className="tw-text-black">
+                            Innovative Environment:
+                          </strong>
+                          <br /> Sweden has a collaborative and transparent
+                          business culture that fosters innovation and
+                          creativity. The country's emphasis on open
+                          communication, mutual respect, and a flat
+                          organizational structure allows for free flow of ideas
+                          and encourages teamwork. Swedish businesses often
+                          prioritize sustainability, ethical practices, and
+                          long-term value, which aligns with a broader societal
+                          focus on innovation and social responsibility. The
+                          culture supports entrepreneurial initiatives and
+                          offers a strong ecosystem of resources.
                         </p>
                       </li>
 
-
-
                       <div className="row tw-flex tw-items-center">
-                     
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={bp1}
-                              alt=""
-                              style={{ maxWidth: "450px" }}
-                            />
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-9 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full"
+                                src={bp1}
+                                alt=""
+                                style={{ maxWidth: "450px" }}
+                              />
+                            </div>
                           </div>
                         </div>
+                        <div className="col-md-6">
+                          <li>
+                            <p className="m-0 tw-text-gray tw-pt-4">
+                              <strong className="tw-text-black">
+                                Access to EU Markets:
+                              </strong>
+                              <br /> As an EU member, Sweden offers businesses
+                              the significant advantage of access to a large and
+                              stable market. Companies operating in Sweden can
+                              freely trade within the European Union, benefiting
+                              from the absence of trade barriers, customs
+                              duties, and tariffs.
+                            </p>
+                          </li>
+
+                          <li>
+                            <p className="m-0 tw-text-gray tw-pt-4">
+                              <strong className="tw-text-black">
+                                Supportive Financial Ecosystem:
+                              </strong>{" "}
+                              <br />
+                              Sweden’s financial ecosystem is highly supportive
+                              of entrepreneurs and startups, offering a wide
+                              range of financing options to help businesses grow
+                              and thrive. Swedish institutions, both public and
+                              private, provide various loans, grants, and
+                              investment opportunities.
+                            </p>
+                          </li>
+                        </div>
                       </div>
-                      <div className="col-md-6">
-                    
-                    <li>
-                      <p className="m-0 tw-text-gray tw-pt-4">
-                        <strong>Access to EU Markets:</strong>
-                        <br /> As an EU member, Sweden offers businesses the significant advantage of access to a large and stable market. Companies operating in Sweden can freely trade within the European Union, benefiting from the absence of trade barriers, customs duties, and tariffs. 
-                      </p>
-                    </li>
-
-                    <li>
-                      <p className="m-0 tw-text-gray tw-pt-4">
-                        <strong>Supportive Financial Ecosystem:</strong>{" "}
-                        <br />
-                        Sweden’s financial ecosystem is highly supportive of entrepreneurs and startups, offering a wide range of financing options to help businesses grow and thrive. Swedish institutions, both public and private, provide various loans, grants, and investment opportunities.
-                      </p>
-                    </li>
-                    </div>
-                    </div>
-
-
 
                       <li>
                         <p className="m-0 tw-text-gray tw-pt-4">
-                          <strong>High-Quality Infrastructure:</strong>
+                          <strong className="tw-text-black">
+                            High-Quality Infrastructure:
+                          </strong>
                           <br /> Sweden’s advanced infrastructure and digital
                           capabilities make it a global hub for tech start-ups.
                         </p>
@@ -360,15 +380,16 @@ const BusinessPermit = () => {
 
                     <br />
 
-                   
-
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Types of
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong> Business Structures in Sweden </strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        {" "}
+                        Business Structures in Sweden{" "}
+                      </strong>
                     </h2>
 
                     <br />
@@ -376,12 +397,14 @@ const BusinessPermit = () => {
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Sole Trader (Enskild Firma):</strong>
+                          <strong className="tw-text-black">
+                            Sole Trader (Enskild Firma):
+                          </strong>
                           <br /> Ideal for single entrepreneurs who want a
                           simple business setup.
                         </p>
                       </li>
-{/* 
+                      {/* 
                       <div className="row tw-flex tw-items-center">
                   
 
@@ -403,9 +426,9 @@ const BusinessPermit = () => {
                   </div>
                 </div> */}
 
-                <li className="tw-pt-4">
+                      <li className="tw-pt-4">
                         <p className="m-0 tw-text-gray">
-                          <strong>
+                          <strong className="tw-text-black">
                             Trading Partnership or Limited Partnership
                             (Handelsbolag/Kommanditbolag):
                           </strong>{" "}
@@ -416,7 +439,7 @@ const BusinessPermit = () => {
 
                       <li className="tw-pt-4">
                         <p className="m-0 tw-text-gray">
-                          <strong>
+                          <strong className="tw-text-black">
                             Limited Company (Aktiebolag):
                             <br />
                           </strong>{" "}
@@ -424,11 +447,10 @@ const BusinessPermit = () => {
                           and tax benefits.
                         </p>
                       </li>
-                    
 
                       <li className="tw-pt-4">
                         <p className="m-0 tw-text-gray">
-                          <strong>
+                          <strong className="tw-text-black">
                             Economic Association (Ekonomisk Förening):
                           </strong>{" "}
                           <br />
@@ -451,19 +473,15 @@ const BusinessPermit = () => {
                       Self-Employment Residence Permit in Sweden
                     </span>
 
-                    <h2 className = "tw-text-left">
-                      <strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
                         Key Requirements for a Self-Employment Residence Permit
                       </strong>
                     </h2>
-                    
 
-                  
                     <br />
 
                     <div className="row tw-flex tw-items-center">
-                    
-
                       <div className="col-md-6">
                         <div className="row ">
                           <div className="col-md-9 tw-mx-auto">
@@ -478,20 +496,20 @@ const BusinessPermit = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                      <strong className="tw-text-gray">1. Valid Passport</strong>
-                    <p className="tw-text-gray tw-pt-4">
-                      You must hold a valid passport for the entire duration of
-                      the permit. The permit’s validity will not exceed the
-                      passport’s expiration date. Include copies of relevant
-                      passport pages to confirm identity, validity, and
-                      residence permits in any other countries.
-                    </p>
+                        <strong className="tw-text-black">
+                          1. Valid Passport
+                        </strong>
+                        <p className="tw-text-gray tw-pt-4">
+                          You must hold a valid passport for the entire duration
+                          of the permit. The permit’s validity will not exceed
+                          the passport’s expiration date. Include copies of
+                          relevant passport pages to confirm identity, validity,
+                          and residence permits in any other countries.
+                        </p>
                       </div>
                     </div>
 
-                 
-
-                    <strong className="tw-text-gray">
+                  <strong className="tw-text-black">1
                       2. Ownership and Business Control
                     </strong>
                     <p className="tw-text-gray tw-pt-4">
@@ -502,17 +520,23 @@ const BusinessPermit = () => {
                       management and direction.
                     </p>
 
-                    <strong className="tw-text-gray">
+                  <strong className="tw-text-black">1
                       3. Financial Requirements for Business and Personal
                       Support
                     </strong>
                     <p className="tw-text-gray tw-pt-4">
-                      <strong>Initial Capital:</strong> You must provide bank
-                      statements showing sufficient funds to establish and
-                      operate the business for at least two years.
+                      <strong className="tw-text-gray">
+                        Initial Capital:
+                      </strong>{" "}
+                      You must provide bank statements showing sufficient funds
+                      to establish and operate the business for at least two
+                      years.
                     </p>
                     <p className="tw-text-gray">
-                      <strong>Personal Support:</strong> <br />
+                      <strong className="tw-text-gray">
+                        Personal Support:
+                      </strong>{" "}
+                      <br />
                       <p className="tw-text-gray tw-pt-4">
                         You need sufficient personal income to support yourself
                         and any accompanying family members for the first two
@@ -542,7 +566,7 @@ const BusinessPermit = () => {
                       </ul>
                     </p>
 
-                    <strong className="tw-text-gray">
+                  <strong className="tw-text-black">1
                       4. Viable Business Plan
                     </strong>
                     <p className="tw-text-gray">
@@ -585,7 +609,7 @@ const BusinessPermit = () => {
                       living expenses.
                     </p>
 
-                    <strong className="tw-text-gray">
+                  <strong className="tw-text-black">1
                       5. Relevant Experience and Skills
                     </strong>
                     <p className="tw-text-gray tw-pt-4">
@@ -596,7 +620,7 @@ const BusinessPermit = () => {
                       ownership relevant to the industry you plan to enter.
                     </p>
 
-                    <strong className="tw-text-gray">
+                  <strong className="tw-text-black">1
                       6. Language Proficiency
                     </strong>
                     <p className="tw-text-gray tw-pt-4">
@@ -606,7 +630,7 @@ const BusinessPermit = () => {
                       with regulatory authorities.
                     </p>
 
-                    <strong className="tw-text-gray">
+                  <strong className="tw-text-black">1
                       7. Application Fee Payment
                     </strong>
                     <p className="tw-text-gray tw-pt-4">
@@ -623,21 +647,22 @@ const BusinessPermit = () => {
                     </p>
 
                     <br />
-                  
+
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
-          {" "}
-          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-          Step-by-Step Application
-        </span>
-        <h2 className = "tw-text-left">
-          <strong> Process for a Self-Employment Permit </strong>
-        </h2>
-
-
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Step-by-Step Application
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        {" "}
+                        Process for a Self-Employment Permit{" "}
+                      </strong>
+                    </h2>
 
                     <br />
 
-                    <strong className="tw-text-gray">
+                  <strong className="tw-text-black">1
                       Step 1: Gather Required Documentation
                     </strong>
                     <p className="tw-text-gray tw-pt-4">
@@ -648,49 +673,44 @@ const BusinessPermit = () => {
                       Swedish or English.
                     </p>
 
-
                     <div className="row tw-flex tw-items-center">
-                   
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={bp4}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                      <strong className="tw-text-black">1
+                          Step 2: Submit the Application
+                        </strong>
+                        <p className="tw-text-gray tw-pt-4">
+                          Submit your application online through the
+                          Migrationsverket e-service or at a Swedish embassy or
+                          consulate in your home country. Attach all supporting
+                          documents as required by Migrationsverket.
+                        </p>
+                        <p className="tw-text-gray">
+                          <>Applicant Information:</> Include personal details,
+                          business information, and financial documentation.
+                        </p>
+                        <p className="tw-text-gray ">
+                          <>Business Plan and Financial Proof:</> Ensure that
+                          the business plan and bank statements are accurate and
+                          reflect your ability to run a sustainable business in
+                          Sweden.
+                        </p>
+                      </div>
+                    </div>
 
-                   <div className="col-md-6">
-                     <div className="row ">
-                       <div className="col-md-9 tw-mx-auto">
-                         <motion.img
-                           animate={imageVariants}
-                           className=" tw-w-full"
-                           src={bp4}
-                           alt=""
-                           style={{ maxWidth: "450px" }}
-                         />
-                       </div>
-                     </div>
-                   </div>
-                   <div className="col-md-6">
-                   <strong className="tw-text-gray">
-                      Step 2: Submit the Application
-                    </strong>
-                    <p className="tw-text-gray tw-pt-4">
-                      Submit your application online through the
-                      Migrationsverket e-service or at a Swedish embassy or
-                      consulate in your home country. Attach all supporting
-                      documents as required by Migrationsverket.
-                    </p>
-                    <p className="tw-text-gray">
-                      <>Applicant Information:</> Include personal details,
-                      business information, and financial documentation.
-                    </p>
-                    <p className="tw-text-gray ">
-                      <>Business Plan and Financial Proof:</> Ensure that the
-                      business plan and bank statements are accurate and reflect
-                      your ability to run a sustainable business in Sweden.
-                    </p>
-
-     
-       </div>
-                 </div>
-
-                  
-                    <strong className="tw-text-gray">
+                  <strong className="tw-text-black">1
                       Step 3: Migrationsverket Review and Evaluation
                     </strong>
                     <p className="tw-text-gray tw-pt-4">
@@ -724,7 +744,7 @@ const BusinessPermit = () => {
                       </ul>
                     </p>
 
-                    <strong className="tw-text-gray">
+                  <strong className="tw-text-black">1
                       Step 4: Decision Notification
                     </strong>
                     <p className="tw-text-gray tw-pt-4">
@@ -742,20 +762,22 @@ const BusinessPermit = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Other
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong>Business Structures in Sweden </strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        Business Structures in Sweden{" "}
+                      </strong>
                     </h2>
 
                     <br />
 
-                    <strong className="tw-text-gray">
+                  <strong className="tw-text-black">1
                       Sole Trader (Enskild Firma)
                     </strong>
                     <p className="tw-text-gray">
                       Ideal for individual entrepreneurs without partners.
                     </p>
 
-                    <strong className="tw-text-gray">
+                  <strong className="tw-text-black">1
                       Trading Partnership or Limited Partnership
                       (Handelsbolag/Kommanditbolag)
                     </strong>
@@ -763,7 +785,7 @@ const BusinessPermit = () => {
                       Suitable for partnerships or small family businesses.
                     </p>
 
-                    <strong className="tw-text-gray">
+                  <strong className="tw-text-black">1
                       Limited Company (Aktiebolag)
                     </strong>
                     <p className="tw-text-gray">
@@ -771,7 +793,7 @@ const BusinessPermit = () => {
                       business, offering limited liability protection.
                     </p>
 
-                    <strong className="tw-text-gray">
+                  <strong className="tw-text-black">1
                       Economic Association (Ekonomisk Förening)
                     </strong>
                     <p className="tw-text-gray">
@@ -779,19 +801,19 @@ const BusinessPermit = () => {
                       initiatives.
                     </p>
 
-                    <strong className="tw-text-gray">
-                      <strong>
+                  <strong className="tw-text-black">1
+                      <strong className="tw-text-black">
                         Advantages of Sweden’s Business Environment
                       </strong>
                     </strong>
 
-                    <strong className="tw-text-gray">Innovative Culture</strong>
+                  <strong className="tw-text-black">1Innovative Culture</strong>
                     <p className="tw-text-gray">
                       With low corruption levels and minimal bureaucracy, Sweden
                       encourages entrepreneurial innovation.
                     </p>
 
-                    <strong className="tw-text-gray">
+                  <strong className="tw-text-black">1
                       Financial Accessibility
                     </strong>
                     <p className="tw-text-gray">
@@ -799,7 +821,7 @@ const BusinessPermit = () => {
                       bank loans, government grants, and angel investors.
                     </p>
 
-                    <strong className="tw-text-gray">
+                  <strong className="tw-text-black">1
                       Access to Skilled Talent
                     </strong>
                     <p className="tw-text-gray">
@@ -808,7 +830,7 @@ const BusinessPermit = () => {
                       for technology and innovation-focused ventures.
                     </p>
 
-                    <strong className="tw-text-gray">
+                  <strong className="tw-text-black">1
                       Established Infrastructure
                     </strong>
                     <p className="tw-text-gray">
@@ -825,17 +847,21 @@ const BusinessPermit = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Our
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong> Services Include </strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        {" "}
+                        Services Include{" "}
+                      </strong>
                     </h2>
-                   
 
                     <br />
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Application Guidance:</strong>
+                          <strong className="tw-text-black">
+                            Application Guidance:
+                          </strong>
                           <br /> We assist with gathering and organizing
                           required documentation, ensuring that all requirements
                           are met according to Migrationsverket’s standards.
@@ -844,47 +870,60 @@ const BusinessPermit = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray tw-pt-4">
-                          <strong>Business Plan Development:</strong>
-                          <br />  Our team helps you create a compelling business plan that not only demonstrates financial viability but also aligns with Swedish market expectations. We work closely with you to develop a detailed strategy that highlights your business model.
+                          <strong className="tw-text-black">
+                            Business Plan Development:
+                          </strong>
+                          <br /> Our team helps you create a compelling business
+                          plan that not only demonstrates financial viability
+                          but also aligns with Swedish market expectations. We
+                          work closely with you to develop a detailed strategy
+                          that highlights your business model.
                         </p>
                       </li>
-
-
-
 
                       <div className="row tw-flex tw-items-center">
-                    
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={bp5}
-                              alt=""
-                              style={{ maxWidth: "450px" }}
-                            />
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-9 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full"
+                                src={bp5}
+                                alt=""
+                                style={{ maxWidth: "450px" }}
+                              />
+                            </div>
                           </div>
                         </div>
+                        <div className="col-md-6">
+                          <li>
+                            <p className="m-0 tw-text-gray tw-pt-4">
+                              <strong className="tw-text-black">
+                                Financial and Income Proof:
+                              </strong>{" "}
+                              <br />
+                              We assist you in documenting your financial assets
+                              to demonstrate your ability to support both your
+                              business and your family in Sweden. This includes
+                              preparing detailed financial statements, such as
+                              bank account balances, investment records, and
+                              proof of income, to show that you have sufficient
+                              resources to cover your living expenses, business
+                              operations, and any associated costs. We help you
+                              compile the necessary documentation to meet
+                              Swedish immigration requirements, ensuring that
+                              you can demonstrate financial stability and
+                              sustainability.
+                            </p>
+                          </li>
+                        </div>
                       </div>
-                      <div className="col-md-6">
+
                       <li>
                         <p className="m-0 tw-text-gray tw-pt-4">
-                          <strong>Financial and Income Proof:</strong> <br />
-                          We assist you in documenting your financial assets to demonstrate your ability to support both your business and your family in Sweden. This includes preparing detailed financial statements, such as bank account balances, investment records, and proof of income, to show that you have sufficient resources to cover your living expenses, business operations, and any associated costs. We help you compile the necessary documentation to meet Swedish immigration requirements, ensuring that you can demonstrate financial stability and sustainability. 
-                        </p>
-                      </li>
-                   
-                      </div>
-                    </div>
-
-
-                    
-
-                      <li>
-                        <p className="m-0 tw-text-gray tw-pt-4">
-                          <strong>Ongoing Support:</strong>
+                          <strong className="tw-text-black">
+                            Ongoing Support:
+                          </strong>
                           <br /> We offer support throughout the application
                           process, responding to inquiries from Migrationsverket
                           and guiding you through any additional requirements.
@@ -893,7 +932,9 @@ const BusinessPermit = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray tw-pt-4">
-                          <strong>Appeals Assistance:</strong>
+                          <strong className="tw-text-black">
+                            Appeals Assistance:
+                          </strong>
                           <br /> If your application is denied, we provide
                           guidance on the appeals process, helping you
                           strengthen your case for reconsideration.
@@ -907,8 +948,11 @@ const BusinessPermit = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Why
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong> Work with Sweden Relocators? </strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        {" "}
+                        Work with Sweden Relocators?{" "}
+                      </strong>
                     </h2>
 
                     <br />
@@ -916,8 +960,10 @@ const BusinessPermit = () => {
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Expert Knowledge:</strong> Our team stays
-                          updated on the latest requirements from
+                          <strong className="tw-text-black">
+                            Expert Knowledge:
+                          </strong>{" "}
+                          Our team stays updated on the latest requirements from
                           Migrationsverket, providing accurate and effective
                           guidance.
                           <p>
@@ -928,10 +974,12 @@ const BusinessPermit = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Personalized Service:</strong> We understand
-                          that every business is unique, and we tailor our
-                          support to meet the specific needs of your industry
-                          and personal situation.
+                          <strong className="tw-text-black">
+                            Personalized Service:
+                          </strong>{" "}
+                          We understand that every business is unique, and we
+                          tailor our support to meet the specific needs of your
+                          industry and personal situation.
                         </p>
                         <p>
                           <br />
@@ -940,9 +988,12 @@ const BusinessPermit = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Streamlined Process:</strong> By managing the
-                          complexities of the application process, we help you
-                          avoid delays and increase your likelihood of success.
+                          <strong className="tw-text-black">
+                            Streamlined Process:
+                          </strong>{" "}
+                          By managing the complexities of the application
+                          process, we help you avoid delays and increase your
+                          likelihood of success.
                           <p>
                             <br />
                           </p>
@@ -959,14 +1010,23 @@ const BusinessPermit = () => {
                       is in good hands.
                     </p>
 
-                    <Link to = '/register' className="tw-text-center tw-pt-4">
-                    <h2 className = "tw-text-center tw-pt-4">
-                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
-                    </h2>
+                    <Link to="/register" className="tw-text-center tw-pt-4">
+                      <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
+                        <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
+                          Sign Up{" "}
+                        </strong>
+                        <strong className="tw-text-black"> Today!</strong>
+                      </h5>
                     </Link>
-                    <br/>
+                    <br />
                     <p className="tw-text-gray">
-                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
+                      Sign up today and simplify your journey! Whether you're
+                      seeking assistance with relocation, permits, visas, legal
+                      processes, or settling into a new life, we're here to
+                      help. Our comprehensive services cover everything from
+                      work and study opportunities to family reunifications,
+                      business support, and much more. Let us guide you every
+                      step of the way—start your seamless experience now!
                     </p>
                   </div>
                 </div>

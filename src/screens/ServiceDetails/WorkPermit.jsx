@@ -8,12 +8,10 @@ import banner from "../../assets/images/programmers-building-mobile-application.
 import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
 
-
 import wp1 from "../../assets/iconscout/wp1.png";
 import wp2 from "../../assets/iconscout/wp2.png";
 import wp3 from "../../assets/iconscout/wp3.png";
 import wp4 from "../../assets/iconscout/wp4.png";
-
 
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
@@ -260,26 +258,28 @@ const WorkPermit = () => {
               <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
                 <div className="2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
-
-                  
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Types of Work Permits in Sweden
                     </span>
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong>Overview of Work Permit Types</strong>
                     </h2>
 
+                    <br />
 
-                  
-                    <br/>
-
-
-                    <p className="tw-text-gray">Sweden provides a range of work permits designed to accommodate diverse professional and personal circumstances. These permits cater to various categories of workers, each with specific eligibility criteria and requirements. For skilled professionals, there are permits targeting sectors with labor shortages, such as IT, healthcare, and engineering, often requiring a formal job offer and a salary meeting Swedish standards</p>
+                    <p className="tw-text-gray">
+                      Sweden provides a range of work permits designed to
+                      accommodate diverse professional and personal
+                      circumstances. These permits cater to various categories
+                      of workers, each with specific eligibility criteria and
+                      requirements. For skilled professionals, there are permits
+                      targeting sectors with labor shortages, such as IT,
+                      healthcare, and engineering, often requiring a formal job
+                      offer and a salary meeting Swedish standards
+                    </p>
 
                     <div className="row tw-flex tw-items-center">
-                     
-
                       <div className="col-md-6">
                         <div className="row ">
                           <div className="col-md-9 tw-mx-auto">
@@ -294,47 +294,52 @@ const WorkPermit = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                      <p className="tw-text-gray">
-                      Entrepreneurs and self-employed individuals can apply for permits that allow them to establish and run businesses in Sweden, provided they demonstrate a viable business plan and sufficient financial resources. Seasonal workers, such as those in agriculture or hospitality, can access permits for temporary employment. Additionally, permits are available for researchers, students transitioning to work, and family members accompanying a permit holder, making Sweden an attractive destination for both individuals and families seeking professional opportunities.
-                    </p>
+                        <p className="tw-text-gray">
+                          Entrepreneurs and self-employed individuals can apply
+                          for permits that allow them to establish and run
+                          businesses in Sweden, provided they demonstrate a
+                          viable business plan and sufficient financial
+                          resources. Seasonal workers, such as those in
+                          agriculture or hospitality, can access permits for
+                          temporary employment. Additionally, permits are
+                          available for researchers, students transitioning to
+                          work, and family members accompanying a permit holder,
+                          making Sweden an attractive destination for both
+                          individuals and families seeking professional
+                          opportunities.
+                        </p>
                       </div>
                     </div>
 
-                    
+                    <strong className="m-0 tw-text-black">
+                      Standard Work Permit for Employment
+                    </strong>
 
-                   
-                        <strong className="m-0 tw-text-gray">
-                          Standard Work Permit for Employment
-                        </strong>
-                   
                     <ul className="tw-p-0 tw-pl-0">
-                     
-                    <li className=" tw-flex  tw-pt-4 tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex  tw-pt-4 tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Job Offer:</strong> Must have a confirmed job
                           offer from a Swedish employer.
-                         
                         </p>
                       </li>
-                     
+
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Minimum Salary:</strong> SEK 30,000 before
                           taxes or as per industry standards.
                         </p>
-                       
                       </li>
-                     
+
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Advertisement Requirement:</strong> Job must
                           be advertised in the EU/EEA for 10 days.
@@ -345,26 +350,23 @@ const WorkPermit = () => {
                       </li>
                     </ul>
 
-                   
-                        <strong className="m-0 tw-text-gray">EU Blue Card</strong>
-                    
+                    <strong className="m-0 tw-text-black">EU Blue Card</strong>
+
                     <ul className="tw-p-0 tw-pl-0">
-                      
-                    <li className=" tw-flex tw-pt-4 tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex tw-pt-4 tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Higher Education:</strong> Requires a
                           university degree or 5 years of experience.
-                        
                         </p>
                       </li>
-                    
+
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Salary Threshold:</strong> Must exceed the
                           minimum salary for EU Blue Card.
@@ -375,29 +377,25 @@ const WorkPermit = () => {
                       </li>
                     </ul>
 
-                    
-                        <strong className="m-0 tw-text-gray">
-                          Seasonal Worker Permit (Berry Pickers and Plant
-                          Workers)
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-black">
+                      Seasonal Worker Permit (Berry Pickers and Plant Workers)
+                    </strong>
+
                     <ul className="tw-p-0 tw-pl-0">
-                    
-                    <li className=" tw-flex tw-pt-4 tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex tw-pt-4 tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Contract:</strong> Requires a contract for
                           seasonal work up to 6 months.
-                       
                         </p>
                       </li>
-                     
+
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Wages and Benefits:</strong> Must comply with
                           collective agreements.
@@ -408,27 +406,25 @@ const WorkPermit = () => {
                       </li>
                     </ul>
 
-                   
-                        <strong className="m-0  tw-text-gray">Au Pair Permit</strong>
-                      
+                    <strong className="m-0  tw-text-black">
+                      Au Pair Permit
+                    </strong>
 
                     <ul className="tw-p-0  tw-pl-0">
-                      
-                    <li className=" tw-flex tw-pt-4  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                              <p className="m-0 tw-text-gray">
+                      <li className=" tw-flex tw-pt-4  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
+                        <p className="m-0 tw-text-gray">
                           <strong>Age Requirement:</strong> Must be between 18
                           and 30 years old.
-                        
                         </p>
                       </li>
-                     
+
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Language Study:</strong> Required to take
                           Swedish courses.
@@ -439,31 +435,25 @@ const WorkPermit = () => {
                       </li>
                     </ul>
 
-                   
-                        <strong className="m-0 tw-text-gray">
-                          Working Holiday Visa
-                        </strong>
-                      
-
+                    <strong className="m-0 tw-text-black">
+                      Working Holiday Visa
+                    </strong>
 
                     <ul className="tw-p-0 ">
-                      
-                    <li className=" tw-flex tw-pt-4  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex tw-pt-4  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Eligible Countries:</strong> Includes
                           Australia, New Zealand, South Korea, etc.
-                        
                         </p>
                       </li>
 
-                    
-                          <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Age Range:</strong> Typically for 18-30 years
                           old.
@@ -474,28 +464,25 @@ const WorkPermit = () => {
                       </li>
                     </ul>
 
-                   
-                        <strong className="m-0 tw-text-gray">
-                          Self-Employment Permit
-                        </strong>
-                    
+                    <strong className="m-0 tw-text-black">
+                      Self-Employment Permit
+                    </strong>
+
                     <ul className="tw-p-0 tw-pt-4 ">
-                    
-                    <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Business Plan:</strong> Must show
                           profitability within 2 years.
-                         
                         </p>
                       </li>
-                     
+
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Experience:</strong> Relevant business
                           experience is required.
@@ -506,201 +493,192 @@ const WorkPermit = () => {
                       </li>
                     </ul>
 
-                        <strong className="m-0 tw-text-gray">
-                          Sports and Cultural Worker Permit
-                        </strong>
-                      
+                    <strong className="m-0 tw-text-black">
+                      Sports and Cultural Worker Permit
+                    </strong>
+
                     <ul className="tw-p-0 ">
-                     
-                    <li className=" tw-flex tw-pt-4 tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex tw-pt-4 tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Employment:</strong> Must have a job offer
                           from a relevant Swedish organization.
-                         
                         </p>
                       </li>
                     </ul>
 
-                   
-                        <strong className="m-0 tw-text-gray">Researcher Permit</strong>
-                     
+                    <strong className="m-0 tw-text-black">
+                      Researcher Permit
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
-                     
-                    <li className=" tw-flex tw-pt-4 tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                      <li className=" tw-flex tw-pt-4 tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Host Agreement:</strong> Required with a
                           Swedish research institution.
-                         
                         </p>
                       </li>
-                    
+
                       <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
                         <p className="m-0 tw-text-gray">
                           <strong>Funding:</strong> Proof of financial support
                           for the research duration.
                         </p>
-                       
                       </li>
                     </ul>
                   </div>
                   <div>
-                    <br/>
-                  
-
+                    <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Application Process and Waiting Times
                     </span>
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong>
                         Overview of Application Process and Waiting Times
                       </strong>
                     </h2>
-                
-                    <br/>
-
+                    <br />
                     <p className="tw-text-gray">
                       The application process and waiting times vary depending
                       on the type of permit, your circumstances, and the current
                       workload at the Swedish Migration Agency. General waiting
                       times are as follows:
                     </p>
-
-
                     <div className="row tw-flex tw-items-center">
-                    
-
-                    <div className="col-md-6">
-                      <div className="row ">
-                        <div className="col-md-9 tw-mx-auto">
-                          <motion.img
-                            animate={imageVariants}
-                            className=" tw-w-full"
-                            src={wp2}
-                            alt=""
-                            style={{ maxWidth: "450px" }}
-                          />
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={wp2}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
                         </div>
                       </div>
+                      <div className="col-md-6">
+                        <ul className="tw-p-0 ">
+                          <strong className='tw-text-black'>Permit times:</strong>
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <p className="m-0 tw-text-gray">
+                              <strong>Standard Work Permit:</strong> 1-4 months
+                            </p>
+                          </li>
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <p className="m-0 tw-text-gray">
+                              <strong>EU Blue Card:</strong> 3-4 months
+                            </p>
+                          </li>
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <p className="m-0 tw-text-gray">
+                              <strong>Seasonal Worker Permit:</strong> 1-3
+                              months
+                            </p>
+                          </li>
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <p className="m-0 tw-text-gray">
+                              <strong>Au Pair Permit:</strong> 1-2 months
+                            </p>
+                          </li>
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <p className="m-0 tw-text-gray">
+                              <strong>Working Holiday Visa:</strong> 1-2 months
+                            </p>
+                          </li>
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <p className="m-0 tw-text-gray">
+                              <strong>Self-Employment Permit:</strong> 3-6
+                              months
+                            </p>
+                          </li>
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <p className="m-0 tw-text-gray">
+                              <strong>
+                                Sports and Cultural Worker Permit:
+                              </strong>{" "}
+                              1-2 months
+                            </p>
+                          </li>
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <p className="m-0 tw-text-gray">
+                              <strong>Researcher Permit:</strong> 1-3 months
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                    <div className="col-md-6">
-                    <ul className="tw-p-0 ">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          <strong>Standard Work Permit:</strong> 1-4 months
-                        </p>
-                      </li>
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          <strong>EU Blue Card:</strong> 3-4 months
-                        </p>
-                      </li>
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          <strong>Seasonal Worker Permit:</strong> 1-3 months
-                        </p>
-                      </li>
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          <strong>Au Pair Permit:</strong> 1-2 months
-                        </p>
-                      </li>
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          <strong>Working Holiday Visa:</strong> 1-2 months
-                        </p>
-                      </li>
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          <strong>Self-Employment Permit:</strong> 3-6 months
-                        </p>
-                      </li>
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          <strong>Sports and Cultural Worker Permit:</strong>{" "}
-                          1-2 months
-                        </p>
-                      </li>
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          <strong>Researcher Permit:</strong> 1-3 months
-                        </p>
-                      </li>
-                    </ul>
-                    </div>
-                  </div>
-
-                    
-
                     <p className="tw-text-gray tw-pt-4">
                       Using our Work Permit Assessment Tool can help you
                       identify the right permit and provide estimated processing
                       times based on your case.
                     </p>
-
-<br/>  <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
+                    <br />{" "}
+                    <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Additional General Requirements for Work Permits
                     </span>
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong>Key General Requirements for Work Permits</strong>
                     </h2>
-
-                    <p className = "tw-text-gray">To obtain a work permit in Sweden, applicants must meet several general requirements to ensure compliance with Swedish immigration laws and labor standards. A valid job offer from a Swedish employer is essential, and the terms of employment must align with Swedish collective agreements or industry standards, including a minimum salary of at least SEK 13,000 per month before taxes. The employer must also advertise the position within the EU/EEA for at least ten days before offering it to a non-EU/EEA applicant. </p>
-
-
-
-
-                   
-
-                  
+                    <p className="tw-text-gray">
+                      To obtain a work permit in Sweden, applicants must meet
+                      several general requirements to ensure compliance with
+                      Swedish immigration laws and labor standards. A valid job
+                      offer from a Swedish employer is essential, and the terms
+                      of employment must align with Swedish collective
+                      agreements or industry standards, including a minimum
+                      salary of at least SEK 13,000 per month before taxes. The
+                      employer must also advertise the position within the
+                      EU/EEA for at least ten days before offering it to a
+                      non-EU/EEA applicant.{" "}
+                    </p>
                     <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
-                      <ul className="tw-p-0 ">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          <strong>Valid Passport:</strong> Your passport must be
-                          valid for the entire period of your intended stay.
-                        </p>
-                      </li>
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          <strong>Insurance:</strong> Some permits, such as the
-                          Working Holiday and Au Pair permits, require health
-                          insurance.
-                        </p>
-                      </li>
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          <strong>Clean Criminal Record:</strong> Applicants
-                          with serious criminal records may face challenges in
-                          obtaining a permit.
-                        </p>
-                      </li>
-                    </ul>
-
-                    
+                        <ul className="tw-p-0 ">
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <p className="m-0 tw-text-gray">
+                              <strong className="tw-text-black">Valid Passport:</strong> Your passport
+                              must be valid for the entire period of your
+                              intended stay.
+                            </p>
+                          </li>
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <p className="m-0 tw-text-gray">
+                              <strong   className="tw-text-black">Insurance:</strong> Some permits, such as
+                              the Working Holiday and Au Pair permits, require
+                              health insurance.
+                            </p>
+                          </li>
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <p className="m-0 tw-text-gray">
+                              <strong className="tw-text-black">Clean Criminal Record:</strong> Applicants
+                              with serious criminal records may face challenges
+                              in obtaining a permit.
+                            </p>
+                          </li>
+                        </ul>
                       </div>
 
                       <div className="col-md-6">
@@ -717,105 +695,99 @@ const WorkPermit = () => {
                         </div>
                       </div>
                     </div>
-                    
-
-<br/>
-
-
-
-
-
+                    <br />
                     <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       How Sweden Relocators Can Assist You
                     </span>
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong>
                         Comprehensive Support from Sweden Relocators
                       </strong>
                     </h2>
-                    <br/>
-
+                    <br />
                     <p className="tw-text-gray">
                       Sweden Relocators provides full support for all types of
                       work permits, ensuring a smooth and efficient process:
                     </p>
-                    
-
-
                     <div className="row tw-flex tw-items-center">
-                    
-
-                    <div className="col-md-6">
-                      <div className="row ">
-                        <div className="col-md-9 tw-mx-auto">
-                          <motion.img
-                            animate={imageVariants}
-                            className=" tw-w-full"
-                            src={wp4}
-                            alt=""
-                            style={{ maxWidth: "450px" }}
-                          />
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={wp4}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
                         </div>
                       </div>
+                      <div className="col-md-6">
+                        <ul className="tw-p-0 ">
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <p className="m-0 tw-text-gray">
+                              <strong className="tw-text-black">Eligibility Assessment:</strong> Use our
+                              Work Permit Assessment Tool to find the best
+                              permit for your circumstances.
+                            </p>
+                          </li>
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <p className="m-0 tw-text-gray">
+                              <strong className="tw-text-black">Document Preparation:</strong> We assist
+                              in compiling and preparing the required documents,
+                              such as employment contracts, financial
+                              statements, and health insurance proof.
+                            </p>
+                          </li>
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <p className="m-0 tw-text-gray">
+                              <strong className="tw-text-black">
+                                Application Submission and Tracking:
+                              </strong>{" "}
+                              We handle the submission of your application and
+                              keep you updated on its status through each stage.
+                            </p>
+                          </li>
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <p className="m-0 tw-text-gray">
+                              <strong className="tw-text-black">Post-Permit Support:</strong> Once your
+                              permit is approved, we offer relocation support,
+                              including housing assistance, bank account setup,
+                              and registration with Swedish authorities.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                    <div className="col-md-6">
-                    <ul className="tw-p-0 ">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          <strong>Eligibility Assessment:</strong> Use our Work
-                          Permit Assessment Tool to find the best permit for
-                          your circumstances.
-                        </p>
-                      </li>
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          <strong>Document Preparation:</strong> We assist in
-                          compiling and preparing the required documents, such
-                          as employment contracts, financial statements, and
-                          health insurance proof.
-                        </p>
-                      </li>
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          <strong>Application Submission and Tracking:</strong>{" "}
-                          We handle the submission of your application and keep
-                          you updated on its status through each stage.
-                        </p>
-                      </li>
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          <strong>Post-Permit Support:</strong> Once your permit
-                          is approved, we offer relocation support, including
-                          housing assistance, bank account setup, and
-                          registration with Swedish authorities.
-                        </p>
-                      </li>
-                    </ul>
-                    </div>
-                  </div>
-
-
-                   
-
                     <p className="tw-text-gray tw-pt-4">
                       For more information or to begin your work permit
                       application, visit our Work Permit Section on our website.
                       Contact Sweden Relocators today, and let us help you start
                       your career journey in Sweden.
                     </p>
-                    <Link to = '/register' className="tw-text-center tw-pt-4">
-                    <h2 className = "tw-text-center tw-pt-4">
-                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
-                    </h2>
+                    <Link to="/register" className="tw-text-center tw-pt-4">
+                    <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
+                        <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
+                          Sign Up{" "}
+                        </strong>
+                        <strong className="tw-text-black"> Today!</strong>
+                      </h5>
                     </Link>
-                    <br/>
+                    <br />
                     <p className="tw-text-gray">
-                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
+                      Sign up today and simplify your journey! Whether you're
+                      seeking assistance with relocation, permits, visas, legal
+                      processes, or settling into a new life, we're here to
+                      help. Our comprehensive services cover everything from
+                      work and study opportunities to family reunifications,
+                      business support, and much more. Let us guide you every
+                      step of the way—start your seamless experience now!
                     </p>
                   </div>
                 </div>

@@ -263,13 +263,11 @@ const Looking_for_housing = () => {
         </section>
       </div>
 
-      <div className = "tw-flex tw-justify-center tw-pt-8 tw-pb-4 tw-bg-[#F5FAFF]">
-     
-     
-     <div>
-      <Link
-                  to="/available_housing"
-                  className="
+      <div className="tw-flex tw-justify-center tw-pt-8 tw-pb-4 tw-bg-[#F5FAFF]">
+        <div>
+          <Link
+            to="/available_housing"
+            className="
         
           tw-bg-primary
           tw-text-white
@@ -288,31 +286,54 @@ const Looking_for_housing = () => {
           tw-shadow-lg
           hover:tw-shadow-xl
         "
-                >
-                  Find all Available Housing
-                </Link>
-                </div>
-              
-
+          >
+            Find all Available Housing
+          </Link>
+        </div>
       </div>
 
-      <div className="tw-flex tw-justify-between tw-overflow-auto tw-p-4 tw-bg-[#F5FAFF] 2xl:tw-pl-[14%] md:tw-pl-[10%] tw-pl-3 tw-pr-3 2xl:tw-pr-[14%] md:tw-pr-[10%] ">
+      <div className="tw-flex tw-justify-between tw-flex-wrap tw-p-4 tw-bg-[#F5FAFF] 2xl:tw-pl-[14%] md:tw-pl-[10%] tw-pl-3 tw-pr-3 2xl:tw-pr-[14%] md:tw-pr-[10%]">
+  {[
+    {
+      image: rentimage1,
+      alt: "Rental Home 1",
+      title: "Find Your Dream Home",
+      description: " Discover the perfect place to live with our wide range of cozy and modern housing options.",
+    },
+    {
+      image: rentimage2,
+      alt: "Rental Home 2",
+      title: "Explore Homes Online",
+      description: "Description: Take a virtual look at your next home with interactive tours & detailed property insights.",
+    },
+    {
+      image: rentimage3,
+      alt: "Rental Home 3",
+      title: "Transparent Planning",
+      description: "Use our financial tools to manage expenses and make smart housing decisions effortlessly.",
+    },
+  ].map(({ image, alt, title, description }, index) => (
+    <div
+      key={index}
+      className="tw-flex tw-flex-col tw-items-center tw-w-[30%] tw-max-w-[30%] tw-gap-4"
+      style={{ flex: "1 1 30%", maxWidth: "30%" }}
+    >
+      <div className="tw-w-full tw-relative" style={{ paddingBottom: "56.25%" }}>
         <img
-          src={rentimage1}
-          alt="Rental Home 1"
-          className="tw-rounded-2xl tw-w-auto tw-h-64 tw-bg-white tw-shadow-lg"
-        />
-        <img
-          src={rentimage2}
-          alt="Rental Home 2"
-          className="tw-rounded-2xl tw-w-auto tw-h-64 tw-bg-white tw-shadow-lg"
-        />
-          <img
-          src={rentimage2}
-          alt="Rental Home 2"
-          className="tw-rounded-2xl tw-w-auto tw-h-64 tw-bg-white tw-shadow-lg"
+          src={image}
+          alt={alt}
+          className="tw-absolute tw-inset-0 tw-w-full tw-h-[110%] tw-rounded-2xl tw-object-cover tw-bg-white tw-shadow-lg"
         />
       </div>
+      <div className="tw-flex tw-flex-col tw-pt-4 tw-items-center tw-text-center">
+        <h7 className="tw-text-lg tw-text-gray-dark  tw-font-bold" style = {{ color: "#1F2437",
+                    fontWeight: "300", fontSize: '1.3em'}}>{title}</h7>
+        <p className="tw-text-gray">{description}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
 
       <section className=" tw-pb-8   tw-bg-[#F5FAFF]">
         <div className="row tw-gap-2 tw-justify-start tw-items-start">

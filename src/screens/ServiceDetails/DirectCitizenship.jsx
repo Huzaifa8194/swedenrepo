@@ -319,7 +319,7 @@ const DirectCitizenship = () => {
                     </div>
                     <br />
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       🇦🇬 Antigua and Barbuda
                     </strong>
 
@@ -348,7 +348,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">🇦🇹 Austria</strong>
+                    <strong className="m-0 tw-text-black">🇦🇹 Austria</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -374,7 +374,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">🇨🇾 Cyprus</strong>
+                    <strong className="m-0 tw-text-black">🇨🇾 Cyprus</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -400,7 +400,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">🇲🇹 Malta</strong>
+                    <strong className="m-0 tw-text-black">🇲🇹 Malta</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -428,7 +428,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">🇲🇪 Montenegro</strong>
+                    <strong className="m-0 tw-text-black">🇲🇪 Montenegro</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -454,7 +454,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       🇰🇳 St. Kitts and Nevis
                     </strong>
 
@@ -482,7 +482,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">🇱🇨 St. Lucia</strong>
+                    <strong className="m-0 tw-text-black">🇱🇨 St. Lucia</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -509,7 +509,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">🇹🇷 Turkey</strong>
+                    <strong className="m-0 tw-text-black">🇹🇷 Turkey</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -555,7 +555,7 @@ const DirectCitizenship = () => {
                       distinct benefits tailored to the global elite:
                     </p>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Enhanced Global Mobility
                     </strong>
 
@@ -568,7 +568,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Security and Stability
                     </strong>
 
@@ -581,7 +581,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Business Opportunities
                     </strong>
 
@@ -595,7 +595,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Lifestyle Benefits
                     </strong>
 
@@ -628,7 +628,7 @@ const DirectCitizenship = () => {
                       efficient journey toward a second citizenship.
                     </p>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Contact Sweden Relocators for Citizenship Assistance
                     </strong>
 
@@ -910,12 +910,12 @@ const DirectCitizenship = () => {
                      
                     </div>
                     <Link to="/register" className="tw-text-center tw-pt-4">
-                        <h2 className="tw-text-center tw-pt-4">
+                    <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
                           <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                             Sign Up{" "}
                           </strong>
                           <strong> Today!</strong>
-                        </h2>
+                        </h5>
                       </Link>
                       <br />
                       <p className="tw-text-gray">

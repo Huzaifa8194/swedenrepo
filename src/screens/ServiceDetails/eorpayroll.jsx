@@ -274,52 +274,46 @@ const EORPayroll = () => {
                       benefits administration.
                     </p>
 
-                  
-
                     <div>
                       <br />
 
-
-
                       <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-12 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={eor1}
-                              alt=""
-                              style={{ maxWidth: "450px" }}
-                            />
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-12 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full"
+                                src={eor1}
+                                alt=""
+                                style={{ maxWidth: "450px" }}
+                              />
+                            </div>
                           </div>
                         </div>
+                        <div className="col-md-6">
+                          <span className=" tw-flex tw-items-center tw-gap-2">
+                            {" "}
+                            <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                            What is
+                          </span>
+                          <h2>
+                            <strong>Employer of Record (EOR)?</strong>
+                          </h2>
+                          <br />
+
+                          <p className=" tw-text-gray ">
+                            An Employer of Record (EOR) is a service provider
+                            that acts as the legal employer for your staff in a
+                            foreign country, handling all local employment,
+                            payroll, and compliance obligations. With EOR,
+                            Sweden Relocators legally employs your workforce on
+                            your behalf, allowing you to operate in Sweden or
+                            other countries without setting up a local legal
+                            entity.
+                          </p>
+                        </div>
                       </div>
-                      <div className="col-md-6">
-                      <span className=" tw-flex tw-items-center tw-gap-2">
-                        {" "}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                        What is
-                      </span>
-                      <h2>
-                        <strong>Employer of Record (EOR)?</strong>
-                      </h2>
-                      <br />
-
-                      <p className=" tw-text-gray ">
-                        An Employer of Record (EOR) is a service provider that
-                        acts as the legal employer for your staff in a foreign
-                        country, handling all local employment, payroll, and
-                        compliance obligations. With EOR, Sweden Relocators
-                        legally employs your workforce on your behalf, allowing
-                        you to operate in Sweden or other countries without
-                        setting up a local legal entity.
-                      </p>
-                      </div>
-                    </div>
-
-                     
-
                     </div>
 
                     <div>
@@ -334,11 +328,9 @@ const EORPayroll = () => {
                       </h2>
                       <br />
 
-                    
-                          <strong className=" m-0 tw-text-gray">
-                            Company Sign-Up on the Portal:
-                          </strong>
-                     
+                      <strong className=" m-0 tw-text-black">
+                        Company Sign-Up on the Portal:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -351,11 +343,9 @@ const EORPayroll = () => {
                         </li>
                       </ul>
 
-                  
-                          <strong className=" m-0 tw-text-gray">
-                            Local Compliance Management:
-                          </strong>
-                     
+                      <strong className=" m-0 tw-text-black">
+                        Local Compliance Management:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -368,11 +358,9 @@ const EORPayroll = () => {
                         </li>
                       </ul>
 
-                    
-                          <strong className=" m-0 tw-text-gray">
-                            Employee Onboarding:
-                          </strong>
-                       
+                      <strong className=" m-0 tw-text-black">
+                        Employee Onboarding:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -385,11 +373,9 @@ const EORPayroll = () => {
                         </li>
                       </ul>
 
-                    
-                          <strong className=" m-0 tw-text-gray">
-                            Payroll & Benefits Administration:
-                          </strong>
-                       
+                      <strong className=" m-0 tw-text-black">
+                        Payroll & Benefits Administration:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -401,11 +387,9 @@ const EORPayroll = () => {
                         </li>
                       </ul>
 
-                   
-                          <strong className=" m-0 tw-text-gray">
-                            Termination and Offboarding:
-                          </strong>
-                  
+                      <strong className=" m-0 tw-text-black">
+                        Termination and Offboarding:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -416,8 +400,6 @@ const EORPayroll = () => {
                           </p>
                         </li>
                       </ul>
-
-                    
                     </div>
 
                     <div>
@@ -439,220 +421,199 @@ const EORPayroll = () => {
                         works:
                       </p>
 
-                     
-                          <strong className=" m-0 tw-text-gray">
-                            Employee Setup and Salary Processing
-                          </strong>
-
-
-                          <ul className=" tw-p-0 tw-pt-4">
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <strong className=" m-0 tw-text-gray">
-                          Add Employee Details:
-                          </strong>
-                        </li>
-                      </ul>
-                      
-                       
-
-                      <ul className=" tw-p-0 ">
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            <strong></strong> Through our
-                            online portal, you can add each employee’s salary,
-                            benefits, and any other payroll-specific details.
-                            <p>
-                              <br />
-                            </p>
-                          </p>
-                        </li>
-
-
-                        <ul className=" tw-p-0 tw-pt-4">
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <strong className=" m-0 tw-text-gray">
-                          Monthly Payroll Calculation:
-                          </strong>
-                        </li>
-                      </ul>
-                      
-                        <li>
-                          <p className=" m-0 tw-text-gray">
-                            <strong></strong> Every
-                            pay period, our system calculates salaries with full
-                            compliance, including all taxes, benefits, and
-                            deductions. This ensures payroll accuracy and
-                            consistency.
-                          </p>
-                          <p>
-                            <br />
-                          </p>
-                        </li>
-
-                        <ul className=" tw-p-0 tw-pt-4">
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <strong className=" m-0 tw-text-gray">
-                          Timely Salary Payments:
-                          </strong>
-                        </li>
-                      </ul>
-                      
-
-                        <li>
-                          <p className=" m-0 tw-text-gray">
-                            <strong></strong> Salaries
-                            are processed and deposited directly into employees’
-                            bank accounts. Payslips with breakdowns of earnings,
-                            deductions, and taxes are available for employees to
-                            view online.
-                            <p>
-                              <br />
-                            </p>
-                          </p>
-                        </li>
-                      </ul>
-
-                  
-
-                      <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-12 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={eor2}
-                              alt=""
-                              style={{ maxWidth: "450px" }}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                      <strong className=" m-0 tw-text-gray">
-                            Tax Compliance and Filing
-                          </strong>
-                      
-
-
-                          <ul className=" tw-p-0 tw-pt-4">
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <strong className=" m-0 tw-text-gray">
-                          Tax Withholding:
-                          </strong>
-                        </li>
-                      </ul>
-
-                      <ul className=" tw-p-0 ">
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            <strong></strong> Our system
-                            automatically withholds the correct taxes from each
-                            employee’s salary, ensuring compliance with Swedish
-                            tax laws.
-                            <p>
-                              <br />
-                            </p>
-                          </p>
-                        </li>
-
-
-                        <ul className=" tw-p-0 tw-pt-4">
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <strong className=" m-0 tw-text-gray">
-                          Reporting and Filing:
-                          </strong>
-                        </li>
-                      </ul>
-
-                        <li>
-                          <p className=" m-0 tw-text-gray">
-                            <strong></strong> Our team
-                            handles monthly, quarterly, and annual tax filings,
-                            so your business stays compliant with all local
-                            regulations.
-                          </p>
-                          <p>
-                            <br />
-                          </p>
-                        </li>
-
-
-                        <ul className=" tw-p-0 tw-pt-4">
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <strong className=" m-0 tw-text-gray">
-                          Transparency and Record-Keeping:
-                          </strong>
-                        </li>
-                      </ul>
-
-                        <li>
-                          <p className=" m-0 tw-text-gray">
-                            <strong></strong>
-                            All payroll transactions, tax filings, and reports
-                            are securely stored in the portal, offering
-                            real-time visibility for both employers and
-                            employees.
-                            <p>
-                              <br />
-                            </p>
-                          </p>
-                        </li>
-                      </ul>
-                      </div>
-                    </div>
-
-                  
-                         
-                      <strong className=" m-0 tw-text-gray">
-                            Benefits Administration
-                          </strong>
+                      <strong className=" m-0 tw-text-black">
+                        Employee Setup and Salary Processing
+                      </strong>
 
                       <ul className=" tw-p-0 tw-pt-4">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <GoTriangleRight className=" tw-text-blue" />
                           <strong className=" m-0 tw-text-gray">
-                          Employee Benefits Setup:
+                            Add Employee Details:
                           </strong>
                         </li>
                       </ul>
-                      
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                       
                           <p className=" m-0 tw-text-gray">
-                             Through
-                            the portal, employers can define benefit plans,
-                            including health insurance, retirement plans, and
-                            other perks.
+                            <strong></strong> Through our online portal, you can
+                            add each employee’s salary, benefits, and any other
+                            payroll-specific details.
                             <p>
                               <br />
                             </p>
                           </p>
                         </li>
 
+                        <ul className=" tw-p-0 tw-pt-4">
+                          <li className=" tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className=" tw-text-blue" />
+                            <strong className=" m-0 tw-text-gray">
+                              Monthly Payroll Calculation:
+                            </strong>
+                          </li>
+                        </ul>
 
+                        <li>
+                          <p className=" m-0 tw-text-gray">
+                            <strong></strong> Every pay period, our system
+                            calculates salaries with full compliance, including
+                            all taxes, benefits, and deductions. This ensures
+                            payroll accuracy and consistency.
+                          </p>
+                          <p>
+                            <br />
+                          </p>
+                        </li>
 
                         <ul className=" tw-p-0 tw-pt-4">
+                          <li className=" tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className=" tw-text-blue" />
+                            <strong className=" m-0 tw-text-gray">
+                              Timely Salary Payments:
+                            </strong>
+                          </li>
+                        </ul>
+
+                        <li>
+                          <p className=" m-0 tw-text-gray">
+                            <strong></strong> Salaries are processed and
+                            deposited directly into employees’ bank accounts.
+                            Payslips with breakdowns of earnings, deductions,
+                            and taxes are available for employees to view
+                            online.
+                            <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+                      </ul>
+
+                      <div className="row tw-flex tw-items-center">
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-12 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full"
+                                src={eor2}
+                                alt=""
+                                style={{ maxWidth: "450px" }}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <strong className=" m-0 tw-text-black">
+                            Tax Compliance and Filing
+                          </strong>
+
+                          <ul className=" tw-p-0 tw-pt-4">
+                            <li className=" tw-flex tw-items-center tw-gap-3">
+                              <GoTriangleRight className=" tw-text-blue" />
+                              <strong className=" m-0 tw-text-gray">
+                                Tax Withholding:
+                              </strong>
+                            </li>
+                          </ul>
+
+                          <ul className=" tw-p-0 ">
+                            <li className=" tw-flex tw-items-center tw-gap-3">
+                              <p className=" m-0 tw-text-gray">
+                                <strong></strong> Our system automatically
+                                withholds the correct taxes from each employee’s
+                                salary, ensuring compliance with Swedish tax
+                                laws.
+                                <p>
+                                  <br />
+                                </p>
+                              </p>
+                            </li>
+
+                            <ul className=" tw-p-0 tw-pt-4">
+                              <li className=" tw-flex tw-items-center tw-gap-3">
+                                <GoTriangleRight className=" tw-text-blue" />
+                                <strong className=" m-0 tw-text-gray">
+                                  Reporting and Filing:
+                                </strong>
+                              </li>
+                            </ul>
+
+                            <li>
+                              <p className=" m-0 tw-text-gray">
+                                <strong></strong> Our team handles monthly,
+                                quarterly, and annual tax filings, so your
+                                business stays compliant with all local
+                                regulations.
+                              </p>
+                              <p>
+                                <br />
+                              </p>
+                            </li>
+
+                            <ul className=" tw-p-0 tw-pt-4">
+                              <li className=" tw-flex tw-items-center tw-gap-3">
+                                <GoTriangleRight className=" tw-text-blue" />
+                                <strong className=" m-0 tw-text-gray">
+                                  Transparency and Record-Keeping:
+                                </strong>
+                              </li>
+                            </ul>
+
+                            <li>
+                              <p className=" m-0 tw-text-gray">
+                                <strong></strong>
+                                All payroll transactions, tax filings, and
+                                reports are securely stored in the portal,
+                                offering real-time visibility for both employers
+                                and employees.
+                                <p>
+                                  <br />
+                                </p>
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <strong className=" m-0 tw-text-black">
+                        Benefits Administration
+                      </strong>
+
+                      <ul className=" tw-p-0 tw-pt-4">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <GoTriangleRight className=" tw-text-blue" />
                           <strong className=" m-0 tw-text-gray">
-                          Automated Benefits Processing:
+                            Employee Benefits Setup:
                           </strong>
                         </li>
                       </ul>
 
+                      <ul className=" tw-p-0 ">
+                        <li className=" tw-flex tw-items-center tw-gap-3">
+                          <p className=" m-0 tw-text-gray">
+                            Through the portal, employers can define benefit
+                            plans, including health insurance, retirement plans,
+                            and other perks.
+                            <p>
+                              <br />
+                            </p>
+                          </p>
+                        </li>
+
+                        <ul className=" tw-p-0 tw-pt-4">
+                          <li className=" tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className=" tw-text-blue" />
+                            <strong className=" m-0 tw-text-gray">
+                              Automated Benefits Processing:
+                            </strong>
+                          </li>
+                        </ul>
+
                         <li>
                           <p className=" m-0 tw-text-gray">
-                            Our
-                            system automatically calculates and administers
+                            Our system automatically calculates and administers
                             benefits, ensuring employees receive the correct
                             benefits each month.
                           </p>
@@ -662,13 +623,13 @@ const EORPayroll = () => {
                         </li>
 
                         <ul className=" tw-p-0 tw-pt-4">
-                        <li className=" tw-flex tw-items-center tw-gap-3">
-                          <GoTriangleRight className=" tw-text-blue" />
-                          <strong className=" m-0 tw-text-gray">
-                          Compliance with Swedish Standards: 
-                          </strong>
-                        </li>
-                      </ul>
+                          <li className=" tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className=" tw-text-blue" />
+                            <strong className=" m-0 tw-text-gray">
+                              Compliance with Swedish Standards:
+                            </strong>
+                          </li>
+                        </ul>
 
                         <li>
                           <p className=" m-0 tw-text-gray">
@@ -698,11 +659,10 @@ const EORPayroll = () => {
                       </h2>
                       <br />
 
-                    
-                          <strong className=" m-0 tw-text-gray">
-                            1. Simple Online Sign-Up and Employee Management
-                          </strong>
-                    
+                      <strong className=" m-0 tw-text-black">
+                        1. Simple Online Sign-Up and Employee Management
+                      </strong>
+
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
@@ -715,11 +675,9 @@ const EORPayroll = () => {
                         </li>
                       </ul>
 
-                     
-                          <strong className=" m-0 tw-text-gray">
-                            2. Seamless Global Expansion
-                          </strong>
-                        
+                      <strong className=" m-0 tw-text-black">
+                        2. Seamless Global Expansion
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -734,11 +692,9 @@ const EORPayroll = () => {
                         </li>
                       </ul>
 
-                     
-                          <strong className=" m-0 tw-text-gray">
-                            3. Complete Compliance Assurance
-                          </strong>
-                      
+                      <strong className=" m-0 tw-text-black">
+                        3. Complete Compliance Assurance
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -751,11 +707,9 @@ const EORPayroll = () => {
                         </li>
                       </ul>
 
-                    
-                          <strong className=" m-0 tw-text-gray">
-                            4. Accurate, Timely Payroll Processing
-                          </strong>
-                       
+                      <strong className=" m-0 tw-text-black">
+                        4. Accurate, Timely Payroll Processing
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -769,11 +723,9 @@ const EORPayroll = () => {
                         </li>
                       </ul>
 
-                  
-                          <strong className=" m-0 tw-text-gray">
-                            5. Enhanced Employee Satisfaction
-                          </strong>
-                      
+                      <strong className=" m-0 tw-text-black">
+                        5. Enhanced Employee Satisfaction
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -785,8 +737,6 @@ const EORPayroll = () => {
                           </p>
                         </li>
                       </ul>
-
-                   
                     </div>
 
                     <div>
@@ -804,11 +754,9 @@ const EORPayroll = () => {
                       </h2>
                       <br />
 
-                  
-                          <strong className=" m-0 tw-text-gray">
-                            Sign Up as a Company on Our Portal:
-                          </strong>
-                       
+                      <strong className=" m-0 tw-text-black">
+                        Sign Up as a Company on Our Portal:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -821,11 +769,9 @@ const EORPayroll = () => {
                         </li>
                       </ul>
 
-                     
-                          <strong className=" m-0 tw-text-gray">
-                            Add Employee Information:
-                          </strong>
-                        
+                      <strong className=" m-0 tw-text-black">
+                        Add Employee Information:
+                      </strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -876,26 +822,21 @@ const EORPayroll = () => {
                       </div>
                     </div>
 
-
-
-
                     <br />
-                        <span className=" tw-flex tw-items-center tw-gap-2">
-                          {" "}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                          Ongoing
-                        </span>
-                        <h2>
-                          <strong>Support and Updates:</strong>
-                        </h2>
-                        <br />
-                        <p className=" tw-text-gray">
-                          Our expert team is always available for support,
-                          ensuring that your business stays compliant and adapts
-                          to any changes in local labor laws or tax regulations.
-                        </p>
-
-                   
+                    <span className=" tw-flex tw-items-center tw-gap-2">
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Ongoing
+                    </span>
+                    <h2>
+                      <strong>Support and Updates:</strong>
+                    </h2>
+                    <br />
+                    <p className=" tw-text-gray">
+                      Our expert team is always available for support, ensuring
+                      that your business stays compliant and adapts to any
+                      changes in local labor laws or tax regulations.
+                    </p>
 
                     <div>
                       <p className=" tw-text-gray">
@@ -913,12 +854,12 @@ const EORPayroll = () => {
                       </p>
                     </div>
                     <Link to="/register" className="tw-text-center tw-pt-4">
-                      <h2 className="tw-text-center tw-pt-4">
+                    <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                           Sign Up{" "}
                         </strong>
                         <strong> Today!</strong>
-                      </h2>
+                      </h5>
                     </Link>
                     <br />
                     <p className="tw-text-gray">

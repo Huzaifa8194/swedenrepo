@@ -12,7 +12,6 @@ import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import { useTranslation } from "react-i18next";
 import Header from "../../components/Header_New/Header";
 
-
 import fr1 from "../../assets/iconscout/fr1.png";
 import fr2 from "../../assets/iconscout/fr2.png";
 import fr3 from "../../assets/iconscout/fr3.png";
@@ -264,10 +263,10 @@ const FamilyRenuification = () => {
                       Comprehensive Guide Under Swedish National Law
                     </span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong> Family Reunification in Sweden:</strong>
                     </h2>
-                    <br/>
+                    <br />
                     <p className="tw-text-gray">
                       Sweden’s family reunification laws allow individuals
                       holding various types of residence permits—including work
@@ -281,215 +280,175 @@ const FamilyRenuification = () => {
                       type.
                     </p>
 
-                  <br/>
-                  <span className="tw-flex tw-items-center tw-gap-2">
+                    <br />
+                    <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Key Swedish laws
                     </span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong>Governing Family Reunification</strong>
                     </h2>
-                    
-                
-                  
-                    <br/>
 
-                    <strong className="m-0 tw-mb-8 tw-text-gray">
+                    <br />
+
+                    <strong className="m-0 tw-mb-8 tw-text-black">
                       2.1 Main Legislative Framework
                     </strong>
 
-                      
                     <li className=" tw-flex  tw-gap-3">
+                      <div>
+                        <GoTriangleRight className=" tw-text-blue" />
+                      </div>
+                      <p className="m-0 tw-text-gray">
+                        <>Aliens Act (Utlänningslagen):</> The main legislation
+                        governing residence permits and family reunification for
+                        all non-Swedish citizens.
+                      </p>
+                    </li>
+                    <ul className="tw-p-0 tw-pl-0">
+                      <div className="row tw-flex tw-pt-4 tw-items-center">
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-9 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full"
+                                src={fr1}
+                                alt=""
+                                style={{ maxWidth: "450px" }}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <li className=" tw-flex  tw-gap-3">
+                            <div>
+                              <GoTriangleRight className=" tw-text-blue" />
+                            </div>
+                            <p className="m-0 tw-text-gray">
+                              <>
+                                Temporary Aliens Act (Tillfälliga
+                                Utlänningslagen):
+                              </>{" "}
+                              A temporary law affecting family reunification
+                              requirements, primarily for refugees and
+                              individuals needing subsidiary protection.
+                            </p>
+                          </li>
+
+                          <li className=" tw-flex  tw-gap-3">
+                            <div>
+                              <GoTriangleRight className=" tw-text-blue" />
+                            </div>
+                            <p className="m-0 tw-text-gray">
+                              <>
+                                Swedish Nationality Act (Lag om Svenskt
+                                Medborgarskap):
+                              </>{" "}
+                              Relevant for Swedish citizens and permanent
+                              residents inviting family members.
+                            </p>
+                          </li>
+                        </div>
+                      </div>
+                      <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <>Aliens Act (Utlänningslagen):</> The
-                          main legislation governing residence permits and
-                          family reunification for all non-Swedish citizens.
-                         
-                        </p>
-                      </li>
-                    <ul className="tw-p-0 tw-pl-0">
-                    <div className="row tw-flex tw-pt-4 tw-items-center">
-                      
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={fr1}
-                              alt=""
-                              style={{ maxWidth: "450px" }}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                  
-                     
-                      <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                        <p className="m-0 tw-text-gray">
-                          <>
-                            Temporary Aliens Act (Tillfälliga Utlänningslagen):
-                          </>{" "}
-                          A temporary law affecting family reunification
-                          requirements, primarily for refugees and individuals
-                          needing subsidiary protection.
-                        </p>
-                       
-                      </li>
-                     
-                      <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                        <p className="m-0 tw-text-gray">
-                          <>
-                            Swedish Nationality Act (Lag om Svenskt
-                            Medborgarskap):
-                          </>{" "}
-                          Relevant for Swedish citizens and permanent residents
-                          inviting family members.
-                       
-                        </p>
-                      </li>
-                      
-                    
-                   
-                      </div>
-                    </div>
-                    <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                        <p className="m-0 tw-text-gray">
-                          <>
-                            Social Insurance Code (Socialförsäkringsbalken):
-                          </>{" "}
+                          <>Social Insurance Code (Socialförsäkringsbalken):</>{" "}
                           Provides guidelines on acceptable income sources for
                           the maintenance requirement.
-                         
                         </p>
                       </li>
                     </ul>
 
-                 
-
-
-
-                    
-
-
-<br/>
+                    <br />
 
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Eligibility for
                     </span>
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong> Family Reunification</strong>
                     </h2>
 
-                
-                  <br/>
-                    
-                        <strong className="m-0 tw-text-gray">
-                          Eligible Family Members
-                        </strong>
-                   
+                    <br />
+
+                    <strong className="m-0 tw-text-black">
+                      Eligible Family Members
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <>
-                            Who Can Be Sponsored for Family Reunification?
-                          </>{" "}
+                          <>Who Can Be Sponsored for Family Reunification?</>{" "}
                           Family reunification is generally available to the
                           following family members:
-                         
-
                           <ul className="tw-pl-0">
-                          <div className="row tw-flex tw-items-center">
-                    
+                            <div className="row tw-flex tw-items-center">
+                              <div className="col-md-6">
+                                <div className="row ">
+                                  <div className="col-md-9 tw-mx-auto">
+                                    <motion.img
+                                      animate={imageVariants}
+                                      className=" tw-w-full"
+                                      src={fr2}
+                                      alt=""
+                                      style={{ maxWidth: "450px" }}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
 
-                    <div className="col-md-6">
-                      <div className="row ">
-                        <div className="col-md-9 tw-mx-auto">
-                          <motion.img
-                            animate={imageVariants}
-                            className=" tw-w-full"
-                            src={fr2}
-                            alt=""
-                            style={{ maxWidth: "450px" }}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                   
-                    <div className="col-md-6"> 
-                           
-                           <li className=" tw-flex  tw-gap-3">
-                               <div>
-                                 <GoTriangleRight className=" tw-text-blue" />
-                               </div>
-                               <>Spouse or Registered Partner:</>{" "}
-                               Legally married or registered partners.
-                             </li>
-                             
-                           <li className=" tw-flex  tw-gap-3">
-                               <div>
-                                 <GoTriangleRight className=" tw-text-blue" />
-                               </div>
-                               <>Cohabiting Partner:</> Long-term,
-                               unregistered partners may qualify if the
-                               relationship is well-documented.
-                             </li>
-                           
-                           
-                            
-                                       </div>
-                  </div>
-                  <li className=" tw-flex  tw-gap-3">
-                               <div>
-                                 <GoTriangleRight className=" tw-text-blue" />
-                               </div>
-                               <>Children under 18:</> Minor children
-                               of the permit holder or their spouse/partner.
-                             </li>
-                  <li className=" tw-flex  tw-gap-3">
-                               <div>
-                                 <GoTriangleRight className=" tw-text-blue" />
-                               </div>
-                               <>
-                                 Parents (for Minor Permit Holders):
-                               </>{" "}
-                               For permit holders under 18, parents or legal
-                               guardians may be eligible.
-                             </li>
-                           </ul>
-                         
-                  
-                         
-                        
+                              <div className="col-md-6">
+                                <li className=" tw-flex  tw-gap-3">
+                                  <div>
+                                    <GoTriangleRight className=" tw-text-blue" />
+                                  </div>
+                                  <>Spouse or Registered Partner:</> Legally
+                                  married or registered partners.
+                                </li>
+
+                                <li className=" tw-flex  tw-gap-3">
+                                  <div>
+                                    <GoTriangleRight className=" tw-text-blue" />
+                                  </div>
+                                  <>Cohabiting Partner:</> Long-term,
+                                  unregistered partners may qualify if the
+                                  relationship is well-documented.
+                                </li>
+                              </div>
+                            </div>
+                            <li className=" tw-flex  tw-gap-3">
+                              <div>
+                                <GoTriangleRight className=" tw-text-blue" />
+                              </div>
+                              <>Children under 18:</> Minor children of the
+                              permit holder or their spouse/partner.
+                            </li>
+                            <li className=" tw-flex  tw-gap-3">
+                              <div>
+                                <GoTriangleRight className=" tw-text-blue" />
+                              </div>
+                              <>Parents (for Minor Permit Holders):</> For
+                              permit holders under 18, parents or legal
+                              guardians may be eligible.
+                            </li>
+                          </ul>
                         </p>
                       </li>
                     </ul>
-                    <p><br></br></p>
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Maintenance and Housing Requirements:
-                        </strong>
-                    
-                    
+                    <p>
+                      <br></br>
+                    </p>
 
-                    <ul className = "tw-pl-0">
+                    <strong className="m-0 tw-text-black">
+                      Maintenance and Housing Requirements:
+                    </strong>
+
+                    <ul className="tw-pl-0">
                       <li>
                         <p className="m-0 tw-text-gray">
                           <>3.2 </> The Maintenance Requirement
@@ -504,83 +463,73 @@ const FamilyRenuification = () => {
                       </li>
                     </ul>
 
-<br/>
-<span className="tw-flex tw-items-center tw-gap-2">
+                    <br />
+                    <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       for Family Reunification
                     </span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong> Application Process </strong>
                     </h2>
 
+                    <br />
 
+                    <strong className="m-0 tw-text-black">
+                      {" "}
+                      Step-by-Step Guide
+                    </strong>
 
-
-                    
-                    <br/>
-                  
-                        <strong className="m-0 tw-text-gray">
-                          {" "}
-                          Step-by-Step Guide
-                        </strong>
-                      
-                        <div className="row tw-flex tw-items-center">
+                    <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
-                      <ul className="tw-p-0 tw-pl-0">
-                     
-                    <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                        <p className="m-0 tw-text-gray">
-                          <>Step 1: Prepare Documentation:</> Gather
-                          all required documents, such as passports, proof of
-                          relationship (marriage or birth certificates), housing
-                          agreements, and income verification.
-                       
-                        </p>
-                      </li>
-                      
-                      <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                        <p className="m-0 tw-text-gray">
-                          <>Step 2: Submit Application:</>{" "}
-                          Applications are submitted online via the Swedish
-                          Migration Agency’s portal or at a Swedish
-                          embassy/consulate.
-                        
-                        </p>
-                      </li>
-                    
-                      <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                        <p className="m-0 tw-text-gray">
-                          <>Step 3: Migration Agency Review:</> The
-                          Swedish Migration Agency verifies that all
-                          requirements are met, assessing the applicant's
-                          income, housing, and family eligibility.
-                       
-                        </p>
-                      </li>
-                     
-                      <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                        <p className="m-0 tw-text-gray">
-                          <>Step 4: Decision and Notification:</>{" "}
-                          After assessment, the agency issues a decision. If
-                          approved, family members may receive residence permits
-                          matching the sponsor’s permit duration.
-                       
-                        </p>
-                      </li>
-                    </ul>
+                        <ul className="tw-p-0 tw-pl-0">
+                          <li className=" tw-flex  tw-gap-3">
+                            <div>
+                              <GoTriangleRight className=" tw-text-blue" />
+                            </div>
+                            <p className="m-0 tw-text-gray">
+                              <>Step 1: Prepare Documentation:</> Gather all
+                              required documents, such as passports, proof of
+                              relationship (marriage or birth certificates),
+                              housing agreements, and income verification.
+                            </p>
+                          </li>
+
+                          <li className=" tw-flex  tw-gap-3">
+                            <div>
+                              <GoTriangleRight className=" tw-text-blue" />
+                            </div>
+                            <p className="m-0 tw-text-gray">
+                              <>Step 2: Submit Application:</> Applications are
+                              submitted online via the Swedish Migration
+                              Agency’s portal or at a Swedish embassy/consulate.
+                            </p>
+                          </li>
+
+                          <li className=" tw-flex  tw-gap-3">
+                            <div>
+                              <GoTriangleRight className=" tw-text-blue" />
+                            </div>
+                            <p className="m-0 tw-text-gray">
+                              <>Step 3: Migration Agency Review:</> The Swedish
+                              Migration Agency verifies that all requirements
+                              are met, assessing the applicant's income,
+                              housing, and family eligibility.
+                            </p>
+                          </li>
+
+                          <li className=" tw-flex  tw-gap-3">
+                            <div>
+                              <GoTriangleRight className=" tw-text-blue" />
+                            </div>
+                            <p className="m-0 tw-text-gray">
+                              <>Step 4: Decision and Notification:</> After
+                              assessment, the agency issues a decision. If
+                              approved, family members may receive residence
+                              permits matching the sponsor’s permit duration.
+                            </p>
+                          </li>
+                        </ul>
                       </div>
 
                       <div className="col-md-6">
@@ -598,9 +547,8 @@ const FamilyRenuification = () => {
                       </div>
                     </div>
 
-                  
-                    <br/>
-{/* 
+                    <br />
+                    {/* 
 
                     <div className="row tw-flex tw-items-center">
                     
@@ -626,20 +574,19 @@ const FamilyRenuification = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       for Family Reunification Cases
                     </span>
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong>Specific Legal Provisions </strong>
                     </h2>
-                   
-                    <br/>
-                    
+
+                    <br />
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Aliens Act (Utlänningslagen):</strong><br/> The
-                          Aliens Act serves as the primary legal framework for
-                          family reunification, covering income, housing, and
-                          relationship verification.
+                          <strong className="tw-text-black">Aliens Act (Utlänningslagen):</strong>
+                          <br /> The Aliens Act serves as the primary legal
+                          framework for family reunification, covering income,
+                          housing, and relationship verification.
                           <p>
                             <br />
                           </p>
@@ -648,9 +595,10 @@ const FamilyRenuification = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>
+                          <strong className="tw-text-black">
                             Temporary Aliens Act (Tillfälliga Utlänningslagen):
-                          </strong>{" "}<br/>
+                          </strong>{" "}
+                          <br />
                           Applies stricter maintenance requirements for
                           refugees, emphasizing financial independence for
                           sponsors beyond the three-month application period.
@@ -661,26 +609,26 @@ const FamilyRenuification = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>
+                          <strong className="tw-text-black">
                             Social Insurance Code (Socialförsäkringsbalken):
-                          </strong>{" "}<br/>
+                          </strong>{" "}
+                          <br />
                           Defines acceptable sources of income, especially
                           relevant for sponsors relying on benefits.
-                         
                         </p>
                       </li>
                     </ul>
                   </div>
                   <div>
-                    <br/>
+                    <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Specific Legal Provisions for Family Reunification Cases
                     </span>
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong>Aliens Act (Utlänningslagen)</strong>
                     </h2>
-                    <br/>
+                    <br />
 
                     <p className="tw-text-gray">
                       The Aliens Act serves as the primary legal framework for
@@ -688,11 +636,9 @@ const FamilyRenuification = () => {
                       relationship verification.
                     </p>
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Maintenance and Housing Standards
-                        </strong>
-                    
+                    <strong className="m-0 tw-text-black">
+                      Maintenance and Housing Standards
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -703,10 +649,9 @@ const FamilyRenuification = () => {
                       </li>
                     </ul>
 
-                  
-                  
-                        <strong className="m-0 tw-text-gray">Refugee Exemptions</strong>
-                    
+                    <strong className="m-0 tw-text-black">
+                      Refugee Exemptions
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -717,17 +662,16 @@ const FamilyRenuification = () => {
                       </li>
                     </ul>
 
-
-<br/>
+                    <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Tillfälliga Utlänningslagen
                     </span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong>Temporary Aliens Act </strong>
                     </h2>
-                    <br/>
+                    <br />
 
                     <p className="tw-text-gray">
                       The Temporary Aliens Act applies stricter maintenance
@@ -736,11 +680,9 @@ const FamilyRenuification = () => {
                       application period.
                     </p>
 
-                   
-                        <strong className="m-0 tw-text-gray">
-                          Relationship and Timing Criteria
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-black">
+                      Relationship and Timing Criteria
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -751,16 +693,16 @@ const FamilyRenuification = () => {
                       </li>
                     </ul>
 
-<br/>
+                    <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Socialförsäkringsbalken
                     </span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong>Social Insurance Code</strong>
                     </h2>
-                    <br/>
+                    <br />
 
                     <p className="tw-text-gray">
                       The Social Insurance Code defines acceptable sources of
@@ -768,11 +710,9 @@ const FamilyRenuification = () => {
                       benefits.
                     </p>
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Unemployment and Social Benefits
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-black">
+                      Unemployment and Social Benefits
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -784,92 +724,77 @@ const FamilyRenuification = () => {
                       </li>
                     </ul>
 
-<br/>
+                    <br />
 
-<span className="tw-flex tw-items-center tw-gap-2">
+                    <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Our
                     </span>
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong> Services Include:</strong>
                     </h2>
-                    <br/>
-                      </div>
+                    <br />
+                  </div>
 
+                  <strong className="m-0 tw-text-black">
+                    Eligibility Assessment
+                  </strong>
 
-                  
+                  <ul className="tw-p-0 tw-pl-0">
+                    <li className="tw-flex tw-items-center tw-gap-3">
+                      <p className="m-0 tw-text-gray">
+                        We assess your specific permit type, income, housing,
+                        and family eligibility to determine the best approach.
+                      </p>
+                    </li>
+                  </ul>
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Eligibility Assessment
-                        </strong>
-                    
-
-                    <ul className="tw-p-0 tw-pl-0">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          We assess your specific permit type, income, housing,
-                          and family eligibility to determine the best approach.
-                        </p>
-                      </li>
-                    </ul>
-
-                   
-
-                    <div className="row tw-flex tw-items-center">
-                     
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={fr5}
-                              alt=""
-                              style={{ maxWidth: "450px" }}
-                            />
-                          </div>
+                  <div className="row tw-flex tw-items-center">
+                    <div className="col-md-6">
+                      <div className="row ">
+                        <div className="col-md-9 tw-mx-auto">
+                          <motion.img
+                            animate={imageVariants}
+                            className=" tw-w-full"
+                            src={fr5}
+                            alt=""
+                            style={{ maxWidth: "450px" }}
+                          />
                         </div>
                       </div>
-                      <div className="col-md-6">
-                      <strong className="m-0 tw-text-gray">
-                          Document Preparation
-                        </strong>
-                   
+                    </div>
+                    <div className="col-md-6">
+                      <strong className="m-0 tw-text-black">
+                        Document Preparation
+                      </strong>
 
-                    <ul className="tw-p-0 tw-pl-0">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Assistance in gathering all necessary documents,
-                          translating foreign documents if needed, and ensuring
-                          all information is complete and accurate.
-                        </p>
-                      </li>
-                    </ul>
+                      <ul className="tw-p-0 tw-pl-0">
+                        <li className="tw-flex tw-items-center tw-gap-3">
+                          <p className="m-0 tw-text-gray">
+                            Assistance in gathering all necessary documents,
+                            translating foreign documents if needed, and
+                            ensuring all information is complete and accurate.
+                          </p>
+                        </li>
+                      </ul>
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Application Submission and Monitoring
-                        </strong>
-                    
+                      <strong className="m-0 tw-text-black">
+                        Application Submission and Monitoring
+                      </strong>
 
-                    <ul className="tw-p-0 tw-pl-0">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Submitting your application on your behalf and
-                          following up with the Swedish Migration Agency.
-                        </p>
-                      </li>
-                    </ul>
+                      <ul className="tw-p-0 tw-pl-0">
+                        <li className="tw-flex tw-items-center tw-gap-3">
+                          <p className="m-0 tw-text-gray">
+                            Submitting your application on your behalf and
+                            following up with the Swedish Migration Agency.
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
 
-                      </div>
-                    
-
-
-                        
-                 
-                        <strong className="m-0 tw-text-gray">Appeals Support</strong>
-                      
+                    <strong className="m-0 tw-text-black">
+                      Appeals Support
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -881,22 +806,20 @@ const FamilyRenuification = () => {
                       </li>
                     </ul>
 
-<br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Why
-  </span>
-  <h2 className = "tw-text-left">
-    <strong>  Choose Sweden Relocators?</strong>
-  </h2>
-  <br/>
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Why
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong> Choose Sweden Relocators?</strong>
+                    </h2>
+                    <br />
 
-                   
-
-                    
-                        <strong className="m-0 tw-text-gray">Expert Knowledge</strong>
-                    
+                    <strong className="m-0 tw-text-black">
+                      Expert Knowledge
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -907,11 +830,9 @@ const FamilyRenuification = () => {
                       </li>
                     </ul>
 
-                 
-                        <strong className="m-0 tw-text-gray">
-                          Personalized Support
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-black">
+                      Personalized Support
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -922,11 +843,10 @@ const FamilyRenuification = () => {
                       </li>
                     </ul>
 
-                    
-                        <strong className="m-0 tw-text-gray">
-                          Efficient Processing
-                        </strong>
-                    
+                    <strong className="m-0 tw-text-black">
+                      Efficient Processing
+                    </strong>
+
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
@@ -937,10 +857,9 @@ const FamilyRenuification = () => {
                       </li>
                     </ul>
 
-<br/>
+                    <br />
 
-
-<div className="row tw-flex tw-items-center">
+                    <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
                         <div className="row ">
                           <div className="col-md-12 tw-mx-auto">
@@ -955,43 +874,51 @@ const FamilyRenuification = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                      <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Contact Sweden Relocators
-                    </span>
-                    <h2 className = "tw-text-left">
-                      <strong>Get in Touch Today</strong>
-                    </h2>
-                    <br/>
+                        <span className="tw-flex tw-items-center tw-gap-2">
+                          <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                          Contact Sweden Relocators
+                        </span>
+                        <h2 className="tw-text-left">
+                          <strong>Get in Touch Today</strong>
+                        </h2>
+                        <br />
 
-                    <p className="tw-text-gray">
-                      If you are ready to bring your family to Sweden and need
-                      guidance to navigate Swedish family reunification laws,
-                      Sweden Relocators is here to help. Contact us today for
-                      expert support, and let us guide you through the family
-                      reunification process in Sweden, ensuring all legal
-                      requirements are met for a successful application.
-                    </p>
-                    <Link to = '/register' className="tw-text-center tw-pt-4">
-                    <h2 className = "tw-text-center tw-pt-4">
-                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
-                    </h2>
-                    </Link>
-                    <br/>
-                    <p className="tw-text-gray">
-                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
-                    </p>
+                        <p className="tw-text-gray">
+                          If you are ready to bring your family to Sweden and
+                          need guidance to navigate Swedish family reunification
+                          laws, Sweden Relocators is here to help. Contact us
+                          today for expert support, and let us guide you through
+                          the family reunification process in Sweden, ensuring
+                          all legal requirements are met for a successful
+                          application.
+                        </p>
+                        <Link to="/register" className="tw-text-center tw-pt-4">
+                          <h2 className="tw-text-center tw-pt-4">
+                            <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
+                              Sign Up{" "}
+                            </strong>
+                            <strong> Today!</strong>
+                          </h2>
+                        </Link>
+                        <br />
+                        <p className="tw-text-gray">
+                          Sign up today and simplify your journey! Whether
+                          you're seeking assistance with relocation, permits,
+                          visas, legal processes, or settling into a new life,
+                          we're here to help. Our comprehensive services cover
+                          everything from work and study opportunities to family
+                          reunifications, business support, and much more. Let
+                          us guide you every step of the way—start your seamless
+                          experience now!
+                        </p>
                       </div>
                     </div>
-
-                   
                   </div>
                 </div>
               </div>
 
               <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-              <div className="   md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
-
+                <div className="   md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
                   <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
                     {data?.map((item, index) => {
                       return (

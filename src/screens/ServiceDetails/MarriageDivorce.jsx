@@ -11,8 +11,6 @@ import { motion } from "framer-motion";
 import Header from "../../components/Header_New/Header";
 import { useTranslation } from "react-i18next";
 
-
-
 import md1 from "../../assets/iconscout/md1.png";
 import md2 from "../../assets/iconscout/md2.png";
 import md3 from "../../assets/iconscout/md3.png";
@@ -263,13 +261,10 @@ const MarriageDivorce = () => {
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Requirements and Process
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong>
-                        {" "}
-                        Getting Married in Sweden{" "}
-                      </strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black"> Getting Married in Sweden </strong>
                     </h2>
-                    <br/>
+                    <br />
                     <p className="tw-text-gray">
                       Marriage in Sweden is an attractive option for both
                       residents and non-residents, thanks to the country’s
@@ -280,71 +275,65 @@ const MarriageDivorce = () => {
                       Sweden as seamless as possible.
                     </p>
 
-<br/>
-
-
+                    <br />
 
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Key Requirements 
-  </span>
-  <h2 className = "tw-text-left">
-    <strong> For Marriage in Sweden</strong>
-  </h2>
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Key Requirements
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black"> For Marriage in Sweden</strong>
+                    </h2>
 
-  <br/>
+                    <br />
 
-                   
                     <ul className="tw-p-0 ">
+                      <div className="row tw-flex tw-items-center">
+                        <div className="col-md-6">
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <p className="m-0 tw-text-gray">
+                              <strong className="tw-text-black">
+                                Application for Marriage License
+                                (Hindersprövning):
+                              </strong>{" "}
+                              Hindersprövning is a mandatory examination process
+                              conducted by the Swedish Tax Agency (Skatteverket)
+                              to ensure there are no legal obstacles to the
+                              marriage. Couples must submit this application,
+                              which verifies that both parties are legally
+                              eligible to marry. Swedish law prohibits marriage
+                              between close relatives or anyone already married.
+                              Once approved, Skatteverket issues a certificate
+                              that confirms you are free to marry. This
+                              certificate is valid for four months from the date
+                              of issuance and must be submitted to the officiant
+                              before the ceremony.
+                              <p>
+                                <br />
+                              </p>
+                            </p>
+                          </li>
+                        </div>
 
-
-                    <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-          
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          <strong>
-                            Application for Marriage License (Hindersprövning):
-                          </strong>{" "}
-                          Hindersprövning is a mandatory examination process
-                          conducted by the Swedish Tax Agency (Skatteverket) to
-                          ensure there are no legal obstacles to the marriage.
-                          Couples must submit this application, which verifies
-                          that both parties are legally eligible to marry.
-                          Swedish law prohibits marriage between close relatives
-                          or anyone already married. Once approved, Skatteverket
-                          issues a certificate that confirms you are free to
-                          marry. This certificate is valid for four months from
-                          the date of issuance and must be submitted to the
-                          officiant before the ceremony.
-                          <p>
-                            <br />
-                          </p>
-                        </p>
-                      </li>
-                      </div>
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={md1}
-                              alt=""
-                              style={{ maxWidth: "450px" }}
-                            />
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-9 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full"
+                                src={md1}
+                                alt=""
+                                style={{ maxWidth: "450px" }}
+                              />
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
 
-
-                     
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Identification Requirements:</strong> Both
+                          <strong className="tw-text-black">Identification Requirements:</strong> Both
                           parties must provide a valid form of identification,
                           such as a passport or national ID card. Foreign
                           nationals should be prepared to show additional proof
@@ -360,7 +349,7 @@ const MarriageDivorce = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Proof of Civil Status:</strong> If you or your
+                          <strong className="tw-text-black">Proof of Civil Status:</strong> If you or your
                           partner have been married before, you’ll need to
                           provide proof of divorce or a death certificate of a
                           deceased spouse. These documents may need to be
@@ -375,37 +364,33 @@ const MarriageDivorce = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Special Permissions:</strong> If either
+                          <strong className="tw-text-black">Special Permissions:</strong> If either
                           partner is under 18, Swedish law requires a special
                           permission, which is rarely granted. Sweden Relocators
                           can advise on any exceptional cases requiring
                           permission and assist in navigating the legal
                           requirements.
                         </p>
-                       
                       </li>
                     </ul>
 
-
-<br/>
-
+                    <br />
 
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Step-by-Step Guide
-  </span>
-  <h2 className = "tw-text-left">
-    <strong>The Marriage Process </strong>
-  </h2>
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Step-by-Step Guide
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">The Marriage Process </strong>
+                    </h2>
 
-                   
-  <br/>
+                    <br />
 
                     <ul className="tw-p-0 ">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>
+                          <strong className="tw-text-black">
                             Step 1: Apply for Hindersprövning (Marriage
                             License):
                           </strong>{" "}
@@ -421,7 +406,7 @@ const MarriageDivorce = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>
+                          <strong className="tw-text-black">
                             Step 2: Choose Your Marriage Ceremony Type:
                           </strong>{" "}
                           In Sweden, you can choose between a civil ceremony and
@@ -434,7 +419,7 @@ const MarriageDivorce = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>
+                          <strong className="tw-text-black">
                             Step 3: Submit Documents to the Officiant:
                           </strong>{" "}
                           You must submit your Hindersprövning certificate and
@@ -449,7 +434,7 @@ const MarriageDivorce = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Step 4: Marriage Ceremony:</strong> On the day
+                          <strong className="tw-text-black">Step 4: Marriage Ceremony:</strong> On the day
                           of the ceremony, you’ll need two witnesses who are at
                           least 18 years old. If you’re traveling from abroad,
                           we can assist in arranging witnesses if needed. The
@@ -462,55 +447,50 @@ const MarriageDivorce = () => {
                         </p>
                       </li>
 
-
                       <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
-                     <li>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Step 5: Registration of Marriage:</strong>{" "}
-                          Once the marriage ceremony is completed, it must be
-                          registered with Skatteverket to be legally recognized
-                          in Sweden. Our team ensures that all paperwork is
-                          promptly filed so that your marriage is officially
-                          registered without delay. If you or your partner are
-                          foreign nationals, we’ll also advise on any additional
-                          steps required to register your marriage in your home
-                          country.
-                        </p>
-                       
-                      </li>
-                     </div>
+                        <div className="col-md-6">
+                          <li>
+                            <p className="m-0 tw-text-gray">
+                              <strong className="tw-text-black">Step 5: Registration of Marriage:</strong>{" "}
+                              Once the marriage ceremony is completed, it must
+                              be registered with Skatteverket to be legally
+                              recognized in Sweden. Our team ensures that all
+                              paperwork is promptly filed so that your marriage
+                              is officially registered without delay. If you or
+                              your partner are foreign nationals, we’ll also
+                              advise on any additional steps required to
+                              register your marriage in your home country.
+                            </p>
+                          </li>
+                        </div>
 
-                     <div className="col-md-6">
-                       <div className="row ">
-                         <div className="col-md-9 tw-mx-auto">
-                           <motion.img
-                             animate={imageVariants}
-                             className=" tw-w-full"
-                             src={md2}
-                             alt=""
-                             style={{ maxWidth: "450px" }}
-                           />
-                         </div>
-                       </div>
-                     </div>
-                     
-                   </div>
-
-                     
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-9 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full"
+                                src={md2}
+                                alt=""
+                                style={{ maxWidth: "450px" }}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </ul>
                   </div>
                   <div>
-                    <br/>
+                    <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Additional Services and Legal Support for Marriage in
                       Sweden
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong> Prenuptial Agreements </strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black"> Prenuptial Agreements </strong>
                     </h2>
-                    <br/>
+                    <br />
                     <p className="tw-text-gray">
                       Sweden operates under a marital property regime where all
                       assets acquired during the marriage are typically
@@ -521,7 +501,7 @@ const MarriageDivorce = () => {
                     <ul className="tw-p-0 ">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Drafting and Legal Advice:</strong> Our
+                          <strong className="tw-text-black">Drafting and Legal Advice:</strong> Our
                           lawyers can assist in drafting a prenuptial agreement
                           that meets Swedish legal standards and protects both
                           parties' assets and financial interests.
@@ -532,40 +512,36 @@ const MarriageDivorce = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>
+                          <strong className="tw-text-black">
                             Property Rights and Financial Planning:
                           </strong>{" "}
                           We provide guidance on asset division, ensuring that
                           each party’s rights are upheld in case of separation.
                         </p>
-                        
                       </li>
                     </ul>
 
-<br/>
+                    <br />
 
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Translation and
-  </span>
-  <h2 className = "tw-text-left">
-    <strong> Verification of Foreign Documents </strong>
-  </h2>
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Translation and
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black"> Verification of Foreign Documents </strong>
+                    </h2>
 
-
-                   
-  <br/>
-  <div className="row tw-flex tw-items-center">
+                    <br />
+                    <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
-                      
-                      <p className="tw-text-gray">
-                      If either partner is a foreign national, it’s likely that
-                      certain documents will need to be translated into Swedish
-                      or English. Sweden Relocators facilitates the translation
-                      and notarization of all foreign documents, ensuring they
-                      meet Swedish legal requirements.
-                    </p>
+                        <p className="tw-text-gray">
+                          If either partner is a foreign national, it’s likely
+                          that certain documents will need to be translated into
+                          Swedish or English. Sweden Relocators facilitates the
+                          translation and notarization of all foreign documents,
+                          ensuring they meet Swedish legal requirements.
+                        </p>
                       </div>
 
                       <div className="col-md-6">
@@ -583,11 +559,10 @@ const MarriageDivorce = () => {
                       </div>
                     </div>
 
-                  
                     <ul className="tw-p-0 ">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Certified Translations:</strong> We work with
+                          <strong className="tw-text-black">Certified Translations:</strong> We work with
                           certified translators to provide official translations
                           accepted by Swedish authorities.
                           <p>
@@ -597,30 +572,25 @@ const MarriageDivorce = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Document Verification:</strong> Our legal team
+                          <strong className="tw-text-black">Document Verification:</strong> Our legal team
                           reviews all documentation for accuracy, ensuring that
                           the marriage process proceeds smoothly.
                         </p>
-                        
                       </li>
                     </ul>
 
-<br/>
-
-
-
+                    <br />
 
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Post-Marriage
-  </span>
-  <h2 className = "tw-text-left">
-    <strong>Support </strong>
-  </h2>
-                  
-  <br/>
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Post-Marriage
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">Support </strong>
+                    </h2>
 
+                    <br />
 
                     <p className="tw-text-gray">
                       For foreign nationals, additional steps may be required
@@ -628,10 +598,7 @@ const MarriageDivorce = () => {
                       provide post-marriage services such as:
                     </p>
 
-
                     <div className="row tw-flex tw-items-center">
-                     
-
                       <div className="col-md-6">
                         <div className="row ">
                           <div className="col-md-9 tw-mx-auto">
@@ -646,62 +613,55 @@ const MarriageDivorce = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                    
-                      <ul className="tw-p-0 ">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          <strong>Residence Permit Guidance:</strong> For non-EU
-                          spouses, we assist with residence permit applications
-                          and help you understand your rights and obligations
-                          under Swedish immigration laws.
-                         
-                        </p>
-                      </li>
-                      <li>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Registration of Marriage Abroad:</strong> If
-                          required, we can assist in registering your marriage
-                          in your home country, ensuring legal recognition both
-                          in Sweden and abroad.
-                        </p>
-                      
-                      </li>
-                    </ul>
+                        <ul className="tw-p-0 ">
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <p className="m-0 tw-text-gray">
+                              <strong className="tw-text-black">Residence Permit Guidance:</strong> For
+                              non-EU spouses, we assist with residence permit
+                              applications and help you understand your rights
+                              and obligations under Swedish immigration laws.
+                            </p>
+                          </li>
+                          <li>
+                            <p className="m-0 tw-text-gray">
+                              <strong className="tw-text-black">Registration of Marriage Abroad:</strong>{" "}
+                              If required, we can assist in registering your
+                              marriage in your home country, ensuring legal
+                              recognition both in Sweden and abroad.
+                            </p>
+                          </li>
+                        </ul>
                       </div>
                     </div>
 
-
-<br/>
-
-
+                    <br />
 
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Divorce Assistance in Sweden
-  </span>
-  <h2 className = "tw-text-left">
-    <strong>Expert Legal Support for a
-    Smooth Transition </strong>
-  </h2>
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Divorce Assistance in Sweden
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        Expert Legal Support for a Smooth Transition{" "}
+                      </strong>
+                    </h2>
 
+                    <br />
 
-                    
-  <br/>
-                  
-  <div className="row tw-flex tw-items-center">
+                    <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
-                      <p className="tw-text-gray">
-                      While planning a marriage is an exciting milestone,
-                      circumstances can sometimes change. If you are facing a
-                      separation or divorce in Sweden, our experienced family
-                      lawyers at Sweden Relocators offer sensitive and
-                      professional assistance to guide you through this process.
-                      Divorce in Sweden is straightforward and operates under a
-                      no-fault principle, but there are still specific legal
-                      requirements, especially if children or shared assets are
-                      involved.
-                    </p>
+                        <p className="tw-text-gray">
+                          While planning a marriage is an exciting milestone,
+                          circumstances can sometimes change. If you are facing
+                          a separation or divorce in Sweden, our experienced
+                          family lawyers at Sweden Relocators offer sensitive
+                          and professional assistance to guide you through this
+                          process. Divorce in Sweden is straightforward and
+                          operates under a no-fault principle, but there are
+                          still specific legal requirements, especially if
+                          children or shared assets are involved.
+                        </p>
                       </div>
 
                       <div className="col-md-6">
@@ -718,11 +678,11 @@ const MarriageDivorce = () => {
                         </div>
                       </div>
                     </div>
-                   
+
                     <ul className="tw-p-0 ">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Filing for Divorce:</strong> Guidance through
+                          <strong className="tw-text-black">Filing for Divorce:</strong> Guidance through
                           the application process for mutual or single-party
                           divorce, including support with required documents.
                           <p>
@@ -732,7 +692,7 @@ const MarriageDivorce = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Division of Assets:</strong> Assistance with
+                          <strong className="tw-text-black">Division of Assets:</strong> Assistance with
                           fair division of marital assets, taking into account
                           any prenuptial agreements or shared property.
                         </p>
@@ -742,7 +702,7 @@ const MarriageDivorce = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>
+                          <strong className="tw-text-black">
                             Child Custody and Support Arrangements:
                           </strong>{" "}
                           Support in establishing child custody and child
@@ -755,7 +715,7 @@ const MarriageDivorce = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Spousal Support and Maintenance:</strong>{" "}
+                          <strong className="tw-text-black">Spousal Support and Maintenance:</strong>{" "}
                           Guidance on determining whether spousal support is
                           necessary, and assistance with negotiations.
                         </p>
@@ -765,23 +725,23 @@ const MarriageDivorce = () => {
                       </li>
                     </ul>
 
-<br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Why Choose Sweden Relocators
-  </span>
-  <h2 className = "tw-text-left">
-    <strong>For Marriage and Divorce
-    Assistance in Sweden?</strong>
-  </h2>
-  <br/>
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Why Choose Sweden Relocators
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        For Marriage and Divorce Assistance in Sweden?
+                      </strong>
+                    </h2>
+                    <br />
 
-                 
                     <ul className="tw-p-0 ">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong>Experienced Family Lawyers:</strong> Our team
+                          <strong className="tw-text-black">Experienced Family Lawyers:</strong> Our team
                           includes skilled family law specialists who understand
                           the specific nuances of marriage and divorce law in
                           Sweden.
@@ -792,7 +752,7 @@ const MarriageDivorce = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Personalized Support:</strong> We know every
+                          <strong className="tw-text-black">Personalized Support:</strong> We know every
                           situation is unique. We offer tailored solutions to
                           meet your individual needs, whether planning a
                           marriage or undergoing a divorce.
@@ -803,7 +763,7 @@ const MarriageDivorce = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Clear and Transparent Process:</strong> We
+                          <strong className="tw-text-black">Clear and Transparent Process:</strong> We
                           provide full transparency regarding legal procedures,
                           timelines, and costs so that you are fully informed.
                         </p>
@@ -813,7 +773,7 @@ const MarriageDivorce = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Efficient Document Handling:</strong> From
+                          <strong className="tw-text-black">Efficient Document Handling:</strong> From
                           gathering required documents to filing applications,
                           our team ensures that every detail is handled with
                           precision, saving you time and reducing stress.
@@ -824,23 +784,31 @@ const MarriageDivorce = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Confidentiality and Sensitivity:</strong> We
+                          <strong className="tw-text-black">Confidentiality and Sensitivity:</strong> We
                           prioritize confidentiality and provide a compassionate
                           approach to help you through sensitive transitions.
                         </p>
-                       
                       </li>
                     </ul>
-                    <br/>
+                    <br />
 
-                    <Link to = '/register' className="tw-text-center">
-                    <h2 className = "tw-text-center">
-                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
-                    </h2>
+                    <Link to="/register" className="tw-text-center">
+                    <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
+                        <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
+                          Sign Up{" "}
+                        </strong>
+                        <strong className="tw-text-black"> Today!</strong>
+                      </h5>
                     </Link>
-                    <br/>
+                    <br />
                     <p className="tw-text-gray">
-                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
+                      Sign up today and simplify your journey! Whether you're
+                      seeking assistance with relocation, permits, visas, legal
+                      processes, or settling into a new life, we're here to
+                      help. Our comprehensive services cover everything from
+                      work and study opportunities to family reunifications,
+                      business support, and much more. Let us guide you every
+                      step of the way—start your seamless experience now!
                     </p>
                   </div>
                 </div>

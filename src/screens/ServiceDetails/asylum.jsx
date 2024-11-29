@@ -389,7 +389,7 @@ const ServiceDetails = () => {
                         In your appeal letter, you should clearly state:
                       </p>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Decision to be Appealed:
                       </strong>
 
@@ -423,7 +423,7 @@ const ServiceDetails = () => {
                           </div>
                         </div>
                         <div className="col-md-6">
-                          <strong className="tw-text-gray">
+                          <strong className="tw-text-black">
                             Requested Change:
                           </strong>
 
@@ -436,7 +436,7 @@ const ServiceDetails = () => {
                             </li>
                           </ul>
 
-                          <strong className="tw-text-gray">
+                          <strong className="tw-text-black">
                             Personal Information:
                           </strong>
 
@@ -449,7 +449,7 @@ const ServiceDetails = () => {
                             </li>
                           </ul>
 
-                          <strong className="tw-text-gray">
+                          <strong className="tw-text-black">
                             New Evidence or Arguments:
                           </strong>
 
@@ -528,7 +528,7 @@ const ServiceDetails = () => {
                         overlooked any key information.
                       </p>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Timely Submission:
                       </strong>
 
@@ -542,7 +542,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">Reconsideration:</strong>
+                      <strong className="tw-text-black">Reconsideration:</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -567,7 +567,7 @@ const ServiceDetails = () => {
                       </h2>
                       <br></br>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Positive Outcome:
                       </strong>
 
@@ -581,7 +581,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Forwarding the Appeal:
                       </strong>
 
@@ -650,7 +650,7 @@ const ServiceDetails = () => {
                         fair ruling.
                       </p>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Decision Notification:
                       </strong>
 
@@ -664,7 +664,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Potential for Further Appeals:
                       </strong>
 
@@ -697,7 +697,7 @@ const ServiceDetails = () => {
                         The duration of the appeal process varies:
                       </p>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Initial Review by Migrationsverket:
                       </strong>
 
@@ -710,7 +710,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Forwarding to the Administrative Court:
                       </strong>
 
@@ -724,7 +724,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Court Decision Timeline:
                       </strong>
 
@@ -751,7 +751,7 @@ const ServiceDetails = () => {
                       </h2>
                       <br></br>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Case Analysis and Consultation
                       </strong>
 
@@ -767,7 +767,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Document Preparation and Gathering Evidence
                       </strong>
 
@@ -799,7 +799,7 @@ const ServiceDetails = () => {
                           </div>
                         </div>
                         <div className="col-md-6">
-                          <strong className="tw-text-gray">
+                          <strong className="tw-text-black">
                             Representation and Follow-Up
                           </strong>
 
@@ -823,7 +823,7 @@ const ServiceDetails = () => {
                             </li>
                           </ul>
 
-                          <strong className="tw-text-gray">
+                          <strong className="tw-text-black">
                             Legal Support for Further Appeals
                           </strong>
 
@@ -842,7 +842,7 @@ const ServiceDetails = () => {
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-gray">
+                            <strong className="tw-text-black">
                               Our Services with Swedish Authorities
                             </strong>
 
@@ -879,7 +879,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Personnummer Applications:
                       </strong>
 
@@ -893,7 +893,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Tax Residency and Income Tax Disputes:
                       </strong>
 
@@ -907,7 +907,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Property Tax and Business Tax Matters:
                       </strong>
 
@@ -944,7 +944,7 @@ const ServiceDetails = () => {
                       </ul>
 
                       <div>
-                        <strong className="tw-text-gray">
+                        <strong className="tw-text-black">
                           Parental Leave and Child Benefits:
                         </strong>
                       </div>
@@ -959,7 +959,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Sickness and Disability Benefits:
                       </strong>
 
@@ -972,7 +972,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Pension Eligibility:
                       </strong>
 
@@ -1010,7 +1010,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Activity Requirements:
                       </strong>
 
@@ -1023,7 +1023,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Appeals for Unemployment Support:
                       </strong>
 
@@ -1037,7 +1037,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Job Search Assistance:
                       </strong>
 
@@ -1069,7 +1069,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Customs Disputes:
                       </strong>
 
@@ -1083,7 +1083,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Personal Belongings and Vehicles:
                       </strong>
 
@@ -1097,7 +1097,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Business Import/Export Compliance:
                       </strong>
                       <ul className=" tw-p-0 ">
@@ -1127,7 +1127,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Eligibility Disputes:
                       </strong>
                       <ul className=" tw-p-0 ">
@@ -1140,7 +1140,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Income-Related Benefit Appeals:
                       </strong>
                       <ul className=" tw-p-0 ">
@@ -1165,7 +1165,7 @@ const ServiceDetails = () => {
                       </h2>
                       <br></br>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Contract Review and Explanation
                       </strong>
 
@@ -1183,7 +1183,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Negotiation Support
                       </strong>
 
@@ -1201,7 +1201,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Drafting and Customizing Contracts
                       </strong>
 
@@ -1218,7 +1218,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Dispute Resolution and Mediation
                       </strong>
 
@@ -1249,7 +1249,7 @@ const ServiceDetails = () => {
                       </h2>
                       <br></br>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Experience with Swedish Immigration Law:
                       </strong>
 
@@ -1264,7 +1264,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Comprehensive Case Management:
                       </strong>
 
@@ -1278,7 +1278,7 @@ const ServiceDetails = () => {
                         </li>
                       </ul>
 
-                      <strong className="tw-text-gray">
+                      <strong className="tw-text-black">
                         Personalized Approach:
                       </strong>
 
@@ -1317,12 +1317,12 @@ const ServiceDetails = () => {
                         turn the decision around.
                       </p>
                       <Link to="/register" className="tw-text-center tw-pt-4">
-                        <h2 className="tw-text-center tw-pt-4">
+                      <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
                           <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                             Sign Up{" "}
                           </strong>
                           <strong> Today!</strong>
-                        </h2>
+                        </h5>
                       </Link>
                       <br />
                       <p className="tw-text-gray">

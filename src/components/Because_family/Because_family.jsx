@@ -31,7 +31,7 @@ const Because_family = () => {
     {
       id: 'service1',
       title: t('EU RESIDENCE CARD'),
-      subtitle: t('Family <br/><strong>Reunification</strong>'),
+      subtitle: t('Family <strong>Reunification</strong>'),
       text: t(''),
       textTwo: t(''),
       description: [
@@ -47,7 +47,7 @@ const Because_family = () => {
     {
       id: 'service2',
       title: t('SOFTWARE BASE SOLUTION'),
-      subtitle: t('Apply Online <br/><strong>Now</strong>'),
+      subtitle: t('Apply Online <strong>Now</strong>'),
       text: t(''),
       textTwo: t(''),
       description: [
@@ -63,7 +63,7 @@ const Because_family = () => {
     {
       id: 'service3',
       title: t('COMPLETE ONLINE PORTAL & APP BASE SOLUTION'),
-      subtitle: t('Relocating To') +  '<strong><br/>' + t('Sweden?') + '</strong>',
+      subtitle: t('Relocating To') +  '<strong>' + t('Sweden?') + '</strong>',
       text: t(''),
       textTwo: t(''),
       description: [
@@ -79,7 +79,7 @@ const Because_family = () => {
     {
       id: 'service4',
       title: t('STEP-BY-STEP ASSISTANCE'),
-      subtitle: t('Departure-Arrival') +  '<strong>' + '<br/> '+ t('Services') + '</strong>',
+      subtitle: t('Departure-Arrival') +  '<strong>' + ' '+ t('Services') + '</strong>',
       text: t(''),
       textTwo: t(''),
       description: [
@@ -98,7 +98,7 @@ const Because_family = () => {
     {
       id: 'service5',
       title: t('WORK PERMIT & EXTENSIONS'),
-      subtitle: t('Applying For') + '<strong><br/>' + t('Work Permit?') + '</strong>',
+      subtitle: t('Applying For') + '<strong>' + t('Work Permit?') + '</strong>',
       text: t('We will help you with preparing permit applications'),
       textTwo: t(''),
       description: [
@@ -112,7 +112,7 @@ const Because_family = () => {
     {
       id: 'service6',
       title: t('BUSINESS & INVESTMENT SOLUTIONS'),
-      subtitle: t('Business') +'<strong> <br/>' + t('In Sweden') + '</strong>',
+      subtitle: t('Business') +'<strong> ' + t('In Sweden') + '</strong>',
       text: t('If you are planning to invest in Sweden, you might need to apply for the residence permit'),
       textTwo: t(''),
       description: [
@@ -237,7 +237,7 @@ const Because_family = () => {
                                 initial="hidden"
                                 whileInView="show"
                                 viewport={{ once: true, amount: 0.25 }}
-                                className={isSpecialText ? 'tw-text-gray-dark tw-m-0 tw-pt-0 tw-font-semibold tw-text-lg tw-mb-2' : 'tw-text-gray tw-mb-2'}
+                                className={isSpecialText ? 'tw-text-gray-dark tw-m-0 tw-pt-0 tw-font-semibold tw-text-lg tw-mb-2' : 'tw-text-gray tw-text-justify  tw-mb-2'}
                                 key={i}
                               >
                                 <motion.p variants={fadeIn('up', 'tween', 0.2, 1)} dangerouslySetInnerHTML={{ __html: desc }}></motion.p>
@@ -277,7 +277,7 @@ const Because_family = () => {
                                 initial="hidden"
                                 whileInView="show"
                                 viewport={{ once: true, amount: 0.25 }}
-                                className={isSpecialText ? 'tw-text-gray-dark tw-m-0 tw-pt-0 tw-font-semibold tw-text-lg tw-mb-2' : 'tw-text-gray tw-mb-2'}
+                                className={isSpecialText ? 'tw-text-gray-dark tw-m-0 tw-pt-0 tw-font-semibold tw-text-lg tw-mb-2' : 'tw-text-gray tw-text-justify  tw-mb-2'}
                                 key={i}
                               >
                                 <motion.p variants={fadeIn('up', 'tween', 0.2, 1)} dangerouslySetInnerHTML={{ __html: desc }}></motion.p>
@@ -322,7 +322,7 @@ const Because_family = () => {
                             initial="hidden"
                             whileInView="show"
                             viewport={{ once: true, amount: 0.25 }}
-                            className={isSpecialText ? 'tw-text-gray-dark tw-m-0 tw-pt-0 tw-font-semibold tw-text-lg tw-mb-2' : 'tw-text-gray tw-mb-2'}
+                            className={isSpecialText ? 'tw-text-gray-dark tw-m-0 tw-pt-0 tw-font-semibold tw-text-lg tw-mb-2' : 'tw-text-gray tw-text-justify  tw-mb-2'}
                             key={i}
                           >
                             <motion.p variants={fadeIn('up', 'tween', 0.2, 1)} dangerouslySetInnerHTML={{ __html: desc }}></motion.p>

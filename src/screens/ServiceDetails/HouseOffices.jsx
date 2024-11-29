@@ -298,7 +298,6 @@ const HouseOffices = () => {
                   <h2 className="tw-text-left">
                     <strong> Made Easy Across Four Countries </strong>
                   </h2>
-                 
 
                   <p className=" tw-text-gray tw-pt-8">
                     We are a relocation company based in four different
@@ -308,8 +307,6 @@ const HouseOffices = () => {
                     offer you an easy and painless solution where you can get a
                     place to live without any worries.
                   </p>
-
-                 
 
                   <br />
                   <span className=" tw-flex tw-items-center tw-gap-2">
@@ -321,38 +318,35 @@ const HouseOffices = () => {
                     <strong> Sweden’s Competitive Housing Market</strong>
                   </h2>
 
-
                   <div className="row tw-flex tw-items-center">
-                      <div className="col-md-6">
+                    <div className="col-md-6">
                       <p className=" tw-text-gray tw-pt-8">
-                    Finding housing in Sweden is much more difficult than in
-                    other EU countries. Renting a house is having so much
-                    competition in Sweden that there is a specific black market
-                    for leasing the house or apartment on a long-term basis. You
-                    will have to struggle in finding the apartment in Malmö or
-                    Stockholm as these are the busiest cities. Foreigners who
-                    intend to live in Sweden for a longer period of time may opt
-                    for buying a house rather than being a part of this renting
-                    fray.
-                  </p>
-                      </div>
+                        Finding housing in Sweden is much more difficult than in
+                        other EU countries. Renting a house is having so much
+                        competition in Sweden that there is a specific black
+                        market for leasing the house or apartment on a long-term
+                        basis. You will have to struggle in finding the
+                        apartment in Malmö or Stockholm as these are the busiest
+                        cities. Foreigners who intend to live in Sweden for a
+                        longer period of time may opt for buying a house rather
+                        than being a part of this renting fray.
+                      </p>
+                    </div>
 
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={ho1}
-                              alt=""
-                              style={{ maxWidth: "450px" }}
-                            />
-                          </div>
+                    <div className="col-md-6">
+                      <div className="row ">
+                        <div className="col-md-9 tw-mx-auto">
+                          <motion.img
+                            animate={imageVariants}
+                            className=" tw-w-full"
+                            src={ho1}
+                            alt=""
+                            style={{ maxWidth: "450px" }}
+                          />
                         </div>
                       </div>
                     </div>
-                
-                 
+                  </div>
 
                   <br />
                   <span className=" tw-flex tw-items-center tw-gap-2">
@@ -474,15 +468,24 @@ const HouseOffices = () => {
                   <p className=" tw-text-gray">
                     This is where we come to help you finding your new house .
                   </p>
-                  <Link to = '/register' className="tw-text-center tw-pt-4">
-                    <h2 className = "tw-text-center tw-pt-4">
-                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
-                    </h2>
-                    </Link>
-                    <br/>
-                    <p className="tw-text-gray">
-                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
-                    </p>
+                  <Link to="/register" className="tw-text-center tw-pt-4">
+                  <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
+                      <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
+                        Sign Up{" "}
+                      </strong>
+                      <strong className="tw-text-gray"> Today!</strong>
+                    </h5>
+                  </Link>
+                  <br />
+                  <p className="tw-text-gray">
+                    Sign up today and simplify your journey! Whether you're
+                    seeking assistance with relocation, permits, visas, legal
+                    processes, or settling into a new life, we're here to help.
+                    Our comprehensive services cover everything from work and
+                    study opportunities to family reunifications, business
+                    support, and much more. Let us guide you every step of the
+                    way—start your seamless experience now!
+                  </p>
                 </div>
               </div>
 

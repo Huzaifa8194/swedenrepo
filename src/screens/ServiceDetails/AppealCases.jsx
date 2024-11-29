@@ -299,7 +299,7 @@ const AppealCases = () => {
                       team can make a difference for you:
                     </p>
 
-                    <strong className="m-0 tw-text-gray">Peace of Mind</strong>
+                    <strong className="m-0 tw-text-black">Peace of Mind</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
@@ -312,7 +312,7 @@ const AppealCases = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Clear and Transparent Guidance
                     </strong>
 
@@ -328,7 +328,7 @@ const AppealCases = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-gray">
+                    <strong className="m-0 tw-text-black">
                       Immediate Access to a Legal Expert
                     </strong>
 
@@ -466,7 +466,7 @@ const AppealCases = () => {
                       and begin your journey toward protection and settlement.
                     </p>
 
-                    <strong className=" m-0 tw-text-gray">
+                    <strong className=" m-0 tw-text-black">
                       Step 1: Presence in Sweden
                     </strong>
 
@@ -495,7 +495,7 @@ const AppealCases = () => {
                       </div>
 
                       <div className="col-md-6">
-                        <strong className=" m-0 tw-text-gray">
+                        <strong className=" m-0 tw-text-black">
                           Step 2: Initial Meeting with Swedish Migration Agency
                         </strong>
 
@@ -514,7 +514,7 @@ const AppealCases = () => {
                       </div>
                     </div>
 
-                    <strong className=" m-0 tw-text-gray">
+                    <strong className=" m-0 tw-text-black">
                       Step 3: Role of Your Legal Representative
                     </strong>
 
@@ -549,7 +549,7 @@ const AppealCases = () => {
                       Here’s how we help:
                     </p>
 
-                    <strong className=" m-0 tw-text-gray">
+                    <strong className=" m-0 tw-text-black">
                       Support and Legal Advice
                     </strong>
 
@@ -578,7 +578,7 @@ const AppealCases = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className=" m-0 tw-text-gray">
+                        <strong className=" m-0 tw-text-black">
                           Clarifying Grounds for Asylum
                         </strong>
 
@@ -592,7 +592,7 @@ const AppealCases = () => {
                           </li>
                         </ul>
 
-                        <strong className=" m-0 tw-text-gray">
+                        <strong className=" m-0 tw-text-black">
                           Navigating Appeals
                         </strong>
 
@@ -625,7 +625,7 @@ const AppealCases = () => {
                       right for refugees. Here’s what you need to know:
                     </p>
 
-                    <strong className=" m-0 tw-text-gray">
+                    <strong className=" m-0 tw-text-black">
                       Who Can Qualify for Family Reunification?
                     </strong>
 
@@ -639,7 +639,7 @@ const AppealCases = () => {
                       </li>
                     </ul>
 
-                    <strong className=" m-0 tw-text-gray">
+                    <strong className=" m-0 tw-text-black">
                       For EU/EEA Citizens
                     </strong>
 
@@ -671,7 +671,7 @@ const AppealCases = () => {
                       journey:
                     </p>
 
-                    <strong className=" m-0 tw-text-gray">
+                    <strong className=" m-0 tw-text-black">
                       Application Preparation
                     </strong>
 
@@ -685,7 +685,7 @@ const AppealCases = () => {
                       </li>
                     </ul>
 
-                    <strong className=" m-0 tw-text-gray">
+                    <strong className=" m-0 tw-text-black">
                       Additional Support Services for Asylum Seekers
                     </strong>
 
@@ -700,12 +700,12 @@ const AppealCases = () => {
                     </ul>
 
                     <Link to="/register" className="tw-text-center tw-pt-4">
-                      <h2 className="tw-text-center tw-pt-4">
+                    <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                           Sign Up{" "}
                         </strong>
                         <strong> Today!</strong>
-                      </h2>
+                      </h5>
                     </Link>
                     <br />
                     <p className="tw-text-gray">

@@ -10,10 +10,8 @@ import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import Header from "../../components/Header_New/Header";
 import { useTranslation } from "react-i18next";
 
-
 import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
-
 
 import pe1 from "../../assets/iconscout/pe1.png";
 import pe2 from "../../assets/iconscout/pe2.png";
@@ -21,7 +19,6 @@ import pe3 from "../../assets/iconscout/pe3.png";
 import pe4 from "../../assets/iconscout/pe4.png";
 import pe5 from "../../assets/iconscout/pe5.png";
 import pe6 from "../../assets/iconscout/pe6.png";
-
 
 const ParentsEUPermit = () => {
   const { t } = useTranslation();
@@ -263,19 +260,19 @@ const ParentsEUPermit = () => {
               <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
                 <div className=" 2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       EU Residence Card for Dependent Parents and Other Family
                       Members under Directive 2004/38/EC
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
                         Understanding the EU Residence Card for Family Members
                       </strong>
                     </h2>
-                    <br/>
+                    <br />
 
                     <p className=" tw-text-gray">
                       Under EU Directive 2004/38/EC, EU/EEA citizens exercising
@@ -290,83 +287,87 @@ const ParentsEUPermit = () => {
                       parents and other family members.
                     </p>
 
-
-
-
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Who
-  </span>
-  <h2 className = "tw-text-left">
-    <strong> Qualifies as a Dependent Family Member? </strong>
-  </h2>
-                   
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Who
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        {" "}
+                        Qualifies as a Dependent Family Member?{" "}
+                      </strong>
+                    </h2>
 
-
-                    
-  <br/>
-                 
+                    <br />
 
                     <ul className=" tw-p-0 tw-pl-0">
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <p className=" m-0 tw-text-gray">
-                          <strong>Dependent Parents:</strong> Parents of an EU
-                          citizen or their spouse/partner who rely on the EU
-                          citizen for financial support or other essential care.
+                          <strong className="tw-text-black">
+                            Dependent Parents:
+                          </strong>{" "}
+                          Parents of an EU citizen or their spouse/partner who
+                          rely on the EU citizen for financial support or other
+                          essential care.
                         </p>
                       </li>
 
                       <div className="row tw-flex tw-items-center">
-                    
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={pe1}
-                              alt=""
-                            />
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-9 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full"
+                                src={pe1}
+                                alt=""
+                              />
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="col-md-6">
-                      <li>
-                        <p className=" m-0 tw-text-gray">
-                          <strong>Other Dependent Family Members:</strong> This
-                          may include siblings or extended relatives if there is
-                          a clear dependency relationship, particularly if the
-                          family member and the EU citizen lived together in the
-                          previous country of residence.
-                        </p>
-                      </li>
+                        <div className="col-md-6">
+                          <li>
+                            <p className=" m-0 tw-text-gray">
+                              <strong className="tw-text-black">
+                                Other Dependent Family Members:
+                              </strong>{" "}
+                              This may include siblings or extended relatives if
+                              there is a clear dependency relationship,
+                              particularly if the family member and the EU
+                              citizen lived together in the previous country of
+                              residence.
+                            </p>
+                          </li>
 
-                      <li>
-                        <p className=" m-0 tw-text-gray">
-                          <strong>Children or Stepchildren:</strong> Children
-                          over 21 may also qualify as dependent if they rely on
-                          the EU citizen for support, although this is assessed
-                          differently than minors.
-                        </p>
-                      </li>
-                    </div>
-                    </div>
-                     
+                          <li>
+                            <p className=" m-0 tw-text-gray">
+                              <strong className="tw-text-black">
+                                Children or Stepchildren:
+                              </strong>{" "}
+                              Children over 21 may also qualify as dependent if
+                              they rely on the EU citizen for support, although
+                              this is assessed differently than minors.
+                            </p>
+                          </li>
+                        </div>
+                      </div>
                     </ul>
 
-                    <br/>
+                    <br />
 
                     <span className=" tw-flex tw-items-center tw-gap-2">
-{" "}
-<p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-Key
-</span>
-<h2 className = "tw-text-left">
-<strong>    Conditions for Eligibility </strong>
-</h2>
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Key
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        {" "}
+                        Conditions for Eligibility{" "}
+                      </strong>
+                    </h2>
                     {/* <div className="row tw-flex tw-items-center">
                 
 
@@ -388,150 +389,152 @@ Key
           </div>
                     </div> */}
 
-                  
-
-  <br/>
-
-
-                
+                    <br />
 
                     <ul className=" tw-p-0 tw-pl-0">
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <p className=" m-0 tw-text-gray">
-                          <strong>Proof of Dependency:</strong> The applicant
-                          must provide evidence showing financial or personal
-                          dependency on the EU citizen. This could include proof
-                          of shared residence, regular financial support, or
-                          documentation of emotional and social dependence.
+                          <strong className="tw-text-black">
+                            Proof of Dependency:
+                          </strong>{" "}
+                          The applicant must provide evidence showing financial
+                          or personal dependency on the EU citizen. This could
+                          include proof of shared residence, regular financial
+                          support, or documentation of emotional and social
+                          dependence.
                         </p>
                       </li>
 
                       <li>
                         <p className=" m-0 tw-text-gray">
-                          <strong>Living Together Previously:</strong> In cases
-                          involving extended family members (such as siblings or
-                          adult children), the applicant must show that they
-                          lived with the EU citizen in their home country
-                          immediately before the EU citizen moved to Sweden.
+                          <strong className="tw-text-black">
+                            Living Together Previously:
+                          </strong>{" "}
+                          In cases involving extended family members (such as
+                          siblings or adult children), the applicant must show
+                          that they lived with the EU citizen in their home
+                          country immediately before the EU citizen moved to
+                          Sweden.
                         </p>
                       </li>
 
                       <li>
                         <p className=" m-0 tw-text-gray">
-                          <strong>Timely Application:</strong> Applications
-                          should ideally be submitted as soon as possible after
-                          the EU citizen arrives in Sweden. Delayed applications
-                          may reduce the likelihood of approval, especially if
-                          the dependency has developed only after the EU
-                          citizen's relocation.
+                          <strong className="tw-text-black">
+                            Timely Application:
+                          </strong>{" "}
+                          Applications should ideally be submitted as soon as
+                          possible after the EU citizen arrives in Sweden.
+                          Delayed applications may reduce the likelihood of
+                          approval, especially if the dependency has developed
+                          only after the EU citizen's relocation.
                         </p>
                       </li>
                     </ul>
                   </div>
 
                   <div>
-                  <br/>  
-                  
-                  <span className="tw-flex tw-items-center tw-gap-2">
+                    <br />
+
+                    <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Step 1:
                     </span>
 
-                    <h2 className = "tw-text-left">
-                      <strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
                         {" "}
-                         Prepare Documentation for Dependency and
-                        Relationship{" "}
+                        Prepare Documentation for Dependency and Relationship{" "}
                       </strong>
                     </h2>
-                  
-               
 
-                    <br/>
+                    <br />
 
                     <p className="tw-text-gray">
                       Gathering the necessary documentation is crucial. Key
                       documents include:
                     </p>
 
-                
-                        <strong className="m-0 tw-text-gray">Proof of Identity</strong>
-                     
+                    <strong className="m-0 tw-text-black">
+                      Proof of Identity
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>Valid passport:</strong> The non-EU family
-                          member’s passport is required.
+                          <strong className="tw-text-gray">
+                            Valid passport:
+                          </strong>{" "}
+                          The non-EU family member’s passport is required.
                         </p>
                       </li>
                     </ul>
 
-                   
-
-                        <strong className="m-0 tw-text-gray">
-                          Proof of Relationship
-                        </strong>
-                      
+                    <strong className="m-0 tw-text-blac">
+                      Proof of Relationship
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong>For parents:</strong> Birth certificate of the
-                          EU citizen showing the parental relationship.
+                          <strong className="tw-text-gray">
+                            For parents:
+                          </strong>{" "}
+                          Birth certificate of the EU citizen showing the
+                          parental relationship.
                         </p>
                       </li>
                       <div className="row tw-flex tw-items-center">
-                     
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-9 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full"
+                                src={pe3}
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <li>
+                            <p className="m-0 tw-text-gray">
+                              <strong className="tw-text-gray">
+                                For other family members:
+                              </strong>{" "}
+                              Documents showing the family relationship (e.g.,
+                              birth certificates or family registers).
+                            </p>
+                          </li>
 
-                     <div className="col-md-6">
-                       <div className="row ">
-                         <div className="col-md-9 tw-mx-auto">
-                           <motion.img
-                             animate={imageVariants}
-                             className=" tw-w-full"
-                             src={pe3}
-                             alt=""
-                           />
-                         </div>
-                       </div>
-                     </div>
-                     <div className="col-md-6">
-                     <li>
-                        <p className="m-0 tw-text-gray">
-                          <strong>For other family members:</strong> Documents
-                          showing the family relationship (e.g., birth
-                          certificates or family registers).
-                        </p>
-                      </li>
-
-                      <li>
-                        <p className="m-0 tw-text-gray">
-                          <strong>Evidence of Dependency:</strong> This can
-                          include bank statements, proof of regular financial
-                          transfers, proof of shared housing, and any other
-                          documents that demonstrate reliance on the EU citizen
-                          for financial or emotional support.
-                        </p>
-                      </li>
-                   
-         </div>
-                   </div>
-
-                   
+                          <li>
+                            <p className="m-0 tw-text-gray">
+                              <strong className="tw-text-gray">
+                                Evidence of Dependency:
+                              </strong>{" "}
+                              This can include bank statements, proof of regular
+                              financial transfers, proof of shared housing, and
+                              any other documents that demonstrate reliance on
+                              the EU citizen for financial or emotional support.
+                            </p>
+                          </li>
+                        </div>
+                      </div>
                     </ul>
 
-
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Step 2:
-  </span>
-  <h2 className = "tw-text-left">
-    <strong>Submit the Application </strong>
-  </h2>
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Step 2:
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        Submit the Application{" "}
+                      </strong>
+                    </h2>
                     {/* <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
                   
@@ -551,13 +554,7 @@ Key
                       </div>
                     </div> */}
 
-
-
-                  
-  <br/>
-
-
-                  
+                    <br />
 
                     <p className="tw-text-gray">
                       The non-EU family member must apply for a residence card,
@@ -566,9 +563,9 @@ Key
                       embassy or consulate in the applicant's home country.
                     </p>
 
-                    
-                        <strong className="m-0 tw-text-gray">Applicant Details</strong>
-                      
+                    <strong className="m-0 tw-text-black">
+                      Applicant Details
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
@@ -580,11 +577,9 @@ Key
                       </li>
                     </ul>
 
-                   
-                        <strong className="m-0 tw-text-gray">
-                          Supporting Documents
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-black">
+                      Supporting Documents
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
@@ -596,17 +591,18 @@ Key
                       </li>
                     </ul>
 
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Step 3:
-  </span>
-  <h2 className = "tw-text-left">
-    <strong>Migration Agency Review  </strong>
-  </h2>
-  <br/>
-                   
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Step 3:
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        Migration Agency Review{" "}
+                      </strong>
+                    </h2>
+                    <br />
 
                     <p className="tw-text-gray">
                       The Migration Agency will assess the relationship and
@@ -615,11 +611,9 @@ Key
                       needed.
                     </p>
 
-                   
-                        <strong className="m-0 tw-text-gray">
-                          Verification of Dependency
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-black">
+                      Verification of Dependency
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
@@ -630,11 +624,9 @@ Key
                       </li>
                     </ul>
 
-                 
-                        <strong className="m-0 tw-text-gray">
-                          Family Relationship
-                        </strong>
-                    
+                    <strong className="m-0 tw-text-black">
+                      Family Relationship
+                    </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
@@ -646,20 +638,20 @@ Key
                       </li>
                     </ul>
 
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Step 4:
-  </span>
-  <h2 className = "tw-text-left">
-    <strong>   Decision and Residence Card Issuance</strong>
-  </h2>
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Step 4:
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        {" "}
+                        Decision and Residence Card Issuance
+                      </strong>
+                    </h2>
 
-  <br/>
-
-                  
-                    
+                    <br />
 
                     <p className="tw-text-gray">
                       If approved, the non-EU family member will receive a
@@ -674,27 +666,27 @@ Key
                       EU family members.
                     </p>
 
-                    <br/>
-
-
-                 
+                    <br />
 
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Specific Cases:
-  </span>
-  <h2 className = "tw-text-left">
-    <strong>    Requirements for Dependent Parents and
-    Other Family Members </strong>
-  </h2>
-                  
-  <br/>
-                  
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Specific Cases:
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        {" "}
+                        Requirements for Dependent Parents and Other Family
+                        Members{" "}
+                      </strong>
+                    </h2>
 
-                  
-                      <strong className="tw-text-gray"> Residence Permit for Dependent Parents </strong>
-                   
+                    <br />
+
+                    <strong className="tw-text-black">
+                      {" "}
+                      Residence Permit for Dependent Parents{" "}
+                    </strong>
 
                     <p className="tw-text-gray">
                       For dependent parents, the primary conditions include
@@ -720,78 +712,70 @@ Key
                       </li>
                     </ul>
 
-
-
                     <div className="row tw-flex tw-items-center">
-                    
-
-                    <div className="col-md-6">
-                      <div className="row ">
-                        <div className="col-md-9 tw-mx-auto">
-                          <motion.img
-                            animate={imageVariants}
-                            className=" tw-w-full"
-                            src={pe5}
-                            alt=""
-                          />
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={pe5}
+                              alt=""
+                            />
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-md-6">
-                    <ul className="tw-p-0 tw-pt-4">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <strong className="m-0 tw-text-gray">
-                          Health-Related Dependency
+                      <div className="col-md-6">
+                        <ul className="tw-p-0 tw-pt-4">
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <strong className="m-0 tw-text-gray">
+                              Health-Related Dependency
+                            </strong>
+                          </li>
+                        </ul>
+
+                        <ul className="tw-p-0 tw-pl-0">
+                          <li>
+                            <p className="m-0 tw-text-gray">
+                              Medical certificates or documentation of special
+                              needs that require close proximity to the EU
+                              citizen for support and care.
+                            </p>
+                          </li>
+                        </ul>
+
+                        <strong className="tw-text-black">
+                          {" "}
+                          Residence Permit for Other Dependent Family Members{" "}
                         </strong>
-                      </li>
-                    </ul>
 
-                    <ul className="tw-p-0 tw-pl-0">
-                      <li>
-                        <p className="m-0 tw-text-gray">
-                          Medical certificates or documentation of special needs
-                          that require close proximity to the EU citizen for
-                          support and care.
+                        <p className="tw-text-gray">
+                          For other dependent family members (e.g., adult
+                          siblings or extended relatives), the requirements are
+                          typically more stringent.
                         </p>
-                      </li>
-                    </ul>
 
-                  
-                      <strong className = "tw-text-gray">
-                        {" "}
-                        Residence Permit for Other Dependent Family Members{" "}
-                      </strong>
-                   
+                        <ul className="tw-p-0 tw-pt-4">
+                          <li className="tw-flex tw-items-center tw-gap-3">
+                            <GoTriangleRight className="tw-text-blue" />
+                            <strong className="m-0 tw-text-gray">
+                              Proof of Shared Household
+                            </strong>
+                          </li>
+                        </ul>
 
-                    <p className="tw-text-gray">
-                      For other dependent family members (e.g., adult siblings
-                      or extended relatives), the requirements are typically
-                      more stringent.
-                    </p>
-
-                    <ul className="tw-p-0 tw-pt-4">
-                      <li className="tw-flex tw-items-center tw-gap-3">
-                        <GoTriangleRight className="tw-text-blue" />
-                        <strong className="m-0 tw-text-gray">
-                          Proof of Shared Household
-                        </strong>
-                      </li>
-                    </ul>
-
-                    <ul className="tw-p-0 tw-pl-0">
-                      <li>
-                        <p className="m-0 tw-text-gray">
-                          Evidence that the family member lived with the EU
-                          citizen prior to their relocation to Sweden, such as a
-                          joint lease or utility bills.
-                        </p>
-                      </li>
-                    </ul>
+                        <ul className="tw-p-0 tw-pl-0">
+                          <li>
+                            <p className="m-0 tw-text-gray">
+                              Evidence that the family member lived with the EU
+                              citizen prior to their relocation to Sweden, such
+                              as a joint lease or utility bills.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-
-                  
 
                     <ul className="tw-p-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -812,20 +796,18 @@ Key
                       </li>
                     </ul>
 
-
-<br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
-    {" "}
-    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-    Maintenance
-  </span>
-  <h2 className = "tw-text-left">
-    <strong>Requirement for the EU Sponsor </strong>
-  </h2>
-<br/>
-
-                   
-                    
+                      {" "}
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
+                      Maintenance
+                    </span>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        Requirement for the EU Sponsor{" "}
+                      </strong>
+                    </h2>
+                    <br />
 
                     <p className="tw-text-gray">
                       Under Swedish regulations, the EU citizen must be able to
@@ -833,9 +815,8 @@ Key
                       their non-EU family member.
                     </p>
 
-                   
-                        <strong className="m-0 tw-text-gray">Stable Income</strong>
-                      
+                    <strong className="m-0 tw-text-black">Stable Income</strong>
+
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
                         <p className="m-0 tw-text-gray">
@@ -846,11 +827,10 @@ Key
                       </li>
                     </ul>
 
-                 
-                        <strong className="m-0 tw-text-gray">
-                          Housing Requirement
-                        </strong>
-                   
+                    <strong className="m-0 tw-text-black">
+                      Housing Requirement
+                    </strong>
+
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
                         <p className="m-0 tw-text-gray">
@@ -870,24 +850,20 @@ Key
                     </p>
                   </div>
                   <div>
-                    <br/>
-
+                    <br />
 
                     <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Additional Considerations
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong>Timeliness of the Application</strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        Timeliness of the Application
+                      </strong>
                     </h2>
 
-
-       
-
-
-                    <br/>
-
+                    <br />
 
                     <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
@@ -903,25 +879,21 @@ Key
                         </div>
                       </div>
                       <div className="col-md-6">
-                      <p className="tw-text-gray">
-                      Applications submitted soon after the EU citizen’s
-                      relocation to Sweden are more likely to succeed. Long
-                      delays in application submission may complicate the
-                      process, as authorities might question the existence of
-                      prior dependency. Ideally, applications for dependent
-                      family members should be submitted within a few months of
-                      the EU citizen’s arrival in Sweden.
-                    </p>
-
-          </div>
+                        <p className="tw-text-gray">
+                          Applications submitted soon after the EU citizen’s
+                          relocation to Sweden are more likely to succeed. Long
+                          delays in application submission may complicate the
+                          process, as authorities might question the existence
+                          of prior dependency. Ideally, applications for
+                          dependent family members should be submitted within a
+                          few months of the EU citizen’s arrival in Sweden.
+                        </p>
+                      </div>
                     </div>
 
-                
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Changes in Dependency Status
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-black">
+                      Changes in Dependency Status
+                    </strong>
 
                     <p className="tw-text-gray">
                       If the dependency status changes (for example, if the
@@ -931,11 +903,10 @@ Key
                       ensure compliance with residency criteria.
                     </p>
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Renewing the Residence Card
-                        </strong>
-                  
+                    <strong className="m-0 tw-text-black">
+                      Renewing the Residence Card
+                    </strong>
+
                     <p className="tw-text-gray">
                       Residence cards for dependent family members are typically
                       valid for up to five years. Renewal is possible, provided
@@ -945,17 +916,19 @@ Key
                       updated documentation demonstrating continued dependency.
                     </p>
 
-<br/>
+                    <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       How Sweden Relocators Can Assist with EU Residence Card
                       Applications
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong>Eligibility Assessment</strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        Eligibility Assessment
+                      </strong>
                     </h2>
-                    <br/>
+                    <br />
 
                     <p className="tw-text-gray">
                       We review your family’s specific circumstances to
@@ -963,11 +936,9 @@ Key
                       dependents under Swedish law.
                     </p>
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Document Preparation
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-black">
+                      Document Preparation
+                    </strong>
 
                     <p className="tw-text-gray">
                       Our team helps gather and prepare all required documents,
@@ -975,11 +946,9 @@ Key
                       support.
                     </p>
 
-                  
-                        <strong className="m-0 tw-text-gray">
-                          Application Submission and Monitoring
-                        </strong>
-                   
+                    <strong className="m-0 tw-text-black">
+                      Application Submission and Monitoring
+                    </strong>
 
                     <p className="tw-text-gray">
                       We assist with the application submission process and
@@ -987,8 +956,9 @@ Key
                       timely updates.
                     </p>
 
-                        <strong className="m-0 tw-text-gray">Appeals Support</strong>
-                     
+                    <strong className="m-0 tw-text-black">
+                      Appeals Support
+                    </strong>
 
                     <p className="tw-text-gray">
                       In cases of application denial, we offer guidance on the
@@ -996,17 +966,19 @@ Key
                       reconsideration.
                     </p>
 
-<br/>
+                    <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Benefits of Our Service
                     </span>
 
-                    <h2 className = "tw-text-left">
-                      <strong>Experienced Guidance</strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        Experienced Guidance
+                      </strong>
                     </h2>
-                    <br/>
+                    <br />
 
                     <p className="tw-text-gray">
                       Familiarity with Directive 2004/38/EC and the Migration
@@ -1014,11 +986,9 @@ Key
                       effective advice.
                     </p>
 
-                 
-                        <strong className="m-0 tw-text-gray">
-                          Comprehensive Support
-                        </strong>
-                     
+                    <strong className="m-0 tw-text-black">
+                      Comprehensive Support
+                    </strong>
 
                     <p className="tw-text-gray">
                       From eligibility verification to document preparation and
@@ -1026,43 +996,34 @@ Key
                       application.
                     </p>
 
-                   
-                        <strong className="m-0 tw-text-gray">
-                          Personalized Service
-                        </strong>
-                   
+                    <strong className="m-0 tw-text-black">
+                      Personalized Service
+                    </strong>
+
                     <p className="tw-text-gray">
                       Every case is unique, and we tailor our approach to your
                       family’s specific needs, providing the most effective
                       solutions.
                     </p>
 
-                    <span className="tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Be sure to
-                    </span>
-                 
-                      <strong className = "tw-text-gray">
-                      Contact Us
-                      </strong>
-                   
-
-                    <p className="tw-text-gray">
-                      If you need assistance with obtaining an EU residence card
-                      for your dependent parents or other family members, Sweden
-                      Relocators is here to help. Contact us today to discuss
-                      your family’s eligibility and learn how we can support
-                      your journey to bring your loved ones to Sweden.
-                    </p>
-                    <Link to = '/register' className="tw-text-center tw-pt-4">
-                    <h2 className = "tw-text-center tw-pt-4">
-                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong> Today!</strong>
-                    </h2>
+                  
+                    <Link to="/register" className="tw-text-center tw-pt-4">
+                    <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
+                        <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
+                          Sign Up{" "}
+                        </strong>
+                        <strong className="tw-text-black"> Today!</strong>
+                      </h5>
                     </Link>
-                    <br/>
+                    <br />
                     <p className="tw-text-gray">
-                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
+                      Sign up today and simplify your journey! Whether you're
+                      seeking assistance with relocation, permits, visas, legal
+                      processes, or settling into a new life, we're here to
+                      help. Our comprehensive services cover everything from
+                      work and study opportunities to family reunifications,
+                      business support, and much more. Let us guide you every
+                      step of the way—start your seamless experience now!
                     </p>
                   </div>
                 </div>

@@ -263,7 +263,7 @@ const Logistics = () => {
                         Our
                       </span>
                       <h2>
-                        <strong>
+                        <strong className="tw-text-black">
                           Logistics Management with Sweden Relocators Partner
                           Network
                         </strong>
@@ -284,7 +284,7 @@ const Logistics = () => {
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>
+                      <strong className="tw-text-black">
                       Logistics Solutions for Every Need
                       </strong>
                     </h2>
@@ -295,7 +295,7 @@ const Logistics = () => {
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong>Packing and Shipping:</strong> Our partners
+                            <strong className="tw-text-black">Packing and Shipping:</strong> Our partners
                             offer expert packing and shipping services to ensure
                             your belongings are securely packed, handled, and
                             transported. Whether moving personal items, office
@@ -306,7 +306,7 @@ const Logistics = () => {
                         <br/>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong>Customs and Compliance:</strong> Navigating
+                            <strong className="tw-text-black">Customs and Compliance:</strong> Navigating
                             customs regulations can be challenging. Our
                             logistics partners are experienced in global customs
                             protocols, ensuring all necessary documentation is
@@ -335,7 +335,7 @@ const Logistics = () => {
                       <div className="col-md-6">
                       <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong>Warehouse and Storage Solutions:</strong> If
+                            <strong className="tw-text-black">Warehouse and Storage Solutions:</strong> If
                             you require short- or long-term storage, we provide
                             safe, modern storage facilities through our
                             partners, with security systems and climate control
@@ -346,7 +346,7 @@ const Logistics = () => {
                         <br/>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong>Freight Management:</strong> Our logistics
+                            <strong className="tw-text-black">Freight Management:</strong> Our logistics
                             network handles all freight types, from air and sea
                             to land, providing flexible options to meet
                             time-sensitive or cost-efficient needs. With
@@ -362,7 +362,7 @@ const Logistics = () => {
                        
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong>Last-Mile Delivery:</strong> We coordinate
+                            <strong className="tw-text-black">Last-Mile Delivery:</strong> We coordinate
                             last-mile delivery services to ensure that shipments
                             arrive on time, whether at your new home, office, or
                             business location. Our partners prioritize reliable,
@@ -379,7 +379,7 @@ const Logistics = () => {
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>
+                      <strong className="tw-text-black">
                       Our Logistics Management Services?
                       </strong>
                     </h2>
@@ -390,7 +390,7 @@ const Logistics = () => {
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong>Global Reach, Local Expertise:</strong> With
+                            <strong className="tw-text-black">Global Reach, Local Expertise:</strong> With
                             logistics partners around the world, we combine
                             local knowledge with global standards, ensuring
                             high-quality service wherever you’re moving to or
@@ -400,7 +400,7 @@ const Logistics = () => {
                         <br/>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong>End-to-End Service Coordination:</strong>{" "}
+                            <strong className="tw-text-black">End-to-End Service Coordination:</strong>{" "}
                             From initial packing to final delivery, we manage
                             every step of the logistics process, providing you
                             with a single point of contact for all your shipping
@@ -426,7 +426,7 @@ const Logistics = () => {
                       <div className="col-md-6">
                       <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong>Cost-Effective Solutions:</strong> By
+                            <strong className="tw-text-black">Cost-Effective Solutions:</strong> By
                             working with a network of trusted 3rd-party
                             providers, we offer competitive rates for all
                             logistics services, ensuring efficient use of
@@ -436,7 +436,7 @@ const Logistics = () => {
                         <br/>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong>Safe and Reliable Transport:</strong> Our
+                            <strong className="tw-text-black">Safe and Reliable Transport:</strong> Our
                             partners are equipped with the latest tools and
                             practices in secure packing, handling, and
                             transport, so your items are protected throughout
@@ -450,7 +450,7 @@ const Logistics = () => {
                     
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong>Transparent Tracking and Updates:</strong>{" "}
+                            <strong className="tw-text-black">Transparent Tracking and Updates:</strong>{" "}
                             Stay informed about your shipment’s status with
                             real-time tracking and regular updates from our
                             logistics partners, giving you peace of mind every
@@ -468,7 +468,7 @@ const Logistics = () => {
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>
+                      <strong className="tw-text-black">
                       Logistics Management Service Works
                       </strong>
                     </h2>
@@ -479,7 +479,7 @@ const Logistics = () => {
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong>Consultation and Planning:</strong> Start
+                            <strong className="tw-text-black">Consultation and Planning:</strong> Start
                             with a consultation where we assess your logistics
                             needs, budget, and timeline. From there, we create a
                             customized logistics plan through our trusted
@@ -489,7 +489,7 @@ const Logistics = () => {
                         <br/>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong>Packing and Pickup:</strong> Our 3rd-party
+                            <strong className="tw-text-black">Packing and Pickup:</strong> Our 3rd-party
                             partners handle packing and pickup, ensuring that
                             all items are prepared for safe transport according
                             to international standards.
@@ -498,7 +498,7 @@ const Logistics = () => {
                         <br/>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong>Shipping and Tracking:</strong> Your
+                            <strong className="tw-text-black">Shipping and Tracking:</strong> Your
                             shipment is managed end-to-end, with tracking
                             details provided, so you’re always informed of your
                             cargo’s progress and estimated arrival times.
@@ -507,7 +507,7 @@ const Logistics = () => {
                         <br/>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong>Customs Clearance and Compliance:</strong>{" "}
+                            <strong className="tw-text-black">Customs Clearance and Compliance:</strong>{" "}
                             Our experts take care of customs documentation,
                             ensuring smooth entry through Swedish customs or any
                             other destination.
@@ -516,7 +516,7 @@ const Logistics = () => {
                         <br/>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong>Delivery and Unpacking:</strong> Once the
+                            <strong className="tw-text-black">Delivery and Unpacking:</strong> Once the
                             shipment arrives, we arrange for final delivery and,
                             if needed, unpacking services to make your
                             transition as smooth as possible.
@@ -531,12 +531,12 @@ const Logistics = () => {
                         needs and let us handle the rest.
                       </p>
                       <Link to="/register" className="tw-text-center tw-pt-4">
-                      <h2 className="tw-text-center tw-pt-4">
+                      <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                           Sign Up{" "}
                         </strong>
-                        <strong> Today!</strong>
-                      </h2>
+                        <strong className="tw-text-black"> Today!</strong>
+                      </h5>
                     </Link>
                     <br />
                     <p className="tw-text-gray">
