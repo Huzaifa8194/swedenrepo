@@ -7,7 +7,7 @@ import { Link, useParams } from "react-router-dom";
 import banner from "../../assets/images/startup-business.jpg";
 import banner2 from "../../assets/images/man-searching-air-ticket-for-summer-travel.png";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from '../../context/TranslationContext';
 
 import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";

@@ -15,16 +15,17 @@ import CookieModal from "./components/CookieModel";
 
 import SnackbarProvider from './components/snackbar/snackbar-provider';
 
-
+import TranslationProvider from './context/TranslationContext';
 
 import { SettingsDrawer, SettingsProvider } from './components/settings';
 
 function App() {
   return (
     <>
-   
+   <TranslationProvider>
                   <Routing />
                   <CookieModal />
+                  </TranslationProvider>
 
       
     </>

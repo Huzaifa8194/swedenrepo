@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import Sidebar from "../../components/ScrollableBar";
 
 
-import { useTranslation } from "react-i18next";
+import { useTranslation } from '../../context/TranslationContext';
 import Header from "../../components/Header_New/Header";
 
 import cr1 from "../../assets/iconscout/cr1.png";

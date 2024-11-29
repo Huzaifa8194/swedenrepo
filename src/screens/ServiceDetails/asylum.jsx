@@ -9,8 +9,7 @@ import { motion } from "framer-motion";
 import { imageVariants } from "../../utils/motion";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
-import { useTranslation } from "react-i18next";
-
+import { useTranslation } from '../../context/TranslationContext';
 import Header from "../../components/Header_New/Header";
 
 import ap1 from "../../assets/iconscout/ap1.png";

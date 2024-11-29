@@ -7,7 +7,7 @@ import { Link, useParams } from "react-router-dom";
 import banner from "../../assets/images/security-check-in-airport.png";
 import banner2 from "../../assets/images/travel-vacation.png";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from '../../context/TranslationContext';
 import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
 import Sidebar from "../../components/ScrollableBar";

@@ -7,6 +7,8 @@ import { useLocation } from "react-router-dom";  // Import useLocation hook
 import LanguageSelector from "../language/LanguageSelector";
 import './style.css'; // Import the CSS file
 
+
+import { useTranslation } from '../../context/TranslationContext';
 const Header = () => {
   const [isTop, setIsTop] = useState(true);
   const [isScreenTab, setIsScreenTab] = useState(window.innerWidth);
@@ -46,7 +48,10 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   
-
+  const handleLanguageChange = (e) => {
+    setLanguage(e.target.value);
+  };
+  const { setLanguage } = useTranslation();
  
   
  
@@ -76,7 +81,14 @@ const Header = () => {
                         Amiralsgatan 86E 214 37 Malmö, Sweden
                       </Typography>
                       {/* Google Translate container */}
-
+                      <div className="language-selector">
+        <select onChange={handleLanguageChange}>
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+        </select>
+      </div>
                     
                       
 

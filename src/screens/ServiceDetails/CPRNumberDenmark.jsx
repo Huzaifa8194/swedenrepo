@@ -10,8 +10,7 @@ import { motion } from "framer-motion";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import Sidebar from "../../components/ScrollableBar";
 
-
-import { useTranslation } from "react-i18next";
+import { useTranslation } from '../../context/TranslationContext';
 
 import cprimage from "../../assets/iconscout/cprimage.png";
 
