@@ -282,10 +282,47 @@ const Assessment_register = () => {
   const [past2yearsrejectionreason, setPast2YearsRejectionReason] =
     useState("");
 
+
+    const [languageCertificate, setlanguageCertificate] = useState("");
+    const [degreeCompleted, setdegreeCompleted] = useState("");
+
+    const [partnerDegreeCompleted , setpartnerDegreeCompleted ] =useState("");
+    const [familyAssets , setfamilyAssets ]=useState("");
+
+    const [educationLevel, seteducationLevel ] = useState("");
+    const [certificateAvailable , setcertificateAvailable ] = useState("");
+
+    const [jobExperience, setjobExperience] = useState("");
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
 
     switch (name) {
+
+
+case "jobExperience":
+  setjobExperience(value);
+  break;
+      case "certificateAvailable":
+        setcertificateAvailable(value);
+        break;
+case "familyAssets":
+  setfamilyAssets(value);
+  break;
+
+
+  case "partnerDegreeCompleted":
+    setpartnerDegreeCompleted(value);
+    break;
+      case "languageCertificate":
+        setlanguageCertificate(value);
+        break;
+
+        case "degreeCompleted":
+          setdegreeCompleted(value);
+          break;
+
+
       case "location":
         setLocation(value);
         break;
@@ -818,12 +855,12 @@ const Assessment_register = () => {
                                 <div className="col-md-12">
                                 <Select
   label="Do you have separate assets other than the investment to support yourself with the application?"
-  name="separateAssetsDuplicate"
+  name="separateAssets"
   options={[
     { value: "yes", label: "Yes" },
     { value: "no", label: "No" },
   ]}
-  value={separateAssetsDuplicate}
+  value={separateAssets}
   onChange={handleInputChange}
   className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
 />
@@ -1050,7 +1087,7 @@ const Assessment_register = () => {
                             <div className="col-md-6">
                             <Select
   label="Do you have already made your business plan?"
-  name="businessPlan"
+  name="plan"
   options={[
     { value: "yes", label: "Yes" },
     { value: "no", label: "No" },
@@ -1064,21 +1101,18 @@ const Assessment_register = () => {
                             {plan === "yes" ? (
                               <>
                                 <div className="col-md-6">
-                                  <label className=" tw-text-sm  tw-text-gray ">Do You want to buy a running business in
-                                  sweden?</label>
-                                  <select
-                                    value={buy}
-                                    onChange={handleInputChange}
-                                    name="buy"
-                                    className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                                  >
-                                    <option>
-                                      Do You want to buy a running business in
-                                      sweden?
-                                    </option>
-                                    <option value={"yes"}>Yes</option>
-                                    <option value={"no"}>No</option>
-                                  </select>
+                                <Select
+  label="Do you want to buy a running business in Sweden?"
+  name="buy"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={buy}
+  onChange={handleInputChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                                 </div>
                               </>
                             ) : null}
@@ -1088,7 +1122,7 @@ const Assessment_register = () => {
                                 <div className="col-md-6">
                                 <Select
   label="If yes, total investment available"
-  name="investment"
+  name="investmentAmount"
   options={[
     { value: "200000 SEK - 300000 SEK", label: "200000 SEK - 300000 SEK" },
     { value: "400000 SEK - 500000 SEK", label: "400000 SEK - 500000 SEK" },
@@ -1099,7 +1133,7 @@ const Assessment_register = () => {
     { value: "9000000 SEK - 1 Million SEK", label: "9000000 SEK - 1 Million SEK" },
     { value: "More than 1 Million SEK", label: "More than 1 Million SEK" },
   ]}
-  value={investment}
+  value={investmentAmount}
   onChange={handleInputChange}
   className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
 />
@@ -1305,35 +1339,24 @@ const Assessment_register = () => {
                                 </div>
 
                                 <div className="col-md-6">
-                                  <label className=" tw-text-sm  tw-text-gray ">
-                                    Type of Visa/Permit
-                                  </label>
-                                  <select
-                                    value={schengentype}
-                                    onChange={handleInputChange}
-                                    name="schengentype"
-                                    className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                                  >
-                                    <option>Type</option>
-                                    <option value={"Schengen Visa"}>
-                                      Schengen Visa
-                                    </option>
-                                    <option value={"Study or Work Permit"}>
-                                      Study or Work Permit
-                                    </option>
-                                    <option value={"Spouse Visa"}>
-                                      Spouse Visa
-                                    </option>
-                                    <option value={"Other Valid Visa"}>
-                                      Other Valid Visa
-                                    </option>
-                                  </select>
+                                <Select
+  label="Type of Visa/Permit"
+  name="schengentype"
+  options={[
+    { value: "Schengen Visa", label: "Schengen Visa" },
+    { value: "Study or Work Permit", label: "Study or Work Permit" },
+    { value: "Spouse Visa", label: "Spouse Visa" },
+    { value: "Other Valid Visa", label: "Other Valid Visa" },
+  ]}
+  value={schengentype}
+  onChange={handleInputChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                                 </div>
 
                                 <div className="col-md-6">
-                                  <label className=" tw-text-sm  tw-text-gray ">
-                                    Expiry Date
-                                  </label>
+                                 
                                   <Input
                                     star={"*"}
                                     type={"date"}
@@ -1349,10 +1372,7 @@ const Assessment_register = () => {
                                 </div>
 
                                 <div className="col-md-6">
-                                  <label className=" tw-text-sm  tw-text-gray ">
-                                    You can provide us more details about your
-                                    duration of stay in that country
-                                  </label>
+                                  
                                   <Input
                                     star={"*"}
                                     type={"text"}
@@ -1370,89 +1390,64 @@ const Assessment_register = () => {
                             ) : null}
 
                             <div className="col-md-6">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Have you applied any sort of Schengen, UK &
-                                Ireland visa or residence permit in past 2 years
-                                and got rejected?
-                              </label>
-                              <select
-                                value={past2years}
-                                onChange={handleInputChange}
-                                name="past2years"
-                                className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                              >
-                                <option>
-                                  Have you applied any sort of Schengen, UK &
-                                  Ireland visa or residence permit in past 2
-                                  years and got rejected?
-                                </option>
-                                <option value={"yes"}>Yes</option>
-                                <option value={"no"}>No</option>
-                              </select>
+                              <Select
+  label="Have you applied for any Schengen, UK & Ireland visa or residence permit in the past 2 years and got rejected?"
+  name="past2years"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={past2years}
+  onChange={handleInputChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                             </div>
 
                             {past2years === "yes" ? (
                               <>
                                 <div className="col-md-6">
-                                  <label className=" tw-text-sm  tw-text-gray ">
-                                    {" "}
-                                    UK, Ireland & Schengen Countries
-                                  </label>
-                                  <select
-                                    value={past2yearscountry}
-                                    onChange={handleInputChange}
-                                    name="past2yearscountry"
-                                    className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                                  >
-                                    <option>
-                                      UK, Ireland & Schengen Countries
-                                    </option>
-                                    <option value={"Austria"}>Austria</option>
-                                    <option value={"Belgium"}>Belgium</option>
-                                    <option value={"Czech Republic"}>
-                                      Czech Republic
-                                    </option>
-                                    <option value={"Denmark"}>Denmark</option>
-                                    <option value={"Estonia"}>Estonia</option>
-                                    <option value={"Finland"}>Finland</option>
-                                    <option value={"France"}>France</option>
-                                    <option value={"Germany"}>Germany</option>
-                                    <option value={"Greece"}>Greece</option>
-                                    <option value={"Hungary"}>Hungary</option>
-                                    <option value={"Iceland"}>Iceland</option>
-                                    <option value={"Italy"}>Italy</option>
-                                    <option value={"Latvia"}>Latvia</option>
-                                    <option value={"Liechtenstein"}>
-                                      Liechtenstein
-                                    </option>
-                                    <option value={"Lithuania"}>
-                                      Lithuania
-                                    </option>
-                                    <option value={"Luxembourg"}>
-                                      Luxembourg
-                                    </option>
-                                    <option value={"Malta"}>Malta</option>
-                                    <option value={"Netherlands"}>
-                                      Netherlands
-                                    </option>
-                                    <option value={"Norway"}>Norway</option>
-                                    <option value={"Poland"}>Poland</option>
-                                    <option value={"Portugal"}>Portugal</option>
-                                    <option value={"Slovakia"}>Slovakia</option>
-                                    <option value={"Slovenia"}>Slovenia</option>
-                                    <option value={"Spain"}>Spain</option>
-                                    <option value={"Sweden"}>Sweden</option>
-                                    <option value={"Switzerland"}>
-                                      Switzerland
-                                    </option>
-                                  </select>
+                                <Select
+  label="UK, Ireland & Schengen Countries"
+  name="past2yearscountry"
+  options={[
+    { value: "Austria", label: "Austria" },
+    { value: "Belgium", label: "Belgium" },
+    { value: "Czech Republic", label: "Czech Republic" },
+    { value: "Denmark", label: "Denmark" },
+    { value: "Estonia", label: "Estonia" },
+    { value: "Finland", label: "Finland" },
+    { value: "France", label: "France" },
+    { value: "Germany", label: "Germany" },
+    { value: "Greece", label: "Greece" },
+    { value: "Hungary", label: "Hungary" },
+    { value: "Iceland", label: "Iceland" },
+    { value: "Italy", label: "Italy" },
+    { value: "Latvia", label: "Latvia" },
+    { value: "Liechtenstein", label: "Liechtenstein" },
+    { value: "Lithuania", label: "Lithuania" },
+    { value: "Luxembourg", label: "Luxembourg" },
+    { value: "Malta", label: "Malta" },
+    { value: "Netherlands", label: "Netherlands" },
+    { value: "Norway", label: "Norway" },
+    { value: "Poland", label: "Poland" },
+    { value: "Portugal", label: "Portugal" },
+    { value: "Slovakia", label: "Slovakia" },
+    { value: "Slovenia", label: "Slovenia" },
+    { value: "Spain", label: "Spain" },
+    { value: "Sweden", label: "Sweden" },
+    { value: "Switzerland", label: "Switzerland" },
+  ]}
+  value={past2yearscountry}
+  onChange={handleInputChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                                 </div>
 
 
                                 <div className="col-md-6">
-                                  <label className=" tw-text-sm  tw-text-gray ">
-                                  Rejection Date?
-                                  </label>
+                                 
                                   <Input
                                     star={"*"}
                                     type={"date"}
@@ -1469,9 +1464,7 @@ const Assessment_register = () => {
 
 
                                 <div className="col-md-6">
-                                  <label className=" tw-text-sm  tw-text-gray ">
-                                  Reason of rejection
-                                  </label>
+                                  
                                   <Input
                                     star={"*"}
                                     type={"text"}
@@ -1489,38 +1482,34 @@ const Assessment_register = () => {
                             ) : null}
 
                             <div className="col-md-6">
-                              <label className=" tw-text-sm  tw-text-gray ">Do you have already made your business plan?</label>
-                              <select
-                                value={plan}
-                                onChange={handleInputChange}
-                                name="plan"
-                                className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                              >
-                                <option>
-                                  Do you have already made your business plan?
-                                </option>
-                                <option value={"yes"}>Yes</option>
-                                <option value={"no"}>No</option>
-                              </select>
+                            <Select
+  label="Do you have already made your business plan?"
+  name="plan"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={plan}
+  onChange={handleInputChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                             </div>
                             {plan === "yes" ? (
                               <>
                                 <div className="col-md-6">
-                                  <label className=" tw-text-sm  tw-text-gray "> Do You want to buy a running business in
-                                  sweden?</label>
-                                  <select
-                                    value={buy}
-                                    onChange={handleInputChange}
-                                    name="buy"
-                                    className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                                  >
-                                    <option>
-                                      Do You want to buy a running business in
-                                      sweden?
-                                    </option>
-                                    <option value={"yes"}>Yes</option>
-                                    <option value={"no"}>No</option>
-                                  </select>
+                                <Select
+  label="Do you want to buy a running business in Sweden?"
+  name="buy"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={buy}
+  onChange={handleInputChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                                 </div>
                               </>
                             ) : null}
@@ -1528,45 +1517,24 @@ const Assessment_register = () => {
                             {buy === "yes" ? (
                               <>
                                 <div className="col-md-6">
-                                  <label className=" tw-text-sm  tw-text-gray ">
-                                    If yes, total investment available
-                                  </label>
-                                  <select
-                                    value={buy}
-                                    onChange={handleInputChange}
-                                    name="buy"
-                                    className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                                  >
-                                    <option>
-                                      If yes, total investment available
-                                    </option>
-                                    <option value={"200000 SEK - 300000 SEK"}>
-                                      200000 SEK - 300000 SEK
-                                    </option>
-                                    <option value={"400000 SEK - 500000 SEK"}>
-                                      400000 SEK - 500000 SEK
-                                    </option>
-                                    <option value={"500000 SEK - 600000 SEK"}>
-                                      500000 SEK - 600000 SEK
-                                    </option>
-                                    <option value={"6000000 SEK - 7000000 SEK"}>
-                                      6000000 SEK - 7000000 SEK
-                                    </option>
-                                    <option value={"7000000 SEK - 8000000 SEK"}>
-                                      7000000 SEK - 8000000 SEK
-                                    </option>
-                                    <option value={"8000000 SEK - 9000000 SEK"}>
-                                      8000000 SEK - 9000000 SEK
-                                    </option>
-                                    <option
-                                      value={"9000000 SEK - 1 Million SEK"}
-                                    >
-                                      9000000 SEK - 1 Million SEK
-                                    </option>
-                                    <option value={"More than 1 Million SEK"}>
-                                      More than 1 Million SEK
-                                    </option>
-                                  </select>
+                                <Select
+  label="If yes, total investment available"
+  name="buy"
+  options={[
+    { value: "200000 SEK - 300000 SEK", label: "200000 SEK - 300000 SEK" },
+    { value: "400000 SEK - 500000 SEK", label: "400000 SEK - 500000 SEK" },
+    { value: "500000 SEK - 600000 SEK", label: "500000 SEK - 600000 SEK" },
+    { value: "6000000 SEK - 7000000 SEK", label: "6000000 SEK - 7000000 SEK" },
+    { value: "7000000 SEK - 8000000 SEK", label: "7000000 SEK - 8000000 SEK" },
+    { value: "8000000 SEK - 9000000 SEK", label: "8000000 SEK - 9000000 SEK" },
+    { value: "9000000 SEK - 1 Million SEK", label: "9000000 SEK - 1 Million SEK" },
+    { value: "More than 1 Million SEK", label: "More than 1 Million SEK" },
+  ]}
+  value={buy}
+  onChange={handleInputChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                                 </div>
                               </>
                             ) : null}
@@ -1597,12 +1565,8 @@ const Assessment_register = () => {
                     </h2>
                        
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">Did you owned business in Sweden?</label>
-                          <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>Did you owned business in Sweden?</option>
-                            <option>Yes</option>
-                            <option>No</option>
-                          </select>
+                          
+
                         </div>
                         <div className="col-md-8 tw-pt-4">
                           {/* <label
@@ -1614,14 +1578,18 @@ const Assessment_register = () => {
                             </a>{" "}
                             Do you have Swedish Language Certificate?
                           </label> */}
-                          <label className=" tw-text-sm  tw-text-gray ">  Do you have Swedish Language Certificate?</label>
-                          <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>
-                              Do you have Swedish Language Certificate?
-                            </option>
-                            <option value={"yes"}>Yes</option>
-                            <option value={"no"}>No</option>
-                          </select>
+                         <Select
+  label="Do you have a Swedish Language Certificate?"
+  name="languageCertificate"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={languageCertificate}
+  onChange={handleInputChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                         </div>
                       </div>
                     </form>

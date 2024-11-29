@@ -17,6 +17,8 @@ import { useTranslation } from "react-i18next";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
 import Header from "../../components/Header_New/Header";
+import Select from "../../components/Selecttab";
+
 
 const Work_permit = () => {
   const { t } = useTranslation();
@@ -241,12 +243,187 @@ const Work_permit = () => {
   ];
 
   const [workCategory, setWorkCategory] = useState("");
-  const [Saveing, setSaveing] = useState("");
-  const [applying, setApplying] = useState("");
+  const [educationLevel, setEducationLevel] = useState("");
+const [educationalCertificate, setEducationalCertificate] = useState("");
+const [jobExperience, setJobExperience] = useState("");
+const [experienceCertificate, setExperienceCertificate] = useState("");
+const [outsideSweden, setOutsideSweden] = useState("");
+const [workedInSweden, setWorkedInSweden] = useState("");
+const [savingsOrAssets, setSavingsOrAssets] = useState("");
+const [schengenRejected, setSchengenRejected] = useState("");
 
-  const handleWorkCategoryChange = (e) => setWorkCategory(e.target.value);
-  const handleWorkSaveingChange = (e) => setSaveing(e.target.value);
-  const handleWorkApplyingChange = (e) => setApplying(e.target.value);
+const [ageRange, setAgeRange] = useState("");
+const [healthInsuranceProof, setHealthInsuranceProof] = useState("");
+const [swedishLanguageInterest, setSwedishLanguageInterest] = useState("");
+const [admissionCertificate, setAdmissionCertificate] = useState("");
+const [hostFamilyInvitation, setHostFamilyInvitation] = useState("");
+const [studyHours, setStudyHours] = useState("");
+const [singleStatus, setSingleStatus] = useState("");
+const [citizenshipCountries, setCitizenshipCountries] = useState("");
+const [selfSupport, setSelfSupport] = useState("");
+const [returnTicket, setReturnTicket] = useState("");
+
+const [healthInsurance, setHealthInsurance] = useState("");
+const [workedBeforeAsylum, setWorkedBeforeAsylum] = useState("");
+const [asylumRefused, setAsylumRefused] = useState("");
+const [workPermission, setWorkPermission] = useState("");
+const [sameCompany, setSameCompany] = useState("");
+const [permanentContract, setPermanentContract] = useState("");
+const [minimumSalary, setMinimumSalary] = useState("");
+const [companyEmployees, setCompanyEmployees] = useState("");
+const [companyInsurance, setCompanyInsurance] = useState("");
+const [studyingWithJobOffer, setStudyingWithJobOffer] = useState("");
+
+const [workingInSweden, setWorkingInSweden] = useState("");
+const [firstWorkPermit, setFirstWorkPermit] = useState("");
+const [citizenship, setCitizenship] = useState("");
+const [permanentResidence, setPermanentResidence] = useState("");
+const [startBusiness, setStartBusiness] = useState("");
+const [jobOffer, setJobOffer] = useState("");
+const [savings, setSavings] = useState("");
+const [assetRange, setAssetRange] = useState("");
+
+
+
+
+
+
+
+
+
+
+
+
+
+  const handleSelectChange = (event) => {
+    const { name, value } = event.target;
+  
+    switch (name) {
+
+
+
+      case "workingInSweden":
+      setWorkingInSweden(value);
+      break;
+    case "firstWorkPermit":
+      setFirstWorkPermit(value);
+      break;
+    case "citizenship":
+      setCitizenship(value);
+      break;
+    case "permanentResidence":
+      setPermanentResidence(value);
+      break;
+    case "startBusiness":
+      setStartBusiness(value);
+      break;
+    case "jobOffer":
+      setJobOffer(value);
+      break;
+    case "savings":
+      setSavings(value);
+      break;
+    case "assetRange":
+      setAssetRange(value);
+      break;
+      case "healthInsurance":
+        setHealthInsurance(value);
+        break;
+      case "workedBeforeAsylum":
+        setWorkedBeforeAsylum(value);
+        break;
+      case "asylumRefused":
+        setAsylumRefused(value);
+        break;
+      case "workPermission":
+        setWorkPermission(value);
+        break;
+      case "sameCompany":
+        setSameCompany(value);
+        break;
+      case "permanentContract":
+        setPermanentContract(value);
+        break;
+      case "minimumSalary":
+        setMinimumSalary(value);
+        break;
+      case "companyEmployees":
+        setCompanyEmployees(value);
+        break;
+      case "companyInsurance":
+        setCompanyInsurance(value);
+        break;
+      case "studyingWithJobOffer":
+        setStudyingWithJobOffer(value);
+        break;
+      case "ageRange":
+        setAgeRange(value);
+        break;
+      case "healthInsuranceProof":
+        setHealthInsuranceProof(value);
+        break;
+      case "swedishLanguageInterest":
+        setSwedishLanguageInterest(value);
+        break;
+      case "admissionCertificate":
+        setAdmissionCertificate(value);
+        break;
+      case "hostFamilyInvitation":
+        setHostFamilyInvitation(value);
+        break;
+      case "studyHours":
+        setStudyHours(value);
+        break;
+     
+      case "citizenshipCountries":
+        setCitizenshipCountries(value);
+        break;
+      case "selfSupport":
+        setSelfSupport(value);
+        break;
+      case "returnTicket":
+        setReturnTicket(value);
+        break;
+      case "workCategory":
+        setWorkCategory(value);
+        break;
+      case "educationLevel":
+        setEducationLevel(value);
+        break;
+      case "educationalCertificate":
+        setEducationalCertificate(value);
+        break;
+      case "jobExperience":
+        setJobExperience(value);
+        break;
+      case "experienceCertificate":
+        setExperienceCertificate(value);
+        break;
+      case "outsideSweden":
+        setOutsideSweden(value);
+        break;
+      case "workedInSweden":
+        setWorkedInSweden(value);
+        break;
+      case "savingsOrAssets":
+        setSavingsOrAssets(value);
+        break;
+      case "schengenRejected":
+        setSchengenRejected(value);
+        break;
+      case "singleStatus":
+        setSingleStatus(value);
+        break;
+      default:
+        break;
+    }
+  };
+  
+
+
+
+
+
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -296,8 +473,10 @@ const Work_permit = () => {
                         Find Out Your Eligibility for a Work Permit in Sweden
                       </strong>
                     </h2>
-                    <br/>
-                    <strong className="tw-text-gray">Who Should Use This Tool?</strong>
+                    <br />
+                    <strong className="tw-text-gray">
+                      Who Should Use This Tool?
+                    </strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
@@ -370,7 +549,7 @@ const Work_permit = () => {
                       </li>
                     </ul>
 
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
@@ -378,15 +557,10 @@ const Work_permit = () => {
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Use the Eligibility Tool?
-                      </strong>
+                      <strong>Use the Eligibility Tool?</strong>
                     </h2>
-                    <br/>
+                    <br />
 
-
-
-                   
                     <p className="tw-text-gray">
                       This tool is designed to help you understand the
                       requirements and eligibility criteria for obtaining a work
@@ -426,8 +600,7 @@ const Work_permit = () => {
                       </li>
                     </ul>
 
-
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
@@ -435,14 +608,9 @@ const Work_permit = () => {
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Visa and Permit Application Support
-                      </strong>
+                      <strong>Visa and Permit Application Support</strong>
                     </h2>
-                    <br/>
-
-
-                  
+                    <br />
 
                     <p className="tw-text-gray">
                       We offer comprehensive support for your move to Sweden
@@ -484,9 +652,7 @@ const Work_permit = () => {
                       </li>
                     </ul>
 
-
-
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
@@ -494,13 +660,9 @@ const Work_permit = () => {
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      We Use the Information
-                      </strong>
+                      <strong>We Use the Information</strong>
                     </h2>
-                    <br/>
-
-                  
+                    <br />
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
@@ -533,8 +695,7 @@ const Work_permit = () => {
                       </li>
                     </ul>
 
-
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
@@ -542,13 +703,10 @@ const Work_permit = () => {
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Get Started 
-                      </strong>
+                      <strong>Get Started</strong>
                     </h2>
-                    <br/>
+                    <br />
 
-                   
                     <p className=" tw-text-gray">
                       Use the eligibility tool on our web portal or app to take
                       the first step toward your work journey in Sweden, whether
@@ -610,207 +768,217 @@ const Work_permit = () => {
                     </form> */}
                   </div>
                   <div className=" tw-pt-8">
-                 
                     <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black ">
-                        
-                      <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                        <span className=" tw-flex tw-items-center tw-gap-2">
+                          {" "}
+                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                          Fill in your
+                        </span>
 
-                    <h2 className="tw-text-left">
-                      <strong>
-                     Work Permit Categories
-                      </strong>
-                    </h2>
-                        
+                        <h2 className="tw-text-left">
+                          <strong>Work Permit Categories</strong>
+                        </h2>
+
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">Select Category</label>
-                          <select
-                            value={workCategory}
-                            onChange={handleWorkCategoryChange}
-                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                          >
-                            <option>Select Category</option>
-                            <option value="WORK PERMIT OUTSIDE OF SWEDEN">
-                              WORK PERMIT OUTSIDE OF SWEDEN
-                            </option>
-                            <option value="AU PAIR">AU PAIR</option>
-                            <option value="WORKING HOLIDAYS">
-                              WORKING HOLIDAYS
-                            </option>
-                            <option value="ASYLUM - WORK PERMIT">
-                              ASYLUM - WORK PERMIT
-                            </option>
-                            <option value="STUDENT - WORK PERMIT">
-                              STUDENT - WORK PERMIT
-                            </option>
-                            <option value="EU LONG TERM RESIDENCE/PERMANENT RESIDENCE">
-                              EU LONG TERM RESIDENCE/PERMANENT RESIDENCE
-                            </option>
-                          </select>
+                        <Select
+  label="Select Category"
+  name="workCategory"
+  options={[
+    { value: "WORK PERMIT OUTSIDE OF SWEDEN", label: "WORK PERMIT OUTSIDE OF SWEDEN" },
+    { value: "AU PAIR", label: "AU PAIR" },
+    { value: "WORKING HOLIDAYS", label: "WORKING HOLIDAYS" },
+    { value: "ASYLUM - WORK PERMIT", label: "ASYLUM - WORK PERMIT" },
+    { value: "STUDENT - WORK PERMIT", label: "STUDENT - WORK PERMIT" },
+    { value: "EU LONG TERM RESIDENCE/PERMANENT RESIDENCE", label: "EU LONG TERM RESIDENCE/PERMANENT RESIDENCE" },
+  ]}
+  value={workCategory}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                         </div>
                       </div>
 
                       {workCategory === "WORK PERMIT OUTSIDE OF SWEDEN" && (
                         <div className=" row row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white">
                           <div className="col-md-12">
-                          <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                              {" "}
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                              Fill in your
+                            </span>
 
-                    <h2 className="tw-text-left">
-                      <strong>
-                     Educational Background
-                      </strong>
-                    </h2>
+                            <h2 className="tw-text-left">
+                              <strong>Educational Background</strong>
+                            </h2>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">Education Level</label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option> Education Level</option>
-                              <option value="Matriculation/Secondary">
-                                Matriculation/Secondary
-                              </option>
-                              <option value="Higher Secondary/Intermediate">
-                                Higher Secondary/Intermediate
-                              </option>
-                              <option value="Bachelor's / Under Graduate">
-                                Bachelor's / Under Graduate
-                              </option>
-                              <option value="Masters/M.Phil">
-                                Masters/M.Phil
-                              </option>
-                              <option value="Ph.d">Ph.d</option>
-                              <option value="Other">Other</option>
-                            </select>
+                          <Select
+  label="Education Level"
+  name="educationLevel"
+  options={[
+    { value: "Matriculation/Secondary", label: "Matriculation/Secondary" },
+    { value: "Higher Secondary/Intermediate", label: "Higher Secondary/Intermediate" },
+    { value: "Bachelor's / Under Graduate", label: "Bachelor's / Under Graduate" },
+    { value: "Masters/M.Phil", label: "Masters/M.Phil" },
+    { value: "Ph.d", label: "Ph.d" },
+    { value: "Other", label: "Other" },
+  ]}
+  value={educationLevel}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
 
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">Educational Certificate available</label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Educational Certificate available</option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Educational Certificate Available"
+  name="educationalCertificate"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={educationalCertificate}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
                           <div className="col-md-12">
                             <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                            <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                              <span className=" tw-flex tw-items-center tw-gap-2">
+                                {" "}
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                                Fill in your
+                              </span>
 
-                    <h2 className="tw-text-left">
-                      <strong>
-                     Work Expierence In Your Field
-                      </strong>
-                    </h2>
+                              <h2 className="tw-text-left">
+                                <strong>Work Expierence In Your Field</strong>
+                              </h2>
                             </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "> Did you have a job experience?</label>
+                          <Select
+  label="Did you have a job experience?"
+  name="jobExperience"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={jobExperience}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
 
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option> Did you have a job experience?</option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
                           </div>
 
                           <div className=" col-md-6"></div>
 
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">Experience Certificate available</label>
+                          <Select
+  label="Experience Certificate Available"
+  name="experienceCertificate"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={experienceCertificate}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
 
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Experience Certificate available</option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
                           </div>
 
                           <div className="col-md-12">
                             <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                            <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                              <span className=" tw-flex tw-items-center tw-gap-2">
+                                {" "}
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                                Fill in your
+                              </span>
 
-                    <h2 className="tw-text-left">
-                      <strong>
-                     Residence and Work Permit
-                      </strong>
-                    </h2>
+                              <h2 className="tw-text-left">
+                                <strong>Residence and Work Permit</strong>
+                              </h2>
                             </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">Are you outside of Sweden?</label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option> Are you outside of Sweden?</option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Are you outside of Sweden?"
+  name="outsideSweden"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={outsideSweden}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
 
                           <div className=" col-md-6"></div>
 
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">Did you work in Sweden before?</label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option> Did you work in Sweden before?</option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Did you work in Sweden before?"
+  name="workedInSweden"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={workedInSweden}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
 
                           <div className="col-md-12">
                             <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                            <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in 
-                    </span>
+                              <span className=" tw-flex tw-items-center tw-gap-2">
+                                {" "}
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                                Fill in
+                              </span>
 
-                    <h2 className="tw-text-left">
-                      <strong>
-                     Are you Applying for your Family
-                      </strong>
-                    </h2>
+                              <h2 className="tw-text-left">
+                                <strong>
+                                  Are you Applying for your Family
+                                </strong>
+                              </h2>
                             </div>
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "> Do you have savings or assets in case if your
-                            salary is lower than requirements?</label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>
-                                Do you have savings or assets in case if your
-                                salary is lower than requirements?
-                              </option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Do you have savings or assets in case if your salary is lower than requirements?"
+  name="savingsOrAssets"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={savingsOrAssets}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
 
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "> Have you applied any sort of Schengen visa or
-                                residence permit in past 2 years and got
-                                rejected?</label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>
-                                Have you applied any sort of Schengen visa or
-                                residence permit in past 2 years and got
-                                rejected?
-                              </option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Have you applied any sort of Schengen visa or residence permit in past 2 years and got rejected?"
+  name="schengenRejected"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={schengenRejected}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
                         </div>
                       )}
@@ -819,98 +987,115 @@ const Work_permit = () => {
                         <div className="row">
                           <div className="col-md-12">
                             <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                            <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                              <span className=" tw-flex tw-items-center tw-gap-2">
+                                {" "}
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                                Fill in your
+                              </span>
 
-                    <h2 className="tw-text-left">
-                      <strong>
-                     AU Pair
-                      </strong>
-                    </h2>
+                              <h2 className="tw-text-left">
+                                <strong>AU Pair</strong>
+                              </h2>
                             </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">Are you single?</label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Are you single?</option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Are you single?"
+  name="singleStatus"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={singleStatus}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
 
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">Are you between 18 and 30 years?</label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Are you between 18 and 30 years?</option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Are you between 18 and 30 years?"
+  name="ageRange"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={ageRange}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "> {" "}
-                                Do you have a Proof that you have signed or
-                                applied for a health insurance policy?</label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>
-                                {" "}
-                                Do you have a Proof that you have signed or
-                                applied for a health insurance policy?
-                              </option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Do you have proof that you have signed or applied for a health insurance policy?"
+  name="healthInsuranceProof"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={healthInsuranceProof}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "> Are you able to show that you have a distinct
-                            interest in or use for Swedish language studies?</label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>
-                                Are you able to show that you have a distinct
-                                interest in or use for Swedish language studies?
-                              </option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Are you able to show that you have a distinct interest in or use for Swedish language studies?"
+  name="swedishLanguageInterest"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={swedishLanguageInterest}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "> Are Do you have a certificate of admission/Offer
-                            Letter to the course of study concerned?</label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>
-                                {" "}
-                                Are Do you have a certificate of admission/Offer
-                                Letter to the course of study concerned?
-                              </option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Do you have a certificate of admission/Offer Letter to the course of study concerned?"
+  name="admissionCertificate"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={admissionCertificate}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              Do you have a written invitation from your host
-                              family in Sweden stating the terms and Terms and
-                              Conditions
-                            </label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Choose option</option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Do you have a written invitation from your host family in Sweden stating the terms and conditions?"
+  name="hostFamilyInvitation"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={hostFamilyInvitation}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              Will you Study for 15 hours a week or the time for
-                              housework and studies will not exceed 40 hours per
-                              week?
-                            </label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Choose option</option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                        <Select
+  label="Will you study for 15 hours a week or ensure that housework and studies do not exceed 40 hours per week?"
+  name="studyHours"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={studyHours}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
                         </div>
                       )}
@@ -919,75 +1104,87 @@ const Work_permit = () => {
                         <div className="row">
                           <div className="col-md-12">
                             <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                            <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                              <span className=" tw-flex tw-items-center tw-gap-2">
+                                {" "}
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                                Fill in your
+                              </span>
 
-                    <h2 className="tw-text-left">
-                      <strong>
-                     Working Holidays
-                      </strong>
-                    </h2>
+                              <h2 className="tw-text-left">
+                                <strong>Working Holidays</strong>
+                              </h2>
                             </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">Are you single?</label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Are you single?</option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Are you single?"
+  name="singleStatus"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={singleStatus}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
 
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              Are you citizens of Argentina, Australia, Chile,
-                              Hong Kong, Canada, New Zealand, South Korea or
-                              Uruguay?
-                            </label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option value="">Choose option</option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Are you a citizen of Argentina, Australia, Chile, Hong Kong, Canada, New Zealand, South Korea, or Uruguay?"
+  name="citizenshipCountries"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={citizenshipCountries}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              Do you have money so that you can support yourself
-                              during the first year in Sweden (atleaet 15000
-                              SEK) ?
-                            </label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Choose option</option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Do you have money to support yourself during the first year in Sweden (at least 15,000 SEK)?"
+  name="selfSupport"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={selfSupport}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "> Do you Have a return ticket or enough money to
-                            buy one?</label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option value="">
-                                Do you Have a return ticket or enough money to
-                                buy one?
-                              </option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Do you have a return ticket or enough money to buy one?"
+  name="returnTicket"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={returnTicket}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
                           <div className="col-md-12 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "> Do you have a comprehensive health insurance
-                            that applies to care in Sweden?</label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>
-                                Do you have a comprehensive health insurance
-                                that applies to care in Sweden?
-                              </option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Do you have a comprehensive health insurance that applies to care in Sweden?"
+  name="healthInsurance"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={healthInsurance}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
                         </div>
                       )}
@@ -996,64 +1193,62 @@ const Work_permit = () => {
                         <div className="row">
                           <div className="col-md-12">
                             <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                            <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                              <span className=" tw-flex tw-items-center tw-gap-2">
+                                {" "}
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                                Fill in your
+                              </span>
 
-                    <h2 className="tw-text-left">
-                      <strong>
-                     Asylum Work Permit
-                      </strong>
-                    </h2>
+                              <h2 className="tw-text-left">
+                                <strong>Asylum Work Permit</strong>
+                              </h2>
                             </div>
                           </div>
                           <div className="col-md-6 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray "> Did you already worked in Sweden before applying
-                            the asylum?</label>
-                            <select
-                              value={applying}
-                              onChange={handleWorkApplyingChange}
-                              className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                            >
-                              <option>
-                                Did you already worked in Sweden before applying
-                                the asylum?
-                              </option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Did you already work in Sweden before applying for asylum?"
+  name="workedBeforeAsylum"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={workedBeforeAsylum}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
 
-                          {applying === "no" ? (
+                          {workedBeforeAsylum === "no" ? (
                             <>
                               <div className="col-md-12 tw-pt-4">
-                                <label className=" tw-text-sm  tw-text-gray "> {" "}
-                                    Did Your asylum case has been refused and
-                                    you want to apply for work permit?</label>
-                                <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option>
-                                    {" "}
-                                    Did Your asylum case has been refused and
-                                    you want to apply for work permit?
-                                  </option>
-                                  <option value="yes">Yes</option>
-                                  <option value="no">No</option>
-                                </select>
+                              <Select
+  label="Did your asylum case get refused, and do you want to apply for a work permit?"
+  name="asylumRefused"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={asylumRefused}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                               </div>
 
                               <div className="col-md-8 tw-pt-4">
-                                <label className=" tw-text-sm  tw-text-gray ">  Did you get the permission of work in
-                                Sweden?</label>
-                                <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option>
-                                    Did you get the permission of work in
-                                    Sweden?
-                                  </option>
-                                  <option value="yes">Yes</option>
-                                  <option value="no">No</option>
-                                </select>
+                              <Select
+  label="Did you get permission to work in Sweden?"
+  name="workPermission"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={workPermission}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                               </div>
 
                               <div className="col-md-6 tw-pt-4">
@@ -1073,58 +1268,76 @@ const Work_permit = () => {
                               </div>
 
                               <div className="col-md-8 tw-pt-4">
-                                <label className=" tw-text-sm  tw-text-gray ">
-                                  Are you still working in the same company for
-                                  the last 4 months
-                                </label>
-                                <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option>Choose option</option>
-                                  <option value="yes">Yes</option>
-                                  <option value="no">No</option>
-                                </select>
+                              <Select
+  label="Are you still working in the same company for the last 4 months?"
+  name="sameCompany"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={sameCompany}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                               </div>
                               <div className="col-md-8 tw-pt-4">
-                                <label className=" tw-text-sm  tw-text-gray ">
-                                  Do you have permanent job contract?
-                                </label>
-                                <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option>Choose option</option>
-                                  <option value="yes">Yes</option>
-                                  <option value="no">No</option>
-                                </select>
+                              <Select
+  label="Do you have a permanent job contract?"
+  name="permanentContract"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={permanentContract}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                               </div>
 
                               <div className="col-md-8 tw-pt-4">
-                                <label className=" tw-text-sm  tw-text-gray ">
-                                  Is minimum offered salary more than 26560 SEK?
-                                </label>
-                                <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option>Choose option</option>
-                                  <option value="yes">Yes</option>
-                                  <option value="no">No</option>
-                                </select>
+                              <Select
+  label="Is the minimum offered salary more than 26,560 SEK?"
+  name="minimumSalary"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={minimumSalary}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                               </div>
                               <div className="col-md-8 tw-pt-4">
-                                <label className=" tw-text-sm  tw-text-gray ">
-                                  Does company have more than 5 employees?
-                                </label>
-                                <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option>Choose option</option>
-                                  <option value="yes">Yes</option>
-                                  <option value="no">No</option>
-                                </select>
+                              <Select
+  label="Does the company have more than 5 employees?"
+  name="companyEmployees"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={companyEmployees}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                               </div>
 
                               <div className="col-md-8 tw-pt-4">
-                                <label className=" tw-text-sm  tw-text-gray ">
-                                  Did your company have valid insurance for
-                                  employees?
-                                </label>
-                                <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                  <option>Choose option</option>
-                                  <option value="yes">Yes</option>
-                                  <option value="no">No</option>
-                                </select>
+                              <Select
+  label="Does the company have valid insurance for employees?"
+  name="companyInsurance"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={companyInsurance}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                               </div>
                             </>
                           ) : null}
@@ -1135,51 +1348,59 @@ const Work_permit = () => {
                         <div className="row">
                           <div className="col-md-12">
                             <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                            <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                              <span className=" tw-flex tw-items-center tw-gap-2">
+                                {" "}
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                                Fill in your
+                              </span>
 
-                    <h2 className="tw-text-left">
-                      <strong>
-                     Student and Work Permit
-                      </strong>
-                    </h2>
+                              <h2 className="tw-text-left">
+                                <strong>Student and Work Permit</strong>
+                              </h2>
                             </div>
                           </div>
                           <div className="col-md-8 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              Are you studying in Sweden and have gotten a job
-                              offer?
-                            </label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Choose option</option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Are you studying in Sweden and have gotten a job offer?"
+  name="studyingWithJobOffer"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={studyingWithJobOffer}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
 
                           <div className="col-md-5 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              Are you currently working in Sweden?
-                            </label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option value="">Choose option</option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Are you currently working in Sweden?"
+  name="workingInSweden"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={workingInSweden}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
                           <div className="col-md-5 tw-pt-4">
-                            <label className=" tw-text-sm  tw-text-gray ">
-                              {" "}
-                              Is this your first work permit in Sweden?
-                            </label>
-                            <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                              <option>Choose option</option>
-                              <option value="yes">Yes</option>
-                              <option value="no">No</option>
-                            </select>
+                          <Select
+  label="Is this your first work permit in Sweden?"
+  name="firstWorkPermit"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={firstWorkPermit}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                           </div>
                         </div>
                       )}
@@ -1190,164 +1411,160 @@ const Work_permit = () => {
                           <div className="row">
                             <div className="col-md-12">
                               <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                                
-
                                 <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                                  {" "}
+                                  <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
+                                  Fill in your
+                                </span>
 
-                    <h2 className="tw-text-left">
-                      <strong>
-                      EU Long Term Residence/Permanent Residence
-                      </strong>
-                    </h2>
+                                <h2 className="tw-text-left">
+                                  <strong>
+                                    EU Long Term Residence/Permanent Residence
+                                  </strong>
+                                </h2>
                               </div>
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Citizenship
-                              </label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
-                                <option value="">Choose option</option>
-                                <option value="AF">Afghanistan</option>
-                                <option value="AS">American Samoa</option>
-                                <option value="CA">Canada</option>
-                                <option value="OM">Oman</option>
-                                <option value="PK">Pakistan</option>
-                                <option value="NL">Netherlands</option>
-                                <option value="NZ">New Zealand</option>
-                                <option value="IS">Iceland</option>
-                                <option value="IN">India</option>
-                                <option value="FR">France</option>
-                                <option value="BD">Bangladesh</option>
-                                <option value="BB">Barbados</option>
-                                <option value="BY">Belarus</option>
-                                <option value="BE">Belgium</option>
-                                <option value="BZ">Belize</option>
-                                <option value="BJ">Benin</option>
-                                <option value="BM">Bermuda</option>
-                                <option value="BT">Bhutan</option>
-                                <option value="BO">Bolivia</option>
-                                <option value="BA">
-                                  Bosnia and Herzegovina
-                                </option>
-                                <option value="BW">Botswana</option>
-                                <option value="BR">Brazil</option>
-                                <option value="BN">Brunei Darussalam</option>
-                                <option value="BG">Bulgaria</option>
-                                <option value="BF">Burkina Faso</option>
-                                <option value="BI">Burundi</option>
-                              </select>
+                            <Select
+  label="Citizenship"
+  name="citizenship"
+  options={[
+    { value: "AF", label: "Afghanistan" },
+    { value: "AS", label: "American Samoa" },
+    { value: "CA", label: "Canada" },
+    { value: "OM", label: "Oman" },
+    { value: "PK", label: "Pakistan" },
+    { value: "NL", label: "Netherlands" },
+    { value: "NZ", label: "New Zealand" },
+    { value: "IS", label: "Iceland" },
+    { value: "IN", label: "India" },
+    { value: "FR", label: "France" },
+    { value: "BD", label: "Bangladesh" },
+    { value: "BB", label: "Barbados" },
+    { value: "BY", label: "Belarus" },
+    { value: "BE", label: "Belgium" },
+    { value: "BZ", label: "Belize" },
+    { value: "BJ", label: "Benin" },
+    { value: "BM", label: "Bermuda" },
+    { value: "BT", label: "Bhutan" },
+    { value: "BO", label: "Bolivia" },
+    { value: "BA", label: "Bosnia and Herzegovina" },
+    { value: "BW", label: "Botswana" },
+    { value: "BR", label: "Brazil" },
+    { value: "BN", label: "Brunei Darussalam" },
+    { value: "BG", label: "Bulgaria" },
+    { value: "BF", label: "Burkina Faso" },
+    { value: "BI", label: "Burundi" },
+  ]}
+  value={citizenship}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                             </div>
 
                             <div className=" col-md-6"></div>
 
                             <div className="col-md-12 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Do you have permanent Residence permit from
-                                below mentioned countries?
-                              </label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
-                                <option value="">Choose option</option>
-                                <option value="AF">Afghanistan</option>
-                                <option value="AS">American Samoa</option>
-                                <option value="CA">Canada</option>
-                                <option value="OM">Oman</option>
-                                <option value="PK">Pakistan</option>
-                                <option value="NL">Netherlands</option>
-                                <option value="NZ">New Zealand</option>
-                                <option value="IS">Iceland</option>
-                                <option value="IN">India</option>
-                                <option value="FR">France</option>
-                                <option value="BD">Bangladesh</option>
-                                <option value="BB">Barbados</option>
-                                <option value="BY">Belarus</option>
-                                <option value="BE">Belgium</option>
-                                <option value="BZ">Belize</option>
-                                <option value="BJ">Benin</option>
-                                <option value="BM">Bermuda</option>
-                                <option value="BT">Bhutan</option>
-                                <option value="BO">Bolivia</option>
-                                <option value="BA">
-                                  Bosnia and Herzegovina
-                                </option>
-                                <option value="BW">Botswana</option>
-                                <option value="BR">Brazil</option>
-                                <option value="BN">Brunei Darussalam</option>
-                                <option value="BG">Bulgaria</option>
-                                <option value="BF">Burkina Faso</option>
-                                <option value="BI">Burundi</option>
-                              </select>
+                            <Select
+  label="Do you have a permanent residence permit from the countries listed below?"
+  name="permanentResidence"
+  options={[
+    { value: "AF", label: "Afghanistan" },
+    { value: "AS", label: "American Samoa" },
+    { value: "CA", label: "Canada" },
+    { value: "OM", label: "Oman" },
+    { value: "PK", label: "Pakistan" },
+    { value: "NL", label: "Netherlands" },
+    { value: "NZ", label: "New Zealand" },
+    { value: "IS", label: "Iceland" },
+    { value: "IN", label: "India" },
+    { value: "FR", label: "France" },
+    { value: "BD", label: "Bangladesh" },
+    { value: "BB", label: "Barbados" },
+    { value: "BY", label: "Belarus" },
+    { value: "BE", label: "Belgium" },
+    { value: "BZ", label: "Belize" },
+    { value: "BJ", label: "Benin" },
+    { value: "BM", label: "Bermuda" },
+    { value: "BT", label: "Bhutan" },
+    { value: "BO", label: "Bolivia" },
+    { value: "BA", label: "Bosnia and Herzegovina" },
+    { value: "BW", label: "Botswana" },
+    { value: "BR", label: "Brazil" },
+    { value: "BN", label: "Brunei Darussalam" },
+    { value: "BG", label: "Bulgaria" },
+    { value: "BF", label: "Burkina Faso" },
+    { value: "BI", label: "Burundi" },
+  ]}
+  value={permanentResidence}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                             </div>
                             <div className="col-md-8 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Are you willing to start your own business in
-                                Sweden?
-                              </label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                              </select>
+                            <Select
+  label="Are you willing to start your own business in Sweden?"
+  name="startBusiness"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={startBusiness}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                             </div>
 
                             <div className="col-md-8 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Do you have job offer in Sweden?
-                              </label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Choose option</option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                              </select>
+                            <Select
+  label="Do you have a job offer in Sweden?"
+  name="jobOffer"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={jobOffer}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                Do you have Assets/Saving?
-                              </label>
-                              <select
-                                value={Saveing}
-                                onChange={handleWorkSaveingChange}
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                              >
-                                <option>Choose option</option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                              </select>
+                            <Select
+  label="Do you have assets/savings?"
+  name="savings"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={savings}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                             </div>
 
-                            {Saveing === "yes" ? (
+                            {savings === "yes" ? (
                               <>
                                 <div className="col-md-6 tw-pt-4">
-                                  <label className=" tw-text-sm  tw-text-gray ">
-                                    Do you have Assets/Saving?
-                                  </label>
-                                  <select
-                                    value={Saveing}
-                                    onChange={handleWorkSaveingChange}
-                                    className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                                  >
-                                    <option>Choose option</option>
-                                    <option value="250000 TO 300000 SEK">
-                                      250000 TO 300000 SEK
-                                    </option>
-                                    <option value="300000 TO 350000 SEK">
-                                      300000 TO 350000 SEK
-                                    </option>
-                                    <option value="350000 TO 500000 SEK">
-                                      350000 TO 500000 SEK
-                                    </option>
-                                    <option value="400000 TO 450000 SEK">
-                                      400000 TO 450000 SEK
-                                    </option>
-                                    <option value="MORE THAN 500000 SEK">
-                                      MORE THAN 500000 SEK
-                                    </option>
-                                  </select>
+                                <Select
+  label="What is the range of your assets/savings?"
+  name="assetRange"
+  options={[
+    { value: "250000 TO 300000 SEK", label: "250000 TO 300000 SEK" },
+    { value: "300000 TO 350000 SEK", label: "300000 TO 350000 SEK" },
+    { value: "350000 TO 500000 SEK", label: "350000 TO 500000 SEK" },
+    { value: "400000 TO 450000 SEK", label: "400000 TO 450000 SEK" },
+    { value: "MORE THAN 500000 SEK", label: "MORE THAN 500000 SEK" },
+  ]}
+  value={assetRange}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                                 </div>
                               </>
                             ) : null}

@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+
+import Select from "../../components/Selecttab";
+
 import blog1 from "../../assets/images/single-img-04.png";
 import Navbar from "../../components/Header/Navbar";
 import Footer from "../../components/Footer/Footer";
@@ -239,11 +242,40 @@ const Student_assessments = () => {
   ];
 
   const [chooseType, setChooseTypes] = useState("");
-  const [higherEducation, setHigherEducation] = useState("");
-  const [intermediate, setIntermediate] = useState("");
-  const [underGraduate, setUnderGraduate] = useState("");
-  const [masters, setMasters] = useState("");
+  
   const [others, setOthers] = useState("");
+
+  const [country, setCountry] = useState("");
+  const [studyLevel, setStudyLevel] = useState("");
+  const [yearsOfStudy, setYearsOfStudy] = useState("");
+  const [languageTest, setLanguageTest] = useState("");
+  const [ieltsScore, setIeltsScore] = useState("");
+  const [subject, setSubject] = useState("");
+  const [percentage, setPercentage] = useState("");
+  const [grade, setGrade] = useState("");
+  const [languageTest2, setLanguageTest2] = useState(""); // For repeated language test
+  const [subject2, setSubject2] = useState(""); // For repeated subject
+
+
+
+const [percentage2, setPercentage2] = useState(""); // For repeated percentage
+const [grade2, setGrade2] = useState(""); // For repeated grade
+
+const [percentage3, setPercentage3] = useState(""); // For percentage with "Select Percentage"
+const [grade3, setGrade3] = useState(""); // For another grade select
+const [subject3, setSubject3] = useState(""); // For another subject select
+
+
+
+
+  
+
+
+
+
+
+
+
   const handleSelectChange = (e) => {
     const value = e.target.value;
 
@@ -256,6 +288,59 @@ const Student_assessments = () => {
     }
 
     switch (e.target.name) {
+
+
+    
+   
+    
+      case "percentage2":
+        setPercentage2(value);
+        break;
+      case "grade2":
+        setGrade2(value);
+        break;
+   
+   
+      case "percentage3":
+        setPercentage3(value);
+        break;
+      case "grade3":
+        setGrade3(value);
+        break;
+      case "subject3":
+        setSubject3(value);
+        break;
+
+      case "country":
+      setCountry(value);
+      break;
+    case "studyLevel":
+      setStudyLevel(value);
+      break;
+    case "yearsOfStudy":
+      setYearsOfStudy(value);
+      break;
+    case "languageTest":
+      setLanguageTest(value);
+      break;
+    case "ieltsScore":
+      setIeltsScore(value);
+      break;
+    case "subject":
+      setSubject(value);
+      break;
+    case "percentage":
+      setPercentage(value);
+      break;
+    case "grade":
+      setGrade(value);
+      break;
+    case "languageTest2":
+      setLanguageTest2(value);
+      break;
+    case "subject2":
+      setSubject2(value);
+      break;
       case "higherEducation":
         setHigherEducation(value);
         break;
@@ -637,159 +722,70 @@ const Student_assessments = () => {
                           <strong>Educational Background</strong>
                         </h2>
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">Country</label>
-                          <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>Country</option>
-                            <option value="AF">Afghanistan</option>
-                            <option value="AL">Albania</option>
-                            <option value="DZ">Algeria</option>
-                            <option value="AS">American Samoa</option>
-                            <option value="AD">Andorra</option>
-                            <option value="AO">Angola</option>
-                            <option value="AI">Anguilla</option>
-                            <option value="AQ">Antarctica</option>
-                            <option value="AG">Antigua and Barbuda</option>
-                            <option value="AR">Argentina</option>
-                            <option value="AM">Armenia</option>
-                            <option value="AW">Aruba</option>
-                            <option value="AU">Australia</option>
-                            <option value="AT">Austria</option>
-                            <option value="AZ">Azerbaijan</option>
-                            <option value="BS">Bahamas</option>
-                            <option value="BH">Bahrain</option>
-                            <option value="BD">Bangladesh</option>
-                            <option value="BB">Barbados</option>
-                            <option value="BY">Belarus</option>
-                            <option value="BE">Belgium</option>
-                            <option value="BZ">Belize</option>
-                            <option value="BJ">Benin</option>
-                            <option value="BM">Bermuda</option>
-                            <option value="BT">Bhutan</option>
-                            <option value="BO">Bolivia</option>
-                            <option value="BA">Bosnia and Herzegovina</option>
-                            <option value="BW">Botswana</option>
-                            <option value="BR">Brazil</option>
-                            <option value="IO">
-                              British Indian Ocean Territory
-                            </option>
-                            <option value="BN">Brunei Darussalam</option>
-                            <option value="BG">Bulgaria</option>
-                            <option value="BF">Burkina Faso</option>
-                            <option value="BI">Burundi</option>
-                            <option value="KH">Cambodia</option>
-                            <option value="CM">Cameroon</option>
-                            <option value="CA">Canada</option>
-                            <option value="CV">Cape Verde</option>
-                            <option value="KY">Cayman Islands</option>
-                            <option value="CF">Central African Republic</option>
-                            <option value="TD">Chad</option>
-                            <option value="CL">Chile</option>
-                            <option value="CN">China</option>
-                            <option value="CX">Christmas Island</option>
-                            <option value="CC">Cocos (Keeling) Islands</option>
-                            <option value="CO">Colombia</option>
-                            <option value="KM">Comoros</option>
-                            <option value="CG">Congo</option>
-                            <option value="CD">
-                              Congo, the Democratic Republic of the
-                            </option>
-                            <option value="CK">Cook Islands</option>
-                            <option value="CR">Costa Rica</option>
-                            <option value="CI">Côte d'Ivoire</option>
-                            <option value="HR">Croatia</option>
-                            <option value="CU">Cuba</option>
-                            <option value="CY">Cyprus</option>
-                            <option value="CZ">Czech Republic</option>
-                            <option value="DK">Denmark</option>
-                            <option value="DJ">Djibouti</option>
-                            <option value="DM">Dominica</option>
-                            <option value="DO">Dominican Republic</option>
-                            <option value="EC">Ecuador</option>
-                            <option value="EG">Egypt</option>
-                            <option value="SV">El Salvador</option>
-                            <option value="GQ">Equatorial Guinea</option>
-                            <option value="ER">Eritrea</option>
-                            <option value="EE">Estonia</option>
-                            <option value="ET">Ethiopia</option>
-                            <option value="FJ">Fiji</option>
-                            <option value="FI">Finland</option>
-                            <option value="FR">France</option>
-                            <option value="GF">French Guiana</option>
-                            <option value="PF">French Polynesia</option>
-                            <option value="GA">Gabon</option>
-                            <option value="GM">Gambia</option>
-                            <option value="GE">Georgia</option>
-                            <option value="DE">Germany</option>
-                            <option value="GH">Ghana</option>
-                            <option value="GI">Gibraltar</option>
-                            <option value="GR">Greece</option>
-                            <option value="GL">Greenland</option>
-                            <option value="GD">Grenada</option>
-                            <option value="GP">Guadeloupe</option>
-                            <option value="GU">Guam</option>
-                            <option value="GT">Guatemala</option>
-                            <option value="GN">Guinea</option>
-                            <option value="GW">Guinea-Bissau</option>
-                            <option value="GY">Guyana</option>
-                            <option value="HT">Haiti</option>
-                            <option value="VA">
-                              Holy See (Vatican City State)
-                            </option>
-                            <option value="HN">Honduras</option>
-                            <option value="HK">Hong Kong</option>
-                            <option value="HU">Hungary</option>
-                            <option value="IS">Iceland</option>
-                            <option value="IN">India</option>
-                            <option value="ID">Indonesia</option>
-                            <option value="IR">
-                              Iran, Islamic Republic of
-                            </option>
-                            <option value="IQ">Iraq</option>
-                            <option value="IE">Ireland</option>
-                            <option value="IL">Israel</option>
-                            <option value="IT">Italy</option>
-                            <option value="JM">Jamaica</option>
-                          </select>
+                        <Select
+  label="Country"
+  name="country"
+  options={[
+    { value: "AF", label: "Afghanistan" },
+    { value: "AL", label: "Albania" },
+    { value: "DZ", label: "Algeria" },
+    { value: "AS", label: "American Samoa" },
+    { value: "AD", label: "Andorra" },
+    { value: "AO", label: "Angola" },
+    { value: "AI", label: "Anguilla" },
+    { value: "AQ", label: "Antarctica" },
+    { value: "AG", label: "Antigua and Barbuda" },
+    { value: "AR", label: "Argentina" },
+    { value: "AM", label: "Armenia" },
+    { value: "AW", label: "Aruba" },
+    { value: "AU", label: "Australia" },
+    { value: "AT", label: "Austria" },
+    { value: "AZ", label: "Azerbaijan" },
+    // Add more countries as needed
+  ]}
+  value={country}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                         </div>
 
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">Select Level of Studies</label>
-                          <select
-                            name="chooseType"
-                            value={chooseType}
-                            onChange={handleSelectChange}
-                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                          >
-                            <option>Select Level of Studies</option>
+                        <Select
+  label="Select Level of Studies"
+  name="studyLevel"
+  options={[
+    { value: "Higher Secondary Education", label: "Higher Secondary Education" },
+    { value: "Intermediate / O-A Levels", label: "Intermediate / O-A Levels" },
+    { value: "Under Graduate", label: "Under Graduate" },
+    { value: "Masters/ M.Phil / Post Graduate", label: "Masters/ M.Phil / Post Graduate" },
+    { value: "Other", label: "Other" },
+  ]}
+  value={studyLevel}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
 
-                            <option value="Higher Secondary Education">
-                              Higher Secondary Education
-                            </option>
-                            <option value="Intermediate / O-A Levels">
-                              Intermediate / O-A Levels
-                            </option>
-                            <option value="Under Graduate">
-                              Under Graduate
-                            </option>
-                            <option value="Masters/ M.Phil / Post Graduate">
-                              Masters/ M.Phil / Post Graduate
-                            </option>
-                            <option value="Other">Other</option>
-                          </select>
                         </div>
 
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">Total no of years of study</label>
-                          <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>Total no of years of study</option>
-                            <option value="10 Year">10 Year</option>
-                            <option value="12 Year">12 Year</option>
-                            <option value="14 Year">14 Year</option>
-                            <option value="16 Year">16 Year</option>
-                            <option value="18 Year">18 Year</option>
-                          </select>
+                        <Select
+  label="Total no of years of study"
+  name="yearsOfStudy"
+  options={[
+    { value: "10 Year", label: "10 Year" },
+    { value: "12 Year", label: "12 Year" },
+    { value: "14 Year", label: "14 Year" },
+    { value: "16 Year", label: "16 Year" },
+    { value: "18 Year", label: "18 Year" },
+  ]}
+  value={yearsOfStudy}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                         </div>
-                        {chooseType === "Other" ? (
+                        {studyLevel === "Other" ? (
                           <>
                             <div className="col-md-8 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray "></label>
@@ -823,54 +819,49 @@ const Student_assessments = () => {
                                   </h2>
 
                                   <div className="col-md-6 tw-pt-4">
-                                    <label className=" tw-text-sm  tw-text-gray "> English Language Proficiency Test</label>
-                                    <select
-                                      onChange={handleSelectChange}
-                                      name="others"
-                                      value={others}
-                                      className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                                    >
-                                      <option>
-                                        English Language Proficiency Test
-                                      </option>
+                                  <Select
+  label="English Language Proficiency Test"
+  name="languageTest"
+  options={[
+    { value: "IELTS", label: "IELTS" },
+    { value: "TOFEL (Paper-based)", label: "TOFEL (Paper-based)" },
+    { value: "TOFEL (Internet-based)", label: "TOFEL (Internet-based)" },
+    { value: "CAMBRIDGE", label: "CAMBRIDGE" },
+    { value: "PEARSON", label: "PEARSON" },
+    { value: "LETTER OF PROFICIENCY", label: "LETTER OF PROFICIENCY" },
+    { value: "OTHER", label: "OTHER" },
+  ]}
+  value={languageTest}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
 
-                                      <option value="IELTS">IELTS</option>
-                                      <option value="TOFEL (Paper-based)">
-                                        TOFEL (Paper-based)
-                                      </option>
-                                      <option value="TOFEL (Internet-based)">
-                                        TOFEL (Internet-based)
-                                      </option>
-                                      <option value="CAMBRIDGE">
-                                        CAMBRIDGE
-                                      </option>
-                                      <option value="PEARSON">PEARSON</option>
-                                      <option value="LETTER OF PROFICIENCY">
-                                        LETTER OF PROFICIENCY
-                                      </option>
-                                      <option value="OTHER">OTHER</option>
-                                    </select>
                                   </div>
 
-                                  {others === "IELTS" ? (
+                                  {languageTest === "IELTS" ? (
                                     <>
                                       <div className="col-md-6 tw-pt-4">
-                                        <label className=" tw-text-sm  tw-text-gray ">Over all IELTS Score</label>
-                                        <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                          <option>Over all IELTS Score</option>
+                                      <Select
+  label="Overall IELTS Score"
+  name="ieltsScore"
+  options={[
+    { value: "5", label: "5" },
+    { value: "5.5", label: "5.5" },
+    { value: "6", label: "6" },
+    { value: "6.5", label: "6.5" },
+    { value: "7", label: "7" },
+    { value: "7.5", label: "7.5" },
+  ]}
+  value={ieltsScore}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
 
-                                          <option value="5">5</option>
-                                          <option value="5.5">5.5</option>
-                                          <option value="6">6</option>
-                                          <option value="6.5">6.5</option>
-                                          <option value="7">7</option>
-                                          <option value="7.5">7.5</option>
-                                        </select>
                                       </div>
                                     </>
                                   ) : null}
 
-                                  {others === "OTHER" ? (
+                                  {languageTest === "OTHER" ? (
                                     <>
                                       <div className="col-md-6"></div>
                                       <div className="col-md-6 tw-pt-4">
@@ -914,7 +905,7 @@ const Student_assessments = () => {
 
                   {/* higher  */}
 
-                  {chooseType === "Higher Secondary Education" ? (
+                  {studyLevel === "Higher Secondary Education" ? (
                     <>
                       {/* user info */}
                       <div className=" tw-pt-8">
@@ -938,25 +929,26 @@ const Student_assessments = () => {
                     </h2>
                            
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Subject</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Subject</option>
+                            <Select
+  label="Subject"
+  name="subject"
+  options={[
+    { value: "Science", label: "Science" },
+    { value: "Engineering", label: "Engineering" },
+    { value: "Medical", label: "Medical" },
+    { value: "IT", label: "IT" },
+    { value: "Business", label: "Business" },
+    { value: "Management", label: "Management" },
+    { value: "Art Design Media", label: "Art Design Media" },
+    { value: "Education", label: "Education" },
+    { value: "Journalism", label: "Journalism" },
+    { value: "Natural Science", label: "Natural Science" },
+  ]}
+  value={subject}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
 
-                                <option value="Science">Science</option>
-                                <option value="Engineering">Engineering</option>
-                                <option value="Medical">Medical</option>
-                                <option value="IT">IT</option>
-                                <option value="Business">Business</option>
-                                <option value="Management">Management</option>
-                                <option value="Art Design Media">
-                                  Art Design Media
-                                </option>
-                                <option value="Education">Education</option>
-                                <option value="Journalism">Journalism</option>
-                                <option value="Natural Science">
-                                  Natural Science
-                                </option>
-                              </select>
                             </div>
 
                             <div className="col-md-6 tw-pt-4">
@@ -972,38 +964,36 @@ const Student_assessments = () => {
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Percentage</option>
-                                <option value="33">33</option>
-                                <option value="34">34</option>
-                                <option value="35">35</option>
-                                <option value="36">36</option>
-                                <option value="37">37</option>
-                                <option value="38">38</option>
-                                <option value="39">39</option>
-                                <option value="40">40</option>
-                                <option value="41">41</option>
-                                <option value="42">42</option>
-                                <option value="43">43</option>
-                                <option value="44">44</option>
-                                <option value="45">45</option>
-                                <option value="46">46</option>
-                                <option value="47">47</option>
-                                <option value="48">48</option>
-                                <option value="49">49</option>
-                                <option value="50">50</option>
-                              </select>
+                            <Select
+  label="Percentage"
+  name="percentage"
+  options={Array.from({ length: 18 }, (_, i) => ({
+    value: `${33 + i}`,
+    label: `${33 + i}`,
+  }))}
+  value={percentage}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Grade</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Grade</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>
-                              </select>
+                             
+                            <Select
+  label="Grade"
+  name="grade"
+  options={[
+    { value: "A", label: "A" },
+    { value: "B", label: "B" },
+    { value: "C", label: "C" },
+    { value: "D", label: "D" },
+    { value: "E", label: "E" },
+  ]}
+  value={grade}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                             </div>
                           </div>
                         </form>
@@ -1032,26 +1022,24 @@ const Student_assessments = () => {
                     </h2>
                             
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "> English Language Proficiency Test</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>
-                                  English Language Proficiency Test
-                                </option>
+                            <Select
+  label="English Language Proficiency Test"
+  name="languageTest2"
+  options={[
+    { value: "IELTS", label: "IELTS" },
+    { value: "TOFEL (Paper-based)", label: "TOFEL (Paper-based)" },
+    { value: "TOFEL (Internet-based)", label: "TOFEL (Internet-based)" },
+    { value: "CAMBRIDGE", label: "CAMBRIDGE" },
+    { value: "PEARSON", label: "PEARSON" },
+    { value: "LETTER OF PROFICIENCY", label: "LETTER OF PROFICIENCY" },
+    { value: "OTHER", label: "OTHER" },
+  ]}
+  value={languageTest2}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
 
-                                <option value="IELTS">IELTS</option>
-                                <option value="TOFEL (Paper-based)">
-                                  TOFEL (Paper-based)
-                                </option>
-                                <option value="TOFEL (Internet-based)">
-                                  TOFEL (Internet-based)
-                                </option>
-                                <option value="CAMBRIDGE">CAMBRIDGE</option>
-                                <option value="PEARSON">PEARSON</option>
-                                <option value="LETTER OF PROFICIENCY">
-                                  LETTER OF PROFICIENCY
-                                </option>
-                                <option value="OTHER">OTHER</option>
-                              </select>
+
                             </div>
                           </div>
                         </form>
@@ -1059,7 +1047,7 @@ const Student_assessments = () => {
                     </>
                   ) : null}
 
-                  {chooseType === "Intermediate / O-A Levels" ? (
+                  {studyLevel === "Intermediate / O-A Levels" ? (
                     <>
                       {/* user info */}
                       <div className=" tw-pt-8">
@@ -1083,25 +1071,26 @@ const Student_assessments = () => {
                     </h2>
                             
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Subject</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Subject</option>
+                            <Select
+  label="Subject"
+  name="subject2"
+  options={[
+    { value: "Science", label: "Science" },
+    { value: "Engineering", label: "Engineering" },
+    { value: "Medical", label: "Medical" },
+    { value: "IT", label: "IT" },
+    { value: "Business", label: "Business" },
+    { value: "Management", label: "Management" },
+    { value: "Art Design Media", label: "Art Design Media" },
+    { value: "Education", label: "Education" },
+    { value: "Journalism", label: "Journalism" },
+    { value: "Natural Science", label: "Natural Science" },
+  ]}
+  value={subject2}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
 
-                                <option value="Science">Science</option>
-                                <option value="Engineering">Engineering</option>
-                                <option value="Medical">Medical</option>
-                                <option value="IT">IT</option>
-                                <option value="Business">Business</option>
-                                <option value="Management">Management</option>
-                                <option value="Art Design Media">
-                                  Art Design Media
-                                </option>
-                                <option value="Education">Education</option>
-                                <option value="Journalism">Journalism</option>
-                                <option value="Natural Science">
-                                  Natural Science
-                                </option>
-                              </select>
                             </div>
 
                             <div className="col-md-6 tw-pt-4">
@@ -1117,39 +1106,35 @@ const Student_assessments = () => {
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Percentage</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Percentage</option>
-                                <option value="33">33</option>
-                                <option value="34">34</option>
-                                <option value="35">35</option>
-                                <option value="36">36</option>
-                                <option value="37">37</option>
-                                <option value="38">38</option>
-                                <option value="39">39</option>
-                                <option value="40">40</option>
-                                <option value="41">41</option>
-                                <option value="42">42</option>
-                                <option value="43">43</option>
-                                <option value="44">44</option>
-                                <option value="45">45</option>
-                                <option value="46">46</option>
-                                <option value="47">47</option>
-                                <option value="48">48</option>
-                                <option value="49">49</option>
-                                <option value="50">50</option>
-                              </select>
+                            <Select
+  label="Percentage"
+  name="percentage"
+  options={Array.from({ length: 18 }, (_, i) => ({
+    value: `${33 + i}`,
+    label: `${33 + i}`,
+  }))}
+  value={percentage}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Select Grade</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Select Grade</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>
-                              </select>
+                            <Select
+  label="Select Grade"
+  name="grade"
+  options={[
+    { value: "A", label: "A" },
+    { value: "B", label: "B" },
+    { value: "C", label: "C" },
+    { value: "D", label: "D" },
+    { value: "E", label: "E" },
+  ]}
+  value={grade}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                             </div>
                           </div>
                         </form>
@@ -1168,25 +1153,26 @@ const Student_assessments = () => {
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Subject</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Subject</option>
+                            <Select
+  label="Subject"
+  name="subject"
+  options={[
+    { value: "Science", label: "Science" },
+    { value: "Engineering", label: "Engineering" },
+    { value: "Medical", label: "Medical" },
+    { value: "IT", label: "IT" },
+    { value: "Business", label: "Business" },
+    { value: "Management", label: "Management" },
+    { value: "Art Design Media", label: "Art Design Media" },
+    { value: "Education", label: "Education" },
+    { value: "Journalism", label: "Journalism" },
+    { value: "Natural Science", label: "Natural Science" },
+  ]}
+  value={subject}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
 
-                                <option value="Science">Science</option>
-                                <option value="Engineering">Engineering</option>
-                                <option value="Medical">Medical</option>
-                                <option value="IT">IT</option>
-                                <option value="Business">Business</option>
-                                <option value="Management">Management</option>
-                                <option value="Art Design Media">
-                                  Art Design Media
-                                </option>
-                                <option value="Education">Education</option>
-                                <option value="Journalism">Journalism</option>
-                                <option value="Natural Science">
-                                  Natural Science
-                                </option>
-                              </select>
                             </div>
 
                             <div className="col-md-6 tw-pt-4">
@@ -1202,39 +1188,35 @@ const Student_assessments = () => {
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Percentage</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Percentage</option>
-                                <option value="33">33</option>
-                                <option value="34">34</option>
-                                <option value="35">35</option>
-                                <option value="36">36</option>
-                                <option value="37">37</option>
-                                <option value="38">38</option>
-                                <option value="39">39</option>
-                                <option value="40">40</option>
-                                <option value="41">41</option>
-                                <option value="42">42</option>
-                                <option value="43">43</option>
-                                <option value="44">44</option>
-                                <option value="45">45</option>
-                                <option value="46">46</option>
-                                <option value="47">47</option>
-                                <option value="48">48</option>
-                                <option value="49">49</option>
-                                <option value="50">50</option>
-                              </select>
+                            <Select
+  label="Percentage"
+  name="percentage2"
+  options={Array.from({ length: 18 }, (_, i) => ({
+    value: `${33 + i}`,
+    label: `${33 + i}`,
+  }))}
+  value={percentage2}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Select Grade</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Select Grade</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>
-                              </select>
+                            <Select
+  label="Select Grade"
+  name="grade2"
+  options={[
+    { value: "A", label: "A" },
+    { value: "B", label: "B" },
+    { value: "C", label: "C" },
+    { value: "D", label: "D" },
+    { value: "E", label: "E" },
+  ]}
+  value={grade2}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                             </div>
                           </div>
                         </form>
@@ -1263,27 +1245,23 @@ const Student_assessments = () => {
                             
                             
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">English Language Proficiency Test</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>
-                                  {" "}
-                                  English Language Proficiency Test
-                                </option>
+                            <Select
+  label="English Language Proficiency Test"
+  name="languageTest"
+  options={[
+    { value: "IELTS", label: "IELTS" },
+    { value: "TOFEL (Paper-based)", label: "TOFEL (Paper-based)" },
+    { value: "TOFEL (Internet-based)", label: "TOFEL (Internet-based)" },
+    { value: "CAMBRIDGE", label: "CAMBRIDGE" },
+    { value: "PEARSON", label: "PEARSON" },
+    { value: "LETTER OF PROFICIENCY", label: "LETTER OF PROFICIENCY" },
+    { value: "OTHER", label: "OTHER" },
+  ]}
+  value={languageTest}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
 
-                                <option value="IELTS">IELTS</option>
-                                <option value="TOFEL (Paper-based)">
-                                  TOFEL (Paper-based)
-                                </option>
-                                <option value="TOFEL (Internet-based)">
-                                  TOFEL (Internet-based)
-                                </option>
-                                <option value="CAMBRIDGE">CAMBRIDGE</option>
-                                <option value="PEARSON">PEARSON</option>
-                                <option value="LETTER OF PROFICIENCY">
-                                  LETTER OF PROFICIENCY
-                                </option>
-                                <option value="OTHER">OTHER</option>
-                              </select>
                             </div>
                           </div>
                         </form>
@@ -1291,8 +1269,8 @@ const Student_assessments = () => {
                     </>
                   ) : null}
 
-                  {chooseType === "Under Graduate" ||
-                  chooseType === "Masters/ M.Phil / Post Graduate" ? (
+                  {studyLevel === "Under Graduate" ||
+                  studyLevel === "Masters/ M.Phil / Post Graduate" ? (
                     <>
                       {/* user info */}
                       <div className=" tw-pt-8">
@@ -1315,25 +1293,26 @@ const Student_assessments = () => {
                     </h2>
                            
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Subject</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Subject</option>
+                            <Select
+  label="Subject"
+  name="subject2"
+  options={[
+    { value: "Science", label: "Science" },
+    { value: "Engineering", label: "Engineering" },
+    { value: "Medical", label: "Medical" },
+    { value: "IT", label: "IT" },
+    { value: "Business", label: "Business" },
+    { value: "Management", label: "Management" },
+    { value: "Art Design Media", label: "Art Design Media" },
+    { value: "Education", label: "Education" },
+    { value: "Journalism", label: "Journalism" },
+    { value: "Natural Science", label: "Natural Science" },
+  ]}
+  value={subject2}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
 
-                                <option value="Science">Science</option>
-                                <option value="Engineering">Engineering</option>
-                                <option value="Medical">Medical</option>
-                                <option value="IT">IT</option>
-                                <option value="Business">Business</option>
-                                <option value="Management">Management</option>
-                                <option value="Art Design Media">
-                                  Art Design Media
-                                </option>
-                                <option value="Education">Education</option>
-                                <option value="Journalism">Journalism</option>
-                                <option value="Natural Science">
-                                  Natural Science
-                                </option>
-                              </select>
                             </div>
 
                             <div className="col-md-6 tw-pt-4">
@@ -1349,39 +1328,35 @@ const Student_assessments = () => {
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Select Percentage</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Select Percentage</option>
-                                <option value="33">33</option>
-                                <option value="34">34</option>
-                                <option value="35">35</option>
-                                <option value="36">36</option>
-                                <option value="37">37</option>
-                                <option value="38">38</option>
-                                <option value="39">39</option>
-                                <option value="40">40</option>
-                                <option value="41">41</option>
-                                <option value="42">42</option>
-                                <option value="43">43</option>
-                                <option value="44">44</option>
-                                <option value="45">45</option>
-                                <option value="46">46</option>
-                                <option value="47">47</option>
-                                <option value="48">48</option>
-                                <option value="49">49</option>
-                                <option value="50">50</option>
-                              </select>
+                            <Select
+  label="Select Percentage"
+  name="percentage3"
+  options={Array.from({ length: 18 }, (_, i) => ({
+    value: `${33 + i}`,
+    label: `${33 + i}`,
+  }))}
+  value={percentage3}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Select Grade</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Select Grade</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>
-                              </select>
+                            <Select
+  label="Select Grade"
+  name="grade3"
+  options={[
+    { value: "A", label: "A" },
+    { value: "B", label: "B" },
+    { value: "C", label: "C" },
+    { value: "D", label: "D" },
+    { value: "E", label: "E" },
+  ]}
+  value={grade3}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
+/>
+
                             </div>
                           </div>
                         </form>
@@ -1400,25 +1375,26 @@ const Student_assessments = () => {
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Subject</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Subject</option>
+                            <Select
+  label="Subject"
+  name="subject3"
+  options={[
+    { value: "Science", label: "Science" },
+    { value: "Engineering", label: "Engineering" },
+    { value: "Medical", label: "Medical" },
+    { value: "IT", label: "IT" },
+    { value: "Business", label: "Business" },
+    { value: "Management", label: "Management" },
+    { value: "Art Design Media", label: "Art Design Media" },
+    { value: "Education", label: "Education" },
+    { value: "Journalism", label: "Journalism" },
+    { value: "Natural Science", label: "Natural Science" },
+  ]}
+  value={subject3}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
+/>
 
-                                <option value="Science">Science</option>
-                                <option value="Engineering">Engineering</option>
-                                <option value="Medical">Medical</option>
-                                <option value="IT">IT</option>
-                                <option value="Business">Business</option>
-                                <option value="Management">Management</option>
-                                <option value="Art Design Media">
-                                  Art Design Media
-                                </option>
-                                <option value="Education">Education</option>
-                                <option value="Journalism">Journalism</option>
-                                <option value="Natural Science">
-                                  Natural Science
-                                </option>
-                              </select>
                             </div>
 
                             <div className="col-md-6 tw-pt-4">
@@ -1434,39 +1410,35 @@ const Student_assessments = () => {
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Select Percentage</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Select Percentage</option>
-                                <option value="33">33</option>
-                                <option value="34">34</option>
-                                <option value="35">35</option>
-                                <option value="36">36</option>
-                                <option value="37">37</option>
-                                <option value="38">38</option>
-                                <option value="39">39</option>
-                                <option value="40">40</option>
-                                <option value="41">41</option>
-                                <option value="42">42</option>
-                                <option value="43">43</option>
-                                <option value="44">44</option>
-                                <option value="45">45</option>
-                                <option value="46">46</option>
-                                <option value="47">47</option>
-                                <option value="48">48</option>
-                                <option value="49">49</option>
-                                <option value="50">50</option>
-                              </select>
+                            <Select
+  label="Select Percentage"
+  name="percentage"
+  options={Array.from({ length: 18 }, (_, i) => ({
+    value: `${33 + i}`,
+    label: `${33 + i}`,
+  }))}
+  value={percentage}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Select Grade</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Select Grade</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>
-                              </select>
+                            <Select
+  label="Select Grade"
+  name="grade"
+  options={[
+    { value: "A", label: "A" },
+    { value: "B", label: "B" },
+    { value: "C", label: "C" },
+    { value: "D", label: "D" },
+    { value: "E", label: "E" },
+  ]}
+  value={grade}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                             </div>
                           </div>
                         </form>
@@ -1485,25 +1457,26 @@ const Student_assessments = () => {
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Subject</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Subject</option>
+                            <Select
+  label="Subject"
+  name="subject"
+  options={[
+    { value: "Science", label: "Science" },
+    { value: "Engineering", label: "Engineering" },
+    { value: "Medical", label: "Medical" },
+    { value: "IT", label: "IT" },
+    { value: "Business", label: "Business" },
+    { value: "Management", label: "Management" },
+    { value: "Art Design Media", label: "Art Design Media" },
+    { value: "Education", label: "Education" },
+    { value: "Journalism", label: "Journalism" },
+    { value: "Natural Science", label: "Natural Science" },
+  ]}
+  value={subject}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
 
-                                <option value="Science">Science</option>
-                                <option value="Engineering">Engineering</option>
-                                <option value="Medical">Medical</option>
-                                <option value="IT">IT</option>
-                                <option value="Business">Business</option>
-                                <option value="Management">Management</option>
-                                <option value="Art Design Media">
-                                  Art Design Media
-                                </option>
-                                <option value="Education">Education</option>
-                                <option value="Journalism">Journalism</option>
-                                <option value="Natural Science">
-                                  Natural Science
-                                </option>
-                              </select>
                             </div>
 
                             <div className="col-md-3 tw-pt-4">
@@ -1535,39 +1508,35 @@ const Student_assessments = () => {
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Select Percentage</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Select Percentage</option>
-                                <option value="33">33</option>
-                                <option value="34">34</option>
-                                <option value="35">35</option>
-                                <option value="36">36</option>
-                                <option value="37">37</option>
-                                <option value="38">38</option>
-                                <option value="39">39</option>
-                                <option value="40">40</option>
-                                <option value="41">41</option>
-                                <option value="42">42</option>
-                                <option value="43">43</option>
-                                <option value="44">44</option>
-                                <option value="45">45</option>
-                                <option value="46">46</option>
-                                <option value="47">47</option>
-                                <option value="48">48</option>
-                                <option value="49">49</option>
-                                <option value="50">50</option>
-                              </select>
+                            <Select
+  label="Select Percentage"
+  name="percentage2"
+  options={Array.from({ length: 18 }, (_, i) => ({
+    value: `${33 + i}`,
+    label: `${33 + i}`,
+  }))}
+  value={percentage2}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Select Grade</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Select Grade</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                                <option value="E">E</option>
-                              </select>
+                            <Select
+  label="Select Grade"
+  name="grade2"
+  options={[
+    { value: "A", label: "A" },
+    { value: "B", label: "B" },
+    { value: "C", label: "C" },
+    { value: "D", label: "D" },
+    { value: "E", label: "E" },
+  ]}
+  value={grade2}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                             </div>
                           </div>
                         </form>
@@ -1592,27 +1561,23 @@ const Student_assessments = () => {
                       </strong>
                     </h2>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "> English Language Proficiency Test</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>
-                                  {" "}
-                                  English Language Proficiency Test
-                                </option>
+                            <Select
+  label="English Language Proficiency Test"
+  name="languageTest"
+  options={[
+    { value: "IELTS", label: "IELTS" },
+    { value: "TOFEL (Paper-based)", label: "TOFEL (Paper-based)" },
+    { value: "TOFEL (Internet-based)", label: "TOFEL (Internet-based)" },
+    { value: "CAMBRIDGE", label: "CAMBRIDGE" },
+    { value: "PEARSON", label: "PEARSON" },
+    { value: "LETTER OF PROFICIENCY", label: "LETTER OF PROFICIENCY" },
+    { value: "OTHER", label: "OTHER" },
+  ]}
+  value={languageTest}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
 
-                                <option value="IELTS">IELTS</option>
-                                <option value="TOFEL (Paper-based)">
-                                  TOFEL (Paper-based)
-                                </option>
-                                <option value="TOFEL (Internet-based)">
-                                  TOFEL (Internet-based)
-                                </option>
-                                <option value="CAMBRIDGE">CAMBRIDGE</option>
-                                <option value="PEARSON">PEARSON</option>
-                                <option value="LETTER OF PROFICIENCY">
-                                  LETTER OF PROFICIENCY
-                                </option>
-                                <option value="OTHER">OTHER</option>
-                              </select>
                             </div>
                           </div>
                         </form>

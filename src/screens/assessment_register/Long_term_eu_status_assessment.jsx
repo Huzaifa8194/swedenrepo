@@ -17,6 +17,8 @@ import { useTranslation } from "react-i18next";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
 import Header from '../../components/Header_New/Header';
+import Select from "../../components/Selecttab";
+
 
 const Long_term_eu_status_assessment = () => {
   const { t } = useTranslation();
@@ -177,9 +179,18 @@ const Long_term_eu_status_assessment = () => {
     },
   ];
 
-  const [location, setLocation] = useState('');
-  const [personalStatus, setPersonalStatus] = useState('');
-  const [assesment_family, setAssesmentFamily] = useState('');
+  const [location, setLocation] = useState("");
+  const [residenceCountry, setResidenceCountry] = useState("");
+  const [jobOffer, setJobOffer] = useState("");
+  const [ownBusiness, setOwnBusiness] = useState("");
+  const [moveToSweden, setMoveToSweden] = useState("");
+  const [assessmentFamily, setAssessmentFamily] = useState("");
+  const [marriageCertificate, setMarriageCertificate] = useState("");
+  const [homeCountryMarriage, setHomeCountryMarriage] = useState("");
+  const [familyRegistrationCertificate, setFamilyRegistrationCertificate] = useState("");
+  const [numberOfChildren, setNumberOfChildren] = useState("");
+  const [birthCertificates, setBirthCertificates] = useState("");
+  
   const handleSelectChange = (e) => {
     const value = e.target.value;
 
@@ -192,15 +203,39 @@ const Long_term_eu_status_assessment = () => {
     }
 
     switch (e.target.name) {
-      case 'location':
-        setLocation(value);
-        break;
-      case 'personalStatus':
-        setPersonalStatus(value);
-        break;
-      case 'assesment_family':
-        setAssesmentFamily(value);
-        break;
+      case "location":
+      setLocation(value);
+      break;
+    case "residenceCountry":
+      setResidenceCountry(value);
+      break;
+    case "jobOffer":
+      setJobOffer(value);
+      break;
+    case "ownBusiness":
+      setOwnBusiness(value);
+      break;
+    case "moveToSweden":
+      setMoveToSweden(value);
+      break;
+    case "assessmentFamily":
+      setAssessmentFamily(value);
+      break;
+    case "marriageCertificate":
+      setMarriageCertificate(value);
+      break;
+    case "homeCountryMarriage":
+      setHomeCountryMarriage(value);
+      break;
+    case "familyRegistrationCertificate":
+      setFamilyRegistrationCertificate(value);
+      break;
+    case "numberOfChildren":
+      setNumberOfChildren(value);
+      break;
+    case "birthCertificates":
+      setBirthCertificates(value);
+      break;
       default:
         break;
     }
@@ -494,245 +529,87 @@ const Long_term_eu_status_assessment = () => {
                         <div className="col-md-6 tw-pt-4">
 
 
-                          <label className=" tw-text-sm  tw-text-gray ">Select Citizenship</label>
-                          <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2" value={location} name="location" onChange={handleSelectChange}>
-                            <option>Select Citizenship</option>
-                            <option value="AF">Afghanistan</option>
-                            <option value="AL">Albania</option>
-                            <option value="DZ">Algeria</option>
-                            <option value="AS">American Samoa</option>
-                            <option value="AD">Andorra</option>
-                            <option value="AO">Angola</option>
-                            <option value="AI">Anguilla</option>
-                            <option value="AQ">Antarctica</option>
-                            <option value="AG">Antigua and Barbuda</option>
-                            <option value="AR">Argentina</option>
-                            <option value="AM">Armenia</option>
-                            <option value="AW">Aruba</option>
-                            <option value="AU">Australia</option>
-                            <option value="AT">Austria</option>
-                            <option value="AZ">Azerbaijan</option>
-                            <option value="BS">Bahamas</option>
-                            <option value="BH">Bahrain</option>
-                            <option value="BD">Bangladesh</option>
-                            <option value="BB">Barbados</option>
-                            <option value="BY">Belarus</option>
-                            <option value="BE">Belgium</option>
-                            <option value="BZ">Belize</option>
-                            <option value="BJ">Benin</option>
-                            <option value="BM">Bermuda</option>
-                            <option value="BT">Bhutan</option>
-                            <option value="BO">Bolivia</option>
-                            <option value="BA">Bosnia and Herzegovina</option>
-                            <option value="BW">Botswana</option>
-                            <option value="BR">Brazil</option>
-                            <option value="IO">British Indian Ocean Territory</option>
-                            <option value="BN">Brunei Darussalam</option>
-                            <option value="BG">Bulgaria</option>
-                            <option value="BF">Burkina Faso</option>
-                            <option value="BI">Burundi</option>
-                            <option value="KH">Cambodia</option>
-                            <option value="CM">Cameroon</option>
-                            <option value="CA">Canada</option>
-                            <option value="CV">Cape Verde</option>
-                            <option value="KY">Cayman Islands</option>
-                            <option value="CF">Central African Republic</option>
-                            <option value="TD">Chad</option>
-                            <option value="CL">Chile</option>
-                            <option value="CN">China</option>
-                            <option value="CX">Christmas Island</option>
-                            <option value="CC">Cocos (Keeling) Islands</option>
-                            <option value="CO">Colombia</option>
-                            <option value="KM">Comoros</option>
-                            <option value="CG">Congo</option>
-                            <option value="CD">Congo, the Democratic Republic of the</option>
-                            <option value="CK">Cook Islands</option>
-                            <option value="CR">Costa Rica</option>
-                            <option value="CI">Côte d'Ivoire</option>
-                            <option value="HR">Croatia</option>
-                            <option value="CU">Cuba</option>
-                            <option value="CY">Cyprus</option>
-                            <option value="CZ">Czech Republic</option>
-                            <option value="DK">Denmark</option>
-                            <option value="DJ">Djibouti</option>
-                            <option value="DM">Dominica</option>
-                            <option value="DO">Dominican Republic</option>
-                            <option value="EC">Ecuador</option>
-                            <option value="EG">Egypt</option>
-                            <option value="SV">El Salvador</option>
-                            <option value="GQ">Equatorial Guinea</option>
-                            <option value="ER">Eritrea</option>
-                            <option value="EE">Estonia</option>
-                            <option value="ET">Ethiopia</option>
-                            <option value="FJ">Fiji</option>
-                            <option value="FI">Finland</option>
-                            <option value="FR">France</option>
-                            <option value="GF">French Guiana</option>
-                            <option value="PF">French Polynesia</option>
-                            <option value="GA">Gabon</option>
-                            <option value="GM">Gambia</option>
-                            <option value="GE">Georgia</option>
-                            <option value="DE">Germany</option>
-                            <option value="GH">Ghana</option>
-                            <option value="GI">Gibraltar</option>
-                            <option value="GR">Greece</option>
-                            <option value="GL">Greenland</option>
-                            <option value="GD">Grenada</option>
-                            <option value="GP">Guadeloupe</option>
-                            <option value="GU">Guam</option>
-                            <option value="GT">Guatemala</option>
-                            <option value="GN">Guinea</option>
-                            <option value="GW">Guinea-Bissau</option>
-                            <option value="GY">Guyana</option>
-                            <option value="HT">Haiti</option>
-                            <option value="VA">Holy See (Vatican City State)</option>
-                            <option value="HN">Honduras</option>
-                            <option value="HK">Hong Kong</option>
-                            <option value="HU">Hungary</option>
-                            <option value="IS">Iceland</option>
-                            <option value="IN">India</option>
-                            <option value="ID">Indonesia</option>
-                            <option value="IR">Iran, Islamic Republic of</option>
-                            <option value="IQ">Iraq</option>
-                            <option value="IE">Ireland</option>
-                            <option value="IL">Israel</option>
-                            <option value="IT">Italy</option>
-                            <option value="JM">Jamaica</option>
-                          </select>
+                        <Select
+  label="Select Citizenship"
+  name="location"
+  options={[
+    { value: "AF", label: "Afghanistan" },
+    { value: "AL", label: "Albania" },
+    { value: "DZ", label: "Algeria" },
+    { value: "AS", label: "American Samoa" },
+    { value: "AD", label: "Andorra" },
+    // Include all other countries
+    { value: "JM", label: "Jamaica" },
+  ]}
+  value={location}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                         </div>
 
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">Do you have permanent Residence?</label>
-                          <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option value="">Select Country</option>
-                            <option value="AF">Afghanistan</option>
-                            <option value="AL">Albania</option>
-                            <option value="DZ">Algeria</option>
-                            <option value="AS">American Samoa</option>
-                            <option value="AD">Andorra</option>
-                            <option value="AO">Angola</option>
-                            <option value="AI">Anguilla</option>
-                            <option value="AQ">Antarctica</option>
-                            <option value="AG">Antigua and Barbuda</option>
-                            <option value="AR">Argentina</option>
-                            <option value="AM">Armenia</option>
-                            <option value="AW">Aruba</option>
-                            <option value="AU">Australia</option>
-                            <option value="AT">Austria</option>
-                            <option value="AZ">Azerbaijan</option>
-                            <option value="BS">Bahamas</option>
-                            <option value="BH">Bahrain</option>
-                            <option value="BD">Bangladesh</option>
-                            <option value="BB">Barbados</option>
-                            <option value="BY">Belarus</option>
-                            <option value="BE">Belgium</option>
-                            <option value="BZ">Belize</option>
-                            <option value="BJ">Benin</option>
-                            <option value="BM">Bermuda</option>
-                            <option value="BT">Bhutan</option>
-                            <option value="BO">Bolivia</option>
-                            <option value="BA">Bosnia and Herzegovina</option>
-                            <option value="BW">Botswana</option>
-                            <option value="BR">Brazil</option>
-                            <option value="IO">British Indian Ocean Territory</option>
-                            <option value="BN">Brunei Darussalam</option>
-                            <option value="BG">Bulgaria</option>
-                            <option value="BF">Burkina Faso</option>
-                            <option value="BI">Burundi</option>
-                            <option value="KH">Cambodia</option>
-                            <option value="CM">Cameroon</option>
-                            <option value="CA">Canada</option>
-                            <option value="CV">Cape Verde</option>
-                            <option value="KY">Cayman Islands</option>
-                            <option value="CF">Central African Republic</option>
-                            <option value="TD">Chad</option>
-                            <option value="CL">Chile</option>
-                            <option value="CN">China</option>
-                            <option value="CX">Christmas Island</option>
-                            <option value="CC">Cocos (Keeling) Islands</option>
-                            <option value="CO">Colombia</option>
-                            <option value="KM">Comoros</option>
-                            <option value="CG">Congo</option>
-                            <option value="CD">Congo, the Democratic Republic of the</option>
-                            <option value="CK">Cook Islands</option>
-                            <option value="CR">Costa Rica</option>
-                            <option value="CI">Côte d'Ivoire</option>
-                            <option value="HR">Croatia</option>
-                            <option value="CU">Cuba</option>
-                            <option value="CY">Cyprus</option>
-                            <option value="CZ">Czech Republic</option>
-                            <option value="DK">Denmark</option>
-                            <option value="DJ">Djibouti</option>
-                            <option value="DM">Dominica</option>
-                            <option value="DO">Dominican Republic</option>
-                            <option value="EC">Ecuador</option>
-                            <option value="EG">Egypt</option>
-                            <option value="SV">El Salvador</option>
-                            <option value="GQ">Equatorial Guinea</option>
-                            <option value="ER">Eritrea</option>
-                            <option value="EE">Estonia</option>
-                            <option value="ET">Ethiopia</option>
-                            <option value="FJ">Fiji</option>
-                            <option value="FI">Finland</option>
-                            <option value="FR">France</option>
-                            <option value="GF">French Guiana</option>
-                            <option value="PF">French Polynesia</option>
-                            <option value="GA">Gabon</option>
-                            <option value="GM">Gambia</option>
-                            <option value="GE">Georgia</option>
-                            <option value="DE">Germany</option>
-                            <option value="GH">Ghana</option>
-                            <option value="GI">Gibraltar</option>
-                            <option value="GR">Greece</option>
-                            <option value="GL">Greenland</option>
-                            <option value="GD">Grenada</option>
-                            <option value="GP">Guadeloupe</option>
-                            <option value="GU">Guam</option>
-                            <option value="GT">Guatemala</option>
-                            <option value="GN">Guinea</option>
-                            <option value="GW">Guinea-Bissau</option>
-                            <option value="GY">Guyana</option>
-                            <option value="HT">Haiti</option>
-                            <option value="VA">Holy See (Vatican City State)</option>
-                            <option value="HN">Honduras</option>
-                            <option value="HK">Hong Kong</option>
-                            <option value="HU">Hungary</option>
-                            <option value="IS">Iceland</option>
-                            <option value="IN">India</option>
-                            <option value="ID">Indonesia</option>
-                            <option value="IR">Iran, Islamic Republic of</option>
-                            <option value="IQ">Iraq</option>
-                            <option value="IE">Ireland</option>
-                            <option value="IL">Israel</option>
-                            <option value="IT">Italy</option>
-                            <option value="JM">Jamaica</option>
-                          </select>
+                          <Select
+  label="Do you have permanent residence?"
+  name="residenceCountry"
+  options={[
+    { value: "AF", label: "Afghanistan" },
+    { value: "AL", label: "Albania" },
+    { value: "DZ", label: "Algeria" },
+    { value: "AS", label: "American Samoa" },
+    { value: "AD", label: "Andorra" },
+    // Include all other countries
+    { value: "JM", label: "Jamaica" },
+  ]}
+  value={residenceCountry}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                         </div>
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">Do you have job offer in Sweden?</label>
-                          <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option value="">Do you have job offer in Sweden?</option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                          </select>
+                        <Select
+  label="Do you have a job offer in Sweden?"
+  name="jobOffer"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={jobOffer}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                         </div>
 
                         <div className="col-md-12 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">Do you want to start your own business in Sweden?</label>
-                          <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option value="">Do you want to start your own business in Sweden?</option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                          </select>
+                        <Select
+  label="Do you want to start your own business in Sweden?"
+  name="ownBusiness"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={ownBusiness}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                         </div>
 
                         <div className="col-md-12 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">Are you already moved to Sweden or planning to move in coming 90 Days Period?</label>
-                          <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>Are you already moved to Sweden or planning to move in coming 90 Days Period?</option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                          </select>
+                        <Select
+  label="Are you already moved to Sweden or planning to move in the coming 90 Days Period?"
+  name="moveToSweden"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={moveToSweden}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                         </div>
                       </div>
                     </form>
@@ -758,66 +635,102 @@ const Long_term_eu_status_assessment = () => {
                     </h2>
                         
                         <div className="col-md-6 tw-pt-4">
-                          <label className=" tw-text-sm  tw-text-gray ">Do you want to move to Sweden with family?</label>
-                          <select name="assesment_family" value={assesment_family} onChange={handleSelectChange} className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                            <option>Do you want to move to Sweden with family?</option>
-                            <option value={'yes'}>Yes</option>
-                            <option value={'no'}>No</option>
-                          </select>
+                        <Select
+  label="Do you want to move to Sweden with family?"
+  name="assessmentFamily"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={assessmentFamily}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                         </div>
 
-                        {assesment_family === 'yes' && (
+                        {assessmentFamily === 'yes' && (
                           <>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Do you have marriage certificate?</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Do you have marriage certificate?</option>
-                                <option value={'yes'}>Yes</option>
-                                <option value={'no'}>No</option>
-                              </select>
+                            <Select
+  label="Do you have a marriage certificate?"
+  name="marriageCertificate"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={marriageCertificate}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                             </div>
 
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Is your marriage registered in your home country?</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Is your marriage registered in your home country?</option>
-                                <option value={'yes'}>Yes</option>
-                                <option value={'no'}>No</option>
-                              </select>
+                            <Select
+  label="Is your marriage registered in your home country?"
+  name="homeCountryMarriage"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={homeCountryMarriage}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">Do you have family registration certificate?</label>
-                              <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>Do you have family registration certificate?</option>
-                                <option value={'yes'}>Yes</option>
-                                <option value={'no'}>No</option>
-                              </select>
+                            <Select
+  label="Do you have a family registration certificate?"
+  name="familyRegistrationCertificate"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={familyRegistrationCertificate}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">How many children do you have?</label>
-                              <select name="personalStatus" value={personalStatus} onChange={handleSelectChange} className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                <option>How many children do you have?</option>
-                                <option value={'N/A'}>N/A</option>
-                                <option value={'1'}>1</option>
-                                <option value={'2'}>2</option>
-                                <option value={'3'}>3</option>
-                                <option value={'4'}>4</option>
-                                <option value={'5'}>5</option>
-                                <option value={'6'}>6</option>
-                                <option value={'7'}>7</option>
-                                <option value={'8'}>8</option>
-                              </select>
+                            <Select
+  label="How many children do you have?"
+  name="numberOfChildren"
+  options={[
+    { value: "N/A", label: "N/A" },
+    { value: "1", label: "1" },
+    { value: "2", label: "2" },
+    { value: "3", label: "3" },
+    { value: "4", label: "4" },
+    { value: "5", label: "5" },
+    { value: "6", label: "6" },
+    { value: "7", label: "7" },
+    { value: "8", label: "8" },
+  ]}
+  value={numberOfChildren}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                             </div>
 
-                            {personalStatus === '1' || personalStatus === '2' || personalStatus === '3' || personalStatus === '4' || personalStatus === '5' ? (
+                            {numberOfChildren === '1' || numberOfChildren === '2' || numberOfChildren === '3' || numberOfChildren === '4' || numberOfChildren === '5' ? (
                               <>
                                 <div className="col-md-6 tw-pt-4">
-                                  <label className=" tw-text-sm  tw-text-gray ">Do you have birth certificates for childrens?</label>
-                                  <select className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                                    <option>Do you have birth certificates for childrens?</option>
-                                    <option value={'yes'}>Yes</option>
-                                    <option value={'no'}>No</option>
-                                  </select>
+                                <Select
+  label="Do you have birth certificates for children?"
+  name="birthCertificates"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={birthCertificates}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+/>
+
                                 </div>
                               </>
                             ) : null}
