@@ -18,6 +18,9 @@ import ap2 from "../../assets/iconscout/ap2.png";
 import ap3 from "../../assets/iconscout/ap3.png";
 import ap4 from "../../assets/iconscout/ap4.png";
 
+import Sidebar from "../../components/ScrollableBar";
+
+
 const ServiceDetails = () => {
   const { t } = useTranslation();
 
@@ -245,7 +248,7 @@ const ServiceDetails = () => {
     <>
       <Header />
       <Banner_Page
-        highlightText={t("Asylum")}
+        highlightText={t("Appeal Cases")}
         regularText={t(
           "Seek safety and a fresh start in Sweden. Our comprehensive support helps guide you through the asylum process smoothly."
         )}
@@ -1317,7 +1320,7 @@ const ServiceDetails = () => {
                         turn the decision around.
                       </p>
                       <Link to="/register" className="tw-text-center tw-pt-4">
-                      <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
+                      <h5 className="tw-text-center tw-text-black tw-pt-4" style = {{fontSize: '1.2em'}}>
                           <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                             Sign Up{" "}
                           </strong>
@@ -1341,26 +1344,7 @@ const ServiceDetails = () => {
                   </div>
                 </div>
 
-                <div className="col-md-4 tw-pt-16 tw-bg-[#F5FAFF] tw-sticky tw-top-0 tw-h-auto md:tw-w-[40%] 2xl:tw-w-[50%] tw-z-10">
-                  <div className="md:tw-pr-[40%] 2xl:tw-pr-[50%] tw-pr-4">
-                    <ul className="tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
-                      {data?.map((item, index) => {
-                        return (
-                          <Link
-                            to={`${item?.Link}`}
-                            className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
-                            key={index}
-                          >
-                            <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
-                              {item?.title}
-                            </p>
-                            <GoTriangleRight className="tw-text-gray" />
-                          </Link>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                </div>
+               <Sidebar/>
               </div>
             </div>
           </div>

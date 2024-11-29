@@ -1054,7 +1054,7 @@ Contract Details                      </h7>
                 <h7
                   className="tw-text-light"
                   style={{
-                    fontSize: "1.3em",
+                    fontSize: "1.2em",
                     color: "#1F2437",
                     fontWeight: "300",
                     
@@ -1082,7 +1082,7 @@ Contract Details                      </h7>
                 <h7
                   className="tw-text-light"
                   style={{
-                    fontSize: "1.3em",
+                    fontSize: "1.2em",
                     color: "#1F2437",
                     fontWeight: "300",
                   }}
@@ -1108,7 +1108,7 @@ Contract Details                      </h7>
                 <h7
                   className="tw-text-light"
                   style={{
-                    fontSize: "1.3em",
+                    fontSize: "1.2em",
                     color: "#1F2437",
                     fontWeight: "300",
                   }}
@@ -1134,7 +1134,7 @@ Contract Details                      </h7>
                 <h7
                   className="tw-text-light"
                   style={{
-                    fontSize: "1.3em",
+                    fontSize: "1.2em",
                     color: "#1F2437",
                     fontWeight: "300",
                   }}

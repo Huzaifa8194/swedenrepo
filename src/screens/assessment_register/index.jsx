@@ -14,6 +14,8 @@ import { TfiAngleLeft } from "react-icons/tfi";
 import { Link, useParams } from "react-router-dom";
 import Assessment_modal from "./Assessment_modal";
 import Header from "../../components/Header_New/Header";
+import Sidebar from "../../components/ScrollableBar";
+
 
 import Select from "../../components/Selecttab";
 
@@ -1606,25 +1608,7 @@ case "familyAssets":
               </div>
             </div>
 
-            <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-              <div className="  md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
-                <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
-                  {data?.map((item, index) => {
-                    return (
-                      <Link
-                        to={`${item?.Link}`}
-                        className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
-                      >
-                        <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
-                          {item?.title}
-                        </p>
-                        <GoTriangleRight className="tw-text-gray" />
-                      </Link>
-                    );
-                  })}
-                </ul>
-              </div>
-            </div>
+            <Sidebar/>
           </div>
         </div>
       </section>

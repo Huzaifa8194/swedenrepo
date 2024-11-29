@@ -8,6 +8,8 @@ import banner from "../../assets/images/couple-hanging-a-picture.png";
 import banner2 from "../../assets/images/office-interior-design.png";
 import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
+import Sidebar from "../../components/ScrollableBar";
+
 
 import ho1 from "../../assets/iconscout/ho1.png";
 import ho2 from "../../assets/iconscout/ho2.png";
@@ -489,25 +491,7 @@ const HouseOffices = () => {
                 </div>
               </div>
 
-              <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-                <div className="  md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative ">
-                  <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
-                    {data?.map((item, index) => {
-                      return (
-                        <Link
-                          to={`${item?.Link}`}
-                          className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
-                        >
-                          <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
-                            {item?.title}
-                          </p>
-                          <GoTriangleRight className="tw-text-gray" />
-                        </Link>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </div>
+             <Sidebar/>
             </div>
           </div>
         </section>

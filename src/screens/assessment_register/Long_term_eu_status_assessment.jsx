@@ -18,6 +18,7 @@ import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
 import Header from '../../components/Header_New/Header';
 import Select from "../../components/Selecttab";
+import Sidebar from "../../components/ScrollableBar";
 
 
 const Long_term_eu_status_assessment = () => {
@@ -282,7 +283,7 @@ const Long_term_eu_status_assessment = () => {
                   {/* user info */}
 
                   <div>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Long-Term EU Residence Status
@@ -323,7 +324,7 @@ const Long_term_eu_status_assessment = () => {
                     </ul>
 
 <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Why
@@ -408,7 +409,7 @@ const Long_term_eu_status_assessment = () => {
                       </li>
                     </ul>
 
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       How
@@ -454,7 +455,7 @@ const Long_term_eu_status_assessment = () => {
 
                   
 <br/>
-                    <span className=" tw-flex tw-items-center tw-gap-2">
+                    <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Get
@@ -515,7 +516,7 @@ const Long_term_eu_status_assessment = () => {
                     <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                         
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                      <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Fill in your
@@ -622,7 +623,7 @@ const Long_term_eu_status_assessment = () => {
                     <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                         
-                      <span className=" tw-flex tw-items-center tw-gap-2">
+                      <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
                       Fill in your
@@ -745,20 +746,7 @@ const Long_term_eu_status_assessment = () => {
               </div>
             </div>
 
-            <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-              <div className="   md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
-                <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
-                  {data?.map((item, index) => {
-                    return (
-                      <Link to={`${item?.Link}`} className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white">
-                        <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">{item?.title}</p>
-                        <GoTriangleRight className="tw-text-gray" />
-                      </Link>
-                    );
-                  })}
-                </ul>
-              </div>
-            </div>
+           <Sidebar/>
           </div>
         </div>
       </section>

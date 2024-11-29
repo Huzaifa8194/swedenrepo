@@ -13,6 +13,8 @@ import wp2 from "../../assets/iconscout/wp2.png";
 import wp3 from "../../assets/iconscout/wp3.png";
 import wp4 from "../../assets/iconscout/wp4.png";
 
+import Sidebar from "../../components/ScrollableBar";
+
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
 import { useTranslation } from "react-i18next";
@@ -260,10 +262,10 @@ const WorkPermit = () => {
                   <div>
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Types of Work Permits in Sweden
+                      Types of 
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>Overview of Work Permit Types</strong>
+                      <strong>Work Permits in Sweden</strong>
                     </h2>
 
                     <br />
@@ -634,10 +636,10 @@ const WorkPermit = () => {
                     <br />{" "}
                     <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Additional General Requirements for Work Permits
+                      Key
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>Key General Requirements for Work Permits</strong>
+                      <strong> General Requirements for Work Permits</strong>
                     </h2>
                     <p className="tw-text-gray">
                       To obtain a work permit in Sweden, applicants must meet
@@ -698,11 +700,11 @@ const WorkPermit = () => {
                     <br />
                     <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      How Sweden Relocators Can Assist You
+                      How 
                     </span>
                     <h2 className="tw-text-left">
                       <strong>
-                        Comprehensive Support from Sweden Relocators
+                      Sweden Relocators Can Assist You
                       </strong>
                     </h2>
                     <br />
@@ -793,25 +795,7 @@ const WorkPermit = () => {
                 </div>
               </div>
 
-              <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-                <div className=" md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
-                  <ul className="  tw-flex tw-flex-col tw-gap-2.5">
-                    {data?.map((item, index) => {
-                      return (
-                        <Link
-                          to={`${item?.Link}`}
-                          className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
-                        >
-                          <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
-                            {item?.title}
-                          </p>
-                          <GoTriangleRight className="tw-text-gray" />
-                        </Link>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </div>
+              <Sidebar/>
             </div>
           </div>
         </section>

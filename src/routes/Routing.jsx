@@ -96,7 +96,7 @@ const Routing = () => {
           <Route path="/Work_permit" element={<Work_permit />} />
           <Route path="/student_assessments" element={<Student_assessments />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/asylum" element={<ServiceDetails />} />
+          <Route path="/asylum" element={<AppealCases />} />
           <Route path="/family-reunification" element={<FamilyRenuification />} />
           <Route path="/personnumer-sweden" element={<PersonnumerSweden />} />
           <Route path="/cpr-number-denmark" element={<CPRNumberDenmark />} />
@@ -105,18 +105,18 @@ const Routing = () => {
           <Route path="/business-visit" element={<BusinessVisit />} />
           <Route path="/citizenship" element={<Citizenship />} />
           <Route path="/study-in-eu" element={<StudyInEu />} />
-          <Route path="/global-visit-visas" element={<GlobalVisitVisas />} />
+          <Route path="/global-visit-visas" element={<GoldenVisa />} />
           <Route path="/eea-permits" element={<EEAPermits />} />
           <Route path="/parents-eu-permit" element={<ParentsEUPermit />} />
           <Route path="/marriage-divorce" element={<MarriageDivorce />} />
           <Route path="/company-registration" element={<CompanyRegistration />} />
           <Route path="/house-offices" element={<HouseOffices />} />
-          <Route path="/appeal-cases" element={<AppealCases />} />
+          <Route path="/appeal-cases" element={<ServiceDetails />} />
           <Route path="/eu-family-reunification" element={<EUCitizensRelocation />} />
           <Route path="/investment" element={<Investment />} />
           <Route path="/direct-citizenship-by-investments" element={<DirectCitizenship />} />
           <Route path="/permanent-residence" element={<PermanentResidence />} />
-          <Route path="/golden-visa-greece-portugal" element={<GoldenVisa />} />
+          <Route path="/golden-visa-greece-portugal" element={<GlobalVisitVisas />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blog_details/:id" element={<BlogDetails />} />

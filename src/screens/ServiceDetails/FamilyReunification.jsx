@@ -10,6 +10,8 @@ import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import { useTranslation } from "react-i18next";
+import Sidebar from "../../components/ScrollableBar";
+
 import Header from "../../components/Header_New/Header";
 
 import fr1 from "../../assets/iconscout/fr1.png";
@@ -260,11 +262,11 @@ const FamilyRenuification = () => {
                   <div>
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Comprehensive Guide Under Swedish National Law
+                      Family
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong> Family Reunification in Sweden:</strong>
+                      <strong>  Reunification in Sweden:</strong>
                     </h2>
                     <br />
                     <p className="tw-text-gray">
@@ -623,10 +625,10 @@ const FamilyRenuification = () => {
                     <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Specific Legal Provisions for Family Reunification Cases
+                      (Utlänningslagen)
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>Aliens Act (Utlänningslagen)</strong>
+                      <strong>Aliens Act </strong>
                     </h2>
                     <br />
 
@@ -892,13 +894,15 @@ const FamilyRenuification = () => {
                           all legal requirements are met for a successful
                           application.
                         </p>
-                        <Link to="/register" className="tw-text-center tw-pt-4">
-                          <h2 className="tw-text-center tw-pt-4">
+                      
+                      </div>
+                      <Link to="/register" className="tw-text-center tw-pt-4">
+                      <h5 className="tw-text-center tw-text-black tw-pt-4" style = {{fontSize: '1.2em'}}>
                             <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                               Sign Up{" "}
                             </strong>
-                            <strong> Today!</strong>
-                          </h2>
+                            <strong > Today!</strong>
+                          </h5>
                         </Link>
                         <br />
                         <p className="tw-text-gray">
@@ -911,31 +915,12 @@ const FamilyRenuification = () => {
                           us guide you every step of the way—start your seamless
                           experience now!
                         </p>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-                <div className="   md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
-                  <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
-                    {data?.map((item, index) => {
-                      return (
-                        <Link
-                          to={`${item?.Link}`}
-                          className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
-                        >
-                          <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
-                            {item?.title}
-                          </p>
-                          <GoTriangleRight className="tw-text-gray" />
-                        </Link>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </div>
+              <Sidebar/>
             </div>
           </div>
         </section>

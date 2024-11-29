@@ -9,6 +9,8 @@ import banner2 from "../../assets/images/kid-doctor.png";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import Header from "../../components/Header_New/Header";
 import { useTranslation } from "react-i18next";
+import Sidebar from "../../components/ScrollableBar";
+
 
 import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
@@ -264,12 +266,12 @@ const ParentsEUPermit = () => {
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      EU Residence Card for Dependent Parents and Other Family
-                      Members under Directive 2004/38/EC
+                      EU Residence Card 
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
-                        Understanding the EU Residence Card for Family Members
+                      For Dependent Parents and Other Family
+                      Members under Directive 2004/38/EC
                       </strong>
                     </h2>
                     <br />
@@ -920,12 +922,12 @@ const ParentsEUPermit = () => {
                     <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      How Sweden Relocators Can Assist with EU Residence Card
-                      Applications
+                      How Sweden Relocators 
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
-                        Eligibility Assessment
+                      Can Assist with EU Residence Card
+                      Applications
                       </strong>
                     </h2>
                     <br />
@@ -1029,25 +1031,7 @@ const ParentsEUPermit = () => {
                 </div>
               </div>
 
-              <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-                <div className="   md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
-                  <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
-                    {data?.map((item, index) => {
-                      return (
-                        <Link
-                          to={`${item?.Link}`}
-                          className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
-                        >
-                          <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
-                            {item?.title}
-                          </p>
-                          <GoTriangleRight className="tw-text-gray" />
-                        </Link>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </div>
+            <Sidebar/>
             </div>
           </div>
         </section>

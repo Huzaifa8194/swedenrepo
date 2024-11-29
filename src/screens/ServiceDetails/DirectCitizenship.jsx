@@ -13,7 +13,17 @@ import d6 from "../../assets/images/Saint_Kitts_and_Nevis.jpg";
 import d7 from "../../assets/images/Saint_Lucia.jpg";
 import d8 from "../../assets/images/Turkey.jpg";
 
+import flag1 from "../../assets/iconscout/flag1.png";
+import flag2 from "../../assets/iconscout/flag2.png";
+import flag3 from "../../assets/iconscout/flag3.png";
+import flag4 from "../../assets/iconscout/flag4.png";
+import flag5 from "../../assets/iconscout/flag5.png";
+import flag6 from "../../assets/iconscout/flag6.png";
+import flag7 from "../../assets/iconscout/flag7.png";
+import flag8 from "../../assets/iconscout/flag8.png";
 
+
+import Sidebar from "../../components/ScrollableBar";
 
 
 import cp1 from "../../assets/iconscout/cp1.png";
@@ -276,12 +286,12 @@ const DirectCitizenship = () => {
                     <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      A Selection of Prime Citizenship-by-Investment Programs
+                      A Selection of
                     </span>
 
                     <h2 className="tw-text-left">
                       <strong>
-                        Citizenship-by-Investment Programs Overview
+                      Prime Citizenship-by-Investment Programs
                       </strong>
                     </h2>
 
@@ -681,7 +691,7 @@ const DirectCitizenship = () => {
                               <motion.img
                                 animate={imageVariants}
                                 className=" tw-w-full tw-my-3"
-                                src={d1}
+                                src={flag1}
                                 alt=""
                               />
                             </div>
@@ -709,7 +719,7 @@ const DirectCitizenship = () => {
                               <motion.img
                                 animate={imageVariants}
                                 className=" tw-w-full tw-my-3"
-                                src={d2}
+                                src={flag2}
                                 alt=""
                               />
                             </div>
@@ -739,7 +749,7 @@ const DirectCitizenship = () => {
                               <motion.img
                                 animate={imageVariants}
                                 className=" tw-w-full tw-my-3"
-                                src={d3}
+                                src={flag3}
                                 alt=""
                               />
                             </div>
@@ -770,7 +780,7 @@ const DirectCitizenship = () => {
                               <motion.img
                                 animate={imageVariants}
                                 className=" tw-w-full tw-my-3"
-                                src={d4}
+                                src={flag4}
                                 alt=""
                               />
                             </div>
@@ -800,7 +810,7 @@ const DirectCitizenship = () => {
                               <motion.img
                                 animate={imageVariants}
                                 className=" tw-w-full tw-my-3"
-                                src={d5}
+                                src={flag5}
                                 alt=""
                               />
                             </div>
@@ -831,7 +841,7 @@ const DirectCitizenship = () => {
                               <motion.img
                                 animate={imageVariants}
                                 className=" tw-w-full tw-my-3"
-                                src={d6}
+                                src={flag6}
                                 alt=""
                               />
                             </div>
@@ -861,7 +871,7 @@ const DirectCitizenship = () => {
                               <motion.img
                                 animate={imageVariants}
                                 className=" tw-w-full tw-my-3"
-                                src={d7}
+                                src={flag7}
                                 alt=""
                               />
                             </div>
@@ -891,7 +901,7 @@ const DirectCitizenship = () => {
                               <motion.img
                                 animate={imageVariants}
                                 className=" tw-w-full tw-my-3"
-                                src={d8}
+                                src={flag8}
                                 alt=""
                               />
                             </div>
@@ -914,7 +924,7 @@ const DirectCitizenship = () => {
                           <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                             Sign Up{" "}
                           </strong>
-                          <strong> Today!</strong>
+                          <strong className="tw-text-black"> Today!</strong>
                         </h5>
                       </Link>
                       <br />
@@ -932,25 +942,7 @@ const DirectCitizenship = () => {
                 </div>
               </div>
 
-              <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-                <div className="  md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4">
-                  <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
-                    {data?.map((item, index) => {
-                      return (
-                        <Link
-                          to={`${item?.Link}`}
-                          className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
-                        >
-                          <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
-                            {item?.title}
-                          </p>
-                          <GoTriangleRight className="tw-text-gray" />
-                        </Link>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </div>
+              <Sidebar/>
             </div>
           </div>
         </section>

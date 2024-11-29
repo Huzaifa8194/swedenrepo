@@ -6,6 +6,8 @@ import { GoTriangleRight } from "react-icons/go";
 import { Link, useParams } from "react-router-dom";
 import banner from "../../assets/iconscout/prr1.png";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
+import Sidebar from "../../components/ScrollableBar";
+
 
 import Header from "../../components/Header_New/Header";
 import { useTranslation } from "react-i18next";
@@ -253,7 +255,7 @@ const PermanentResidence = () => {
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                     PERMANENT RIGHT OF
                   </span>
-                  <h2>
+                  <h2 className = "tw-text-left">
                     <strong>Residence For EU Citizens</strong>
                   </h2>
                   <br />
@@ -271,7 +273,7 @@ const PermanentResidence = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       DIFFERENT WAYS FOR
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Permanent Right Of Residence</strong>
                     </h2>
                     <br />
@@ -348,7 +350,7 @@ const PermanentResidence = () => {
                       FOR
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Dependents</strong>
                     </h2>
                     <br />
@@ -383,7 +385,7 @@ const PermanentResidence = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       PERMANENT RESIDENCE CARDS FOR
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>
                         EU Citizens Family Members Who Are Non-EU Citizens
                       </strong>
@@ -409,7 +411,7 @@ const PermanentResidence = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       TO BE ELIGIBLE FOR
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>A Permanent Residence Card</strong>
                     </h2>
                     <br />
@@ -452,7 +454,7 @@ const PermanentResidence = () => {
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       HOWEVER, HAVING A PERMANENT
                     </span>
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong>Residence Permit Does Not Entitle You To</strong>
                     </h2>
                     <br />
@@ -513,25 +515,7 @@ const PermanentResidence = () => {
                 </div>
               </div>
 
-              <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-                <div className="  md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4">
-                  <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
-                    {data?.map((item, index) => {
-                      return (
-                        <Link
-                          to={`${item?.Link}`}
-                          className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
-                        >
-                          <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
-                            {item?.title}
-                          </p>
-                          <GoTriangleRight className="tw-text-gray" />
-                        </Link>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </div>
+              <Sidebar/>
             </div>
           </div>
         </section>

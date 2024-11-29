@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 import bv1 from "../../assets/iconscout/bv1.png";
 import bv2 from "../../assets/iconscout/bv2.png";
 import bv3 from "../../assets/iconscout/bv3.png";
+import Sidebar from "../../components/ScrollableBar";
 
 import Header from "../../components/Header_New/Header";
 
@@ -258,20 +259,17 @@ const BusinessVisit = () => {
               <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
                 <div className=" 2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
-                 
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Documentation Requirements for Visa Application
+                      Documentation
                     </span>
-
-                    <h2 className = "tw-text-left">
-                      <strong className='tw-text-black'>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
                         {" "}
-                        A Comprehensive List of Required Documents{" "}
+                        Requirements for Visa Application{" "}
                       </strong>
                     </h2>
                     <br></br>
-
                     <p className="tw-text-gray">
                       For your visa application, certain documents must be
                       submitted to ensure a smooth process. Below is a guide
@@ -279,116 +277,116 @@ const BusinessVisit = () => {
                       both applicants and sponsoring companies:
                     </p>
                     <br></br>
-
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Personal
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong className='tw-text-black'>Document Requirements </strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        Document Requirements{" "}
+                      </strong>
                     </h2>
-                   
-
-
-
-
-
-                
                     <br></br>
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong className='tw-text-black'>Bank Statement:</strong><br/>  To complete your application or prove your financial stability, you may be required to submit an original bank statement from the last six months. This document should clearly show your account activity, balance, and transactions during that period. If bank statements are unavailable, you can alternatively provide proof of other assets, such as investment portfolios, property ownership, or other financial documents that demonstrate your financial capacity. 
+                          <strong className="tw-text-black">
+                            Bank Statement:
+                          </strong>
+                          <br /> To complete your application or prove your
+                          financial stability, you may be required to submit an
+                          original bank statement from the last six months. This
+                          document should clearly show your account activity,
+                          balance, and transactions during that period. If bank
+                          statements are unavailable, you can alternatively
+                          provide proof of other assets, such as investment
+                          portfolios, property ownership, or other financial
+                          documents that demonstrate your financial capacity.
                         </p>
                       </li>
-                      
 
-                   
-                       
-
-                          <div className="row tw-flex tw-items-center">
-                     
-
-                      <div className="col-md-6">
-                        <div className="row ">
-                          <div className="col-md-9 tw-mx-auto">
-                            <motion.img
-                              animate={imageVariants}
-                              className=" tw-w-full"
-                              src={bv1}
-                              alt=""
-                              style={{ maxWidth: "450px" }}
-                            />
+                      <div className="row tw-flex tw-items-center">
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-9 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full"
+                                src={bv1}
+                                alt=""
+                                style={{ maxWidth: "450px" }}
+                              />
+                            </div>
                           </div>
                         </div>
+                        <div className="col-md-6">
+                          <li>
+                            <p className="m-0 tw-text-gray">
+                              <br />
+                              <strong className="tw-text-black">
+                                Passport Requirements:
+                              </strong>
+                              <br /> Your passport must:
+                              <ul className="tw-pl-0">
+                                <li className=" tw-flex  tw-gap-3">
+                                  <div>
+                                    <GoTriangleRight className=" tw-text-blue" />
+                                  </div>
+                                  <p className=" m-0 tw-text-gray">
+                                    Have at least two blank pages.
+                                  </p>
+                                </li>
+
+                                <li className=" tw-flex  tw-gap-3">
+                                  <div>
+                                    <GoTriangleRight className=" tw-text-blue" />
+                                  </div>
+                                  <p className=" m-0 tw-text-gray">
+                                    Be valid for at least three months beyond
+                                    the end of your planned trip.
+                                  </p>
+                                </li>
+
+                                <li className=" tw-flex  tw-gap-3">
+                                  <div>
+                                    <GoTriangleRight className=" tw-text-blue" />
+                                  </div>
+                                  <p className=" m-0 tw-text-gray">
+                                    Include all previous passports from the past
+                                    seven years.
+                                  </p>
+                                </li>
+
+                                <li className=" tw-flex  tw-gap-3">
+                                  <div>
+                                    <GoTriangleRight className=" tw-text-blue" />
+                                  </div>
+                                  <p className=" m-0 tw-text-gray">
+                                    Include all previous passports from the past
+                                    seven years.
+                                  </p>
+                                </li>
+                              </ul>
+                            </p>
+                          </li>
+                        </div>
                       </div>
-                      <div className="col-md-6">
-                      <li>
-                      <p className="m-0 tw-text-gray">
-                        <br/><strong className='tw-text-black'>Passport Requirements:</strong><br/>  Your passport
-                          must:
-                          <ul className="tw-pl-0">
-                      <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                              <p className=" m-0 tw-text-gray">
-                              Have at least two blank pages.
-                              </p>
-                            </li>
-
-                            <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                              <p className=" m-0 tw-text-gray">
-                              Be valid for at least three months beyond the end
-                              of your planned trip.
-                              </p>
-                            </li>
-
-                            <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                              <p className=" m-0 tw-text-gray">
-                              Include all previous passports from the past seven
-                              years.
-                              </p>
-                            </li>
-
-                            
-                            <li className=" tw-flex  tw-gap-3">
-                              <div>
-                                <GoTriangleRight className=" tw-text-blue" />
-                              </div>
-                              <p className=" m-0 tw-text-gray">
-                              Include all previous passports from the past seven
-                              years.
-                              </p>
-                            </li>
-                            </ul>
-                        </p>
-                      </li>
-                      </div>
-                    </div>
-                          
-
-
-                          
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                         <br/> <strong className='tw-text-black'>Invitation Letter:</strong><br/>  A formal
-                          invitation from the Swedish company or individual on
-                          official letterhead. The letter should include:
-                          <ul className = "tw-pl-0">
-                          <li className=" tw-flex  tw-gap-3">
+                          <br />{" "}
+                          <strong className="tw-text-black">
+                            Invitation Letter:
+                          </strong>
+                          <br /> A formal invitation from the Swedish company or
+                          individual on official letterhead. The letter should
+                          include:
+                          <ul className="tw-pl-0">
+                            <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              
                               Full address and contact details of the inviting
                               company.
                             </li>
@@ -425,14 +423,19 @@ const BusinessVisit = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                        <br/><strong className='tw-text-black'>Employment Certificate:</strong><br/>  Proof of
-                          employment, detailing:
-                          <ul className = "tw-pl-0">
-                          <li className=" tw-flex  tw-gap-3">
+                          <br />
+                          <strong className="tw-text-black">
+                            Employment Certificate:
+                          </strong>
+                          <br /> Proof of employment, detailing:
+                          <ul className="tw-pl-0">
+                            <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
-                              </div>Your employment start date.</li>
-                              <li className=" tw-flex  tw-gap-3">
+                              </div>
+                              Your employment start date.
+                            </li>
+                            <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
@@ -450,116 +453,140 @@ const BusinessVisit = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                        <br/><strong className='tw-text-black'>Medical Insurance:</strong><br/>  Travel insurance
-                          covering the entire Schengen area, valid for your
-                          entire stay. The policy should cover at least EUR
-                          30,000 to cover expenses for emergency medical
-                          treatment, hospital care, repatriation, or death.
+                          <br />
+                          <strong className="tw-text-black">
+                            Medical Insurance:
+                          </strong>
+                          <br /> Travel insurance covering the entire Schengen
+                          area, valid for your entire stay. The policy should
+                          cover at least EUR 30,000 to cover expenses for
+                          emergency medical treatment, hospital care,
+                          repatriation, or death.
                         </p>
                       </li>
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                        <br/><strong className='tw-text-black'>Travel Ticket Reservation:</strong><br/>  Provide
-                          round-trip flight reservations. Final tickets are not
-                          required but initial booking confirmation is
-                          mandatory.
+                          <br />
+                          <strong className="tw-text-black">
+                            Travel Ticket Reservation:
+                          </strong>
+                          <br /> Provide round-trip flight reservations. Final
+                          tickets are not required but initial booking
+                          confirmation is mandatory.
                         </p>
                       </li>
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                        <br/> <strong className='tw-text-black'>Accommodation Proof:</strong><br/> A confirmed
-                          hotel booking or another proof of accommodation
-                          (primary reservation required).
+                          <br />{" "}
+                          <strong className="tw-text-black">
+                            Accommodation Proof:
+                          </strong>
+                          <br /> A confirmed hotel booking or another proof of
+                          accommodation (primary reservation required).
                         </p>
                       </li>
                     </ul>
-
                     <br></br>
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Additional Requirements
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong className='tw-text-black'>for Employers or Sponsoring Companies </strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        for Employers or Sponsoring Companies{" "}
+                      </strong>
                     </h2>
                     <br></br>
-
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong className='tw-text-black'>Commercial Registration and Tax Card:</strong>{" "}
+                          <strong className="tw-text-black">
+                            Commercial Registration and Tax Card:
+                          </strong>{" "}
                           Original and copy of the company’s commercial registry
                           and tax card, translated into English or Swedish, to
                           confirm the legitimacy of the business.
                         </p>
                       </li>
                     </ul>
-
-
-                    <br></br> <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
+                    <br></br>{" "}
+                    <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                       Additional Documents
                     </span>
-                    <h2 className = "tw-text-left">
-                      <strong className='tw-text-black'> that May Be Required</strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        {" "}
+                        that May Be Required
+                      </strong>
                     </h2>
-
-                  
-
-
-
-                   
                     <br></br>
-
-
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong className='tw-text-black'>Movement Certificate:</strong><br/> A movement certificate is required in specific circumstances, such as when you are a first-time traveler to Sweden, your passport does not cover the last seven years, or there is a gap of more than three months between your current and previous passports. This document helps the Swedish authorities track your travel history and verify your eligibility for entry or a visa. It serves as proof of your movement between countries, ensuring that you meet the necessary requirements for visa processing.
+                          <strong className="tw-text-black">
+                            Movement Certificate:
+                          </strong>
+                          <br /> A movement certificate is required in specific
+                          circumstances, such as when you are a first-time
+                          traveler to Sweden, your passport does not cover the
+                          last seven years, or there is a gap of more than three
+                          months between your current and previous passports.
+                          This document helps the Swedish authorities track your
+                          travel history and verify your eligibility for entry
+                          or a visa. It serves as proof of your movement between
+                          countries, ensuring that you meet the necessary
+                          requirements for visa processing.
                         </p>
                       </li>
 
                       <div className="row tw-flex tw-items-center">
-                     
-
-                     <div className="col-md-6">
-                       <div className="row ">
-                         <div className="col-md-9 tw-mx-auto">
-                           <motion.img
-                             animate={imageVariants}
-                             className=" tw-w-full"
-                             src={bv2}
-                             alt=""
-                             style={{ maxWidth: "450px" }}
-                           />
-                         </div>
-                       </div>
-                     </div>
-                     <div className="col-md-6">
-                    
-                     <li>
-                        <p className="m-0 tw-text-gray">
-                          <br/><strong className='tw-text-black'>Other Embassy-Specified Documents:</strong>{" "}<br/>
-                          Depending on your individual situation, the embassy may request additional paperwork to process your visa or permit application. These documents could include, but are not limited to, proof of accommodation, travel insurance, employment contracts, or financial documentation. The specific requirements will vary based on the type of visa or permit you are applying for, as well as your personal circumstances. It is important to carefully review the embassy's guidelines and provide any additional documentation as requested to ensure a smooth application process.
-                        </p>
-                      </li>
-                    </div>
-                   </div>
-
+                        <div className="col-md-6">
+                          <div className="row ">
+                            <div className="col-md-9 tw-mx-auto">
+                              <motion.img
+                                animate={imageVariants}
+                                className=" tw-w-full"
+                                src={bv2}
+                                alt=""
+                                style={{ maxWidth: "450px" }}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <li>
+                            <p className="m-0 tw-text-gray">
+                              <br />
+                              <strong className="tw-text-black">
+                                Other Embassy-Specified Documents:
+                              </strong>{" "}
+                              <br />
+                              Depending on your individual situation, the
+                              embassy may request additional paperwork to
+                              process your visa or permit application. These
+                              documents could include, but are not limited to,
+                              proof of accommodation, travel insurance,
+                              employment contracts, or financial documentation.
+                              The specific requirements will vary based on the
+                              type of visa or permit you are applying for, as
+                              well as your personal circumstances. It is
+                              important to carefully review the embassy's
+                              guidelines and provide any additional
+                              documentation as requested to ensure a smooth
+                              application process.
+                            </p>
+                          </li>
+                        </div>
+                      </div>
                     </ul>
                   </div>
                   <div>
-
-                    
-                  <br></br>
-
-
-
-               
+                    <br></br>
 
                     <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
@@ -567,41 +594,61 @@ const BusinessVisit = () => {
                       Business Visa for Foreign Investors
                     </span>
 
-                    <h2 className = "tw-text-left">
-                      <strong className='tw-text-black'>A Swedish Business Visa for Investors</strong>
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-black">
+                        A Swedish Business Visa for Investors
+                      </strong>
                     </h2>
 
                     <br></br>
 
                     <div className="row tw-flex tw-items-center">
-                    <p className="tw-text-gray">
-                 
-A Swedish business visa is ideal for foreign nationals who wish to invest in Sweden and make periodic visits to manage their business interests. This visa allows entrepreneurs and investors to enter Sweden for short-term stays, enabling them to oversee operations, meet with business partners, and participate in key business activities without the need for long-term residency. While the business visa does not grant permission to work in Sweden, it provides flexibility for individuals involved in the management, development, or oversight of a Swedish business. 
+                      <p className="tw-text-gray">
+                        A Swedish business visa is ideal for foreign nationals
+                        who wish to invest in Sweden and make periodic visits to
+                        manage their business interests. This visa allows
+                        entrepreneurs and investors to enter Sweden for
+                        short-term stays, enabling them to oversee operations,
+                        meet with business partners, and participate in key
+                        business activities without the need for long-term
+                        residency. While the business visa does not grant
+                        permission to work in Sweden, it provides flexibility
+                        for individuals involved in the management, development,
+                        or oversight of a Swedish business.
                       </p>
 
-                     <div className="col-md-6">
-                       <div className="row ">
-                         <div className="col-md-9 tw-mx-auto">
-                           <motion.img
-                             animate={imageVariants}
-                             className=" tw-w-full"
-                             src={bv3}
-                             alt=""
-                             style={{ maxWidth: "450px" }}
-                           />
-                         </div>
-                       </div>
-                     </div>
+                      <div className="col-md-6">
+                        <div className="row ">
+                          <div className="col-md-9 tw-mx-auto">
+                            <motion.img
+                              animate={imageVariants}
+                              className=" tw-w-full"
+                              src={bv3}
+                              alt=""
+                              style={{ maxWidth: "450px" }}
+                            />
+                          </div>
+                        </div>
+                      </div>
 
-                     <div className="col-md-6">
-                     <p className="tw-text-gray">
-                     This visa allows multiple entries and is valid for short stays of up to 90 days within a 180-day period, renewable for up to five years. This flexibility is especially beneficial for investors who need to oversee business developments or make frequent visits without obtaining a residence permit. Additionally, the visa provides the opportunity to plan business trips around key events and projects in Sweden, ensuring ongoing engagement with local operations while maintaining compliance with visa regulations. This makes it a practical solution for those managing investments or business interests in Sweden on a regular basis.
-                    </p>
-                     </div>
-                
-                   
-                   </div>
-
+                      <div className="col-md-6">
+                        <p className="tw-text-gray">
+                          This visa allows multiple entries and is valid for
+                          short stays of up to 90 days within a 180-day period,
+                          renewable for up to five years. This flexibility is
+                          especially beneficial for investors who need to
+                          oversee business developments or make frequent visits
+                          without obtaining a residence permit. Additionally,
+                          the visa provides the opportunity to plan business
+                          trips around key events and projects in Sweden,
+                          ensuring ongoing engagement with local operations
+                          while maintaining compliance with visa regulations.
+                          This makes it a practical solution for those managing
+                          investments or business interests in Sweden on a
+                          regular basis.
+                        </p>
+                      </div>
+                    </div>
 
                     <p className="tw-text-gray">
                       For short-term business trips lasting less than three
@@ -613,47 +660,43 @@ A Swedish business visa is ideal for foreign nationals who wish to invest in Swe
 
                     <strong className="m-0 tw-text-gray">
                       How We Assist You
-                    </strong><br/>
+                    </strong>
+                    <br />
 
                     <ul className="tw-p-0 tw-pl-0">
-                    <li className=" tw-flex  tw-gap-3">                            
-                                <GoTriangleRight className=" tw-text-blue" />
+                      <li className=" tw-flex  tw-gap-3">
+                        <GoTriangleRight className=" tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Document Preparation and Submission:</>{" "}
-                          Assistance in gathering, verifying, and submitting all
-                          required documents to ensure a smooth process.
-                          
+                          <>Document Preparation and Submission:</> Assistance
+                          in gathering, verifying, and submitting all required
+                          documents to ensure a smooth process.
                         </p>
                       </li>
 
-                      <li className=" tw-flex  tw-gap-3">                            
-                                <GoTriangleRight className=" tw-text-blue" />
+                      <li className=" tw-flex  tw-gap-3">
+                        <GoTriangleRight className=" tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Guidance on Financial Requirements:</>{" "}
-                          Advising on the proof of funds and financial
-                          documentation needed to meet Swedish visa
-                          requirements.
-                        </p>
-                        
-                      </li>
-
-                      <li className=" tw-flex  tw-gap-3">                            
-                      <GoTriangleRight className=" tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          <>Appointment Scheduling:</> Coordinating
-                          necessary appointments with the Swedish embassy or
-                          consulate for document submission and interviews.
-                         
+                          <>Guidance on Financial Requirements:</> Advising on
+                          the proof of funds and financial documentation needed
+                          to meet Swedish visa requirements.
                         </p>
                       </li>
 
-                      <li className=" tw-flex  tw-gap-3">                            
-                                <GoTriangleRight className=" tw-text-blue" />
+                      <li className=" tw-flex  tw-gap-3">
+                        <GoTriangleRight className=" tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Ongoing Support and Updates:</> Regular
-                          updates on your visa status and timely responses to
-                          any additional embassy requests.
-                         
+                          <>Appointment Scheduling:</> Coordinating necessary
+                          appointments with the Swedish embassy or consulate for
+                          document submission and interviews.
+                        </p>
+                      </li>
+
+                      <li className=" tw-flex  tw-gap-3">
+                        <GoTriangleRight className=" tw-text-blue" />
+                        <p className="m-0 tw-text-gray">
+                          <>Ongoing Support and Updates:</> Regular updates on
+                          your visa status and timely responses to any
+                          additional embassy requests.
                         </p>
                       </li>
                     </ul>
@@ -665,38 +708,29 @@ A Swedish business visa is ideal for foreign nationals who wish to invest in Swe
                       your short-term business visa to Sweden and support your
                       professional success.
                     </p>
-                    <Link to = '/register' className="tw-text-center tw-pt-4">
-                    <h2 className = "tw-text-center tw-pt-4">
-                    <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">Sign Up </strong><strong className='tw-text-black'> Today!</strong>
-                    </h2>
+                    <Link to="/register" className="tw-text-center tw-pt-4">
+                    <h5 className="tw-text-center tw-text-black tw-pt-4" style = {{fontSize: '1.2em'}}>
+                        <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
+                          Sign Up{" "}
+                        </strong>
+                        <strong className="tw-text-black"> Today!</strong>
+                      </h5>
                     </Link>
-                    <br/>
+                    <br />
                     <p className="tw-text-gray">
-                    Sign up today and simplify your journey! Whether you're seeking assistance with relocation, permits, visas, legal processes, or settling into a new life, we're here to help. Our comprehensive services cover everything from work and study opportunities to family reunifications, business support, and much more. Let us guide you every step of the way—start your seamless experience now!
+                      Sign up today and simplify your journey! Whether you're
+                      seeking assistance with relocation, permits, visas, legal
+                      processes, or settling into a new life, we're here to
+                      help. Our comprehensive services cover everything from
+                      work and study opportunities to family reunifications,
+                      business support, and much more. Let us guide you every
+                      step of the way—start your seamless experience now!
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-                <div className="   md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
-                  <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
-                    {data?.map((item, index) => {
-                      return (
-                        <Link
-                          to={`${item?.Link}`}
-                          className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
-                        >
-                          <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
-                            {item?.title}
-                          </p>
-                          <GoTriangleRight className="tw-text-gray" />
-                        </Link>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </div>
+              <Sidebar />
             </div>
           </div>
         </section>

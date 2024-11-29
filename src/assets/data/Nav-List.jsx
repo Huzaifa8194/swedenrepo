@@ -10,6 +10,7 @@ import { PiStudent } from 'react-icons/pi';
 import { IoDocumentTextOutline } from 'react-icons/io5';
 import { CgWorkAlt } from 'react-icons/cg';
 import { MdDensitySmall } from 'react-icons/md';
+import { FaBox } from "react-icons/fa";
 import { MdMapsHomeWork } from 'react-icons/md';
 import { GoLaw } from 'react-icons/go';
 import { RiGlobalLine } from 'react-icons/ri';
@@ -118,7 +119,7 @@ export const servicesChildLinks = [
     id: 0,
     title: 'Logistics',
     description: 'Streamline your move with our comprehensive logistics solutions, ensuring a hassle-free relocation experience.        ',
-    icons: <GoLaw color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
+    icons: <FaBox color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
     Link: '/logistics',
   },
   {

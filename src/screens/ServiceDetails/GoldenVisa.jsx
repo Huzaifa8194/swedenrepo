@@ -8,6 +8,8 @@ import banner from "../../assets/images/psychological-problems-at-school.png";
 import { motion } from "framer-motion";
 import { imageVariants } from "../../utils/motion";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
+import Sidebar from "../../components/ScrollableBar";
+
 
 import gold1 from "../../assets/iconscout/gold1.png";
 import gold2 from "../../assets/iconscout/gold2.png";
@@ -240,7 +242,7 @@ const GoldenVisa = () => {
     <>
       <Header />
       <Banner_Page
-        highlightText={"Golden Visa"}
+        highlightText={"Global Visit Visa"}
         regularText={
           "Seek safety and a fresh start in Sweden. Our comprehensive support helps guide you through the asylum process smoothly."
         }
@@ -261,7 +263,7 @@ const GoldenVisa = () => {
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                         Global Visa Services
                       </span>
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>
                           Your Gateway to Seamless International Travel
                         </strong>
@@ -285,7 +287,7 @@ const GoldenVisa = () => {
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                         Our 
                       </span>
-                      <h2><strong>Comprehensive Services</strong></h2>
+                      <h2 className = "tw-text-left"><strong>Comprehensive Services</strong></h2>
 
                       <br />
                       <strong className=" m-0 tw-text-gray">
@@ -402,7 +404,7 @@ const GoldenVisa = () => {
 
                       <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
-                      <h2 className=" tw-text-left ">
+                      <h2 className = "tw-text-left">
                         <strong>Support Services</strong>
                       </h2>
                       <br/>
@@ -460,7 +462,7 @@ const GoldenVisa = () => {
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                         Visa
                       </span>
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>Categories We Support</strong>
                       </h2>
                       <br/>
@@ -562,7 +564,7 @@ const GoldenVisa = () => {
                         Application
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>Purposes We Cover</strong>
                       </h2>
 <br/>
@@ -655,7 +657,7 @@ const GoldenVisa = () => {
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                         How to
                       </span>
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong>Get Started</strong>
                       </h2>
                       <br/>
@@ -715,12 +717,12 @@ const GoldenVisa = () => {
                         truly matters—your journey.
                       </p>
                       <Link to="/register" className="tw-text-center tw-pt-4">
-                      <h2 className="tw-text-center tw-pt-4">
+                      <h5 className="tw-text-center tw-text-black tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                           Sign Up{" "}
                         </strong>
                         <strong> Today!</strong>
-                      </h2>
+                      </h5>
                     </Link>
                     <br />
                     <p className="tw-text-gray">
@@ -738,25 +740,7 @@ const GoldenVisa = () => {
                   </div>
                 </div>
 
-                <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-                  <div className="  md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4">
-                    <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
-                      {data?.map((item, index) => {
-                        return (
-                          <Link
-                            to={`${item?.Link}`}
-                            className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
-                          >
-                            <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
-                              {item?.title}
-                            </p>
-                            <GoTriangleRight className="tw-text-gray" />
-                          </Link>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                </div>
+              <Sidebar/>
               </div>
             </div>
           </div>

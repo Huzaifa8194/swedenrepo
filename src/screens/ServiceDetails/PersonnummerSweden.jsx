@@ -10,6 +10,8 @@ import { motion } from "framer-motion";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import { useTranslation } from "react-i18next";
 
+import Sidebar from "../../components/ScrollableBar";
+
 import pn1 from "../../assets/iconscout/pn1.png";
 import pn2 from "../../assets/iconscout/pn2.png";
 import pn3 from "../../assets/iconscout/pn3.png";
@@ -262,13 +264,13 @@ const PersonnumerSweden = () => {
                   <div>
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Applying for a Swedish Social Security Number
-                      (Personnummer): Essential for Life in Sweden
+                      (Personnummer)
                     </span>
 
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
-                        A Critical Overview
+                      Applying for a Swedish Social Security Number
+                     :
                       </strong>
                     </h2>
                     <br />
@@ -924,25 +926,7 @@ const PersonnumerSweden = () => {
                 </div>
               </div>
 
-              <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-                <div className="  md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
-                  <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
-                    {data?.map((item, index) => {
-                      return (
-                        <Link
-                          to={`${item?.Link}`}
-                          className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
-                        >
-                          <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
-                            {item?.title}
-                          </p>
-                          <GoTriangleRight className="tw-text-gray" />
-                        </Link>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </div>
+            <Sidebar/>
             </div>
           </div>
         </section>

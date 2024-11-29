@@ -302,7 +302,7 @@ const New_In_sweden = () => {
                     SOCIAL SECURITY NUMBER
                   </span>
 
-                  <h2>
+                  <h2 className = "tw-text-left">
                     <strong className='tw-text-black'>Personnummer</strong>
                   </h2>
 
@@ -337,7 +337,7 @@ const New_In_sweden = () => {
                       TAKE
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>All These Into Consideration</strong>
                     </h2>
                     <br />
@@ -409,7 +409,7 @@ const New_In_sweden = () => {
                       IDENTIFICATION CARD
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>Swedish ID Card</strong>
                     </h2>
                     <br />
@@ -436,7 +436,7 @@ const New_In_sweden = () => {
                       OPENING OF A
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>Bank Account</strong>
                     </h2>
                     <br />
@@ -504,7 +504,7 @@ const New_In_sweden = () => {
                       OPENING OF A
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>Bank Account</strong>
                     </h2>
                     <br />
@@ -597,7 +597,7 @@ const New_In_sweden = () => {
                       BEFORE
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>Visiting A Bank …</strong>
                     </h2>
                     <br />
@@ -672,7 +672,7 @@ const New_In_sweden = () => {
                       HOW TO GET A
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'> Driving License</strong>
                     </h2>
                     <br />
@@ -716,7 +716,7 @@ const New_In_sweden = () => {
                   <div className=" tw-pt-6">
                     {/* <span>BEFORE</span> */}
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>Steps To Get A License</strong>
                     </h2>
                     <br />
@@ -775,7 +775,7 @@ const New_In_sweden = () => {
                       LOOKING
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>For Work In Sweden</strong>
                     </h2>
                     <br />
@@ -804,7 +804,7 @@ const New_In_sweden = () => {
                       SWEDISH EDUCATION SYSTEM
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>School Admissions</strong>
                     </h2>
                     <br />
@@ -856,7 +856,7 @@ const New_In_sweden = () => {
                       PARENTAL
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>Allowance</strong>
                     </h2>
                     <br />
@@ -886,7 +886,7 @@ const New_In_sweden = () => {
                       MOTHER AND CHILD CARE
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>Maternity Clinics</strong>
                     </h2>
                     <br />
@@ -909,7 +909,7 @@ const New_In_sweden = () => {
                       CHILD
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>Health Care Centre</strong>
                     </h2>
                     <br />
@@ -934,7 +934,7 @@ const New_In_sweden = () => {
                       CHILD
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>Care Allowance (Barnbidrag)</strong>
                     </h2>
                     <br />
@@ -956,7 +956,7 @@ const New_In_sweden = () => {
                       REGISTER
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>With Försäkringskassan</strong>
                     </h2>
                     <br />
@@ -978,7 +978,7 @@ const New_In_sweden = () => {
                       HEALTH CARE
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>Health Centre</strong>
                     </h2>
                     <br />
@@ -1008,7 +1008,7 @@ const New_In_sweden = () => {
                       COSTS
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>And Fees</strong>
                     </h2>
                     <br />
@@ -1031,7 +1031,7 @@ const New_In_sweden = () => {
                       COSTS
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>Is Covered?</strong>
                     </h2>
                     <br />
@@ -1065,7 +1065,7 @@ const New_In_sweden = () => {
                       WHERE DO
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>I Find A Dentist?</strong>
                     </h2>
                     <br />
@@ -1084,7 +1084,7 @@ const New_In_sweden = () => {
                       LANGUAGE
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>Courses</strong>
                     </h2>
                     <br />
@@ -1141,7 +1141,7 @@ const New_In_sweden = () => {
                       UNEMPLOYMENT
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>Insurance</strong>
                     </h2>
                     <br />
@@ -1178,7 +1178,7 @@ const New_In_sweden = () => {
                       RECOGNITION OF
                     </span>
 
-                    <h2>
+                    <h2 className = "tw-text-left">
                       <strong className='tw-text-black'>Higher Education Qualifications</strong>
                     </h2>
                     <br />
@@ -1303,7 +1303,7 @@ const New_In_sweden = () => {
                         MIGRATIONSVERKET
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong className='tw-text-black'>(Migration Agency)</strong>
                       </h2>
                       <br />
@@ -1326,7 +1326,7 @@ const New_In_sweden = () => {
                         SKATTEVERKET
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong className='tw-text-black'>(Tax Agency)</strong>
                       </h2>
                       <br />
@@ -1347,7 +1347,7 @@ const New_In_sweden = () => {
                         ARBETSFÖRMEDLINGEN
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong className='tw-text-black'>(Public Employment Service)</strong>
                       </h2>
                       <br />
@@ -1394,7 +1394,7 @@ const New_In_sweden = () => {
                         FÖRSÄKRINGSKASSAN
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong className='tw-text-black'>(Social Insurance Agency)</strong>
                       </h2>
                       <br />
@@ -1465,7 +1465,7 @@ const New_In_sweden = () => {
                         SKOLVERKET
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong className='tw-text-black'>(National Agency For Education)</strong>
                       </h2>
                       <br />
@@ -1487,7 +1487,7 @@ const New_In_sweden = () => {
                         JORDBRUKSVERKET
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong className='tw-text-black'>(Board Of Agriculture)</strong>
                       </h2>
                       <br />
@@ -1503,7 +1503,7 @@ const New_In_sweden = () => {
                     <div className=" tw-pt-6">
                       <br />
                       <span>TULLVERKET</span>
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong className='tw-text-black'>(Customs)</strong>
                       </h2>
                       <br />
@@ -1524,7 +1524,7 @@ const New_In_sweden = () => {
                         TRANSPORTSTYRELSEN (TRANSPORT AGENCY)
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong className='tw-text-black'>
                           & Trafikverket (Transport Administration)
                         </strong>
@@ -1548,7 +1548,7 @@ const New_In_sweden = () => {
                         KOMMUNERNA
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong className='tw-text-black'>(The Municipalities)</strong>
                       </h2>
                       <br />
@@ -1625,7 +1625,7 @@ const New_In_sweden = () => {
                         LÄNSSTYRELSERNA
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong className='tw-text-black'>(The County Administrative Boards)</strong>
                       </h2>
                       <br />
@@ -1650,7 +1650,7 @@ const New_In_sweden = () => {
                         LANDSTINGEN
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong className='tw-text-black'>(The County Councils)</strong>
                       </h2>
                       <br />
@@ -1684,7 +1684,7 @@ const New_In_sweden = () => {
                         ACCOMODATION
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong className='tw-text-black'>Finding Home</strong>
                       </h2>
                       <br />
@@ -1747,7 +1747,7 @@ const New_In_sweden = () => {
                         USEFULL
                       </span>
 
-                      <h2>
+                      <h2 className = "tw-text-left">
                         <strong className='tw-text-black'>LINKS</strong>
                       </h2>
                       <br />

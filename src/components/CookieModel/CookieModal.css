@@ -1,3 +1,5 @@
+/* CookieModal.css */
+
 .cookie-modal {
   position: fixed;
   top: 0;
@@ -12,8 +14,8 @@
 }
 
 .cookie-modal-content {
-  max-width: 40%;
-  height: fit-content;
+  max-width: 55%;
+  width: fit-content;
   max-height: 60%;
   overflow-y: auto; /* Enable vertical scrolling */
   overflow-x: hidden; /* Disable horizontal scrolling if not needed */
@@ -49,6 +51,7 @@
 
 .tabs {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   margin-bottom: 15px;
   border-bottom: 1px solid #ccc;
@@ -81,9 +84,157 @@
   font-size: 16px;
   cursor: pointer;
   margin-top: 15px;
-  float: right;
 }
 
 .accept-btn:hover {
-  background-color: #0056b3;
+  background-color: #000000;
+}
+
+/* Center the buttons container and adjust spacing */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+/* Switch styling */
+.switch {
+  padding-left: 5%;
+  position: relative;
+  display: inline-block;
+  width: 50px; /* Adjusted width to ensure proper toggle movement */
+  height: 24px; /* Adjusted height to match the slider handle */
+  margin-left: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px; /* Slightly smaller than the slider height */
+  width: 20px;  /* Slightly smaller than the slider height */
+  left: 2px; /* Adjusted to be within the slider bounds */
+  bottom: 2px; /* Adjusted to be within the slider bounds */
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:checked + .slider:before {
+  transform: translateX(calc(100% - 24px)); /* Moves the handle all the way to the end */
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.cookie-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.cookie-category-text {
+  flex-grow: 1;
+  margin-right: 15px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .cookie-modal-content {
+    max-width: 90%;
+    width: 95%;
+    padding: 15px;
+  }
+
+  .tabs button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .cookie-category {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cookie-category-text {
+    margin-bottom: 10px;
+  }
+
+  .switch {
+    margin-left: 0;
+  }
+
+  .slider {
+    width: 40px;  /* Reduce slider width for smaller screens */
+    height: 20px; /* Reduce slider height for better proportion */
+  }
+
+  .slider:before {
+    height: 18px; /* Slightly smaller for the handle */
+    width: 18px;  /* Adjusted to match slider height */
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(calc(100% - 22px)); /* Adjust translation for smaller width */
+  }
+
+  .accept-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabs button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .cookie-category {
+    width: 100%;
+  }
+
+  .accept-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 15px;
+  }
 }

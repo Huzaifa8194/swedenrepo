@@ -10,6 +10,8 @@ import { motion } from "framer-motion";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import { useTranslation } from "react-i18next";
 import Header from "../../components/Header_New/Header";
+import Sidebar from "../../components/ScrollableBar";
+
 
 import gv1 from "../../assets/iconscout/gv1.png";
 import gv2 from "../../assets/iconscout/gv2.png";
@@ -242,7 +244,7 @@ const GlobalVisitVisas = () => {
     <>
       <Header />
       <Banner_Page
-        highlightText={t("Global Visit Visas")}
+        highlightText={t("Golden Visa (Greece - Potugal)")}
         regularText={t(
           "Travel with confidence. We provide guidance for global visit visas tailored to your destination and needs."
         )}
@@ -727,25 +729,7 @@ const GlobalVisitVisas = () => {
                 </div>
               </div>
 
-              <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-                <div className="   md:tw-pr-[40%]  2xl:tw-pr-[50%] tw-pr-4 tw-relative">
-                  <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
-                    {data?.map((item, index) => {
-                      return (
-                        <Link
-                          to={`${item?.Link}`}
-                          className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
-                        >
-                          <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
-                            {item?.title}
-                          </p>
-                          <GoTriangleRight className="tw-text-gray" />
-                        </Link>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </div>
+             <Sidebar/>
             </div>
           </div>
         </section>
