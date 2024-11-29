@@ -17,15 +17,120 @@ import rentimage1 from "../../assets/iconscout/rentimage1.png";
 import rentimage3 from "../../assets/iconscout/rentimage3.png";
 import rentimage4 from "../../assets/iconscout/rentimage4.png";
 import rentimage5 from "../../assets/iconscout/rentimage5.png";
+import Select from "../../components/Selecttab";
 
 import { color } from "framer-motion";
 
 const Rent_out_your_housing = () => {
   const { t } = useTranslation();
 
-  const [selectCountry, setSelectCountry] = useState(" ");
 
-  const handleSelectChange = (e) => setSelectCountry(e.target.value);
+  const [selectCountry, setSelectCountry] = useState("");
+  const [skaneCity, setSkaneCity] = useState("");
+  const [denmarkCity, setDenmarkCity] = useState("");
+  const [houseType, setHouseType] = useState("");
+  const [floor, setFloor] = useState("");
+  const [totalRooms, setTotalRooms] = useState("");
+  const [furnished, setFurnished] = useState("");
+  const [carParking, setCarParking] = useState("");
+  const [petsAllowed, setPetsAllowed] = useState("");
+  const [smokingAllowed, setSmokingAllowed] = useState("");
+  const [electricityIncluded, setElectricityIncluded] = useState("");
+  const [liftAvailable, setLiftAvailable] = useState("");
+  const [internetIncluded, setInternetIncluded] = useState("");
+  const [washingMachine, setWashingMachine] = useState("");
+  const [dishwasher, setDishwasher] = useState("");
+  const [heatWaterIncluded, setHeatWaterIncluded] = useState("");
+  const [balconyAvailable, setBalconyAvailable] = useState("");
+  const [contractType, setContractType] = useState("");
+  const [lookingForDeposit, setLookingForDeposit] = useState("");
+  const [maxPeople, setMaxPeople] = useState("");
+  const [rentDuration, setRentDuration] = useState("");
+  const [propertyType, setPropertyType] = useState("");
+  const [bankCountry, setBankCountry] = useState("");
+  
+
+
+  const handleSelectChange = (event) => {
+    const { name, value } = event.target;
+  
+    switch (name) {
+      case "selectCountry":
+        setSelectCountry(value);
+        break;
+      case "skaneCity":
+        setSkaneCity(value);
+        break;
+      case "denmarkCity":
+        setDenmarkCity(value);
+        break;
+      case "houseType":
+        setHouseType(value);
+        break;
+      case "floor":
+        setFloor(value);
+        break;
+      case "totalRooms":
+        setTotalRooms(value);
+        break;
+      case "furnished":
+        setFurnished(value);
+        break;
+      case "carParking":
+        setCarParking(value);
+        break;
+      case "petsAllowed":
+        setPetsAllowed(value);
+        break;
+      case "smokingAllowed":
+        setSmokingAllowed(value);
+        break;
+      case "electricityIncluded":
+        setElectricityIncluded(value);
+        break;
+      case "liftAvailable":
+        setLiftAvailable(value);
+        break;
+      case "internetIncluded":
+        setInternetIncluded(value);
+        break;
+      case "washingMachine":
+        setWashingMachine(value);
+        break;
+      case "dishwasher":
+        setDishwasher(value);
+        break;
+      case "heatWaterIncluded":
+        setHeatWaterIncluded(value);
+        break;
+      case "balconyAvailable":
+        setBalconyAvailable(value);
+        break;
+      case "contractType":
+        setContractType(value);
+        break;
+      case "lookingForDeposit":
+        setLookingForDeposit(value);
+        break;
+      case "maxPeople":
+        setMaxPeople(value);
+        break;
+      case "rentDuration":
+        setRentDuration(value);
+        break;
+      case "propertyType":
+        setPropertyType(value);
+        break;
+      case "bankCountry":
+        setBankCountry(value);
+        break;
+      default:
+        break;
+    }
+  };
+  
+
+ 
 
   return (
     <>
@@ -102,18 +207,18 @@ const Rent_out_your_housing = () => {
                         Select Country
                       </label> */}
 
-                      <select
-                        value={selectCountry}
-                        name="selectCountry"
-                        onChange={handleSelectChange}
-                        className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                      >
-                        <option>Select Country</option>
-                        <option value="Sweden - Skane">Sweden - Skane</option>
-                        <option value="Denmark - Copenhagen">
-                          Denmark - Copenhagen
-                        </option>
-                      </select>
+<Select
+  label="Select Country"
+  name="selectCountry"
+  options={[
+    { value: "Sweden - Skane", label: "Sweden - Skane" },
+    { value: "Denmark - Copenhagen", label: "Denmark - Copenhagen" },
+  ]}
+  value={selectCountry}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
                     {selectCountry === "Sweden - Skane" ? (
                       <div className="col-md-6">
@@ -124,18 +229,22 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Country
                       </label> */}
-                        <label className=" tw-text-sm  tw-text-gray ">
-                          Select Skåne City
-                        </label>
-                        <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                          <option>Choose Option</option>
-                          <option value="Ängelholm">Ängelholm</option>
-                          <option value="Åstorp">Åstorp</option>
-                          <option value="Båstad">Båstad</option>
-                          <option value="Bjuv">Bjuv</option>
-                          <option value="Bromölla">Bromölla</option>
-                          <option value="Burlöv">Burlöv</option>
-                        </select>
+                     <Select
+  label="Select Skåne City"
+  name="skaneCity"
+  options={[
+    { value: "Ängelholm", label: "Ängelholm" },
+    { value: "Åstorp", label: "Åstorp" },
+    { value: "Båstad", label: "Båstad" },
+    { value: "Bjuv", label: "Bjuv" },
+    { value: "Bromölla", label: "Bromölla" },
+    { value: "Burlöv", label: "Burlöv" },
+  ]}
+  value={skaneCity}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                       </div>
                     ) : null}
 
@@ -148,18 +257,22 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
                         Select Country
                       </label> */}
-                        <label className=" tw-text-sm  tw-text-gray ">
-                          Select Denmark City
-                        </label>
-                        <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                          <option>Choose Option</option>
-                          <option value="Ängelholm">Ängelholm</option>
-                          <option value="Åstorp">Åstorp</option>
-                          <option value="Båstad">Båstad</option>
-                          <option value="Bjuv">Bjuv</option>
-                          <option value="Bromölla">Bromölla</option>
-                          <option value="Burlöv">Burlöv</option>
-                        </select>
+                    <Select
+  label="Select Denmark City"
+  name="denmarkCity"
+  options={[
+    { value: "Ängelholm", label: "Ängelholm" },
+    { value: "Åstorp", label: "Åstorp" },
+    { value: "Båstad", label: "Båstad" },
+    { value: "Bjuv", label: "Bjuv" },
+    { value: "Bromölla", label: "Bromölla" },
+    { value: "Burlöv", label: "Burlöv" },
+  ]}
+  value={denmarkCity}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                       </div>
                     ) : null}
 
@@ -172,14 +285,21 @@ const Rent_out_your_housing = () => {
                         Select your type of house
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option> Select your type of house</option>
-                        <option value="Apartment">Apartment</option>
-                        <option value="Villa">Villa</option>
-                        <option value="Radhus">Radhus</option>
-                        <option value="Shared Rooms">Shared Rooms</option>
-                        <option value="Shared Beds">Shared Beds</option>
-                      </select>
+<Select
+  label="Select House Type"
+  name="houseType"
+  options={[
+    { value: "Apartment", label: "Apartment" },
+    { value: "Villa", label: "Villa" },
+    { value: "Radhus", label: "Radhus" },
+    { value: "Shared Rooms", label: "Shared Rooms" },
+    { value: "Shared Beds", label: "Shared Beds" },
+  ]}
+  value={houseType}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6">
@@ -191,16 +311,23 @@ const Rent_out_your_housing = () => {
                         Select Floor
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Select Floor</option>
-                        <option value="Basement">Basement</option>
-                        <option value="Ground Floor">Ground Floor</option>
-                        <option value={"1"}>1</option>
-                        <option value={"2"}>2</option>
-                        <option value={"3"}>3</option>
-                        <option value={"4"}>4</option>
-                        <option value={"5"}>5</option>
-                      </select>
+<Select
+  label="Select Floor"
+  name="floor"
+  options={[
+    { value: "Basement", label: "Basement" },
+    { value: "Ground Floor", label: "Ground Floor" },
+    { value: "1", label: "1" },
+    { value: "2", label: "2" },
+    { value: "3", label: "3" },
+    { value: "4", label: "4" },
+    { value: "5", label: "5" },
+  ]}
+  value={floor}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6">
@@ -212,14 +339,21 @@ const Rent_out_your_housing = () => {
                         Total rooms
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option> Total rooms are in the property?</option>
-                        <option value={"1"}>1</option>
-                        <option value={"2"}>2</option>
-                        <option value={"3"}>3</option>
-                        <option value={"4"}>4</option>
-                        <option value={"5"}>5</option>
-                      </select>
+<Select
+  label="Total Rooms in Property"
+  name="totalRooms"
+  options={[
+    { value: "1", label: "1" },
+    { value: "2", label: "2" },
+    { value: "3", label: "3" },
+    { value: "4", label: "4" },
+    { value: "5", label: "5" },
+  ]}
+  value={totalRooms}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6">
@@ -265,13 +399,20 @@ const Rent_out_your_housing = () => {
                         Furnished?
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option> Furnished?</option>
-                        <option value={"yes"}>Yes</option>
-                        <option value={"partly"}>Partly</option>
-                        <option value={"Flexible"}>Flexible</option>
-                        <option value={"Flexible"}>No</option>
-                      </select>
+<Select
+  label="Furnished"
+  name="furnished"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "partly", label: "Partly" },
+    { value: "Flexible", label: "Flexible" },
+    { value: "No", label: "No" },
+  ]}
+  value={furnished}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
                     <div className="col-md-6">
                       {/* <label
@@ -282,12 +423,19 @@ const Rent_out_your_housing = () => {
                         Is car parking included?
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option> Is car parking included?</option>
-                        <option value={"Included"}>Included</option>
-                        <option value={"Not Included"}>Not Included</option>
-                        <option value={"N/A"}>N/A</option>
-                      </select>
+<Select
+  label="Is Car Parking Included?"
+  name="carParking"
+  options={[
+    { value: "Included", label: "Included" },
+    { value: "Not Included", label: "Not Included" },
+    { value: "N/A", label: "N/A" },
+  ]}
+  value={carParking}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6">
@@ -299,11 +447,18 @@ const Rent_out_your_housing = () => {
                         Are pets allowed?
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Are pets allowed?</option>
-                        <option value={"Allowed"}>Allowed</option>
-                        <option value={"Not Allowed"}>Not Allowed</option>
-                      </select>
+<Select
+  label="Are Pets Allowed?"
+  name="petsAllowed"
+  options={[
+    { value: "Allowed", label: "Allowed" },
+    { value: "Not Allowed", label: "Not Allowed" },
+  ]}
+  value={petsAllowed}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6">
@@ -315,11 +470,18 @@ const Rent_out_your_housing = () => {
                         Is smoking allowed?
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Is smoking allowed?</option>
-                        <option value={"Allowed"}>Allowed</option>
-                        <option value={"Not Allowed"}>Not Allowed</option>
-                      </select>
+<Select
+  label="Is Smoking Allowed?"
+  name="smokingAllowed"
+  options={[
+    { value: "Allowed", label: "Allowed" },
+    { value: "Not Allowed", label: "Not Allowed" },
+  ]}
+  value={smokingAllowed}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6">
@@ -331,11 +493,18 @@ const Rent_out_your_housing = () => {
                         Is electricity included?
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Is electricity included?</option>
-                        <option value={"Included"}>Included</option>
-                        <option value={"Not Included"}>Not Included</option>
-                      </select>
+<Select
+  label="Is Electricity Included?"
+  name="electricityIncluded"
+  options={[
+    { value: "Included", label: "Included" },
+    { value: "Not Included", label: "Not Included" },
+  ]}
+  value={electricityIncluded}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6">
@@ -347,11 +516,18 @@ const Rent_out_your_housing = () => {
                         Is lift available?
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg  mt-2">
-                        <option>Is lift available?</option>
-                        <option value={"Allowed"}>Allowed</option>
-                        <option value={"Not Allowed"}>Not Allowed</option>
-                      </select>
+<Select
+  label="Is Lift Available?"
+  name="liftAvailable"
+  options={[
+    { value: "Allowed", label: "Allowed" },
+    { value: "Not Allowed", label: "Not Allowed" },
+  ]}
+  value={liftAvailable}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6">
@@ -363,11 +539,18 @@ const Rent_out_your_housing = () => {
                         Is internet included?
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Is internet included?</option>
-                        <option value={"Included"}>Included</option>
-                        <option value={"Not Included"}>Not Included</option>
-                      </select>
+<Select
+  label="Is Internet Included?"
+  name="internetIncluded"
+  options={[
+    { value: "Included", label: "Included" },
+    { value: "Not Included", label: "Not Included" },
+  ]}
+  value={internetIncluded}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6"></div>
@@ -381,11 +564,18 @@ const Rent_out_your_housing = () => {
                         Is washing machine available?
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Is washing machine available?</option>
-                        <option value={"Available"}>Available</option>
-                        <option value={"Not Available"}>Not Available</option>
-                      </select>
+<Select
+  label="Is Washing Machine Available?"
+  name="washingMachine"
+  options={[
+    { value: "Available", label: "Available" },
+    { value: "Not Available", label: "Not Available" },
+  ]}
+  value={washingMachine}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6">
@@ -397,11 +587,18 @@ const Rent_out_your_housing = () => {
                         Is dishwasher available?
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option> Is dishwasher available?</option>
-                        <option value={"Available"}>Available</option>
-                        <option value={"Available"}>Not Available</option>
-                      </select>
+<Select
+  label="Is Dishwasher Available?"
+  name="dishwasher"
+  options={[
+    { value: "Available", label: "Available" },
+    { value: "Not Available", label: "Not Available" },
+  ]}
+  value={dishwasher}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6">
@@ -413,11 +610,18 @@ const Rent_out_your_housing = () => {
                         Is heat & water includes in rent?
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Is heat & water includes in rent?</option>
-                        <option value={"Available"}>Available</option>
-                        <option value={"Not Available"}>Not Available</option>
-                      </select>
+<Select
+  label="Is Heat & Water Included in Rent?"
+  name="heatWaterIncluded"
+  options={[
+    { value: "Available", label: "Available" },
+    { value: "Not Available", label: "Not Available" },
+  ]}
+  value={heatWaterIncluded}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6">
@@ -429,11 +633,18 @@ const Rent_out_your_housing = () => {
                         Is balcony/terrace available?
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Is balcony/terrace available?</option>
-                        <option value={"Included"}>Included</option>
-                        <option value={"Not Included"}>Not Included</option>
-                      </select>
+<Select
+  label="Is Balcony/Terrace Available?"
+  name="balconyAvailable"
+  options={[
+    { value: "Included", label: "Included" },
+    { value: "Not Included", label: "Not Included" },
+  ]}
+  value={balconyAvailable}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="row g-1 tw-rounded-md  tw-pt-10  tw-pb-4  tw-bg-white ">
@@ -466,13 +677,20 @@ Contract Details                      </h7>
                         Select Contract Type?
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Select Contract Type</option>
-                        <option value={"First Hand"}> First Hand</option>
-                        <option value={"Second Hand"}>Second Hand</option>
-                        <option value={"Other"}>Other</option>
-                        <option value={"N/A"}>N/A</option>
-                      </select>
+<Select
+  label="Select Contract Type"
+  name="contractType"
+  options={[
+    { value: "First Hand", label: "First Hand" },
+    { value: "Second Hand", label: "Second Hand" },
+    { value: "Other", label: "Other" },
+    { value: "N/A", label: "N/A" },
+  ]}
+  value={contractType}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6">
@@ -506,11 +724,18 @@ Contract Details                      </h7>
                         Maximum people can stay in this residence?
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Are you looking for deposit?</option>
-                        <option value={"yes"}>Yes</option>
-                        <option value={"no"}>No</option>
-                      </select>
+<Select
+  label="Are You Looking for Deposit?"
+  name="lookingForDeposit"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={lookingForDeposit}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6">
@@ -522,16 +747,21 @@ Contract Details                      </h7>
                         What is the duration of rent out?
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>
-                          Maximum people can stay in this residence?
-                        </option>
-                        <option value={"1"}>1 </option>
-                        <option value={"2"}>2</option>
-                        <option value={"3"}>3</option>
-                        <option value={"4"}>4</option>
-                        <option value={"5"}>5</option>
-                      </select>
+<Select
+  label="Maximum People Can Stay"
+  name="maxPeople"
+  options={[
+    { value: "1", label: "1" },
+    { value: "2", label: "2" },
+    { value: "3", label: "3" },
+    { value: "4", label: "4" },
+    { value: "5", label: "5" },
+  ]}
+  value={maxPeople}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6">
@@ -543,14 +773,21 @@ Contract Details                      </h7>
                         What is the duration of rent out?
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>What is the duration of rent out?</option>
-                        <option value={"1 Month "}>1 Month </option>
-                        <option value={"1 Months"}>2 Months</option>
-                        <option value={"3 Months "}>3 Months</option>
-                        <option value={"4 Months"}>4 Months</option>
-                        <option value={"5 Months"}>5 Months</option>
-                      </select>
+<Select
+  label="Duration of Rent Out"
+  name="rentDuration"
+  options={[
+    { value: "1 Month", label: "1 Month" },
+    { value: "2 Months", label: "2 Months" },
+    { value: "3 Months", label: "3 Months" },
+    { value: "4 Months", label: "4 Months" },
+    { value: "5 Months", label: "5 Months" },
+  ]}
+  value={rentDuration}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
 
@@ -604,16 +841,19 @@ Contract Details                      </h7>
                         Your Property Type
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2">
-                        <option>Your Property Type</option>
-                        <option value={"Rental Property"}>
-                          Rental Property
-                        </option>
-                        <option value={"Shared Property"}>
-                          Shared Property
-                        </option>
-                        <option value={"Own Property"}>Own Property</option>
-                      </select>
+<Select
+  label="Property Type"
+  name="propertyType"
+  options={[
+    { value: "Rental Property", label: "Rental Property" },
+    { value: "Shared Property", label: "Shared Property" },
+    { value: "Own Property", label: "Own Property" },
+  ]}
+  value={propertyType}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6">
@@ -735,16 +975,19 @@ Contract Details                      </h7>
                         Select Bank Country
                       </label> */}
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Select Bank Country</option>
-                        <option value={"Sweden"}>
-                          Sweden
-                        </option>
-                        <option value={"Denmark"}>
-                          Denmark
-                        </option>
-                        <option value={"International"}>Internationaly</option>
-                      </select>
+<Select
+  label="Bank Country"
+  name="bankCountry"
+  options={[
+    { value: "Sweden", label: "Sweden" },
+    { value: "Denmark", label: "Denmark" },
+    { value: "International", label: "International" },
+  ]}
+  value={bankCountry}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
 
                     <div className="col-md-6">

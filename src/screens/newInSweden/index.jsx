@@ -238,17 +238,22 @@ const New_In_sweden = () => {
 
   useEffect(() => {
     const updateTopOffset = () => {
-      if (window.innerWidth < 1800 && window.innerWidth > 1600) {
+      if (window.innerWidth < 1700 && window.innerWidth > 1600) {
         setTopOffset("-100%");
       } else if (window.innerWidth < 1600 && window.innerWidth > 1400) {
         setTopOffset("-100%");
       } else if (window.innerWidth > 1800) {
-        setTopOffset("-65%");
+        setTopOffset("-35%");
       } else if (window.innerWidth < 1400 && window.innerWidth > 1000) {
         setTopOffset("-150%");
       } else if (window.innerWidth < 900) {
         setTopOffset("-340%");
-      } else {
+      } 
+      
+      
+      else 
+      
+      {
         setTopOffset("-100%");
       }
     };

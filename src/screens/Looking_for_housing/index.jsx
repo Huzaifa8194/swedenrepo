@@ -12,6 +12,8 @@ import rentimage1 from "../../assets/iconscout/rentimage1.png";
 import rentimage4 from "../../assets/iconscout/rentimage2.png";
 import rentimage2 from "../../assets/iconscout/rentimage5.png";
 import rentimage3 from "../../assets/iconscout/rentimage3.png";
+import Select from "../../components/Selecttab";
+
 
 import Header from "../../components/Header_New/Header";
 const Looking_for_housing = () => {
@@ -211,13 +213,80 @@ const Looking_for_housing = () => {
     },
   ];
 
-  const [selectCountry, setSelectCountry] = useState(" ");
-  const [deposit, setDeposit] = useState("");
-  const [housing, setHousing] = useState("");
 
-  const handleSelectChange = (e) => setSelectCountry(e.target.value);
-  const handleDepositChange = (e) => setDeposit(e.target.value);
-  const handleHousingChange = (e) => setHousing(e.target.value);
+
+
+
+
+  const [selectCountry, setSelectCountry] = useState("");
+  const [skaneCity, setSkaneCity] = useState("");
+  const [copenhagenCity, setCopenhagenCity] = useState("");
+  const [housing, setHousing] = useState("");
+  const [roomsRequired, setRoomsRequired] = useState("");
+  const [floorsRequired, setFloorsRequired] = useState("");
+  const [bedsInRoom, setBedsInRoom] = useState("");
+  const [adultsInHouse, setAdultsInHouse] = useState("");
+  const [contractType, setContractType] = useState("");
+  const [stayDuration, setStayDuration] = useState("");
+  const [deposit, setDeposit] = useState("");
+  const [depositDuration, setDepositDuration] = useState("");
+  const [pets, setPets] = useState("");
+  const [smoke, setSmoke] = useState("");
+  
+
+
+
+  const handleSelectChange = (event) => {
+    const { name, value } = event.target;
+  
+    switch (name) {
+      case "selectCountry":
+        setSelectCountry(value);
+        break;
+      case "skaneCity":
+        setSkaneCity(value);
+        break;
+      case "copenhagenCity":
+        setCopenhagenCity(value);
+        break;
+      case "housing":
+        setHousing(value);
+        break;
+      case "roomsRequired":
+        setRoomsRequired(value);
+        break;
+      case "floorsRequired":
+        setFloorsRequired(value);
+        break;
+      case "bedsInRoom":
+        setBedsInRoom(value);
+        break;
+      case "adultsInHouse":
+        setAdultsInHouse(value);
+        break;
+      case "contractType":
+        setContractType(value);
+        break;
+      case "stayDuration":
+        setStayDuration(value);
+        break;
+      case "deposit":
+        setDeposit(value);
+        break;
+      case "depositDuration":
+        setDepositDuration(value);
+        break;
+      case "pets":
+        setPets(value);
+        break;
+      case "smoke":
+        setSmoke(value);
+        break;
+      default:
+        break;
+    }
+  };
+  
 
   return (
     <>
@@ -361,104 +430,116 @@ const Looking_for_housing = () => {
                   </div>
 
                   <div className="col-md-6">
-                    <select
-                      value={selectCountry}
-                      name="selectCountry"
-                      onChange={handleSelectChange}
-                      className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                    >
-                      <option>Select Country</option>
-                      <option value="Sweden - Skane">Sweden - Skane</option>
-                      <option value="Denmark - Copenhagen">
-                        Denmark - Copenhagen
-                      </option>
-                    </select>
+                  <Select
+  label="Select Country"
+  name="selectCountry"
+  options={[
+    { value: "Sweden - Skane", label: "Sweden - Skane" },
+    { value: "Denmark - Copenhagen", label: "Denmark - Copenhagen" },
+  ]}
+  value={selectCountry}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                   </div>
                   {selectCountry === "Sweden - Skane" ? (
                     <div className="col-md-6">
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Select Skåne City</option>
-                        <option value="Ängelholm">Ängelholm</option>
-                        <option value="Åstorp">Åstorp</option>
-                        <option value="Båstad">Båstad</option>
-                        <option value="Bjuv">Bjuv</option>
-                        <option value="Bromölla">Bromölla</option>
-                        <option value="Burlöv">Burlöv</option>
-                      </select>
+                     <Select
+  label="Select Skåne City"
+  name="skaneCity"
+  options={[
+    { value: "Ängelholm", label: "Ängelholm" },
+    { value: "Åstorp", label: "Åstorp" },
+    { value: "Båstad", label: "Båstad" },
+    { value: "Bjuv", label: "Bjuv" },
+    { value: "Bromölla", label: "Bromölla" },
+    { value: "Burlöv", label: "Burlöv" },
+  ]}
+  value={skaneCity}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
                   ) : null}
 
                   {selectCountry === "Denmark - Copenhagen" ? (
                     <div className="col-md-6">
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Select Copenhagen City</option>
-                        <option value="Ängelholm">Ängelholm</option>
-                        <option value="Åstorp">Åstorp</option>
-                        <option value="Båstad">Båstad</option>
-                        <option value="Bjuv">Bjuv</option>
-                        <option value="Bromölla">Bromölla</option>
-                        <option value="Burlöv">Burlöv</option>
-                      </select>
+                     <Select
+  label="Select Copenhagen City"
+  name="copenhagenCity"
+  options={[
+    { value: "Ängelholm", label: "Ängelholm" },
+    { value: "Åstorp", label: "Åstorp" },
+    { value: "Båstad", label: "Båstad" },
+    { value: "Bjuv", label: "Bjuv" },
+    { value: "Bromölla", label: "Bromölla" },
+    { value: "Burlöv", label: "Burlöv" },
+  ]}
+  value={copenhagenCity}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                     </div>
                   ) : null}
 
                   <div className="col-md-6">
-                    <select
-                      value={housing}
-                      name="housing"
-                      onChange={handleHousingChange}
-                      className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                    >
-                      <option>Select Housing Type</option>
-                      <option value="Apartment">Apartment</option>
-                      <option value="Villa">Villa</option>
-                      <option value="Radhus">Radhus</option>
-                      <option value="Shared Rooms">Shared Rooms</option>
-                      <option value="Shared Beds">Shared Beds</option>
-                    </select>
+                  <Select
+  label="Select Housing Type"
+  name="housing"
+  options={[
+    { value: "Apartment", label: "Apartment" },
+    { value: "Villa", label: "Villa" },
+    { value: "Radhus", label: "Radhus" },
+    { value: "Shared Rooms", label: "Shared Rooms" },
+    { value: "Shared Beds", label: "Shared Beds" },
+  ]}
+  value={housing}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                   </div>
 
                   {housing != "Shared Beds" ? (
                     <div className="col-md-6">
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Number of Rooms required?</option>
+                     <Select
+  label="Number of Rooms Required"
+  name="roomsRequired"
+  options={[
+    { value: "1", label: "1" },
+    { value: "2", label: "2" },
+    { value: "3", label: "3" },
+    { value: "4", label: "4" },
+    { value: "5", label: "5" },
+    { value: "6", label: "6" },
+    { value: "7+", label: "7+" },
+  ]}
+  value={roomsRequired}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
 
-                        <option value={"1"}>1</option>
-                        <option value={"2"}>2</option>
-                        <option value={"3"}>3</option>
-                        <option value={"4"}>4</option>
-                        <option value={"5"}>5</option>
-                        <option value={"5"}>6</option>
-                        <option value={"7+"}>7+</option>
-                      </select>
                     </div>
                   ) : null}
 
                   {housing === "Apartment" || housing === "Radhus" ? (
                     <>
                       <div className="col-md-6">
-                        <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                          <option>Number of Floor Required?</option>
+                      <Select
+  label="Number of Floors Required"
+  name="floorsRequired"
+  options={Array.from({ length: 18 }, (_, i) => ({
+    value: `${i + 1}`,
+    label: i < 17 ? `${i + 1}` : "18+",
+  }))}
+  value={floorsRequired}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
 
-                          <option value={"1"}>1</option>
-                          <option value={"2"}>2</option>
-                          <option value={"3"}>3</option>
-                          <option value={"4"}>4</option>
-                          <option value={"5"}>5</option>
-                          <option value={"6"}>6</option>
-                          <option value={"7"}>7</option>
-                          <option value={"8"}>8</option>
-                          <option value={"9"}>9</option>
-                          <option value={"10"}>10</option>
-                          <option value={"11"}>11</option>
-                          <option value={"12"}>12</option>
-                          <option value={"13"}>13</option>
-                          <option value={"14"}>14</option>
-                          <option value={"15"}>15</option>
-                          <option value={"16"}>16</option>
-                          <option value={"17"}>17</option>
-                          <option value={"18+"}>18+</option>
-                        </select>
                       </div>
                     </>
                   ) : null}
@@ -466,15 +547,21 @@ const Looking_for_housing = () => {
                   {housing === "Shared Rooms" || housing === "Shared Beds" ? (
                     <>
                       <div className="col-md-6">
-                        <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                          <option>Maximum beds in a room?</option>
+                      <Select
+  label="Maximum Beds in a Room"
+  name="bedsInRoom"
+  options={[
+    { value: "1", label: "1" },
+    { value: "2", label: "2" },
+    { value: "3", label: "3" },
+    { value: "4", label: "4" },
+    { value: "5+", label: "5+" },
+  ]}
+  value={bedsInRoom}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
 
-                          <option value={"1"}>1</option>
-                          <option value={"2"}>2</option>
-                          <option value={"3"}>3</option>
-                          <option value={"4"}>4</option>
-                          <option value={"5+"}>5+</option>
-                        </select>
                       </div>
                     </>
                   ) : null}
@@ -511,42 +598,26 @@ const Looking_for_housing = () => {
                         Furnished?
                       </label> */}
 
-                    <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                      <option>Number of adults in the house?</option>
-                      <option value={"1"}>1</option>
-                      <option value={"2"}>2</option>
-                      <option value={"3"}>3</option>
-                      <option value={"4"}>4</option>
-                      <option value={"5"}>5</option>
-                      <option value={"6"}>6 or +</option>
-                    </select>
+<Select
+  label="Number of Adults in the House"
+  name="adultsInHouse"
+  options={[
+    { value: "1", label: "1" },
+    { value: "2", label: "2" },
+    { value: "3", label: "3" },
+    { value: "4", label: "4" },
+    { value: "5", label: "5" },
+    { value: "6 or +", label: "6 or +" },
+  ]}
+  value={adultsInHouse}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                   </div>
-                  {/* <div className="col-md-6">
-                      
+              
 
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>How many children do you have?</option>
-                        <option value={"1"}>1</option>
-                        <option value={"2"}>2</option>
-                        <option value={"3"}>3</option>
-                        <option value={"4"}>4</option>
-                        <option value={"5"}>5</option>
-                        <option value={"N/A"}>N/A</option>
-                      </select>
-                    </div> */}
-
-                  {/* <div className="col-md-6">
-                     
-
-                      <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                        <option>Do you have infants?</option>
-                        <option value={"1"}>1</option>
-                        <option value={"2"}>2</option>
-                        <option value={"3"}>3</option>
-                        <option value={"4"}>4 or +</option>
-                        <option value={"N/A"}>N/A</option>
-                      </select>
-                    </div> */}
+              
 
                   <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
                     <span className=" tw-flex tw-items-center tw-gap-2">
@@ -580,13 +651,20 @@ const Looking_for_housing = () => {
                         Select Contract Type?
                       </label> */}
 
-                    <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                      <option>Select Contract Type</option>
-                      <option value={"First Hand"}> First Hand</option>
-                      <option value={"Second Hand"}>Second Hand</option>
-                      <option value={"Other"}>Other</option>
-                      <option value={"N/A"}>N/A</option>
-                    </select>
+<Select
+  label="Select Contract Type"
+  name="contractType"
+  options={[
+    { value: "First Hand", label: "First Hand" },
+    { value: "Second Hand", label: "Second Hand" },
+    { value: "Other", label: "Other" },
+    { value: "N/A", label: "N/A" },
+  ]}
+  value={contractType}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                   </div>
 
                   <div className="col-md-6">
@@ -620,18 +698,20 @@ const Looking_for_housing = () => {
                         Maximum people can stay in this residence?
                       </label> */}
 
-                    <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                      <option>What is the duration of your stay?</option>
-                      <option value={"1 Month"}>1 Month</option>
-                      <option value={"2 Month"}>2 Month</option>
-                      <option value={"3 Month"}>3 Month</option>
-                      <option value={"4 Month"}>4 Month</option>
-                      <option value={"5 Month"}>5 Month</option>
-                      <option value={"6 Month"}>6 Month</option>
-                      <option value={"7 Month"}>7 Month</option>
-                      <option value={"8 Month"}>8 Month</option>
-                      <option value={"9 Month"}>9 Month</option>
-                    </select>
+<Select
+  label="Duration of Stay"
+  name="stayDuration"
+  options={[
+    ...Array.from({ length: 9 }, (_, i) => ({
+      value: `${i + 1} Month`,
+      label: `${i + 1} Month`,
+    })),
+  ]}
+  value={stayDuration}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                   </div>
 
                   <div className="col-md-6">
@@ -643,16 +723,18 @@ const Looking_for_housing = () => {
                         What is the duration of rent out?
                       </label> */}
 
-                    <select
-                      value={deposit}
-                      name="deposit"
-                      onChange={handleDepositChange}
-                      className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                    >
-                      <option>Are you willing to pay deposit?</option>
-                      <option value={"yes"}>Yes</option>
-                      <option value={"no"}>No</option>
-                    </select>
+<Select
+  label="Are you willing to pay deposit?"
+  name="deposit"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={deposit}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                   </div>
 
                   {deposit === "yes" ? (
@@ -666,15 +748,22 @@ const Looking_for_housing = () => {
                         What is the duration of rent out?
                       </label> */}
 
-                        <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2">
-                          <option>How many months of deposit?</option>
-                          <option value={"1 Month"}>1 Month</option>
-                          <option value={"2 Month"}>2 Month</option>
-                          <option value={"3 Month"}>3 Month</option>
-                          <option value={"4 Month"}>4 Month</option>
-                          <option value={"5 Month"}>5 Month</option>
-                          <option value={"6 Month"}>6 Month</option>
-                        </select>
+<Select
+  label="Months of Deposit"
+  name="depositDuration"
+  options={[
+    { value: "1 Month", label: "1 Month" },
+    { value: "2 Month", label: "2 Month" },
+    { value: "3 Month", label: "3 Month" },
+    { value: "4 Month", label: "4 Month" },
+    { value: "5 Month", label: "5 Month" },
+    { value: "6 Month", label: "6 Month" },
+  ]}
+  value={depositDuration}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+/>
+
                       </div>
                     </>
                   ) : null}
@@ -723,11 +812,18 @@ const Looking_for_housing = () => {
                         Your Property Type
                       </label> */}
 
-                    <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2">
-                      <option>Do you have Pets?</option>
-                      <option value={"yes"}>Yes</option>
-                      <option value={"no"}>No</option>
-                    </select>
+<Select
+  label="Do You Have Pets?"
+  name="pets"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={pets}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
+/>
+
                   </div>
 
                   <div className="col-md-6">
@@ -739,11 +835,18 @@ const Looking_for_housing = () => {
                         Your Property Type
                       </label> */}
 
-                    <select className="tw-outline-none tw-text-sm  tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2">
-                      <option>Do You Smoke?</option>
-                      <option value={"yes"}>Yes</option>
-                      <option value={"no"}>No</option>
-                    </select>
+<Select
+  label="Do You Smoke?"
+  name="smoke"
+  options={[
+    { value: "yes", label: "Yes" },
+    { value: "no", label: "No" },
+  ]}
+  value={smoke}
+  onChange={handleSelectChange}
+  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
+/>
+
                   </div>
 
                   <div className="col-md-6">
