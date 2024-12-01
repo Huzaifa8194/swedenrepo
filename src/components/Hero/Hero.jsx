@@ -29,8 +29,8 @@ const Hero = () => {
             </motion.div>
             <motion.div variants={containerVariants} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }}>
               <motion.h1 variants={fadeIn('up', 'tween', 0.4, 1)} className=" tw-leading-[60px] tw-text-5xl  tw-font-normal">
-                {t("Relocate To")} <strong className=" tw-text-blue">{t("Sweden")}</strong> <br />
-                {t("With an")} <strong className=" tw-text-blue">{t("Expert Advise")}</strong>
+                {t("Relocate To Sweden")} <strong className=" tw-text-blue">{t("")}</strong> <br />
+                {t("With an Expert Advise")} <strong className=" tw-text-blue">{t("")}</strong>
               </motion.h1>
             </motion.div>
             <motion.div variants={containerVariants} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }}>

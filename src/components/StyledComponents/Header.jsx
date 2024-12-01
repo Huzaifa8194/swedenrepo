@@ -16,6 +16,7 @@ import Button from '../Button/index.jsx';
 
 import { useTranslation } from '../../context/TranslationContext.jsx';
 import { use } from 'i18next';
+import { Link } from 'react-router-dom';
 
 
 
@@ -148,7 +149,7 @@ export const NavListChildLinks = ({ item, navigate, hoveredItem, dispatch, setBa
 
   return (
     <div
-      className={` tw-bg-[#fff] tw-rounded-2xl ${hoveredItem === 1 ? 'tw-min-w-[1000px] md:tw-min-w-[900px] 2xl:tw-min-w-[1200px]' : 'tw-min-w-[850px]'} tw-shadow-md tw-mt-[0.8rem] tw-animate-slideUp tw-z-[1000] tw-grid ${
+      className={` tw-bg-[#fff] tw-rounded-2xl ${hoveredItem === 1 ? 'tw-min-w-[1000px] md:tw-min-w-[1000px] 2xl:tw-min-w-[1200px]' : 'tw-min-w-[850px]'} tw-shadow-md tw-mt-[0.8rem] tw-animate-slideUp tw-z-[1000] tw-grid ${
         hoveredItem === 1 ? 'tw-grid-cols-3 md:tw-grid-cols-4 2xl:tw-grid-cols-4' : 'tw-grid-cols-2'
       }  tw-gap-4 tw-p-4`}
     >
@@ -161,17 +162,17 @@ export const NavListChildLinks = ({ item, navigate, hoveredItem, dispatch, setBa
             }}
             className="tw-flex tw-gap-4 tw-w-full tw-items-center !tw-ml-0 !tw-p-2 tw-rounded-md hover:tw-bg-slate-200 tw-cursor-pointer"
           >
-            <div className="tw-bg-[#1F2437] tw-p-3 md:tw-p-2 tw-rounded-md">{child.icons}</div>
+            <div className="tw-bg-[#1F2437] tw-p-3 md:tw-p-1 xl:tw-p-2 tw-rounded-md">{child.icons}</div>
             <div className="tw-flex tw-flex-col tw-justify-center">
-              <li className="tw-text-black hover:tw-bg-gray-200 tw-cursor-pointer">{t(child.title)}</li>
+              <li className="tw-text-black md:tw-text-[16px] hover:tw-bg-gray-200 tw-cursor-pointer">{t(child.title)}</li>
               <li className="tw-text-[14px] md:tw-text-[12px] tw-text-[#898a9c] hover:tw-bg-gray-200 tw-cursor-pointer">{child.description.substring(0, 25)}...</li>
             </div>
           </ul>
         </div>
       ))}
       {childLinks.length > 16 && (
-        <div className="tw-col-span-full tw-flex tw-justify-center tw-items-center">
-          <a href = "/services"><Button className="btn-primary" label="See More Services" /></a>
+        <div className="tw-col-span-full tw-flex tw-justify-center tw-items-center tw-mt-0">
+          <Link to="/services"><Button className="btn-primary" label="See More Services" /></Link>
         </div>
       )}
     </div>
