@@ -3,7 +3,7 @@ import { fadeIn, staggerContainer } from '../../utils/motion';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import dots from '../../assets/images/pattern.png';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '../../context/TranslationContext';
 const OurSkills = () => {
   const containerVariants = staggerContainer(0.1, 0.1);
 

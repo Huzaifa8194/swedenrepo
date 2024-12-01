@@ -264,56 +264,42 @@ const Citizenship = () => {
                 <div className="   2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Swedish Citizenship
-                    </span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Swedish Citizenship`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Requirements, Application Process,
-                      and Waiting Times
-                      </strong>
+                      <strong>{t(`Requirements, Application Process,
+                      and Waiting Times`)}</strong>
                     </h2>
 
                     <br />
-                    <p className="tw-text-gray">
-                      To qualify for Swedish citizenship, applicants must meet
-                      several key requirements:
-                    </p>
+                    <p className="tw-text-gray">{t(`To qualify for Swedish citizenship, applicants must meet
+                      several key requirements:`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Age Requirement
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Age Requirement`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong></strong> You must be at least 18 years old to
+                          <strong></strong>{t(`You must be at least 18 years old to
                           apply independently. Children under 18 can apply
                           alongside a parent or guardian, with special
-                          considerations for adopted children.
-                        </p>
+                          considerations for adopted children.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Permanent Residence or Right of Residence
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Permanent Residence or Right of Residence`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <>Residence Requirement:</> Applicants must hold
+                          <>Residence Requirement:</>{t(`Applicants must hold
                           either a permanent residence permit (permanent
                           uppehållstillstånd) or permanent right of residence
-                          (permanent uppehållsrätt) if they are EU/EEA citizens.
-                        </p>
+                          (permanent uppehållsrätt) if they are EU/EEA citizens.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Residency Duration
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Residency Duration`)}</strong>
 
                     <ul className="tw-p-0 tw-pt-4 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -371,14 +357,12 @@ const Citizenship = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-black">
-                          Good Conduct
-                        </strong>
+                        <strong className="m-0 tw-text-black">{t(`Good Conduct`)}</strong>
 
                         <ul className="tw-p-0 tw-pt-4 tw-pl-0">
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <p className="m-0 tw-text-gray">
-                              <strong></strong> Applicants are expected to
+                              <strong></strong>{t(`Applicants are expected to
                               demonstrate good conduct, meaning they should not
                               have a recent criminal record, significant debts,
                               or unresolved legal issues. Migrationsverket
@@ -392,57 +376,47 @@ const Citizenship = () => {
                               business systems. Applicants may be required to
                               provide documentation or disclosures related to
                               their legal history and financial status as part
-                              of the application process.
-                            </p>
+                              of the application process.`)}</p>
                           </li>
                         </ul>
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-black">
-                      Ability to Support Yourself
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Ability to Support Yourself`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong></strong> Generally, applicants should be
+                          <strong></strong>{t(`Generally, applicants should be
                           financially independent and not rely on social
                           assistance. This applies particularly to non-Nordic
-                          and non-EU/EEA applicants.
-                        </p>
+                          and non-EU/EEA applicants.`)}</p>
                       </li>
                     </ul>
                   </div>
                   <div>
                     <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Specific Paths to Citizenship
-                    </span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Specific Paths to Citizenship`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>Citizenship for Nordic Citizens</strong>
+                      <strong>{t(`Citizenship for Nordic Citizens`)}</strong>
                     </h2>
 
                     <br />
 
-                    <p className="tw-text-gray">
-                      For citizens of Denmark, Finland, Iceland, and Norway, the
-                      process for Swedish citizenship is streamlined:
-                    </p>
+                    <p className="tw-text-gray">{t(`For citizens of Denmark, Finland, Iceland, and Norway, the
+                      process for Swedish citizenship is streamlined:`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Residency Requirement
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Residency Requirement`)}</strong>
 
                     <p className="tw-text-gray">
                       {" "}
-                      Only two years of continuous residence in Sweden are
+                     {t(` Only two years of continuous residence in Sweden are
                       required to qualify for certain residency benefits or
                       permits. This relatively short period makes it easier for
                       individuals to establish themselves in Sweden and access
-                      various opportunities,
+                      various opportunities,`)}
                     </p>
                     <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
@@ -461,10 +435,8 @@ const Citizenship = () => {
                       <div className="col-md-6">
                         <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                           <li className="tw-flex tw-items-center tw-gap-3">
-                            <p className="m-0 tw-text-gray">
-                              such as applying for permanent residency or other
-                              long-term residence options
-                            </p>
+                            <p className="m-0 tw-text-gray">{t(`such as applying for permanent residency or other
+                              long-term residence options`)}</p>
                           </li>
 
                           <li className=" tw-flex tw-pt-4 tw-gap-3">
@@ -472,12 +444,11 @@ const Citizenship = () => {
                               <GoTriangleRight className=" tw-text-blue" />
                             </div>
                             <p className="m-0 tw-text-gray">
-                              <>Simplified Application Process:</> Nordic
+                              <>Simplified Application Process:</>{t(`Nordic
                               citizens can apply directly to Migrationsverket
                               or, if they meet the criteria, register at their
                               local Tax Agency (Skatteverket) for simplified
-                              processing.
-                            </p>
+                              processing.`)}</p>
                           </li>
 
                           <li className=" tw-flex  tw-gap-3">
@@ -485,10 +456,9 @@ const Citizenship = () => {
                               <GoTriangleRight className=" tw-text-blue" />
                             </div>
                             <p className="m-0 tw-text-gray">
-                              <>Automatic Naturalization:</> Some Nordic
+                              <>Automatic Naturalization:</>{t(`Some Nordic
                               citizens may qualify for automatic naturalization
-                              under specific conditions.
-                            </p>
+                              under specific conditions.`)}</p>
                           </li>
                         </ul>
                       </div>
@@ -503,27 +473,21 @@ const Citizenship = () => {
                       Citizenship
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>For EU/EEA Citizens </strong>
+                      <strong>{t(`For EU/EEA Citizens`)}</strong>
                     </h2>
 
-                    <p className="tw-text-gray">
-                      EU/EEA citizens can apply for Swedish citizenship after
+                    <p className="tw-text-gray">{t(`EU/EEA citizens can apply for Swedish citizenship after
                       five years of continuous residence in Sweden. Requirements
-                      include:
-                    </p>
+                      include:`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Permanent Right of Residence
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Permanent Right of Residence`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          After five years of residence, EU/EEA citizens
+                        <p className="m-0 tw-text-gray">{t(`After five years of residence, EU/EEA citizens
                           typically acquire a permanent right of residence
                           (permanent uppehållsrätt), which is essential for the
-                          citizenship application.
-                        </p>
+                          citizenship application.`)}</p>
                       </li>
 
                       <li className=" tw-flex tw-pt-4 tw-gap-3">
@@ -531,11 +495,10 @@ const Citizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0  tw-text-gray">
-                          <>Simplified Process:</> EU/EEA citizens may
+                          <>{t(`Simplified Process:`)}</>{t(`EU/EEA citizens may
                           experience a slightly simplified process since they
                           are not required to hold a residence permit due to
-                          their EU rights.
-                        </p>
+                          their EU rights.`)}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
@@ -543,10 +506,10 @@ const Citizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <>Proof of Good Conduct and Financial Independence:</>{" "}
+                        {t(`  Proof of Good Conduct and Financial Independence:
                           Similar to other applicants, EU/EEA citizens must
                           demonstrate good conduct and generally be financially
-                          self-sufficient.
+                          self-sufficient.`)}
                         </p>
                       </li>
                     </ul>
@@ -558,25 +521,20 @@ const Citizenship = () => {
                       Citizenship for Individuals
                     </span>
                     <h2 className="tw-text-left">
-                      <strong> With a Permanent Residence Permit </strong>
+                      <strong>{t(`With a Permanent Residence Permit`)}</strong>
                     </h2>
 
                     <br />
 
-                    <p className="tw-text-gray">
-                      If you have been granted a permanent residence permit in
+                    <p className="tw-text-gray">{t(`If you have been granted a permanent residence permit in
                       Sweden, you may apply for citizenship once you fulfill the
-                      residency requirements:
-                    </p>
+                      residency requirements:`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Five-Year Residence Requirement
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Five-Year Residence Requirement`)}</strong>
 
                     <ul className="tw-p-0 tw-pt-4 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Most applicants need five years of continuous
+                        <p className="m-0 tw-text-gray">{t(`Most applicants need five years of continuous
                           residence in Sweden to qualify for permanent
                           residency. However, those with refugee status may
                           qualify after just four years, reflecting Sweden's
@@ -584,8 +542,7 @@ const Citizenship = () => {
                           conflict or persecution. This shorter residency
                           requirement for refugees is designed to help them
                           integrate into Swedish society more quickly and
-                          establish stability after seeking asylum.
-                        </p>
+                          establish stability after seeking asylum.`)}</p>
                       </li>
                       <div className="row tw-flex tw-items-center">
                         <div className="col-md-6">
@@ -607,12 +564,10 @@ const Citizenship = () => {
                               <GoTriangleRight className=" tw-text-blue" />
                             </div>
                             <p className="m-0 tw-text-gray">
-                              <strong>
-                                Documentation of Residence and Income:
-                              </strong>{" "}
-                              You will need to provide evidence of your
+                              <strong>{t(`Documentation of Residence and Income:`)}</strong>{" "}
+                              {t(`You will need to provide evidence of your
                               residence and financial stability during your time
-                              in Sweden.
+                              in Sweden.`)}
                             </p>
                           </li>
 
@@ -621,10 +576,10 @@ const Citizenship = () => {
                               <GoTriangleRight className=" tw-text-blue" />
                             </div>
                             <p className="m-0 tw-text-gray">
-                              <strong>Commitment to Stay in Sweden:</strong>{" "}
-                              Migrationsverket may consider factors like
+                              <strong>{t(`Commitment to Stay in Sweden:`)}</strong>{" "}
+                             {t(` Migrationsverket may consider factors like
                               employment and social ties to assess your
-                              intention to remain in Sweden.
+                              intention to remain in Sweden.`)}
                             </p>
                           </li>
                         </div>
@@ -636,34 +591,26 @@ const Citizenship = () => {
                     <br />
 
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Specific Paths to Citizenship
-                    </span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Specific Paths to Citizenship`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                        Application Process for Swedish Citizenship
-                      </strong>
+                      <strong>{t(`Application Process for Swedish Citizenship`)}</strong>
                     </h2>
                     <br />
 
-                    <p className="tw-text-gray">
-                      The application process for Swedish citizenship involves
+                    <p className="tw-text-gray">{t(`The application process for Swedish citizenship involves
                       several steps to ensure you meet the eligibility criteria.
-                      Here’s an overview of the process:
-                    </p>
+                      Here’s an overview of the process:`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Prepare Documentation
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Prepare Documentation`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4 ">
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong> </strong> Gather all necessary documents,
+                          <strong> </strong> {t(`Gather all necessary documents,
                           including a valid passport, proof of residence (such
                           as rental agreements), employment records, and proof
-                          of income.
+                          of income.`)}
                         </p>
                       </li>
                     </ul>
@@ -683,64 +630,50 @@ const Citizenship = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-black">
-                          Submit Application
-                        </strong>
+                        <strong className="m-0 tw-text-black">{t(`Submit Application`)}</strong>
 
                         <ul className="tw-p-0 tw-pt-4 tw-pl-0">
                           <li>
-                            <p className="m-0 tw-text-gray">
-                              Applications can be submitted online via
+                            <p className="m-0 tw-text-gray">{t(`Applications can be submitted online via
                               Migrationsverket’s e-service or in paper format.
                               Ensure all information is accurate, and
                               double-check for any required documents, as
-                              incomplete applications may delay processing.
-                            </p>
+                              incomplete applications may delay processing.`)}</p>
                           </li>
                         </ul>
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-black">
-                      Application Review
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Application Review`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className="m-0 tw-text-gray">
-                          Migrationsverket reviews the application and checks
+                        <p className="m-0 tw-text-gray">{t(`Migrationsverket reviews the application and checks
                           your eligibility. This review includes confirming your
                           residence, examining your criminal record (if
-                          applicable), and verifying financial self-sufficiency.
-                        </p>
+                          applicable), and verifying financial self-sufficiency.`)}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className="m-0 tw-text-gray">
-                          Migrationsverket may contact you to request additional
-                          documentation if necessary.
-                        </p>
+                        <p className="m-0 tw-text-gray">{t(`Migrationsverket may contact you to request additional
+                          documentation if necessary.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Decision and Notification
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Decision and Notification`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-10">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          Once the review is complete, Migrationsverket will
+                        <p className="m-0 tw-text-gray">{t(`Once the review is complete, Migrationsverket will
                           issue a decision. If approved, you will receive a
                           certificate of Swedish citizenship. If denied, you
-                          have the right to appeal the decision.
-                        </p>
+                          have the right to appeal the decision.`)}</p>
                       </li>
                     </ul>
 
@@ -751,15 +684,14 @@ const Citizenship = () => {
                       Waiting Time for
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>Citizenship Applications </strong>
+                      <strong>{t(`Citizenship Applications`)}</strong>
                     </h2>
 
                     <br />
 
                     <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
-                        <p className="tw-text-gray">
-                          The waiting time for Swedish citizenship applications
+                        <p className="tw-text-gray">{t(`The waiting time for Swedish citizenship applications
                           can vary depending on your background and whether
                           additional information is required. As of the latest
                           data, the average processing time for straightforward
@@ -769,8 +701,7 @@ const Citizenship = () => {
                           issues, may take longer due to the need for additional
                           checks and documentation. Applicants with refugee or
                           protected status may experience a slightly shorter
-                          processing time, usually within 12 to 18 months.
-                        </p>
+                          processing time, usually within 12 to 18 months.`)}</p>
                       </div>
 
                       <div className="col-md-6">
@@ -788,45 +719,33 @@ const Citizenship = () => {
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-black">
-                      Standard Processing
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Standard Processing`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          Standard processing for non-EU/EEA citizens and those
+                        <p className="m-0 tw-text-gray">{t(`Standard processing for non-EU/EEA citizens and those
                           without special exemptions typically takes 18-36
-                          months.
-                        </p>
+                          months.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Nordic Citizens
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Nordic Citizens`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          Nordic citizens typically experience shorter
+                        <p className="m-0 tw-text-gray">{t(`Nordic citizens typically experience shorter
                           processing times, often between 6-12 months due to
-                          simplified requirements.
-                        </p>
+                          simplified requirements.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      EU/EEA Citizens
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`EU/EEA Citizens`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          EU/EEA citizens often have similar processing times to
+                        <p className="m-0 tw-text-gray">{t(`EU/EEA citizens often have similar processing times to
                           standard applicants, but cases are typically processed
-                          more quickly if all documentation is in order.
-                        </p>
+                          more quickly if all documentation is in order.`)}</p>
                       </li>
                     </ul>
 
@@ -846,24 +765,18 @@ const Citizenship = () => {
 
                     <br />
 
-                    <p className="tw-text-gray">
-                      Navigating the Swedish citizenship application process can
+                    <p className="tw-text-gray">{t(`Navigating the Swedish citizenship application process can
                       be complex and time-consuming. Sweden Relocators offers
                       comprehensive services to help streamline your
-                      application. Here’s how we can assist:
-                    </p>
+                      application. Here’s how we can assist:`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Eligibility Assessment
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Eligibility Assessment`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          We evaluate your residency history, documentation, and
+                        <p className="m-0 tw-text-gray">{t(`We evaluate your residency history, documentation, and
                           circumstances to confirm your eligibility and advise
-                          on any additional requirements.
-                        </p>
+                          on any additional requirements.`)}</p>
                       </li>
                     </ul>
 
@@ -882,62 +795,46 @@ const Citizenship = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-black">
-                          Document Preparation and Verification
-                        </strong>
+                        <strong className="m-0 tw-text-black">{t(`Document Preparation and Verification`)}</strong>
 
                         <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                           <li>
-                            <p className="m-0 tw-text-gray">
-                              We ensure that all required documents are
+                            <p className="m-0 tw-text-gray">{t(`We ensure that all required documents are
                               accurate, complete, and up-to-date, including
-                              translation of foreign documents if necessary.
-                            </p>
+                              translation of foreign documents if necessary.`)}</p>
                           </li>
                         </ul>
 
-                        <strong className="m-0 tw-text-black">
-                          Application Submission and Monitoring
-                        </strong>
+                        <strong className="m-0 tw-text-black">{t(`Application Submission and Monitoring`)}</strong>
 
                         <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                           <li>
-                            <p className="m-0 tw-text-gray">
-                              We submit your application and monitor its
+                            <p className="m-0 tw-text-gray">{t(`We submit your application and monitor its
                               progress with Migrationsverket, providing updates
                               and handling any requests for additional
-                              information.
-                            </p>
+                              information.`)}</p>
                           </li>
                         </ul>
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-black">
-                      Support for Appeal
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Support for Appeal`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          If your application is denied, we guide you through
+                        <p className="m-0 tw-text-gray">{t(`If your application is denied, we guide you through
                           the appeal process and help strengthen your case for
-                          reconsideration.
-                        </p>
+                          reconsideration.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Guidance on Additional Requirements
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Guidance on Additional Requirements`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          We provide personalized advice to address specific
+                        <p className="m-0 tw-text-gray">{t(`We provide personalized advice to address specific
                           issues such as criminal records, financial concerns,
-                          or extended absences.
-                        </p>
+                          or extended absences.`)}</p>
                       </li>
                     </ul>
 
@@ -948,55 +845,41 @@ const Citizenship = () => {
                       Why Choose
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>Sweden Relocators? </strong>
+                      <strong>{t(`Sweden Relocators?`)}</strong>
                     </h2>
                     <br />
 
-                    <p className="tw-text-gray">
-                      Sweden Relocators offers expert knowledge and personalized
+                    <p className="tw-text-gray">{t(`Sweden Relocators offers expert knowledge and personalized
                       services to ensure a smooth Swedish citizenship
-                      application process. Here’s why you should choose us:
-                    </p>
+                      application process. Here’s why you should choose us:`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Expert Knowledge of Swedish Citizenship Laws
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Expert Knowledge of Swedish Citizenship Laws`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          Our team is well-versed in the latest citizenship
+                        <p className="m-0 tw-text-gray">{t(`Our team is well-versed in the latest citizenship
                           requirements, ensuring you have the best chance of
-                          success.
-                        </p>
+                          success.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Comprehensive, Personalized Support
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Comprehensive, Personalized Support`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          We tailor our services to meet your specific needs,
+                        <p className="m-0 tw-text-gray">{t(`We tailor our services to meet your specific needs,
                           whether you’re a Nordic citizen, EU resident, or
-                          permanent residence permit holder.
-                        </p>
+                          permanent residence permit holder.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Streamlined Application Process
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Streamlined Application Process`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          We handle the details, so you can have peace of mind
+                        <p className="m-0 tw-text-gray">{t(`We handle the details, so you can have peace of mind
                           knowing that every step is managed professionally and
-                          efficiently.
-                        </p>
+                          efficiently.`)}</p>
                       </li>
                     </ul>
                   </div>
@@ -1005,19 +888,17 @@ const Citizenship = () => {
                       <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                         Sign Up{" "}
                       </strong>
-                      <strong> Today!</strong>
+                      <strong>{t(`Today!`)}</strong>
                     </h5>
                   </Link>
                   <br />
-                  <p className="tw-text-gray">
-                    Sign up today and simplify your journey! Whether you're
+                  <p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
                     seeking assistance with relocation, permits, visas, legal
                     processes, or settling into a new life, we're here to help.
                     Our comprehensive services cover everything from work and
                     study opportunities to family reunifications, business
                     support, and much more. Let us guide you every step of the
-                    way—start your seamless experience now!
-                  </p>
+                    way—start your seamless experience now!`)}</p>
                 </div>
               </div>
 

@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { imageVariants } from "../../utils/motion";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import Sidebar from "../../components/ScrollableBar";
-
+import { useTranslation } from '../../context/TranslationContext';
 
 import gold1 from "../../assets/iconscout/gold1.png";
 import gold2 from "../../assets/iconscout/gold2.png";
@@ -18,6 +18,7 @@ import gold3 from "../../assets/iconscout/gold3.png";
 import Header from "../../components/Header_New/Header";
 
 const GoldenVisa = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -264,22 +265,18 @@ const GoldenVisa = () => {
                         Global Visa Services
                       </span>
                       <h2 className = "tw-text-left">
-                        <strong>
-                          Your Gateway to Seamless International Travel
-                        </strong>
+                        <strong>{t(`Your Gateway to Seamless International Travel`)}</strong>
                       </h2>
                       <br />
 
-                      <p className=" tw-text-gray">
-                        At Sweden Relocators, we specialize in simplifying the
+                      <p className=" tw-text-gray">{t(`At Sweden Relocators, we specialize in simplifying the
                         visa application process for travelers worldwide.
                         Whether you're planning a family vacation, attending a
                         business conference, visiting friends, or joining an EU
                         family member, our comprehensive services are tailored
                         to meet your unique needs. Through our intuitive web
                         portal and mobile app, we offer a streamlined,
-                        efficient, and user-friendly experience.
-                      </p>
+                        efficient, and user-friendly experience.`)}</p>
 
                       <br />
                       <span className=" tw-flex tw-items-center tw-gap-2">
@@ -287,108 +284,80 @@ const GoldenVisa = () => {
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
                         Our 
                       </span>
-                      <h2 className = "tw-text-left"><strong>Comprehensive Services</strong></h2>
+                      <h2 className = "tw-text-left"><strong>{t(`Comprehensive Services`)}</strong></h2>
 
                       <br />
-                      <strong className=" m-0 tw-text-gray">
-                        Personalized Client ID
-                      </strong>
+                      <strong className=" m-0 tw-text-gray">{t(`Personalized Client ID`)}</strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Upon registration, you'll receive a unique Client
+                          <p className=" m-0 tw-text-gray">{t(`Upon registration, you'll receive a unique Client
                             ID, enabling you to manage multiple visa
                             applications for yourself and your family
                             simultaneously. This centralized system ensures
-                            efficiency and convenience.
-                          </p>
+                            efficiency and convenience.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-gray">
-                        Complete Application Assistance
-                      </strong>
+                      <strong className=" m-0 tw-text-gray">{t(`Complete Application Assistance`)}</strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Our experts guide you through every step of the visa
+                          <p className=" m-0 tw-text-gray">{t(`Our experts guide you through every step of the visa
                             application process, ensuring all forms are
                             accurately completed and necessary documents are
-                            compiled, reducing the risk of errors or omissions.
-                          </p>
+                            compiled, reducing the risk of errors or omissions.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-gray">
-                        Appointment Scheduling
-                      </strong>
+                      <strong className=" m-0 tw-text-gray">{t(`Appointment Scheduling`)}</strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            We handle the scheduling of appointments with
+                          <p className=" m-0 tw-text-gray">{t(`We handle the scheduling of appointments with
                             embassies or visa application centers (e.g., VFS
                             Global), ensuring timely submissions and adherence
-                            to all procedural requirements.
-                          </p>
+                            to all procedural requirements.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-gray">
-                        Embassy Liaison
-                      </strong>
+                      <strong className=" m-0 tw-text-gray">{t(`Embassy Liaison`)}</strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Acting as your representative, we manage
+                          <p className=" m-0 tw-text-gray">{t(`Acting as your representative, we manage
                             communications with embassies, addressing any
                             queries or issues that may arise during the
-                            application process.
-                          </p>
+                            application process.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-gray">
-                        Convenient Submission Process
-                      </strong>
+                      <strong className=" m-0 tw-text-gray">{t(`Convenient Submission Process`)}</strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Access your complete application file through our
+                          <p className=" m-0 tw-text-gray">{t(`Access your complete application file through our
                             portal or app, or receive it via DHL. Submit your
                             application at the nearest embassy or visa
                             application center along with your original
-                            passport.
-                          </p>
+                            passport.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-gray">
-                        Secure Digital File Management
-                      </strong>
+                      <strong className=" m-0 tw-text-gray">{t(`Secure Digital File Management`)}</strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Your documents are securely stored in our system,
+                          <p className=" m-0 tw-text-gray">{t(`Your documents are securely stored in our system,
                             allowing for easy retrieval and reuse for future
                             applications. This feature is particularly
                             beneficial for frequent travelers or families
-                            applying for multiple visas.
-                          </p>
+                            applying for multiple visas.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-gray">
-                        Eligibility Assessment Tool
-                      </strong>
+                      <strong className=" m-0 tw-text-gray">{t(`Eligibility Assessment Tool`)}</strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Utilize our Assessment Tool to determine the
+                          <p className=" m-0 tw-text-gray">{t(`Utilize our Assessment Tool to determine the
                             criteria for applying for a visit visa. This feature
                             helps you understand the specific requirements and
                             increases the likelihood of a successful
-                            application.
-                          </p>
+                            application.`)}</p>
                         </li>
                       </ul>
 
@@ -405,34 +374,26 @@ const GoldenVisa = () => {
                       <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
                       <h2 className = "tw-text-left">
-                        <strong>Support Services</strong>
+                        <strong>{t(`Support Services`)}</strong>
                       </h2>
                       <br/>
 
-                      <strong className="tw-text-gray">
-                        Travel Insurance Arrangements
-                      </strong>
+                      <strong className="tw-text-gray">{t(`Travel Insurance Arrangements`)}</strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            We assist in obtaining the necessary travel
+                          <p className=" m-0 tw-text-gray">{t(`We assist in obtaining the necessary travel
                             insurance policies required for your visa
                             application, ensuring compliance with all entry
-                            requirements.
-                          </p>
+                            requirements.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-gray">
-                        Travel and Accommodation Reservations
-                      </strong>
+                      <strong className=" m-0 tw-text-gray">{t(`Travel and Accommodation Reservations`)}</strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Receive assistance with flight reservations and
+                          <p className=" m-0 tw-text-gray">{t(`Receive assistance with flight reservations and
                             hotel bookings, providing the necessary
-                            confirmations to support your visa application.
-                          </p>
+                            confirmations to support your visa application.`)}</p>
                         </li>
                       </ul>
                         </div>
@@ -463,7 +424,7 @@ const GoldenVisa = () => {
                         Visa
                       </span>
                       <h2 className = "tw-text-left">
-                        <strong>Categories We Support</strong>
+                        <strong>{t(`Categories We Support`)}</strong>
                       </h2>
                       <br/>
 
@@ -491,70 +452,68 @@ const GoldenVisa = () => {
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">Schengen Visa (Europe)</p>
+    <p className=" m-0 tw-text-gray">{t(`Schengen Visa (Europe)`)}</p>
   </li>
   <li className=" tw-flex  tw-gap-3">
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">United Kingdom Visa</p>
+    <p className=" m-0 tw-text-gray">{t(`United Kingdom Visa`)}</p>
   </li>
   <li className=" tw-flex  tw-gap-3">
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">United States Visa</p>
+    <p className=" m-0 tw-text-gray">{t(`United States Visa`)}</p>
   </li>
   <li className=" tw-flex  tw-gap-3">
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">Canada Visa</p>
+    <p className=" m-0 tw-text-gray">{t(`Canada Visa`)}</p>
   </li>
   <li className=" tw-flex  tw-gap-3">
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">Australia Visa</p>
+    <p className=" m-0 tw-text-gray">{t(`Australia Visa`)}</p>
   </li>
   <li className=" tw-flex  tw-gap-3">
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">New Zealand Visa</p>
+    <p className=" m-0 tw-text-gray">{t(`New Zealand Visa`)}</p>
   </li>
   <li className=" tw-flex  tw-gap-3">
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">Ireland Visa</p>
+    <p className=" m-0 tw-text-gray">{t(`Ireland Visa`)}</p>
   </li>
   <li className=" tw-flex  tw-gap-3">
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">Japan Visa</p>
+    <p className=" m-0 tw-text-gray">{t(`Japan Visa`)}</p>
   </li>
   <li className=" tw-flex  tw-gap-3">
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">South Korea Visa</p>
+    <p className=" m-0 tw-text-gray">{t(`South Korea Visa`)}</p>
   </li>
   <li className=" tw-flex  tw-gap-3">
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">China Visa</p>
+    <p className=" m-0 tw-text-gray">{t(`China Visa`)}</p>
   </li>
  
 </ul>
                       </div>
                     </div>
 
-<p className=" m-0 tw-text-gray">
-      Contact us for assistance with other destinations
-    </p>
+<p className=" m-0 tw-text-gray">{t(`Contact us for assistance with other destinations`)}</p>
 
 
 <br/>
@@ -565,7 +524,7 @@ const GoldenVisa = () => {
                       </span>
 
                       <h2 className = "tw-text-left">
-                        <strong>Purposes We Cover</strong>
+                        <strong>{t(`Purposes We Cover`)}</strong>
                       </h2>
 <br/>
 
@@ -580,49 +539,49 @@ const GoldenVisa = () => {
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">Tourism</p>
+    <p className=" m-0 tw-text-gray">{t(`Tourism`)}</p>
   </li>
   <li className=" tw-flex  tw-gap-3">
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">Visiting Family or Friends</p>
+    <p className=" m-0 tw-text-gray">{t(`Visiting Family or Friends`)}</p>
   </li>
   <li className=" tw-flex  tw-gap-3">
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">Joining an EU Family Member</p>
+    <p className=" m-0 tw-text-gray">{t(`Joining an EU Family Member`)}</p>
   </li>
   <li className=" tw-flex  tw-gap-3">
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">Attending Conferences</p>
+    <p className=" m-0 tw-text-gray">{t(`Attending Conferences`)}</p>
   </li>
   <li className=" tw-flex  tw-gap-3">
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">Business Visits</p>
+    <p className=" m-0 tw-text-gray">{t(`Business Visits`)}</p>
   </li>
   <li className=" tw-flex  tw-gap-3">
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">Short-Term Work Assignments</p>
+    <p className=" m-0 tw-text-gray">{t(`Short-Term Work Assignments`)}</p>
   </li>
   <li className=" tw-flex  tw-gap-3">
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">Medical Treatment</p>
+    <p className=" m-0 tw-text-gray">{t(`Medical Treatment`)}</p>
   </li>
   <li className=" tw-flex  tw-gap-3">
     <div>
       <GoTriangleRight className=" tw-text-blue" />
     </div>
-    <p className=" m-0 tw-text-gray">Cultural or Sports Events</p>
+    <p className=" m-0 tw-text-gray">{t(`Cultural or Sports Events`)}</p>
   </li>
 </ul>
 
@@ -658,82 +617,64 @@ const GoldenVisa = () => {
                         How to
                       </span>
                       <h2 className = "tw-text-left">
-                        <strong>Get Started</strong>
+                        <strong>{t(`Get Started`)}</strong>
                       </h2>
                       <br/>
 
-                      <strong className=" m-0 tw-text-gray">Register</strong>
+                      <strong className=" m-0 tw-text-gray">{t(`Register`)}</strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Sign up on our website or mobile app to create your
-                            account and receive your unique Client ID.
-                          </p>
+                          <p className=" m-0 tw-text-gray">{t(`Sign up on our website or mobile app to create your
+                            account and receive your unique Client ID.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-gray">
-                        Submit Your Application Request
-                      </strong>
+                      <strong className=" m-0 tw-text-gray">{t(`Submit Your Application Request`)}</strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Provide details about your travel plans and upload
-                            the required documents through our secure platform.
-                          </p>
+                          <p className=" m-0 tw-text-gray">{t(`Provide details about your travel plans and upload
+                            the required documents through our secure platform.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-gray">
-                        We Handle the Rest
-                      </strong>
+                      <strong className=" m-0 tw-text-gray">{t(`We Handle the Rest`)}</strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Our team will manage the entire application process,
+                          <p className=" m-0 tw-text-gray">{t(`Our team will manage the entire application process,
                             from form completion to appointment scheduling and
-                            embassy communications.
-                          </p>
+                            embassy communications.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-gray">
-                        Prepare for Your Journey
-                      </strong>
+                      <strong className=" m-0 tw-text-gray">{t(`Prepare for Your Journey`)}</strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Focus on your travel preparations while we ensure a
-                            smooth and efficient visa application experience.
-                          </p>
+                          <p className=" m-0 tw-text-gray">{t(`Focus on your travel preparations while we ensure a
+                            smooth and efficient visa application experience.`)}</p>
                         </li>
                       </ul>
 
-                      <p className=" tw-text-gray">
-                        At Sweden Relocators, we are committed to making your
+                      <p className=" tw-text-gray">{t(`At Sweden Relocators, we are committed to making your
                         international travel aspirations a reality. Our
                         expertise and personalized approach ensure a hassle-free
                         visa application process, allowing you to focus on what
-                        truly matters—your journey.
-                      </p>
+                        truly matters—your journey.`)}</p>
                       <Link to="/register" className="tw-text-center tw-pt-4">
                       <h5 className="tw-text-center tw-text-black tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                           Sign Up{" "}
                         </strong>
-                        <strong> Today!</strong>
+                        <strong>{t(`Today!`)}</strong>
                       </h5>
                     </Link>
                     <br />
-                    <p className="tw-text-gray">
-                      Sign up today and simplify your journey! Whether you're
+                    <p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
                       seeking assistance with relocation, permits, visas, legal
                       processes, or settling into a new life, we're here to
                       help. Our comprehensive services cover everything from
                       work and study opportunities to family reunifications,
                       business support, and much more. Let us guide you every
-                      step of the way—start your seamless experience now!
-                    </p>
+                      step of the way—start your seamless experience now!`)}</p>
 
                       <br />
                     </div>

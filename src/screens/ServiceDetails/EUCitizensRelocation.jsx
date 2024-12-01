@@ -10,7 +10,7 @@ import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import Sidebar from "../../components/ScrollableBar";
 
 
-import { useTranslation } from "react-i18next";
+import { useTranslation } from '../../context/TranslationContext';
 import Header from "../../components/Header_New/Header";
 
 const EUCitizensRelocation = () => {
@@ -258,84 +258,66 @@ const EUCitizensRelocation = () => {
                     WHAT IS
                   </span>
                   <h2>
-                    <strong>Family Reunification?</strong>
+                    <strong>{t(`Family Reunification?`)}</strong>
                   </h2>
 
-                  <p className=" tw-text-gray">
-                    Family reunification means that a family that has been split
+                  <p className=" tw-text-gray">{t(`Family reunification means that a family that has been split
                     up can apply to be allowed to live together in Sweden with
                     the person who has been granted a permanent residence
                     permit, EU citizenship or a three-year residence permit as a
-                    refugee.
-                  </p>
+                    refugee.`)}</p>
 
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {" "}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                    EU CITIZEN
-                  </span>
+                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`EU CITIZEN`)}</span>
                   <h2>
-                    <strong>Family Members</strong>
+                    <strong>{t(`Family Members`)}</strong>
                   </h2>
 
-                  <p className=" tw-text-gray">
-                    As a family member of an EU/EEA citizen exercising their
+                  <p className=" tw-text-gray">{t(`As a family member of an EU/EEA citizen exercising their
                     right of free movement,you can get a visa through a
                     facilitated process to travel with your family member or to
-                    join him/her in Sweden.
-                  </p>
+                    join him/her in Sweden.`)}</p>
 
-                  <p className=" tw-text-gray tw-font-medium">
-                    Family members are:
-                  </p>
+                  <p className=" tw-text-gray tw-font-medium">{t(`Family members are:`)}</p>
 
                   <ul className=" tw-p-0 tw-pt-4">
                     <li className=" tw-flex tw-items-center tw-gap-3">
                       <GoTriangleRight className=" tw-text-blue" />
-                      <p className=" m-0 tw-text-gray">
-                        Spouse/partner/common law spouse
-                      </p>
+                      <p className=" m-0 tw-text-gray">{t(`Spouse/partner/common law spouse`)}</p>
                     </li>
                     <li className=" tw-flex tw-items-center tw-gap-3">
                       <div>
                         <GoTriangleRight className=" tw-text-blue" />
                       </div>
-                      <p className=" m-0 tw-text-gray">
-                        The direct descendants (children) who are under the age
+                      <p className=" m-0 tw-text-gray">{t(`The direct descendants (children) who are under the age
                         of 21 or are dependents, and those of the spouse or
-                        partner.
-                      </p>
+                        partner.`)}</p>
                     </li>
                     <li className=" tw-flex tw-items-center tw-gap-3">
                       <div>
                         <GoTriangleRight className=" tw-text-blue" />
                       </div>
-                      <p className=" m-0 tw-text-gray">
-                        The dependent direct relatives in the ascending line
-                        (e.g. parents) and those of the spouse or partner.
-                      </p>
+                      <p className=" m-0 tw-text-gray">{t(`The dependent direct relatives in the ascending line
+                        (e.g. parents) and those of the spouse or partner.`)}</p>
                     </li>
                     <li className=" tw-flex  tw-gap-3">
                       <div>
                         <GoTriangleRight className=" tw-text-blue" />
                       </div>
-                      <p className=" m-0 tw-text-gray">
-                        You can apply for a short-stay Schengen visa (type
+                      <p className=" m-0 tw-text-gray">{t(`You can apply for a short-stay Schengen visa (type
                         C-Joining a Family Member) which will permit you to
-                        enter Sweden and the Schengen area.
-                      </p>
+                        enter Sweden and the Schengen area.`)}</p>
                     </li>
 
                     <li className=" tw-flex  tw-gap-3">
                       <div>
                         <GoTriangleRight className=" tw-text-blue" />
                       </div>
-                      <p className=" m-0 tw-text-gray">
-                        Once in Sweden you should apply for a residence card for
+                      <p className=" m-0 tw-text-gray">{t(`Once in Sweden you should apply for a residence card for
                         a family member of a EU/EEA citizen within three months
                         for a Residence Card of a family member of a EU/EEA
-                        citizen.
-                      </p>
+                        citizen.`)}</p>
                     </li>
                   </ul>
 
@@ -353,63 +335,47 @@ const EUCitizensRelocation = () => {
                   <div>
                     <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      FAMILY
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`FAMILY`)}</span>
                     <h2>
-                      <strong>Reunification For Refugees</strong>
+                      <strong>{t(`Reunification For Refugees`)}</strong>
                     </h2>
 
-                    <p className=" tw-text-gray">
-                      If a person receives a permanent residence permit as a
+                    <p className=" tw-text-gray">{t(`If a person receives a permanent residence permit as a
                       refugee or as an individual who needs subsidiary
                       protection, then you may have the right to invite your
                       family to that country. Family reunification is a step
                       towards the settlement of refugees to live with their
-                      families.
-                    </p>
-                    <p className=" tw-text-gray">
-                      The person who wants to invite his family to the country
+                      families.`)}</p>
+                    <p className=" tw-text-gray">{t(`The person who wants to invite his family to the country
                       he is residing should have enough income resources to
                       provide financial support to the family and a standard
-                      house to live in.
-                    </p>
-                    <p className=" tw-text-gray">
-                      The possibilities for your family to live with you in
+                      house to live in.`)}</p>
+                    <p className=" tw-text-gray">{t(`The possibilities for your family to live with you in
                       Sweden if you have a temporary residence as a refugee or
                       as a person needing subsidiary protection is governed by
-                      different things.
-                    </p>
+                      different things.`)}</p>
 
-                    <p className=" tw-text-gray tw-font-medium">
-                      Some of the important points regarding residence permits
-                      are listed below:
-                    </p>
+                    <p className=" tw-text-gray tw-font-medium">{t(`Some of the important points regarding residence permits
+                      are listed below:`)}</p>
 
                     <ul className=" tw-p-0 tw-pt-4">
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">
-                          Valid Residence Permit
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Valid Residence Permit`)}</p>
                       </li>
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">Family Application</p>
+                        <p className=" m-0 tw-text-gray">{t(`Family Application`)}</p>
                       </li>
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">
-                          Permanent Residence Permit
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Permanent Residence Permit`)}</p>
                       </li>
                     </ul>
-                    <p className=" tw-text-gray">
-                      Once the above-mentioned procedure is done and you have a
+                    <p className=" tw-text-gray">{t(`Once the above-mentioned procedure is done and you have a
                       fair chance for receiving the permanent residency status
                       in Sweden, then the application of your family is checked
-                      for further requirements.
-                    </p>
+                      for further requirements.`)}</p>
                   </div>
 
                   <div className="row">
@@ -428,15 +394,12 @@ const EUCitizensRelocation = () => {
                     <div className="col-md-6">
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                         {" "}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                        WHO CAN
-                      </span>
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`WHO CAN`)}</span>
                       <h2>
-                        <strong>Move With You?</strong>
+                        <strong>{t(`Move With You?`)}</strong>
                       </h2>
 
-                      <p className=" tw-text-gray">
-                        Only your immediate family members can move with you if
+                      <p className=" tw-text-gray">{t(`Only your immediate family members can move with you if
                         you have a temporary residence permit. Your immediate
                         family members mean your spouse, children under the age
                         of 18, registered partners, and cohabiting partners.
@@ -444,248 +407,193 @@ const EUCitizensRelocation = () => {
                         not eligible to move to Sweden or the EU on your behalf
                         while you have a temporary residence permit. If you are
                         under the age of 18, then your parents are counted as
-                        your immediate family members.
-                      </p>
+                        your immediate family members.`)}</p>
                     </div>
                   </div>
 
-                  <p className=" tw-text-gray">
-                    In case you have a permanent residence permit or you are
+                  <p className=" tw-text-gray">{t(`In case you have a permanent residence permit or you are
                     planning to get married to a person in Sweden, then that
                     person can apply on your behalf for the residence permit.
                     Persons other than your immediate family members like
-                    parents or siblings can also move to Sweden with you.
-                  </p>
+                    parents or siblings can also move to Sweden with you.`)}</p>
 
-                  <span>AN</span>
+                  <span>{t(`AN`)}</span>
                   <h2>
-                    <strong>Identification</strong>
+                    <strong>{t(`Identification`)}</strong>
                   </h2>
 
-                  <p className=" tw-text-gray">
-                    You must always be able to identify yourself.
-                  </p>
+                  <p className=" tw-text-gray">{t(`You must always be able to identify yourself.`)}</p>
 
                   <ul className=" tw-p-0 tw-pt-4">
                     <li className=" tw-flex  tw-gap-3">
                       <div>
                         <GoTriangleRight className=" tw-text-blue" />
                       </div>
-                      <p className=" m-0 tw-text-gray">
-                        You can identify yourself with a valid Swedish
+                      <p className=" m-0 tw-text-gray">{t(`You can identify yourself with a valid Swedish
                         identification document, such as a passport, a national
                         identity card or a BankID. You can also identify
-                        yourself with a Swedish driving license.
-                      </p>
+                        yourself with a Swedish driving license.`)}</p>
                     </li>
                     <li className=" tw-flex  tw-gap-3">
                       <div>
                         <GoTriangleRight className=" tw-text-blue" />
                       </div>
-                      <p className=" m-0 tw-text-gray">
-                        If you do not have Swedish identification documents, you
+                      <p className=" m-0 tw-text-gray">{t(`If you do not have Swedish identification documents, you
                         can identify yourself with a valid foreign passport or
                         other photographic identification document that shows
                         your citizenship. This must be issued by an authority or
                         some other authorised issuer. Note that the bank may
-                        request that you also present other documents.
-                      </p>
+                        request that you also present other documents.`)}</p>
                     </li>
                     <li className=" tw-flex  tw-gap-3">
                       <div>
                         <GoTriangleRight className=" tw-text-blue" />
                       </div>
-                      <p className=" m-0 tw-text-gray">
-                        If you do not have valid identity documents, you must
+                      <p className=" m-0 tw-text-gray">{t(`If you do not have valid identity documents, you must
                         prove who you are and your citizenship by means of other
-                        documents from an independent and reliable source.
-                      </p>
+                        documents from an independent and reliable source.`)}</p>
                     </li>
                   </ul>
 
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {" "}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                    FOREIGN
-                  </span>
+                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`FOREIGN`)}</span>
                   <h2>
-                    <strong>Students</strong>
+                    <strong>{t(`Students`)}</strong>
                   </h2>
 
-                  <p className=" tw-text-gray">
-                    If you are a foreign student, you must always be able to
-                    identify yourself as above.
-                  </p>
-                  <p className=" tw-text-black tw-font-medium">
-                    You also need:
-                  </p>
+                  <p className=" tw-text-gray">{t(`If you are a foreign student, you must always be able to
+                    identify yourself as above.`)}</p>
+                  <p className=" tw-text-black tw-font-medium">{t(`You also need:`)}</p>
 
                   <ul className=" tw-p-0 tw-pt-4">
                     <li className=" tw-flex tw-items-center tw-gap-3">
                       <GoTriangleRight className=" tw-text-blue" />
-                      <p className=" m-0 tw-text-gray">
-                        A residence permit or a visa (does not apply to EU
-                        citizens).
-                      </p>
+                      <p className=" m-0 tw-text-gray">{t(`A residence permit or a visa (does not apply to EU
+                        citizens).`)}</p>
                     </li>
                     <li className=" tw-flex tw-items-center tw-gap-3">
                       <div>
                         <GoTriangleRight className=" tw-text-blue" />
                       </div>
-                      <p className=" m-0 tw-text-gray">
-                        If you do not have Swedish identification documents, you
+                      <p className=" m-0 tw-text-gray">{t(`If you do not have Swedish identification documents, you
                         can identify yourself with a valid foreign passport or
                         other photographic identification document that shows
                         your citizenship. This must be issued by an authority or
                         some other authorised issuer. Note that the bank may
-                        request that you also present other documents.
-                      </p>
+                        request that you also present other documents.`)}</p>
                     </li>
                     <li className=" tw-flex tw-items-center tw-gap-3">
                       <GoTriangleRight className=" tw-text-blue" />
-                      <p className=" m-0 tw-text-gray">
-                        An admission decision confirmation from your university,
-                        showing the duration of your studies.
-                      </p>
+                      <p className=" m-0 tw-text-gray">{t(`An admission decision confirmation from your university,
+                        showing the duration of your studies.`)}</p>
                     </li>
                   </ul>
 
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {" "}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                    IN CERTAIN CASES
-                  </span>
+                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`IN CERTAIN CASES`)}</span>
                   <h2>
-                    <strong>The Bank Can Refuse You To Open An Account</strong>
+                    <strong>{t(`The Bank Can Refuse You To Open An Account`)}</strong>
                   </h2>
 
                   <ul className=" tw-p-0 tw-pt-4">
                     <li className=" tw-flex tw-items-center tw-gap-3">
                       <GoTriangleRight className=" tw-text-blue" />
-                      <p className=" m-0 tw-text-gray">
-                        The bank cannot identify you in a sufficiently secure
-                        manner.
-                      </p>
+                      <p className=" m-0 tw-text-gray">{t(`The bank cannot identify you in a sufficiently secure
+                        manner.`)}</p>
                     </li>
                     <li className=" tw-flex tw-items-center tw-gap-3">
                       <GoTriangleRight className=" tw-text-blue" />
-                      <p className=" m-0 tw-text-gray">
-                        The bank determines that the reason you provided for
-                        wanting to open an account is inadequate.
-                      </p>
+                      <p className=" m-0 tw-text-gray">{t(`The bank determines that the reason you provided for
+                        wanting to open an account is inadequate.`)}</p>
                     </li>
                     <li className=" tw-flex tw-items-center tw-gap-3">
                       <GoTriangleRight className=" tw-text-blue" />
-                      <p className=" m-0 tw-text-gray">
-                        The bank, by opening an account, would be acting in
-                        breach of a legal regulation or directive.
-                      </p>
+                      <p className=" m-0 tw-text-gray">{t(`The bank, by opening an account, would be acting in
+                        breach of a legal regulation or directive.`)}</p>
                     </li>
                   </ul>
 
-                  <p className=" tw-text-gray">
-                    The bank may also refuse you an account if you have
-                    previously acted dishonestly towards the bank.
-                  </p>
+                  <p className=" tw-text-gray">{t(`The bank may also refuse you an account if you have
+                    previously acted dishonestly towards the bank.`)}</p>
 
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {" "}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                    BEAR
-                  </span>
+                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`BEAR`)}</span>
                   <h2>
-                    <strong>In Mind That…</strong>
+                    <strong>{t(`In Mind That…`)}</strong>
                   </h2>
 
                   <ul className=" tw-p-0 tw-pt-4">
                     <li className=" tw-flex tw-items-center tw-gap-3">
                       <GoTriangleRight className=" tw-text-blue" />
-                      <p className=" m-0 tw-text-gray">
-                        You must be able to understand the bank’s questions and
-                        answer them.
-                      </p>
+                      <p className=" m-0 tw-text-gray">{t(`You must be able to understand the bank’s questions and
+                        answer them.`)}</p>
                     </li>
                     <li className=" tw-flex tw-items-center tw-gap-3">
                       <GoTriangleRight className=" tw-text-blue" />
-                      <p className=" m-0 tw-text-gray">
-                        You must also be able to understand the information that
-                        the bank gives you.
-                      </p>
+                      <p className=" m-0 tw-text-gray">{t(`You must also be able to understand the information that
+                        the bank gives you.`)}</p>
                     </li>
                     <li className=" tw-flex tw-items-center tw-gap-3">
                       <GoTriangleRight className=" tw-text-blue" />
-                      <p className=" m-0 tw-text-gray">
-                        If you need someone to translate for you, you should
+                      <p className=" m-0 tw-text-gray">{t(`If you need someone to translate for you, you should
                         bring such a person with you to the meeting with the
-                        bank.
-                      </p>
+                        bank.`)}</p>
                     </li>
                     <li className=" tw-flex tw-items-center tw-gap-3">
                       <GoTriangleRight className=" tw-text-blue" />
-                      <p className=" m-0 tw-text-gray">
-                        The bank will ask you where your money is being sent
-                        from.
-                      </p>
+                      <p className=" m-0 tw-text-gray">{t(`The bank will ask you where your money is being sent
+                        from.`)}</p>
                     </li>
                     <li className=" tw-flex tw-items-center tw-gap-3">
                       <GoTriangleRight className=" tw-text-blue" />
-                      <p className=" m-0 tw-text-gray">
-                        Your account and other bank services may not be used by
+                      <p className=" m-0 tw-text-gray">{t(`Your account and other bank services may not be used by
                         anyone else unless an agreement for this is held with
-                        the bank.
-                      </p>
+                        the bank.`)}</p>
                     </li>
                     <li className=" tw-flex tw-items-center tw-gap-3">
                       <GoTriangleRight className=" tw-text-blue" />
-                      <p className=" m-0 tw-text-gray">
-                        The bank may ask you additional questions or stipulate
-                        other requirements.
-                      </p>
+                      <p className=" m-0 tw-text-gray">{t(`The bank may ask you additional questions or stipulate
+                        other requirements.`)}</p>
                     </li>
                   </ul>
 
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {" "}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                    DRIVING
-                  </span>
+                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`DRIVING`)}</span>
                   <h2>
-                    <strong>License</strong>
+                    <strong>{t(`License`)}</strong>
                   </h2>
 
-                  <p className=" tw-text-gray tw-font-medium">
-                    If you have a driving license which was issued in an EU
+                  <p className=" tw-text-gray tw-font-medium">{t(`If you have a driving license which was issued in an EU
                     country is valid throughout your stay in Sweden. You can
                     even exchange your driving license to Swedish license if you
-                    have permanent residence.
-                  </p>
-                  <p className=" tw-text-gray tw-font-medium">
-                    A driving license that was issued in non-EEA countries
+                    have permanent residence.`)}</p>
+                  <p className=" tw-text-gray tw-font-medium">{t(`A driving license that was issued in non-EEA countries
                     (excluding Switzerland and Japan) is valid for a maximum of
                     one year in Sweden. It cannot be exchanged to Swedish
                     license and If you want to continue driving in Sweden you
                     will have to complete the risk education, and theory and
-                    practical examinations.
-                  </p>
+                    practical examinations.`)}</p>
 
                   <Link to="/register" className="tw-text-center tw-pt-4">
                   <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
                       <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                         Sign Up{" "}
                       </strong>
-                      <strong> Today!</strong>
+                      <strong>{t(`Today!`)}</strong>
                     </h5>
                   </Link>
                   <br />
-                  <p className="tw-text-gray">
-                    Sign up today and simplify your journey! Whether you're
+                  <p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
                     seeking assistance with relocation, permits, visas, legal
                     processes, or settling into a new life, we're here to help.
                     Our comprehensive services cover everything from work and
                     study opportunities to family reunifications, business
                     support, and much more. Let us guide you every step of the
-                    way—start your seamless experience now!
-                  </p>
+                    way—start your seamless experience now!`)}</p>
                 </div>
               </div>
 

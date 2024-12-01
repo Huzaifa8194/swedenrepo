@@ -13,11 +13,11 @@ import { TfiAngleLeft } from "react-icons/tfi";
 import { Link, useParams } from "react-router-dom";
 import Assessment_modal from "./Assessment_modal";
 import Header from '../../components/Header_New/Header';
-import { useTranslation } from "react-i18next";
+
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 import Select from "../../components/Selecttab";
 import Sidebar from "../../components/ScrollableBar";
-
+import { useTranslation } from '../../context/TranslationContext';
 
 
 const Family_reunification_assessment = () => {
@@ -358,87 +358,67 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
                   <div>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Family Reunification
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Family Reunification`)}</span>
                     <h2>
-                      <strong className = "tw-text-left">
-                        Find Out Your Eligibility for Family Reunification in
-                        Sweden
-                      </strong>
+                      <strong className = "tw-text-left">{t(`Find Out Your Eligibility for Family Reunification in
+                        Sweden`)}</strong>
                     </h2>
-                    <strong className = "tw-text-gray">Who Should Use This Tool?</strong>
+                    <strong className = "tw-text-gray">{t(`Who Should Use This Tool?`)}</strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          EU Citizens who have already moved to Sweden or are
-                          planning to move to Sweden.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`EU Citizens who have already moved to Sweden or are
+                          planning to move to Sweden.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Long-term EU Residents who are currently living in
-                          Sweden or intend to relocate to Sweden.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Long-term EU Residents who are currently living in
+                          Sweden or intend to relocate to Sweden.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className = "tw-text-gray">Why Use the Eligibility Tool? </strong>
-                    <p className=" tw-text-gray">
-                      This tool is designed to help you understand the
+                    <strong className = "tw-text-gray">{t(`Why Use the Eligibility Tool?`)}</strong>
+                    <p className=" tw-text-gray">{t(`This tool is designed to help you understand the
                       requirements and eligibility criteria for bringing your
                       family members to Sweden by collecting important details,
-                      such as:
-                    </p>
+                      such as:`)}</p>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Your Residence Status: Information about your current
-                          or planned residence in Sweden.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Your Residence Status: Information about your current
+                          or planned residence in Sweden.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Family Relationship: Specific details about the family
-                          members you want to reunite with.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Family Relationship: Specific details about the family
+                          members you want to reunite with.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Eligibility Requirements: Guidance based on your
-                          status as an EU citizen or long-term EU resident.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Eligibility Requirements: Guidance based on your
+                          status as an EU citizen or long-term EU resident.`)}</p>
                       </li>
                     </ul>
 
                     <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      How
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      We Use the Information
-                      </strong>
+                      <strong>{t(`We Use the Information`)}</strong>
                     </h2>
 
                     <br/>
@@ -448,55 +428,42 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          We will assess your details to determine your
-                          eligibility for family reunification in Sweden.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`We will assess your details to determine your
+                          eligibility for family reunification in Sweden.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Our team will guide you through the necessary steps to
-                          start the reunification process.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Our team will guide you through the necessary steps to
+                          start the reunification process.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          We’ll ensure you have a clear understanding of the
+                        <p className=" m-0 tw-text-gray">{t(`We’ll ensure you have a clear understanding of the
                           requirements to successfully bring your family to
-                          Sweden.
-                        </p>
+                          Sweden.`)}</p>
                       </li>
                     </ul>
 
                     <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Get Started
-                      </strong>
+                      <strong>{t(`Get Started`)}</strong>
                     </h2>
                     <br/>
 
                   
-                    <p className=" tw-text-gray">
-                    Use the eligibility tool to take the first step toward reuniting with your family in Sweden as an EU citizen or long-term EU resident!
-
-                    </p>
+                    <p className=" tw-text-gray">{t(`Use the eligibility tool to take the first step toward reuniting with your family in Sweden as an EU citizen or long-term EU resident!`)}</p>
                   </div>
                   <div>
                   {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">Personal Details</h5>
+                  <h5 className=" tw-text-black  ">{t(`Personal Details`)}</h5>
 
                   <h6 className=" tw-text-black ">
                     {" "}
@@ -555,14 +522,10 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
                         
                       <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                     Relocate to Sweden
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Relocate to Sweden`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Personal Details
-                      </strong>
+                      <strong>{t(`Personal Details`)}</strong>
                     </h2>
                         
                         <div className="col-md-6 tw-pt-4">
@@ -774,14 +737,10 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
                   <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                   <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                     Family Documents
-                      </strong>
+                      <strong>{t(`Family Documents`)}</strong>
                     </h2>
 
                     <div className="tw-flex tw-items-center tw-gap-2 tw-pt-3">
@@ -791,9 +750,7 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
                         checked={isSingle}
                         onChange={handleCheckboxChange}
                       />
-                      <p className="tw-text-gray-dark  tw-m-0">
-                        I am single or I want to move by myself first
-                      </p>
+                      <p className="tw-text-gray-dark  tw-m-0">{t(`I am single or I want to move by myself first`)}</p>
                     </div>
                   
                     {!isSingle && (

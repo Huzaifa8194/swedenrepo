@@ -261,30 +261,30 @@ const BusinessVisit = () => {
                   <div>
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Documentation
+                     {t(` Documentation`)}
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
                         {" "}
-                        Requirements for Visa Application{" "}
+                        {t(`Requirements for Visa Application`)}{" "}
                       </strong>
                     </h2>
                     <br></br>
                     <p className="tw-text-gray">
-                      For your visa application, certain documents must be
+                     {t(` For your visa application, certain documents must be
                       submitted to ensure a smooth process. Below is a guide
                       detailing all necessary documents, including those for
-                      both applicants and sponsoring companies:
+                      both applicants and sponsoring companies:`)}
                     </p>
                     <br></br>
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Personal
+                     {t(` Personal`)}
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
-                        Document Requirements{" "}
+                       {t(` Document Requirements`)}{" "}
                       </strong>
                     </h2>
                     <br></br>
@@ -292,9 +292,9 @@ const BusinessVisit = () => {
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           <strong className="tw-text-black">
-                            Bank Statement:
+                            {t(`Bank Statement:`)}
                           </strong>
-                          <br /> To complete your application or prove your
+                          <br /> {t(`To complete your application or prove your
                           financial stability, you may be required to submit an
                           original bank statement from the last six months. This
                           document should clearly show your account activity,
@@ -302,7 +302,7 @@ const BusinessVisit = () => {
                           statements are unavailable, you can alternatively
                           provide proof of other assets, such as investment
                           portfolios, property ownership, or other financial
-                          documents that demonstrate your financial capacity.
+                          documents that demonstrate your financial capacity.`)}
                         </p>
                       </li>
 
@@ -325,7 +325,7 @@ const BusinessVisit = () => {
                             <p className="m-0 tw-text-gray">
                               <br />
                               <strong className="tw-text-black">
-                                Passport Requirements:
+                                {t(`Passport Requirements:`)}
                               </strong>
                               <br /> Your passport must:
                               <ul className="tw-pl-0">
@@ -334,7 +334,7 @@ const BusinessVisit = () => {
                                     <GoTriangleRight className=" tw-text-blue" />
                                   </div>
                                   <p className=" m-0 tw-text-gray">
-                                    Have at least two blank pages.
+                                   {t(` Have at least two blank pages.`)}
                                   </p>
                                 </li>
 
@@ -343,8 +343,8 @@ const BusinessVisit = () => {
                                     <GoTriangleRight className=" tw-text-blue" />
                                   </div>
                                   <p className=" m-0 tw-text-gray">
-                                    Be valid for at least three months beyond
-                                    the end of your planned trip.
+                                    {t(`Be valid for at least three months beyond
+                                    the end of your planned trip.`)}
                                   </p>
                                 </li>
 
@@ -353,8 +353,8 @@ const BusinessVisit = () => {
                                     <GoTriangleRight className=" tw-text-blue" />
                                   </div>
                                   <p className=" m-0 tw-text-gray">
-                                    Include all previous passports from the past
-                                    seven years.
+                                    {t(`Include all previous passports from the past
+                                    seven years.`)}
                                   </p>
                                 </li>
 
@@ -363,8 +363,8 @@ const BusinessVisit = () => {
                                     <GoTriangleRight className=" tw-text-blue" />
                                   </div>
                                   <p className=" m-0 tw-text-gray">
-                                    Include all previous passports from the past
-                                    seven years.
+                                    {t(`Include all previous passports from the past
+                                    seven years.`)}
                                   </p>
                                 </li>
                               </ul>
@@ -377,45 +377,45 @@ const BusinessVisit = () => {
                         <p className="m-0 tw-text-gray">
                           <br />{" "}
                           <strong className="tw-text-black">
-                            Invitation Letter:
+                            {t(`Invitation Letter:`)}
                           </strong>
-                          <br /> A formal invitation from the Swedish company or
+                          <br />{t(` A formal invitation from the Swedish company or
                           individual on official letterhead. The letter should
-                          include:
+                          include:`)}
                           <ul className="tw-pl-0">
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              Full address and contact details of the inviting
-                              company.
+                             {t(` Full address and contact details of the inviting
+                              company.`)}
                             </li>
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              Name and position of the contact person or
-                              signatory.
+                             {t(` Name and position of the contact person or
+                              signatory.`)}
                             </li>
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              Purpose and expected duration of your visit.
+                             {t(` Purpose and expected duration of your visit.`)}
                             </li>
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              Details of who will bear travel and living
-                              expenses.
+                              {t(`Details of who will bear travel and living
+                              expenses.`)}
                             </li>
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              A statement guaranteeing that the applicant will
-                              depart Sweden before visa expiration.
+                              {t(`A statement guaranteeing that the applicant will
+                              depart Sweden before visa expiration.`)}
                             </li>
                           </ul>
                         </p>
@@ -425,27 +425,27 @@ const BusinessVisit = () => {
                         <p className="m-0 tw-text-gray">
                           <br />
                           <strong className="tw-text-black">
-                            Employment Certificate:
+                           {t(` Employment Certificate:`)}
                           </strong>
-                          <br /> Proof of employment, detailing:
+                          <br /> {t(`Proof of employment, detailing:`)}
                           <ul className="tw-pl-0">
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              Your employment start date.
+                              {t(`Your employment start date.`)}
                             </li>
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              Current position, salary, and purpose of travel.
+                             {t(` Current position, salary, and purpose of travel.`)}
                             </li>
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              Approval of leave for the duration of the visit.
+                              {t(`Approval of leave for the duration of the visit.`)}
                             </li>
                           </ul>
                         </p>
@@ -455,13 +455,13 @@ const BusinessVisit = () => {
                         <p className="m-0 tw-text-gray">
                           <br />
                           <strong className="tw-text-black">
-                            Medical Insurance:
+                            {t(`Medical Insurance:`)}
                           </strong>
-                          <br /> Travel insurance covering the entire Schengen
+                          <br /> {t(`Travel insurance covering the entire Schengen
                           area, valid for your entire stay. The policy should
                           cover at least EUR 30,000 to cover expenses for
                           emergency medical treatment, hospital care,
-                          repatriation, or death.
+                          repatriation, or death.`)}
                         </p>
                       </li>
 
@@ -469,11 +469,11 @@ const BusinessVisit = () => {
                         <p className="m-0 tw-text-gray">
                           <br />
                           <strong className="tw-text-black">
-                            Travel Ticket Reservation:
+                            {t(`Travel Ticket Reservation:`)}
                           </strong>
-                          <br /> Provide round-trip flight reservations. Final
+                          <br /> {t(`Provide round-trip flight reservations. Final
                           tickets are not required but initial booking
-                          confirmation is mandatory.
+                          confirmation is mandatory.`)}
                         </p>
                       </li>
 
@@ -481,10 +481,10 @@ const BusinessVisit = () => {
                         <p className="m-0 tw-text-gray">
                           <br />{" "}
                           <strong className="tw-text-black">
-                            Accommodation Proof:
+                            {t(`Accommodation Proof:`)}
                           </strong>
-                          <br /> A confirmed hotel booking or another proof of
-                          accommodation (primary reservation required).
+                          <br /> {t(`A confirmed hotel booking or another proof of
+                          accommodation (primary reservation required).`)}
                         </p>
                       </li>
                     </ul>
@@ -492,11 +492,11 @@ const BusinessVisit = () => {
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Additional Requirements
+                      {t(`Additional Requirements`)}
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
-                        for Employers or Sponsoring Companies{" "}
+                        {t(`for Employers or Sponsoring Companies`)}{" "}
                       </strong>
                     </h2>
                     <br></br>
@@ -504,11 +504,11 @@ const BusinessVisit = () => {
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           <strong className="tw-text-black">
-                            Commercial Registration and Tax Card:
+                            {t(`Commercial Registration and Tax Card:`)}
                           </strong>{" "}
-                          Original and copy of the company’s commercial registry
+                          {t(`Original and copy of the company’s commercial registry
                           and tax card, translated into English or Swedish, to
-                          confirm the legitimacy of the business.
+                          confirm the legitimacy of the business.`)}
                         </p>
                       </li>
                     </ul>
@@ -516,12 +516,12 @@ const BusinessVisit = () => {
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Additional Documents
+                      {t(`Additional Documents`)}
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
                         {" "}
-                        that May Be Required
+                        {t(`that May Be Required`)}
                       </strong>
                     </h2>
                     <br></br>
@@ -529,9 +529,9 @@ const BusinessVisit = () => {
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           <strong className="tw-text-black">
-                            Movement Certificate:
+                           {t(` Movement Certificate:`)}
                           </strong>
-                          <br /> A movement certificate is required in specific
+                          <br /> {t(`A movement certificate is required in specific
                           circumstances, such as when you are a first-time
                           traveler to Sweden, your passport does not cover the
                           last seven years, or there is a gap of more than three
@@ -540,7 +540,7 @@ const BusinessVisit = () => {
                           travel history and verify your eligibility for entry
                           or a visa. It serves as proof of your movement between
                           countries, ensuring that you meet the necessary
-                          requirements for visa processing.
+                          requirements for visa processing.`)}
                         </p>
                       </li>
 
@@ -563,10 +563,10 @@ const BusinessVisit = () => {
                             <p className="m-0 tw-text-gray">
                               <br />
                               <strong className="tw-text-black">
-                                Other Embassy-Specified Documents:
+                                {t(`Other Embassy-Specified Documents:`)}
                               </strong>{" "}
                               <br />
-                              Depending on your individual situation, the
+                              {t(`Depending on your individual situation, the
                               embassy may request additional paperwork to
                               process your visa or permit application. These
                               documents could include, but are not limited to,
@@ -578,7 +578,7 @@ const BusinessVisit = () => {
                               important to carefully review the embassy's
                               guidelines and provide any additional
                               documentation as requested to ensure a smooth
-                              application process.
+                              application process.`)}
                             </p>
                           </li>
                         </div>
@@ -591,12 +591,12 @@ const BusinessVisit = () => {
                     <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Business Visa for Foreign Investors
+                      {t(`Business Visa for Foreign Investors`)}
                     </span>
 
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
-                        A Swedish Business Visa for Investors
+                       {t(` A Swedish Business Visa for Investors`)}
                       </strong>
                     </h2>
 
@@ -604,7 +604,7 @@ const BusinessVisit = () => {
 
                     <div className="row tw-flex tw-items-center">
                       <p className="tw-text-gray">
-                        A Swedish business visa is ideal for foreign nationals
+                       {t(` A Swedish business visa is ideal for foreign nationals
                         who wish to invest in Sweden and make periodic visits to
                         manage their business interests. This visa allows
                         entrepreneurs and investors to enter Sweden for
@@ -614,7 +614,7 @@ const BusinessVisit = () => {
                         residency. While the business visa does not grant
                         permission to work in Sweden, it provides flexibility
                         for individuals involved in the management, development,
-                        or oversight of a Swedish business.
+                        or oversight of a Swedish business.`)}
                       </p>
 
                       <div className="col-md-6">
@@ -633,7 +633,7 @@ const BusinessVisit = () => {
 
                       <div className="col-md-6">
                         <p className="tw-text-gray">
-                          This visa allows multiple entries and is valid for
+                          {t(`This visa allows multiple entries and is valid for
                           short stays of up to 90 days within a 180-day period,
                           renewable for up to five years. This flexibility is
                           especially beneficial for investors who need to
@@ -645,21 +645,21 @@ const BusinessVisit = () => {
                           while maintaining compliance with visa regulations.
                           This makes it a practical solution for those managing
                           investments or business interests in Sweden on a
-                          regular basis.
+                          regular basis.`)}
                         </p>
                       </div>
                     </div>
 
                     <p className="tw-text-gray">
-                      For short-term business trips lasting less than three
+                      {t(`For short-term business trips lasting less than three
                       months, this visa is sufficient without the need for a
                       residence permit. However, if you plan to stay longer or
                       relocate for an extended period, a residence permit may be
-                      required.
+                      required.`)}
                     </p>
 
                     <strong className="m-0 tw-text-gray">
-                      How We Assist You
+                     {t(` How We Assist You`)}
                     </strong>
                     <br />
 
@@ -667,64 +667,64 @@ const BusinessVisit = () => {
                       <li className=" tw-flex  tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Document Preparation and Submission:</> Assistance
+                         {t(` Document Preparation and Submission: Assistance
                           in gathering, verifying, and submitting all required
-                          documents to ensure a smooth process.
+                          documents to ensure a smooth process.`)}
                         </p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Guidance on Financial Requirements:</> Advising on
+                          {t(`Guidance on Financial Requirements: Advising on
                           the proof of funds and financial documentation needed
-                          to meet Swedish visa requirements.
+                          to meet Swedish visa requirements.`)}
                         </p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Appointment Scheduling:</> Coordinating necessary
+                          {t(`Appointment Scheduling: Coordinating necessary
                           appointments with the Swedish embassy or consulate for
-                          document submission and interviews.
+                          document submission and interviews.`)}
                         </p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Ongoing Support and Updates:</> Regular updates on
+                          {t(`Ongoing Support and Updates: Regular updates on
                           your visa status and timely responses to any
-                          additional embassy requests.
+                          additional embassy requests.`)}
                         </p>
                       </li>
                     </ul>
 
                     <p className="tw-text-gray">
-                      Our comprehensive visa service allows you to focus on your
+                      {t(`Our comprehensive visa service allows you to focus on your
                       business objectives while we take care of the paperwork.
                       Contact us today to learn more about how we can facilitate
                       your short-term business visa to Sweden and support your
-                      professional success.
+                      professional success.`)}
                     </p>
                     <Link to="/register" className="tw-text-center tw-pt-4">
                     <h5 className="tw-text-center tw-text-black tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
-                          Sign Up{" "}
+                          {t(`Sign Up`)}{" "}
                         </strong>
-                        <strong className="tw-text-black"> Today!</strong>
+                        <strong className="tw-text-black"> {t(`Today!`)}</strong>
                       </h5>
                     </Link>
                     <br />
                     <p className="tw-text-gray">
-                      Sign up today and simplify your journey! Whether you're
+                    {t(`  Sign up today and simplify your journey! Whether you're
                       seeking assistance with relocation, permits, visas, legal
                       processes, or settling into a new life, we're here to
                       help. Our comprehensive services cover everything from
                       work and study opportunities to family reunifications,
                       business support, and much more. Let us guide you every
-                      step of the way—start your seamless experience now!
+                      step of the way—start your seamless experience now!`)}
                     </p>
                   </div>
                 </div>

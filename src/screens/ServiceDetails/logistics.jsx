@@ -10,15 +10,17 @@ import { imageVariants } from "../../utils/motion";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import Sidebar from "../../components/ScrollableBar";
 
-
+import { useTranslation } from '../../context/TranslationContext';
 
 import log1 from "../../assets/iconscout/log1.png";
 import log2 from "../../assets/iconscout/log2.png";
 
 
 import Header from "../../components/Header_New/Header";
+import ta from "date-fns/locale/ta";
 
 const Logistics = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -243,9 +245,9 @@ const Logistics = () => {
     <>
       <Header />
       <Banner_Page
-        highlightText={"Logistics"}
+        highlightText={t("Logistics")}
         regularText={
-          "Seek safety and a fresh start in Sweden. Our comprehensive support helps guide you through the asylum process smoothly."
+          t("Seek safety and a fresh start in Sweden. Our comprehensive support helps guide you through the asylum process smoothly.")
         }
         backgroundImage={homeBgImage}
       />
@@ -265,15 +267,12 @@ const Logistics = () => {
                         Our
                       </span>
                       <h2 className = "tw-text-left">
-                        <strong className="tw-text-black">
-                          Logistics Management with Sweden Relocators Partner
-                          Network
-                        </strong>
+                        <strong className="tw-text-black">{t(`Logistics Management with Sweden Relocators Partner
+                          Network`)}</strong>
                       </h2>
                       <br />
 
-                      <p className="tw-text-gray">Sweden Relocators offers a seamless Logistics Management service to ensure that every aspect of your relocation or business expansion is handled with precision and care. Through our carefully selected 3rd-party logistics partners, we provide reliable, efficient, and cost-effective solutions tailored to meet the diverse needs of individuals and companies moving across borders.
-                      </p>
+                      <p className="tw-text-gray">{t(`Sweden Relocators offers a seamless Logistics Management service to ensure that every aspect of your relocation or business expansion is handled with precision and care. Through our carefully selected 3rd-party logistics partners, we provide reliable, efficient, and cost-effective solutions tailored to meet the diverse needs of individuals and companies moving across borders.`)}</p>
 
 
 
@@ -281,14 +280,10 @@ const Logistics = () => {
                       <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Comprehensive
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Comprehensive`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong className="tw-text-black">
-                      Logistics Solutions for Every Need
-                      </strong>
+                      <strong className="tw-text-black">{t(`Logistics Solutions for Every Need`)}</strong>
                     </h2>
                     <br/>
 
@@ -297,23 +292,23 @@ const Logistics = () => {
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-black">Packing and Shipping:</strong> Our partners
+                            <strong className="tw-text-black">{t(`Packing and Shipping:`)}</strong>{ta(` Our partners
                             offer expert packing and shipping services to ensure
                             your belongings are securely packed, handled, and
                             transported. Whether moving personal items, office
                             equipment, or specialized cargo, we’ve got you
-                            covered.
+                            covered.`)}
                           </p>
                         </li>
                         <br/>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-black">Customs and Compliance:</strong> Navigating
+                            <strong className="tw-text-black">{t(`Customs and Compliance:`)}</strong>{t(` Navigating
                             customs regulations can be challenging. Our
                             logistics partners are experienced in global customs
                             protocols, ensuring all necessary documentation is
                             in place and that shipments comply with
-                            international and Swedish customs requirements.
+                            international and Swedish customs requirements.`)}
                           </p>
                         </li>
                         <br/>
@@ -337,23 +332,23 @@ const Logistics = () => {
                       <div className="col-md-6">
                       <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-black">Warehouse and Storage Solutions:</strong> If
-                            you require short- or long-term storage, we provide
+                            <strong className="tw-text-black">{t(`Warehouse and Storage Solutions:`)}</strong> If
+                            {t(`you require short- or long-term storage, we provide
                             safe, modern storage facilities through our
                             partners, with security systems and climate control
                             to protect valuable goods until you’re ready to
-                            retrieve them.
+                            retrieve them.`)}
                           </p>
                         </li>
                         <br/>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-black">Freight Management:</strong> Our logistics
+                            <strong className="tw-text-black">{t(`Freight Management:`)}</strong>{t(` Our logistics
                             network handles all freight types, from air and sea
                             to land, providing flexible options to meet
                             time-sensitive or cost-efficient needs. With
                             tracking capabilities, you’ll have real-time updates
-                            on your shipment's progress.
+                            on your shipment's progress.`)}
                           </p>
                         </li>
                         <br/>
@@ -364,11 +359,11 @@ const Logistics = () => {
                        
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-black">Last-Mile Delivery:</strong> We coordinate
+                            <strong className="tw-text-black">{t(`Last-Mile Delivery:`)}</strong>{t(` We coordinate
                             last-mile delivery services to ensure that shipments
                             arrive on time, whether at your new home, office, or
                             business location. Our partners prioritize reliable,
-                            timely deliveries to keep your plans on track.
+                            timely deliveries to keep your plans on track.`)}
                           </p>
                         </li>
                       </ul>
@@ -376,14 +371,10 @@ const Logistics = () => {
                       <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Why Choose 
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Why Choose`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong className="tw-text-black">
-                      Our Logistics Management Services?
-                      </strong>
+                      <strong className="tw-text-black">{t(`Our Logistics Management Services?`)}</strong>
                     </h2>
                     <br/>
 
@@ -392,21 +383,21 @@ const Logistics = () => {
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-black">Global Reach, Local Expertise:</strong> With
+                            <strong className="tw-text-black">{t(`Global Reach, Local Expertise:`)}</strong> {t(`With
                             logistics partners around the world, we combine
                             local knowledge with global standards, ensuring
                             high-quality service wherever you’re moving to or
-                            from.
+                            from.`)}
                           </p>
                         </li>
                         <br/>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-black">End-to-End Service Coordination:</strong>{" "}
-                            From initial packing to final delivery, we manage
+                            <strong className="tw-text-black">{t(`End-to-End Service Coordination:`)}</strong>{" "}
+                           {t(` From initial packing to final delivery, we manage
                             every step of the logistics process, providing you
                             with a single point of contact for all your shipping
-                            and storage needs.
+                            and storage needs.`)}
                           </p>
                         </li>
                         <br/>
@@ -428,21 +419,21 @@ const Logistics = () => {
                       <div className="col-md-6">
                       <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-black">Cost-Effective Solutions:</strong> By
+                            <strong className="tw-text-black">{t(`Cost-Effective Solutions:`)}</strong> {t(`By
                             working with a network of trusted 3rd-party
                             providers, we offer competitive rates for all
                             logistics services, ensuring efficient use of
-                            resources without sacrificing quality.
+                            resources without sacrificing quality.`)}
                           </p>
                         </li>
                         <br/>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-black">Safe and Reliable Transport:</strong> Our
+                            <strong className="tw-text-black">{t(`Safe and Reliable Transport:`)}</strong> {t(`Our
                             partners are equipped with the latest tools and
                             practices in secure packing, handling, and
                             transport, so your items are protected throughout
-                            their journey.
+                            their journey.`)}
                           </p>
                         </li>
                         <br/>
@@ -452,11 +443,11 @@ const Logistics = () => {
                     
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-black">Transparent Tracking and Updates:</strong>{" "}
-                            Stay informed about your shipment’s status with
+                            <strong className="tw-text-black">{t(`Transparent Tracking and Updates:`)}</strong>{" "}
+                           {t(` Stay informed about your shipment’s status with
                             real-time tracking and regular updates from our
                             logistics partners, giving you peace of mind every
-                            step of the way.
+                            step of the way.`)}
                           </p>
                         </li>
                       </ul>
@@ -465,14 +456,10 @@ const Logistics = () => {
                       <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      How Our
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How Our`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong className="tw-text-black">
-                      Logistics Management Service Works
-                      </strong>
+                      <strong className="tw-text-black">{t(`Logistics Management Service Works`)}</strong>
                     </h2>
                     <br/>
 
@@ -481,75 +468,71 @@ const Logistics = () => {
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-black">Consultation and Planning:</strong> Start
+                            <strong className="tw-text-black">{t(`Consultation and Planning:`)}</strong>{t(` Start
                             with a consultation where we assess your logistics
                             needs, budget, and timeline. From there, we create a
                             customized logistics plan through our trusted
-                            partner network.
+                            partner network.`)}
                           </p>
                         </li>
                         <br/>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-black">Packing and Pickup:</strong> Our 3rd-party
+                            <strong className="tw-text-black">{t(`Packing and Pickup:`)}</strong>{t(` Our 3rd-party
                             partners handle packing and pickup, ensuring that
                             all items are prepared for safe transport according
-                            to international standards.
+                            to international standards.`)}
                           </p>
                         </li>
                         <br/>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-black">Shipping and Tracking:</strong> Your
+                            <strong className="tw-text-black">{t(`Shipping and Tracking:`)}</strong> {t(`Your
                             shipment is managed end-to-end, with tracking
                             details provided, so you’re always informed of your
-                            cargo’s progress and estimated arrival times.
+                            cargo’s progress and estimated arrival times.`)}
                           </p>
                         </li>
                         <br/>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-black">Customs Clearance and Compliance:</strong>{" "}
-                            Our experts take care of customs documentation,
+                            <strong className="tw-text-black">{t(`Customs Clearance and Compliance:`)}</strong>{" "}
+                           {t(` Our experts take care of customs documentation,
                             ensuring smooth entry through Swedish customs or any
-                            other destination.
+                            other destination.`)}
                           </p>
                         </li>
                         <br/>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-black">Delivery and Unpacking:</strong> Once the
+                            <strong className="tw-text-black">{t(`Delivery and Unpacking:`)}</strong> {t(`Once the
                             shipment arrives, we arrange for final delivery and,
                             if needed, unpacking services to make your
-                            transition as smooth as possible.
+                            transition as smooth as possible.`)}
                           </p>
                         </li>
                       </ul>
 
                       <p className=" tw-text-gray">
-                        <br />
-                        Partner with Sweden Relocators for stress-free
+                        <br />{t(`Partner with Sweden Relocators for stress-free
                         logistics. Connect with us to discuss your logistics
-                        needs and let us handle the rest.
-                      </p>
+                        needs and let us handle the rest.`)}</p>
                       <Link to="/register" className="tw-text-center tw-pt-4">
                       <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
-                          Sign Up{" "}
+                          {t(`Sign Up`)}{" "}
                         </strong>
-                        <strong className="tw-text-black"> Today!</strong>
+                        <strong className="tw-text-black">{t(`Today!`)}</strong>
                       </h5>
                     </Link>
                     <br />
-                    <p className="tw-text-gray">
-                      Sign up today and simplify your journey! Whether you're
+                    <p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
                       seeking assistance with relocation, permits, visas, legal
                       processes, or settling into a new life, we're here to
                       help. Our comprehensive services cover everything from
                       work and study opportunities to family reunifications,
                       business support, and much more. Let us guide you every
-                      step of the way—start your seamless experience now!
-                    </p>
+                      step of the way—start your seamless experience now!`)}</p>
                     </div>
                   </div>
                 </div>

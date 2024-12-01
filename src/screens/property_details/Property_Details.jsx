@@ -268,65 +268,73 @@ const Property_Details = ({
                   Luxury Apartments on California.
                 </h3>
 
-                <div className="tw-flex tw-flex-wrap tw-space-x-4 tw-mt-4 tw-mb-2">
-  <div className="container tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white tw-flex-1 tw-mb-4 sm:tw-w-full md:tw-w-1/3">
-    <p className="tw-m-0 tw-pl-1 tw-font-bold tw-text-xl tw-text-gray">
-      Status
-    </p>
-    <div className="tw-flex tw-items-center tw-justify-between tw-mt-1">
-    <h3 className="tw-ml-1 tw-mt-1">For Sale</h3>
-    <img src={forsaleicon} className="tw-w-10 tw-h-10" alt="For Sale Icon"/>
-</div>
+                <div className="tw-flex md:tw-flex-row tw-flex-col tw-flex-wrap md:tw-space-x-14 tw-mt-4 tw-mb-2">
+                  <div className="container tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white tw-flex-1 tw-mb-4 sm:tw-w-full md:tw-w-1/3">
+                    <p className="tw-m-0 tw-pl-1 tw-font-bold tw-text-xl tw-text-gray">
+                      Status
+                    </p>
+                    <div className="tw-flex tw-items-center tw-justify-between tw-mt-1">
+                      <h3 className="tw-ml-1 tw-mt-1">For Sale</h3>
+                      <img
+                        src={forsaleicon}
+                        className="tw-w-10 tw-h-10"
+                        alt="For Sale Icon"
+                      />
+                    </div>
+                  </div>
 
+                  <div className="container tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white tw-flex-1 tw-mb-4 sm:tw-w-full md:tw-w-1/3">
+                    <p className="tw-m-0 tw-pl-1 tw-font-bold tw-text-xl tw-text-gray">
+                      Identification
+                    </p>
+                    <div className="tw-flex tw-items-center tw-justify-between tw-mt-1">
+                      <h3 className="tw-ml-1 tw-mt-1">475</h3>
+                      <img
+                        src={idicon}
+                        className="tw-w-10 tw-h-10"
+                        alt="For Sale Icon"
+                      />
+                    </div>
+                  </div>
 
-   
-  </div>
-
-  <div className="container tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white tw-flex-1 tw-mb-4 sm:tw-w-full md:tw-w-1/3">
-    <p className="tw-m-0 tw-pl-1 tw-font-bold tw-text-xl tw-text-gray">
-      Identification
-    </p>
-    <div className="tw-flex tw-items-center tw-justify-between tw-mt-1">
-    <h3 className="tw-ml-1 tw-mt-1">475</h3>
-    <img src={idicon} className="tw-w-10 tw-h-10" alt="For Sale Icon"/>
-</div>
-       
-  </div>
-
-  <div className="container tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white tw-flex-1 tw-mb-4 sm:tw-w-full md:tw-w-1/3">
-    <p className="tw-m-0 tw-pl-1 tw-font-bold tw-text-xl tw-text-gray">
-      Available Status
-    </p>
-    <div className="tw-flex tw-items-center tw-justify-between tw-mt-1">
-    <h3 className="tw-ml-1 tw-mt-1">Available</h3>
-    <img src={availableicon} className="tw-w-10 tw-h-10" alt="For Sale Icon"/>
-</div>
-  </div>
-</div>
-
+                  <div className="container tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white tw-flex-1 tw-mb-4 sm:tw-w-full md:tw-w-1/3">
+                    <p className="tw-m-0 tw-pl-1 tw-font-bold tw-text-xl tw-text-gray">
+                      Available Status
+                    </p>
+                    <div className="tw-flex tw-items-center tw-justify-between tw-mt-1">
+                      <h3 className="tw-ml-1 tw-mt-1">Available</h3>
+                      <img
+                        src={availableicon}
+                        className="tw-w-10 tw-h-10"
+                        alt="For Sale Icon"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="container tw-rounded-2xl  px-4 tw-p-4 tw-shadow tw-bg-white">
                 <p className="tw-m-0 tw-pl-1 tw-font-bold   tw-text-xl tw-text-gray">
                   Address
                 </p>
                 <div className="tw-flex tw-items-center tw-items-center tw-justify-between  tw-mt-1">
-    <p className="tw-ml-1 tw-font-bold tw-mt-2">SKOLGATAN 2 LGH 1402, 22361 LUND, LUND, SWEDEN</p>
-    <img src={locationicon} className="tw-w-12 tw-h-12" alt="For Sale Icon"/>
-</div>
-
-              
+                  <p className="tw-ml-1 tw-font-bold tw-mt-2">
+                    SKOLGATAN 2 LGH 1402, 22361 LUND, LUND, SWEDEN
+                  </p>
+                  <img
+                    src={locationicon}
+                    className="tw-w-12 tw-h-12"
+                    alt="For Sale Icon"
+                  />
+                </div>
               </div>
             </div>
             <div className="row justify-content-center align-items-center">
               <div className="col-md-6 ">
-                <div className=" px-4 pb-4  tw-bg-white tw-rounded-2xl">
-                  <div className=" tw-w-full">
-                    <div
-                      className="tw-overflow-hidden  tw-rounded-2xl tw-relative "
-                      style={{ maxHeight: "500px" }}
-                    >
+                <div className=" md:px-4 pb-4  tw-bg-white tw-rounded-2xl">
+                  <div className=" ">
+                    <div className="tw-overflow-hidden tw-border tw-border-gray-light tw-h-fit  tw-rounded-2xl tw-relative ">
                       <div
-                        className="tw-flex tw-transition-transform tw-ease-out tw-duration-500 tw-h-screen	 tw-w-full"
+                        className="tw-flex tw-items-center tw-transition-transform tw-ease-out tw-duration-500 	 tw-w-fit"
                         style={{ transform: `translateX(-${curr * 100}%)` }}
                       >
                         {/* {sliders?.map((s) => (
@@ -391,7 +399,7 @@ const Property_Details = ({
 
               <div className=" col-md-3">
                 <div
-                  className=" tw-flex tw-flex-col tw-gap-5  p-4 tw-bg-white tw-rounded-2xl"
+                  className=" tw-flex tw-flex-col tw-gap-5  md:p-4 tw-bg-white tw-rounded-2xl"
                   style={{ maxHeight: "550px" }}
                 >
                   <div className="  tw-h-32 tw-rounded-2xl tw-overflow-hidden">
@@ -411,63 +419,63 @@ const Property_Details = ({
             </div>
           </div>
 
-          <div className="container tw-rounded-2xl tw-my-10 p-5 tw-shadow-lg tw-bg-white ">
-            <h3>Property Overview</h3>
-            <div className=" tw-grid tw-grid-cols-5 tw-mt-10">
-              <div className=" tw-flex  tw-flex-col tw-gap-2">
+          <div className="container tw-rounded-2xl tw-my-4 tw-px-10 tw-py-4 tw-shadow-lg tw-bg-white ">
+            <h3 className="tw-pl-4">Property Overview</h3>
+            <div className=" tw-px-auto tw-grid md:tw-grid-cols-5 tw-justify-center tw-grid-cols-2 tw-mt-10">
+              <div className=" tw-flex tw-mx-auto tw-flex-col tw-gap-2">
                 <img
                   src="https://homy-next.vercel.app/_next/static/media/icon_04.20cbbaa1.svg"
-                  className=" tw-w-8"
+                  className="tw-mx-auto tw-w-8"
                 />
                 <h5 className="  tw-m-0 tw-font-light  tw-mt-1 tw-text-xl tw-text-gray">
                   Sqft . 3,720
                 </h5>
               </div>
-              <div className=" tw-flex  tw-flex-col tw-gap-2">
+              <div className=" tw-flex  tw-mx-auto tw-flex-col tw-gap-2">
                 <img
                   src="https://homy-next.vercel.app/_next/static/media/icon_48.9b7f5b64.svg"
-                  className=" tw-w-12"
+                  className="tw-mx-auto tw-w-12"
                 />
                 <h5 className="  tw-m-0 tw-font-light  tw-mt-1 tw-text-xl tw-text-gray">
                   Bed . 03
                 </h5>
               </div>
-              <div className=" tw-flex  tw-flex-col tw-gap-2">
+              <div className=" tw-flex tw-mx-auto  md:tw-mt-0 tw-mt-4 tw-flex-col tw-gap-2">
                 <img
                   src="https://homy-next.vercel.app/_next/static/media/icon_49.06c9f18e.svg"
-                  className=" tw-w-8"
+                  className="tw-mx-auto tw-w-8"
                 />
                 <h5 className="  tw-m-0 tw-font-light  tw-mt-1 tw-text-xl tw-text-gray">
                   Bath . 2
                 </h5>
               </div>
-              <div className=" tw-flex  tw-flex-col tw-gap-2">
+              <div className=" tw-flex  tw-mx-auto md:tw-mt-0 tw-mt-4  tw-flex-col tw-gap-2">
                 <img
                   src="https://homy-next.vercel.app/_next/static/media/icon_50.8957a066.svg"
-                  className=" tw-w-8"
+                  className="tw-mx-auto tw-w-8"
                 />
                 <h5 className="  tw-m-0 tw-font-light  tw-mt-1 tw-text-xl tw-text-gray">
                   Kitchen . 01
                 </h5>
               </div>
-              <div className=" tw-flex  tw-flex-col tw-gap-2">
+              <div className=" tw-flex tw-mx-auto md:tw-mt-0 tw-mt-4 tw-flex-col tw-gap-2">
                 <img
                   src="	https://homy-next.vercel.app/_next/static/media/icon_51.96ca6f07.svg"
-                  className=" tw-w-8"
+                  className=" tw-w-8 tw-mx-auto"
                 />
-                <h5 className="  tw-m-0 tw-font-light  tw-mt-1 tw-text-xl tw-text-gray">
+                <h5 className=" tw-mx-auto  tw-m-0 tw-font-light  tw-mt-1 tw-text-xl tw-text-gray">
                   Type . Apartment
                 </h5>
               </div>
             </div>
           </div>
 
-          <div className="container  ">
+          <div className="container tw-bg-white tw-shadow-lg  tw-rounded-2xl md:tw-px-8 md:tw-py-8 tw-px-4  tw-py-4 ">
             <div className="row">
               <div className=" ">
-                <div className=" tw-rounded-2xl  p-5 tw-shadow-lg tw-bg-white">
-                  <h3>Overview</h3>
-                  <p className=" tw-text-gray tw-mt-5">
+                <div className="   ">
+                  <h3 className="tw-pl-4">Overview</h3>
+                  <p className=" tw-text-gray tw-pl-4 tw-mt-5">
                     Lorem ipsum dolor sit amet consectetur. Et velit varius
                     ipsum tempor vel dignissim tincidunt. Aliquam accumsan
                     laoreet ultricies tincidunt faucibus fames augue in sociis.
@@ -475,9 +483,10 @@ const Property_Details = ({
                   </p>
                 </div>
 
-                <div className=" tw-rounded-2xl tw-my-6 p-4 tw-shadow-lg tw-bg-white">
-                  <h3>Property Features</h3>
-                  <p className=" tw-text-gray tw-mt-5">
+                <hr className=" tw-text-gray" />
+                <div className="  tw-bg-white">
+                  <h3 className="tw-pl-4">Property Features</h3>
+                  <p className="tw-pl-4 tw-text-gray tw-mt-5">
                     Risk management and compliance, when approached
                     strategically, have the potential to go beyond mitigating
                     threats.
@@ -485,9 +494,9 @@ const Property_Details = ({
 
                   <hr className=" tw-text-gray" />
 
-                  <h4>Property Details</h4>
+                  <h4 className="tw-pl-4">Property Details</h4>
 
-                  <div className=" tw-grid  tw-gap-6 tw-grid-cols-2">
+                  <div className=" tw-pl-4 tw-pr-4 tw-grid  tw-gap-6 md:tw-grid-cols-2 tw-grid-cols-1">
                     <div className=" tw-w-full">
                       <ul className=" tw-w-full tw-p-0">
                         <li className="  tw-flex tw-justify-between tw-items-center">
@@ -542,9 +551,9 @@ const Property_Details = ({
 
                   <hr className=" tw-text-gray" />
 
-                  <h4>Basic Necessities</h4>
+                  <h4 className="tw-pl-4">Basic Necessities</h4>
 
-                  <div className=" tw-grid  tw-gap-6 tw-grid-cols-2">
+                  <div className="tw-px-4 tw-grid  tw-gap-6 md:tw-grid-cols-2 tw-grid-cols-1">
                     <div className=" tw-w-full">
                       <ul className=" tw-w-full tw-p-0">
                         <li className="  tw-flex tw-justify-between tw-items-center">

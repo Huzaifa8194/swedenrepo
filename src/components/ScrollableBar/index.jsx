@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { GoTriangleRight } from "react-icons/go";
+import { useTranslation } from "../../context/TranslationContext";
 
 const Sidebar = () => {
+  const {t} = useTranslation();
 
 
     const data = [
@@ -276,7 +278,7 @@ const Sidebar = () => {
                 className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white"
               >
                 <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">
-                  {item?.title}
+                  {t(item?.title)}
                 </p>
                 <GoTriangleRight className="tw-text-gray" />
               </Link>

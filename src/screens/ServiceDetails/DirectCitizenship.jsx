@@ -38,8 +38,7 @@ import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
-import { useTranslation } from "react-i18next";
-
+import { useTranslation } from '../../context/TranslationContext';
 import Header from "../../components/Header_New/Header";
 
 const DirectCitizenship = () => {
@@ -290,9 +289,7 @@ const DirectCitizenship = () => {
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Prime Citizenship-by-Investment Programs
-                      </strong>
+                      <strong>{t(`Prime Citizenship-by-Investment Programs`)}</strong>
                     </h2>
 
                     <br />
@@ -311,8 +308,7 @@ const DirectCitizenship = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <p className="tw-text-gray">
-                          Citizenship-by-investment programs offer affluent
+                        <p className="tw-text-gray">{t(`Citizenship-by-investment programs offer affluent
                           individuals and families the opportunity to acquire a
                           second or even third passport, granting them expanded
                           global mobility, business opportunities, and the same
@@ -323,15 +319,12 @@ const DirectCitizenship = () => {
                           citizenship. The benefits of these programs extend
                           beyond the ability to travel visa-free to various
                           countries; they also provide access to improved
-                          healthcare, education, and tax advantages.
-                        </p>
+                          healthcare, education, and tax advantages.`)}</p>
                       </div>
                     </div>
                     <br />
 
-                    <strong className="m-0 tw-text-black">
-                      🇦🇬 Antigua and Barbuda
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`🇦🇬 Antigua and Barbuda`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -339,7 +332,7 @@ const DirectCitizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Minimum Investment:</strong> USD 100,000
+                          <strong>{t(`Minimum Investment:`)}</strong> USD 100,000
                         </p>
                       </li>
 
@@ -348,7 +341,7 @@ const DirectCitizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Advantages:</strong>
+                          <strong>{t(`Advantages:`)}</strong>
                           Visa-free or visa-on-arrival access to 151
                           destinations, including popular business and lifestyle
                           hubs. Quick processing times and multiple investment
@@ -358,7 +351,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">🇦🇹 Austria</strong>
+                    <strong className="m-0 tw-text-black">{t(`🇦🇹 Austria`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -366,7 +359,7 @@ const DirectCitizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Minimum Investment:</strong> EUR 3 million
+                          <strong>{t(`Minimum Investment:`)}</strong> EUR 3 million
                         </p>
                       </li>
 
@@ -375,7 +368,7 @@ const DirectCitizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Advantages:</strong>
+                          <strong>{t(`Advantages:`)}</strong>
                           One of the world’s strongest passports with visa-free
                           access to 187 destinations. Settlement rights in all
                           EU member states. High standards of living and
@@ -384,7 +377,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">🇨🇾 Cyprus</strong>
+                    <strong className="m-0 tw-text-black">{t(`🇨🇾 Cyprus`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -392,7 +385,7 @@ const DirectCitizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Minimum Investment:</strong> EUR 2.15 million
+                          <strong>{t(`Minimum Investment:`)}</strong> EUR 2.15 million
                         </p>
                       </li>
 
@@ -401,7 +394,7 @@ const DirectCitizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Advantages:</strong>
+                          <strong>{t(`Advantages:`)}</strong>
                           Visa-free access to 174 countries, including all EU
                           states. Right to live, work, and study in all EU
                           member countries. Strong legal and tax system,
@@ -410,7 +403,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">🇲🇹 Malta</strong>
+                    <strong className="m-0 tw-text-black">{t(`🇲🇹 Malta`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -418,7 +411,7 @@ const DirectCitizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Minimum Investment:</strong> Approximately EUR
+                          <strong>{t(`Minimum Investment:`)}</strong> Approximately EUR
                           1 million
                         </p>
                       </li>
@@ -428,7 +421,7 @@ const DirectCitizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Advantages:</strong>
+                          <strong>{t(`Advantages:`)}</strong>
                           Access to the entire EU with the right to live, work,
                           and study in all member states. Visa-free or
                           visa-on-arrival access to over 180 countries.
@@ -438,7 +431,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">🇲🇪 Montenegro</strong>
+                    <strong className="m-0 tw-text-black">{t(`🇲🇪 Montenegro`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -446,7 +439,7 @@ const DirectCitizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Minimum Investment:</strong> EUR 350,000
+                          <strong>{t(`Minimum Investment:`)}</strong> EUR 350,000
                         </p>
                       </li>
 
@@ -455,7 +448,7 @@ const DirectCitizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Advantages:</strong>
+                          <strong>{t(`Advantages:`)}</strong>
                           Visa-free or visa-on-arrival access to 124 countries,
                           including Schengen Area countries. Exclusive program
                           limited to 2,000 applicants. Gateway to Europe with
@@ -464,9 +457,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      🇰🇳 St. Kitts and Nevis
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`🇰🇳 St. Kitts and Nevis`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -474,7 +465,7 @@ const DirectCitizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Minimum Investment:</strong> USD 150,000
+                          <strong>{t(`Minimum Investment:`)}</strong> USD 150,000
                         </p>
                       </li>
 
@@ -483,7 +474,7 @@ const DirectCitizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Advantages:</strong>
+                          <strong>{t(`Advantages:`)}</strong>
                           Visa-free or visa-on-arrival access to 156
                           destinations, including the UK and Schengen countries.
                           Flexible and quick application process. No personal
@@ -492,7 +483,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">🇱🇨 St. Lucia</strong>
+                    <strong className="m-0 tw-text-black">{t(`🇱🇨 St. Lucia`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -500,7 +491,7 @@ const DirectCitizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Minimum Investment:</strong> USD 100,000
+                          <strong>{t(`Minimum Investment:`)}</strong> USD 100,000
                         </p>
                       </li>
 
@@ -509,7 +500,7 @@ const DirectCitizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Advantages:</strong>
+                          <strong>{t(`Advantages:`)}</strong>
                           Visa-free or visa-on-arrival access to 146 countries
                           worldwide. Fast processing, with citizenship granted
                           in as little as four months. Attractive business
@@ -519,7 +510,7 @@ const DirectCitizenship = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">🇹🇷 Turkey</strong>
+                    <strong className="m-0 tw-text-black">{t(`🇹🇷 Turkey`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -527,7 +518,7 @@ const DirectCitizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Minimum Investment:</strong> USD 250,000 in
+                          <strong>{t(`Minimum Investment:`)}</strong> USD 250,000 in
                           real estate
                         </p>
                       </li>
@@ -537,7 +528,7 @@ const DirectCitizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Advantages:</strong>
+                          <strong>{t(`Advantages:`)}</strong>
                           Access to key Western markets and growing economic
                           opportunities. Visa-free or visa-on-arrival access to
                           111 destinations, including parts of Asia, Africa, and
@@ -551,71 +542,51 @@ const DirectCitizenship = () => {
                   <div>
                     <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Why Choose Citizenship by Investment?
-                    </span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Why Choose Citizenship by Investment?`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>Benefits of Citizenship by Investment</strong>
+                      <strong>{t(`Benefits of Citizenship by Investment`)}</strong>
                     </h2>
 
                     <br />
-                    <p className="tw-text-gray">
-                      Each of these citizenship-by-investment programs offers
-                      distinct benefits tailored to the global elite:
-                    </p>
+                    <p className="tw-text-gray">{t(`Each of these citizenship-by-investment programs offers
+                      distinct benefits tailored to the global elite:`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Enhanced Global Mobility
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Enhanced Global Mobility`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Freedom to travel visa-free or with visa-on-arrival to
-                          numerous destinations.
-                        </p>
+                        <p className="m-0 tw-text-gray">{t(`Freedom to travel visa-free or with visa-on-arrival to
+                          numerous destinations.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Security and Stability
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Security and Stability`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Citizenship in politically stable countries with
-                          secure legal systems.
-                        </p>
+                        <p className="m-0 tw-text-gray">{t(`Citizenship in politically stable countries with
+                          secure legal systems.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Business Opportunities
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Business Opportunities`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Access to markets across the EU, Schengen Area, and
+                        <p className="m-0 tw-text-gray">{t(`Access to markets across the EU, Schengen Area, and
                           beyond, fostering international business
-                          opportunities.
-                        </p>
+                          opportunities.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Lifestyle Benefits
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Lifestyle Benefits`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          High standards of living, tax efficiency, access to
+                        <p className="m-0 tw-text-gray">{t(`High standards of living, tax efficiency, access to
                           quality healthcare and education, and diverse cultural
-                          experiences.
-                        </p>
+                          experiences.`)}</p>
                       </li>
                     </ul>
 
@@ -626,32 +597,26 @@ const DirectCitizenship = () => {
                       Why Work With
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>Sweden Relocators? </strong>
+                      <strong>{t(`Sweden Relocators?`)}</strong>
                     </h2>
 
                     <br />
 
-                    <p className="tw-text-gray">
-                      At Sweden Relocators, we help you select the right
+                    <p className="tw-text-gray">{t(`At Sweden Relocators, we help you select the right
                       citizenship program based on your needs, guiding you
                       through the entire application process for a smooth and
-                      efficient journey toward a second citizenship.
-                    </p>
+                      efficient journey toward a second citizenship.`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Contact Sweden Relocators for Citizenship Assistance
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Contact Sweden Relocators for Citizenship Assistance`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Swedish citizenship offers a host of benefits and
+                        <p className="m-0 tw-text-gray">{t(`Swedish citizenship offers a host of benefits and
                           opportunities, and our team is here to make your
                           application journey as smooth as possible. Contact
                           Sweden Relocators today to discuss your path to
                           citizenship in Sweden, and let us guide you through
-                          every step with confidence and clarity.
-                        </p>
+                          every step with confidence and clarity.`)}</p>
                       </li>
                     </ul>
                   
@@ -661,27 +626,23 @@ const DirectCitizenship = () => {
                   <br/>
                   <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                     {" "}
-                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                    A SELECTION OF
-                  </span>
+                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`A SELECTION OF`)}</span>
 
                   <h2>
-                    <strong>Prime Citizenship Programs</strong>
+                    <strong>{t(`Prime Citizenship Programs`)}</strong>
                   </h2>
 
-                  <p className=" tw-text-gray">
-                    Citizenship-by-investment programs provide ultra-wealthy
+                  <p className=" tw-text-gray">{t(`Citizenship-by-investment programs provide ultra-wealthy
                     families with the privilege of a second or third passport,
                     which affords them all the internal rights enjoyed by
                     residents. Listed below are the details of the most credible
                     and successful citizenship programs offered by Henley &
-                    Partners.
-                  </p>
+                    Partners.`)}</p>
 
                   <div className="row g-4">
                     <div className="col-md-6">
                       <h2 className=" tw-text-center">
-                        <strong>Antigua And Barbuda</strong>
+                        <strong>{t(`Antigua And Barbuda`)}</strong>
                       </h2>
 
                       <div className=" row">
@@ -699,17 +660,15 @@ const DirectCitizenship = () => {
                         </div>
                       </div>
 
-                      <p className=" tw-text-gray tw-pt-2">
-                        Antigua and Barbuda offers one of the most competitive
+                      <p className=" tw-text-gray tw-pt-2">{t(`Antigua and Barbuda offers one of the most competitive
                         citizenship programs in the Caribbe-an. Options start
                         from USD 100,000 and citizens of Antigua and Barbuda
                         have visa-free access to 151 destinations, including top
-                        business and lifestyle destinations.
-                      </p>
+                        business and lifestyle destinations.`)}</p>
                     </div>
                     <div className="col-md-6">
                       <h2 className=" tw-text-center">
-                        <strong>Austria</strong>
+                        <strong>{t(`Austria`)}</strong>
                       </h2>
 
                       <div className=" row">
@@ -727,19 +686,17 @@ const DirectCitizenship = () => {
                         </div>
                       </div>
 
-                      <p className=" tw-text-gray tw-pt-2">
-                        Austria has one of the world’s strongest passports
+                      <p className=" tw-text-gray tw-pt-2">{t(`Austria has one of the world’s strongest passports
                         providing its holders with visa-free access to 187
                         destinations worldwide, along with settlement rights in
                         all EU member states. Options for obtaining Austrian
                         citizenship start from a minimum investment of EUR 3
-                        million.
-                      </p>
+                        million.`)}</p>
                     </div>
 
                     <div className="col-md-6">
                       <h2 className=" tw-text-center">
-                        <strong>Cyprus</strong>
+                        <strong>{t(`Cyprus`)}</strong>
                       </h2>
 
                       <div className=" row">
@@ -757,20 +714,18 @@ const DirectCitizenship = () => {
                         </div>
                       </div>
 
-                      <p className=" tw-text-gray tw-pt-2">
-                        The Cyprus Investment Programme is one of the most
+                      <p className=" tw-text-gray tw-pt-2">{t(`The Cyprus Investment Programme is one of the most
                         sought-after citizenship programs that provides
                         successful applicants with an attractive balance between
                         the capital contribution they make and the benefits they
                         receive. For a minimum contribution of EUR 2.15 million,
                         successful applicants can travel visa-free to 174
-                        destinations worldwide.
-                      </p>
+                        destinations worldwide.`)}</p>
                     </div>
 
                     <div className="col-md-6">
                       <h2 className=" tw-text-center">
-                        <strong>Malta</strong>
+                        <strong>{t(`Malta`)}</strong>
                       </h2>
 
                       <div className=" row">
@@ -788,19 +743,17 @@ const DirectCitizenship = () => {
                         </div>
                       </div>
 
-                      <p className=" tw-text-gray tw-pt-2">
-                        The Malta Individual Investor Program is the world’s
+                      <p className=" tw-text-gray tw-pt-2">{t(`The Malta Individual Investor Program is the world’s
                         leading citizenship program. For a minimum contribution
                         of approximately EUR 1 million, successful applicants
                         can acquire Maltese citizen-ship that offers safety and
                         security by providing a better quality of life and the
-                        right to live, work, and study in all EU member states.
-                      </p>
+                        right to live, work, and study in all EU member states.`)}</p>
                     </div>
 
                     <div className="col-md-6">
                       <h2 className=" tw-text-center">
-                        <strong>Montenegro</strong>
+                        <strong>{t(`Montenegro`)}</strong>
                       </h2>
 
                       <div className=" row">
@@ -818,20 +771,18 @@ const DirectCitizenship = () => {
                         </div>
                       </div>
 
-                      <p className=" tw-text-gray tw-pt-2">
-                        The Montenegro Citizenship-by-Investment Program offers
+                      <p className=" tw-text-gray tw-pt-2">{t(`The Montenegro Citizenship-by-Investment Program offers
                         increased global mobility with visa-free or
                         visa-on-arrival access to 124 destinations including the
                         countries of Europe’s Schengen Area, as well as Russia
                         and the UAE. The program is exclusively limited to 2,000
                         applicants and a minimum contribution of EUR 350,000 is
-                        required.
-                      </p>
+                        required.`)}</p>
                     </div>
 
                     <div className="col-md-6">
                       <h2 className=" tw-text-center">
-                        <strong>St. Kitts And Nevis</strong>
+                        <strong>{t(`St. Kitts And Nevis`)}</strong>
                       </h2>
 
                       <div className=" row">
@@ -849,19 +800,17 @@ const DirectCitizenship = () => {
                         </div>
                       </div>
 
-                      <p className=" tw-text-gray tw-pt-2">
-                        St. Kitts and Nevis has one of the strongest passports
+                      <p className=" tw-text-gray tw-pt-2">{t(`St. Kitts and Nevis has one of the strongest passports
                         among all the Caribbean citizenship programs. For a
                         minimum contribution of USD 150,000, the St. Kitts and
                         Nevis Citizenship-by-Investment Program provides
                         visa-free or visa-on-arrival access to 156
-                        destina-tions.
-                      </p>
+                        destina-tions.`)}</p>
                     </div>
 
                     <div className="col-md-6">
                       <h2 className=" tw-text-center">
-                        <strong>St. Lucia</strong>
+                        <strong>{t(`St. Lucia`)}</strong>
                       </h2>
 
                       <div className=" row">
@@ -879,19 +828,17 @@ const DirectCitizenship = () => {
                         </div>
                       </div>
 
-                      <p className=" tw-text-gray tw-pt-2">
-                        The St. Lucia Citizenship-by-Investment Program offers
+                      <p className=" tw-text-gray tw-pt-2">{t(`The St. Lucia Citizenship-by-Investment Program offers
                         increased global mobility and oppor-tunity by providing
                         visa-free or visa-on-arrival access to 146 destinations
                         around the world. For a contribution of USD 100,000,
                         applicants can acquire their passports in as little as
-                        four months.
-                      </p>
+                        four months.`)}</p>
                     </div>
 
                     <div className="col-md-6">
                       <h2 className=" tw-text-center">
-                        <strong>Turkey</strong>
+                        <strong>{t(`Turkey`)}</strong>
                       </h2>
 
                       <div className=" row">
@@ -909,14 +856,12 @@ const DirectCitizenship = () => {
                         </div>
                       </div>
 
-                      <p className=" tw-text-gray tw-pt-2">
-                        The Turkey Citizenship-by-Investment Program offers
+                      <p className=" tw-text-gray tw-pt-2">{t(`The Turkey Citizenship-by-Investment Program offers
                         European citizenship and access to the Western markets.
                         The Turkish passport provides visa-free or
                         visa-on-arrival access to 111 des-tinations around the
                         world. For a real estate investment of USD 250,000,
-                        passports can be ac-quired in six to nine months.
-                      </p>
+                        passports can be ac-quired in six to nine months.`)}</p>
                      
                     </div>
                     <Link to="/register" className="tw-text-center tw-pt-4">
@@ -924,20 +869,18 @@ const DirectCitizenship = () => {
                           <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                             Sign Up{" "}
                           </strong>
-                          <strong className="tw-text-black"> Today!</strong>
+                          <strong className="tw-text-black">{t(`Today!`)}</strong>
                         </h5>
                       </Link>
                       <br />
-                      <p className="tw-text-gray">
-                        Sign up today and simplify your journey! Whether you're
+                      <p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
                         seeking assistance with relocation, permits, visas,
                         legal processes, or settling into a new life, we're here
                         to help. Our comprehensive services cover everything
                         from work and study opportunities to family
                         reunifications, business support, and much more. Let us
                         guide you every step of the way—start your seamless
-                        experience now!
-                      </p>
+                        experience now!`)}</p>
                   </div>
                 </div>
               </div>

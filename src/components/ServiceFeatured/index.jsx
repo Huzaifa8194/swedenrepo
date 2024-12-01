@@ -56,8 +56,11 @@ import directinvestment from "../../assets/iconscout/directinvestment.png";
 import DCI from "../../assets/iconscout/property.png";
 import goldenvisa from "../../assets/iconscout/goldenvisa.png";
 import cpr from "../../assets/iconscout/cpr.png";
+import { useTranslation } from '../../context/TranslationContext';
+
 
 const FeatureSection = () => {
+  const { t} = useTranslation();
   const settings = {
     slidesToShow: 3,
     slidesToScroll: 0,
@@ -128,18 +131,18 @@ const FeatureSection = () => {
           <div className="col-lg-12">
             <div className="section-title style2">
               <div className="title-header">
-                <h5>who we are</h5>
+                <h5>{t("who we are")}</h5>
                 <h2 className="title">
-                  Immigration and citizenship
+                 {t(" Immigration and citizenship")}
                   <br />
-                  <strong> choose your country!</strong>
+                  <strong> {t("choose your country!")}</strong>
                 </h2>
               </div>
               <div className="title-desc">
                 <p>
-                  We are an expert visa consultant focusing on providing quick
+                 {t(` We are an expert visa consultant focusing on providing quick
                   services to all your travelling needs. Be it a visa, travel
-                  insurance, flight ticketing, we cover it all.
+                  insurance, flight ticketing, we cover it all.`)}
                 </p>
               </div>
             </div>
@@ -208,19 +211,19 @@ const FeatureSection = () => {
                             style={{ color: "black" }}
                             tabIndex="-1"
                           >
-                            {feature.country}
+                            {t(feature.country)}
                           </a>
                         </h5>
                       </div>
                       <div className="featured-desc">
-                        <p>{feature.description}</p>
+                        <p>{t(feature.description)}</p>
                       </div>
                       <a
                         className="cmt-btn cmt-btn-size-sm btn-inline cmt-btn-color-skincolor"
                         href={feature.to}
                         tabIndex="-1"
                       >
-                        Read More
+                        {("Read More")}
                       </a>
                     </div>
                   </div>
@@ -286,19 +289,19 @@ const FeatureSection = () => {
                             style={{ color: "black" }}
                             tabIndex="-1"
                           >
-                            {feature.country}
+                            {t(feature.country)}
                           </a>
                         </h5>
                       </div>
                       <div className="featured-desc">
-                        <p>{feature.description}</p>
+                        <p>{t(feature.description)}</p>
                       </div>
                       <a
                         className="cmt-btn cmt-btn-size-sm btn-inline cmt-btn-color-skincolor"
                         href={feature.to}
                         tabIndex="-1"
                       >
-                        Read More
+                       {t("Read More")}
                       </a>
                     </div>
                   </div>
@@ -364,19 +367,19 @@ const FeatureSection = () => {
                             style={{ color: "black" }}
                             tabIndex="-1"
                           >
-                            {feature.country}
+                            {t(feature.country)}
                           </a>
                         </h5>
                       </div>
                       <div className="featured-desc">
-                        <p>{feature.description}</p>
+                        <p>{t(feature.description)}</p>
                       </div>
                       <a
                         className="cmt-btn cmt-btn-size-sm btn-inline cmt-btn-color-skincolor"
                         href={feature.to}
                         tabIndex="-1"
                       >
-                        Read More
+                        {("Read More")}
                       </a>
                     </div>
                   </div>
@@ -442,19 +445,19 @@ const FeatureSection = () => {
                             style={{ color: "black" }}
                             tabIndex="-1"
                           >
-                            {feature.country}
+                            {t(feature.country)}
                           </a>
                         </h5>
                       </div>
                       <div className="featured-desc">
-                        <p>{feature.description}</p>
+                        <p>{t(feature.description)}</p>
                       </div>
                       <a
                         className="cmt-btn cmt-btn-size-sm btn-inline cmt-btn-color-skincolor"
                         href={feature.to}
                         tabIndex="-1"
                       >
-                        Read More
+                       {(" Read More")}
                       </a>
                     </div>
                   </div>
@@ -520,19 +523,19 @@ const FeatureSection = () => {
                             style={{ color: "black" }}
                             tabIndex="-1"
                           >
-                            {feature.country}
+                            {t(feature.country)}
                           </a>
                         </h5>
                       </div>
                       <div className="featured-desc">
-                        <p>{feature.description}</p>
+                        <p>{t(feature.description)}</p>
                       </div>
                       <a
                         className="cmt-btn cmt-btn-size-sm btn-inline cmt-btn-color-skincolor"
                         href={feature.to}
                         tabIndex="-1"
                       >
-                        Read More
+                        {t("Read More")}
                       </a>
                     </div>
                   </div>
@@ -598,19 +601,19 @@ const FeatureSection = () => {
                             style={{ color: "black" }}
                             tabIndex="-1"
                           >
-                            {feature.country}
+                            {t(feature.country)}
                           </a>
                         </h5>
                       </div>
                       <div className="featured-desc">
-                        <p>{feature.description}</p>
+                        <p>{t(feature.description)}</p>
                       </div>
                       <a
                         className="cmt-btn cmt-btn-size-sm btn-inline cmt-btn-color-skincolor"
                         href={feature.to}
                         tabIndex="-1"
                       >
-                        Read More
+                        {t("Read More")}
                       </a>
                     </div>
                   </div>
@@ -676,7 +679,7 @@ const FeatureSection = () => {
                             style={{ color: "black" }}
                             tabIndex="-1"
                           >
-                            {feature.country}
+                            {t(feature.country)}
                           </a>
                         </h5>
                       </div>
@@ -685,10 +688,10 @@ const FeatureSection = () => {
                       </div>
                       <a
                         className="cmt-btn cmt-btn-size-sm btn-inline cmt-btn-color-skincolor"
-                        href={feature.to}
+                        href={t(feature.to)}
                         tabIndex="-1"
                       >
-                        Read More
+                        {("Read More")}
                       </a>
                     </div>
                   </div>
@@ -764,14 +767,14 @@ const FeatureSection = () => {
                               style={{ color: "black" }}
                               tabIndex="-1"
                             >
-                              {feature.country}
+                              {t(feature.country)}
                             </a>
                           </h5>
                         </div>
                       )}
                       {feature.description && (
                         <div className="featured-desc">
-                          <p>{feature.description}</p>
+                          <p>{t(feature.description)}</p>
                         </div>
                       )}
                       {feature.to && (
@@ -780,7 +783,7 @@ const FeatureSection = () => {
                           href={feature.to}
                           tabIndex="-1"
                         >
-                          Read More
+                          {("Read More")}
                         </a>
                       )}
                     </div>

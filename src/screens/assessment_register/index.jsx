@@ -15,11 +15,12 @@ import { Link, useParams } from "react-router-dom";
 import Assessment_modal from "./Assessment_modal";
 import Header from "../../components/Header_New/Header";
 import Sidebar from "../../components/ScrollableBar";
+import { useTranslation } from '../../context/TranslationContext';
 
 
 import Select from "../../components/Selecttab";
 
-import { useTranslation } from "react-i18next";
+
 
 const Assessment_register = () => {
   const { t } = useTranslation();
@@ -479,46 +480,36 @@ case "familyAssets":
                   <div>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Business visa assessment
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Business visa assessment`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                        Find Out Your Eligibility for a Business or
-                        Self-Employed Permit in Sweden
-                      </strong>
+                      <strong>{t(`Find Out Your Eligibility for a Business or
+                        Self-Employed Permit in Sweden`)}</strong>
                     </h2>
                     <br/>
-                    <strong className="tw-text-gray">Who Should Fill Out the Assessment Form?</strong>
+                    <strong className="tw-text-gray">{t(`Who Should Fill Out the Assessment Form?`)}</strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Individuals currently in Sweden or applying from
-                          outside the country
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Individuals currently in Sweden or applying from
+                          outside the country`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Those who are studying in Sweden and looking to switch
-                          their residence permit track.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Those who are studying in Sweden and looking to switch
+                          their residence permit track.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Anyone considering applying for a business or
-                          self-employed permit in Sweden
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Anyone considering applying for a business or
+                          self-employed permit in Sweden`)}</p>
                       </li>
                     </ul>
 
@@ -526,50 +517,38 @@ case "familyAssets":
 <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Why
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Why`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Complete the Assessment Form?
-                      </strong>
+                      <strong>{t(`Complete the Assessment Form?`)}</strong>
                     </h2>
 
 
                    <br/>
-                    <p className="tw-text-gray">
-                      Filling out the assessment form allows us to gather
-                      essential details about:
-                    </p>
+                    <p className="tw-text-gray">{t(`Filling out the assessment form allows us to gather
+                      essential details about:`)}</p>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Your Business Experience: Information about your
-                          skills and expertise in the relevant field.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Your Business Experience: Information about your
+                          skills and expertise in the relevant field.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Financial Situation: Details of your financial
-                          capacity to support your business.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Financial Situation: Details of your financial
+                          capacity to support your business.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Business Plan: Insights into your proposed business
-                          idea, its viability, and potential for success.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Business Plan: Insights into your proposed business
+                          idea, its viability, and potential for success.`)}</p>
                       </li>
                     </ul>
 
@@ -577,14 +556,10 @@ case "familyAssets":
 <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      How
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      We Use the Information
-                      </strong>
+                      <strong>{t(`We Use the Information`)}</strong>
                     </h2>
 
                    <br/>
@@ -594,42 +569,34 @@ case "familyAssets":
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          We will evaluate your qualifications based on the
-                          provided details.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`We will evaluate your qualifications based on the
+                          provided details.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Our team will guide you through the next steps of the
-                          application process.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Our team will guide you through the next steps of the
+                          application process.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          We'll ensure you meet all the necessary requirements
-                          for a successful permit application.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`We'll ensure you meet all the necessary requirements
+                          for a successful permit application.`)}</p>
                       </li>
                     </ul>
 
-                    <h4>Get Started </h4>
-                    <p className=" tw-text-gray">
-                      Complete the assessment form to take the first step toward
-                      your business journey in Sweden!
-                    </p>
+                    <h4>{t(`Get Started`)}</h4>
+                    <p className=" tw-text-gray">{t(`Complete the assessment form to take the first step toward
+                      your business journey in Sweden!`)}</p>
                   </div>
 
                   {/* user info */}
                   <div>
                     {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">Personal Details</h5>
+                  <h5 className=" tw-text-black  ">{t(`Personal Details`)}</h5>
 
                   <h6 className=" tw-text-black ">
                     {" "}
@@ -686,14 +653,10 @@ case "familyAssets":
                      
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Educational & Business Background
-                      </strong>
+                      <strong>{t(`Educational & Business Background`)}</strong>
                     </h2>
                      
                      
@@ -1073,14 +1036,10 @@ case "familyAssets":
 
                           <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Business plan Assessment
-                      </strong>
+                      <strong>{t(`Business plan Assessment`)}</strong>
                     </h2>
                         </div>
 
@@ -1158,14 +1117,10 @@ case "familyAssets":
                           
                         <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Business plan Assessment
-                      </strong>
+                      <strong>{t(`Business plan Assessment`)}</strong>
                     </h2>
 
 
@@ -1556,14 +1511,10 @@ case "familyAssets":
                        
                       <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                     Language Skill
-                      </strong>
+                      <strong>{t(`Language Skill`)}</strong>
                     </h2>
                        
                         <div className="col-md-6 tw-pt-4">
@@ -1575,9 +1526,7 @@ case "familyAssets":
                             htmlFor="first_name"
                             className=" tw-block  tw-text-md  tw-pb-2.5 tw-text-gray"
                           >
-                            <a className=" tw-text-red-600 tw-font-semibold">
-                              *
-                            </a>{" "}
+                            <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                             Do you have Swedish Language Certificate?
                           </label> */}
                          <Select

@@ -8,7 +8,7 @@ import banner from "../../assets/images/credit-card.png";
 import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from '../../context/TranslationContext';
 
 import Sidebar from "../../components/ScrollableBar";
 
@@ -263,20 +263,15 @@ const PersonnumerSweden = () => {
                 <div className=" 2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      (Personnummer)
-                    </span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`(Personnummer)`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong className="tw-text-black">
-                      Applying for a Swedish Social Security Number
-                     :
-                      </strong>
+                      <strong className="tw-text-black">{t(`Applying for a Swedish Social Security Number
+                     :`)}</strong>
                     </h2>
                     <br />
 
-                    <p className="tw-text-gray">
-                      A personnummer is the personal identification number
+                    <p className="tw-text-gray">{t(`A personnummer is the personal identification number
                       assigned by the Swedish Tax Agency (Skatteverket) to
                       individuals registered as residents in Sweden. This unique
                       identifier is essential for everyday life in Sweden, as it
@@ -284,18 +279,17 @@ const PersonnumerSweden = () => {
                       various government services. Without a personnummer,
                       navigating Swedish systems can be challenging, as it is
                       the foundation for receiving a Swedish ID card and other
-                      vital services.
-                    </p>
+                      vital services.`)}</p>
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Why You
+                     {t(" Why You")}
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
                         {" "}
-                        Need a Personnummer
+                        {t("Need a Personnummer")}
                       </strong>
                     </h2>
 
@@ -323,12 +317,10 @@ const PersonnumerSweden = () => {
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4 tw-text-black">
-                            Access to Healthcare:
-                          </strong>
-                          <br /> The personnummer is required to register with
+                          <strong className="tw-pt-4 tw-text-black">{t(`Access to Healthcare:`)}</strong>
+                          <br /> {t(`The personnummer is required to register with
                           the healthcare system, enabling you to receive medical
-                          care at the standard rates for Swedish residents.
+                          care at the standard rates for Swedish residents.`)}
                           <br />
                           <br />
                         </p>
@@ -336,10 +328,8 @@ const PersonnumerSweden = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4 tw-text-black">
-                            Opening a Bank Account:
-                          </strong>
-                          <br /> In Sweden, having a personnummer is typically a
+                          <strong className="tw-pt-4 tw-text-black">{t(`Opening a Bank Account:`)}</strong>
+                          <br /> {t(`In Sweden, having a personnummer is typically a
                           prerequisite for opening a bank account. This account
                           is essential for managing everyday financial
                           activities, such as receiving salary payments, paying
@@ -347,7 +337,7 @@ const PersonnumerSweden = () => {
                           Without a bank account, it can be challenging to
                           navigate Sweden’s largely cashless economy, as most
                           transactions—both personal and professional—are
-                          conducted electronically.
+                          conducted electronically.`)}
                           <br />
                           <br />
                         </p>
@@ -370,18 +360,16 @@ const PersonnumerSweden = () => {
                         <div className="col-md-6">
                           <li>
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-pt-4 tw-text-black">
-                                Education and Social Services:
-                              </strong>{" "}
+                              <strong className="tw-pt-4 tw-text-black">{t(`Education and Social Services:`)}</strong>{" "}
                               <br />
-                              A personnummer plays a crucial role in accessing
+                             {t(` A personnummer plays a crucial role in accessing
                               both educational and social welfare systems in
                               Sweden. For children, it is essential for school
                               enrollment, enabling them to participate in
                               Sweden’s comprehensive education system. For
                               adults, the personnummer serves as a gateway to a
                               wide range of social services, such as applying
-                              for unemployment benefits.
+                              for unemployment benefits.`)}
                               <br />
                               <br />
                             </p>
@@ -391,17 +379,15 @@ const PersonnumerSweden = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4 tw-text-black">
-                            Swedish ID Card:
-                          </strong>{" "}
+                          <strong className="tw-pt-4 tw-text-black">{t(`Swedish ID Card:`)}</strong>{" "}
                           <br />
-                          Swedish ID Card: After obtaining a personnummer, you
+                         {t(` Swedish ID Card: After obtaining a personnummer, you
                           become eligible to apply for a Swedish ID card, which
                           serves as an official form of identification. This
                           card significantly simplifies various aspects of daily
                           life, such as verifying your identity when shopping,
                           collecting packages from postal services, or accessing
-                          public facilities and services.
+                          public facilities and services.`)}
                           <br />
                         </p>
                       </li>
@@ -424,17 +410,15 @@ const PersonnumerSweden = () => {
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4 tw-text-black">
-                            First Six Digits:
-                          </strong>
-                          <br /> The first six digits of the personnummer
+                          <strong className="tw-pt-4 tw-text-black">{t(`First Six Digits:`)}</strong>
+                          <br /> {t(`The first six digits of the personnummer
                           represent the individual’s birthdate in the format
                           YYMMDD. This means the numbers correspond to the year,
                           month, and day of birth, providing a clear and
                           standardized way to identify a person's date of birth
                           at a glance. This structure makes the personnummer
                           both practical and easy to interpret across various
-                          systems and services in Sweden.
+                          systems and services in Sweden.`)}
                           <br />
                           <br />
                         </p>
@@ -457,13 +441,11 @@ const PersonnumerSweden = () => {
                         <div className="col-md-6">
                           <li>
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-pt-4 tw-text-black">
-                                Last Four Digits:
-                              </strong>{" "}
+                              <strong className="tw-pt-4 tw-text-black">{t(`Last Four Digits:`)}</strong>{" "}
                               <br />
-                              Serve as a unique identifier, which also includes
+                            {t(`  Serve as a unique identifier, which also includes
                               information about gender. Odd numbers designate
-                              males, while even numbers designate females.
+                              males, while even numbers designate females.`)}
                               <br />
                               <br />
                             </p>
@@ -471,13 +453,11 @@ const PersonnumerSweden = () => {
 
                           <li>
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-pt-4 tw-text-black">
-                                Century Marker:
-                              </strong>
-                              <br /> A hyphen ("-") is used between the
+                              <strong className="tw-pt-4 tw-text-black">{t(`Century Marker:`)}</strong>
+                              <br /> {t(`A hyphen ("-") is used between the
                               birthdate and the unique identifier. When a person
                               turns 100, the hyphen is replaced with a plus sign
-                              (“+”) to distinguish their century of birth.
+                              (“+”) to distinguish their century of birth.`)}
                               <br />
                               <br />
                             </p>
@@ -487,18 +467,16 @@ const PersonnumerSweden = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-text-black">
-                            Coordination Number (samordningsnummer):
-                          </strong>{" "}
+                          <strong className="tw-text-black">{t(`Coordination Number (samordningsnummer):`)}</strong>{" "}
                           <br />
-                          For individuals who are staying temporarily in Sweden
+                          {t(`For individuals who are staying temporarily in Sweden
                           or do not have a registered residence, a Coordination
                           Number, known as a samordningsnummer, is issued. This
                           number serves as an alternative to the personnummer,
                           enabling access to essential services and integration
                           into administrative systems. It is structured
                           similarly to the personnummer, with the key difference
-                          being that 60 is added to the day of birth.
+                          being that 60 is added to the day of birth.`)}
                           <br />
                         </p>
                       </li>
@@ -508,9 +486,7 @@ const PersonnumerSweden = () => {
                   <div>
                     <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Steps to Apply for a Personnummer
-                    </span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Steps to Apply for a Personnummer`)}</span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
                         {" "}
@@ -519,21 +495,15 @@ const PersonnumerSweden = () => {
                     </h2>
 
                     <br />
-                    <p className="tw-text-gray">
-                      If you are planning to stay in Sweden for more than one
+                    <p className="tw-text-gray">{t(`If you are planning to stay in Sweden for more than one
                       year, you can apply for a personnummer at the local
-                      Skatteverket office. The requirements include:
-                    </p>
-                    <strong className="m-0 tw-text-black">
-                      Proof of Residence in Sweden
-                    </strong>
+                      Skatteverket office. The requirements include:`)}</p>
+                    <strong className="m-0 tw-text-black">{t(`Proof of Residence in Sweden`)}</strong>
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          You need to present documentation that confirms you’ll
+                        <p className="m-0 tw-text-gray">{t(`You need to present documentation that confirms you’ll
                           be living in Sweden for a year or longer, such as a
-                          residence permit.
-                        </p>
+                          residence permit.`)}</p>
                       </li>
                     </ul>
 
@@ -552,40 +522,30 @@ const PersonnumerSweden = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-black">
-                          Identification Documents
-                        </strong>
+                        <strong className="m-0 tw-text-black">{t(`Identification Documents`)}</strong>
                         <ul className="tw-p-0 tw-pl-0">
                           <li className="tw-flex tw-items-center tw-gap-3">
-                            <p className="m-0 tw-text-gray">
-                              A passport or national ID card is typically
+                            <p className="m-0 tw-text-gray">{t(`A passport or national ID card is typically
                               required. For non-EU citizens, additional
                               documentation such as a residence permit is often
-                              necessary.
-                            </p>
+                              necessary.`)}</p>
                           </li>
                         </ul>
-                        <strong className="m-0 tw-text-black">
-                          Supporting Documents for Family Members
-                        </strong>
+                        <strong className="m-0 tw-text-black">{t(`Supporting Documents for Family Members`)}</strong>
                         <ul className="tw-p-0 tw-pl-0">
                           <li className="tw-flex tw-items-center tw-gap-3">
-                            <p className="m-0 tw-text-gray">
-                              If you’re moving with your family, each family
+                            <p className="m-0 tw-text-gray">{t(`If you’re moving with your family, each family
                               member will need their identification documents
                               and proof of relationship (such as marriage or
-                              birth certificates).
-                            </p>
+                              birth certificates).`)}</p>
                           </li>
                         </ul>
                       </div>
                     </div>
 
-                    <p className="tw-text-gray">
-                      The approval process can vary, and it may take several
+                    <p className="tw-text-gray">{t(`The approval process can vary, and it may take several
                       weeks for your application to be processed. Once approved,
-                      you will receive your personnummer by post.
-                    </p>
+                      you will receive your personnummer by post.`)}</p>
                     <br />
 
                     <span className=" tw-flex tw-items-center tw-gap-2">
@@ -601,27 +561,21 @@ const PersonnumerSweden = () => {
                     </h2>
 
                     <br />
-                    <p className="tw-text-gray">
-                      Once you have your personnummer, you can apply for a
+                    <p className="tw-text-gray">{t(`Once you have your personnummer, you can apply for a
                       Swedish ID card, which further simplifies access to
                       various services and activities in Sweden. The ID card is
                       issued by Skatteverket and is recognized by banks,
-                      healthcare providers, and other institutions.
-                    </p>
-                    <strong className="m-0 tw-text-black">
-                      Requirements for Obtaining an ID Card
-                    </strong>
+                      healthcare providers, and other institutions.`)}</p>
+                    <strong className="m-0 tw-text-black">{t(`Requirements for Obtaining an ID Card`)}</strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-text-gray">
-                            Personnummer:
-                          </strong>{" "}
-                          Only residents with a personnummer can apply for the
-                          ID card.
+                          <strong className="tw-text-gray">{t(`Personnummer:`)}</strong>{" "}
+                         {t( `Only residents with a personnummer can apply for the
+                          ID card.`)}
                         </p>
                       </li>
 
@@ -630,11 +584,9 @@ const PersonnumerSweden = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-text-gray">
-                            Proof of Payment:
-                          </strong>{" "}
-                          A fee (currently around 400 SEK) must be paid before
-                          your appointment.
+                          <strong className="tw-text-gray">{t(`Proof of Payment:`)}</strong>{" "}
+                          {t(`A fee (currently around 400 SEK) must be paid before
+                          your appointment.`)}
                         </p>
                       </li>
 
@@ -643,23 +595,19 @@ const PersonnumerSweden = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-text-gray">
-                            Proof of Identity:
-                          </strong>{" "}
-                          If you are a new resident, Skatteverket may require a
+                          <strong className="tw-text-gray">{t(`Proof of Identity:`)}</strong>{" "}
+                          {t(`If you are a new resident, Skatteverket may require a
                           witness or additional documents to verify your
-                          identity.
+                          identity.`)}
                         </p>
                       </li>
                     </ul>
-                    <p className="tw-text-gray">
-                      The Swedish ID card provides a practical solution for
+                    <p className="tw-text-gray">{t(`The Swedish ID card provides a practical solution for
                       navigating daily life with ease. It allows you to verify
                       your identity in various situations, such as at banks,
                       when shopping, or signing important documents. It also
                       simplifies tasks like collecting packages from delivery
-                      points or accessing healthcare services
-                    </p>
+                      points or accessing healthcare services`)}</p>
 
                     <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
@@ -676,37 +624,25 @@ const PersonnumerSweden = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-black">
-                          Open and Manage Bank Accounts
-                        </strong>
+                        <strong className="m-0 tw-text-black">{t(`Open and Manage Bank Accounts`)}</strong>
                         <ul className="tw-p-0 ">
                           <li className="tw-flex tw-items-center tw-gap-3">
-                            <p className="m-0 tw-text-gray">
-                              Most banks in Sweden require the Swedish ID card
-                              as primary identification.
-                            </p>
+                            <p className="m-0 tw-text-gray">{t(`Most banks in Sweden require the Swedish ID card
+                              as primary identification.`)}</p>
                           </li>
                         </ul>
-                        <strong className="m-0 tw-text-black">
-                          Sign Up for Services and Contracts
-                        </strong>
+                        <strong className="m-0 tw-text-black">{t(`Sign Up for Services and Contracts`)}</strong>
                         <ul className="tw-p-0 ">
                           <li className="tw-flex tw-items-center tw-gap-3">
-                            <p className="m-0 tw-text-gray">
-                              From mobile phone plans to internet service,
-                              having a Swedish ID card simplifies verification.
-                            </p>
+                            <p className="m-0 tw-text-gray">{t(`From mobile phone plans to internet service,
+                              having a Swedish ID card simplifies verification.`)}</p>
                           </li>
                         </ul>
-                        <strong className="m-0 tw-text-black">
-                          Access Health Services Easily
-                        </strong>
+                        <strong className="m-0 tw-text-black">{t(`Access Health Services Easily`)}</strong>
                         <ul className="tw-p-0 ">
                           <li className="tw-flex tw-items-center tw-gap-3">
-                            <p className="m-0 tw-text-gray">
-                              The ID card is commonly used for identity
-                              verification in healthcare facilities.
-                            </p>
+                            <p className="m-0 tw-text-gray">{t(`The ID card is commonly used for identity
+                              verification in healthcare facilities.`)}</p>
                           </li>
                         </ul>
                       </div>
@@ -725,24 +661,18 @@ const PersonnumerSweden = () => {
                     </h2>
 
                     <br />
-                    <p className="tw-text-gray">
-                      Without a personnummer, integrating into Swedish society
+                    <p className="tw-text-gray">{t(`Without a personnummer, integrating into Swedish society
                       can be difficult, as most institutions and services are
                       designed to rely on this system. Common challenges
-                      include:
-                    </p>
-                    <strong className="m-0 tw-text-black">
-                      Banking Restrictions
-                    </strong>
+                      include:`)}</p>
+                    <strong className="m-0 tw-text-black">{t(`Banking Restrictions`)}</strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Most banks will not open an account for you without a
+                        <p className="m-0 tw-text-gray">{t(`Most banks will not open an account for you without a
                           personnummer and Swedish ID, and foreign
                           identification is often insufficient. This can make it
                           difficult to receive a salary, pay bills, or access
-                          financial services.
-                        </p>
+                          financial services.`)}</p>
                       </li>
                     </ul>
 
@@ -761,43 +691,31 @@ const PersonnumerSweden = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-black">
-                          Limited Access to Healthcare
-                        </strong>
+                        <strong className="m-0 tw-text-black">{t(`Limited Access to Healthcare`)}</strong>
                         <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                           <li className="tw-flex tw-items-center tw-gap-3">
-                            <p className="m-0 tw-text-gray">
-                              While emergency healthcare is available, many
+                            <p className="m-0 tw-text-gray">{t(`While emergency healthcare is available, many
                               regular services require a personnummer for full
-                              access and standard rates.
-                            </p>
+                              access and standard rates.`)}</p>
                           </li>
                         </ul>
 
-                        <strong className="m-0 tw-text-black">
-                          Difficulty in Renting Housing
-                        </strong>
+                        <strong className="m-0 tw-text-black">{t(`Difficulty in Renting Housing`)}</strong>
                         <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                           <li className="tw-flex tw-items-center tw-gap-3">
-                            <p className="m-0 tw-text-gray">
-                              Many landlords require a personnummer for signing
-                              lease agreements.
-                            </p>
+                            <p className="m-0 tw-text-gray">{t(`Many landlords require a personnummer for signing
+                              lease agreements.`)}</p>
                           </li>
                         </ul>
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-black">
-                      Educational Access for Children
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Educational Access for Children`)}</strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Enrolling children in school can be more complex
+                        <p className="m-0 tw-text-gray">{t(`Enrolling children in school can be more complex
                           without a personnummer, as it’s often required for
-                          school registration.
-                        </p>
+                          school registration.`)}</p>
                       </li>
                     </ul>
                     <br />
@@ -813,78 +731,54 @@ const PersonnumerSweden = () => {
                       </strong>
                     </h2>
                     <br />
-                    <p className="tw-text-gray">
-                      Navigating the personnummer application process can be
+                    <p className="tw-text-gray">{t(`Navigating the personnummer application process can be
                       complex, especially for foreign nationals unfamiliar with
                       Swedish administrative procedures. Sweden Relocators
-                      offers a full suite of services to simplify the process:
-                    </p>
-                    <strong className="m-0 tw-text-black">
-                      Document Preparation
-                    </strong>
+                      offers a full suite of services to simplify the process:`)}</p>
+                    <strong className="m-0 tw-text-black">{t(`Document Preparation`)}</strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          We ensure that you have all required documents,
+                        <p className="m-0 tw-text-gray">{t(`We ensure that you have all required documents,
                           including identity proof, residence permits, and any
-                          additional paperwork needed for family members.
-                        </p>
+                          additional paperwork needed for family members.`)}</p>
                       </li>
                     </ul>
-                    <strong className="m-0 tw-text-black">
-                      Application Assistance
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Application Assistance`)}</strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Our team provides step-by-step guidance for submitting
+                        <p className="m-0 tw-text-gray">{t(`Our team provides step-by-step guidance for submitting
                           your personnummer application and follows up with
-                          Skatteverket to address any issues or delays.
-                        </p>
+                          Skatteverket to address any issues or delays.`)}</p>
                       </li>
                     </ul>
-                    <strong className="m-0 tw-text-black">
-                      Swedish ID Card Application
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Swedish ID Card Application`)}</strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          Once your personnummer is approved, we help you apply
+                        <p className="m-0 tw-text-gray">{t(`Once your personnummer is approved, we help you apply
                           for your Swedish ID card, guiding you through the
-                          required steps and appointment scheduling.
-                        </p>
+                          required steps and appointment scheduling.`)}</p>
                       </li>
                     </ul>
-                    <strong className="m-0 tw-text-black">
-                      Bank Account Setup
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Bank Account Setup`)}</strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          With your personnummer and ID card, we assist you in
+                        <p className="m-0 tw-text-gray">{t(`With your personnummer and ID card, we assist you in
                           opening a Swedish bank account, ensuring you meet all
-                          necessary requirements for a smooth process.
-                        </p>
+                          necessary requirements for a smooth process.`)}</p>
                       </li>
                     </ul>
-                    <strong className="m-0 tw-text-black">
-                      Coordination Number Assistance
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Coordination Number Assistance`)}</strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
-                        <p className="m-0 tw-text-gray">
-                          If you are staying temporarily in Sweden, we also help
+                        <p className="m-0 tw-text-gray">{t(`If you are staying temporarily in Sweden, we also help
                           you obtain a Coordination Number, facilitating access
-                          to services for short-term residents.
-                        </p>
+                          to services for short-term residents.`)}</p>
                       </li>
                     </ul>
-                    <p className="tw-text-gray">
-                      With Sweden Relocators, you’ll have the expert support
+                    <p className="tw-text-gray">{t(`With Sweden Relocators, you’ll have the expert support
                       needed to navigate the personnummer and Swedish ID
                       processes, ensuring that you can access essential services
-                      smoothly and start your new life in Sweden with ease.
-                    </p>
+                      smoothly and start your new life in Sweden with ease.`)}</p>
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
@@ -892,36 +786,32 @@ const PersonnumerSweden = () => {
                       Be sure to
                     </span>
                     <h2 className="tw-text-left">
-                      <strong className="tw-text-black">Contact Us </strong>
+                      <strong className="tw-text-black">{t(`Contact Us`)}</strong>
                     </h2>
                     <br />
-                    <p className="tw-text-gray">
-                      Securing your personnummer and Swedish ID card is an
+                    <p className="tw-text-gray">{t(`Securing your personnummer and Swedish ID card is an
                       essential first step for anyone relocating to Sweden.
                       Contact Sweden Relocators today to learn more about how we
                       can assist you with the application process, ensuring a
                       smooth transition into the Swedish system and allowing you
-                      to fully enjoy life in Sweden.
-                    </p>
+                      to fully enjoy life in Sweden.`)}</p>
 
                     <Link to="/register" className="tw-text-center tw-pt-4">
                     <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                           Sign Up{" "}
                         </strong>
-                        <strong className="tw-text-black"> Today!</strong>
+                        <strong className="tw-text-black">{t(`Today!`)}</strong>
                       </h5>
                     </Link>
                     <br />
-                    <p className="tw-text-gray">
-                      Sign up today and simplify your journey! Whether you're
+                    <p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
                       seeking assistance with relocation, permits, visas, legal
                       processes, or settling into a new life, we're here to
                       help. Our comprehensive services cover everything from
                       work and study opportunities to family reunifications,
                       business support, and much more. Let us guide you every
-                      step of the way—start your seamless experience now!
-                    </p>
+                      step of the way—start your seamless experience now!`)}</p>
                   </div>
                 </div>
               </div>

@@ -207,6 +207,11 @@ i {
 }
 
 @media screen and (max-width: 992px) {
+
+  html
+  {
+    overflow-x: hidden !important;
+  }
   .hover-dropdown:hover .dropdown-menu {
     display: block;
     position: unset !important;

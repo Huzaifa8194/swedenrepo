@@ -8,7 +8,7 @@ import banner from "../../assets/images/man-searching-air-ticket-for-summer-trav
 import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from '../../context/TranslationContext';
 import Header from "../../components/Header_New/Header";
 import Sidebar from "../../components/ScrollableBar";
 
@@ -258,15 +258,12 @@ const GlobalVisitVisas = () => {
                 <div className="  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Greece and Portugal
-                    </span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Greece and Portugal`)}</span>
                     <h2 className="tw-text-left">
-                      <strong className="tw-text-black"> Your Pathway to European Residency</strong>
+                      <strong className="tw-text-black">{t(`Your Pathway to European Residency`)}</strong>
                     </h2>
                     <br></br>
-                    <p className="tw-text-gray">
-                      Golden Visa programs in Greece and Portugal provide a
+                    <p className="tw-text-gray">{t(`Golden Visa programs in Greece and Portugal provide a
                       unique opportunity for non-EU investors to secure
                       residency in these countries through investment. These
                       programs allow investors and their families to enjoy the
@@ -275,8 +272,7 @@ const GlobalVisitVisas = () => {
                       education and healthcare, and, after a certain period,
                       eligibility for citizenship. Here’s a comprehensive guide
                       to both programs, designed to help you make an informed
-                      decision about investing in Greece or Portugal.
-                    </p>
+                      decision about investing in Greece or Portugal.`)}</p>
                     <br />
 
                     <span className=" tw-flex tw-items-center tw-gap-2">
@@ -285,7 +281,7 @@ const GlobalVisitVisas = () => {
                       Greece
                     </span>
                     <h2 className="tw-text-left">
-                      <strong className="tw-text-black"> Golden Visa Program</strong>
+                      <strong className="tw-text-black">{t(`Golden Visa Program`)}</strong>
                     </h2>
 
                     <br />
@@ -308,7 +304,7 @@ const GlobalVisitVisas = () => {
                         <div className="col-md-6">
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-text-black">Why Choose Greece?</strong> Greece, with
+                              <strong className="tw-text-black">{t(`Why Choose Greece?`)}</strong> Greece, with
                               its rich historical legacy, Mediterranean climate,
                               and vibrant culture, has become one of the most
                               desirable locations for investors seeking
@@ -326,7 +322,7 @@ const GlobalVisitVisas = () => {
                           </li>
                         </div>
                       </div>
-                      <strong className="tw-text-black">Key Benefits of the Greece Golden Visa:</strong>
+                      <strong className="tw-text-black">{t(`Key Benefits of the Greece Golden Visa:`)}</strong>
 
                       <li>
                         <p className="m-0 tw-text-gray">
@@ -337,9 +333,7 @@ const GlobalVisitVisas = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-text-gray">
-                            Investment Options for the Greek Golden Visa:
-                          </strong>{" "}
+                          <strong className="tw-text-gray">{t(`Investment Options for the Greek Golden Visa:`)}</strong>{" "}
                           <br />
                           The primary route for obtaining a Greek Golden Visa is
                           through real estate investment, with a minimum
@@ -385,14 +379,14 @@ const GlobalVisitVisas = () => {
                       Portugal
                     </span>
                     <h2 className="tw-text-left">
-                      <strong className="tw-text-black"> Golden Visa Program</strong>
+                      <strong className="tw-text-black">{t(`Golden Visa Program`)}</strong>
                     </h2>
                     <br />
 
                     <ul className="tw-p-0 ">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-text-black">Why Choose Portugal?</strong><br/> Portugal offers
+                          <strong className="tw-text-black">{t(`Why Choose Portugal?`)}</strong><br/> Portugal offers
                           a high standard of living, a mild climate, excellent
                           infrastructure, and a strong, stable economy, making
                           it one of Europe’s top destinations for residency by
@@ -409,9 +403,7 @@ const GlobalVisitVisas = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-text-black">
-                            Key Benefits of the Portugal Golden Visa:
-                          </strong>
+                          <strong className="tw-text-black">{t(`Key Benefits of the Portugal Golden Visa:`)}</strong>
                           <ul className="tw-pl-0">
                             <li className=" tw-flex  tw-gap-3">
                               <div>
@@ -487,9 +479,7 @@ const GlobalVisitVisas = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-text-black">
-                            Investment Options for the Portuguese Golden Visa:
-                          </strong>
+                          <strong className="tw-text-black">{t(`Investment Options for the Portuguese Golden Visa:`)}</strong>
                           <ul className="tw-pl-0">
                             <li className=" tw-flex  tw-gap-3">
                               <div>
@@ -502,9 +492,7 @@ const GlobalVisitVisas = () => {
                               <br />
                               €350,000: Investment in properties older than 30
                               years or in urban renewal areas.
-                              <br />
-                              €280,000: Investment in low-density areas.
-                            </li>
+                              <br />{t(`€280,000: Investment in low-density areas.`)}</li>
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
@@ -534,23 +522,17 @@ const GlobalVisitVisas = () => {
                       <br />
 
                       <span className="tw-flex tw-items-center tw-gap-2">
-                        <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                        Steps to
-                      </span>
+                        <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Steps to`)}</span>
                       <h2 className="tw-text-left">
-                        <strong className="tw-text-black"> Apply for a Golden Visa</strong>
+                        <strong className="tw-text-black">{t(`Apply for a Golden Visa`)}</strong>
                       </h2>
 
                       <br />
-                      <p className="tw-text-gray">
-                        Applying for a Golden Visa involves several important
+                      <p className="tw-text-gray">{t(`Applying for a Golden Visa involves several important
                         steps to ensure a smooth and successful process. Here’s
-                        what to expect:
-                      </p>
+                        what to expect:`)}</p>
 
-                      <strong className="m-0 tw-text-black">
-                        Consultation and Investment Selection
-                      </strong>
+                      <strong className="m-0 tw-text-black">{t(`Consultation and Investment Selection`)}</strong>
 
                       <ul className="tw-p-0 ">
                         <li className=" tw-flex  tw-gap-3">
@@ -558,10 +540,9 @@ const GlobalVisitVisas = () => {
                             <GoTriangleRight className=" tw-text-blue" />
                           </div>
                           <p className="m-0 tw-text-gray">
-                            <>Decide on the investment option:</> Work with
+                            <>Decide on the investment option:</>{t(`Work with
                             professional advisors to choose the investment that
-                            aligns with your financial goals and lifestyle.
-                          </p>
+                            aligns with your financial goals and lifestyle.`)}</p>
                         </li>
 
                         <li className=" tw-flex  tw-gap-3">
@@ -569,10 +550,9 @@ const GlobalVisitVisas = () => {
                             <GoTriangleRight className=" tw-text-blue" />
                           </div>
                           <p className="m-0 tw-text-gray">
-                            <>Document Preparation and Due Diligence:</> Collect
+                            <>Document Preparation and Due Diligence:</>{t(`Collect
                             necessary documents, such as proof of funds,
-                            background checks, and identification.
-                          </p>
+                            background checks, and identification.`)}</p>
                         </li>
                         <div className="row tw-flex tw-items-center">
                           <div className="col-md-6">
@@ -594,10 +574,9 @@ const GlobalVisitVisas = () => {
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
                               <p className="m-0 tw-text-gray">
-                                <>Investment Completion:</> Finalize your chosen
+                                <>Investment Completion:</>{t(`Finalize your chosen
                                 investment (e.g., real estate purchase or
-                                capital transfer).
-                              </p>
+                                capital transfer).`)}</p>
                             </li>
 
                             <li className=" tw-flex  tw-gap-3">
@@ -605,10 +584,9 @@ const GlobalVisitVisas = () => {
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
                               <p className="m-0 tw-text-gray">
-                                <>Application Submission:</> Submit the Golden
+                                <>Application Submission:</>{t(`Submit the Golden
                                 Visa application through the official government
-                                channels.
-                              </p>
+                                channels.`)}</p>
                             </li>
 
                             <li className=" tw-flex  tw-gap-3">
@@ -616,10 +594,9 @@ const GlobalVisitVisas = () => {
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
                               <p className="m-0 tw-text-gray">
-                                <>Biometric Appointment:</> Schedule and attend
+                                <>Biometric Appointment:</>{t(`Schedule and attend
                                 an appointment for biometric data collection to
-                                complete the residency process.
-                              </p>
+                                complete the residency process.`)}</p>
                             </li>
 
                             <li className=" tw-flex  tw-gap-3">
@@ -627,9 +604,8 @@ const GlobalVisitVisas = () => {
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
                               <p className="m-0 tw-text-gray">
-                                <>Residence Permit Issuance:</> Once approved,
-                                receive your Golden Visa residence permit.
-                              </p>
+                                <>Residence Permit Issuance:</>{t(`Once approved,
+                                receive your Golden Visa residence permit.`)}</p>
                             </li>
                           </div>
                         </div>
@@ -638,10 +614,9 @@ const GlobalVisitVisas = () => {
                             <GoTriangleRight className=" tw-text-blue" />
                           </div>
                           <p className="m-0 tw-text-gray">
-                            <>Renewal and Maintenance:</> Both Greece and
+                            <>Renewal and Maintenance:</>{t(`Both Greece and
                             Portugal require periodic renewals and maintaining
-                            minimum residency to keep the permit active.
-                          </p>
+                            minimum residency to keep the permit active.`)}</p>
                         </li>
                       </ul>
 
@@ -652,14 +627,14 @@ const GlobalVisitVisas = () => {
                         Additional Considerations
                       </span>
                       <h2 className="tw-text-left">
-                        <strong className="tw-text-black"> For Investors </strong>
+                        <strong className="tw-text-black">{t(`For Investors`)}</strong>
                       </h2>
                       <br />
 
                       <ul className="tw-p-0 ">
                         <li className="tw-flex tw-items-center tw-gap-3">
                           <p className="m-0 tw-text-gray">
-                            <strong className="tw-text-black">Tax Benefits and Planning:</strong>
+                            <strong className="tw-text-black">{t(`Tax Benefits and Planning:`)}</strong>
                             <br /> Greece and Portugal both offer tax advantages
                             for foreign residents. Portugal’s Non-Habitual
                             Resident (NHR) program is especially appealing, with
@@ -673,7 +648,7 @@ const GlobalVisitVisas = () => {
 
                         <li>
                           <p className="m-0 tw-text-gray">
-                            <strong className="tw-text-black">Healthcare and Education:</strong> <br />
+                            <strong className="tw-text-black">{t(`Healthcare and Education:`)}</strong> <br />
                             Both countries provide high-quality healthcare and
                             educational options. Portugal stands out for its
                             international and private schools with English
@@ -687,7 +662,7 @@ const GlobalVisitVisas = () => {
 
                         <li>
                           <p className="m-0 tw-text-gray">
-                            <strong className="tw-text-black">Lifestyle and Language:</strong>
+                            <strong className="tw-text-black">{t(`Lifestyle and Language:`)}</strong>
                             <br /> Greece is known for its rich cultural
                             heritage, Mediterranean climate, and active social
                             life. Basic Greek can be beneficial, though English
@@ -710,20 +685,18 @@ const GlobalVisitVisas = () => {
                           <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                             Sign Up{" "}
                           </strong>
-                          <strong className="tw-text-black"> Today!</strong>
+                          <strong className="tw-text-black">{t(`Today!`)}</strong>
                         </h5>
                       </Link>
                       <br />
-                      <p className="tw-text-gray">
-                        Sign up today and simplify your journey! Whether you're
+                      <p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
                         seeking assistance with relocation, permits, visas,
                         legal processes, or settling into a new life, we're here
                         to help. Our comprehensive services cover everything
                         from work and study opportunities to family
                         reunifications, business support, and much more. Let us
                         guide you every step of the way—start your seamless
-                        experience now!
-                      </p>
+                        experience now!`)}</p>
                     </div>
                   </div>
                 </div>

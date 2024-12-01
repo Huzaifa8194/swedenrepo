@@ -29,7 +29,7 @@ const New_Listings = ({
 
   return (
     <div className=" tw-bg-[#F5FAFF] tw-py-12">
-      <div className=" tw-container md:tw-px-12 tw-px-6  tw-mx-auto">
+      <div className=" md:tw-container md:tw-px-12 tw-px-6  tw-mx-auto">
         <h3>
           <storng className=" tw-font-semibold">New Listings</storng>
         </h3>

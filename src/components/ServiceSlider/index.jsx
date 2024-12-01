@@ -18,25 +18,12 @@ import './style/main.css';
 import './style/megamenu.css';
 import './style/responsive.css';
 import "./Slider.css"
+import { useTranslation } from '../../context/TranslationContext';
 
-const slides = [
-  {
-    title: "TRAVELS IMMIGARTATION & VISA",
-    subtitle: "World Brilliant Student Immigration & Visa Company",
-    image: video1,
-    buttonLabel: "Book a consultation!",
-    buttonLabel2: "Contact Us",
-  },
-  {
-    title: "Welcome To The Fastest Way",
-    subtitle: "Get A Visa & Immigration",
-    image: video1,
-    buttonLabel: "Book a consultation!",
-    buttonLabel2: "Contact Us",
-  },
-];
+
 
 const ServiceSlider = () => {
+  const {t} = useTranslation();
   const settings = {
     dots: false,
     arrows: true,
@@ -47,6 +34,26 @@ const ServiceSlider = () => {
     autoplay: true,
     autoplaySpeed: 3000,
   };
+
+  const slides = [
+    {
+      title: t("TRAVELS IMMIGARTATION & VISA"),
+      subtitle: t("World Brilliant Student Immigration & Visa Company"),
+      image: video1,
+      buttonLabel: t("Book a consultation!"),
+      buttonLabel2: t("Contact Us"),
+    },
+    {
+      title: t("Welcome To The Fastest Way"),
+      subtitle: t("Get A Visa & Immigration"),
+      image: video1,
+      buttonLabel: t("Book a consultation!"),
+      buttonLabel2: t("Contact Us"),
+    },
+  ];
+  
+
+
 
   return (
     <>

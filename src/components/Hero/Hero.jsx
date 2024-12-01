@@ -4,7 +4,7 @@ import { fadeIn, staggerContainer } from '../../utils/motion';
 import { Link } from 'react-router-dom';
 import VideoPlayer from '../videoPlayer';
 import video1 from '../../assets/images/hero_video.mp4';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '../../context/TranslationContext';
 
 
 

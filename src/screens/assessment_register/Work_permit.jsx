@@ -13,7 +13,8 @@ import { TfiAngleLeft } from "react-icons/tfi";
 import { Link, useParams } from "react-router-dom";
 import Assessment_modal from "./Assessment_modal";
 
-import { useTranslation } from "react-i18next";
+import { useTranslation } from '../../context/TranslationContext';
+
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
 import Header from "../../components/Header_New/Header";
@@ -466,203 +467,161 @@ const [assetRange, setAssetRange] = useState("");
                   <div>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Work Permit assessment
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Work Permit assessment`)}</span>
 
                     <h2 className = "tw-text-left">
-                      <strong>
-                        Find Out Your Eligibility for a Work Permit in Sweden
-                      </strong>
+                      <strong>{t(`Find Out Your Eligibility for a Work Permit in Sweden`)}</strong>
                     </h2>
                     <br />
-                    <strong className="tw-text-gray">
-                      Who Should Use This Tool?
-                    </strong>
+                    <strong className="tw-text-gray">{t(`Who Should Use This Tool?`)}</strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Individuals applying for a Working Holiday permit to
-                          live and work temporarily in Sweden
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Individuals applying for a Working Holiday permit to
+                          live and work temporarily in Sweden`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Individuals and families seeking an AU Pair permit for
-                          cultural exchange opportunities in Sweden.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Individuals and families seeking an AU Pair permit for
+                          cultural exchange opportunities in Sweden.`)}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Students in Sweden who are looking to switch from a
-                          student permit to a work permit.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Students in Sweden who are looking to switch from a
+                          student permit to a work permit.`)}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Applicants switching from a business permit to a work
-                          permit route.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Applicants switching from a business permit to a work
+                          permit route.`)}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Individuals applying for a work permit after an asylum
-                          application refusal.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Individuals applying for a work permit after an asylum
+                          application refusal.`)}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Berry pickers and other seasonal workers seeking a
-                          work permit in Sweden.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Berry pickers and other seasonal workers seeking a
+                          work permit in Sweden.`)}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Anyone applying for a work permit from inside or
-                          outside of Sweden.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Anyone applying for a work permit from inside or
+                          outside of Sweden.`)}</p>
                       </li>
                     </ul>
 
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Why
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Why`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>Use the Eligibility Tool?</strong>
+                      <strong>{t(`Use the Eligibility Tool?`)}</strong>
                     </h2>
                     <br />
 
-                    <p className="tw-text-gray">
-                      This tool is designed to help you understand the
+                    <p className="tw-text-gray">{t(`This tool is designed to help you understand the
                       requirements and eligibility criteria for obtaining a work
                       permit in Sweden by collecting important information such
-                      as:
-                    </p>
+                      as:`)}</p>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Your Current Status: Whether you are already in Sweden
-                          or applying from abroad.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Your Current Status: Whether you are already in Sweden
+                          or applying from abroad.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Type of Work Permit: Details about the specific permit
+                        <p className=" m-0 tw-text-gray">{t(`Type of Work Permit: Details about the specific permit
                           you are applying for (e.g., Working Holiday, AU Pair,
-                          seasonal work).
-                        </p>
+                          seasonal work).`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Previous Permits: Information on any previous permits
+                        <p className=" m-0 tw-text-gray">{t(`Previous Permits: Information on any previous permits
                           you have held, such as student or business permits,
-                          and your current status in Sweden.
-                        </p>
+                          and your current status in Sweden.`)}</p>
                       </li>
                     </ul>
 
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Complete
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Complete`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>Visa and Permit Application Support</strong>
+                      <strong>{t(`Visa and Permit Application Support`)}</strong>
                     </h2>
                     <br />
 
-                    <p className="tw-text-gray">
-                      We offer comprehensive support for your move to Sweden
-                      through our web portal and app:
-                    </p>
+                    <p className="tw-text-gray">{t(`We offer comprehensive support for your move to Sweden
+                      through our web portal and app:`)}</p>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Comprehensive Documentation: We prepare all the
+                        <p className=" m-0 tw-text-gray">{t(`Comprehensive Documentation: We prepare all the
                           necessary documents for your application, ensuring
-                          full compliance with Swedish regulations
-                        </p>
+                          full compliance with Swedish regulations`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Appointment Scheduling: We handle the booking of
+                        <p className=" m-0 tw-text-gray">{t(`Appointment Scheduling: We handle the booking of
                           appointments with relevant authorities to streamline
-                          your application process.
-                        </p>
+                          your application process.`)}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Digital Access: Access your complete application file
+                        <p className=" m-0 tw-text-gray">{t(`Digital Access: Access your complete application file
                           directly through our web portal or app, where you can
                           view, download, and print all required documents with
-                          ease.
-                        </p>
+                          ease.`)}</p>
                       </li>
                     </ul>
 
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      How
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>We Use the Information</strong>
+                      <strong>{t(`We Use the Information`)}</strong>
                     </h2>
                     <br />
 
@@ -671,57 +630,47 @@ const [assetRange, setAssetRange] = useState("");
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          We will assess your information to determine your
-                          eligibility for a work permit in Sweden.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`We will assess your information to determine your
+                          eligibility for a work permit in Sweden.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Our team will guide you through the entire application
-                          process using our digital tools.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Our team will guide you through the entire application
+                          process using our digital tools.`)}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          We ensure that you meet all necessary requirements to
-                          successfully obtain your work permit in Sweden.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`We ensure that you meet all necessary requirements to
+                          successfully obtain your work permit in Sweden.`)}</p>
                       </li>
                     </ul>
 
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>Get Started</strong>
+                      <strong>{t(`Get Started`)}</strong>
                     </h2>
                     <br />
 
-                    <p className=" tw-text-gray">
-                      Use the eligibility tool on our web portal or app to take
+                    <p className=" tw-text-gray">{t(`Use the eligibility tool on our web portal or app to take
                       the first step toward your work journey in Sweden, whether
                       you’re applying from within the country or
-                      internationally!
-                    </p>
+                      internationally!`)}</p>
                   </div>
 
                   {/*end*/}
 
                   <div>
                     {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">Personal Details</h5>
+                  <h5 className=" tw-text-black  ">{t(`Personal Details`)}</h5>
 
                   <h6 className=" tw-text-black ">
                     {" "}
@@ -774,12 +723,10 @@ const [assetRange, setAssetRange] = useState("");
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black ">
                         <span className=" tw-flex tw-items-center tw-gap-2">
                           {" "}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                          Fill in your
-                        </span>
+                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                         <h2 className="tw-text-left">
-                          <strong>Work Permit Categories</strong>
+                          <strong>{t(`Work Permit Categories`)}</strong>
                         </h2>
 
                         <div className="col-md-6 tw-pt-4">
@@ -807,12 +754,10 @@ const [assetRange, setAssetRange] = useState("");
                           <div className="col-md-12">
                             <span className=" tw-flex tw-items-center tw-gap-2">
                               {" "}
-                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                              Fill in your
-                            </span>
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                             <h2 className="tw-text-left">
-                              <strong>Educational Background</strong>
+                              <strong>{t(`Educational Background`)}</strong>
                             </h2>
                           </div>
                           <div className="col-md-6 tw-pt-4">
@@ -852,12 +797,10 @@ const [assetRange, setAssetRange] = useState("");
                             <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
                               <span className=" tw-flex tw-items-center tw-gap-2">
                                 {" "}
-                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                                Fill in your
-                              </span>
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                               <h2 className="tw-text-left">
-                                <strong>Work Expierence In Your Field</strong>
+                                <strong>{t(`Work Expierence In Your Field`)}</strong>
                               </h2>
                             </div>
                           </div>
@@ -897,12 +840,10 @@ const [assetRange, setAssetRange] = useState("");
                             <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
                               <span className=" tw-flex tw-items-center tw-gap-2">
                                 {" "}
-                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                                Fill in your
-                              </span>
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                               <h2 className="tw-text-left">
-                                <strong>Residence and Work Permit</strong>
+                                <strong>{t(`Residence and Work Permit`)}</strong>
                               </h2>
                             </div>
                           </div>
@@ -942,14 +883,10 @@ const [assetRange, setAssetRange] = useState("");
                             <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
                               <span className=" tw-flex tw-items-center tw-gap-2">
                                 {" "}
-                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                                Fill in
-                              </span>
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in`)}</span>
 
                               <h2 className="tw-text-left">
-                                <strong>
-                                  Are you Applying for your Family
-                                </strong>
+                                <strong>{t(`Are you Applying for your Family`)}</strong>
                               </h2>
                             </div>
                           </div>
@@ -991,12 +928,10 @@ const [assetRange, setAssetRange] = useState("");
                             <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
                               <span className=" tw-flex tw-items-center tw-gap-2">
                                 {" "}
-                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                                Fill in your
-                              </span>
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                               <h2 className="tw-text-left">
-                                <strong>AU Pair</strong>
+                                <strong>{t(`AU Pair`)}</strong>
                               </h2>
                             </div>
                           </div>
@@ -1108,12 +1043,10 @@ const [assetRange, setAssetRange] = useState("");
                             <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
                               <span className=" tw-flex tw-items-center tw-gap-2">
                                 {" "}
-                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                                Fill in your
-                              </span>
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                               <h2 className="tw-text-left">
-                                <strong>Working Holidays</strong>
+                                <strong>{t(`Working Holidays`)}</strong>
                               </h2>
                             </div>
                           </div>
@@ -1197,12 +1130,10 @@ const [assetRange, setAssetRange] = useState("");
                             <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
                               <span className=" tw-flex tw-items-center tw-gap-2">
                                 {" "}
-                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                                Fill in your
-                              </span>
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                               <h2 className="tw-text-left">
-                                <strong>Asylum Work Permit</strong>
+                                <strong>{t(`Asylum Work Permit`)}</strong>
                               </h2>
                             </div>
                           </div>
@@ -1352,12 +1283,10 @@ const [assetRange, setAssetRange] = useState("");
                             <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
                               <span className=" tw-flex tw-items-center tw-gap-2">
                                 {" "}
-                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                                Fill in your
-                              </span>
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                               <h2 className="tw-text-left">
-                                <strong>Student and Work Permit</strong>
+                                <strong>{t(`Student and Work Permit`)}</strong>
                               </h2>
                             </div>
                           </div>
@@ -1415,14 +1344,10 @@ const [assetRange, setAssetRange] = useState("");
                               <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
                                 <span className=" tw-flex tw-items-center tw-gap-2">
                                   {" "}
-                                  <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                                  Fill in your
-                                </span>
+                                  <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                                 <h2 className="tw-text-left">
-                                  <strong>
-                                    EU Long Term Residence/Permanent Residence
-                                  </strong>
+                                  <strong>{t(`EU Long Term Residence/Permanent Residence`)}</strong>
                                 </h2>
                               </div>
                             </div>

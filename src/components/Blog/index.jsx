@@ -5,9 +5,10 @@ import blog3 from '../../assets/images/blog/b3.png';
 import blog4 from '../../assets/images/blog/b4.png';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import { t } from 'i18next';
+import { useTranslation } from '../../context/TranslationContext';
 
 const Blog = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const data = [
     {

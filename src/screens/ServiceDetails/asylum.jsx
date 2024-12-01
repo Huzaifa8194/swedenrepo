@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { imageVariants } from "../../utils/motion";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from "../../context/TranslationContext";
 import Header from "../../components/Header_New/Header";
 
 import ap1 from "../../assets/iconscout/ap1.png";
@@ -18,7 +18,6 @@ import ap3 from "../../assets/iconscout/ap3.png";
 import ap4 from "../../assets/iconscout/ap4.png";
 
 import Sidebar from "../../components/ScrollableBar";
-
 
 const ServiceDetails = () => {
   const { t } = useTranslation();
@@ -265,17 +264,15 @@ const ServiceDetails = () => {
                       <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                        Comprehensive Assistance to Overturn Decisions
+                        {t(`Comprehensive Assistance to Overturn Decisions`)}
                       </span>
                       <h2 className="tw-text-left">
-                        <strong>
-                          Appeal Process for a Denied Permit or Visa in Sweden
-                        </strong>
+                        <strong>{t(`Appeal Process for a Denied Permit or Visa in Sweden`)}</strong>
                       </h2>
                       <br />
 
                       <p className=" tw-text-gray tw-">
-                        If you have been denied entry or residency in
+                        {t(` If you have been denied entry or residency in
                         Sweden—whether it’s for family reunification, a
                         residence permit, business visa, citizenship, or other
                         types of permits you have the right to appeal the
@@ -283,14 +280,14 @@ const ServiceDetails = () => {
                         (Migrationsverket). Navigating the appeal process can be
                         complex, and having an experienced professional by your
                         side can significantly increase your chances of a
-                        positive outcome.
+                        positive outcome.`)}
                         <br />
                         <br />
-                        Sweden Relocators specializes in helping clients appeal
+                        {t(` Sweden Relocators specializes in helping clients appeal
                         Migration Agency decisions. With our in-depth
                         understanding of the appeal process, we provide expert
                         guidance and support, giving you the best opportunity to
-                        have your case reconsidered and, ideally, reversed.
+                        have your case reconsidered and, ideally, reversed.`)}
                       </p>
                     </div>
                     <br />
@@ -316,11 +313,10 @@ const ServiceDetails = () => {
                             Why Appeals are
                           </span>
                           <h2 className="tw-text-left">
-                            <strong>Increasingly Necessary</strong>
+                            <strong>{t(`Increasingly Necessary`)}</strong>
                           </h2>
                           <br />
-                          <p className=" tw-text-gray tw-">
-                            Since the refugee crisis, Swedish authorities have
+                          <p className=" tw-text-gray tw-">{t(`Since the refugee crisis, Swedish authorities have
                             tightened the requirements for permits, making it
                             more challenging to gain entry or residence in
                             Sweden. Many applicants are denied permits due to
@@ -330,8 +326,7 @@ const ServiceDetails = () => {
                             cases, helping clients obtain permits even after
                             initial denials. Our aim is to assist you in
                             challenging the decision and restoring your
-                            opportunity to live or work in Sweden.
-                          </p>
+                            opportunity to live or work in Sweden.`)}</p>
                         </div>
                       </div>
 
@@ -344,16 +339,14 @@ const ServiceDetails = () => {
                       How to Start
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>The Appeal Process</strong>
+                      <strong>{t(`The Appeal Process`)}</strong>
                     </h2>
                     <br></br>
-                    <p className=" tw-text-gray">
-                      To appeal a denied decision, you must submit a written
+                    <p className=" tw-text-gray">{t(`To appeal a denied decision, you must submit a written
                       appeal in Swedish or English. This document needs to
                       include specific information and must be signed by the
                       applicant or an authorized representative. Here’s how to
-                      begin:
-                    </p>
+                      begin:`)}</p>
 
                     {/* <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
@@ -383,30 +376,24 @@ const ServiceDetails = () => {
                         What to Include in
                       </span>
                       <h2 className="tw-text-left">
-                        <strong>The Appeal Letter</strong>
+                        <strong>{t(`The Appeal Letter`)}</strong>
                       </h2>
                       <br />
 
-                      <p className=" tw-text-gray">
-                        In your appeal letter, you should clearly state:
-                      </p>
+                      <p className=" tw-text-gray">{t(`In your appeal letter, you should clearly state:`)}</p>
 
-                      <strong className="tw-text-black">
-                        Decision to be Appealed:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Decision to be Appealed:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Clearly outline the specific decision you are
+                          <p className=" m-0 tw-text-gray">{t(`Clearly outline the specific decision you are
                             contesting, providing as much detail as possible.
                             This includes identifying the exact ruling, action,
                             or determination made by the responsible authority
                             or organization that you believe is incorrect or
                             unjust. Be sure to mention any relevant dates,
                             reference numbers, or case identifiers associated
-                            with the decision to ensure clarity.
-                          </p>
+                            with the decision to ensure clarity.`)}</p>
                         </li>
                       </ul>
 
@@ -425,43 +412,31 @@ const ServiceDetails = () => {
                           </div>
                         </div>
                         <div className="col-md-6">
-                          <strong className="tw-text-black">
-                            Requested Change:
-                          </strong>
+                          <strong className="tw-text-black">{t(`Requested Change:`)}</strong>
 
                           <ul className=" tw-p-0 ">
                             <li className=" tw-flex tw-items-center tw-gap-3">
-                              <p className=" m-0 tw-text-gray">
-                                Clearly state how you would like the decision to
-                                be changed (e.g., approval of the permit).
-                              </p>
+                              <p className=" m-0 tw-text-gray">{t(`Clearly state how you would like the decision to
+                                be changed (e.g., approval of the permit).`)}</p>
                             </li>
                           </ul>
 
-                          <strong className="tw-text-black">
-                            Personal Information:
-                          </strong>
+                          <strong className="tw-text-black">{t(`Personal Information:`)}</strong>
 
                           <ul className=" tw-p-0 ">
                             <li className=" tw-flex tw-items-center tw-gap-3">
-                              <p className=" m-0 tw-text-gray">
-                                Include your full name, date of birth, postal
-                                address, email, and phone number.
-                              </p>
+                              <p className=" m-0 tw-text-gray">{t(`Include your full name, date of birth, postal
+                                address, email, and phone number.`)}</p>
                             </li>
                           </ul>
 
-                          <strong className="tw-text-black">
-                            New Evidence or Arguments:
-                          </strong>
+                          <strong className="tw-text-black">{t(`New Evidence or Arguments:`)}</strong>
 
                           <ul className=" tw-p-0 ">
                             <li className=" tw-flex tw-items-center tw-gap-3">
-                              <p className=" m-0 tw-text-gray">
-                                Any new circumstances, supporting evidence, or
+                              <p className=" m-0 tw-text-gray">{t(`Any new circumstances, supporting evidence, or
                                 arguments that you did not initially submit
-                                should be included in your appeal.
-                              </p>
+                                should be included in your appeal.`)}</p>
                             </li>
                           </ul>
                         </div>
@@ -478,17 +453,15 @@ const ServiceDetails = () => {
                       Authorization
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>For a Representative </strong>
+                      <strong>{t(`For a Representative`)}</strong>
                     </h2>
                     <br />
-                    <p className=" tw-text-gray">
-                      If someone else is submitting the appeal on your behalf
+                    <p className=" tw-text-gray">{t(`If someone else is submitting the appeal on your behalf
                       (for instance, a legal representative from Sweden
                       Relocators), you must provide a signed Power of Attorney
                       (fullmakt) allowing them to act on your behalf. This
                       document should be included with your appeal and must be
-                      an original copy.
-                    </p>
+                      an original copy.`)}</p>
                     {/* <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
                         <div className="row ">
@@ -516,43 +489,35 @@ const ServiceDetails = () => {
                         by Migrationsverket
                       </span>
                       <h2 className="tw-text-left">
-                        <strong>Appeal Submission and Initial Review </strong>
+                        <strong>{t(`Appeal Submission and Initial Review`)}</strong>
                       </h2>
                       <br />
 
-                      <p className=" tw-text-gray tw-">
-                        Once your appeal is submitted, Migrationsverket will
+                      <p className=" tw-text-gray tw-">{t(`Once your appeal is submitted, Migrationsverket will
                         initially review the case again to determine if the
                         decision can be changed based on the new information
                         provided. The agency will verify that your appeal was
                         submitted on time (within three weeks of the decision)
                         and assess whether the initial decision may have
-                        overlooked any key information.
-                      </p>
+                        overlooked any key information.`)}</p>
 
-                      <strong className="tw-text-black">
-                        Timely Submission:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Timely Submission:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            If the appeal is not submitted within three weeks,
+                          <p className=" m-0 tw-text-gray">{t(`If the appeal is not submitted within three weeks,
                             Migrationsverket may dismiss it, and you may need to
-                            submit a new application instead.
-                          </p>
+                            submit a new application instead.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">Reconsideration:</strong>
+                      <strong className="tw-text-black">{t(`Reconsideration:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            If Migrationsverket finds that new evidence or
+                          <p className=" m-0 tw-text-gray">{t(`If Migrationsverket finds that new evidence or
                             arguments justify a change in the decision, they
-                            will inform you and may grant the permit.
-                          </p>
+                            will inform you and may grant the permit.`)}</p>
                         </li>
                       </ul>
                     </div>
@@ -565,35 +530,27 @@ const ServiceDetails = () => {
                         at This Stage
                       </span>
                       <h2 className="tw-text-left">
-                        <strong>Possible Outcomes </strong>
+                        <strong>{t(`Possible Outcomes`)}</strong>
                       </h2>
                       <br></br>
 
-                      <strong className="tw-text-black">
-                        Positive Outcome:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Positive Outcome:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            If Migrationsverket determines that the original
+                          <p className=" m-0 tw-text-gray">{t(`If Migrationsverket determines that the original
                             decision can be changed, they will inform you, and
-                            the visa, permit, or other document will be issued.
-                          </p>
+                            the visa, permit, or other document will be issued.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Forwarding the Appeal:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Forwarding the Appeal:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            If the agency upholds the initial decision, your
+                          <p className=" m-0 tw-text-gray">{t(`If the agency upholds the initial decision, your
                             appeal will be forwarded to the Administrative Court
-                            in Gothenburg for further review.
-                          </p>
+                            in Gothenburg for further review.`)}</p>
                         </li>
                       </ul>
                     </div>
@@ -620,16 +577,14 @@ const ServiceDetails = () => {
                           Next Steps
                         </span>
                         <h2 className="tw-text-left">
-                          <strong>If the Appeal is Forwarded to Court</strong>
+                          <strong>{t(`If the Appeal is Forwarded to Court`)}</strong>
                         </h2>
                         <br></br>
-                        <p className=" tw-text-gray">
-                          If Migrationsverket does not alter the decision, your
+                        <p className=" tw-text-gray">{t(`If Migrationsverket does not alter the decision, your
                           case will be sent to the Administrative Court
                           (Förvaltningsrätten) in Gothenburg, along with all
                           application documents and the appeal. The court will
-                          review the case independently and make a ruling.
-                        </p>
+                          review the case independently and make a ruling.`)}</p>
                       </div>
                     </div>
 
@@ -641,44 +596,34 @@ const ServiceDetails = () => {
                         Administrative
                       </span>
                       <h2 className="tw-text-left">
-                        <strong> Court Review</strong>
+                        <strong>{t(`Court Review`)}</strong>
                       </h2>
                       <br></br>
-                      <p className=" tw-text-gray tw-">
-                        The court will examine the initial application, the
+                      <p className=" tw-text-gray tw-">{t(`The court will examine the initial application, the
                         reasons for the denial, and any new information or
                         arguments presented in your appeal. The court may
                         require additional documents or clarification to make a
-                        fair ruling.
-                      </p>
+                        fair ruling.`)}</p>
 
-                      <strong className="tw-text-black">
-                        Decision Notification:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Decision Notification:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Once the court has reached a decision, you will be
+                          <p className=" m-0 tw-text-gray">{t(`Once the court has reached a decision, you will be
                             notified at the address you specified in your
-                            application or appeal.
-                          </p>
+                            application or appeal.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Potential for Further Appeals:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Potential for Further Appeals:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            If the Administrative Court also denies the appeal,
+                          <p className=" m-0 tw-text-gray">{t(`If the Administrative Court also denies the appeal,
                             there may be additional options to appeal to the
                             Migration Court of Appeal (Migrationsöverdomstolen)
                             in specific cases, particularly if the case involves
-                            legal principles of wider importance.
-                          </p>
+                            legal principles of wider importance.`)}</p>
                         </li>
                       </ul>
                     </div>
@@ -691,52 +636,38 @@ const ServiceDetails = () => {
                         for the Appeal Process
                       </span>
                       <h2 className="tw-text-left">
-                        <strong>Estimated Timelines</strong>
+                        <strong>{t(`Estimated Timelines`)}</strong>
                       </h2>
                       <br></br>
 
-                      <p className=" tw-text-gray tw-">
-                        The duration of the appeal process varies:
-                      </p>
+                      <p className=" tw-text-gray tw-">{t(`The duration of the appeal process varies:`)}</p>
 
-                      <strong className="tw-text-black">
-                        Initial Review by Migrationsverket:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Initial Review by Migrationsverket:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            If Migrationsverket decides to change its decision,
-                            you will generally be informed within a few days.
-                          </p>
+                          <p className=" m-0 tw-text-gray">{t(`If Migrationsverket decides to change its decision,
+                            you will generally be informed within a few days.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Forwarding to the Administrative Court:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Forwarding to the Administrative Court:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            If the decision is not altered, the case is
+                          <p className=" m-0 tw-text-gray">{t(`If the decision is not altered, the case is
                             typically forwarded to the Administrative Court
-                            within a few weeks.
-                          </p>
+                            within a few weeks.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Court Decision Timeline:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Court Decision Timeline:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            The Administrative Court's review can take several
+                          <p className=" m-0 tw-text-gray">{t(`The Administrative Court's review can take several
                             months, depending on the complexity of the case and
-                            the court’s workload.
-                          </p>
+                            the court’s workload.`)}</p>
                         </li>
                       </ul>
                     </div>
@@ -749,40 +680,32 @@ const ServiceDetails = () => {
                         SERVICES
                       </span>
                       <h2 className="tw-text-left">
-                        <strong> Our Services Include:</strong>
+                        <strong>{t(`Our Services Include:`)}</strong>
                       </h2>
                       <br></br>
 
-                      <strong className="tw-text-black">
-                        Case Analysis and Consultation
-                      </strong>
+                      <strong className="tw-text-black">{t(`Case Analysis and Consultation`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            We review your case and provide a detailed
+                          <p className=" m-0 tw-text-gray">{t(`We review your case and provide a detailed
                             assessment of the reasons for the denial and the
                             best approach for the appeal. Understanding why the
                             permit was denied allows us to identify key points
-                            to address in the appeal.
-                          </p>
+                            to address in the appeal.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Document Preparation and Gathering Evidence
-                      </strong>
+                      <strong className="tw-text-black">{t(`Document Preparation and Gathering Evidence`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Our legal team drafts a comprehensive appeal letter
+                          <p className=" m-0 tw-text-gray">{t(`Our legal team drafts a comprehensive appeal letter
                             that addresses each aspect of the denial and
                             presents compelling reasons for reconsideration. We
                             ensure that all necessary documentation, including
                             any required Power of Attorney, is complete and
-                            accurately presented.
-                          </p>
+                            accurately presented.`)}</p>
                         </li>
                       </ul>
 
@@ -801,41 +724,31 @@ const ServiceDetails = () => {
                           </div>
                         </div>
                         <div className="col-md-6">
-                          <strong className="tw-text-black">
-                            Representation and Follow-Up
-                          </strong>
+                          <strong className="tw-text-black">{t(`Representation and Follow-Up`)}</strong>
 
                           <ul className=" tw-p-0 ">
                             <li className=" tw-flex tw-items-center tw-gap-3">
-                              <p className=" m-0 tw-text-gray">
-                                If the appeal is forwarded to the Administrative
+                              <p className=" m-0 tw-text-gray">{t(`If the appeal is forwarded to the Administrative
                                 Court, we act as your representative, managing
                                 all communication with the court and keeping you
-                                informed throughout the process.
-                              </p>
+                                informed throughout the process.`)}</p>
                             </li>
                           </ul>
                           <ul className=" tw-p-0 ">
                             <li className=" tw-flex tw-items-center tw-gap-3">
-                              <p className=" m-0 tw-text-gray">
-                                We provide ongoing follow-up with
+                              <p className=" m-0 tw-text-gray">{t(`We provide ongoing follow-up with
                                 Migrationsverket or the court to ensure your
-                                case moves forward smoothly.
-                              </p>
+                                case moves forward smoothly.`)}</p>
                             </li>
                           </ul>
 
-                          <strong className="tw-text-black">
-                            Legal Support for Further Appeals
-                          </strong>
+                          <strong className="tw-text-black">{t(`Legal Support for Further Appeals`)}</strong>
 
                           <ul className=" tw-p-0 ">
                             <li className=" tw-flex tw-items-center tw-gap-3">
-                              <p className=" m-0 tw-text-gray">
-                                If necessary, we guide you through the process
+                              <p className=" m-0 tw-text-gray">{t(`If necessary, we guide you through the process
                                 of appealing to the Migration Court of Appeal in
-                                cases where this option is available.
-                              </p>
+                                cases where this option is available.`)}</p>
                             </li>
                           </ul>
                         </div>
@@ -844,18 +757,14 @@ const ServiceDetails = () => {
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">
-                            <strong className="tw-text-black">
-                              Our Services with Swedish Authorities
-                            </strong>
+                            <strong className="tw-text-black">{t(`Our Services with Swedish Authorities`)}</strong>
 
-                            <p>
-                              We understand that decisions from Swedish
+                            <p>{t(`We understand that decisions from Swedish
                               authorities can have a significant impact on your
                               life, finances, and ability to work or reside in
                               Sweden. Here’s how we can assist with appeals,
                               applications, and communications with several key
-                              agencies:
-                            </p>
+                              agencies:`)}</p>
 
                             <br></br>
                             <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
@@ -864,62 +773,48 @@ const ServiceDetails = () => {
                               (Skatteverket)
                             </span>
                             <h2 className="tw-text-left">
-                              <strong> 1. Swedish Tax Agency </strong>
+                              <strong>{t(`1. Swedish Tax Agency`)}</strong>
                             </h2>
                             <br></br>
 
-                            <p>
-                              Skatteverket plays a central role in matters
+                            <p>{t(`Skatteverket plays a central role in matters
                               related to tax registration, personnummer (social
                               security numbers), and residence permits for tax
                               purposes. If you are facing issues with
                               Skatteverket, such as rejected applications for a
                               personnummer, tax disputes, or concerns regarding
-                              tax residency status, our team can help.
-                            </p>
+                              tax residency status, our team can help.`)}</p>
                           </p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Personnummer Applications:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Personnummer Applications:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Assistance in gathering required documents,
+                          <p className=" m-0 tw-text-gray">{t(`Assistance in gathering required documents,
                             completing applications, and ensuring timely
-                            submission for personnummer or coordination numbers.
-                          </p>
+                            submission for personnummer or coordination numbers.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Tax Residency and Income Tax Disputes:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Tax Residency and Income Tax Disputes:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Support in challenging tax residency status
+                          <p className=" m-0 tw-text-gray">{t(`Support in challenging tax residency status
                             determinations or disputes related to income tax
-                            filings.
-                          </p>
+                            filings.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Property Tax and Business Tax Matters:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Property Tax and Business Tax Matters:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Guidance on property or business tax filings,
+                          <p className=" m-0 tw-text-gray">{t(`Guidance on property or business tax filings,
                             especially for entrepreneurs or individuals with
-                            complex tax situations.
-                            <br />
+                            complex tax situations.`)}<br />
                             <br />
                             <br></br>
                             <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
@@ -928,63 +823,47 @@ const ServiceDetails = () => {
                               (Försäkringskassan)
                             </span>
                             <h2 className="tw-text-left">
-                              <strong>
-                                2. Swedish Social Insurance Agency
-                              </strong>
+                              <strong>{t(`2. Swedish Social Insurance Agency`)}</strong>
                             </h2>
                             <br></br>
-                            <p>
-                              Försäkringskassan manages social insurance
+                            <p>{t(`Försäkringskassan manages social insurance
                               benefits, including health insurance, parental
                               leave, child benefits, and pensions. If you are
                               struggling to access or appeal decisions related
                               to these benefits, we can provide comprehensive
-                              support.
-                            </p>
+                              support.`)}</p>
                           </p>
                         </li>
                       </ul>
 
                       <div>
-                        <strong className="tw-text-black">
-                          Parental Leave and Child Benefits:
-                        </strong>
+                        <strong className="tw-text-black">{t(`Parental Leave and Child Benefits:`)}</strong>
                       </div>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Assistance with applications, appeals, and
+                          <p className=" m-0 tw-text-gray">{t(`Assistance with applications, appeals, and
                             compliance to ensure you receive the benefits you’re
-                            entitled to.
-                          </p>
+                            entitled to.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Sickness and Disability Benefits:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Sickness and Disability Benefits:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Support in gathering medical documentation and
-                            challenging benefit denials.
-                          </p>
+                          <p className=" m-0 tw-text-gray">{t(`Support in gathering medical documentation and
+                            challenging benefit denials.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Pension Eligibility:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Pension Eligibility:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Guidance on navigating the Swedish pension system
+                          <p className=" m-0 tw-text-gray">{t(`Guidance on navigating the Swedish pension system
                             and appealing decisions on pension eligibility or
-                            amounts.
-                            <br />
+                            amounts.`)}<br />
                             <br />
                             <br></br>
                             <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
@@ -999,57 +878,43 @@ const ServiceDetails = () => {
                               </strong>
                             </h2>
                             <br></br>
-                            <p>
-                              3. Swedish Public Employment Service
+                            <p>{t(`3. Swedish Public Employment Service
                               (Arbetsförmedlingen) If you are receiving
                               unemployment benefits or support from
                               Arbetsförmedlingen, you may face requirements or
                               conditions to remain eligible. We help ensure that
                               you meet these requirements and provide assistance
-                              if you encounter issues.
-                            </p>
+                              if you encounter issues.`)}</p>
                           </p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Activity Requirements:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Activity Requirements:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Assistance in meeting activity requirements,
-                            including documentation and verification.
-                          </p>
+                          <p className=" m-0 tw-text-gray">{t(`Assistance in meeting activity requirements,
+                            including documentation and verification.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Appeals for Unemployment Support:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Appeals for Unemployment Support:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Support for those who believe they have been
+                          <p className=" m-0 tw-text-gray">{t(`Support for those who believe they have been
                             unfairly denied benefits or faced incorrect
-                            decisions regarding their eligibility.
-                          </p>
+                            decisions regarding their eligibility.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Job Search Assistance:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Job Search Assistance:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Guidance on Arbetsförmedlingen procedures and
+                          <p className=" m-0 tw-text-gray">{t(`Guidance on Arbetsförmedlingen procedures and
                             requirements to maintain benefits while seeking
-                            employment.
-                            <br />
+                            employment.`)}<br />
                             <br />
                             <br></br>
                             <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
@@ -1058,56 +923,42 @@ const ServiceDetails = () => {
                               (Tullverket)
                             </span>
                             <h2 className="tw-text-left">
-                              <strong> 4. Swedish Customs Agency </strong>
+                              <strong>{t(`4. Swedish Customs Agency`)}</strong>
                             </h2>
                             <br></br>
-                            <p>
-                              Tullverket handles customs and import/export
+                            <p>{t(`Tullverket handles customs and import/export
                               regulations in Sweden, and decisions by this
                               authority can significantly impact individuals or
-                              businesses involved in international trade.
-                            </p>
+                              businesses involved in international trade.`)}</p>
                           </p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Customs Disputes:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Customs Disputes:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Assistance in resolving disputes related to customs
+                          <p className=" m-0 tw-text-gray">{t(`Assistance in resolving disputes related to customs
                             duties, classifications, and import/export
-                            procedures.
-                          </p>
+                            procedures.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Personal Belongings and Vehicles:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Personal Belongings and Vehicles:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Guidance on importing personal belongings or
+                          <p className=" m-0 tw-text-gray">{t(`Guidance on importing personal belongings or
                             vehicles, including compliance with customs
-                            regulations and addressing tax implications.
-                          </p>
+                            regulations and addressing tax implications.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Business Import/Export Compliance:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Business Import/Export Compliance:`)}</strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Support for businesses with complex customs needs,
-                            ensuring compliance and avoiding costly penalties.
-                            <br />
+                          <p className=" m-0 tw-text-gray">{t(`Support for businesses with complex customs needs,
+                            ensuring compliance and avoiding costly penalties.`)}<br />
                             <br />
                             <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                               {" "}
@@ -1115,43 +966,33 @@ const ServiceDetails = () => {
                               (A-Kassa)
                             </span>
                             <h2 className="tw-text-left">
-                              <strong> 5. Unemployment Insurance </strong>
+                              <strong>{t(`5. Unemployment Insurance`)}</strong>
                             </h2>
                             <br></br>
-                            <p>
-                              A-Kassa, or unemployment insurance funds, provides
+                            <p>{t(`A-Kassa, or unemployment insurance funds, provides
                               essential financial support for individuals who
                               have lost their jobs. If you’re facing issues with
                               your A-Kassa application, eligibility, or
-                              payments, our team can help.
-                            </p>
+                              payments, our team can help.`)}</p>
                           </p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Eligibility Disputes:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Eligibility Disputes:`)}</strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Assistance with challenges related to qualifying for
+                          <p className=" m-0 tw-text-gray">{t(`Assistance with challenges related to qualifying for
                             A-Kassa benefits, including compliance with job
-                            search or activity requirements.
-                          </p>
+                            search or activity requirements.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Income-Related Benefit Appeals:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Income-Related Benefit Appeals:`)}</strong>
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Help in resolving disputes over income-based
+                          <p className=" m-0 tw-text-gray">{t(`Help in resolving disputes over income-based
                             benefits and ensuring you receive the correct
-                            amounts.
-                          </p>
+                            amounts.`)}</p>
                         </li>
                       </ul>
                     </div>
@@ -1163,78 +1004,54 @@ const ServiceDetails = () => {
                         Contract Services
                       </span>
                       <h2 className="tw-text-left">
-                        <strong> Include:</strong>
+                        <strong>{t(`Include:`)}</strong>
                       </h2>
                       <br></br>
 
-                      <strong className="tw-text-black">
-                        Contract Review and Explanation
-                      </strong>
+                      <strong className="tw-text-black">{t(`Contract Review and Explanation`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Detailed review of employment contracts, rental
+                          <p className=" m-0 tw-text-gray">{t(`Detailed review of employment contracts, rental
                             agreements, business contracts, and other legally
-                            binding documents.
-                            <br />
-                            Explanation of terms, obligations, and potential
+                            binding documents.`)}<br />{t(`Explanation of terms, obligations, and potential
                             risks, ensuring you fully understand the contract’s
-                            implications.
-                          </p>
+                            implications.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Negotiation Support
-                      </strong>
+                      <strong className="tw-text-black">{t(`Negotiation Support`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Advice on renegotiating terms that may not be in
+                          <p className=" m-0 tw-text-gray">{t(`Advice on renegotiating terms that may not be in
                             your favor, especially in employment, rental, or
-                            business agreements.
-                            <br></br>
-                            Assistance in drafting counteroffers or proposing
+                            business agreements.`)}<br></br>{t(`Assistance in drafting counteroffers or proposing
                             changes to terms, with a focus on protecting your
-                            interests.
-                          </p>
+                            interests.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Drafting and Customizing Contracts
-                      </strong>
+                      <strong className="tw-text-black">{t(`Drafting and Customizing Contracts`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Help in creating contracts tailored to your needs,
+                          <p className=" m-0 tw-text-gray">{t(`Help in creating contracts tailored to your needs,
                             whether for business partnerships, freelance work,
-                            or personal agreements.
-                            <br></br>
-                            Legal review and customization of standard templates
-                            to ensure compliance with Swedish law.
-                          </p>
+                            or personal agreements.`)}<br></br>{t(`Legal review and customization of standard templates
+                            to ensure compliance with Swedish law.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Dispute Resolution and Mediation
-                      </strong>
+                      <strong className="tw-text-black">{t(`Dispute Resolution and Mediation`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Support in resolving contract disputes through
+                          <p className=" m-0 tw-text-gray">{t(`Support in resolving contract disputes through
                             negotiation, mediation, or, if necessary, legal
-                            action.
-                            <br></br>
-                            Assistance in gathering evidence, understanding your
+                            action.`)}<br></br>{t(`Assistance in gathering evidence, understanding your
                             rights, and presenting your case in disputes related
-                            to employment, rentals, or business contracts.
-                          </p>
+                            to employment, rentals, or business contracts.`)}</p>
                         </li>
                       </ul>
                     </div>
@@ -1247,51 +1064,39 @@ const ServiceDetails = () => {
                         Why Choose
                       </span>
                       <h2 className="tw-text-left">
-                        <strong>Sweden Relocators?</strong>
+                        <strong>{t(`Sweden Relocators?`)}</strong>
                       </h2>
                       <br></br>
 
-                      <strong className="tw-text-black">
-                        Experience with Swedish Immigration Law:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Experience with Swedish Immigration Law:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Our team has successfully handled numerous appeals
+                          <p className=" m-0 tw-text-gray">{t(`Our team has successfully handled numerous appeals
                             and is highly familiar with Swedish migration laws
                             and policies, giving us a clear advantage in
-                            challenging decisions.
-                          </p>
+                            challenging decisions.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Comprehensive Case Management:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Comprehensive Case Management:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            From consultation to representation, we handle every
+                          <p className=" m-0 tw-text-gray">{t(`From consultation to representation, we handle every
                             aspect of the appeal process, providing you with a
-                            single point of contact and peace of mind.
-                          </p>
+                            single point of contact and peace of mind.`)}</p>
                         </li>
                       </ul>
 
-                      <strong className="tw-text-black">
-                        Personalized Approach:
-                      </strong>
+                      <strong className="tw-text-black">{t(`Personalized Approach:`)}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
-                          <p className=" m-0 tw-text-gray">
-                            Every case is unique. We take the time to understand
+                          <p className=" m-0 tw-text-gray">{t(`Every case is unique. We take the time to understand
                             your situation, ensure that your appeal is tailored
                             to your specific needs, and focus on presenting the
-                            strongest possible case.
-                          </p>
+                            strongest possible case.`)}</p>
                         </li>
                       </ul>
                     </div>
@@ -1304,46 +1109,45 @@ const ServiceDetails = () => {
                         Sweden Relocators for
                       </span>
                       <h2 className="tw-text-left">
-                        <strong>Expert Appeal Assistance</strong>
+                        <strong>{t(`Expert Appeal Assistance`)}</strong>
                       </h2>
                       <br></br>
 
-                      <p className=" tw-text-gray tw-">
-                        If you’ve been denied a family reunification permit,
+                      <p className=" tw-text-gray tw-">{t(`If you’ve been denied a family reunification permit,
                         residence permit, business visa, citizenship, or another
                         document, Sweden Relocators is here to help you take the
                         next steps. Our experienced team will work closely with
                         you to build a strong case and guide you through the
                         appeal process with professionalism and care. Contact us
                         today to discuss your situation, and let us help you
-                        turn the decision around.
-                      </p>
+                        turn the decision around.`)}</p>
                       <Link to="/register" className="tw-text-center tw-pt-4">
-                      <h5 className="tw-text-center tw-text-black tw-pt-4" style = {{fontSize: '1.2em'}}>
+                        <h5
+                          className="tw-text-center tw-text-black tw-pt-4"
+                          style={{ fontSize: "1.2em" }}
+                        >
                           <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                             Sign Up{" "}
                           </strong>
-                          <strong> Today!</strong>
+                          <strong>{t(`Today!`)}</strong>
                         </h5>
                       </Link>
                       <br />
-                      <p className="tw-text-gray">
-                        Sign up today and simplify your journey! Whether you're
+                      <p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
                         seeking assistance with relocation, permits, visas,
                         legal processes, or settling into a new life, we're here
                         to help. Our comprehensive services cover everything
                         from work and study opportunities to family
                         reunifications, business support, and much more. Let us
                         guide you every step of the way—start your seamless
-                        experience now!
-                      </p>
+                        experience now!`)}</p>
                     </div>
 
                     {/* END OF NEW CONTENT */}
                   </div>
                 </div>
 
-               <Sidebar/>
+                <Sidebar />
               </div>
             </div>
           </div>

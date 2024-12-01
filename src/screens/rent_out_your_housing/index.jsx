@@ -9,7 +9,9 @@ import { GoTriangleRight } from "react-icons/go";
 
 import Header from "../../components/Header_New/Header";
 
-import { useTranslation } from "react-i18next";
+
+import { useTranslation } from '../../context/TranslationContext';
+
 
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import rentimage2 from "../../assets/iconscout/rentimage2.png";
@@ -148,23 +150,19 @@ const Rent_out_your_housing = () => {
             <div className="tw-px-8 tw-py-8 tw-bg-white tw-rounded-2xl tw-shadow-lg">
               <span className=" tw-flex tw-items-center tw-gap-2">
                 {" "}
-                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                Rent out your property
-              </span>
+                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Rent out your property`)}</span>
               <h2>
-                List Your Property with <strong>Us</strong>
+                {t("List Your Property with Us")} <strong>{t(``)}</strong>
               </h2>
 
-              <p className="tw-text-gray">
-                Looking to rent out your property quickly and efficiently?
+              <p className="tw-text-gray">{t(`Looking to rent out your property quickly and efficiently?
                 You've come to the right place! By listing your property on our
                 platform, you'll gain access to a large audience of qualified
                 tenants actively seeking their next home. Simply fill out the
                 form below with your property's details to get started. The more
                 precise and thorough the information you provide, the better
                 we'll be able to match your property with the perfect tenants,
-                maximizing your rental opportunities.
-              </p>
+                maximizing your rental opportunities.`)}</p>
             </div>
           </div>
         </section>
@@ -178,9 +176,7 @@ const Rent_out_your_housing = () => {
                     <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                        Fill out the details of your house.
-                      </span>
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill out the details of your house.`)}</span>
                       <h7
                         className="tw-text-light"
                         style={{
@@ -188,9 +184,7 @@ const Rent_out_your_housing = () => {
                           color: "#1F2437",
                           fontWeight: "300",
                         }}
-                      >
-                        Details
-                      </h7>
+                      >{t(`Details`)}</h7>
                     </div>
 
                     <div
@@ -203,7 +197,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Select Country
                       </label> */}
 
@@ -226,7 +220,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Select Country
                       </label> */}
                      <Select
@@ -254,7 +248,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Select Country
                       </label> */}
                     <Select
@@ -281,7 +275,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Select your type of house
                       </label> */}
 
@@ -307,7 +301,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Select Floor
                       </label> */}
 
@@ -335,7 +329,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Total rooms
                       </label> */}
 
@@ -370,9 +364,7 @@ const Rent_out_your_housing = () => {
                     <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                        Fill up the information of your basic Necessities.
-                      </span>
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill up the information of your basic Necessities.`)}</span>
                       <h7
                         className="tw-text-light"
                         style={{
@@ -380,9 +372,7 @@ const Rent_out_your_housing = () => {
                           color: "#1F2437",
                           fontWeight: "300",
                         }}
-                      >
-                       Basic Necessities
-                      </h7>
+                      >{t(`Basic Necessities`)}</h7>
                     </div>
 
                     <div
@@ -395,7 +385,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Furnished?
                       </label> */}
 
@@ -419,7 +409,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Is car parking included?
                       </label> */}
 
@@ -443,7 +433,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Are pets allowed?
                       </label> */}
 
@@ -466,7 +456,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Is smoking allowed?
                       </label> */}
 
@@ -489,7 +479,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Is electricity included?
                       </label> */}
 
@@ -512,7 +502,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Is lift available?
                       </label> */}
 
@@ -535,7 +525,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Is internet included?
                       </label> */}
 
@@ -560,7 +550,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Is washing machine available?
                       </label> */}
 
@@ -583,7 +573,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Is dishwasher available?
                       </label> */}
 
@@ -606,7 +596,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Is heat & water includes in rent?
                       </label> */}
 
@@ -629,7 +619,7 @@ const Rent_out_your_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Is balcony/terrace available?
                       </label> */}
 
@@ -650,9 +640,7 @@ const Rent_out_your_housing = () => {
                     <div className="row g-1 tw-rounded-md  tw-pt-10  tw-pb-4  tw-bg-white ">
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                        Fill out the details of your contract.
-                      </span>
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill out the details of your contract.`)}</span>
                       <h7
                         className="tw-text-light"
                         style={{
@@ -660,8 +648,7 @@ const Rent_out_your_housing = () => {
                           color: "#1F2437",
                           fontWeight: "300",
                         }}
-                      >
-Contract Details                      </h7>
+                      >{t(`Contract Details`)}</h7>
                     </div>
                     <div
                       className="tw-border-t-2"
@@ -673,7 +660,7 @@ Contract Details                      </h7>
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Select Contract Type?
                       </label> */}
 
@@ -698,7 +685,7 @@ Contract Details                      </h7>
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Are you looking for deposit?
                       </label> */}
                      <Input
@@ -720,7 +707,7 @@ Contract Details                      </h7>
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Maximum people can stay in this residence?
                       </label> */}
 
@@ -743,7 +730,7 @@ Contract Details                      </h7>
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         What is the duration of rent out?
                       </label> */}
 
@@ -769,7 +756,7 @@ Contract Details                      </h7>
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         What is the duration of rent out?
                       </label> */}
 
@@ -796,7 +783,7 @@ Contract Details                      </h7>
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Are you looking for deposit?
                       </label> */}
                       <Input
@@ -813,9 +800,7 @@ Contract Details                      </h7>
                     <div className="row   tw-rounded-md  tw-pt-10 tw-pb-4  tw-bg-white ">
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                       Fill out your property detail along with pictures.
-                      </span>
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill out your property detail along with pictures.`)}</span>
                       <h7
                         className="tw-text-light"
                         style={{
@@ -823,9 +808,7 @@ Contract Details                      </h7>
                           color: "#1F2437",
                           fontWeight: "300",
                         }}
-                      >
-                        Property Details and Pictures
-                      </h7>
+                      >{t(`Property Details and Pictures`)}</h7>
                     </div>
                     <div
                       className="tw-border-t-2"
@@ -837,7 +820,7 @@ Contract Details                      </h7>
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Your Property Type
                       </label> */}
 
@@ -880,16 +863,14 @@ Contract Details                      </h7>
                       />
 
                       <label>
-                      <p className="tw-text-gray tw-pl-4">File Allowed type (jpg,jpeg,png) | Maxium File size limit(5 mb)</p>
+                      <p className="tw-text-gray tw-pl-4">{t(`File Allowed type (jpg,jpeg,png) | Maxium File size limit(5 mb)`)}</p>
                       </label>
                     </div>
 
                     <div className="row   tw-rounded-md  tw-pt-10 tw-pb-4  tw-bg-white ">
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                        Fill out your contact details.
-                      </span>
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill out your contact details.`)}</span>
                       <h7
                         className="tw-text-light"
                         style={{
@@ -897,9 +878,7 @@ Contract Details                      </h7>
                           color: "#1F2437",
                           fontWeight: "300",
                         }}
-                      >
-                        Contact Details
-                      </h7>
+                      >{t(`Contact Details`)}</h7>
                     </div>
                     <div
                       className="tw-border-t-2"
@@ -946,9 +925,7 @@ Contract Details                      </h7>
                     <div className="row   tw-rounded-md  tw-pt-10 tw-pb-4  tw-bg-white " >
                       <span className=" tw-flex tw-items-center tw-justify-ns tw-gap-2">
                         {" "}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                        Fill out your bank details.
-                      </span>
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill out your bank details.`)}</span>
                       <h7
                         className="tw-text-light"
                         style={{
@@ -956,9 +933,7 @@ Contract Details                      </h7>
                           color: "#1F2437",
                           fontWeight: "300",
                         }}
-                      >
-                         Bank Details
-                      </h7>
+                      >{t(`Bank Details`)}</h7>
                     </div>
 
                     <div
@@ -971,7 +946,7 @@ Contract Details                      </h7>
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">*</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Select Bank Country
                       </label> */}
 
@@ -1059,15 +1034,11 @@ Contract Details                      </h7>
                     fontWeight: "300",
                     
                   }}
-                >
-                  Maximize Your Property’s Potential
-                </h7>
-                <p>
-                  Leverage our platform to showcase your property to a wide
+                >{t(`Maximize Your Property’s Potential`)}</h7>
+                <p>{t(`Leverage our platform to showcase your property to a wide
                   range of potential tenants. Fill out the necessary
                   information, and we’ll guide you through every step to ensure
-                  a smooth rental experience.
-                </p>
+                  a smooth rental experience.`)}</p>
               </div>
 
               <img
@@ -1086,14 +1057,10 @@ Contract Details                      </h7>
                     color: "#1F2437",
                     fontWeight: "300",
                   }}
-                >
-                  Personalized Search Experience
-                </h7>
-                <p>
-                  We prioritize your preferences to show only the most relevant
+                >{t(`Personalized Search Experience`)}</h7>
+                <p>{t(`We prioritize your preferences to show only the most relevant
                   listings. Whether it’s a cozy apartment or a spacious family
-                  home, let us help you find the place you’ll love.
-                </p>
+                  home, let us help you find the place you’ll love.`)}</p>
               </div>
 
               <img
@@ -1112,14 +1079,10 @@ Contract Details                      </h7>
                     color: "#1F2437",
                     fontWeight: "300",
                   }}
-                >
-                  Trust and Transparency
-                </h7>
-                <p>
-                  Our goal is to make renting a hassle-free experience. We
+                >{t(`Trust and Transparency`)}</h7>
+                <p>{t(`Our goal is to make renting a hassle-free experience. We
                   provide clear information on each property, ensuring you feel
-                  confident in every step of the rental process.
-                </p>
+                  confident in every step of the rental process.`)}</p>
               </div>
 
               <img
@@ -1138,15 +1101,11 @@ Contract Details                      </h7>
                     color: "#1F2437",
                     fontWeight: "300",
                   }}
-                >
-                  Rent Out Your Home with Ease
-                </h7>
-                <p>
-                  Start the process of renting out your property by filling in
+                >{t(`Rent Out Your Home with Ease`)}</h7>
+                <p>{t(`Start the process of renting out your property by filling in
                   the details about your house. Our simple form helps you get
                   started quickly, so you can start earning from your space
-                  without the stress.
-                </p>
+                  without the stress.`)}</p>
               </div>
               </div>
             </div>

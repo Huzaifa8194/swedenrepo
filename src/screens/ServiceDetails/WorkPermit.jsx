@@ -17,7 +17,7 @@ import Sidebar from "../../components/ScrollableBar";
 
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
-import { useTranslation } from "react-i18next";
+import { useTranslation } from '../../context/TranslationContext';
 import Header from "../../components/Header_New/Header";
 
 const WorkPermit = () => {
@@ -261,25 +261,21 @@ const WorkPermit = () => {
                 <div className="2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Types of 
-                    </span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Types of`)}</span>
                     <h2 className="tw-text-left">
-                      <strong>Work Permits in Sweden</strong>
+                      <strong>{t(`Work Permits in Sweden`)}</strong>
                     </h2>
 
                     <br />
 
-                    <p className="tw-text-gray">
-                      Sweden provides a range of work permits designed to
+                    <p className="tw-text-gray">{t(`Sweden provides a range of work permits designed to
                       accommodate diverse professional and personal
                       circumstances. These permits cater to various categories
                       of workers, each with specific eligibility criteria and
                       requirements. For skilled professionals, there are permits
                       targeting sectors with labor shortages, such as IT,
                       healthcare, and engineering, often requiring a formal job
-                      offer and a salary meeting Swedish standards
-                    </p>
+                      offer and a salary meeting Swedish standards`)}</p>
 
                     <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
@@ -296,8 +292,7 @@ const WorkPermit = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <p className="tw-text-gray">
-                          Entrepreneurs and self-employed individuals can apply
+                        <p className="tw-text-gray">{t(`Entrepreneurs and self-employed individuals can apply
                           for permits that allow them to establish and run
                           businesses in Sweden, provided they demonstrate a
                           viable business plan and sufficient financial
@@ -308,14 +303,11 @@ const WorkPermit = () => {
                           work, and family members accompanying a permit holder,
                           making Sweden an attractive destination for both
                           individuals and families seeking professional
-                          opportunities.
-                        </p>
+                          opportunities.`)}</p>
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-black">
-                      Standard Work Permit for Employment
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Standard Work Permit for Employment`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className=" tw-flex  tw-pt-4 tw-gap-3">
@@ -323,8 +315,8 @@ const WorkPermit = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Job Offer:</strong> Must have a confirmed job
-                          offer from a Swedish employer.
+                          <strong>{t(`Job Offer:`)}</strong> {t(`Must have a confirmed job
+                          offer from a Swedish employer.`)}
                         </p>
                       </li>
 
@@ -333,8 +325,8 @@ const WorkPermit = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Minimum Salary:</strong> SEK 30,000 before
-                          taxes or as per industry standards.
+                          <strong>{t(`Minimum Salary:`)}</strong> {t(`SEK 30,000 before
+                          taxes or as per industry standards.`)}
                         </p>
                       </li>
 
@@ -343,8 +335,8 @@ const WorkPermit = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Advertisement Requirement:</strong> Job must
-                          be advertised in the EU/EEA for 10 days.
+                          <strong>{t(`Advertisement Requirement:`)}</strong> {t(`Job must
+                          be advertised in the EU/EEA for 10 days.`)}
                         </p>
                         <p>
                           <br />
@@ -352,7 +344,7 @@ const WorkPermit = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">EU Blue Card</strong>
+                    <strong className="m-0 tw-text-black">{t(`EU Blue Card`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className=" tw-flex tw-pt-4 tw-gap-3">
@@ -360,8 +352,8 @@ const WorkPermit = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Higher Education:</strong> Requires a
-                          university degree or 5 years of experience.
+                          <strong>{t(`Higher Education:`)}</strong>{t(` Requires a
+                          university degree or 5 years of experience.`)}
                         </p>
                       </li>
 
@@ -370,8 +362,8 @@ const WorkPermit = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Salary Threshold:</strong> Must exceed the
-                          minimum salary for EU Blue Card.
+                          <strong>{t(`Salary Threshold:`)}</strong> {t(`Must exceed the
+                          minimum salary for EU Blue Card.`)}
                         </p>
                         <p>
                           <br />
@@ -379,9 +371,7 @@ const WorkPermit = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Seasonal Worker Permit (Berry Pickers and Plant Workers)
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Seasonal Worker Permit (Berry Pickers and Plant Workers)`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className=" tw-flex tw-pt-4 tw-gap-3">
@@ -389,8 +379,8 @@ const WorkPermit = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Contract:</strong> Requires a contract for
-                          seasonal work up to 6 months.
+                          <strong>{t(`Contract:`)}</strong> {t(`Requires a contract for
+                          seasonal work up to 6 months.`)}
                         </p>
                       </li>
 
@@ -399,8 +389,8 @@ const WorkPermit = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Wages and Benefits:</strong> Must comply with
-                          collective agreements.
+                          <strong>{t(`Wages and Benefits:`)}</strong> {t(`Must comply with
+                          collective agreements.`)}
                         </p>
                         <p>
                           <br />
@@ -408,9 +398,7 @@ const WorkPermit = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0  tw-text-black">
-                      Au Pair Permit
-                    </strong>
+                    <strong className="m-0  tw-text-black">{t(`Au Pair Permit`)}</strong>
 
                     <ul className="tw-p-0  tw-pl-0">
                       <li className=" tw-flex tw-pt-4  tw-gap-3">
@@ -418,8 +406,8 @@ const WorkPermit = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Age Requirement:</strong> Must be between 18
-                          and 30 years old.
+                          <strong>{t(`Age Requirement:`)}</strong> {t(`Must be between 18
+                          and 30 years old.`)}
                         </p>
                       </li>
 
@@ -428,8 +416,8 @@ const WorkPermit = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Language Study:</strong> Required to take
-                          Swedish courses.
+                          <strong>{t(`Language Study:`)}</strong> {t(`Required to take
+                          Swedish courses.`)}
                         </p>
                         <p>
                           <br />
@@ -437,9 +425,7 @@ const WorkPermit = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Working Holiday Visa
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Working Holiday Visa`)}</strong>
 
                     <ul className="tw-p-0 ">
                       <li className=" tw-flex tw-pt-4  tw-gap-3">
@@ -447,8 +433,8 @@ const WorkPermit = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Eligible Countries:</strong> Includes
-                          Australia, New Zealand, South Korea, etc.
+                          <strong>{t(`Eligible Countries:`)}</strong> {t(`Includes
+                          Australia, New Zealand, South Korea, etc.`)}
                         </p>
                       </li>
 
@@ -457,8 +443,8 @@ const WorkPermit = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Age Range:</strong> Typically for 18-30 years
-                          old.
+                          <strong>{t(`Age Range:`)}</strong> {t(`Typically for 18-30 years
+                          old.`)}
                         </p>
                         <p>
                           <br />
@@ -466,9 +452,7 @@ const WorkPermit = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Self-Employment Permit
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Self-Employment Permit`)}</strong>
 
                     <ul className="tw-p-0 tw-pt-4 ">
                       <li className=" tw-flex  tw-gap-3">
@@ -476,8 +460,8 @@ const WorkPermit = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Business Plan:</strong> Must show
-                          profitability within 2 years.
+                          <strong>{t(`Business Plan:`)}</strong> {t(`Must show
+                          profitability within 2 years.`)}
                         </p>
                       </li>
 
@@ -486,8 +470,8 @@ const WorkPermit = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Experience:</strong> Relevant business
-                          experience is required.
+                          <strong>{t(`Experience:`)}</strong> {t(`Relevant business
+                          experience is required.`)}
                         </p>
                         <p>
                           <br />
@@ -495,9 +479,7 @@ const WorkPermit = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Sports and Cultural Worker Permit
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Sports and Cultural Worker Permit`)}</strong>
 
                     <ul className="tw-p-0 ">
                       <li className=" tw-flex tw-pt-4 tw-gap-3">
@@ -505,15 +487,13 @@ const WorkPermit = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Employment:</strong> Must have a job offer
-                          from a relevant Swedish organization.
+                          <strong>{t(`Employment:`)}</strong> {t(`Must have a job offer
+                          from a relevant Swedish organization.`)}
                         </p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Researcher Permit
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Researcher Permit`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className=" tw-flex tw-pt-4 tw-gap-3">
@@ -521,8 +501,8 @@ const WorkPermit = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Host Agreement:</strong> Required with a
-                          Swedish research institution.
+                          <strong>{t(`Host Agreement:`)}</strong> {t(`Required with a
+                          Swedish research institution.`)}
                         </p>
                       </li>
 
@@ -531,8 +511,8 @@ const WorkPermit = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong>Funding:</strong> Proof of financial support
-                          for the research duration.
+                          <strong>{t(`Funding:`)}</strong> {(`Proof of financial support
+                          for the research duration.`)}
                         </p>
                       </li>
                     </ul>
@@ -540,21 +520,15 @@ const WorkPermit = () => {
                   <div>
                     <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Application Process and Waiting Times
-                    </span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Application Process and Waiting Times`)}</span>
                     <h2 className="tw-text-left">
-                      <strong>
-                        Overview of Application Process and Waiting Times
-                      </strong>
+                      <strong>{t(`Overview of Application Process and Waiting Times`)}</strong>
                     </h2>
                     <br />
-                    <p className="tw-text-gray">
-                      The application process and waiting times vary depending
+                    <p className="tw-text-gray">{t(`The application process and waiting times vary depending
                       on the type of permit, your circumstances, and the current
                       workload at the Swedish Migration Agency. General waiting
-                      times are as follows:
-                    </p>
+                      times are as follows:`)}</p>
                     <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
                         <div className="row ">
@@ -571,78 +545,72 @@ const WorkPermit = () => {
                       </div>
                       <div className="col-md-6">
                         <ul className="tw-p-0 ">
-                          <strong className='tw-text-black'>Permit times:</strong>
+                          <strong className='tw-text-black'>{t(`Permit times:`)}</strong>
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
                             <p className="m-0 tw-text-gray">
-                              <strong>Standard Work Permit:</strong> 1-4 months
+                              <strong>{t(`Standard Work Permit:`)}</strong> {t("1-4 months")}
                             </p>
                           </li>
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
                             <p className="m-0 tw-text-gray">
-                              <strong>EU Blue Card:</strong> 3-4 months
+                              <strong>{t(`EU Blue Card:`)}</strong> {t(`3-4 months`)}
                             </p>
                           </li>
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
                             <p className="m-0 tw-text-gray">
-                              <strong>Seasonal Worker Permit:</strong> 1-3
-                              months
+                              <strong>{t(`Seasonal Worker Permit:`)}</strong> {t(`1-3
+                              months`)}
                             </p>
                           </li>
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
                             <p className="m-0 tw-text-gray">
-                              <strong>Au Pair Permit:</strong> 1-2 months
+                              <strong>{t(`Au Pair Permit:`)}</strong> {t(`1-2 months`)}
                             </p>
                           </li>
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
                             <p className="m-0 tw-text-gray">
-                              <strong>Working Holiday Visa:</strong> 1-2 months
+                              <strong>{t(`Working Holiday Visa:`)}</strong> {t(`1-2 months`)}
                             </p>
                           </li>
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
                             <p className="m-0 tw-text-gray">
-                              <strong>Self-Employment Permit:</strong> 3-6
-                              months
+                              <strong>{t(`Self-Employment Permit:`)}</strong> {t(`3-6
+                              months`)}
                             </p>
                           </li>
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
                             <p className="m-0 tw-text-gray">
-                              <strong>
-                                Sports and Cultural Worker Permit:
-                              </strong>{" "}
-                              1-2 months
+                              <strong>{t(`Sports and Cultural Worker Permit:`)}</strong>{" "}
+                              {t(`1-2 months`)}
                             </p>
                           </li>
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
                             <p className="m-0 tw-text-gray">
-                              <strong>Researcher Permit:</strong> 1-3 months
+                              <strong>{t(`Researcher Permit:`)}</strong> {t(`1-3 months`)}
                             </p>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <p className="tw-text-gray tw-pt-4">
-                      Using our Work Permit Assessment Tool can help you
+                    <p className="tw-text-gray tw-pt-4">{t(`Using our Work Permit Assessment Tool can help you
                       identify the right permit and provide estimated processing
-                      times based on your case.
-                    </p>
+                      times based on your case.`)}</p>
                     <br />{" "}
                     <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Key
-                    </span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Key`)}</span>
                     <h2 className="tw-text-left">
-                      <strong> General Requirements for Work Permits</strong>
+                      <strong>{t(`General Requirements for Work Permits`)}</strong>
                     </h2>
                     <p className="tw-text-gray">
-                      To obtain a work permit in Sweden, applicants must meet
+                     {t(` To obtain a work permit in Sweden, applicants must meet
                       several general requirements to ensure compliance with
                       Swedish immigration laws and labor standards. A valid job
                       offer from a Swedish employer is essential, and the terms
@@ -651,7 +619,7 @@ const WorkPermit = () => {
                       salary of at least SEK 13,000 per month before taxes. The
                       employer must also advertise the position within the
                       EU/EEA for at least ten days before offering it to a
-                      non-EU/EEA applicant.{" "}
+                      non-EU/EEA applicant.`)}{" "}
                     </p>
                     <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
@@ -659,25 +627,25 @@ const WorkPermit = () => {
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-text-black">Valid Passport:</strong> Your passport
+                              <strong className="tw-text-black">{t(`Valid Passport:`)}</strong> {t(`Your passport
                               must be valid for the entire period of your
-                              intended stay.
+                              intended stay.`)}
                             </p>
                           </li>
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
                             <p className="m-0 tw-text-gray">
-                              <strong   className="tw-text-black">Insurance:</strong> Some permits, such as
+                              <strong   className="tw-text-black">{t(`Insurance:`)}</strong> {t(`Some permits, such as
                               the Working Holiday and Au Pair permits, require
-                              health insurance.
+                              health insurance.`)}
                             </p>
                           </li>
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-text-black">Clean Criminal Record:</strong> Applicants
+                              <strong className="tw-text-black">{t(`Clean Criminal Record:`)}</strong>{t(` Applicants
                               with serious criminal records may face challenges
-                              in obtaining a permit.
+                              in obtaining a permit.`)}
                             </p>
                           </li>
                         </ul>
@@ -699,19 +667,13 @@ const WorkPermit = () => {
                     </div>
                     <br />
                     <span className="tw-flex tw-items-center tw-gap-2 tw-pt-4">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      How 
-                    </span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`)}</span>
                     <h2 className="tw-text-left">
-                      <strong>
-                      Sweden Relocators Can Assist You
-                      </strong>
+                      <strong>{t(`Sweden Relocators Can Assist You`)}</strong>
                     </h2>
                     <br />
-                    <p className="tw-text-gray">
-                      Sweden Relocators provides full support for all types of
-                      work permits, ensuring a smooth and efficient process:
-                    </p>
+                    <p className="tw-text-gray">{t(`Sweden Relocators provides full support for all types of
+                      work permits, ensuring a smooth and efficient process:`)}</p>
                     <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
                         <div className="row ">
@@ -731,66 +693,60 @@ const WorkPermit = () => {
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-text-black">Eligibility Assessment:</strong> Use our
+                              <strong className="tw-text-black">{t(`Eligibility Assessment:`)}</strong> {t(`Use our
                               Work Permit Assessment Tool to find the best
-                              permit for your circumstances.
+                              permit for your circumstances.`)}
                             </p>
                           </li>
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-text-black">Document Preparation:</strong> We assist
+                              <strong className="tw-text-black">{t(`Document Preparation:`)}</strong>{t(` We assist
                               in compiling and preparing the required documents,
                               such as employment contracts, financial
-                              statements, and health insurance proof.
+                              statements, and health insurance proof.`)}
                             </p>
                           </li>
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-text-black">
-                                Application Submission and Tracking:
-                              </strong>{" "}
-                              We handle the submission of your application and
-                              keep you updated on its status through each stage.
+                              <strong className="tw-text-black">{t(`Application Submission and Tracking:`)}</strong>{" "}
+                            {t(`  We handle the submission of your application and
+                              keep you updated on its status through each stage.`)}
                             </p>
                           </li>
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-text-black">Post-Permit Support:</strong> Once your
+                              <strong className="tw-text-black">{t(`Post-Permit Support:`)}</strong> {t(`Once your
                               permit is approved, we offer relocation support,
                               including housing assistance, bank account setup,
-                              and registration with Swedish authorities.
+                              and registration with Swedish authorities.`)}
                             </p>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <p className="tw-text-gray tw-pt-4">
-                      For more information or to begin your work permit
+                    <p className="tw-text-gray tw-pt-4">{t(`For more information or to begin your work permit
                       application, visit our Work Permit Section on our website.
                       Contact Sweden Relocators today, and let us help you start
-                      your career journey in Sweden.
-                    </p>
+                      your career journey in Sweden.`)}</p>
                     <Link to="/register" className="tw-text-center tw-pt-4">
                     <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
-                          Sign Up{" "}
+                          {t(`Sign Up`)}{" "}
                         </strong>
-                        <strong className="tw-text-black"> Today!</strong>
+                        <strong className="tw-text-black">{t(`Today!`)}</strong>
                       </h5>
                     </Link>
                     <br />
-                    <p className="tw-text-gray">
-                      Sign up today and simplify your journey! Whether you're
+                    <p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
                       seeking assistance with relocation, permits, visas, legal
                       processes, or settling into a new life, we're here to
                       help. Our comprehensive services cover everything from
                       work and study opportunities to family reunifications,
                       business support, and much more. Let us guide you every
-                      step of the way—start your seamless experience now!
-                    </p>
+                      step of the way—start your seamless experience now!`)}</p>
                   </div>
                 </div>
               </div>

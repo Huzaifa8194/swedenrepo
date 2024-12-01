@@ -4,13 +4,18 @@ import Navbar from "../../components/Header/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Our_specialization from "../../components/Our_specialization";
 import VideoPlayer from "../../components/videoPlayer";
-import { useTranslation } from "react-i18next";
+
 import Header from "../../components/Header_New/Header";
 import video1 from "../../assets/images/video/about_video1.mp4";
 import video2 from "../../assets/images/video/about_video2.mp4";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
+import { useTranslation } from '../../context/TranslationContext';
+
+
 
 const AboutUs = () => {
+ 
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

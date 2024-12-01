@@ -13,8 +13,10 @@ import "./style/shortcodes.css";
 import "./style/main.css";
 import "./style/megamenu.css";
 import "./style/responsive.css";
+import { useTranslation } from "../../context/TranslationContext";
 
 const ServiceCat = () => {
+  const { t } = useTranslation();
   const sliderSettings = {
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -37,7 +39,7 @@ const ServiceCat = () => {
           <div className="col-lg-12">
             <div className="section-title title-style-center_text">
               <div className="title-header">
-                <h5>What we do</h5>
+                <h5>{t("What we do")}</h5>
                 <div
                   style={{
                     color: "white",
@@ -45,9 +47,10 @@ const ServiceCat = () => {
                     fontWeight: "200",
                   }}
                 >
-                  We Provide Experts Create Great
+                  {t(" We Provide Experts Create Great")}
                   <br />
-                  Value for <strong>Visa Categories</strong>
+                  {t("Value for ")}
+                  <strong>{t("Visa Categories")}</strong>
                 </div>
               </div>
             </div>
@@ -69,13 +72,13 @@ const ServiceCat = () => {
                     </div>
                     <div className="featured-content">
                       <div className="featured-title">
-                        <h5>Asylum</h5>
+                        <h5>{t("Asylum")}</h5>
                       </div>
                       <div className="featured-desc">
                         <p>
-                          You have to be in Sweden or on the Swedish border in
+                          {t(` You have to be in Sweden or on the Swedish border in
                           order to apply for asylum and we will process it for
-                          you.
+                          you.`)}
                         </p>
                       </div>
                       <div className="cmt-di_links">
@@ -100,12 +103,12 @@ const ServiceCat = () => {
                     </div>
                     <div className="featured-content">
                       <div className="featured-title">
-                        <h5>Business Visa</h5>
+                        <h5>{t("Business Visa")}</h5>
                       </div>
                       <div className="featured-desc">
                         <p>
-                          People who want to invest in or about to start
-                          businesses abroad.
+                          {t(` People who want to invest in or about to start
+                          businesses abroad.`)}
                         </p>
                       </div>
                       <div className="cmt-di_links">
@@ -130,12 +133,12 @@ const ServiceCat = () => {
                     </div>
                     <div className="featured-content">
                       <div className="featured-title">
-                        <h5>Work Permit</h5>
+                        <h5>{t("Work Permit")}</h5>
                       </div>
                       <div className="featured-desc">
                         <p>
-                          To work refers to manage systems used to ensure that
-                          work is done nicely.
+                          {t(`To work refers to manage systems used to ensure that
+                          work is done nicely.`)}
                         </p>
                       </div>
                       <div className="cmt-di_links">
@@ -160,11 +163,12 @@ const ServiceCat = () => {
                     </div>
                     <div className="featured-content">
                       <div className="featured-title">
-                        <h5>Citizenship</h5>
+                        <h5>{t("Citizenship")}</h5>
                       </div>
                       <div className="featured-desc">
                         <p>
-                         People who have lived in sweden for a period of time can apply for citizenship.
+                        {t(`  People who have lived in sweden for a period of time
+                          can apply for citizenship.`)}
                         </p>
                       </div>
                       <div className="cmt-di_links">
@@ -189,12 +193,12 @@ const ServiceCat = () => {
                     </div>
                     <div className="featured-content">
                       <div className="featured-title">
-                        <h5>Student Visa</h5>
+                        <h5>{t("Student Visa")}</h5>
                       </div>
                       <div className="featured-desc">
                         <p>
-                          For the perception & better career opportunities for
-                          the students.
+                         {t(` For the perception & better career opportunities for
+                          the students.`)}
                         </p>
                       </div>
                       <div className="cmt-di_links">
@@ -219,11 +223,11 @@ const ServiceCat = () => {
             <div className="text-center mt-35 mb_20 res-991-mt-20">
               <h6>
                 <span className="font-weight-normal">
-                  Don’t Hesitate, Contact us for Better Help and Services.
+                 {t(` Don’t Hesitate, Contact us for Better Help and Services.`)}
                 </span>
                 <u>
                   <a className="cmt-textcolor-skincolor" href="#">
-                    Explore all visa Categories.
+                    {t(`Explore all visa Categories.`)}
                   </a>
                 </u>
               </h6>

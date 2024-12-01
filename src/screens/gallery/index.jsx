@@ -25,6 +25,8 @@ import eng6 from "../../assets/images/video/06-Assessment-English.mp4";
 import eng7 from "../../assets/images/video/07-Business investment-English.mp4";
 import eng8 from "../../assets/images/video/08-Upload Doc-English.mp4";
 import Header from "../../components/Header_New/Header";
+import { useTranslation } from '../../context/TranslationContext';
+
 
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
@@ -49,6 +51,7 @@ const Gallery = ({
     gallery5,
     gallery6,
   ];
+  const { t } = useTranslation();
 
   const [curr, setCurr] = useState(0);
   const prev = () =>
@@ -304,7 +307,7 @@ const Gallery = ({
       title: "Introduction",
       content: (
         <>
-          <div className=" tw-grid  tw-gap-2 tw-grid-cols-2">
+          <div className=" tw-grid  tw-gap-2 tw-grid-cols-1 md:tw-grid-cols-2">
             <div>
               <VideoPlayer src={into1} />
             </div>
@@ -320,7 +323,7 @@ const Gallery = ({
       title: "Foreign Language",
       content: (
         <>
-          <div className=" tw-grid  tw-gap-2 tw-grid-cols-2">
+          <div className=" tw-grid  tw-gap-2 tw-grid-cols-1 md:tw-grid-cols-2">
             <div>
               <VideoPlayer src={into2} />
             </div>
@@ -342,7 +345,7 @@ const Gallery = ({
           
         </div>
 
-        {language==="english"?( <div className=" tw-grid  tw-gap-2 tw-grid-cols-2">
+        {language==="english"?( <div className=" tw-grid  tw-gap-2 tw-grid-cols-1 md:tw-grid-cols-2">
             <div>
               <VideoPlayer src={eng1} />
             </div>
@@ -370,7 +373,7 @@ const Gallery = ({
             </div>
            
           </div>):(
-             <div className=" tw-grid  tw-gap-2 tw-grid-cols-2">
+             <div className=" tw-grid  tw-gap-2 tw-grid-cols-1 md:tw-grid-cols-2">
              <div>
                <VideoPlayer src={gallery1} />
              </div>
@@ -412,8 +415,8 @@ const Gallery = ({
     <>
       <Header />
       <Banner_Page 
-  highlightText={"Gallery"} 
-  regularText={"Capture the Moments – Explore Our Stunning Gallery."} 
+  highlightText={t("Gallery")} 
+  regularText={t("Capture the Moments – Explore Our Stunning Gallery.")} 
   backgroundImage={homeBgImage} 
 />
       <section className=" tw-bg-[#F5FAFF] tw-rounded-2xl ">

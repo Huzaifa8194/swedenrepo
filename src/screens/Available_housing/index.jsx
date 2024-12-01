@@ -17,7 +17,8 @@ import { LiaAngleLeftSolid, LiaAngleRightSolid } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
 
-import { useTranslation } from "react-i18next";
+import { useTranslation } from '../../context/TranslationContext';
+
 
 
 import Header from '../../components/Header_New/Header';
@@ -252,8 +253,8 @@ const Available_housing = ({ children: slides, autoSlide = false, autoSlideInter
                 <img src={available1} alt="project" className="tw-w-full tw-h-full  tw-rounded-2xl  tw-object-cover tw-object-center tw-overflow-hidden tw-transition-transform tw-duration-400 tw-ease-in-out" />
                 <div className="  tw-flex  tw-rounded-2xl   tw-items-end  tw-bg-[rgba(0,0,0,0.2)] tw-h-full  tw-w-full  p-3 tw-absolute tw-bottom-0">
                   <div>
-                    <h5 className=" tw-text-white tw-text-xl">Apartments</h5>
-                    <p className=" tw-text-white text-2xl">188,288 properties</p>
+                    <h5 className=" tw-text-white tw-text-xl">{t("Apartments")}</h5>
+                    <p className=" tw-text-white text-2xl">{t("188,288 properties")}</p>
                   </div>
                 </div>
               </div>
@@ -265,8 +266,8 @@ const Available_housing = ({ children: slides, autoSlide = false, autoSlideInter
                   <img src={available2} alt="project" className="tw-w-full tw-h-full  tw-rounded-2xl  tw-object-cover tw-object-center tw-overflow-hidden tw-transition-transform tw-duration-400 tw-ease-in-out" />
                   <div className="  tw-flex  tw-rounded-2xl  tw-items-end  tw-bg-[rgba(0,0,0,0.4)] tw-h-full  tw-w-full  p-3 tw-absolute tw-bottom-0">
                     <div>
-                      <h5 className=" tw-text-white tw-text-xl">Vilas</h5>
-                      <p className=" tw-text-white text-2xl">188,288 properties</p>
+                      <h5 className=" tw-text-white tw-text-xl">{t("Vilas")}</h5>
+                      <p className=" tw-text-white text-2xl">{t("188,288 properties")}</p>
                     </div>
                   </div>
                 </Link>
@@ -274,8 +275,8 @@ const Available_housing = ({ children: slides, autoSlide = false, autoSlideInter
                   <img src={available3} alt="project" className="tw-w-full tw-h-full  tw-rounded-2xl  tw-object-cover tw-object-center tw-overflow-hidden tw-transition-transform tw-duration-400 tw-ease-in-out" />
                   <div className="  tw-flex  tw-rounded-2xl   tw-items-end  tw-bg-[rgba(0,0,0,0.4)] tw-h-full  tw-w-full  p-3 tw-absolute tw-bottom-0">
                     <div>
-                      <h5 className=" tw-text-white tw-text-xl">Radhus</h5>
-                      <p className=" tw-text-white text-2xl">188,288 properties</p>
+                      <h5 className=" tw-text-white tw-text-xl">{t("Radhus")}</h5>
+                      <p className=" tw-text-white text-2xl">{t("188,288 properties")}</p>
                     </div>
                   </div>
                 </Link>
@@ -287,8 +288,8 @@ const Available_housing = ({ children: slides, autoSlide = false, autoSlideInter
                   <img src={available4} alt="project" className="tw-w-full tw-h-full  tw-rounded-2xl  tw-object-cover tw-object-center tw-overflow-hidden tw-transition-transform tw-duration-400 tw-ease-in-out" />
                   <div className="  tw-flex  tw-rounded-2xl  tw-items-end  tw-bg-[rgba(0,0,0,0.4)] tw-h-full  tw-w-full  p-3 tw-absolute tw-bottom-0">
                     <div>
-                      <h5 className=" tw-text-white tw-text-xl">Shared Rooms</h5>
-                      <p className=" tw-text-white text-2xl">188,288 properties</p>
+                      <h5 className=" tw-text-white tw-text-xl">{t("Shared Rooms")}</h5>
+                      <p className=" tw-text-white text-2xl">{t("188,288 properties")}</p>
                     </div>
                   </div>
                 </Link>
@@ -296,8 +297,8 @@ const Available_housing = ({ children: slides, autoSlide = false, autoSlideInter
                   <img src={available5} alt="project" className="tw-w-full tw-h-full  tw-rounded-2xl  tw-object-cover tw-object-center tw-overflow-hidden tw-transition-transform tw-duration-400 tw-ease-in-out" />
                   <div className="  tw-flex  tw-rounded-2xl   tw-items-end  tw-bg-[rgba(0,0,0,0.4)] tw-h-full  tw-w-full  p-3 tw-absolute tw-bottom-0">
                     <div>
-                      <h5 className=" tw-text-white tw-text-xl">Shared Beds</h5>
-                      <p className=" tw-text-white text-2xl">188,288 properties</p>
+                      <h5 className=" tw-text-white tw-text-xl">{t("Shared Beds")}</h5>
+                      <p className=" tw-text-white text-2xl">{t("188,288 properties")}</p>
                     </div>
                   </div>
                 </Link>
@@ -564,7 +565,7 @@ const Available_housing = ({ children: slides, autoSlide = false, autoSlideInter
           <div className=" row">
             <div className=" col-md-6">
               <div>
-                <h2 className=" text-white h2">Start your Journey As a Retailer.</h2>
+                <h2 className=" text-white h2">{t("Start your Journey As a Retailer.")}</h2>
               </div>
             </div>
             <div className=" col-md-6">

@@ -5,7 +5,8 @@ import playstore from "../../assets/images/Google-play.png";
 import applestore from "../../assets/images/App-Store.png";
 import sweden from "../../assets/images/icons8-sweden.png";
 import denmark from "../../assets/images/icons8-denmark.png";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from '../../context/TranslationContext';
+
 
 import Facebookicon from "../../assets/icons/facebook.png";
 import Twittericon from "../../assets/icons/twitter.png";
@@ -46,7 +47,7 @@ const Footer = () => {
                           <div>
                             <img src={denmark} alt="" />
                           </div>
-                          <p className=" m-0 tw-text-white"> CVR 41200677</p>
+                          <p className=" m-0 tw-text-white">{t(`CVR 41200677`)}</p>
                         </li>
                       </ul>
                     </div>
@@ -247,9 +248,7 @@ const Footer = () => {
                         </Link>
                         <div className=" tw-flex tw-flex-col">
                           <span className="post-date tw-text-white">
-                            <i className="fa fa-calendar" />
-                            Apr 06, 2020
-                          </span>
+                            <i className="fa fa-calendar" />{t(`Apr 06, 2020`)}</span>
                           <Link className=" tw-text-white  tw-text-sm">
                           {t('5 Things To Keep In Mind If You Are Relocating To...')}
                           </Link>
@@ -267,9 +266,7 @@ const Footer = () => {
                         </Link>
                         <div className=" tw-flex tw-flex-col">
                           <span className="post-date tw-text-white">
-                            <i className="fa fa-calendar" />
-                            Apr 06, 2020
-                          </span>
+                            <i className="fa fa-calendar" />{t(`Apr 06, 2020`)}</span>
                           <Link to={'/blog_details/1'} className=" tw-text-white  tw-text-sm">
                             {t('5 Swedish Foods You Must Try')}
                           </Link>
@@ -287,9 +284,7 @@ const Footer = () => {
                         </Link>
                         <div className=" tw-flex tw-flex-col">
                           <span className="post-date tw-text-white">
-                            <i className="fa fa-calendar" />
-                            Apr 06, 2020
-                          </span>
+                            <i className="fa fa-calendar" />{t(`Apr 06, 2020`)}</span>
                           <Link to={'/blog_details/3'} className=" tw-text-white  tw-text-sm">
                           {t('A Guide About Student Fee And Admissions In Sweden')}
                           </Link>
@@ -349,9 +344,7 @@ const Footer = () => {
                           <Link
                             to={"mailto:info@swedenrelocators.se"}
                             className=" m-0 tw-text-white"
-                          >
-                            info@swedenrelocators.se
-                            </Link>
+                          >{t(`info@swedenrelocators.se`)}</Link>
                         </div>
                         <div className="featured-desc">
                         <Link
@@ -380,7 +373,7 @@ const Footer = () => {
                           to={"tel:+46 723 276 276"}
                           className="featured-title"
                         >
-                          <p className=" m-0 tw-text-white">+46 723 276 276</p>
+                          <p className=" m-0 tw-text-white">{t(`+46 723 276 276`)}</p>
                         </Link>
 
                         <Link

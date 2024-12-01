@@ -13,7 +13,8 @@ import { TfiAngleLeft } from 'react-icons/tfi';
 import { Link, useParams } from 'react-router-dom';
 import Assessment_modal from './Assessment_modal';
 
-import { useTranslation } from "react-i18next";
+import { useTranslation } from '../../context/TranslationContext';
+
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
 import Header from '../../components/Header_New/Header';
@@ -285,38 +286,26 @@ const Long_term_eu_status_assessment = () => {
                   <div>
                     <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Long-Term EU Residence Status
-
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Long-Term EU Residence Status`)}</span>
 
                     <h2>
-                      <strong className = "tw-text-left">
-                      Find Out Your Eligibility for Moving to Sweden with a Long-Term EU Residence Permit
-
-                      </strong>
+                      <strong className = "tw-text-left">{t(`Find Out Your Eligibility for Moving to Sweden with a Long-Term EU Residence Permit`)}</strong>
                     </h2>
                     <br/>
-                    <strong className = "tw-text-gray">Who Should Use This Tool?</strong>
+                    <strong className = "tw-text-gray">{t(`Who Should Use This Tool?`)}</strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                        Long-term EU Permanent Residence Permit Holders from any EU country (except Denmark and Ireland) who are planning to move to Sweden or have already moved.
-
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Long-term EU Permanent Residence Permit Holders from any EU country (except Denmark and Ireland) who are planning to move to Sweden or have already moved.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                        	Families of long-term EU residence permit holders who wish to join them in Sweden.
-
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Families of long-term EU residence permit holders who wish to join them in Sweden.`)}</p>
                       </li>
                       
 
@@ -326,99 +315,69 @@ const Long_term_eu_status_assessment = () => {
 <br/>
                     <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Why
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Why`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Use the Eligibility Tool?
-                      </strong>
+                      <strong>{t(`Use the Eligibility Tool?`)}</strong>
                     </h2>
                     <br/>
 
 
                   
-                    <p className="tw-text-gray">
-                    This tool is designed to help you understand the requirements and eligibility criteria for relocating to Sweden with a long-term EU residence permit by gathering important details, such as:
-
-                    </p>
+                    <p className="tw-text-gray">{t(`This tool is designed to help you understand the requirements and eligibility criteria for relocating to Sweden with a long-term EU residence permit by gathering important details, such as:`)}</p>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                        Your Current Residence Status: Information about your existing long-term EU residence permit from another EU country.
-
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Your Current Residence Status: Information about your existing long-term EU residence permit from another EU country.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                        Relocation Plans: Whether you’re planning to move to Sweden or have already relocated.
-
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Relocation Plans: Whether you’re planning to move to Sweden or have already relocated.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                        Family Information: Details about family members who will be joining you in Sweden.
-
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Family Information: Details about family members who will be joining you in Sweden.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className = "tw-text-gray">Complete Visa and Permit Application Support </strong>
+                    <strong className = "tw-text-gray">{t(`Complete Visa and Permit Application Support`)}</strong>
 
-                    <p className="tw-text-gray">
-                    We offer comprehensive support for your move to Sweden through our web portal and app:
-                    </p>
+                    <p className="tw-text-gray">{t(`We offer comprehensive support for your move to Sweden through our web portal and app:`)}</p>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                        Comprehensive Documentation: We prepare all the necessary documents for your application, ensuring full compliance with Swedish regulations
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Comprehensive Documentation: We prepare all the necessary documents for your application, ensuring full compliance with Swedish regulations`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                        Appointment Scheduling: We handle the booking of appointments with relevant authorities to streamline your application process.
-
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Appointment Scheduling: We handle the booking of appointments with relevant authorities to streamline your application process.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                        Digital Access: Access your complete application file directly through our web portal or app, where you can view, download, and print all required documents with ease.
-
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Digital Access: Access your complete application file directly through our web portal or app, where you can view, download, and print all required documents with ease.`)}</p>
                       </li>
                     </ul>
 
                     <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      How
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      We Use the Information
-                      </strong>
+                      <strong>{t(`We Use the Information`)}</strong>
                     </h2>
 
                     
@@ -427,29 +386,20 @@ const Long_term_eu_status_assessment = () => {
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                        We will evaluate your details to provide a clear assessment of your eligibility for relocating to Sweden.
-
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`We will evaluate your details to provide a clear assessment of your eligibility for relocating to Sweden.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                        Our team will guide you through each step of the application process via the portal or app.
-
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Our team will guide you through each step of the application process via the portal or app.`)}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                        We’ll ensure you and your family meet all the requirements to successfully obtain residence in Sweden.
-
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`We’ll ensure you and your family meet all the requirements to successfully obtain residence in Sweden.`)}</p>
                       </li>
                     </ul>
 
@@ -457,23 +407,16 @@ const Long_term_eu_status_assessment = () => {
 <br/>
                     <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Get
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Get`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Started
-                      </strong>
+                      <strong>{t(`Started`)}</strong>
                     </h2>
                     <br/>
 
 
                 
-                    <p className=" tw-text-gray">
-                    Use the eligibility tool on our web portal or app to take the first step toward relocating to Sweden with your long-term EU residence permit, ensuring a smooth and seamless experience for both you and your family!
-
-                    </p>
+                    <p className=" tw-text-gray">{t(`Use the eligibility tool on our web portal or app to take the first step toward relocating to Sweden with your long-term EU residence permit, ensuring a smooth and seamless experience for both you and your family!`)}</p>
                   </div>
 
 
@@ -481,7 +424,7 @@ const Long_term_eu_status_assessment = () => {
 
                   <div>
                   {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">Personal Details</h5>
+                  <h5 className=" tw-text-black  ">{t(`Personal Details`)}</h5>
 
                   <h6 className=" tw-text-black ">
                     {" "}
@@ -518,14 +461,10 @@ const Long_term_eu_status_assessment = () => {
                         
                       <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Main Applicant Assesment
-                      </strong>
+                      <strong>{t(`Main Applicant Assesment`)}</strong>
                     </h2>
                         <div className="col-md-6 tw-pt-4">
 
@@ -625,14 +564,10 @@ const Long_term_eu_status_assessment = () => {
                         
                       <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                     Family Assessment
-                      </strong>
+                      <strong>{t(`Family Assessment`)}</strong>
                     </h2>
                         
                         <div className="col-md-6 tw-pt-4">

@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";  // Import useLocation hook
 import LanguageSelector from "../language/LanguageSelector";
 import './style.css'; // Import the CSS file
 
+import { Link } from "react-router-dom";
 
 import { useTranslation } from '../../context/TranslationContext';
 const Header = () => {
@@ -15,19 +16,7 @@ const Header = () => {
   const [isBelow1300px, setIsBelow1300px] = useState(window.innerWidth < 1320);
 
 
-  useEffect(() => {
-    const translateElement = document.getElementById("google_translate_element");
-    const targetContainer = document.querySelector(".langtest");
-
-    if (translateElement && targetContainer) {
-      targetContainer.appendChild(translateElement);
-    }
-  }, []); // Empt
-
-  const location = useLocation(); // Detect route changes
-
-
-  
+ 
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
@@ -53,6 +42,7 @@ const Header = () => {
   };
   const { setLanguage } = useTranslation();
  
+  const { t} = useTranslation();
   
  
 
@@ -74,26 +64,30 @@ const Header = () => {
                   <div className="tw-ml-2">
                     <Flex gap={"gap-small"}>
                       <Typography variant={"p"} color={"white"} fontSize={"base-small"}>
-                        Mon - Fri 10.00 - 18.00
+                        {t("Mon - Fri 10.00 - 18.00")}
                       </Typography>
                       <div className="tw-w-[1px] tw-h-6 tw-bg-[#363a4b] mx-2"></div>
                       <Typography variant={"p"} color={"white"} fontSize={"base-small"}>
-                        Amiralsgatan 86E 214 37 Malmö, Sweden
+                       {t(" Amiralsgatan 86E 214 37 Malmö, Sweden")}
                       </Typography>
                       {/* Google Translate container */}
-                      <div className="language-selector">
-        <select onChange={handleLanguageChange}>
-          <option value="en">English</option>
-          <option value="es">Spanish</option>
-          <option value="fr">French</option>
-          <option value="de">German</option>
-        </select>
-      </div>
+                    
                     
                       
 
                     </Flex>
+                    
                   </div>
+
+                  <LanguageSelector/>
+                  {/* <div className="language-selector">
+        <select onChange={handleLanguageChange}>
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+          <option value="ur">Urdu</option>
+          <option value="de">German</option>
+        </select>
+      </div> */}
                 
                 </Flex>
               </div>
@@ -106,12 +100,13 @@ const Header = () => {
               >
                 <Flex spaceBetween={"space-between"}>
                   <div className="tw-flex tw-justify-center tw-items-center tw-gap-0">
+                    <Link to ='/' >
                     <Image
                       link={logo}
                       alt="Sweden Relocators Logo"
                       imageType={"brand-image-small"}
-                      href="/"
-                    />
+                     
+                    /></Link>
                     <NavListDesktop isTop={isTop} />
                   </div>
                   <div className="tw-flex tw-justify-center tw-items-center tw-gap-1">

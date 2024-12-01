@@ -15,7 +15,8 @@ import { GoTriangleRight } from "react-icons/go";
 import { TfiAngleLeft } from "react-icons/tfi";
 import { Link, useParams } from "react-router-dom";
 import Assessment_modal from "./Assessment_modal";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from '../../context/TranslationContext';
+
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import Header from "../../components/Header_New/Header";
 import Sidebar from "../../components/ScrollableBar";
@@ -406,115 +407,89 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                   <div>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Study in Sweden
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Study in Sweden`)}</span>
 
                     <h2>
-                      <strong>
-                        Find Out Your Eligibility to Study in Sweden
-                      </strong>
+                      <strong>{t(`Find Out Your Eligibility to Study in Sweden`)}</strong>
                     </h2>
                     <br />
-                    <strong className="tw-text-gray">
-                      Who Should Use This Tool?
-                    </strong>
+                    <strong className="tw-text-gray">{t(`Who Should Use This Tool?`)}</strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Individuals who are planning to apply for a student
-                          residence permit in Sweden.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Individuals who are planning to apply for a student
+                          residence permit in Sweden.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Those seeking assistance with the application process
-                          for studying in Sweden.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Those seeking assistance with the application process
+                          for studying in Sweden.`)}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Applicants looking for support with housing and
+                        <p className=" m-0 tw-text-gray">{t(`Applicants looking for support with housing and
                           settling in Sweden once they arrive on a student
-                          residence permit.
-                        </p>
+                          residence permit.`)}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Anyone who prefers professional assistance in managing
-                          their study application and relocation process.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Anyone who prefers professional assistance in managing
+                          their study application and relocation process.`)}</p>
                       </li>
                     </ul>
 
                     <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Why
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Why`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Use the Eligibility Tool?
-                      </strong>
+                      <strong>{t(`Use the Eligibility Tool?`)}</strong>
                     </h2>
                     <br/>
 
 
                   
-                    <p className="tw-text-gray">
-                      This tool is designed to help you understand the
+                    <p className="tw-text-gray">{t(`This tool is designed to help you understand the
                       requirements and eligibility criteria for studying in
-                      Sweden by gathering essential details such as:
-                    </p>
+                      Sweden by gathering essential details such as:`)}</p>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Academic Background: Information on your previous
-                          education and qualifications.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Academic Background: Information on your previous
+                          education and qualifications.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Program of Interest: The type of course or program you
-                          intend to apply for at Swedish universities.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Program of Interest: The type of course or program you
+                          intend to apply for at Swedish universities.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Application Requirements: Your preparedness in meeting
+                        <p className=" m-0 tw-text-gray">{t(`Application Requirements: Your preparedness in meeting
                           the specific admission requirements of Swedish
-                          institutions.
-                        </p>
+                          institutions.`)}</p>
                       </li>
                     </ul>
-                    <h5 className="tw-text-gray italic">Important Note </h5>
+                    <h5 className="tw-text-gray italic">{t(`Important Note`)}</h5>
                     <p className="tw-text-gray">
                       {" "}
                       This assessment is designed to guide you through the
@@ -528,9 +503,7 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                     <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Complete
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Complete`)}</span>
 
                     <h2 className="tw-text-left">
                       <strong>
@@ -541,59 +514,47 @@ const [subject3, setSubject3] = useState(""); // For another subject select
 
                     
 
-                    <p className="tw-text-gray">
-                      We offer end-to-end support for your study journey and
-                      relocation to Sweden through our web portal and app:
-                    </p>
+                    <p className="tw-text-gray">{t(`We offer end-to-end support for your study journey and
+                      relocation to Sweden through our web portal and app:`)}</p>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Comprehensive Application Assistance: We help with
+                        <p className=" m-0 tw-text-gray">{t(`Comprehensive Application Assistance: We help with
                           your student residence permit application, making sure
                           all documents are complete and comply with Swedish
-                          immigration standards.
-                        </p>
+                          immigration standards.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Housing and Settling Services: Once your permit is
+                        <p className=" m-0 tw-text-gray">{t(`Housing and Settling Services: Once your permit is
                           approved, we provide assistance with finding
                           accommodation and settling into your new life in
-                          Sweden.
-                        </p>
+                          Sweden.`)}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Digital Management: Manage your entire study
+                        <p className=" m-0 tw-text-gray">{t(`Digital Management: Manage your entire study
                           application and relocation process through our web
                           portal or app, making it easy and convenient to track
-                          every step.
-                        </p>
+                          every step.`)}</p>
                       </li>
                     </ul>
 
                     <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      How
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      We Use the Information
-                      </strong>
+                      <strong>{t(`We Use the Information`)}</strong>
                     </h2>
                     <br/>
 
@@ -605,30 +566,24 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          We will evaluate your details to determine your
-                          eligibility to study in Sweden.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`We will evaluate your details to determine your
+                          eligibility to study in Sweden.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Our team will guide you through the application
+                        <p className=" m-0 tw-text-gray">{t(`Our team will guide you through the application
                           process for both your chosen academic program and
-                          student residence permit.
-                        </p>
+                          student residence permit.`)}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          We’ll ensure that you have the support you need for a
-                          smooth transition to life in Sweden.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`We’ll ensure that you have the support you need for a
+                          smooth transition to life in Sweden.`)}</p>
                       </li>
                     </ul>
 
@@ -641,31 +596,26 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Get Started
-                      </strong>
+                      <strong>{t(`Get Started`)}</strong>
                     </h2>
                     <br/>
 
 
                    
-                    <p className=" tw-text-gray">
-                      Use the eligibility tool on our web portal or app to take
+                    <p className=" tw-text-gray">{t(`Use the eligibility tool on our web portal or app to take
                       the first step toward your educational journey in Sweden.
                       Whether you need help with your application or future
-                      relocation, we’re here to assist you at every step!
-                    </p>
+                      relocation, we’re here to assist you at every step!`)}</p>
                   </div>
 
                   <div>
                     {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
-                      <h5 className=" tw-text-black  ">Persoanl Details</h5>
+                      <h5 className=" tw-text-black  ">{t(`Persoanl Details`)}</h5>
 
                       <h6 className=" tw-text-black ">
                         {" "}
-                        <i class="fa fa-building"></i> Fill up your personal
-                        details.
-                      </h6>
+                        <i class="fa fa-building"></i>{t(`Fill up your personal
+                        details.`)}</h6>
                     </div> */}
 
                     <Assessment_modal
@@ -716,12 +666,10 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                       <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
                         <span className=" tw-flex tw-items-center tw-gap-2">
                           {" "}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                          Fill in your
-                        </span>
+                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                         <h2 className="tw-text-left">
-                          <strong>Educational Background</strong>
+                          <strong>{t(`Educational Background`)}</strong>
                         </h2>
                         <div className="col-md-6 tw-pt-4">
                         <Select
@@ -810,14 +758,10 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                                 <div className="row ">
                                   <span className=" tw-flex tw-items-center tw-gap-2">
                                     {" "}
-                                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                                    Fill in your
-                                  </span>
+                                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                                   <h2 className="tw-text-left">
-                                    <strong>
-                                      Higher Secondary Education (Matriculation)
-                                    </strong>
+                                    <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
                                   </h2>
 
                                   <div className="col-md-6 tw-pt-4">
@@ -919,15 +863,10 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                            
                         <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Higher Secondary Education (Matriculation)
-                    
-                      </strong>
+                      <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
                     </h2>
                            
                             <div className="col-md-6 tw-pt-4">
@@ -1013,14 +952,10 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                             
                           <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      English Proficiency Test
-                      </strong>
+                      <strong>{t(`English Proficiency Test`)}</strong>
                     </h2>
                             
                             <div className="col-md-6 tw-pt-4">
@@ -1062,14 +997,10 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                             
                           <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Higher Secondary Education (Matriculation)
-                      </strong>
+                      <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
                     </h2>
                             
                             <div className="col-md-6 tw-pt-4">
@@ -1146,10 +1077,8 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                       <div className=" tw-pt-8">
                         <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
                           <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                          <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">
-                            Intermediate / O-A Levels (F.A, I.Com, ICS, FSC,
-                            DAE, +2 Examination)
-                          </p>
+                          <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">{t(`Intermediate / O-A Levels (F.A, I.Com, ICS, FSC,
+                            DAE, +2 Examination)`)}</p>
                         </div>
 
                         <form>
@@ -1235,14 +1164,10 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                           <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Higher Secondary Education (Matriculation)
-                      </strong>
+                      <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
                     </h2>
                             
                             
@@ -1284,14 +1209,10 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                            
                           <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Higher Secondary Education (Matriculation)
-                      </strong>
+                      <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
                     </h2>
                            
                             <div className="col-md-6 tw-pt-4">
@@ -1368,10 +1289,8 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                       <div className=" tw-pt-8">
                         <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
                           <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                          <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">
-                            Intermediate / O-A Levels (F.A, I.Com, ICS, FSC,
-                            DAE, +2 Examination)
-                          </p>
+                          <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">{t(`Intermediate / O-A Levels (F.A, I.Com, ICS, FSC,
+                            DAE, +2 Examination)`)}</p>
                         </div>
 
                         <form>
@@ -1450,10 +1369,8 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                       <div className=" tw-pt-8">
                         <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
                           <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                          <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">
-                            Under Graduate (B.A, B.Com, BBA, BCS, BIT,BSc, BE,
-                            BS, DVM, LLB)
-                          </p>
+                          <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">{t(`Under Graduate (B.A, B.Com, BBA, BCS, BIT,BSc, BE,
+                            BS, DVM, LLB)`)}</p>
                         </div>
 
                         <form>
@@ -1495,9 +1412,7 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                             </div>
 
                             <div className="col-md-3 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">
-                                To
-                              </label>
+                              <label className=" tw-text-sm  tw-text-gray ">{t(`To`)}</label>
 
                               <Input
                                 placeholder={"To"}
@@ -1553,14 +1468,10 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                            
                           <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Higher Secondary Education (Matriculation)
-                      </strong>
+                      <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
                     </h2>
                             <div className="col-md-6 tw-pt-4">
                             <Select

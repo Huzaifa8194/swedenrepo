@@ -12,7 +12,8 @@ import { GoTriangleRight } from "react-icons/go";
 import { TfiAngleLeft } from "react-icons/tfi";
 import { Link, useParams } from "react-router-dom";
 import Assessment_modal from "./Assessment_modal";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "../../context/TranslationContext";
+
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 import Header from '../../components/Header_New/Header';
 import Select from "../../components/Selecttab";
@@ -449,53 +450,41 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                   <div>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Visit visa assessment
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Visit visa assessment`)}</span>
 
                     <h2>
-                      <strong>
-                        Find Out Your Eligibility for a Visit Visa to Sweden
-                      </strong>
+                      <strong>{t(`Find Out Your Eligibility for a Visit Visa to Sweden`)}</strong>
                     </h2>
                     <br/>
-                    <strong className = "tw-text-gray">Who Should Use This Tool?</strong>
+                    <strong className = "tw-text-gray">{t(`Who Should Use This Tool?`)}</strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Individuals currently in Sweden or applying from
-                          outside the country
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Individuals currently in Sweden or applying from
+                          outside the country`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Those attending a conference or on a short business
-                          visit to Sweden.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Those attending a conference or on a short business
+                          visit to Sweden.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          People joining their EU partner for a temporary stay.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`People joining their EU partner for a temporary stay.`)}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Anyone applying for any type of visit visa to Sweden.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Anyone applying for any type of visit visa to Sweden.`)}</p>
                       </li>
                     </ul>
 
@@ -503,133 +492,105 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                     <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Why
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Why`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Use the Eligibility Tool?
-                      </strong>
+                      <strong>{t(`Use the Eligibility Tool?`)}</strong>
                     </h2>
                     <br/>
 
 
                  
-                    <p className="tw-text-gray">
-                      This tool is designed to help you understand the
+                    <p className="tw-text-gray">{t(`This tool is designed to help you understand the
                       requirements and eligibility criteria for different types
-                      of visit visas by gathering important details, such as:
-                    </p>
+                      of visit visas by gathering important details, such as:`)}</p>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Purpose of Your Visit: Whether you’re visiting family,
+                        <p className=" m-0 tw-text-gray">{t(`Purpose of Your Visit: Whether you’re visiting family,
                           attending a business event, or joining your EU
-                          partner.
-                        </p>
+                          partner.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Duration of Stay: Information about how long you plan
-                          to stay in Sweden.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Duration of Stay: Information about how long you plan
+                          to stay in Sweden.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Visa Requirements: Specific guidelines based on your
-                          visit type and individual circumstances
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Visa Requirements: Specific guidelines based on your
+                          visit type and individual circumstances`)}</p>
                       </li>
                     </ul>
 
                     <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Complete
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Complete`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Schengen Visa File Preparation
-                      </strong>
+                      <strong>{t(`Schengen Visa File Preparation`)}</strong>
                     </h2>
                     <br/>
 
 
                     
 
-                    <p className="tw-text-gray">
-                      We handle the entire process of preparing your Schengen
-                      visa file, ensuring it includes everything you need:
-                    </p>
+                    <p className="tw-text-gray">{t(`We handle the entire process of preparing your Schengen
+                      visa file, ensuring it includes everything you need:`)}</p>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Comprehensive Documentation: We compile all necessary
+                        <p className=" m-0 tw-text-gray">{t(`Comprehensive Documentation: We compile all necessary
                           documents, including health insurance and flight
-                          reservations.
-                        </p>
+                          reservations.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Appointment Booking: We book appointments with the
+                        <p className=" m-0 tw-text-gray">{t(`Appointment Booking: We book appointments with the
                           embassy, VFS, FedEx, or any relevant service providers
-                          on your behalf.
-                        </p>
+                          on your behalf.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Convenient Access: You can simply log into our web
+                        <p className=" m-0 tw-text-gray">{t(`Convenient Access: You can simply log into our web
                           portal or app to print the complete visa file and
-                          submit it along with your original passport.
-                        </p>
+                          submit it along with your original passport.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className = "tw-text-gray">File Delivery Options</strong>
+                    <strong className = "tw-text-gray">{t(`File Delivery Options`)}</strong>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          DHL Delivery: We can send the complete visa file
+                        <p className=" m-0 tw-text-gray">{t(`DHL Delivery: We can send the complete visa file
                           directly to your home address before the appointment
-                          date.
-                        </p>
+                          date.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                          Easy Submission: All you need to do is sign the
+                        <p className=" m-0 tw-text-gray">{t(`Easy Submission: All you need to do is sign the
                           application form and submit it to the embassy or visa
-                          center.
-                        </p>
+                          center.`)}</p>
                       </li>
                     </ul>
 
@@ -637,14 +598,10 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                     <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      How
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      We Use the Information
-                      </strong>
+                      <strong>{t(`We Use the Information`)}</strong>
                     </h2>
                     <br/>
 
@@ -653,19 +610,13 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                        We will analyze your information to provide a clear assessment of your eligibility for a visit visa.
-
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`We will analyze your information to provide a clear assessment of your eligibility for a visit visa.`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                        Our team will guide you through the next steps of the visa application process.
-
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Our team will guide you through the next steps of the visa application process.`)}</p>
                       </li>
 
 
@@ -673,10 +624,7 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">
-                        We’ll ensure you meet all the requirements to successfully obtain a visit visa to Sweden.
-
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`We’ll ensure you meet all the requirements to successfully obtain a visit visa to Sweden.`)}</p>
                       </li>
                     </ul>
 
@@ -684,28 +632,21 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                     <br/>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                      Get Started
-                      </strong>
+                      <strong>{t(`Get Started`)}</strong>
                     </h2>
                     <br/>
 
 
                    
-                    <p className=" tw-text-gray">
-                    Use the eligibility tool to take the first step toward your visit to Sweden, whether it’s to see loved ones, attend a conference, or for a short-term business trip!
-
-                    </p>
+                    <p className=" tw-text-gray">{t(`Use the eligibility tool to take the first step toward your visit to Sweden, whether it’s to see loved ones, attend a conference, or for a short-term business trip!`)}</p>
                   </div>
 
                   <div>
                   {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">Personal Details</h5>
+                  <h5 className=" tw-text-black  ">{t(`Personal Details`)}</h5>
 
                   <h6 className=" tw-text-black ">
                     {" "}
@@ -764,14 +705,10 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                         
                       <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                     Applicant Assessment
-                      </strong>
+                      <strong>{t(`Applicant Assessment`)}</strong>
                     </h2> 
                         
                         <div className="col-md-6 tw-pt-4">
@@ -1272,14 +1209,10 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                  
                      <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                      Fill in your
-                    </span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>
-                     Family Document detail
-                      </strong>
+                      <strong>{t(`Family Document detail`)}</strong>
                     </h2>
               
 
@@ -1290,9 +1223,7 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                         checked={isSingle}
                         onChange={handleCheckboxChange}
                       />
-                      <p className="tw-text-gray-dark  tw-m-0">
-                        I am Visiting Alone
-                      </p>
+                      <p className="tw-text-gray-dark  tw-m-0">{t(`I am Visiting Alone`)}</p>
                     </div>
 
                     {!isSingle && (

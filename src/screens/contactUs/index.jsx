@@ -4,10 +4,14 @@ import Navbar from '../../components/Header/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
+import { useTranslation } from '../../context/TranslationContext';
+
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 
 import Header from '../../components/Header_New/Header';
 const ContactUs = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -15,8 +19,8 @@ const ContactUs = () => {
     <>
       <Header />
       <Banner_Page 
-  highlightText={"Contact Us"} 
-  regularText={"Have questions? We’re here to help! Reach out for personalized guidance on your relocation journey. Together, we’ll make Sweden feel like home."} 
+  highlightText={t("Contact Us")} 
+  regularText={t("Have questions? We’re here to help! Reach out for personalized guidance on your relocation journey. Together, we’ll make Sweden feel like home.")} 
   backgroundImage={homeBgImage} 
 />
       <div className=" sm:tw-pt-16 tw-pt-12">
@@ -37,18 +41,18 @@ const ContactUs = () => {
             <div className="col-md-4">
               <div className="card border-0">
                 <div className=" tw-bg-gray-dark tw-rounded-tl-md tw-rounded-tr-lg p-4">
-                  <p className=" tw-text-white m-0 tw-font-semibold tw-text-2xl">Sweden Office:</p>
-                  <p className=" tw-text-white tw-pt-3">Amiralsgatan 86E 214 37 Malmö, Sweden</p>
+                  <p className=" tw-text-white m-0 tw-font-semibold tw-text-2xl">{t(`Sweden Office:`)}</p>
+                  <p className=" tw-text-white tw-pt-3">{t(`Amiralsgatan 86E 214 37 Malmö, Sweden`)}</p>
 
-                  <p className=" tw-text-base tw-font-semibold m-0 tw-text-white">Denmark Office:</p>
+                  <p className=" tw-text-base tw-font-semibold m-0 tw-text-white">{t(`Denmark Office:`)}</p>
 
-                  <p className=" tw-text-white">Roskildevej 30B, 2620 Albertslund, Denmark</p>
+                  <p className=" tw-text-white">{t(`Roskildevej 30B, 2620 Albertslund, Denmark`)}</p>
 
-                  <p className=" tw-text-white m-0 tw-font-semibold tw-text-2xl">Quick Contact:</p>
+                  <p className=" tw-text-white m-0 tw-font-semibold tw-text-2xl">{t(`Quick Contact:`)}</p>
 
-                  <p className=" tw-text-white m-0 tw-pt-3">info@swedenrelocators.se</p>
-                  <p className=" tw-text-white m-0">Technical Issues:</p>
-                  <p className=" tw-text-white m-0">support@swedenrelocators.se</p>
+                  <p className=" tw-text-white m-0 tw-pt-3">{t(`info@swedenrelocators.se`)}</p>
+                  <p className=" tw-text-white m-0">{t(`Technical Issues:`)}</p>
+                  <p className=" tw-text-white m-0">{t(`support@swedenrelocators.se`)}</p>
                 </div>
 
                 <div className=" tw-bg-blue tw-flex tw-rounded-bl-lg tw-rounded-br-lg tw-gap-3 px-4 tw-py-9">
@@ -58,9 +62,9 @@ const ContactUs = () => {
                     </div>
                   </div>
                   <div>
-                    <p className=" tw-text-white m-0 tw-font-semibold">+46 723 276 276</p>
-                    <p className=" tw-text-white tw-font-semibold m-0">+46 102 146 276</p>
-                    <p className=" tw-text-white tw-font-semibold m-0">+45 53 766 276</p>
+                    <p className=" tw-text-white m-0 tw-font-semibold">{t(`+46 723 276 276`)}</p>
+                    <p className=" tw-text-white tw-font-semibold m-0">{t(`+46 102 146 276`)}</p>
+                    <p className=" tw-text-white tw-font-semibold m-0">{t(`+45 53 766 276`)}</p>
                   </div>
                 </div>
               </div>
@@ -68,10 +72,10 @@ const ContactUs = () => {
             <div className="col-md-8">
               <div className="section-title">
                 <div className="title-header">
-                  <span>Why Choose Us</span>
+                  <span>{t(`Why Choose Us`)}</span>
                   <h2>
-                    Get In<br/>
-                    <strong>Touch?</strong>
+                    {t("Get In Touch?")}<br/>
+                    <strong>{t(``)}</strong>
                   </h2>
                 </div>
               </div>

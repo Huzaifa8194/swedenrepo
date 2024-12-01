@@ -265,19 +265,17 @@ const CPRNumberDenmark = () => {
                       What is a
                     </span>
                     <h2 className="tw-text-left">
-                      <strong className='tw-text-black'>  CPR Number? </strong>
+                      <strong className='tw-text-black'>{t(`CPR Number?`)}</strong>
                     </h2>
                     <br></br>
 
-                    <p className=" tw-text-gray">
-                      A CPR (Centrale Personregister) number is a unique
+                    <p className=" tw-text-gray">{t(`A CPR (Centrale Personregister) number is a unique
                       identification number in Denmark. It is essential for
                       individuals residing in Denmark as it facilitates seamless
                       access to numerous public and private services. With a CPR
                       number, you can register for healthcare, open a bank
                       account, access insurance, and even borrow books at the
-                      library.
-                    </p>
+                      library.`)}</p>
 
                     <br></br>
 
@@ -289,21 +287,21 @@ const CPRNumberDenmark = () => {
                           What is
                         </span>
                         <h2 className="tw-text-left">
-                          <strong className='tw-text-black'>CPR Number Structure </strong>
+                          <strong className='tw-text-black'>{t(`CPR Number Structure`)}</strong>
                         </h2>
                         <br></br>
 
                         <ul className=" tw-p-0 ">
                           <li className=" tw-flex tw-items-center tw-gap-3">
                             <p className=" m-0 tw-text-gray">
-                              <strong className='tw-text-black'>Ten-Digit Identifier:</strong> The CPR
+                              <strong className='tw-text-black'>{t(`Ten-Digit Identifier:`)}</strong> {t(`The CPR
                               number is a ten-digit identifier used across
                               various Danish national systems and databases. The
                               first six digits correspond to your date of birth,
                               while the last four form your unique
                               identification. The last digit of the CPR number
                               also indicates gender: odd numbers denote male and
-                              even numbers denote female.
+                              even numbers denote female.`)}
                             </p>
                           </li>
                         </ul>
@@ -331,14 +329,14 @@ const CPRNumberDenmark = () => {
                       Why & When?
                     </span>
                     <h2 className="tw-text-left">
-                      <strong className='tw-text-black'> CPR Number Requirement </strong>
+                      <strong className='tw-text-black'>{t(`CPR Number Requirement`)}</strong>
                     </h2>
                     <br></br>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <p className=" m-0 tw-text-gray">
-                          <strong className='tw-text-black'>Why Do You Need a CPR Number?</strong>{" "}<br/>
+                          <strong className='tw-text-black'>{t(`Why Do You Need a CPR Number?`)}</strong>{" "}<br/>
                           Residents in Denmark are legally obligated to have a
                           CPR number as it is essential for:
                           <ul className="tw-pl-0">
@@ -346,76 +344,60 @@ const CPRNumberDenmark = () => {
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              <p className=" m-0 tw-text-gray">
-                                Accessing healthcare services.
-                              </p>
+                              <p className=" m-0 tw-text-gray">{t(`Accessing healthcare services.`)}</p>
                             </li>
 
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              <p className=" m-0 tw-text-gray">
-                                Opening a bank account.
-                              </p>
+                              <p className=" m-0 tw-text-gray">{t(`Opening a bank account.`)}</p>
                             </li>
 
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              <p className=" m-0 tw-text-gray">
-                                Registering for insurance.
-                              </p>
+                              <p className=" m-0 tw-text-gray">{t(`Registering for insurance.`)}</p>
                             </li>
 
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              <p className=" m-0 tw-text-gray">
-                                Borrowing books from libraries.
-                              </p>
+                              <p className=" m-0 tw-text-gray">{t(`Borrowing books from libraries.`)}</p>
                             </li>
 
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              <p className=" m-0 tw-text-gray">
-                                Accessing most public services and signing up
-                                for digital services such as e-Boks and NemID.
-                              </p>
+                              <p className=" m-0 tw-text-gray">{t(`Accessing most public services and signing up
+                                for digital services such as e-Boks and NemID.`)}</p>
                             </li>
                           </ul>
-                          <br />
-                          In Denmark, a CPR number is more than just an
+                          <br />{t(`In Denmark, a CPR number is more than just an
                           identification number; it serves as the gateway to
                           integration into Danish society, allowing easy access
                           to necessary services and a secure connection to
-                          national databases.
-                        </p>
+                          national databases.`)}</p>
                       </li>
 
                       <li>
                         <p className=" m-0 tw-text-gray">
                           <strong className='tw-text-black'>
                             {" "}
-                            <br />
-                            When is a CPR Number Required?
-                          </strong>
+                            <br />{t(`When is a CPR Number Required?`)}</strong>
                           <ul className="tw-pl-0">
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              <p className=" m-0 tw-text-gray">
-                                Non-EU/EEA Citizens: If you plan to stay in
+                              <p className=" m-0 tw-text-gray">{t(`Non-EU/EEA Citizens: If you plan to stay in
                                 Denmark for more than three months, you are
                                 required to register with the Danish Civil
                                 Registration System upon arrival to obtain a CPR
-                                number.
-                              </p>
+                                number.`)}</p>
                             </li>
 
                             <li className=" tw-flex  tw-gap-3">
@@ -423,12 +405,12 @@ const CPRNumberDenmark = () => {
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
                               <p className=" m-0 tw-text-gray">
-                                Nordic Citizens, EU/EEA, and Swiss Citizens: If
+                               {t(` Nordic Citizens, EU/EEA, and Swiss Citizens: If
                                 you are from a Nordic country, the EU, the EEA,
                                 or Switzerland and plan to stay in Denmark for
                                 more than six months, you must register with the
                                 Danish Civil Registration System to obtain your
-                                CPR number.{" "}
+                                CPR number.`)}{" "}
                               </p>
                             </li>
                           </ul>
@@ -444,7 +426,7 @@ const CPRNumberDenmark = () => {
                       How to
                     </span>
                     <h2 className="tw-text-left">
-                      <strong className='tw-text-black'>Obtain a CPR Number </strong>
+                      <strong className='tw-text-black'>{t(`Obtain a CPR Number`)}</strong>
                     </h2>
 
                     <br></br>
@@ -452,33 +434,29 @@ const CPRNumberDenmark = () => {
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <p className=" m-0 tw-text-gray">
-                          <strong className='tw-text-black'>Required Documents:</strong>
-                          <br /> When you visit the Citizen’s Service Center to
+                          <strong className='tw-text-black'>{t(`Required Documents:`)}</strong>
+                          <br />{t(` When you visit the Citizen’s Service Center to
                           apply for your CPR number, be prepared with the
-                          following:
+                          following:`)}
                           <ul className="tw-pl-0 tw-pt-4">
-                            <li>Proof of Residence and Legal Documentation:</li>
+                            <li>{t(`Proof of Residence and Legal Documentation:`)}</li>
 
                             <ul className="tw-pl-0">
                               <li className=" tw-flex  tw-gap-3">
                                 <div>
                                   <GoTriangleRight className=" tw-text-blue" />
                                 </div>
-                                <p className=" m-0 tw-text-gray">
-                                  For EU/EEA and Swiss citizens: Present your
-                                  registration certificate.
-                                </p>
+                                <p className=" m-0 tw-text-gray">{t(`For EU/EEA and Swiss citizens: Present your
+                                  registration certificate.`)}</p>
                               </li>
 
                               <li className=" tw-flex  tw-gap-3">
                                 <div>
                                   <GoTriangleRight className=" tw-text-blue" />
                                 </div>
-                                <p className=" m-0 tw-text-gray">
-                                  For Nordic citizens: Bring proof of
+                                <p className=" m-0 tw-text-gray">{t(`For Nordic citizens: Bring proof of
                                   identification, such as a passport or Nordic
-                                  ID.
-                                </p>
+                                  ID.`)}</p>
                               </li>
                             </ul>
 
@@ -497,47 +475,39 @@ const CPRNumberDenmark = () => {
                                 </div>
                               </div>
                               <div className="col-md-6">
-                                <li>Marital Status Documentation:</li>
+                                <li>{t(`Marital Status Documentation:`)}</li>
                                 <ul className="tw-pl-0">
                                   <li className=" tw-flex  tw-gap-3">
                                     <div>
                                       <GoTriangleRight className=" tw-text-blue" />
                                     </div>
-                                    <p className=" m-0 tw-text-gray">
-                                      If you are married: Bring your marriage
-                                      certificate or an official copy.
-                                    </p>
+                                    <p className=" m-0 tw-text-gray">{t(`If you are married: Bring your marriage
+                                      certificate or an official copy.`)}</p>
                                   </li>
 
                                   <li className=" tw-flex  tw-gap-3">
                                     <div>
                                       <GoTriangleRight className=" tw-text-blue" />
                                     </div>
-                                    <p className=" m-0 tw-text-gray">
-                                      If you are divorced: Provide your divorce
-                                      certificate.
-                                    </p>
+                                    <p className=" m-0 tw-text-gray">{t(`If you are divorced: Provide your divorce
+                                      certificate.`)}</p>
                                   </li>
 
                                   <li className=" tw-flex  tw-gap-3">
                                     <div>
                                       <GoTriangleRight className=" tw-text-blue" />
                                     </div>
-                                    <p className=" m-0 tw-text-gray">
-                                      If you are a widow/widower: Present the
-                                      death certificate of your deceased spouse.
-                                    </p>
+                                    <p className=" m-0 tw-text-gray">{t(`If you are a widow/widower: Present the
+                                      death certificate of your deceased spouse.`)}</p>
                                   </li>
 
                                   <li className=" tw-flex  tw-gap-3">
                                     <div>
                                       <GoTriangleRight className=" tw-text-blue" />
                                     </div>
-                                    <p className=" m-0 tw-text-gray">
-                                      Birth Certificate for Children: If you
+                                    <p className=" m-0 tw-text-gray">{t(`Birth Certificate for Children: If you
                                       have children, bring their birth
-                                      certificate(s).
-                                    </p>
+                                      certificate(s).`)}</p>
                                   </li>
                                 </ul>
                               </div>
@@ -549,13 +519,11 @@ const CPRNumberDenmark = () => {
                       </li>
                     </ul>
 
-                    <p className=" tw-text-gray">
-                      Our team is here to assist with any questions or
+                    <p className=" tw-text-gray">{t(`Our team is here to assist with any questions or
                       requirements as you navigate the process of relocating to
                       Denmark and obtaining your CPR number. With our help, you
                       can be assured of a smooth registration process so you can
-                      quickly access all essential services in Denmark.
-                    </p>
+                      quickly access all essential services in Denmark.`)}</p>
                   </div>
                   <div>
                     <br></br>
@@ -565,15 +533,14 @@ const CPRNumberDenmark = () => {
                       A Smooth Transition
                     </span>
                     <h2 className="tw-text-left">
-                      <strong className='tw-text-black'> to Denmark </strong>
+                      <strong className='tw-text-black'>{t(`to Denmark`)}</strong>
                     </h2>
 
                     <br></br>
 
                     <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
-                        <p className="tw-text-gray">
-                          Moving to a new country can be both exciting and
+                        <p className="tw-text-gray">{t(`Moving to a new country can be both exciting and
                           challenging. At Sweden Relocators, we provide
                           specialized relocation assistance to make your move to
                           Denmark as seamless as possible. Whether you're
@@ -582,8 +549,7 @@ const CPRNumberDenmark = () => {
                           comfortably. From securing essential documentation to
                           finding housing, we cover every aspect of your
                           relocation process so you can focus on enjoying your
-                          new start.
-                        </p>
+                          new start.`)}</p>
                       </div>
 
                       <div className="col-md-6">
@@ -609,158 +575,139 @@ const CPRNumberDenmark = () => {
                       Our Services
                     </span>
                     <h2 className="tw-text-left">
-                      <strong className='tw-text-black'>For Relocation to Denmark </strong>
+                      <strong className='tw-text-black'>{t(`For Relocation to Denmark`)}</strong>
                     </h2>
 
                     <br></br>
 
-                    <strong className="m-0 tw-text-black">
-                      EU Residence Card Assistance
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`EU Residence Card Assistance`)}</strong>
 
                     <ul className="tw-p-0 ">
                       <li className="tw-flex tw-pt-4 tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
-                        <p className="m-0 tw-text-gray">
-                          Document Preparation: We ensure all necessary
+                        <p className="m-0 tw-text-gray">{t(`Document Preparation: We ensure all necessary
                           documents are prepared, verified, and translated if
-                          needed.
-                        </p>
+                          needed.`)}</p>
                       </li>
 
                       <li className="tw-flex  tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Application Submission:</> We manage your
+                          <>{t(`Application Submission:`)}</>{t(`We manage your
                           application process, scheduling any necessary
-                          appointments and handling paperwork to reduce delays.
-                        </p>
+                          appointments and handling paperwork to reduce delays.`)}</p>
                       </li>
 
                       <li className="tw-flex tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Ongoing Support:</> From understanding eligibility
+                          <>{t(`Ongoing Support:`)}</>{t(`From understanding eligibility
                           requirements to addressing any inquiries from
-                          immigration authorities, our team is here to assist.
-                        </p>
+                          immigration authorities, our team is here to assist.`)}</p>
                       </li>
                     </ul>
                     <br></br>
-                    <strong className="m-0 tw-text-black">
-                      CPR (Danish ID) Number Assistance
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`CPR (Danish ID) Number Assistance`)}</strong>
 
                     <ul className="tw-p-0 ">
                       <li className="tw-flex tw-pt-4 tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Eligibility Assessment:</> We help determine when
+                          <>{t(`Eligibility Assessment:`)}</>{t(`We help determine when
                           and how you should apply for a CPR number, depending
-                          on your citizenship and planned duration of stay.
-                        </p>
+                          on your citizenship and planned duration of stay.`)}</p>
                       </li>
 
                       <li className="tw-flex  tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Document Verification:</> Our team ensures that all
+                          <>{t(`Document Verification:`)}</>{t(`Our team ensures that all
                           required documents (residence permit, marriage
                           certificates, children’s birth certificates, etc.) are
-                          complete and accurately translated if necessary.
-                        </p>
+                          complete and accurately translated if necessary.`)}</p>
                       </li>
 
                       <li className="tw-flex  tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Application Facilitation:</> We guide you through
+                          <>{t(`Application Facilitation:`)}</>{t(`We guide you through
                           the process, from booking appointments at Citizen
-                          Service Centers to submitting your application.
-                        </p>
+                          Service Centers to submitting your application.`)}</p>
                       </li>
                     </ul>
 
                     <br></br>
-                    <strong className="m-0 tw-text-black">
-                      EU Certificate Assistance
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`EU Certificate Assistance`)}</strong>
 
                     <ul className="tw-p-0 ">
                       <li className="tw-flex tw-pt-4 tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <strong className='tw-text-gray'>Requirements Guidance:</strong> We clarify
+                          <strong className='tw-text-gray'>{t(`Requirements Guidance:`)}</strong>{t(` We clarify
                           which documents are needed based on your employment
-                          status, purpose of stay, and other personal factors.
+                          status, purpose of stay, and other personal factors.`)}
                         </p>
                       </li>
 
                       <li className="tw-flex  tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <strong className='tw-text-gray'>Application Submission:</strong> We facilitate
+                          <strong className='tw-text-gray'>{t(`Application Submission:`)}</strong> {t(`We facilitate
                           a swift submission process, coordinating appointments
                           and completing necessary paperwork to meet all
-                          regulatory standards.
+                          regulatory standards.`)}
                         </p>
                       </li>
 
                       <li className="tw-flex  tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <strong className='tw-text-gray'>Follow-Up and Support:</strong> Our team
+                          <strong className='tw-text-gray'>{t(`Follow-Up and Support:`)}</strong> {t(`Our team
                           monitors your application status and liaises with
                           Danish authorities if additional information or
-                          documentation is needed.
+                          documentation is needed.`)}
                         </p>
                       </li>
                     </ul>
 
                     <br></br>
-                    <strong className="m-0 tw-text-black">
-                      Housing Assistance
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Housing Assistance`)}</strong>
 
                     <ul className="tw-p-0 ">
                       <li className="tw-flex tw-pt-4 tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Personalized Housing Search:</> We identify rental
+                          <>Personalized Housing Search:</>{t(`We identify rental
                           options based on your preferences, whether you’re
                           looking for an apartment in the city, family housing,
-                          or short-term rental options.
-                        </p>
+                          or short-term rental options.`)}</p>
                       </li>
 
                       <li className="tw-flex  tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Lease Negotiation and Contract Review:</> We review
+                          <>Lease Negotiation and Contract Review:</>{t(`We review
                           rental contracts to ensure fair terms and assist with
                           any negotiations to make the rental agreement
-                          beneficial to you.
-                        </p>
+                          beneficial to you.`)}</p>
                       </li>
 
                       <li className="tw-flex  tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Move-In Coordination:</> We help arrange move-in
+                          <>Move-In Coordination:</>{t(`We help arrange move-in
                           dates, utilities setup, and any other logistics to
                           make your transition into your new home smooth and
-                          convenient.
-                        </p>
+                          convenient.`)}</p>
                       </li>
 
                       <li className="tw-flex  tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
                         <p className="m-0 tw-text-gray">
-                          <>Temporary Housing Solutions:</> For those needing
+                          <>Temporary Housing Solutions:</>{t(`For those needing
                           immediate accommodation, we can arrange short-term
                           housing options, so you have a comfortable place to
-                          stay while searching for a permanent home.
-                        </p>
+                          stay while searching for a permanent home.`)}</p>
                       </li>
                     </ul>
 
@@ -771,7 +718,7 @@ const CPRNumberDenmark = () => {
                       Why Choose
                     </span>
                     <h2 className="tw-text-left">
-                      <strong className='tw-text-black'> Sweden Relocators? </strong>
+                      <strong className='tw-text-black'>{t(`Sweden Relocators?`)}</strong>
                     </h2>
                     <br></br>
 
@@ -790,75 +737,64 @@ const CPRNumberDenmark = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <p className="tw-text-gray">
-                          Relocating to a new country involves more than just
+                        <p className="tw-text-gray">{t(`Relocating to a new country involves more than just
                           packing your bags. Each step of the process—securing
                           legal documents, finding housing, and registering for
                           local services—requires careful attention and local
                           expertise. Sweden Relocators brings a wealth of
                           knowledge and experience to ensure you settle into
-                          Denmark with ease.
-                        </p>
+                          Denmark with ease.`)}</p>
                       </div>
                     </div>
 
                     <p className="tw-text-gray">
-                      <strong className='tw-text-black'>Comprehensive Service</strong>
-                      <br /> From visa assistance to housing, we cover all
+                      <strong className='tw-text-black'>{t(`Comprehensive Service`)}</strong>
+                      <br />{t(`From visa assistance to housing, we cover all
                       aspects of your relocation, offering you a one-stop
-                      solution.
-                    </p>
+                      solution.`)}</p>
                     <br></br>
 
                     <p className="tw-text-gray">
-                      <strong className='tw-text-black'>Expert Guidance</strong>
-                      <br />
-                      Our team of professionals is well-versed in Danish
+                      <strong className='tw-text-black'>{t(`Expert Guidance`)}</strong>
+                      <br />{t(`Our team of professionals is well-versed in Danish
                       regulations, ensuring you meet every requirement and avoid
-                      common pitfalls.
-                    </p>
+                      common pitfalls.`)}</p>
                     <br></br>
 
                     <p className="tw-text-gray">
-                      <strong className='tw-text-black'>Personalized Support</strong>
-                      <br /> We understand that each move is unique. Our team
+                      <strong className='tw-text-black'>{t(`Personalized Support`)}</strong>
+                      <br />{t(`We understand that each move is unique. Our team
                       tailors our services to fit your individual needs,
-                      preferences, and circumstances.
-                    </p>
+                      preferences, and circumstances.`)}</p>
                     <br></br>
 
                     <p className="tw-text-gray">
-                      <strong className='tw-text-black'> Prompt Communication</strong>
-                      <br /> We prioritize clear, timely communication, keeping
+                      <strong className='tw-text-black'>{t(`Prompt Communication`)}</strong>
+                      <br />{t(`We prioritize clear, timely communication, keeping
                       you informed at every stage of the process and available
-                      to answer your questions.
-                    </p>
+                      to answer your questions.`)}</p>
                     <br></br>
 
-                    <p className="tw-text-gray">
-                      At Sweden Relocators, we are dedicated to making your
+                    <p className="tw-text-gray">{t(`At Sweden Relocators, we are dedicated to making your
                       relocation to Denmark as simple and successful as
                       possible. Contact us today to begin your journey with
-                      reliable support and expert guidance.
-                    </p>
+                      reliable support and expert guidance.`)}</p>
                     <Link to="/register" className="tw-text-center tw-pt-4">
                     <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                           Sign Up{" "}
                         </strong>
-                        <strong className='tw-text-black'> Today!</strong>
+                        <strong className='tw-text-black'>{t(`Today!`)}</strong>
                       </h5>
                     </Link>
                     <br />
-                    <p className="tw-text-gray">
-                      Sign up today and simplify your journey! Whether you're
+                    <p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
                       seeking assistance with relocation, permits, visas, legal
                       processes, or settling into a new life, we're here to
                       help. Our comprehensive services cover everything from
                       work and study opportunities to family reunifications,
                       business support, and much more. Let us guide you every
-                      step of the way—start your seamless experience now!
-                    </p>
+                      step of the way—start your seamless experience now!`)}</p>
                   </div>
                 </div>
               </div>

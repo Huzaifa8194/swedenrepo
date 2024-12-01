@@ -8,7 +8,7 @@ import banner from "../../assets/images/family-doctor-consultation.png";
 import banner2 from "../../assets/images/kid-doctor.png";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import Header from "../../components/Header_New/Header";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from '../../context/TranslationContext';
 import Sidebar from "../../components/ScrollableBar";
 
 
@@ -269,15 +269,12 @@ const ParentsEUPermit = () => {
                       EU Residence Card 
                     </span>
                     <h2 className="tw-text-left">
-                      <strong className="tw-text-black">
-                      For Dependent Parents and Other Family
-                      Members under Directive 2004/38/EC
-                      </strong>
+                      <strong className="tw-text-black">{t(`For Dependent Parents and Other Family
+                      Members under Directive 2004/38/EC`)}</strong>
                     </h2>
                     <br />
 
-                    <p className=" tw-text-gray">
-                      Under EU Directive 2004/38/EC, EU/EEA citizens exercising
+                    <p className=" tw-text-gray">{t(`Under EU Directive 2004/38/EC, EU/EEA citizens exercising
                       their right of free movement in Sweden can apply for a
                       residence card for their dependent family members from
                       outside the EU, including parents and other family
@@ -286,19 +283,18 @@ const ParentsEUPermit = () => {
                       economically or socially dependent on them to live in
                       Sweden. Here’s an in-depth look at the requirements,
                       application process, and specific cases for dependent
-                      parents and other family members.
-                    </p>
+                      parents and other family members.`)}</p>
 
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Who
+                      {t(`Who`)}
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
                         {" "}
-                        Qualifies as a Dependent Family Member?{" "}
+                       {t(` Qualifies as a Dependent Family Member?`)}{" "}
                       </strong>
                     </h2>
 
@@ -307,12 +303,10 @@ const ParentsEUPermit = () => {
                     <ul className=" tw-p-0 tw-pl-0">
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <p className=" m-0 tw-text-gray">
-                          <strong className="tw-text-black">
-                            Dependent Parents:
-                          </strong>{" "}
-                          Parents of an EU citizen or their spouse/partner who
+                          <strong className="tw-text-black">{t(`Dependent Parents:`)}</strong>{" "}
+                          {t(`Parents of an EU citizen or their spouse/partner who
                           rely on the EU citizen for financial support or other
-                          essential care.
+                          essential care.`)}
                         </p>
                       </li>
 
@@ -332,25 +326,21 @@ const ParentsEUPermit = () => {
                         <div className="col-md-6">
                           <li>
                             <p className=" m-0 tw-text-gray">
-                              <strong className="tw-text-black">
-                                Other Dependent Family Members:
-                              </strong>{" "}
-                              This may include siblings or extended relatives if
+                              <strong className="tw-text-black">{t(`Other Dependent Family Members:`)}</strong>{" "}
+                             {t(` This may include siblings or extended relatives if
                               there is a clear dependency relationship,
                               particularly if the family member and the EU
                               citizen lived together in the previous country of
-                              residence.
+                              residence.`)}
                             </p>
                           </li>
 
                           <li>
                             <p className=" m-0 tw-text-gray">
-                              <strong className="tw-text-black">
-                                Children or Stepchildren:
-                              </strong>{" "}
-                              Children over 21 may also qualify as dependent if
+                              <strong className="tw-text-black">{t(`Children or Stepchildren:`)}</strong>{" "}
+                              {t(`Children over 21 may also qualify as dependent if
                               they rely on the EU citizen for support, although
-                              this is assessed differently than minors.
+                              this is assessed differently than minors.`)}
                             </p>
                           </li>
                         </div>
@@ -362,12 +352,12 @@ const ParentsEUPermit = () => {
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Key
+                     {t(` Key`)}
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
                         {" "}
-                        Conditions for Eligibility{" "}
+                        {t(`Conditions for Eligibility`)}{" "}
                       </strong>
                     </h2>
                     {/* <div className="row tw-flex tw-items-center">
@@ -396,40 +386,34 @@ const ParentsEUPermit = () => {
                     <ul className=" tw-p-0 tw-pl-0">
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <p className=" m-0 tw-text-gray">
-                          <strong className="tw-text-black">
-                            Proof of Dependency:
-                          </strong>{" "}
-                          The applicant must provide evidence showing financial
+                          <strong className="tw-text-black">{t(`Proof of Dependency:`)}</strong>{" "}
+                         {t(` The applicant must provide evidence showing financial
                           or personal dependency on the EU citizen. This could
                           include proof of shared residence, regular financial
                           support, or documentation of emotional and social
-                          dependence.
+                          dependence.`)}
                         </p>
                       </li>
 
                       <li>
                         <p className=" m-0 tw-text-gray">
-                          <strong className="tw-text-black">
-                            Living Together Previously:
-                          </strong>{" "}
-                          In cases involving extended family members (such as
+                          <strong className="tw-text-black">{t(`Living Together Previously:`)}</strong>{" "}
+                         {t(` In cases involving extended family members (such as
                           siblings or adult children), the applicant must show
                           that they lived with the EU citizen in their home
                           country immediately before the EU citizen moved to
-                          Sweden.
+                          Sweden.`)}
                         </p>
                       </li>
 
                       <li>
                         <p className=" m-0 tw-text-gray">
-                          <strong className="tw-text-black">
-                            Timely Application:
-                          </strong>{" "}
-                          Applications should ideally be submitted as soon as
+                          <strong className="tw-text-black">{t(`Timely Application:`)}</strong>{" "}
+                          {t(`Applications should ideally be submitted as soon as
                           possible after the EU citizen arrives in Sweden.
                           Delayed applications may reduce the likelihood of
                           approval, especially if the dependency has developed
-                          only after the EU citizen's relocation.
+                          only after the EU citizen's relocation.`)}
                         </p>
                       </li>
                     </ul>
@@ -441,50 +425,40 @@ const ParentsEUPermit = () => {
                     <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Step 1:
+                      {t(`Step 1:`)}
                     </span>
 
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
                         {" "}
-                        Prepare Documentation for Dependency and Relationship{" "}
+                        {t(`Prepare Documentation for Dependency and Relationship`)}{" "}
                       </strong>
                     </h2>
 
                     <br />
 
-                    <p className="tw-text-gray">
-                      Gathering the necessary documentation is crucial. Key
-                      documents include:
-                    </p>
+                    <p className="tw-text-gray">{t(`Gathering the necessary documentation is crucial. Key
+                      documents include:`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Proof of Identity
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Proof of Identity`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-text-gray">
-                            Valid passport:
-                          </strong>{" "}
-                          The non-EU family member’s passport is required.
+                          <strong className="tw-text-gray">{t(`Valid passport:`)}</strong>{" "}
+                          {t(`The non-EU family member’s passport is required.`)}
                         </p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-blac">
-                      Proof of Relationship
-                    </strong>
+                    <strong className="m-0 tw-text-blac">{t(`Proof of Relationship`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-text-gray">
-                            For parents:
-                          </strong>{" "}
-                          Birth certificate of the EU citizen showing the
-                          parental relationship.
+                          <strong className="tw-text-gray">{t(`For parents:`)}</strong>{" "}
+                          {t(`Birth certificate of the EU citizen showing the
+                          parental relationship.`)}
                         </p>
                       </li>
                       <div className="row tw-flex tw-items-center">
@@ -503,23 +477,19 @@ const ParentsEUPermit = () => {
                         <div className="col-md-6">
                           <li>
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-text-gray">
-                                For other family members:
-                              </strong>{" "}
-                              Documents showing the family relationship (e.g.,
-                              birth certificates or family registers).
+                              <strong className="tw-text-gray">{t(`For other family members:`)}</strong>{" "}
+                              {t(`Documents showing the family relationship (e.g.,
+                              birth certificates or family registers).`)}
                             </p>
                           </li>
 
                           <li>
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-text-gray">
-                                Evidence of Dependency:
-                              </strong>{" "}
-                              This can include bank statements, proof of regular
+                              <strong className="tw-text-gray">{t(`Evidence of Dependency:`)}</strong>{" "}
+                              {t(`This can include bank statements, proof of regular
                               financial transfers, proof of shared housing, and
                               any other documents that demonstrate reliance on
-                              the EU citizen for financial or emotional support.
+                              the EU citizen for financial or emotional support.`)}
                             </p>
                           </li>
                         </div>
@@ -530,11 +500,11 @@ const ParentsEUPermit = () => {
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Step 2:
+                      {t(`Step 2:`)}
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
-                        Submit the Application{" "}
+                        {t(`Submit the Application`)}{" "}
                       </strong>
                     </h2>
                     {/* <div className="row tw-flex tw-items-center">
@@ -558,38 +528,28 @@ const ParentsEUPermit = () => {
 
                     <br />
 
-                    <p className="tw-text-gray">
-                      The non-EU family member must apply for a residence card,
+                    <p className="tw-text-gray">{t(`The non-EU family member must apply for a residence card,
                       which can be submitted to the Swedish Migration Agency
                       (Migrationsverket) either online or through a Swedish
-                      embassy or consulate in the applicant's home country.
-                    </p>
+                      embassy or consulate in the applicant's home country.`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Applicant Details
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Applicant Details`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          Information about the EU citizen, their residence
+                        <p className="m-0 tw-text-gray">{t(`Information about the EU citizen, their residence
                           status in Sweden, and the dependent’s personal
-                          details.
-                        </p>
+                          details.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Supporting Documents
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Supporting Documents`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          All required documents demonstrating the dependency
+                        <p className="m-0 tw-text-gray">{t(`All required documents demonstrating the dependency
                           relationship and proof of residence for the EU citizen
-                          in Sweden.
-                        </p>
+                          in Sweden.`)}</p>
                       </li>
                     </ul>
 
@@ -597,46 +557,36 @@ const ParentsEUPermit = () => {
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Step 3:
+                      {t(`Step 3:`)}
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
-                        Migration Agency Review{" "}
+                        {t(`Migration Agency Review`)}{" "}
                       </strong>
                     </h2>
                     <br />
 
-                    <p className="tw-text-gray">
-                      The Migration Agency will assess the relationship and
+                    <p className="tw-text-gray">{t(`The Migration Agency will assess the relationship and
                       dependency based on the evidence provided. They may
                       request additional documentation or clarifications if
-                      needed.
-                    </p>
+                      needed.`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Verification of Dependency
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Verification of Dependency`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          Confirming that the non-EU family member is genuinely
-                          reliant on the EU citizen.
-                        </p>
+                        <p className="m-0 tw-text-gray">{t(`Confirming that the non-EU family member is genuinely
+                          reliant on the EU citizen.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Family Relationship
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Family Relationship`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          Verifying the applicant’s family connection to the EU
+                        <p className="m-0 tw-text-gray">{t(`Verifying the applicant’s family connection to the EU
                           citizen and ensuring that dependency existed prior to
-                          moving to Sweden.
-                        </p>
+                          moving to Sweden.`)}</p>
                       </li>
                     </ul>
 
@@ -644,42 +594,38 @@ const ParentsEUPermit = () => {
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Step 4:
+                      {t(`Step 4:`)}
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
                         {" "}
-                        Decision and Residence Card Issuance
+                        {t(`Decision and Residence Card Issuance`)}
                       </strong>
                     </h2>
 
                     <br />
 
-                    <p className="tw-text-gray">
-                      If approved, the non-EU family member will receive a
+                    <p className="tw-text-gray">{t(`If approved, the non-EU family member will receive a
                       residence card valid for five years or the expected
                       duration of the EU citizen’s residence in Sweden
-                      (whichever is shorter).
-                    </p>
+                      (whichever is shorter).`)}</p>
 
-                    <p className="tw-text-gray">
-                      The residence card permits the holder to live, work, and
+                    <p className="tw-text-gray">{t(`The residence card permits the holder to live, work, and
                       access healthcare in Sweden under the same conditions as
-                      EU family members.
-                    </p>
+                      EU family members.`)}</p>
 
                     <br />
 
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Specific Cases:
+                      {t(`Specific Cases:`)}
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
                         {" "}
-                        Requirements for Dependent Parents and Other Family
-                        Members{" "}
+                        {t(`Requirements for Dependent Parents and Other Family
+                        Members`)}{" "}
                       </strong>
                     </h2>
 
@@ -687,30 +633,24 @@ const ParentsEUPermit = () => {
 
                     <strong className="tw-text-black">
                       {" "}
-                      Residence Permit for Dependent Parents{" "}
+                      {t(`Residence Permit for Dependent Parents`)}{" "}
                     </strong>
 
-                    <p className="tw-text-gray">
-                      For dependent parents, the primary conditions include
+                    <p className="tw-text-gray">{t(`For dependent parents, the primary conditions include
                       demonstrating economic or health-related dependence on the
-                      EU citizen.
-                    </p>
+                      EU citizen.`)}</p>
 
                     <ul className="tw-p-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
-                        <strong className="m-0 tw-text-gray">
-                          Financial Support Evidence
-                        </strong>
+                        <strong className="m-0 tw-text-gray">{t(`Financial Support Evidence`)}</strong>
                       </li>
                     </ul>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          Bank transfers, remittance receipts, or proof of
-                          regular financial support from the EU citizen.
-                        </p>
+                        <p className="m-0 tw-text-gray">{t(`Bank transfers, remittance receipts, or proof of
+                          regular financial support from the EU citizen.`)}</p>
                       </li>
                     </ul>
 
@@ -731,49 +671,39 @@ const ParentsEUPermit = () => {
                         <ul className="tw-p-0 tw-pt-4">
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
-                            <strong className="m-0 tw-text-gray">
-                              Health-Related Dependency
-                            </strong>
+                            <strong className="m-0 tw-text-gray">{t(`Health-Related Dependency`)}</strong>
                           </li>
                         </ul>
 
                         <ul className="tw-p-0 tw-pl-0">
                           <li>
-                            <p className="m-0 tw-text-gray">
-                              Medical certificates or documentation of special
+                            <p className="m-0 tw-text-gray">{t(`Medical certificates or documentation of special
                               needs that require close proximity to the EU
-                              citizen for support and care.
-                            </p>
+                              citizen for support and care.`)}</p>
                           </li>
                         </ul>
 
                         <strong className="tw-text-black">
                           {" "}
-                          Residence Permit for Other Dependent Family Members{" "}
+                          {t(`Residence Permit for Other Dependent Family Members`)}{" "}
                         </strong>
 
-                        <p className="tw-text-gray">
-                          For other dependent family members (e.g., adult
+                        <p className="tw-text-gray">{t(`For other dependent family members (e.g., adult
                           siblings or extended relatives), the requirements are
-                          typically more stringent.
-                        </p>
+                          typically more stringent.`)}</p>
 
                         <ul className="tw-p-0 tw-pt-4">
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className="tw-text-blue" />
-                            <strong className="m-0 tw-text-gray">
-                              Proof of Shared Household
-                            </strong>
+                            <strong className="m-0 tw-text-gray">{t(`Proof of Shared Household`)}</strong>
                           </li>
                         </ul>
 
                         <ul className="tw-p-0 tw-pl-0">
                           <li>
-                            <p className="m-0 tw-text-gray">
-                              Evidence that the family member lived with the EU
+                            <p className="m-0 tw-text-gray">{t(`Evidence that the family member lived with the EU
                               citizen prior to their relocation to Sweden, such
-                              as a joint lease or utility bills.
-                            </p>
+                              as a joint lease or utility bills.`)}</p>
                           </li>
                         </ul>
                       </div>
@@ -782,19 +712,15 @@ const ParentsEUPermit = () => {
                     <ul className="tw-p-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className="tw-text-blue" />
-                        <strong className="m-0 tw-text-gray">
-                          Emotional and Social Dependence
-                        </strong>
+                        <strong className="m-0 tw-text-gray">{t(`Emotional and Social Dependence`)}</strong>
                       </li>
                     </ul>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          Affidavits or statements demonstrating a strong social
+                        <p className="m-0 tw-text-gray">{t(`Affidavits or statements demonstrating a strong social
                           and emotional bond may be required, especially if the
-                          relationship extends beyond financial dependence.
-                        </p>
+                          relationship extends beyond financial dependence.`)}</p>
                       </li>
                     </ul>
 
@@ -802,54 +728,44 @@ const ParentsEUPermit = () => {
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Maintenance
+                     {t(` Maintenance`)}
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
-                        Requirement for the EU Sponsor{" "}
+                        {t(`Requirement for the EU Sponsor`)}{" "}
                       </strong>
                     </h2>
                     <br />
 
-                    <p className="tw-text-gray">
-                      Under Swedish regulations, the EU citizen must be able to
+                    <p className="tw-text-gray">{t(`Under Swedish regulations, the EU citizen must be able to
                       provide financial support and suitable accommodation for
-                      their non-EU family member.
-                    </p>
+                      their non-EU family member.`)}</p>
 
-                    <strong className="m-0 tw-text-black">Stable Income</strong>
+                    <strong className="m-0 tw-text-black">{t(`Stable Income`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          Proof of employment, regular income, or financial
+                        <p className="m-0 tw-text-gray">{t(`Proof of employment, regular income, or financial
                           resources that demonstrate the EU citizen can support
-                          themselves and their dependent.
-                        </p>
+                          themselves and their dependent.`)}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">
-                      Housing Requirement
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Housing Requirement`)}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
-                        <p className="m-0 tw-text-gray">
-                          The EU citizen must have suitable housing that meets
+                        <p className="m-0 tw-text-gray">{t(`The EU citizen must have suitable housing that meets
                           Swedish standards for living space and privacy. This
                           can include rental agreements, proof of homeownership,
-                          or a sublease with landlord approval.
-                        </p>
+                          or a sublease with landlord approval.`)}</p>
                       </li>
                     </ul>
 
-                    <p className="tw-text-gray">
-                      Note: The maintenance requirement does not apply to minor
+                    <p className="tw-text-gray">{t(`Note: The maintenance requirement does not apply to minor
                       children (under 18 years). This means that if a parent is
                       applying to join a minor child in Sweden, the child does
-                      not need to meet income or housing requirements.
-                    </p>
+                      not need to meet income or housing requirements.`)}</p>
                   </div>
                   <div>
                     <br />
@@ -857,12 +773,10 @@ const ParentsEUPermit = () => {
                     <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Additional Considerations
+                      {t(`Additional Considerations`)}
                     </span>
                     <h2 className="tw-text-left">
-                      <strong className="tw-text-black">
-                        Timeliness of the Application
-                      </strong>
+                      <strong className="tw-text-black">{t(`Timeliness of the Application`)}</strong>
                     </h2>
 
                     <br />
@@ -881,152 +795,112 @@ const ParentsEUPermit = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <p className="tw-text-gray">
-                          Applications submitted soon after the EU citizen’s
+                        <p className="tw-text-gray">{t(`Applications submitted soon after the EU citizen’s
                           relocation to Sweden are more likely to succeed. Long
                           delays in application submission may complicate the
                           process, as authorities might question the existence
                           of prior dependency. Ideally, applications for
                           dependent family members should be submitted within a
-                          few months of the EU citizen’s arrival in Sweden.
-                        </p>
+                          few months of the EU citizen’s arrival in Sweden.`)}</p>
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-black">
-                      Changes in Dependency Status
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Changes in Dependency Status`)}</strong>
 
-                    <p className="tw-text-gray">
-                      If the dependency status changes (for example, if the
+                    <p className="tw-text-gray">{t(`If the dependency status changes (for example, if the
                       non-EU family member becomes financially independent), it
                       may impact the status of the residence card. The Swedish
                       Migration Agency may periodically review these cases to
-                      ensure compliance with residency criteria.
-                    </p>
+                      ensure compliance with residency criteria.`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Renewing the Residence Card
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Renewing the Residence Card`)}</strong>
 
-                    <p className="tw-text-gray">
-                      Residence cards for dependent family members are typically
+                    <p className="tw-text-gray">{t(`Residence cards for dependent family members are typically
                       valid for up to five years. Renewal is possible, provided
                       the dependency relationship continues and the EU citizen
                       remains a resident of Sweden. Renewal applications should
                       be submitted well in advance of the expiration date, with
-                      updated documentation demonstrating continued dependency.
-                    </p>
+                      updated documentation demonstrating continued dependency.`)}</p>
 
                     <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      How Sweden Relocators 
+                     {t(` How Sweden Relocators `)}
                     </span>
                     <h2 className="tw-text-left">
-                      <strong className="tw-text-black">
-                      Can Assist with EU Residence Card
-                      Applications
-                      </strong>
+                      <strong className="tw-text-black">{t(`Can Assist with EU Residence Card
+                      Applications`)}</strong>
                     </h2>
                     <br />
 
-                    <p className="tw-text-gray">
-                      We review your family’s specific circumstances to
+                    <p className="tw-text-gray">{t(`We review your family’s specific circumstances to
                       determine if your non-EU family members qualify as
-                      dependents under Swedish law.
-                    </p>
+                      dependents under Swedish law.`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Document Preparation
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Document Preparation`)}</strong>
 
-                    <p className="tw-text-gray">
-                      Our team helps gather and prepare all required documents,
+                    <p className="tw-text-gray">{t(`Our team helps gather and prepare all required documents,
                       including proof of relationship, dependency, and financial
-                      support.
-                    </p>
+                      support.`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Application Submission and Monitoring
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Application Submission and Monitoring`)}</strong>
 
-                    <p className="tw-text-gray">
-                      We assist with the application submission process and
+                    <p className="tw-text-gray">{t(`We assist with the application submission process and
                       monitor progress with the Migration Agency to ensure
-                      timely updates.
-                    </p>
+                      timely updates.`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Appeals Support
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Appeals Support`)}</strong>
 
-                    <p className="tw-text-gray">
-                      In cases of application denial, we offer guidance on the
+                    <p className="tw-text-gray">{t(`In cases of application denial, we offer guidance on the
                       appeals process, helping strengthen your case for
-                      reconsideration.
-                    </p>
+                      reconsideration.`)}</p>
 
                     <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      Benefits of Our Service
+                      {t(`Benefits of Our Service`)}
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong className="tw-text-black">
-                        Experienced Guidance
-                      </strong>
+                      <strong className="tw-text-black">{t(`Experienced Guidance`)}</strong>
                     </h2>
                     <br />
 
-                    <p className="tw-text-gray">
-                      Familiarity with Directive 2004/38/EC and the Migration
+                    <p className="tw-text-gray">{t(`Familiarity with Directive 2004/38/EC and the Migration
                       Agency’s requirements allows us to offer precise,
-                      effective advice.
-                    </p>
+                      effective advice.`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Comprehensive Support
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Comprehensive Support`)}</strong>
 
-                    <p className="tw-text-gray">
-                      From eligibility verification to document preparation and
+                    <p className="tw-text-gray">{t(`From eligibility verification to document preparation and
                       appeal support, we handle every aspect of your
-                      application.
-                    </p>
+                      application.`)}</p>
 
-                    <strong className="m-0 tw-text-black">
-                      Personalized Service
-                    </strong>
+                    <strong className="m-0 tw-text-black">{t(`Personalized Service`)}</strong>
 
-                    <p className="tw-text-gray">
-                      Every case is unique, and we tailor our approach to your
+                    <p className="tw-text-gray">{t(`Every case is unique, and we tailor our approach to your
                       family’s specific needs, providing the most effective
-                      solutions.
-                    </p>
+                      solutions.`)}</p>
 
                   
                     <Link to="/register" className="tw-text-center tw-pt-4">
                     <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
-                          Sign Up{" "}
+                         {t(` Sign Up`)}{" "}
                         </strong>
-                        <strong className="tw-text-black"> Today!</strong>
+                        <strong className="tw-text-black">{t(`Today!`)}</strong>
                       </h5>
                     </Link>
                     <br />
-                    <p className="tw-text-gray">
-                      Sign up today and simplify your journey! Whether you're
+                    <p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
                       seeking assistance with relocation, permits, visas, legal
                       processes, or settling into a new life, we're here to
                       help. Our comprehensive services cover everything from
                       work and study opportunities to family reunifications,
                       business support, and much more. Let us guide you every
-                      step of the way—start your seamless experience now!
-                    </p>
+                      step of the way—start your seamless experience now!`)}</p>
                   </div>
                 </div>
               </div>

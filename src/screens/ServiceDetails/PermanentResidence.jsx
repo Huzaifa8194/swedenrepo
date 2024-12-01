@@ -10,7 +10,7 @@ import Sidebar from "../../components/ScrollableBar";
 
 
 import Header from "../../components/Header_New/Header";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from '../../context/TranslationContext';
 
 const PermanentResidence = () => {
   const { t } = useTranslation();
@@ -256,15 +256,13 @@ const PermanentResidence = () => {
                     PERMANENT RIGHT OF
                   </span>
                   <h2 className = "tw-text-left">
-                    <strong>Residence For EU Citizens</strong>
+                    <strong>{t(`Residence For EU Citizens`)}</strong>
                   </h2>
                   <br />
 
-                  <p className=" tw-text-gray">
-                    If you lived in Sweden for more than 5 years with the EU
+                  <p className=" tw-text-gray">{t(`If you lived in Sweden for more than 5 years with the EU
                     right of residence you can get the permanent residence
-                    permit.
-                  </p>
+                    permit.`)}</p>
 
                   <div>
                     <br />
@@ -274,61 +272,50 @@ const PermanentResidence = () => {
                       DIFFERENT WAYS FOR
                     </span>
                     <h2 className = "tw-text-left">
-                      <strong>Permanent Right Of Residence</strong>
+                      <strong>{t(`Permanent Right Of Residence`)}</strong>
                     </h2>
                     <br />
 
-                    <p className=" tw-text-gray">
-                      As an EU citizen you have right of residence if you work,
+                    <p className=" tw-text-gray">{t(`As an EU citizen you have right of residence if you work,
                       study, have your own company or have sufficient means to
                       support yourself. If you have right of residence of living
                       with someone you should live for 5 years with them. There
                       are quite a few permits that can lead to permanent
                       residence. Generally, you just need to spend enough time
-                      on one of the following permits.
-                    </p>
-                    <p className=" tw-text-black tw-font-medium">
-                      Some of these are:
-                    </p>
+                      on one of the following permits.`)}</p>
+                    <p className=" tw-text-black tw-font-medium">{t(`Some of these are:`)}</p>
 
                     <ul className=" tw-p-0 tw-pt-4">
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">
-                          Standard work permit
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Standard work permit`)}</p>
                       </li>
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">Dependent permit</p>
+                        <p className=" m-0 tw-text-gray">{t(`Dependent permit`)}</p>
                       </li>
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">Guest researcher</p>
+                        <p className=" m-0 tw-text-gray">{t(`Guest researcher`)}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">Doctoral student</p>
+                        <p className=" m-0 tw-text-gray">{t(`Doctoral student`)}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">EU blue card</p>
+                        <p className=" m-0 tw-text-gray">{t(`EU blue card`)}</p>
                       </li>
                     </ul>
 
-                    <p className=" tw-text-gray">
-                      Time spent in Sweden on a student permit or on a working
+                    <p className=" tw-text-gray">{t(`Time spent in Sweden on a student permit or on a working
                       holiday visa does not generally count towards the time
-                      needed for permanent residence.
-                    </p>
+                      needed for permanent residence.`)}</p>
 
-                    <p className=" tw-text-gray">
-                      Standard work permit, EU blue card, guest researcher, and
-                      doctoral students
-                    </p>
-                    <p className=" tw-text-gray">
-                      The process for obtaining permanent residence as someone
+                    <p className=" tw-text-gray">{t(`Standard work permit, EU blue card, guest researcher, and
+                      doctoral students`)}</p>
+                    <p className=" tw-text-gray">{t(`The process for obtaining permanent residence as someone
                       holding a standard work permit, EU blue card, guest
                       researcher, and doctoral student are relatively similar.
                       In order to obtain permanent residence the core
@@ -338,8 +325,7 @@ const PermanentResidence = () => {
                       permanent residence will be made in conjunction with the
                       extension application that is submitted. The case officer
                       should automatically make the assessment and see if
-                      permanent residence can be granted.
-                    </p>
+                      permanent residence can be granted.`)}</p>
                   </div>
 
                   <div>
@@ -351,12 +337,11 @@ const PermanentResidence = () => {
                     </span>
 
                     <h2 className = "tw-text-left">
-                      <strong>Dependents</strong>
+                      <strong>{t(`Dependents`)}</strong>
                     </h2>
                     <br />
 
-                    <p className=" tw-text-gray">
-                      For dependents, the process is a bit different. Permanent
+                    <p className=" tw-text-gray">{t(`For dependents, the process is a bit different. Permanent
                       residence for dependents can only be granted either in
                       conjunction with the main applicant being granted
                       permanent residence (if the applications were submitted
@@ -364,8 +349,7 @@ const PermanentResidence = () => {
                       Sweden already has permanent residence. They cannot be
                       granted permanent residence on their own merits as a
                       dependent and require the main application to be granted
-                      this first
-                    </p>
+                      this first`)}</p>
                   </div>
 
                   <div className="row">
@@ -386,22 +370,16 @@ const PermanentResidence = () => {
                       PERMANENT RESIDENCE CARDS FOR
                     </span>
                     <h2 className = "tw-text-left">
-                      <strong>
-                        EU Citizens Family Members Who Are Non-EU Citizens
-                      </strong>
+                      <strong>{t(`EU Citizens Family Members Who Are Non-EU Citizens`)}</strong>
                     </h2>
                     <br />
 
-                    <p className=" tw-text-gray">
-                      As a close relative of an EU citizen, when you have lived
+                    <p className=" tw-text-gray">{t(`As a close relative of an EU citizen, when you have lived
                       in Sweden for five years with your close relative and they
                       have had right of residence throughout this period, you
-                      have permanent right of residence.
-                    </p>
+                      have permanent right of residence.`)}</p>
 
-                    <p className=" tw-text-gray">
-                      you can apply for a permanent residence card.
-                    </p>
+                    <p className=" tw-text-gray">{t(`you can apply for a permanent residence card.`)}</p>
                     <br />
                   </div>
 
@@ -412,39 +390,31 @@ const PermanentResidence = () => {
                       TO BE ELIGIBLE FOR
                     </span>
                     <h2 className = "tw-text-left">
-                      <strong>A Permanent Residence Card</strong>
+                      <strong>{t(`A Permanent Residence Card`)}</strong>
                     </h2>
                     <br />
 
                     <ul className=" tw-p-0 tw-pt-4">
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">
-                          You should have lived in Sweden for at least five
+                        <p className=" m-0 tw-text-gray">{t(`You should have lived in Sweden for at least five
                           years while having a relation to the close relative
-                          who is an EU citizen
-                        </p>
+                          who is an EU citizen`)}</p>
                       </li>
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">
-                          Your family member should meet the requirements of
-                          permanent right of residence.
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Your family member should meet the requirements of
+                          permanent right of residence.`)}</p>
                       </li>
                     </ul>
 
-                    <p className="  tw-text-gray">
-                      Your permanent right of residence is dependent on your
+                    <p className="  tw-text-gray">{t(`Your permanent right of residence is dependent on your
                       family member who is an EU citizen having the right of
                       residence for five years. Your application should specify
-                      the occupation of the EU citizen.
-                    </p>
-                    <p className="  tw-text-gray">
-                      There are also special regulations about keeping your
+                      the occupation of the EU citizen.`)}</p>
+                    <p className="  tw-text-gray">{t(`There are also special regulations about keeping your
                       right of residence in certain cases. Contact us for more
-                      details.
-                    </p>
+                      details.`)}</p>
                   </div>
 
                   <div>
@@ -455,62 +425,52 @@ const PermanentResidence = () => {
                       HOWEVER, HAVING A PERMANENT
                     </span>
                     <h2 className = "tw-text-left">
-                      <strong>Residence Permit Does Not Entitle You To</strong>
+                      <strong>{t(`Residence Permit Does Not Entitle You To`)}</strong>
                     </h2>
                     <br />
 
                     <ul className=" tw-p-0 tw-pt-4">
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">A Swedish passport</p>
+                        <p className=" m-0 tw-text-gray">{t(`A Swedish passport`)}</p>
                       </li>
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">
-                          To vote in the national elections
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`To vote in the national elections`)}</p>
                       </li>
                       <li className=" tw-flex tw-items-center tw-gap-3">
                         <GoTriangleRight className=" tw-text-blue" />
-                        <p className=" m-0 tw-text-gray">
-                          Nor does it entitle you to do the military service or
-                          to exercise any military occupations
-                        </p>
+                        <p className=" m-0 tw-text-gray">{t(`Nor does it entitle you to do the military service or
+                          to exercise any military occupations`)}</p>
                       </li>
                     </ul>
 
-                    <p className="  tw-text-gray">
-                      Having a Swedish citizenship (instead of a PUT) will make
+                    <p className="  tw-text-gray">{t(`Having a Swedish citizenship (instead of a PUT) will make
                       it a lot easier if you wish to move to another EU country.
                       It is possible – yet more complicated – to live in another
-                      EU country with a Swedish PUT.
-                    </p>
-                    <p className="  tw-text-gray">
-                      The Swedish Migrations Board – Migrationsverket, has the
+                      EU country with a Swedish PUT.`)}</p>
+                    <p className="  tw-text-gray">{t(`The Swedish Migrations Board – Migrationsverket, has the
                       right to revoke your permanent residence permit if you
                       move to another country or spend more than one year
                       outside of Sweden. It is therefore important to check with
                       the Migrationsverket before you leave Sweden,if you are
-                      planning to spend more than one year abroad.
-                    </p>
+                      planning to spend more than one year abroad.`)}</p>
                     <Link to="/register" className="tw-text-center tw-pt-4">
                     <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                           Sign Up{" "}
                         </strong>
-                        <stron className = 'tw-text-black'> Today!</stron>
+                        <stron className = 'tw-text-black'>{t(`Today!`)}</stron>
                       </h5>
                     </Link>
                     <br />
-                    <p className="tw-text-gray">
-                      Sign up today and simplify your journey! Whether you're
+                    <p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
                       seeking assistance with relocation, permits, visas, legal
                       processes, or settling into a new life, we're here to
                       help. Our comprehensive services cover everything from
                       work and study opportunities to family reunifications,
                       business support, and much more. Let us guide you every
-                      step of the way—start your seamless experience now!
-                    </p>
+                      step of the way—start your seamless experience now!`)}</p>
                   </div>
                 </div>
               </div>

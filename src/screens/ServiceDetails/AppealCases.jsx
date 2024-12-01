@@ -43,7 +43,7 @@ import { useTranslation } from '../../context/TranslationContext';
 
 
 const AppealCases = () => {
-  const { translatePage, t, language } = useTranslation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -286,11 +286,11 @@ const AppealCases = () => {
                   <div>
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]">{t(``)}</p>
-                      Asylum in Sweden
+                      {t("Asylum in Sweden")}
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>What We Offer</strong>
+                      <strong>{t("What We Offer")}</strong>
                     </h2>
 
                     <p className="tw-text-gray">{t (`If you are seeking asylum in Sweden, understanding the
@@ -305,11 +305,11 @@ const AppealCases = () => {
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]">{t(``)}</p>
-                      Why
+                    {t("  Why")}
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>Choose an Expert?</strong>
+                      <strong>{t("Choose an Expert?")}</strong>
                     </h2>
                     <br />
 
@@ -317,7 +317,7 @@ const AppealCases = () => {
                       with specific rules and timelines. Here’s how our expert
                       team can make a difference for you:`)}</p>
 
-                    <strong className="m-0 tw-text-black">Peace of Mind</strong>
+                    <strong className="m-0 tw-text-black">{t("Peace of Mind")}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li>
@@ -329,7 +329,7 @@ const AppealCases = () => {
                     </ul>
 
                     <strong className="m-0 tw-text-black">
-                      Clear and Transparent Guidance
+                      {t("Clear and Transparent Guidance")}
                     </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
@@ -343,7 +343,7 @@ const AppealCases = () => {
                     </ul>
 
                     <strong className="m-0 tw-text-black">
-                      Immediate Access to a Legal Expert
+                     {t(" Immediate Access to a Legal Expert")}
                     </strong>
 
                     <ul className="tw-p-0 tw-pl-0">
@@ -359,11 +359,11 @@ const AppealCases = () => {
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]">{t(``)}</p>
-                      Who
+                      {t("Who")}
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>Can Apply for Asylum?</strong>
+                      <strong>{t("Can Apply for Asylum?")}</strong>
                     </h2>
                     <br />
 
@@ -382,11 +382,11 @@ const AppealCases = () => {
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]">{t(``)}</p>
-                      Refugee
+                     {t(" Refugee")}
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>Definition and Criteria</strong>
+                      <strong>{t("Definition and Criteria")}</strong>
                     </h2>
                     <br />
 
@@ -410,18 +410,18 @@ const AppealCases = () => {
                       </div>
                       <div className="col-md-6">
                         <ul className="tw-p-0 tw-pl-0">
-                          <li className="tw-text-gray">Race</li>
+                          <li className="tw-text-gray">{t("Race")}</li>
                           <li className="tw-text-gray">
-                            Nationality, Language, or Ethnic Group
+                            {t("Nationality, Language, or Ethnic Group")}
                           </li>
-                          <li className="tw-text-gray">Religion</li>
+                          <li className="tw-text-gray">{t("Religion")}</li>
                           <li className="tw-text-gray">
-                            Political Belief or Activism
+                            {t("Political Belief or Activism")}
                           </li>
-                          <li className="tw-text-gray">Gender Identity</li>
-                          <li className="tw-text-gray">Sexual Orientation</li>
+                          <li className="tw-text-gray">{t("Gender Identity")}</li>
+                          <li className="tw-text-gray">{t("Sexual Orientation")}</li>
                           <li className="tw-text-gray">
-                            Membership in a Particular Social Group
+                            {t("Membership in a Particular Social Group")}
                           </li>
                         </ul>
                       </div>
@@ -438,11 +438,11 @@ const AppealCases = () => {
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]">{t(``)}</p>
-                      Possible
+                      {t("Possible")}
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>Outcomes of Your Application</strong>
+                      <strong>{t("Outcomes of Your Application")}</strong>
                     </h2>
                     <br />
 
@@ -455,11 +455,11 @@ const AppealCases = () => {
                     <br />
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       <p className=" tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]">{t(``)}</p>
-                      Step-by-Step
+                      {t("Step-by-Step")}
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong> Process</strong>
+                      <strong> {t("Process")}</strong>
                     </h2>
                     <br />
 
@@ -467,7 +467,7 @@ const AppealCases = () => {
                       and begin your journey toward protection and settlement.`)}</p>
 
                     <strong className=" m-0 tw-text-black">
-                      Step 1: Presence in Sweden
+                      {t("Step 1: Presence in Sweden")}
                     </strong>
 
                     <ul className=" tw-p-0 tw-pl-0">
@@ -494,7 +494,7 @@ const AppealCases = () => {
 
                       <div className="col-md-6">
                         <strong className=" m-0 tw-text-black">
-                          Step 2: Initial Meeting with Swedish Migration Agency
+                          {t("Step 2: Initial Meeting with Swedish Migration Agency")}
                         </strong>
 
                         <ul className=" tw-p-0 tw-pl-0">
@@ -511,7 +511,7 @@ const AppealCases = () => {
                     </div>
 
                     <strong className=" m-0 tw-text-black">
-                      Step 3: Role of Your Legal Representative
+                     {t(" Step 3: Role of Your Legal Representative")}
                     </strong>
 
                     <ul className=" tw-p-0 tw-pl-0">
@@ -529,11 +529,11 @@ const AppealCases = () => {
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]">{t(``)}</p>
-                      Our
+                      {t("Our")}
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>Role as Your Legal Representative</strong>
+                      <strong>{t("Role as Your Legal Representative")}</strong>
                     </h2>
                     <br />
 
@@ -542,7 +542,7 @@ const AppealCases = () => {
                       Here’s how we help:`)}</p>
 
                     <strong className=" m-0 tw-text-black">
-                      Support and Legal Advice
+                      {t("Support and Legal Advice")}
                     </strong>
 
                     <ul className=" tw-p-0 tw-pl-0">
@@ -569,7 +569,7 @@ const AppealCases = () => {
                       </div>
                       <div className="col-md-6">
                         <strong className=" m-0 tw-text-black">
-                          Clarifying Grounds for Asylum
+                          {t("Clarifying Grounds for Asylum")}
                         </strong>
 
                         <ul className=" tw-p-0 tw-pl-0">
@@ -581,7 +581,7 @@ const AppealCases = () => {
                         </ul>
 
                         <strong className=" m-0 tw-text-black">
-                          Navigating Appeals
+                          {t("Navigating Appeals")}
                         </strong>
 
                         <ul className=" tw-p-0 tw-pl-0">
@@ -598,11 +598,11 @@ const AppealCases = () => {
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]">{t(``)}</p>
-                      Family
+                      {t("Family")}
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>Reunification for Refugees</strong>
+                      <strong>{t("Reunification for Refugees")}</strong>
                     </h2>
                     <br />
 
@@ -610,7 +610,7 @@ const AppealCases = () => {
                       right for refugees. Here’s what you need to know:`)}</p>
 
                     <strong className=" m-0 tw-text-black">
-                      Who Can Qualify for Family Reunification?
+                      {t("Who Can Qualify for Family Reunification?")}
                     </strong>
 
                     <ul className=" tw-p-0 tw-pl-0">
@@ -622,7 +622,7 @@ const AppealCases = () => {
                     </ul>
 
                     <strong className=" m-0 tw-text-black">
-                      For EU/EEA Citizens
+                      {t("For EU/EEA Citizens")}
                     </strong>
 
                     <ul className=" tw-p-0 tw-pl-0">
@@ -637,11 +637,11 @@ const AppealCases = () => {
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]">{t(``)}</p>
-                      How
+                      {t("How")}
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>We Assist You with Family Reunification</strong>
+                      <strong>{t("We Assist You with Family Reunification")}</strong>
                     </h2>
                     <br />
 
@@ -650,7 +650,7 @@ const AppealCases = () => {
                       journey:`)}</p>
 
                     <strong className=" m-0 tw-text-black">
-                      Application Preparation
+                     {t(" Application Preparation")}
                     </strong>
 
                     <ul className=" tw-p-0 tw-pl-0">
@@ -662,7 +662,7 @@ const AppealCases = () => {
                     </ul>
 
                     <strong className=" m-0 tw-text-black">
-                      Additional Support Services for Asylum Seekers
+                      {t("Additional Support Services for Asylum Seekers")}
                     </strong>
 
                     <ul className=" tw-p-0 tw-pl-0">
@@ -676,9 +676,9 @@ const AppealCases = () => {
                     <Link to="/register" className="tw-text-center tw-pt-4">
                     <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
-                          Sign Up{" "}
+                          {t("Sign Up")}{" "}
                         </strong>
-                        <strong className="tw-text-black"> Today!</strong>
+                        <strong className="tw-text-black"> {t("Today!")}</strong>
                       </h5>
                     </Link>
                     <br />

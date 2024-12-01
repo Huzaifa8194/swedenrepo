@@ -15,7 +15,7 @@ import ho1 from "../../assets/iconscout/ho1.png";
 import ho2 from "../../assets/iconscout/ho2.png";
 
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from '../../context/TranslationContext';
 import Header from "../../components/Header_New/Header";
 
 const HouseOffices = () => {
@@ -277,17 +277,15 @@ const HouseOffices = () => {
                         Simplifying
                       </span>
                       <h2 className="tw-text-left">
-                        <strong> Your Housing Journey</strong>
+                        <strong>{t(`Your Housing Journey`)}</strong>
                       </h2>
                       <br />
 
-                      <p className=" tw-text-gray">
-                        We offer housing assistance. We look at the person’s
+                      <p className=" tw-text-gray">{t(`We offer housing assistance. We look at the person’s
                         income and character before we handle their application
                         and we have our own online system for this purpose. We
                         make sure you get your apartment through a smooth
-                        process.
-                      </p>
+                        process.`)}</p>
                     </div>
                   </div>
 
@@ -298,17 +296,15 @@ const HouseOffices = () => {
                     Relocation
                   </span>
                   <h2 className="tw-text-left">
-                    <strong> Made Easy Across Four Countries </strong>
+                    <strong>{t(`Made Easy Across Four Countries`)}</strong>
                   </h2>
 
-                  <p className=" tw-text-gray tw-pt-8">
-                    We are a relocation company based in four different
+                  <p className=" tw-text-gray tw-pt-8">{t(`We are a relocation company based in four different
                     countries Sweden, Denmark, Pakistan and India. Our head
                     office is in Malmö. Buying and renting requires a lot of
                     research and is associated with uncertainty. That’s why we
                     offer you an easy and painless solution where you can get a
-                    place to live without any worries.
-                  </p>
+                    place to live without any worries.`)}</p>
 
                   <br />
                   <span className=" tw-flex tw-items-center tw-gap-2">
@@ -317,13 +313,12 @@ const HouseOffices = () => {
                     Navigating
                   </span>
                   <h2 className="tw-text-left">
-                    <strong> Sweden’s Competitive Housing Market</strong>
+                    <strong>{t(`Sweden’s Competitive Housing Market`)}</strong>
                   </h2>
 
                   <div className="row tw-flex tw-items-center">
                     <div className="col-md-6">
-                      <p className=" tw-text-gray tw-pt-8">
-                        Finding housing in Sweden is much more difficult than in
+                      <p className=" tw-text-gray tw-pt-8">{t(`Finding housing in Sweden is much more difficult than in
                         other EU countries. Renting a house is having so much
                         competition in Sweden that there is a specific black
                         market for leasing the house or apartment on a long-term
@@ -331,8 +326,7 @@ const HouseOffices = () => {
                         apartment in Malmö or Stockholm as these are the busiest
                         cities. Foreigners who intend to live in Sweden for a
                         longer period of time may opt for buying a house rather
-                        than being a part of this renting fray.
-                      </p>
+                        than being a part of this renting fray.`)}</p>
                     </div>
 
                     <div className="col-md-6">
@@ -357,12 +351,11 @@ const HouseOffices = () => {
                     Understanding
                   </span>
                   <h2 className="tw-text-left">
-                    <strong> First-Hand and Second-Hand Rentals</strong>
+                    <strong>{t(`First-Hand and Second-Hand Rentals`)}</strong>
                   </h2>
                   <br />
 
-                  <p className=" tw-text-gray">
-                    While you start to search for a house or apartment in
+                  <p className=" tw-text-gray">{t(`While you start to search for a house or apartment in
                     Sweden, you will come across the terms known as first-hand
                     and second-hand rentals. These two terms refer to the
                     apartments rented directly from the landlord (first-hand
@@ -371,8 +364,7 @@ const HouseOffices = () => {
                     and in some famous areas, there might be years’ long waiting
                     lists. Sublets or second-hand rentals may be the best option
                     in this case, but you should know that you can be allowed to
-                    stay in that unit or house for only one year.
-                  </p>
+                    stay in that unit or house for only one year.`)}</p>
 
                   <br />
                   <span className=" tw-flex tw-items-center tw-gap-2">
@@ -381,11 +373,10 @@ const HouseOffices = () => {
                     Sweden’s
                   </span>
                   <h2 className="tw-text-left">
-                    <strong> Diverse Housing Options</strong>
+                    <strong>{t(`Diverse Housing Options`)}</strong>
                   </h2>
                   <br />
-                  <p className=" tw-text-gray">
-                    A great benefit of Swedish housing is that you can hardly go
+                  <p className=" tw-text-gray">{t(`A great benefit of Swedish housing is that you can hardly go
                     wrong with any type of housing situation. There are a lot of
                     options in any area of the country to choose from, whether
                     you are looking for an apartment in the countryside or in
@@ -393,8 +384,7 @@ const HouseOffices = () => {
                     standalone homes or high-rise apartments depending upon your
                     choice. You can also find furnishes as well as unfurnished
                     house and it depends upon the duration of your stay in
-                    Scandinavian or Nordic countries.Rental process in Sweden.
-                  </p>
+                    Scandinavian or Nordic countries.Rental process in Sweden.`)}</p>
 
                   <br />
 
@@ -404,17 +394,15 @@ const HouseOffices = () => {
                     Tackling
                   </span>
                   <h2 className="tw-text-left">
-                    <strong> Housing Challenges in Sweden</strong>
+                    <strong>{t(`Housing Challenges in Sweden`)}</strong>
                   </h2>
                   <br />
-                  <p className=" tw-text-gray">
-                    Whether you are looking for a house on rent as a foreigner
+                  <p className=" tw-text-gray">{t(`Whether you are looking for a house on rent as a foreigner
                     in Sweden or you are a native Swede, the biggest problem, in
                     any case, is the lack of housing opportunities. This is the
                     case in most of the Scandinavian countries and specifically
                     in Swedish cities causing serious problems for students and
-                    expats.
-                  </p>
+                    expats.`)}</p>
 
                   <br />
                   <span className=" tw-flex tw-items-center tw-gap-2">
@@ -423,16 +411,14 @@ const HouseOffices = () => {
                     Essential
                   </span>
                   <h2 className="tw-text-left">
-                    <strong> Requirements for Renting in Sweden</strong>
+                    <strong>{t(`Requirements for Renting in Sweden`)}</strong>
                   </h2>
                   <br />
-                  <p className=" tw-text-gray">
-                    You may find a first-hand lease or second-hand rentals. You
+                  <p className=" tw-text-gray">{t(`You may find a first-hand lease or second-hand rentals. You
                     need to have the personummer, an employment contract, and
                     proof of enough income to afford the house in order to get
                     the house on rent. If your income is too low according to
-                    the lender, then you may have to provide a guarantor.
-                  </p>
+                    the lender, then you may have to provide a guarantor.`)}</p>
 
                   <span className=" tw-flex tw-items-center tw-gap-2">
                     {" "}
@@ -440,17 +426,15 @@ const HouseOffices = () => {
                     Short-Term
                   </span>
                   <h2 className="tw-text-left">
-                    <strong> Rental Solutions</strong>
+                    <strong>{t(`Rental Solutions`)}</strong>
                   </h2>
                   <br />
-                  <p className=" tw-text-gray">
-                    A subletting rental will have similar requirements and
+                  <p className=" tw-text-gray">{t(`A subletting rental will have similar requirements and
                     procedures as that of the landlords. However, you need to
                     ensure that second-hand leasing has been approved by the
                     landlord otherwise it will be considered as illegal. If you
                     caught in violation of this rule, then you may find yourself
-                    evicted.
-                  </p>
+                    evicted.`)}</p>
 
                   <br />
                   <span className=" tw-flex tw-items-center tw-gap-2">
@@ -459,35 +443,29 @@ const HouseOffices = () => {
                     How
                   </span>
                   <h2 className="tw-text-left">
-                    <strong> We Can Help</strong>
+                    <strong>{t(`We Can Help`)}</strong>
                   </h2>
                   <br />
-                  <p className=" tw-text-gray">
-                    In the meantime, while looking for a house on rent, you can
+                  <p className=" tw-text-gray">{t(`In the meantime, while looking for a house on rent, you can
                     opt for short-term rentals as the average price won’t vary
-                    much from annual rental prices in Sweden.
-                  </p>
-                  <p className=" tw-text-gray">
-                    This is where we come to help you finding your new house .
-                  </p>
+                    much from annual rental prices in Sweden.`)}</p>
+                  <p className=" tw-text-gray">{t(`This is where we come to help you finding your new house .`)}</p>
                   <Link to="/register" className="tw-text-center tw-pt-4">
                   <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
                       <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                         Sign Up{" "}
                       </strong>
-                      <strong className="tw-text-gray"> Today!</strong>
+                      <strong className="tw-text-gray">{t(`Today!`)}</strong>
                     </h5>
                   </Link>
                   <br />
-                  <p className="tw-text-gray">
-                    Sign up today and simplify your journey! Whether you're
+                  <p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
                     seeking assistance with relocation, permits, visas, legal
                     processes, or settling into a new life, we're here to help.
                     Our comprehensive services cover everything from work and
                     study opportunities to family reunifications, business
                     support, and much more. Let us guide you every step of the
-                    way—start your seamless experience now!
-                  </p>
+                    way—start your seamless experience now!`)}</p>
                 </div>
               </div>
 

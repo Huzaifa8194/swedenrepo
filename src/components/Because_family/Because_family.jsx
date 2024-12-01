@@ -18,9 +18,10 @@ import choose from '../../assets/images/office-meetings.png';
 import { fadeIn, imageVariants, staggerContainer, zoomIn } from '../../utils/motion';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { useTranslation } from '../../context/TranslationContext';
 
 
-import { useTranslation } from 'react-i18next';
+
 const Because_family = () => {
 
 

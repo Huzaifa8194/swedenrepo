@@ -2,9 +2,10 @@ import React from 'react';
 import Button from '../Button';
 import { Link } from 'react-router-dom';
 import arrow from '../../assets/images/proccess-box-arrow.png';
-import { t } from 'i18next';
+import { useTranslation } from '../../context/TranslationContext';
 
 const Visitor = () => {
+  const {t }= useTranslation();
   return (
     <div>
       <>
