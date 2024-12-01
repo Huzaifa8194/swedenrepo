@@ -310,15 +310,11 @@ const New_In_sweden = () => {
                   </h2>
 
                   <br />
-                  <p className=" tw-text-gray">{t(`If you are new in Sweden then the first thing you must to do
-                    is to register yourself with swedish tax authority
-                    Skatteverket to get your social security number also
-                    called as personal identity number or personnummer. As an
-                    EU/EEA-citizen you are entitled to live, work and study in
-                    Sweden with or without a personnummer. It is a 12-digit
-                    number issued by Skatteverket to the persons registered in
-                    Sweden when they are convinced that you can support yourself
-                    and your family during the first year of your stay.`)}</p>
+                  <p className="tw-text-gray">
+  {t(`If you are new in Sweden, the first thing you should do is register with the Swedish Tax Authority to get your social security number, also called a personal identity number or personnummer.`)} <br/>
+  {t(`As an E U citizen, you have the right to live, work, and study in Sweden with or without a personnummer. The personnummer is a 12-digit number issued by Skatteverket. They issue it when they confirm you can support yourself and your family during your first year in Sweden.`)}
+</p>
+
 
                   <p className=" tw-text-gray">{t(`Personnummer is not only required to be a part of the social
                     security and health care systems in Sweden, which is
@@ -702,14 +698,14 @@ const New_In_sweden = () => {
                     <p className=" tw-text-gray">
                       {" "}
                       <Link to={""}>{t(`The Swedish Public Employment Service`)}</Link>{" "}
-                      (Arbetsförmedlingen) offers support to people looking for
+                      {t(`(Arbetsförmedlingen) offers support to people looking for
                       work. You can register either online using your Bank-ID or
                       by personally visiting the nearest Arbetsförmedlingen
                       office. Apart from arbetrsförmedlingen, there are many
                       other privately run job websites like LinkedIn, Indeed,
                       etc. commonly used to find a job in Sweden. These websites
                       usually include job listings and functions where you can
-                      upload your CV.
+                      upload your CV.`)}
                     </p>
                   </div>
 
@@ -735,7 +731,7 @@ const New_In_sweden = () => {
                       designed to help children meet future classmates and
                       prepare for primary school without the stress of heavy
                       studies or homework. Swedish compulsory schooling is
-                      divided ino four stages: förskoleklass (‘preschool year’
+                      divided ino four stages: förskoleklass (preschool year
                       or year 0), lågstadiet (years 1–3), mellanstadiet (years
                       4–6) and högstadiet (years 7–9).`)}</p>
 
