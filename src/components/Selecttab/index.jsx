@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { useTranslation } from "../../context/TranslationContext";
+
 const Select = ({
   label,
   name,
@@ -10,6 +12,8 @@ const Select = ({
   Icon,
   required,
 }) => {
+
+  const { t} = useTranslation();
   const [focused, setFocused] = useState(false);
 
   const handleFocus = () => {
@@ -35,11 +39,11 @@ const Select = ({
         className={`tw-block tw-w-full tw-px-2.5 tw-py-1.5 tw-text-sm tw-text-gray-900 tw-bg-transparent tw-rounded-lg tw-border tw-border-gray tw-focus:outline-none ${className}`}
       >
         <option value="" disabled hidden>
-          {focused ? "" : label}
+          {focused ? "" : t(label)}
         </option>
         {options.map((option, index) => (
           <option key={index} value={option.value}>
-            {option.label}
+            {t(option.label)}
           </option>
         ))}
       </select>
@@ -51,7 +55,7 @@ const Select = ({
             : "tw-top-1/2 tw-left-3 tw-text-sm tw-text-gray tw-translate-y-[-50%]"
         }`}
       >
-        {label}
+        {t(label)}
       </label>
       <div className="tw-absolute tw-right-3 tw-top-3">
         {Icon && <i>{Icon}</i>}

@@ -422,7 +422,7 @@ const Looking_for_housing = () => {
 
                   <div className="col-md-6">
                   <Select
-  label="Select Country"
+  label={t("Select Country")}
   name="selectCountry"
   options={[
     { value: "Sweden - Skane", label: "Sweden - Skane" },
@@ -437,7 +437,7 @@ const Looking_for_housing = () => {
                   {selectCountry === "Sweden - Skane" ? (
                     <div className="col-md-6">
                      <Select
-  label="Select Skåne City"
+  label={t("Select Skåne City")}
   name="skaneCity"
   options={[
     { value: "Ängelholm", label: "Ängelholm" },
@@ -458,7 +458,7 @@ const Looking_for_housing = () => {
                   {selectCountry === "Denmark - Copenhagen" ? (
                     <div className="col-md-6">
                      <Select
-  label="Select Copenhagen City"
+  label={t("Select Copenhagen City")}
   name="copenhagenCity"
   options={[
     { value: "Ängelholm", label: "Ängelholm" },
@@ -478,7 +478,7 @@ const Looking_for_housing = () => {
 
                   <div className="col-md-6">
                   <Select
-  label="Select Housing Type"
+  label={t("Select Housing Type")}
   name="housing"
   options={[
     { value: "Apartment", label: "Apartment" },
@@ -497,7 +497,7 @@ const Looking_for_housing = () => {
                   {housing != "Shared Beds" ? (
                     <div className="col-md-6">
                      <Select
-  label="Number of Rooms Required"
+  label={t("Number of Rooms Required")}
   name="roomsRequired"
   options={[
     { value: "1", label: "1" },
@@ -520,7 +520,7 @@ const Looking_for_housing = () => {
                     <>
                       <div className="col-md-6">
                       <Select
-  label="Number of Floors Required"
+  label={t("Number of Floors Required")}
   name="floorsRequired"
   options={Array.from({ length: 18 }, (_, i) => ({
     value: `${i + 1}`,
@@ -539,7 +539,7 @@ const Looking_for_housing = () => {
                     <>
                       <div className="col-md-6">
                       <Select
-  label="Maximum Beds in a Room"
+  label={t("Maximum Beds in a Room")}
   name="bedsInRoom"
   options={[
     { value: "1", label: "1" },
@@ -586,7 +586,7 @@ const Looking_for_housing = () => {
                       </label> */}
 
 <Select
-  label="Number of Adults in the House"
+  label={t("Number of Adults in the House")}
   name="adultsInHouse"
   options={[
     { value: "1", label: "1" },
@@ -635,7 +635,7 @@ const Looking_for_housing = () => {
                       </label> */}
 
 <Select
-  label="Select Contract Type"
+  label={t("Select Contract Type")}
   name="contractType"
   options={[
     { value: "First Hand", label: "First Hand" },
@@ -682,7 +682,7 @@ const Looking_for_housing = () => {
                       </label> */}
 
 <Select
-  label="Duration of Stay"
+  label={t("Duration of Stay")}
   name="stayDuration"
   options={[
     ...Array.from({ length: 9 }, (_, i) => ({
@@ -707,7 +707,7 @@ const Looking_for_housing = () => {
                       </label> */}
 
 <Select
-  label="Are you willing to pay deposit?"
+  label={t("Are you willing to pay deposit?")}
   name="deposit"
   options={[
     { value: "yes", label: "Yes" },
@@ -732,7 +732,7 @@ const Looking_for_housing = () => {
                       </label> */}
 
 <Select
-  label="Months of Deposit"
+  label={t("Months of Deposit")}
   name="depositDuration"
   options={[
     { value: "1 Month", label: "1 Month" },
@@ -792,7 +792,7 @@ const Looking_for_housing = () => {
                       </label> */}
 
 <Select
-  label="Do You Have Pets?"
+  label={t("Do You Have Pets?")}
   name="pets"
   options={[
     { value: "yes", label: "Yes" },
@@ -815,7 +815,7 @@ const Looking_for_housing = () => {
                       </label> */}
 
 <Select
-  label="Do You Smoke?"
+  label={t("Do You Smoke?")}
   name="smoke"
   options={[
     { value: "yes", label: "Yes" },

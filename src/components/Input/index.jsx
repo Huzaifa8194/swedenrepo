@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "../../context/TranslationContext";
 
 const Input = ({
   label,
@@ -12,6 +13,7 @@ const Input = ({
   required,
   star,
 }) => {
+  const {t} = useTranslation();
   const [focused, setFocused] = useState(false);
 
   const handleFocus = () => {
@@ -46,7 +48,7 @@ const Input = ({
             : "tw-top-1/2 tw-left-3 tw-text-sm  tw-text-gray tw-translate-y-[-50%]"
         }`}
       >
-        {label}
+        {t(label)}
       </label>
       {/* <span className="tw-text-red-600 tw-font-semibold">{star}</span> */}
       <div className="tw-absolute tw-right-3 tw-top-3">
