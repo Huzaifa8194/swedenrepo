@@ -105,17 +105,20 @@ const Header = () => {
                       link={logo}
                       alt="Sweden Relocators Logo"
                       imageType={"brand-image-small"}
+                      style = {{marginRight: '500px'}}
                      
                     /></Link>
                     <NavListDesktop isTop={isTop} />
                   </div>
                   <div className="tw-flex tw-justify-center tw-items-center tw-gap-1">
-                
+                <Link to ='/register'>
                     <Button
-                      className={isTop ? "btn-Plain" : "btn-dark"}
+                      className={isTop ? "btn-Plain tw-text-black" : "btn-dark"}
                       label="Book an Appointment"
-                      onClick={() => (window.location.href = "/book_an_appointment")}
+
+                      
                     />
+                    </Link>
                     <Button
                       className={isTop ? "btn-Transparent" : "btn-light"}
                       label="Login"

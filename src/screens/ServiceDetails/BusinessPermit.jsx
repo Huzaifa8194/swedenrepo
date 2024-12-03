@@ -242,7 +242,8 @@ const BusinessPermit = () => {
     },
   ];
 
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
+  const isleftlangue = language === 'ur';
 
   return (
     <>{t(``)}<Header />{t(``)}<Banner_Page
@@ -251,7 +252,10 @@ const BusinessPermit = () => {
         "Launch your entrepreneurial journey in Sweden. Our experts help you with all the necessary paperwork for a business permit."
       )}
       backgroundImage={homeBgImage}
-    />{t(``)}<div className=" ">{t(``)}<section className="  ">{t(``)}<div className="container-fluid">{t(``)}<div className="row g-4">{t(``)}<div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">{t(``)}<div className="  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">{t(``)}<div>{t(``)}<span className="tw-flex tw-items-center tw-gap-2">{t(``)}<p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Self-Employment`)}</span>{t(``)}<h2 className="tw-text-left">{t(``)}<strong className="tw-text-black">
+    />{t(``)}<div className=" ">{t(``)}<section className="  ">{t(``)}<div className="container-fluid">{t(``)}<div className="row g-4">{t(``)}<div
+    className="col-md-8 tw-py-20 tw-bg-white tw-text-justify"
+    style={{ direction: isleftlangue ? 'rtl' : 'ltr' }}
+  >{t(``)}<div className="  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">{t(``)}<div>{t(``)}<span className="tw-flex tw-items-center tw-gap-2">{t(``)}<p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Self-Employment`)}</span>{t(``)}<h2 className="tw-text-left">{t(``)}<strong className="tw-text-black">
       {" "}
       Residence Permit in Sweden
     </strong>{t(``)}</h2>{t(``)}<br />{t(``)}<p className="tw-text-gray">{t(`If you’re a non-EU/EEA citizen aiming to start or expand a
@@ -490,7 +494,7 @@ const BusinessPermit = () => {
                       application, Sweden Relocators is here to help. Contact us
                       today to start your business journey in Sweden with
                       confidence, knowing that every aspect of your application
-                      is in good hands.`)}</p>{t(``)}<Link to="/register" className="tw-text-center tw-pt-4">{t(``)}<h5 className="tw-text-center tw-pt-4" style={{ fontSize: '1.2em' }}>{t(``)}<strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
+                      is in good hands.`)}</p>{t(``)}<Link to="/register" className="tw-text-center tw-pt-4">{t(``)}<h5 className="tw-text-center tw-pt-4" style={{ fontSize: '1em' }}>{t(``)}<strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
           {t(`Sign Up`)}{" "}
         </strong>{t(``)}<strong className="tw-text-black">{t(`Today!`)}</strong>{t(``)}</h5>{t(``)}</Link>{t(``)}<br />{t(``)}<p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
                       seeking assistance with relocation, permits, visas, legal

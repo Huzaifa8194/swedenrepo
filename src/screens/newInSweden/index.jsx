@@ -17,7 +17,12 @@ import Sidebar from "../../components/ScrollableBar";
 import Header from "../../components/Header_New/Header";
 
 const New_In_sweden = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
+
+
+
+console.log("[LOG221]:" + language);
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -241,6 +246,9 @@ const New_In_sweden = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [topOffset, setTopOffset] = useState("30%");
 
+
+  const isleftlangue = language === 'ur';
+
   useEffect(() => {
     const updateTopOffset = () => {
       if (window.innerWidth < 1700 && window.innerWidth > 1600) {
@@ -299,7 +307,10 @@ const New_In_sweden = () => {
         <section className=" ">
           <div className="container-fluid ">
             <div className="row g-4">
-              <div className="col-md-8 tw-py-20 tw-bg-white tw-text-justify">
+            <div 
+  className="col-md-8 tw-py-20 tw-bg-white tw-text-justify" 
+  style={{ direction: isleftlangue ? 'rtl' : 'ltr' }}
+>
                 <div className="   2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <span className=" tw-flex tw-items-center tw-gap-5">
                     {" "}
@@ -1473,126 +1484,179 @@ const New_In_sweden = () => {
                       </h2>
                       <br />
                       <ul className=" tw-p-0">
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Personnummer & ID card`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`www.skatteverket.se`)}</Link>
-                          </div>
-                        </li>
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Personnummer & ID card`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://www.skatteverket.se" target="_blank" rel="noopener noreferrer">
+        {t(`www.skatteverket.se`)}
+      </a>
+    </div>
+  </li>
 
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Application for Swedish Language`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`(https://malmo.se/…/Sfi—svenska…/Sfi-intensivkurs.html)`)}</Link>
-                          </div>
-                        </li>
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Application for Swedish Language`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://malmo.se/…/Sfi—svenska…/Sfi-intensivkurs.html" target="_blank" rel="noopener noreferrer">
+        {t(`https://malmo.se/…/Sfi—svenska…/Sfi-intensivkurs.html`)}
+      </a>
+    </div>
+  </li>
 
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Apartments Search`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`www.boplats.se`)}</Link>
-                          </div>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Registration for Job Search`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`www.arbetsförmedlingen.se`)}</Link>
-                          </div>
-                        </li>
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Apartments Search`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://www.boplats.se" target="_blank" rel="noopener noreferrer">
+        {t(`www.boplats.se`)}
+      </a>
+    </div>
+  </li>
 
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Business Registration`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`www.verksamt.se`)}</Link>
-                          </div>
-                        </li>
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Registration for Job Search`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://www.arbetsförmedlingen.se" target="_blank" rel="noopener noreferrer">
+        {t(`www.arbetsförmedlingen.se`)}
+      </a>
+    </div>
+  </li>
 
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Driving Test`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`https://www.trafikverket.se/korkort/boka-prov/`)}</Link>
-                          </div>
-                        </li>
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Business Registration`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://www.verksamt.se" target="_blank" rel="noopener noreferrer">
+        {t(`www.verksamt.se`)}
+      </a>
+    </div>
+  </li>
 
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Change you EU B-Driving License`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`https://transportstyrelsen.se/…/ansokan-om-utbyte-av…/`)}</Link>
-                          </div>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Change your Taxi License`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`https://transportstyrelsen.se/…/taxi…/`)}</Link>
-                          </div>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Buy/Sell Everything`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`www.blocket.se`)}</Link>
-                          </div>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Buy Sell House`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`www.hemnet.se`)}</Link>
-                          </div>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Furniture`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`www.ikea.se`)}</Link>
-                          </div>
-                        </li>
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Driving Test`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://www.trafikverket.se/korkort/boka-prov/" target="_blank" rel="noopener noreferrer">
+        {t(`https://www.trafikverket.se/korkort/boka-prov/`)}
+      </a>
+    </div>
+  </li>
 
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Residence Permit`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`www.migrationsverket.se`)}</Link>
-                          </div>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Foreign Educational Document evaluation`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`www.Uhr.se`)}</Link>
-                          </div>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Applying for Study in Sweden-English`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`www.universityadmisisons.se`)}</Link>
-                          </div>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Apply for study in Sweden-Swedish`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`https://www.antagning.se/se/start
-                              https://www.utbyten.se/`)}</Link>
-                          </div>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`PHD Search`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`https://www.euraxess.se/`)}</Link>
-                          </div>
-                        </li>
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Change your EU B-Driving License`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://transportstyrelsen.se/…/ansokan-om-utbyte-av…/" target="_blank" rel="noopener noreferrer">
+        {t(`https://transportstyrelsen.se/…/ansokan-om-utbyte-av…/`)}
+      </a>
+    </div>
+  </li>
 
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Apply for Children’s Playgroup and School`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`https://malmo.se/…/Utbildning-och-forskola/Forskola.html`)}</Link>
-                          </div>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`https://malmo.se/…/Utbildni…/Utbildningar-for-vuxna.html`)}</Link>
-                          </div>
-                        </li>
-                        <li className=" ">
-                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Social Rights`)}</p>
-                          <div className=" tw-py-2">
-                            <Link className="  tw-font-normal" to={""}>{t(`https://www.forsakringskassan.se`)}</Link>
-                          </div>
-                        </li>
-                      </ul>
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Change your Taxi License`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://transportstyrelsen.se/…/taxi…/" target="_blank" rel="noopener noreferrer">
+        {t(`https://transportstyrelsen.se/…/taxi…/`)}
+      </a>
+    </div>
+  </li>
+
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Buy/Sell Everything`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://www.blocket.se" target="_blank" rel="noopener noreferrer">
+        {t(`www.blocket.se`)}
+      </a>
+    </div>
+  </li>
+
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Buy Sell House`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://www.hemnet.se" target="_blank" rel="noopener noreferrer">
+        {t(`www.hemnet.se`)}
+      </a>
+    </div>
+  </li>
+
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Furniture`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://www.ikea.se" target="_blank" rel="noopener noreferrer">
+        {t(`www.ikea.se`)}
+      </a>
+    </div>
+  </li>
+
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Residence Permit`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://www.migrationsverket.se" target="_blank" rel="noopener noreferrer">
+        {t(`www.migrationsverket.se`)}
+      </a>
+    </div>
+  </li>
+
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Foreign Educational Document evaluation`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://www.uhr.se" target="_blank" rel="noopener noreferrer">
+        {t(`www.Uhr.se`)}
+      </a>
+    </div>
+  </li>
+
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Applying for Study in Sweden-English`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://www.universityadmisisons.se" target="_blank" rel="noopener noreferrer">
+        {t(`www.universityadmisisons.se`)}
+      </a>
+    </div>
+  </li>
+
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Apply for study in Sweden-Swedish`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://www.antagning.se" target="_blank" rel="noopener noreferrer">
+        {t(`https://www.antagning.se`)}
+      </a>
+    </div>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://www.utbyten.se" target="_blank" rel="noopener noreferrer">
+        {t(`https://www.utbyten.se`)}
+      </a>
+    </div>
+  </li>
+
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`PHD Search`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://www.euraxess.se" target="_blank" rel="noopener noreferrer">
+        {t(`https://www.euraxess.se`)}
+      </a>
+    </div>
+  </li>
+
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Apply for Children’s Playgroup and School`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://malmo.se/…/Utbildning-och-forskola/Forskola.html" target="_blank" rel="noopener noreferrer">
+        {t(`https://malmo.se/…/Utbildning-och-forskola/Forskola.html`)}
+      </a>
+    </div>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://malmo.se/…/Utbildni…/Utbildningar-for-vuxna.html" target="_blank" rel="noopener noreferrer">
+        {t(`https://malmo.se/…/Utbildni…/Utbildningar-for-vuxna.html`)}
+      </a>
+    </div>
+  </li>
+
+  <li className=" ">
+    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Social Rights`)}</p>
+    <div className=" tw-py-2">
+      <a className=" tw-font-normal" href="https://www.forsakringskassan.se" target="_blank" rel="noopener noreferrer">
+        {t(`https://www.forsakringskassan.se`)}
+      </a>
+    </div>
+  </li>
+</ul>
+
                     </div>
                   </div>
                 </div>

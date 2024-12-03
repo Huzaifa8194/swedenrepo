@@ -16,7 +16,7 @@ h4 {
   @apply tw-text-2xl  tw-font-semibold   !important;
 }
 h5 {
-  @apply tw-text-xl     !important;
+  @apply tw-text-[1em]     !important;
 }
 
 span {

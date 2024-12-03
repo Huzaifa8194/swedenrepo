@@ -19,8 +19,9 @@ import eor3 from "../../assets/iconscout/eor3.png";
 import Header from "../../components/Header_New/Header";
 
 const EORPayroll = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   const { id } = useParams();
+  const isleftlangue = language === 'ur';
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -256,7 +257,10 @@ const EORPayroll = () => {
           <div className="container-fluid">
             <div className="">
               <div className="row g-4">
-                <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify ">
+              <div
+                className="col-md-8 tw-py-20 tw-bg-white tw-text-justify"
+                style={{ direction: isleftlangue ? 'rtl' : 'ltr' }}
+              >
                   <div className=" 2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
@@ -766,11 +770,11 @@ const EORPayroll = () => {
                         can be with our EOR and payroll solutions.`)}</p>
                     </div>
                     <Link to="/register" className="tw-text-center tw-pt-4">
-                    <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
+                    <h5 className="tw-text-center tw-text-primary tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                          {t(` Sign Up`)}{" "}
                         </strong>
-                        <strong>{t(`Today!`)}</strong>
+                        <strong>{t(` Today!`)}</strong>
                       </h5>
                     </Link>
                     <br />

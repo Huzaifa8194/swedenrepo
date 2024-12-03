@@ -99,7 +99,7 @@ export const NavListDesktop = ({ isTop }) => {
           }
         `}
       </style>
-    <div className="tw-flex tw-justify-center tw-items-center tw-gap-4 tw-relative tw-z-[1100]">
+    <div className="tw-flex tw-justify-center tw-items-center tw-pl-1 tw-gap-4 tw-relative tw-z-[1100]">
       {NavItems.map((item) => (
         <div
           key={item.id}

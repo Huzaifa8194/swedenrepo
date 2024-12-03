@@ -33,6 +33,7 @@ import Sidebar from "../../components/ScrollableBar";
 
 
 import { useTranslation } from '../../context/TranslationContext';
+import { PiTextAlignCenter } from "react-icons/pi";
 
 
 
@@ -43,7 +44,7 @@ import { useTranslation } from '../../context/TranslationContext';
 
 
 const AppealCases = () => {
-  const { t } = useTranslation();
+  const { t , language} = useTranslation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -264,7 +265,7 @@ const AppealCases = () => {
       Link: "/golden-visa-greece-portugal",
     },
   ];
-
+  const isleftlangue = language === 'ur';
  
   return (
     <>
@@ -281,7 +282,10 @@ const AppealCases = () => {
         <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
-              <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
+            <div
+                className="col-md-8 tw-py-20 tw-bg-white tw-text-justify"
+                style={{ direction: isleftlangue ? 'rtl' : 'ltr' }}
+              >
                 <div className=" 2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
                     <span className="tw-flex tw-items-center tw-gap-2">
@@ -674,13 +678,13 @@ const AppealCases = () => {
                     </ul>
 
                     <Link to="/register" className="tw-text-center tw-pt-4">
-                    <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
-                        <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
-                          {t("Sign Up")}{" "}
-                        </strong>
-                        <strong className="tw-text-black"> {t("Today!")}</strong>
-                      </h5>
-                    </Link>
+                      <h5 className="tw-text-center tw-text-black  tw-pt-4" style = {{fontSize: '1em', PiTextAlignCenter}}>
+                            <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
+                              Sign Up{" "}
+                            </strong>
+                            <strong >{t(` Today!`)}</strong>
+                          </h5>
+                        </Link>
                     <br />
                     <p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
                       seeking assistance with relocation, permits, visas, legal

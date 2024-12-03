@@ -20,7 +20,7 @@ import ap4 from "../../assets/iconscout/ap4.png";
 import Sidebar from "../../components/ScrollableBar";
 
 const ServiceDetails = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   const { id } = useParams();
   useEffect(() => {
@@ -241,6 +241,7 @@ const ServiceDetails = () => {
       Link: "/golden-visa-greece-portugal",
     },
   ];
+  const isleftlangue = language === 'ur';
 
   return (
     <>
@@ -258,7 +259,10 @@ const ServiceDetails = () => {
           <div className="tw-relative">
             <div className="container-fluid tw-relative">
               <div className="row g-4 tw-relative">
-                <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify tw-relative">
+              <div
+                className="col-md-8 tw-py-20 tw-bg-white tw-text-justify"
+                style={{ direction: isleftlangue ? 'rtl' : 'ltr' }}
+              >
                   <div className=" 2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                     <div>
                       <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">

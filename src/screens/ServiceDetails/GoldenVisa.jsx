@@ -18,7 +18,8 @@ import gold3 from "../../assets/iconscout/gold3.png";
 import Header from "../../components/Header_New/Header";
 
 const GoldenVisa = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
+  const isleftlangue = language === 'ur';
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -255,7 +256,10 @@ const GoldenVisa = () => {
           <div className="container-fluid">
             <div className="">
               <div className="row g-4">
-                <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify ">
+              <div
+                className="col-md-8 tw-py-20 tw-bg-white tw-text-justify"
+                style={{ direction: isleftlangue ? 'rtl' : 'ltr' }}
+              >
                   <div className=" 2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                     <div>
                       <br />

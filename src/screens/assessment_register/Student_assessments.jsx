@@ -245,7 +245,7 @@ const Student_assessments = () => {
   ];
 
   const [chooseType, setChooseTypes] = useState("");
-  
+
   const [others, setOthers] = useState("");
 
   const [country, setCountry] = useState("");
@@ -261,17 +261,17 @@ const Student_assessments = () => {
 
 
 
-const [percentage2, setPercentage2] = useState(""); // For repeated percentage
-const [grade2, setGrade2] = useState(""); // For repeated grade
+  const [percentage2, setPercentage2] = useState(""); // For repeated percentage
+  const [grade2, setGrade2] = useState(""); // For repeated grade
 
-const [percentage3, setPercentage3] = useState(""); // For percentage with "Select Percentage"
-const [grade3, setGrade3] = useState(""); // For another grade select
-const [subject3, setSubject3] = useState(""); // For another subject select
-
-
+  const [percentage3, setPercentage3] = useState(""); // For percentage with "Select Percentage"
+  const [grade3, setGrade3] = useState(""); // For another grade select
+  const [subject3, setSubject3] = useState(""); // For another subject select
 
 
-  
+
+
+
 
 
 
@@ -293,17 +293,17 @@ const [subject3, setSubject3] = useState(""); // For another subject select
     switch (e.target.name) {
 
 
-    
-   
-    
+
+
+
       case "percentage2":
         setPercentage2(value);
         break;
       case "grade2":
         setGrade2(value);
         break;
-   
-   
+
+
       case "percentage3":
         setPercentage3(value);
         break;
@@ -315,35 +315,35 @@ const [subject3, setSubject3] = useState(""); // For another subject select
         break;
 
       case "country":
-      setCountry(value);
-      break;
-    case "studyLevel":
-      setStudyLevel(value);
-      break;
-    case "yearsOfStudy":
-      setYearsOfStudy(value);
-      break;
-    case "languageTest":
-      setLanguageTest(value);
-      break;
-    case "ieltsScore":
-      setIeltsScore(value);
-      break;
-    case "subject":
-      setSubject(value);
-      break;
-    case "percentage":
-      setPercentage(value);
-      break;
-    case "grade":
-      setGrade(value);
-      break;
-    case "languageTest2":
-      setLanguageTest2(value);
-      break;
-    case "subject2":
-      setSubject2(value);
-      break;
+        setCountry(value);
+        break;
+      case "studyLevel":
+        setStudyLevel(value);
+        break;
+      case "yearsOfStudy":
+        setYearsOfStudy(value);
+        break;
+      case "languageTest":
+        setLanguageTest(value);
+        break;
+      case "ieltsScore":
+        setIeltsScore(value);
+        break;
+      case "subject":
+        setSubject(value);
+        break;
+      case "percentage":
+        setPercentage(value);
+        break;
+      case "grade":
+        setGrade(value);
+        break;
+      case "languageTest2":
+        setLanguageTest2(value);
+        break;
+      case "subject2":
+        setSubject2(value);
+        break;
       case "higherEducation":
         setHigherEducation(value);
         break;
@@ -449,7 +449,7 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                       </li>
                     </ul>
 
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Why`)}</span>
@@ -457,10 +457,10 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                     <h2 className="tw-text-left">
                       <strong>{t(`Use the Eligibility Tool?`)}</strong>
                     </h2>
-                    <br/>
+                    <br />
 
 
-                  
+
                     <p className="tw-text-gray">{t(`This tool is designed to help you understand the
                       requirements and eligibility criteria for studying in
                       Sweden by gathering essential details such as:`)}</p>
@@ -500,19 +500,19 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                     </p>
 
 
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Complete`)}</span>
 
                     <h2 className="tw-text-left">
                       <strong>
-                      Study Permit and Relocation Support{" "}
+                        Study Permit and Relocation Support{" "}
                       </strong>
                     </h2>
-                    <br/>
+                    <br />
 
-                    
+
 
                     <p className="tw-text-gray">{t(`We offer end-to-end support for your study journey and
                       relocation to Sweden through our web portal and app:`)}</p>
@@ -548,7 +548,7 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                       </li>
                     </ul>
 
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`)}</span>
@@ -556,11 +556,11 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                     <h2 className="tw-text-left">
                       <strong>{t(`We Use the Information`)}</strong>
                     </h2>
-                    <br/>
+                    <br />
 
 
 
-                   
+
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
@@ -588,20 +588,20 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                     </ul>
 
 
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                    
+
                     </span>
 
                     <h2 className="tw-text-left">
                       <strong>{t(`Get Started`)}</strong>
                     </h2>
-                    <br/>
+                    <br />
 
 
-                   
+
                     <p className=" tw-text-gray">{t(`Use the eligibility tool on our web portal or app to take
                       the first step toward your educational journey in Sweden.
                       Whether you need help with your application or future
@@ -621,7 +621,7 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                     <Assessment_modal
                       isModalOpen={isModalOpen}
                       setIsModalOpen={setIsModalOpen}
-                      // setUsers={setUsers}
+                    // setUsers={setUsers}
                     />
 
                     {/* <form>
@@ -672,72 +672,72 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                           <strong>{t(`Educational Background`)}</strong>
                         </h2>
                         <div className="col-md-6 tw-pt-4">
-                        <Select
-  label="Country"
-  name="country"
-  options={[
-    { value: "AF", label: "Afghanistan" },
-    { value: "AL", label: "Albania" },
-    { value: "DZ", label: "Algeria" },
-    { value: "AS", label: "American Samoa" },
-    { value: "AD", label: "Andorra" },
-    { value: "AO", label: "Angola" },
-    { value: "AI", label: "Anguilla" },
-    { value: "AQ", label: "Antarctica" },
-    { value: "AG", label: "Antigua and Barbuda" },
-    { value: "AR", label: "Argentina" },
-    { value: "AM", label: "Armenia" },
-    { value: "AW", label: "Aruba" },
-    { value: "AU", label: "Australia" },
-    { value: "AT", label: "Austria" },
-    { value: "AZ", label: "Azerbaijan" },
-    // Add more countries as needed
-  ]}
-  value={country}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                          <Select
+                            label="Country"
+                            name="country"
+                            options={[
+                              { value: "AF", label: "Afghanistan" },
+                              { value: "AL", label: "Albania" },
+                              { value: "DZ", label: "Algeria" },
+                              { value: "AS", label: "American Samoa" },
+                              { value: "AD", label: "Andorra" },
+                              { value: "AO", label: "Angola" },
+                              { value: "AI", label: "Anguilla" },
+                              { value: "AQ", label: "Antarctica" },
+                              { value: "AG", label: "Antigua and Barbuda" },
+                              { value: "AR", label: "Argentina" },
+                              { value: "AM", label: "Armenia" },
+                              { value: "AW", label: "Aruba" },
+                              { value: "AU", label: "Australia" },
+                              { value: "AT", label: "Austria" },
+                              { value: "AZ", label: "Azerbaijan" },
+                              // Add more countries as needed
+                            ]}
+                            value={country}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
 
                         <div className="col-md-6 tw-pt-4">
-                        <Select
-  label="Select Level of Studies"
-  name="studyLevel"
-  options={[
-    { value: "Higher Secondary Education", label: "Higher Secondary Education" },
-    { value: "Intermediate / O-A Levels", label: "Intermediate / O-A Levels" },
-    { value: "Under Graduate", label: "Under Graduate" },
-    { value: "Masters/ M.Phil / Post Graduate", label: "Masters/ M.Phil / Post Graduate" },
-    { value: "Other", label: "Other" },
-  ]}
-  value={studyLevel}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                          <Select
+                            label="Select Level of Studies"
+                            name="studyLevel"
+                            options={[
+                              { value: "Higher Secondary Education", label: "Higher Secondary Education" },
+                              { value: "Intermediate / O-A Levels", label: "Intermediate / O-A Levels" },
+                              { value: "Under Graduate", label: "Under Graduate" },
+                              { value: "Masters/ M.Phil / Post Graduate", label: "Masters/ M.Phil / Post Graduate" },
+                              { value: "Other", label: "Other" },
+                            ]}
+                            value={studyLevel}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
 
                         <div className="col-md-6 tw-pt-4">
-                        <Select
-  label="Total no of years of study"
-  name="yearsOfStudy"
-  options={[
-    { value: "10 Year", label: "10 Year" },
-    { value: "12 Year", label: "12 Year" },
-    { value: "14 Year", label: "14 Year" },
-    { value: "16 Year", label: "16 Year" },
-    { value: "18 Year", label: "18 Year" },
-  ]}
-  value={yearsOfStudy}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                          <Select
+                            label="Total no of years of study"
+                            name="yearsOfStudy"
+                            options={[
+                              { value: "10 Year", label: "10 Year" },
+                              { value: "12 Year", label: "12 Year" },
+                              { value: "14 Year", label: "14 Year" },
+                              { value: "16 Year", label: "16 Year" },
+                              { value: "18 Year", label: "18 Year" },
+                            ]}
+                            value={yearsOfStudy}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
                         {studyLevel === "Other" ? (
                           <>
-                            <div className="col-md-8 tw-pt-4">
+                            <div className="col-md-8 ">
                               <label className=" tw-text-sm  tw-text-gray "></label>
 
                               <Input
@@ -752,7 +752,7 @@ const [subject3, setSubject3] = useState(""); // For another subject select
 
                             {/* user info */}
                             <div className=" tw-pt-8">
-                              
+
 
                               <form>
                                 <div className="row ">
@@ -765,43 +765,43 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                                   </h2>
 
                                   <div className="col-md-6 tw-pt-4">
-                                  <Select
-  label="English Language Proficiency Test"
-  name="languageTest"
-  options={[
-    { value: "IELTS", label: "IELTS" },
-    { value: "TOFEL (Paper-based)", label: "TOFEL (Paper-based)" },
-    { value: "TOFEL (Internet-based)", label: "TOFEL (Internet-based)" },
-    { value: "CAMBRIDGE", label: "CAMBRIDGE" },
-    { value: "PEARSON", label: "PEARSON" },
-    { value: "LETTER OF PROFICIENCY", label: "LETTER OF PROFICIENCY" },
-    { value: "OTHER", label: "OTHER" },
-  ]}
-  value={languageTest}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                                    <Select
+                                      label="English Language Proficiency Test"
+                                      name="languageTest"
+                                      options={[
+                                        { value: "IELTS", label: "IELTS" },
+                                        { value: "TOFEL (Paper-based)", label: "TOFEL (Paper-based)" },
+                                        { value: "TOFEL (Internet-based)", label: "TOFEL (Internet-based)" },
+                                        { value: "CAMBRIDGE", label: "CAMBRIDGE" },
+                                        { value: "PEARSON", label: "PEARSON" },
+                                        { value: "LETTER OF PROFICIENCY", label: "LETTER OF PROFICIENCY" },
+                                        { value: "OTHER", label: "OTHER" },
+                                      ]}
+                                      value={languageTest}
+                                      onChange={handleSelectChange}
+                                      className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                    />
 
                                   </div>
 
                                   {languageTest === "IELTS" ? (
                                     <>
                                       <div className="col-md-6 tw-pt-4">
-                                      <Select
-  label="Overall IELTS Score"
-  name="ieltsScore"
-  options={[
-    { value: "5", label: "5" },
-    { value: "5.5", label: "5.5" },
-    { value: "6", label: "6" },
-    { value: "6.5", label: "6.5" },
-    { value: "7", label: "7" },
-    { value: "7.5", label: "7.5" },
-  ]}
-  value={ieltsScore}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                                        <Select
+                                          label="Overall IELTS Score"
+                                          name="ieltsScore"
+                                          options={[
+                                            { value: "5", label: "5" },
+                                            { value: "5.5", label: "5.5" },
+                                            { value: "6", label: "6" },
+                                            { value: "6.5", label: "6.5" },
+                                            { value: "7", label: "7" },
+                                            { value: "7.5", label: "7.5" },
+                                          ]}
+                                          value={ieltsScore}
+                                          onChange={handleSelectChange}
+                                          className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                        />
 
                                       </div>
                                     </>
@@ -855,44 +855,44 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                     <>
                       {/* user info */}
                       <div className=" tw-pt-8">
-                       
-                        
+
+
 
                         <form>
-                        <div className="row tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
-                           
-                        <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                          <div className="row tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
 
-                    <h2 className="tw-text-left">
-                      <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
-                    </h2>
-                           
-                            <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Subject"
-  name="subject"
-  options={[
-    { value: "Science", label: "Science" },
-    { value: "Engineering", label: "Engineering" },
-    { value: "Medical", label: "Medical" },
-    { value: "IT", label: "IT" },
-    { value: "Business", label: "Business" },
-    { value: "Management", label: "Management" },
-    { value: "Art Design Media", label: "Art Design Media" },
-    { value: "Education", label: "Education" },
-    { value: "Journalism", label: "Journalism" },
-    { value: "Natural Science", label: "Natural Science" },
-  ]}
-  value={subject}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                              {" "}
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+
+                            <h2 className="tw-text-left">
+                              <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
+                            </h2>
+
+                            <div className="col-md-12 tw-pt-4">
+                              <Select
+                                label="Subject"
+                                name="subject"
+                                options={[
+                                  { value: "Science", label: "Science" },
+                                  { value: "Engineering", label: "Engineering" },
+                                  { value: "Medical", label: "Medical" },
+                                  { value: "IT", label: "IT" },
+                                  { value: "Business", label: "Business" },
+                                  { value: "Management", label: "Management" },
+                                  { value: "Art Design Media", label: "Art Design Media" },
+                                  { value: "Education", label: "Education" },
+                                  { value: "Journalism", label: "Journalism" },
+                                  { value: "Natural Science", label: "Natural Science" },
+                                ]}
+                                value={subject}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
 
                             </div>
 
-                            <div className="col-md-6 tw-pt-4">
+                            <div className="col-md-12">
                               <label className=" tw-text-sm  tw-text-gray "></label>
                               <Input
                                 placeholder={"Completed Year"}
@@ -905,35 +905,35 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Percentage"
-  name="percentage"
-  options={Array.from({ length: 18 }, (_, i) => ({
-    value: `${33 + i}`,
-    label: `${33 + i}`,
-  }))}
-  value={percentage}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                              <Select
+                                label="Percentage"
+                                name="percentage"
+                                options={Array.from({ length: 18 }, (_, i) => ({
+                                  value: `${33 + i}`,
+                                  label: `${33 + i}`,
+                                }))}
+                                value={percentage}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
 
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                             
-                            <Select
-  label="Grade"
-  name="grade"
-  options={[
-    { value: "A", label: "A" },
-    { value: "B", label: "B" },
-    { value: "C", label: "C" },
-    { value: "D", label: "D" },
-    { value: "E", label: "E" },
-  ]}
-  value={grade}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+
+                              <Select
+                                label="Grade"
+                                name="grade"
+                                options={[
+                                  { value: "A", label: "A" },
+                                  { value: "B", label: "B" },
+                                  { value: "C", label: "C" },
+                                  { value: "D", label: "D" },
+                                  { value: "E", label: "E" },
+                                ]}
+                                value={grade}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
 
                             </div>
                           </div>
@@ -942,39 +942,39 @@ const [subject3, setSubject3] = useState(""); // For another subject select
 
                       {/* user info */}
                       <div className=" tw-pt-8">
-                       
-                       
-                     
-                       
+
+
+
+
 
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
-                            
-                          <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
-                    <h2 className="tw-text-left">
-                      <strong>{t(`English Proficiency Test`)}</strong>
-                    </h2>
-                            
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                              {" "}
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+
+                            <h2 className="tw-text-left">
+                              <strong>{t(`English Proficiency Test`)}</strong>
+                            </h2>
+
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="English Language Proficiency Test"
-  name="languageTest2"
-  options={[
-    { value: "IELTS", label: "IELTS" },
-    { value: "TOFEL (Paper-based)", label: "TOFEL (Paper-based)" },
-    { value: "TOFEL (Internet-based)", label: "TOFEL (Internet-based)" },
-    { value: "CAMBRIDGE", label: "CAMBRIDGE" },
-    { value: "PEARSON", label: "PEARSON" },
-    { value: "LETTER OF PROFICIENCY", label: "LETTER OF PROFICIENCY" },
-    { value: "OTHER", label: "OTHER" },
-  ]}
-  value={languageTest2}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                              <Select
+                                label="English Language Proficiency Test"
+                                name="languageTest2"
+                                options={[
+                                  { value: "IELTS", label: "IELTS" },
+                                  { value: "TOFEL (Paper-based)", label: "TOFEL (Paper-based)" },
+                                  { value: "TOFEL (Internet-based)", label: "TOFEL (Internet-based)" },
+                                  { value: "CAMBRIDGE", label: "CAMBRIDGE" },
+                                  { value: "PEARSON", label: "PEARSON" },
+                                  { value: "LETTER OF PROFICIENCY", label: "LETTER OF PROFICIENCY" },
+                                  { value: "OTHER", label: "OTHER" },
+                                ]}
+                                value={languageTest2}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
 
 
                             </div>
@@ -989,44 +989,44 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                       {/* user info */}
                       <div className=" tw-pt-8">
 
-                    
-                       
+
+
 
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
-                            
-                          <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
-                    <h2 className="tw-text-left">
-                      <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
-                    </h2>
-                            
-                            <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Subject"
-  name="subject2"
-  options={[
-    { value: "Science", label: "Science" },
-    { value: "Engineering", label: "Engineering" },
-    { value: "Medical", label: "Medical" },
-    { value: "IT", label: "IT" },
-    { value: "Business", label: "Business" },
-    { value: "Management", label: "Management" },
-    { value: "Art Design Media", label: "Art Design Media" },
-    { value: "Education", label: "Education" },
-    { value: "Journalism", label: "Journalism" },
-    { value: "Natural Science", label: "Natural Science" },
-  ]}
-  value={subject2}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                              {" "}
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+
+                            <h2 className="tw-text-left">
+                              <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
+                            </h2>
+
+                            <div className="col-md-12 tw-pt-4">
+                              <Select
+                                label="Subject"
+                                name="subject2"
+                                options={[
+                                  { value: "Science", label: "Science" },
+                                  { value: "Engineering", label: "Engineering" },
+                                  { value: "Medical", label: "Medical" },
+                                  { value: "IT", label: "IT" },
+                                  { value: "Business", label: "Business" },
+                                  { value: "Management", label: "Management" },
+                                  { value: "Art Design Media", label: "Art Design Media" },
+                                  { value: "Education", label: "Education" },
+                                  { value: "Journalism", label: "Journalism" },
+                                  { value: "Natural Science", label: "Natural Science" },
+                                ]}
+                                value={subject2}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
 
                             </div>
 
-                            <div className="col-md-6 tw-pt-4">
+                            <div className="col-md-12 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray "></label>
                               <Input
                                 placeholder={"Contact No with Country"}
@@ -1039,34 +1039,34 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Percentage"
-  name="percentage"
-  options={Array.from({ length: 18 }, (_, i) => ({
-    value: `${33 + i}`,
-    label: `${33 + i}`,
-  }))}
-  value={percentage}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                              <Select
+                                label="Percentage"
+                                name="percentage"
+                                options={Array.from({ length: 18 }, (_, i) => ({
+                                  value: `${33 + i}`,
+                                  label: `${33 + i}`,
+                                }))}
+                                value={percentage}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              />
 
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Select Grade"
-  name="grade"
-  options={[
-    { value: "A", label: "A" },
-    { value: "B", label: "B" },
-    { value: "C", label: "C" },
-    { value: "D", label: "D" },
-    { value: "E", label: "E" },
-  ]}
-  value={grade}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                              <Select
+                                label="Select Grade"
+                                name="grade"
+                                options={[
+                                  { value: "A", label: "A" },
+                                  { value: "B", label: "B" },
+                                  { value: "C", label: "C" },
+                                  { value: "D", label: "D" },
+                                  { value: "E", label: "E" },
+                                ]}
+                                value={grade}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              />
 
                             </div>
                           </div>
@@ -1084,25 +1084,25 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Subject"
-  name="subject"
-  options={[
-    { value: "Science", label: "Science" },
-    { value: "Engineering", label: "Engineering" },
-    { value: "Medical", label: "Medical" },
-    { value: "IT", label: "IT" },
-    { value: "Business", label: "Business" },
-    { value: "Management", label: "Management" },
-    { value: "Art Design Media", label: "Art Design Media" },
-    { value: "Education", label: "Education" },
-    { value: "Journalism", label: "Journalism" },
-    { value: "Natural Science", label: "Natural Science" },
-  ]}
-  value={subject}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                              <Select
+                                label="Subject"
+                                name="subject"
+                                options={[
+                                  { value: "Science", label: "Science" },
+                                  { value: "Engineering", label: "Engineering" },
+                                  { value: "Medical", label: "Medical" },
+                                  { value: "IT", label: "IT" },
+                                  { value: "Business", label: "Business" },
+                                  { value: "Management", label: "Management" },
+                                  { value: "Art Design Media", label: "Art Design Media" },
+                                  { value: "Education", label: "Education" },
+                                  { value: "Journalism", label: "Journalism" },
+                                  { value: "Natural Science", label: "Natural Science" },
+                                ]}
+                                value={subject}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              />
 
                             </div>
 
@@ -1119,34 +1119,34 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Percentage"
-  name="percentage2"
-  options={Array.from({ length: 18 }, (_, i) => ({
-    value: `${33 + i}`,
-    label: `${33 + i}`,
-  }))}
-  value={percentage2}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                              <Select
+                                label="Percentage"
+                                name="percentage2"
+                                options={Array.from({ length: 18 }, (_, i) => ({
+                                  value: `${33 + i}`,
+                                  label: `${33 + i}`,
+                                }))}
+                                value={percentage2}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              />
 
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Select Grade"
-  name="grade2"
-  options={[
-    { value: "A", label: "A" },
-    { value: "B", label: "B" },
-    { value: "C", label: "C" },
-    { value: "D", label: "D" },
-    { value: "E", label: "E" },
-  ]}
-  value={grade2}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                              <Select
+                                label="Select Grade"
+                                name="grade2"
+                                options={[
+                                  { value: "A", label: "A" },
+                                  { value: "B", label: "B" },
+                                  { value: "C", label: "C" },
+                                  { value: "D", label: "D" },
+                                  { value: "E", label: "E" },
+                                ]}
+                                value={grade2}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              />
 
                             </div>
                           </div>
@@ -1157,37 +1157,37 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                       <div className=" tw-pt-8">
 
 
-                    
-                       
+
+
 
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
-                          <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                              {" "}
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
-                    <h2 className="tw-text-left">
-                      <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
-                    </h2>
-                            
-                            
+                            <h2 className="tw-text-left">
+                              <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
+                            </h2>
+
+
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="English Language Proficiency Test"
-  name="languageTest"
-  options={[
-    { value: "IELTS", label: "IELTS" },
-    { value: "TOFEL (Paper-based)", label: "TOFEL (Paper-based)" },
-    { value: "TOFEL (Internet-based)", label: "TOFEL (Internet-based)" },
-    { value: "CAMBRIDGE", label: "CAMBRIDGE" },
-    { value: "PEARSON", label: "PEARSON" },
-    { value: "LETTER OF PROFICIENCY", label: "LETTER OF PROFICIENCY" },
-    { value: "OTHER", label: "OTHER" },
-  ]}
-  value={languageTest}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                              <Select
+                                label="English Language Proficiency Test"
+                                name="languageTest"
+                                options={[
+                                  { value: "IELTS", label: "IELTS" },
+                                  { value: "TOFEL (Paper-based)", label: "TOFEL (Paper-based)" },
+                                  { value: "TOFEL (Internet-based)", label: "TOFEL (Internet-based)" },
+                                  { value: "CAMBRIDGE", label: "CAMBRIDGE" },
+                                  { value: "PEARSON", label: "PEARSON" },
+                                  { value: "LETTER OF PROFICIENCY", label: "LETTER OF PROFICIENCY" },
+                                  { value: "OTHER", label: "OTHER" },
+                                ]}
+                                value={languageTest}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              />
 
                             </div>
                           </div>
@@ -1197,48 +1197,48 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                   ) : null}
 
                   {studyLevel === "Under Graduate" ||
-                  studyLevel === "Masters/ M.Phil / Post Graduate" ? (
+                    studyLevel === "Masters/ M.Phil / Post Graduate" ? (
                     <>
                       {/* user info */}
                       <div className=" tw-pt-8">
-                    
-                       
+
+
 
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
-                           
-                          <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
-                    <h2 className="tw-text-left">
-                      <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
-                    </h2>
-                           
-                            <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Subject"
-  name="subject2"
-  options={[
-    { value: "Science", label: "Science" },
-    { value: "Engineering", label: "Engineering" },
-    { value: "Medical", label: "Medical" },
-    { value: "IT", label: "IT" },
-    { value: "Business", label: "Business" },
-    { value: "Management", label: "Management" },
-    { value: "Art Design Media", label: "Art Design Media" },
-    { value: "Education", label: "Education" },
-    { value: "Journalism", label: "Journalism" },
-    { value: "Natural Science", label: "Natural Science" },
-  ]}
-  value={subject2}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                              {" "}
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+
+                            <h2 className="tw-text-left">
+                              <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
+                            </h2>
+
+                            <div className="col-md-12 tw-pt-4">
+                              <Select
+                                label="Subject"
+                                name="subject2"
+                                options={[
+                                  { value: "Science", label: "Science" },
+                                  { value: "Engineering", label: "Engineering" },
+                                  { value: "Medical", label: "Medical" },
+                                  { value: "IT", label: "IT" },
+                                  { value: "Business", label: "Business" },
+                                  { value: "Management", label: "Management" },
+                                  { value: "Art Design Media", label: "Art Design Media" },
+                                  { value: "Education", label: "Education" },
+                                  { value: "Journalism", label: "Journalism" },
+                                  { value: "Natural Science", label: "Natural Science" },
+                                ]}
+                                value={subject2}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              />
 
                             </div>
 
-                            <div className="col-md-6 tw-pt-4">
+                            <div className="col-md-12 ">
                               <label className=" tw-text-sm  tw-text-gray "></label>
                               <Input
                                 placeholder={"Completed Year"}
@@ -1251,34 +1251,34 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Select Percentage"
-  name="percentage3"
-  options={Array.from({ length: 18 }, (_, i) => ({
-    value: `${33 + i}`,
-    label: `${33 + i}`,
-  }))}
-  value={percentage3}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                              <Select
+                                label="Select Percentage"
+                                name="percentage3"
+                                options={Array.from({ length: 18 }, (_, i) => ({
+                                  value: `${33 + i}`,
+                                  label: `${33 + i}`,
+                                }))}
+                                value={percentage3}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              />
 
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Select Grade"
-  name="grade3"
-  options={[
-    { value: "A", label: "A" },
-    { value: "B", label: "B" },
-    { value: "C", label: "C" },
-    { value: "D", label: "D" },
-    { value: "E", label: "E" },
-  ]}
-  value={grade3}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
-/>
+                              <Select
+                                label="Select Grade"
+                                name="grade3"
+                                options={[
+                                  { value: "A", label: "A" },
+                                  { value: "B", label: "B" },
+                                  { value: "C", label: "C" },
+                                  { value: "D", label: "D" },
+                                  { value: "E", label: "E" },
+                                ]}
+                                value={grade3}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
+                              />
 
                             </div>
                           </div>
@@ -1296,25 +1296,25 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Subject"
-  name="subject3"
-  options={[
-    { value: "Science", label: "Science" },
-    { value: "Engineering", label: "Engineering" },
-    { value: "Medical", label: "Medical" },
-    { value: "IT", label: "IT" },
-    { value: "Business", label: "Business" },
-    { value: "Management", label: "Management" },
-    { value: "Art Design Media", label: "Art Design Media" },
-    { value: "Education", label: "Education" },
-    { value: "Journalism", label: "Journalism" },
-    { value: "Natural Science", label: "Natural Science" },
-  ]}
-  value={subject3}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
-/>
+                              <Select
+                                label="Subject"
+                                name="subject3"
+                                options={[
+                                  { value: "Science", label: "Science" },
+                                  { value: "Engineering", label: "Engineering" },
+                                  { value: "Medical", label: "Medical" },
+                                  { value: "IT", label: "IT" },
+                                  { value: "Business", label: "Business" },
+                                  { value: "Management", label: "Management" },
+                                  { value: "Art Design Media", label: "Art Design Media" },
+                                  { value: "Education", label: "Education" },
+                                  { value: "Journalism", label: "Journalism" },
+                                  { value: "Natural Science", label: "Natural Science" },
+                                ]}
+                                value={subject3}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
+                              />
 
                             </div>
 
@@ -1331,34 +1331,34 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Select Percentage"
-  name="percentage"
-  options={Array.from({ length: 18 }, (_, i) => ({
-    value: `${33 + i}`,
-    label: `${33 + i}`,
-  }))}
-  value={percentage}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                              <Select
+                                label="Select Percentage"
+                                name="percentage"
+                                options={Array.from({ length: 18 }, (_, i) => ({
+                                  value: `${33 + i}`,
+                                  label: `${33 + i}`,
+                                }))}
+                                value={percentage}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              />
 
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Select Grade"
-  name="grade"
-  options={[
-    { value: "A", label: "A" },
-    { value: "B", label: "B" },
-    { value: "C", label: "C" },
-    { value: "D", label: "D" },
-    { value: "E", label: "E" },
-  ]}
-  value={grade}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                              <Select
+                                label="Select Grade"
+                                name="grade"
+                                options={[
+                                  { value: "A", label: "A" },
+                                  { value: "B", label: "B" },
+                                  { value: "C", label: "C" },
+                                  { value: "D", label: "D" },
+                                  { value: "E", label: "E" },
+                                ]}
+                                value={grade}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              />
 
                             </div>
                           </div>
@@ -1376,25 +1376,25 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Subject"
-  name="subject"
-  options={[
-    { value: "Science", label: "Science" },
-    { value: "Engineering", label: "Engineering" },
-    { value: "Medical", label: "Medical" },
-    { value: "IT", label: "IT" },
-    { value: "Business", label: "Business" },
-    { value: "Management", label: "Management" },
-    { value: "Art Design Media", label: "Art Design Media" },
-    { value: "Education", label: "Education" },
-    { value: "Journalism", label: "Journalism" },
-    { value: "Natural Science", label: "Natural Science" },
-  ]}
-  value={subject}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                              <Select
+                                label="Subject"
+                                name="subject"
+                                options={[
+                                  { value: "Science", label: "Science" },
+                                  { value: "Engineering", label: "Engineering" },
+                                  { value: "Medical", label: "Medical" },
+                                  { value: "IT", label: "IT" },
+                                  { value: "Business", label: "Business" },
+                                  { value: "Management", label: "Management" },
+                                  { value: "Art Design Media", label: "Art Design Media" },
+                                  { value: "Education", label: "Education" },
+                                  { value: "Journalism", label: "Journalism" },
+                                  { value: "Natural Science", label: "Natural Science" },
+                                ]}
+                                value={subject}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              />
 
                             </div>
 
@@ -1425,71 +1425,71 @@ const [subject3, setSubject3] = useState(""); // For another subject select
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Select Percentage"
-  name="percentage2"
-  options={Array.from({ length: 18 }, (_, i) => ({
-    value: `${33 + i}`,
-    label: `${33 + i}`,
-  }))}
-  value={percentage2}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                              <Select
+                                label="Select Percentage"
+                                name="percentage2"
+                                options={Array.from({ length: 18 }, (_, i) => ({
+                                  value: `${33 + i}`,
+                                  label: `${33 + i}`,
+                                }))}
+                                value={percentage2}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              />
 
                             </div>
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Select Grade"
-  name="grade2"
-  options={[
-    { value: "A", label: "A" },
-    { value: "B", label: "B" },
-    { value: "C", label: "C" },
-    { value: "D", label: "D" },
-    { value: "E", label: "E" },
-  ]}
-  value={grade2}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                              <Select
+                                label="Select Grade"
+                                name="grade2"
+                                options={[
+                                  { value: "A", label: "A" },
+                                  { value: "B", label: "B" },
+                                  { value: "C", label: "C" },
+                                  { value: "D", label: "D" },
+                                  { value: "E", label: "E" },
+                                ]}
+                                value={grade2}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              />
 
                             </div>
                           </div>
                         </form>
                       </div>
 
-                      {/* user info */}  
+                      {/* user info */}
                       <div className=" tw-pt-8">
-                        
+
 
                         <form>
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
-                           
-                          <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
-                    <h2 className="tw-text-left">
-                      <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
-                    </h2>
+                            <span className=" tw-flex tw-items-center tw-gap-2">
+                              {" "}
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+
+                            <h2 className="tw-text-left">
+                              <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
+                            </h2>
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="English Language Proficiency Test"
-  name="languageTest"
-  options={[
-    { value: "IELTS", label: "IELTS" },
-    { value: "TOFEL (Paper-based)", label: "TOFEL (Paper-based)" },
-    { value: "TOFEL (Internet-based)", label: "TOFEL (Internet-based)" },
-    { value: "CAMBRIDGE", label: "CAMBRIDGE" },
-    { value: "PEARSON", label: "PEARSON" },
-    { value: "LETTER OF PROFICIENCY", label: "LETTER OF PROFICIENCY" },
-    { value: "OTHER", label: "OTHER" },
-  ]}
-  value={languageTest}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                              <Select
+                                label="English Language Proficiency Test"
+                                name="languageTest"
+                                options={[
+                                  { value: "IELTS", label: "IELTS" },
+                                  { value: "TOFEL (Paper-based)", label: "TOFEL (Paper-based)" },
+                                  { value: "TOFEL (Internet-based)", label: "TOFEL (Internet-based)" },
+                                  { value: "CAMBRIDGE", label: "CAMBRIDGE" },
+                                  { value: "PEARSON", label: "PEARSON" },
+                                  { value: "LETTER OF PROFICIENCY", label: "LETTER OF PROFICIENCY" },
+                                  { value: "OTHER", label: "OTHER" },
+                                ]}
+                                value={languageTest}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                              />
 
                             </div>
                           </div>
@@ -1509,7 +1509,7 @@ const [subject3, setSubject3] = useState(""); // For another subject select
               </div>
             </div>
 
-            <Sidebar/>
+            <Sidebar />
           </div>
         </div>
       </section>

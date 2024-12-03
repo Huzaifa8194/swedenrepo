@@ -22,7 +22,7 @@ import { useTranslation } from '../../context/TranslationContext';
 
 const Family_reunification_assessment = () => {
 
-  const {t } = useTranslation();
+  const { t } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -246,19 +246,19 @@ const Family_reunification_assessment = () => {
   const [location, setLocation] = useState("");
 
   const [spousePassport, setSpousePassport] = useState("");
-const [childrenPassport, setChildrenPassport] = useState("");
-const [marriageCertificateRegistered, setMarriageCertificateRegistered] = useState("");
-const [birthCertificateChildren, setBirthCertificateChildren] = useState("");
-const [euCitizen, setEuCitizen] = useState("");
-const [movedToSweden, setMovedToSweden] = useState("");
-const [citizenship, setCitizenship] = useState("");
-const [permanentResidencePermit, setPermanentResidencePermit] = useState("");
-const [personnummer, setPersonnummer] = useState("");
-const [personnummerRejected, setPersonnummerRejected] = useState("");
-const [apartmentStatus, setApartmentStatus] = useState("");
-const [stayPermanently, setStayPermanently] = useState("");
-const [fullTimeWork, setFullTimeWork] = useState("");
-const [familyVisaRejected, setFamilyVisaRejected] = useState("");
+  const [childrenPassport, setChildrenPassport] = useState("");
+  const [marriageCertificateRegistered, setMarriageCertificateRegistered] = useState("");
+  const [birthCertificateChildren, setBirthCertificateChildren] = useState("");
+  const [euCitizen, setEuCitizen] = useState("");
+  const [movedToSweden, setMovedToSweden] = useState("");
+  const [citizenship, setCitizenship] = useState("");
+  const [permanentResidencePermit, setPermanentResidencePermit] = useState("");
+  const [personnummer, setPersonnummer] = useState("");
+  const [personnummerRejected, setPersonnummerRejected] = useState("");
+  const [apartmentStatus, setApartmentStatus] = useState("");
+  const [stayPermanently, setStayPermanently] = useState("");
+  const [fullTimeWork, setFullTimeWork] = useState("");
+  const [familyVisaRejected, setFamilyVisaRejected] = useState("");
 
 
   const handleSelectChange = (e) => {
@@ -269,9 +269,9 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
     }
 
     switch (e.target.name) {
-      
-      
-      
+
+
+
       case "euCitizen":
         setEuCitizen(value);
         break;
@@ -302,18 +302,18 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
       case "familyVisaRejected":
         setFamilyVisaRejected(value);
         break;
-        case "spousePassport":
-          setSpousePassport(value);
-          break;
-        case "childrenPassport":
-          setChildrenPassport(value);
-          break;
-        case "marriageCertificateRegistered":
-          setMarriageCertificateRegistered(value);
-          break;
-        case "birthCertificateChildren":
-          setBirthCertificateChildren(value);
-          break;
+      case "spousePassport":
+        setSpousePassport(value);
+        break;
+      case "childrenPassport":
+        setChildrenPassport(value);
+        break;
+      case "marriageCertificateRegistered":
+        setMarriageCertificateRegistered(value);
+        break;
+      case "birthCertificateChildren":
+        setBirthCertificateChildren(value);
+        break;
       case "location":
         setLocation(value);
         break;
@@ -342,11 +342,11 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
   return (
     <>
       <Header />
-      <Banner_Page 
-    highlightText={t("FAMILY REUNIFICATION")}
-    regularText={t("Secure your family reunification assessment confidently. We guide you through the process for a seamless experience.")}
-    backgroundImage={homeBgImage} 
-/>
+      <Banner_Page
+        highlightText={t("Family Reunification")}
+        regularText={t("Secure your family reunification assessment confidently. We guide you through the process for a seamless experience.")}
+        backgroundImage={homeBgImage}
+      />
       <section className="">
         <div className="container-fluid ">
           <div className="row g-5">
@@ -359,11 +359,11 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Family Reunification`)}</span>
-                    <h2>
-                      <strong className = "tw-text-left">{t(`Find Out Your Eligibility for Family Reunification in
+                    <h2 className="tw-text-left">
+                      <strong className="tw-text-left">{t(`Find Out Your Eligibility for Family Reunification in
                         Sweden`)}</strong>
                     </h2>
-                    <strong className = "tw-text-gray">{t(`Who Should Use This Tool?`)}</strong>
+                    <strong className="tw-text-gray">{t(`Who Should Use This Tool?`)}</strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
@@ -382,7 +382,7 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
                       </li>
                     </ul>
 
-                    <strong className = "tw-text-gray">{t(`Why Use the Eligibility Tool?`)}</strong>
+                    <strong className="tw-text-gray">{t(`Why Use the Eligibility Tool?`)}</strong>
                     <p className=" tw-text-gray">{t(`This tool is designed to help you understand the
                       requirements and eligibility criteria for bringing your
                       family members to Sweden by collecting important details,
@@ -412,7 +412,7 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
                       </li>
                     </ul>
 
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`)}</span>
@@ -421,7 +421,7 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
                       <strong>{t(`We Use the Information`)}</strong>
                     </h2>
 
-                    <br/>
+                    <br />
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
@@ -448,7 +448,7 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
                       </li>
                     </ul>
 
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
@@ -456,13 +456,13 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
                     <h2 className="tw-text-left">
                       <strong>{t(`Get Started`)}</strong>
                     </h2>
-                    <br/>
+                    <br />
 
-                  
+
                     <p className=" tw-text-gray">{t(`Use the eligibility tool to take the first step toward reuniting with your family in Sweden as an EU citizen or long-term EU resident!`)}</p>
                   </div>
                   <div>
-                  {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                    {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
                   <h5 className=" tw-text-black  ">{t(`Personal Details`)}</h5>
 
                   <h6 className=" tw-text-black ">
@@ -474,7 +474,7 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
                     <Assessment_modal
                       isModalOpen={isModalOpen}
                       setIsModalOpen={setIsModalOpen}
-                      // setUsers={setUsers}
+                    // setUsers={setUsers}
                     />
 
                     {/* <form>
@@ -515,47 +515,47 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-               
+
 
                     <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
-                        
-                      <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Relocate to Sweden`)}</span>
 
-                    <h2 className="tw-text-left">
-                      <strong>{t(`Personal Details`)}</strong>
-                    </h2>
-                        
+                        <span className=" tw-flex tw-items-center tw-gap-2">
+                          {" "}
+                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Relocate to Sweden`)}</span>
+
+                        <h2 className="tw-text-left">
+                          <strong>{t(`Personal Details`)}</strong>
+                        </h2>
+
                         <div className="col-md-6 tw-pt-4">
-                        <Select
-  label="Are you EU Citizen?"
-  name="euCitizen"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={euCitizen}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                          <Select
+                            label="Are you EU Citizen?"
+                            name="euCitizen"
+                            options={[
+                              { value: "yes", label: "Yes" },
+                              { value: "no", label: "No" },
+                            ]}
+                            value={euCitizen}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
 
                         {euCitizen === "yes" ? (
                           <div className="col-md-12 tw-pt-4">
-                          <Select
-  label="Are you already moved to Sweden or planning to move in the coming 90 Days Period?"
-  name="movedToSweden"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={movedToSweden}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                            <Select
+                              label="Are you already moved to Sweden or planning to move in the coming 90 Days Period?"
+                              name="movedToSweden"
+                              options={[
+                                { value: "yes", label: "Yes" },
+                                { value: "no", label: "No" },
+                              ]}
+                              value={movedToSweden}
+                              onChange={handleSelectChange}
+                              className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                            />
 
                           </div>
                         ) : null}
@@ -563,169 +563,169 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
                         {euCitizen === "no" ? (
                           <>
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Which Citizenship do you have?"
-  name="citizenship"
-  options={[
-    { value: "AF", label: "Afghanistan" },
-    { value: "AS", label: "American Samoa" },
-    { value: "CA", label: "Canada" },
-    { value: "OM", label: "Oman" },
-    { value: "PK", label: "Pakistan" },
-    { value: "NL", label: "Netherlands" },
-    { value: "NZ", label: "New Zealand" },
-    { value: "IS", label: "Iceland" },
-    { value: "IN", label: "India" },
-    { value: "FR", label: "France" },
-    { value: "BD", label: "Bangladesh" },
-    { value: "BB", label: "Barbados" },
-    { value: "BY", label: "Belarus" },
-    { value: "BE", label: "Belgium" },
-    { value: "BZ", label: "Belize" },
-    { value: "BJ", label: "Benin" },
-    { value: "BM", label: "Bermuda" },
-    { value: "BT", label: "Bhutan" },
-    { value: "BO", label: "Bolivia" },
-    { value: "BA", label: "Bosnia and Herzegovina" },
-    { value: "BW", label: "Botswana" },
-    { value: "BR", label: "Brazil" },
-    { value: "BN", label: "Brunei Darussalam" },
-    { value: "BG", label: "Bulgaria" },
-    { value: "BF", label: "Burkina Faso" },
-    { value: "BI", label: "Burundi" },
-  ]}
-  value={citizenship}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                              <Select
+                                label="Which Citizenship do you have?"
+                                name="citizenship"
+                                options={[
+                                  { value: "AF", label: "Afghanistan" },
+                                  { value: "AS", label: "American Samoa" },
+                                  { value: "CA", label: "Canada" },
+                                  { value: "OM", label: "Oman" },
+                                  { value: "PK", label: "Pakistan" },
+                                  { value: "NL", label: "Netherlands" },
+                                  { value: "NZ", label: "New Zealand" },
+                                  { value: "IS", label: "Iceland" },
+                                  { value: "IN", label: "India" },
+                                  { value: "FR", label: "France" },
+                                  { value: "BD", label: "Bangladesh" },
+                                  { value: "BB", label: "Barbados" },
+                                  { value: "BY", label: "Belarus" },
+                                  { value: "BE", label: "Belgium" },
+                                  { value: "BZ", label: "Belize" },
+                                  { value: "BJ", label: "Benin" },
+                                  { value: "BM", label: "Bermuda" },
+                                  { value: "BT", label: "Bhutan" },
+                                  { value: "BO", label: "Bolivia" },
+                                  { value: "BA", label: "Bosnia and Herzegovina" },
+                                  { value: "BW", label: "Botswana" },
+                                  { value: "BR", label: "Brazil" },
+                                  { value: "BN", label: "Brunei Darussalam" },
+                                  { value: "BG", label: "Bulgaria" },
+                                  { value: "BF", label: "Burkina Faso" },
+                                  { value: "BI", label: "Burundi" },
+                                ]}
+                                value={citizenship}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
 
                             </div>
 
                             <div className="col-md-12 tw-pt-4">
-                            <Select
-  label="Do you have permanent Residence permit from below mentioned countries?"
-  name="permanentResidencePermit"
-  options={[
-    { value: "AF", label: "Afghanistan" },
-    { value: "AS", label: "American Samoa" },
-    { value: "CA", label: "Canada" },
-    { value: "OM", label: "Oman" },
-    { value: "PK", label: "Pakistan" },
-    { value: "NL", label: "Netherlands" },
-    { value: "NZ", label: "New Zealand" },
-    { value: "IS", label: "Iceland" },
-    { value: "IN", label: "India" },
-    { value: "FR", label: "France" },
-    { value: "BD", label: "Bangladesh" },
-    { value: "BB", label: "Barbados" },
-    { value: "BY", label: "Belarus" },
-    { value: "BE", label: "Belgium" },
-    { value: "BZ", label: "Belize" },
-    { value: "BJ", label: "Benin" },
-    { value: "BM", label: "Bermuda" },
-    { value: "BT", label: "Bhutan" },
-    { value: "BO", label: "Bolivia" },
-    { value: "BA", label: "Bosnia and Herzegovina" },
-    { value: "BW", label: "Botswana" },
-    { value: "BR", label: "Brazil" },
-    { value: "BN", label: "Brunei Darussalam" },
-    { value: "BG", label: "Bulgaria" },
-    { value: "BF", label: "Burkina Faso" },
-    { value: "BI", label: "Burundi" },
-  ]}
-  value={permanentResidencePermit}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                              <Select
+                                label="Do you have permanent Residence permit from below mentioned countries?"
+                                name="permanentResidencePermit"
+                                options={[
+                                  { value: "AF", label: "Afghanistan" },
+                                  { value: "AS", label: "American Samoa" },
+                                  { value: "CA", label: "Canada" },
+                                  { value: "OM", label: "Oman" },
+                                  { value: "PK", label: "Pakistan" },
+                                  { value: "NL", label: "Netherlands" },
+                                  { value: "NZ", label: "New Zealand" },
+                                  { value: "IS", label: "Iceland" },
+                                  { value: "IN", label: "India" },
+                                  { value: "FR", label: "France" },
+                                  { value: "BD", label: "Bangladesh" },
+                                  { value: "BB", label: "Barbados" },
+                                  { value: "BY", label: "Belarus" },
+                                  { value: "BE", label: "Belgium" },
+                                  { value: "BZ", label: "Belize" },
+                                  { value: "BJ", label: "Benin" },
+                                  { value: "BM", label: "Bermuda" },
+                                  { value: "BT", label: "Bhutan" },
+                                  { value: "BO", label: "Bolivia" },
+                                  { value: "BA", label: "Bosnia and Herzegovina" },
+                                  { value: "BW", label: "Botswana" },
+                                  { value: "BR", label: "Brazil" },
+                                  { value: "BN", label: "Brunei Darussalam" },
+                                  { value: "BG", label: "Bulgaria" },
+                                  { value: "BF", label: "Burkina Faso" },
+                                  { value: "BI", label: "Burundi" },
+                                ]}
+                                value={permanentResidencePermit}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
 
                             </div>
                           </>
                         ) : null}
 
                         <div className="col-md-6 tw-pt-4">
-                        <Select
-  label="Do you have a valid Personnummer in Sweden?"
-  name="personnummer"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={personnummer}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                          <Select
+                            label="Do you have a valid Personnummer in Sweden?"
+                            name="personnummer"
+                            options={[
+                              { value: "yes", label: "Yes" },
+                              { value: "no", label: "No" },
+                            ]}
+                            value={personnummer}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
                         <div className="col-md-6 tw-pt-4">
-                        <Select
-  label="Did you apply for Personnummer and got rejected?"
-  name="personnummerRejected"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={personnummerRejected}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                          <Select
+                            label="Did you apply for Personnummer and got rejected?"
+                            name="personnummerRejected"
+                            options={[
+                              { value: "yes", label: "Yes" },
+                              { value: "no", label: "No" },
+                            ]}
+                            value={personnummerRejected}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
 
                         <div className="col-md-12 tw-pt-4">
-                        <Select
-  label="Do you have your own Apartment in Sweden OR a first-hand rental apartment?"
-  name="apartmentStatus"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={apartmentStatus}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                          <Select
+                            label="Do you have your own Apartment in Sweden OR a first-hand rental apartment?"
+                            name="apartmentStatus"
+                            options={[
+                              { value: "yes", label: "Yes" },
+                              { value: "no", label: "No" },
+                            ]}
+                            value={apartmentStatus}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
 
                         <div className="col-md-12 tw-pt-4">
-                        <Select
-  label="Are you planning to stay permanently in Sweden?"
-  name="stayPermanently"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={stayPermanently}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                          <Select
+                            label="Are you planning to stay permanently in Sweden?"
+                            name="stayPermanently"
+                            options={[
+                              { value: "yes", label: "Yes" },
+                              { value: "no", label: "No" },
+                            ]}
+                            value={stayPermanently}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
                         <div className="col-md-12 tw-pt-4">
-                        <Select
-  label="Do you have full-time work in Sweden or Denmark?"
-  name="fullTimeWork"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={fullTimeWork}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                          <Select
+                            label="Do you have full-time work in Sweden or Denmark?"
+                            name="fullTimeWork"
+                            options={[
+                              { value: "yes", label: "Yes" },
+                              { value: "no", label: "No" },
+                            ]}
+                            value={fullTimeWork}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
                         <div className="col-md-12 tw-pt-4">
-                        <Select
-  label="Did you apply for your family visa and got rejected?"
-  name="familyVisaRejected"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={familyVisaRejected}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                          <Select
+                            label="Did you apply for your family visa and got rejected?"
+                            name="familyVisaRejected"
+                            options={[
+                              { value: "yes", label: "Yes" },
+                              { value: "no", label: "No" },
+                            ]}
+                            value={familyVisaRejected}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
                       </div>
@@ -734,88 +734,88 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-                  <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
-                  <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                    <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
-                    <h2 className="tw-text-left">
-                      <strong>{t(`Family Documents`)}</strong>
-                    </h2>
+                      <h2 className="tw-text-left">
+                        <strong>{t(`Family Documents`)}</strong>
+                      </h2>
 
-                    <div className="tw-flex tw-items-center tw-gap-2 tw-pt-3">
-                      <input
-                        type="checkbox"
-                        className="tw-mt-1"
-                        checked={isSingle}
-                        onChange={handleCheckboxChange}
-                      />
-                      <p className="tw-text-gray-dark  tw-m-0">{t(`I am single or I want to move by myself first`)}</p>
+                      <div className="tw-flex tw-items-center tw-gap-2 tw-pt-3">
+                        <input
+                          type="checkbox"
+                          className="tw-mt-1"
+                          checked={isSingle}
+                          onChange={handleCheckboxChange}
+                        />
+                        <p className="tw-text-gray-dark  tw-m-0">{t(`I am single or I want to move by myself first`)}</p>
+                      </div>
+
+                      {!isSingle && (
+                        <form>
+                          <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                            <div className="col-md-6 tw-pt-4">
+                              <Select
+                                label="Did your Spouse have a valid National Passport?"
+                                name="spousePassport"
+                                options={[
+                                  { value: "yes", label: "Yes" },
+                                  { value: "no", label: "No" },
+                                ]}
+                                value={spousePassport}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
+
+                            </div>
+                            <div className="col-md-6 tw-pt-4">
+                              <Select
+                                label="Did your Children have a valid National Passport?"
+                                name="childrenPassport"
+                                options={[
+                                  { value: "yes", label: "Yes" },
+                                  { value: "no", label: "No" },
+                                ]}
+                                value={childrenPassport}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
+
+                            </div>
+                            <div className="col-md-12 tw-pt-4">
+                              <Select
+                                label="Did your spouse have a marriage certificate and is your marriage registered in your home country?"
+                                name="marriageCertificateRegistered"
+                                options={[
+                                  { value: "yes", label: "Yes" },
+                                  { value: "no", label: "No" },
+                                ]}
+                                value={marriageCertificateRegistered}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
+
+                            </div>
+                            <div className="col-md-12 tw-pt-4">
+                              <Select
+                                label="If you are not an EU citizen, do you have a birth certificate for your children?"
+                                name="birthCertificateChildren"
+                                options={[
+                                  { value: "yes", label: "Yes" },
+                                  { value: "no", label: "No" },
+                                ]}
+                                value={birthCertificateChildren}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
+
+                            </div>
+                          </div>
+                        </form>
+                      )}
                     </div>
-                  
-                    {!isSingle && (
-                      <form>
-                        <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
-                          <div className="col-md-6 tw-pt-4">
-                          <Select
-  label="Did your Spouse have a valid National Passport?"
-  name="spousePassport"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={spousePassport}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
-
-                          </div>
-                          <div className="col-md-6 tw-pt-4">
-                          <Select
-  label="Did your Children have a valid National Passport?"
-  name="childrenPassport"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={childrenPassport}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
-
-                          </div>
-                          <div className="col-md-8 tw-pt-4">
-                          <Select
-  label="Did your spouse have a marriage certificate and is your marriage registered in your home country?"
-  name="marriageCertificateRegistered"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={marriageCertificateRegistered}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
-
-                          </div>
-                          <div className="col-md-12 tw-pt-4">
-                          <Select
-  label="If you are not an EU citizen, do you have a birth certificate for your children?"
-  name="birthCertificateChildren"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={birthCertificateChildren}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
-
-                          </div>
-                        </div>
-                      </form>
-                    )}
-                  </div>
                   </div>
 
 
@@ -830,7 +830,7 @@ const [familyVisaRejected, setFamilyVisaRejected] = useState("");
               </div>
             </div>
 
-           <Sidebar/>
+            <Sidebar />
           </div>
         </div>
       </section>

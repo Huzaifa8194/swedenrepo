@@ -18,7 +18,7 @@ import cr1 from "../../assets/iconscout/cr1.png";
 import cr2 from "../../assets/iconscout/cr2.png";
 
 const CompanyRegistration = () => {
-  const { t } = useTranslation();
+  const { t , language} = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -239,6 +239,8 @@ const CompanyRegistration = () => {
     },
   ];
 
+  const isleftlangue = language === 'ur';
+
   return (
     <>
       <Header />
@@ -254,7 +256,10 @@ const CompanyRegistration = () => {
         <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
-              <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
+            <div
+                className="col-md-8 tw-py-20 tw-bg-white tw-text-justify"
+                style={{ direction: isleftlangue ? 'rtl' : 'ltr' }}
+              >
                 <div className="  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
                     <br />

@@ -22,7 +22,8 @@ import fr5 from "../../assets/iconscout/fr5.png";
 import fr6 from "../../assets/iconscout/fr6.png";
 
 const FamilyRenuification = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
+  const isleftlangue = language === 'ur';
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -257,7 +258,10 @@ const FamilyRenuification = () => {
         <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
-              <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
+            <div
+                className="col-md-8 tw-py-20 tw-bg-white tw-text-justify"
+                style={{ direction: isleftlangue ? 'rtl' : 'ltr' }}
+              >
                 <div className="  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
                     <span className="tw-flex tw-items-center tw-gap-2">
@@ -350,7 +354,7 @@ const FamilyRenuification = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          {t(`Social Insurance Code (Socialförsäkringsbalken):</>{" "}
+                          {t(`Social Insurance Code (Socialförsäkringsbalken):
                           Provides guidelines on acceptable income sources for
                           the maintenance requirement.`)}
                         </p>
@@ -802,12 +806,12 @@ const FamilyRenuification = () => {
                       
                       </div>
                       <Link to="/register" className="tw-text-center tw-pt-4">
-                      <h5 className="tw-text-center tw-text-black tw-pt-4" style = {{fontSize: '1.2em'}}>
+                      <h7 className="tw-text-center tw-text-black tw-pt-4" style = {{fontSize: '1em'}}>
                             <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
                               Sign Up{" "}
                             </strong>
-                            <strong >{t(`Today!`)}</strong>
-                          </h5>
+                            <strong >{t(` Today!`)}</strong>
+                          </h7>
                         </Link>
                         <br />
                         <p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether

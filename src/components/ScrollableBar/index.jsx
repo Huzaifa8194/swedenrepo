@@ -221,6 +221,18 @@ const Sidebar = () => {
           ),
           Link: "/golden-visa-greece-portugal",
         },
+        {
+          id: 21,
+          title: "Logistics    ",
+          description:
+            "As a member state of the EU, They offer its residents and citizens a number of reassuring benefits.        ",
+          icons: (
+            <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-boarding-pass-2"></i>
+          ),
+          Link: "/golden-visa-greece-portugal",
+        },
+
+        
       ];
   const [isSticky, setIsSticky] = useState(false);
   const [topOffset, setTopOffset] = useState("30%");
@@ -228,17 +240,17 @@ const Sidebar = () => {
   useEffect(() => {
     const updateTopOffset = () => {
       if (window.innerWidth < 1700 && window.innerWidth > 1600) {
-        setTopOffset("-100%");
+        setTopOffset("-105%");
       } else if (window.innerWidth < 1600 && window.innerWidth > 1400) {
-        setTopOffset("-100%");
+        setTopOffset("-105%");
       } else if (window.innerWidth > 1800) {
-        setTopOffset("-35%");
+        setTopOffset("-40%");
       } else if (window.innerWidth < 1400 && window.innerWidth > 1000) {
-        setTopOffset("-150%");
+        setTopOffset("-160%");
       } else if (window.innerWidth < 900) {
-        setTopOffset("-340%");
+        setTopOffset("-350%");
       } else {
-        setTopOffset("-100%");
+        setTopOffset("-105%");
       }
     };
     updateTopOffset();
@@ -266,7 +278,8 @@ const Sidebar = () => {
         className={`md:tw-pr-[40%] 2xl:tw-pr-[50%] tw-pr-4`}
         style={{
           position: isSticky ? "sticky" : "static", // Apply sticky only if isSticky is true
-          top: isSticky ? topOffset : "auto", // Only apply top offset when sticky
+          top: isSticky ? topOffset : "auto", 
+          paddingBottom: '20px'// Only apply top offset when sticky
         }}
       >
         <ul className="tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">

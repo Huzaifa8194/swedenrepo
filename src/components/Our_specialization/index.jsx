@@ -14,7 +14,7 @@ const Our_specialization = () => {
           <div className="col-md-5">
             <span>{t('OUR SPECIALIZATION')}</span>
             <h2>
-              {t('GLOBAL')} <br/><strong>{t('E-VISA SERVICES')}</strong>
+              {t('Nordic')} <br/><strong>{t('Relocation Services')}</strong>
             </h2>
 
             <ul className="p-0">

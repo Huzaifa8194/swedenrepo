@@ -1,27 +1,13 @@
 import React, { useEffect } from "react";
 import Banner_Page from "../../components/Common/Banner_Page";
-import Navbar from "../../components/Header/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { PiMapPin } from "react-icons/pi";
 import work from "../../assets/images/how-it-works.png";
-import camera from "../../assets/iconscout/camera.png";
-import payments from "../../assets/images/failed.png";
-import agreement from "../../assets/iconscout/contract.png";
-
-import serviceimage from "../../assets/iconscout/servicecharge.png"
-import rent from "../../assets/images/find-home.png";
-import house from "../../assets/images/looking-for-housing.png";
-
-
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { Link } from "react-router-dom";
 import Button from "../../components/Button";
-import Teams from "../teams";
 import New_Listings from "../../components/New_listings";
-import { FaCamera } from "react-icons/fa6";
 import Popular from "../../components/Popular";
-
 import howitwork1 from "../../assets/iconscout/howitwork1.png"
 import howitwork2 from "../../assets/iconscout/howitwork2.png"
 import howitwork3 from "../../assets/iconscout/howitwork3.png"
@@ -41,23 +27,23 @@ const Housing = () => {
   return (
     <>
       <Header />
-      <Banner_Page 
-  highlightText={t("Housing")} 
-  regularText={t("Your home in Sweden is just a step away. Explore options across cities and neighborhoods that suit your needs. Let us help you find the perfect place to settle in.")} 
-  backgroundImage={homeBgImage} 
-/>
+      <Banner_Page
+        highlightText={t("Housing")}
+        regularText={t("Your home in Sweden is just a step away. Explore options across cities and neighborhoods that suit your needs. Let us help you find the perfect place to settle in.")}
+        backgroundImage={homeBgImage}
+      />
 
-<div className="">
-              <div className=" tw-pt-12 tw-bt-0  tw-text-center tw-mb-0">
-                {/* <span>{t(`EXPopular`)}</span> */}
-                <h2>
-                  <h1>{t(`Explore Popular Location`)}</h1>
-                </h2>
-                <p className=" tw-text-gray">{t(`Explore the latest listings & projects in diverse areas`)}</p>
+      <div className="">
+        <div className=" tw-pt-12 tw-bt-0  tw-text-center tw-mb-0">
+          {/* <span>{t(`EXPopular`)}</span> */}
+          <h2>
+            <h1>{t(`Explore Popular Location`)}</h1>
+          </h2>
+          <p className=" tw-text-gray">{t(`Explore the latest listings & projects in diverse areas`)}</p>
 
-                <Popular />
-              </div>
-            </div>
+          <Popular />
+        </div>
+      </div>
 
       <div className=" ">
         <div className="  md:tw-mt-10 tw-mt-10">
@@ -117,7 +103,7 @@ const Housing = () => {
                 </div>
                 <p className=" tw-text-gray"></p>
                 <div className=" col ">
-                <div className="md:tw-mx-8 tw-mb-4 p-4 tw-bg-white tw-rounded-2xl tw-shadow-lg">
+                  <div className="md:tw-mx-8 tw-mb-4 p-4 tw-bg-white tw-rounded-2xl tw-shadow-lg">
                     <div className="tw-flex md:tw-flex-row tw-flex-col tw-items-start">
                       <img src={howitwork1} alt="" className="tw-w-24" />
                       <div className="md:tw-ml-8">
@@ -182,7 +168,7 @@ const Housing = () => {
                 </div>
               </div>
             </section>
-           
+
             <New_Listings />
             {/* <div className="row g-4">
               <div className=" tw-py-12 tw-text-center">

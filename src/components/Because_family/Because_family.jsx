@@ -182,6 +182,7 @@ const Because_family = () => {
       ],
       image: seven_image,
       component: null,
+      link: '/register',
       btnText: t('Send Request'),
     },
     {
@@ -196,6 +197,7 @@ const Because_family = () => {
       ],
       image: eight_image,
       component: null,
+      link: '/register',
       btnText: t('Send Request'),
     },
   ];

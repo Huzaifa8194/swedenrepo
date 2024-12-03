@@ -233,13 +233,13 @@ const Looking_for_housing = () => {
   const [depositDuration, setDepositDuration] = useState("");
   const [pets, setPets] = useState("");
   const [smoke, setSmoke] = useState("");
-  
+
 
 
 
   const handleSelectChange = (event) => {
     const { name, value } = event.target;
-  
+
     switch (name) {
       case "selectCountry":
         setSelectCountry(value);
@@ -287,7 +287,7 @@ const Looking_for_housing = () => {
         break;
     }
   };
-  
+
 
   return (
     <>
@@ -356,50 +356,52 @@ const Looking_for_housing = () => {
         </div>
       </div>
 
-      <div className="tw-flex tw-justify-between tw-flex-wrap tw-p-4 tw-bg-[#F5FAFF] 2xl:tw-pl-[14%] md:tw-pl-[10%] tw-pl-3 tw-pr-3 2xl:tw-pr-[14%] md:tw-pr-[10%]">
-  {[
-    {
-      image: rentimage1,
-      alt: "Rental Home 1",
-      title: "Find Your Dream Home",
-      description: " Discover the perfect place to live with our wide range of cozy and modern housing options.",
-    },
-    {
-      image: rentimage2,
-      alt: "Rental Home 2",
-      title: "Explore Homes Online",
-      description: "Description: Take a virtual look at your next home with interactive tours & detailed property insights.",
-    },
-    {
-      image: rentimage3,
-      alt: "Rental Home 3",
-      title: "Transparent Planning",
-      description: "Use our financial tools to manage expenses and make smart housing decisions effortlessly.",
-    },
-  ].map(({ image, alt, title, description }, index) => (
-    <div
-      key={index}
-      className="tw-flex tw-flex-col tw-items-center tw-w-[30%] tw-max-w-[30%] tw-gap-4"
-      style={{ flex: "1 1 30%", maxWidth: "30%" }}
-    >
-      <div className="tw-w-full tw-relative" style={{ paddingBottom: "56.25%" }}>
-        <img
-          src={image}
-          alt={alt}
-          className="tw-absolute tw-inset-0 tw-w-full tw-h-[110%] tw-rounded-2xl tw-object-cover tw-bg-white tw-shadow-lg"
-        />
+      <div className="tw-flex tw-justify-between tw-flex-wrap tw-p-4   tw-bg-[#F5FAFF] 2xl:tw-pl-[14%] md:tw-pl-[10%] tw-pl-3 tw-pr-3 2xl:tw-pr-[14%] md:tw-pr-[10%]">
+      {[
+          {
+            image: rentimage1,
+            alt: "Rental Home 1",
+            title: "Find Your Dream Home",
+            description: " Discover the perfect place to live with our wide range of cozy and modern housing options.",
+          },
+          {
+            image: rentimage2,
+            alt: "Rental Home 2",
+            title: "Explore Homes Online",
+            description: "Description: Take a virtual look at your next home with interactive tours & detailed property insights.",
+          },
+          {
+            image: rentimage3,
+            alt: "Rental Home 3",
+            title: "Transparent Planning",
+            description: "Use our financial tools to manage expenses and make smart housing decisions effortlessly.",
+          },
+        ].map(({ image, alt, title, description }, index) => (
+          <div
+            key={index}
+            className="tw-flex tw-p-3 tw-rounded-2xl tw-shadow-lg tw-bg-white tw-flex-col tw-items-center tw-w-[30%] tw-max-w-[30%] tw-gap-4"
+            style={{ flex: "1 1 30%", maxWidth: "30%" }}
+          >
+            <div className="tw-w-full tw-relative" style={{ paddingBottom: "56.25%" }}>
+              <img
+                src={image}
+                alt={alt}
+                className="tw-absolute tw-inset-0 tw-w-full tw-h-[110%] tw-rounded-2xl tw-object-cover tw-bg-white tw-shadow-lg"
+              />
+            </div>
+            <div className="tw-flex tw-flex-col tw-pt-4 tw-items-center tw-text-center">
+              <h7 className="tw-text-lg tw-text-gray-dark  tw-font-bold" style={{
+                color: "#1F2437",
+                fontWeight: "300", fontSize: '1.3em'
+              }}>{title}</h7>
+              <p className="tw-text-gray">{description}</p>
+            </div>
+          </div>
+        ))}
       </div>
-      <div className="tw-flex tw-flex-col tw-pt-4 tw-items-center tw-text-center">
-        <h7 className="tw-text-lg tw-text-gray-dark  tw-font-bold" style = {{ color: "#1F2437",
-                    fontWeight: "300", fontSize: '1.3em'}}>{title}</h7>
-        <p className="tw-text-gray">{description}</p>
-      </div>
-    </div>
-  ))}
-</div>
 
 
-      <section className=" tw-pb-8   tw-bg-[#F5FAFF]">
+      <section className=" container tw-pb-8   tw-bg-[#F5FAFF]">
         <div className="row tw-gap-2 tw-justify-start tw-items-start">
           <div className="">
             <div className=" tw-bg-[#F5FAFF] tw-pt-8  2xl:tw-pl-[14%] md:tw-pl-[10%] tw-pl-3 tw-pr-3 2xl:tw-pr-[14%] md:tw-pr-[10%]">
@@ -421,97 +423,97 @@ const Looking_for_housing = () => {
                   </div>
 
                   <div className="col-md-6">
-                  <Select
-  label={t("Select Country")}
-  name="selectCountry"
-  options={[
-    { value: "Sweden - Skane", label: "Sweden - Skane" },
-    { value: "Denmark - Copenhagen", label: "Denmark - Copenhagen" },
-  ]}
-  value={selectCountry}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                    <Select
+                      label={t("Select Country")}
+                      name="selectCountry"
+                      options={[
+                        { value: "Sweden - Skane", label: "Sweden - Skane" },
+                        { value: "Denmark - Copenhagen", label: "Denmark - Copenhagen" },
+                      ]}
+                      value={selectCountry}
+                      onChange={handleSelectChange}
+                      className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                    />
 
                   </div>
                   {selectCountry === "Sweden - Skane" ? (
                     <div className="col-md-6">
-                     <Select
-  label={t("Select Skåne City")}
-  name="skaneCity"
-  options={[
-    { value: "Ängelholm", label: "Ängelholm" },
-    { value: "Åstorp", label: "Åstorp" },
-    { value: "Båstad", label: "Båstad" },
-    { value: "Bjuv", label: "Bjuv" },
-    { value: "Bromölla", label: "Bromölla" },
-    { value: "Burlöv", label: "Burlöv" },
-  ]}
-  value={skaneCity}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label={t("Select Skåne City")}
+                        name="skaneCity"
+                        options={[
+                          { value: "Ängelholm", label: "Ängelholm" },
+                          { value: "Åstorp", label: "Åstorp" },
+                          { value: "Båstad", label: "Båstad" },
+                          { value: "Bjuv", label: "Bjuv" },
+                          { value: "Bromölla", label: "Bromölla" },
+                          { value: "Burlöv", label: "Burlöv" },
+                        ]}
+                        value={skaneCity}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
                   ) : null}
 
                   {selectCountry === "Denmark - Copenhagen" ? (
                     <div className="col-md-6">
-                     <Select
-  label={t("Select Copenhagen City")}
-  name="copenhagenCity"
-  options={[
-    { value: "Ängelholm", label: "Ängelholm" },
-    { value: "Åstorp", label: "Åstorp" },
-    { value: "Båstad", label: "Båstad" },
-    { value: "Bjuv", label: "Bjuv" },
-    { value: "Bromölla", label: "Bromölla" },
-    { value: "Burlöv", label: "Burlöv" },
-  ]}
-  value={copenhagenCity}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label={t("Select Copenhagen City")}
+                        name="copenhagenCity"
+                        options={[
+                          { value: "Ängelholm", label: "Ängelholm" },
+                          { value: "Åstorp", label: "Åstorp" },
+                          { value: "Båstad", label: "Båstad" },
+                          { value: "Bjuv", label: "Bjuv" },
+                          { value: "Bromölla", label: "Bromölla" },
+                          { value: "Burlöv", label: "Burlöv" },
+                        ]}
+                        value={copenhagenCity}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
                   ) : null}
 
                   <div className="col-md-6">
-                  <Select
-  label={t("Select Housing Type")}
-  name="housing"
-  options={[
-    { value: "Apartment", label: "Apartment" },
-    { value: "Villa", label: "Villa" },
-    { value: "Radhus", label: "Radhus" },
-    { value: "Shared Rooms", label: "Shared Rooms" },
-    { value: "Shared Beds", label: "Shared Beds" },
-  ]}
-  value={housing}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                    <Select
+                      label={t("Select Housing Type")}
+                      name="housing"
+                      options={[
+                        { value: "Apartment", label: "Apartment" },
+                        { value: "Villa", label: "Villa" },
+                        { value: "Radhus", label: "Radhus" },
+                        { value: "Shared Rooms", label: "Shared Rooms" },
+                        { value: "Shared Beds", label: "Shared Beds" },
+                      ]}
+                      value={housing}
+                      onChange={handleSelectChange}
+                      className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                    />
 
                   </div>
 
                   {housing != "Shared Beds" ? (
                     <div className="col-md-6">
-                     <Select
-  label={t("Number of Rooms Required")}
-  name="roomsRequired"
-  options={[
-    { value: "1", label: "1" },
-    { value: "2", label: "2" },
-    { value: "3", label: "3" },
-    { value: "4", label: "4" },
-    { value: "5", label: "5" },
-    { value: "6", label: "6" },
-    { value: "7+", label: "7+" },
-  ]}
-  value={roomsRequired}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label={t("Number of Rooms Required")}
+                        name="roomsRequired"
+                        options={[
+                          { value: "1", label: "1" },
+                          { value: "2", label: "2" },
+                          { value: "3", label: "3" },
+                          { value: "4", label: "4" },
+                          { value: "5", label: "5" },
+                          { value: "6", label: "6" },
+                          { value: "7+", label: "7+" },
+                        ]}
+                        value={roomsRequired}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
                   ) : null}
@@ -519,17 +521,17 @@ const Looking_for_housing = () => {
                   {housing === "Apartment" || housing === "Radhus" ? (
                     <>
                       <div className="col-md-6">
-                      <Select
-  label={t("Number of Floors Required")}
-  name="floorsRequired"
-  options={Array.from({ length: 18 }, (_, i) => ({
-    value: `${i + 1}`,
-    label: i < 17 ? `${i + 1}` : "18+",
-  }))}
-  value={floorsRequired}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                        <Select
+                          label={t("Number of Floors Required")}
+                          name="floorsRequired"
+                          options={Array.from({ length: 18 }, (_, i) => ({
+                            value: `${i + 1}`,
+                            label: i < 17 ? `${i + 1}` : "18+",
+                          }))}
+                          value={floorsRequired}
+                          onChange={handleSelectChange}
+                          className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                        />
 
                       </div>
                     </>
@@ -538,20 +540,20 @@ const Looking_for_housing = () => {
                   {housing === "Shared Rooms" || housing === "Shared Beds" ? (
                     <>
                       <div className="col-md-6">
-                      <Select
-  label={t("Maximum Beds in a Room")}
-  name="bedsInRoom"
-  options={[
-    { value: "1", label: "1" },
-    { value: "2", label: "2" },
-    { value: "3", label: "3" },
-    { value: "4", label: "4" },
-    { value: "5+", label: "5+" },
-  ]}
-  value={bedsInRoom}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                        <Select
+                          label={t("Maximum Beds in a Room")}
+                          name="bedsInRoom"
+                          options={[
+                            { value: "1", label: "1" },
+                            { value: "2", label: "2" },
+                            { value: "3", label: "3" },
+                            { value: "4", label: "4" },
+                            { value: "5+", label: "5+" },
+                          ]}
+                          value={bedsInRoom}
+                          onChange={handleSelectChange}
+                          className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                        />
 
                       </div>
                     </>
@@ -585,26 +587,26 @@ const Looking_for_housing = () => {
                         Furnished?
                       </label> */}
 
-<Select
-  label={t("Number of Adults in the House")}
-  name="adultsInHouse"
-  options={[
-    { value: "1", label: "1" },
-    { value: "2", label: "2" },
-    { value: "3", label: "3" },
-    { value: "4", label: "4" },
-    { value: "5", label: "5" },
-    { value: "6 or +", label: "6 or +" },
-  ]}
-  value={adultsInHouse}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                    <Select
+                      label={t("Number of Adults in the House")}
+                      name="adultsInHouse"
+                      options={[
+                        { value: "1", label: "1" },
+                        { value: "2", label: "2" },
+                        { value: "3", label: "3" },
+                        { value: "4", label: "4" },
+                        { value: "5", label: "5" },
+                        { value: "6 or +", label: "6 or +" },
+                      ]}
+                      value={adultsInHouse}
+                      onChange={handleSelectChange}
+                      className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                    />
 
                   </div>
-              
 
-              
+
+
 
                   <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
                     <span className=" tw-flex tw-items-center tw-gap-2">
@@ -634,19 +636,19 @@ const Looking_for_housing = () => {
                         Select Contract Type?
                       </label> */}
 
-<Select
-  label={t("Select Contract Type")}
-  name="contractType"
-  options={[
-    { value: "First Hand", label: "First Hand" },
-    { value: "Second Hand", label: "Second Hand" },
-    { value: "Other", label: "Other" },
-    { value: "N/A", label: "N/A" },
-  ]}
-  value={contractType}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                    <Select
+                      label={t("Select Contract Type")}
+                      name="contractType"
+                      options={[
+                        { value: "First Hand", label: "First Hand" },
+                        { value: "Second Hand", label: "Second Hand" },
+                        { value: "Other", label: "Other" },
+                        { value: "N/A", label: "N/A" },
+                      ]}
+                      value={contractType}
+                      onChange={handleSelectChange}
+                      className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                    />
 
                   </div>
 
@@ -681,19 +683,19 @@ const Looking_for_housing = () => {
                         Maximum people can stay in this residence?
                       </label> */}
 
-<Select
-  label={t("Duration of Stay")}
-  name="stayDuration"
-  options={[
-    ...Array.from({ length: 9 }, (_, i) => ({
-      value: `${i + 1} Month`,
-      label: `${i + 1} Month`,
-    })),
-  ]}
-  value={stayDuration}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                    <Select
+                      label={t("Duration of Stay")}
+                      name="stayDuration"
+                      options={[
+                        ...Array.from({ length: 9 }, (_, i) => ({
+                          value: `${i + 1} Month`,
+                          label: `${i + 1} Month`,
+                        })),
+                      ]}
+                      value={stayDuration}
+                      onChange={handleSelectChange}
+                      className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                    />
 
                   </div>
 
@@ -706,17 +708,17 @@ const Looking_for_housing = () => {
                         What is the duration of rent out?
                       </label> */}
 
-<Select
-  label={t("Are you willing to pay deposit?")}
-  name="deposit"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={deposit}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                    <Select
+                      label={t("Are you willing to pay deposit?")}
+                      name="deposit"
+                      options={[
+                        { value: "yes", label: "Yes" },
+                        { value: "no", label: "No" },
+                      ]}
+                      value={deposit}
+                      onChange={handleSelectChange}
+                      className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                    />
 
                   </div>
 
@@ -731,21 +733,21 @@ const Looking_for_housing = () => {
                         What is the duration of rent out?
                       </label> */}
 
-<Select
-  label={t("Months of Deposit")}
-  name="depositDuration"
-  options={[
-    { value: "1 Month", label: "1 Month" },
-    { value: "2 Month", label: "2 Month" },
-    { value: "3 Month", label: "3 Month" },
-    { value: "4 Month", label: "4 Month" },
-    { value: "5 Month", label: "5 Month" },
-    { value: "6 Month", label: "6 Month" },
-  ]}
-  value={depositDuration}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                        <Select
+                          label={t("Months of Deposit")}
+                          name="depositDuration"
+                          options={[
+                            { value: "1 Month", label: "1 Month" },
+                            { value: "2 Month", label: "2 Month" },
+                            { value: "3 Month", label: "3 Month" },
+                            { value: "4 Month", label: "4 Month" },
+                            { value: "5 Month", label: "5 Month" },
+                            { value: "6 Month", label: "6 Month" },
+                          ]}
+                          value={depositDuration}
+                          onChange={handleSelectChange}
+                          className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                        />
 
                       </div>
                     </>
@@ -791,17 +793,17 @@ const Looking_for_housing = () => {
                         Your Property Type
                       </label> */}
 
-<Select
-  label={t("Do You Have Pets?")}
-  name="pets"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={pets}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
-/>
+                    <Select
+                      label={t("Do You Have Pets?")}
+                      name="pets"
+                      options={[
+                        { value: "yes", label: "Yes" },
+                        { value: "no", label: "No" },
+                      ]}
+                      value={pets}
+                      onChange={handleSelectChange}
+                      className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
+                    />
 
                   </div>
 
@@ -814,17 +816,17 @@ const Looking_for_housing = () => {
                         Your Property Type
                       </label> */}
 
-<Select
-  label={t("Do You Smoke?")}
-  name="smoke"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={smoke}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
-/>
+                    <Select
+                      label={t("Do You Smoke?")}
+                      name="smoke"
+                      options={[
+                        { value: "yes", label: "Yes" },
+                        { value: "no", label: "No" },
+                      ]}
+                      value={smoke}
+                      onChange={handleSelectChange}
+                      className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
+                    />
 
                   </div>
 

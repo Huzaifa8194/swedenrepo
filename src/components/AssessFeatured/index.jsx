@@ -150,7 +150,7 @@ const FeatureSection = () => {
                           alt="image"
                         />
                       </div>
-                      <div className="featured-title">
+                      <div className="featured-title tw-pt-4">
                         <h5>
                           <a href={feature.to} tabIndex="-1">
                             {feature.country}
@@ -229,7 +229,7 @@ const FeatureSection = () => {
                           alt="image"
                         />
                       </div>
-                      <div className="featured-title">
+                      <div className="featured-title tw-pt-4">
                         <h5>
                           <a href={feature.to} tabIndex="-1">
                             {feature.country}
@@ -266,7 +266,7 @@ const FeatureSection = () => {
                 className="cmt-btn cmt-btn-size-md cmt-btn-shape-round cmt-btn-style-border cmt-btn-color-dark"
                 href="/register"
               >
-                View More Assessments!
+                Assessment Results
               </a>
             </div>
           </div>

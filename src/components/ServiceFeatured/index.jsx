@@ -60,7 +60,7 @@ import { useTranslation } from '../../context/TranslationContext';
 
 
 const FeatureSection = () => {
-  const { t} = useTranslation();
+  const { t } = useTranslation();
   const settings = {
     slidesToShow: 3,
     slidesToScroll: 0,
@@ -133,14 +133,14 @@ const FeatureSection = () => {
               <div className="title-header">
                 <h5>{t("who we are")}</h5>
                 <h2 className="title">
-                 {t(" Immigration and citizenship")}
+                  {t(" Immigration and citizenship")}
                   <br />
                   <strong> {t("choose your country!")}</strong>
                 </h2>
               </div>
               <div className="title-desc">
                 <p>
-                 {t(` We are an expert visa consultant focusing on providing quick
+                  {t(` We are an expert visa consultant focusing on providing quick
                   services to all your travelling needs. Be it a visa, travel
                   insurance, flight ticketing, we cover it all.`)}
                 </p>
@@ -179,7 +179,7 @@ const FeatureSection = () => {
               },
             ].map((feature, index) => (
               <div
-                className="cmt-box-col-wrapper col-lg-12 tw-h-[200px]"
+                className="cmt-box-col-wrapper col-lg-12 tw-h-[300px]"
                 key={index}
               >
                 <div className="featured-imagebox featured-imagebox-country style2 bor_rad_5 ">
@@ -204,12 +204,13 @@ const FeatureSection = () => {
                           alt="image"
                         />
                       </div>
-                      <div className="featured-title ">
-                        <h5>
+                      <div className="featured-title tw-pt-4">
+                        <h5 className="tw-mt-4">
                           <a
                             href={feature.to}
                             style={{ color: "black" }}
                             tabIndex="-1"
+
                           >
                             {t(feature.country)}
                           </a>
@@ -259,7 +260,10 @@ const FeatureSection = () => {
                   "Swedish business culture is open and innovative, and starting a business there is relatively simple",
               },
             ].map((feature, index) => (
-              <div className="cmt-box-col-wrapper col-lg-12" key={index}>
+              <div
+                className="cmt-box-col-wrapper col-lg-12 tw-h-[300px]"
+                key={index}
+              >
                 <div className="featured-imagebox featured-imagebox-country style2 bor_rad_5">
                   <div className="cmt-box-view-content-inner">
                     <div
@@ -282,7 +286,7 @@ const FeatureSection = () => {
                           alt="image"
                         />
                       </div>
-                      <div className="featured-title">
+                      <div className="featured-title tw-pt-4">
                         <h5>
                           <a
                             href={feature.to}
@@ -301,7 +305,7 @@ const FeatureSection = () => {
                         href={feature.to}
                         tabIndex="-1"
                       >
-                       {t("Read More")}
+                        {t("Read More")}
                       </a>
                     </div>
                   </div>
@@ -337,7 +341,10 @@ const FeatureSection = () => {
                   "If you are thinking about studying abroad, then visit Sweden. Sweden is well known for its world-class academic opportunities.",
               },
             ].map((feature, index) => (
-              <div className="cmt-box-col-wrapper col-lg-12" key={index}>
+              <div
+                className="cmt-box-col-wrapper col-lg-12 tw-h-[300px]"
+                key={index}
+              >
                 <div className="featured-imagebox featured-imagebox-country style2 bor_rad_5">
                   <div className="cmt-box-view-content-inner">
                     <div
@@ -360,7 +367,7 @@ const FeatureSection = () => {
                           alt="image"
                         />
                       </div>
-                      <div className="featured-title">
+                      <div className="featured-title tw-pt-4">
                         <h5>
                           <a
                             href={feature.to}
@@ -415,7 +422,10 @@ const FeatureSection = () => {
                   "Parents of a child under 18 years who is in Sweden can move to sweden if they will live with the child.",
               },
             ].map((feature, index) => (
-              <div className="cmt-box-col-wrapper col-lg-12" key={index}>
+              <div
+                className="cmt-box-col-wrapper col-lg-12 tw-h-[300px]"
+                key={index}
+              >
                 <div className="featured-imagebox featured-imagebox-country style2 bor_rad_5">
                   <div className="cmt-box-view-content-inner">
                     <div
@@ -438,7 +448,7 @@ const FeatureSection = () => {
                           alt="image"
                         />
                       </div>
-                      <div className="featured-title">
+                      <div className="featured-title tw-pt-4">
                         <h5>
                           <a
                             href={feature.to}
@@ -457,7 +467,7 @@ const FeatureSection = () => {
                         href={feature.to}
                         tabIndex="-1"
                       >
-                       {(" Read More")}
+                        {(" Read More")}
                       </a>
                     </div>
                   </div>
@@ -493,7 +503,10 @@ const FeatureSection = () => {
                   "we offer you an easy and painless solution where you can get a place to live without any worries.",
               },
             ].map((feature, index) => (
-              <div className="cmt-box-col-wrapper col-lg-12" key={index}>
+              <div
+              className="cmt-box-col-wrapper col-lg-12 tw-h-[300px]"
+              key={index}
+            >
                 <div className="featured-imagebox featured-imagebox-country style2 bor_rad_5">
                   <div className="cmt-box-view-content-inner">
                     <div
@@ -516,7 +529,7 @@ const FeatureSection = () => {
                           alt="image"
                         />
                       </div>
-                      <div className="featured-title">
+                      <div className="featured-title tw-pt-4">
                         <h5>
                           <a
                             href={feature.to}
@@ -571,7 +584,10 @@ const FeatureSection = () => {
                   "There are various opportunities for business ventures, Look for the best opportunity, grab it and do your best.",
               },
             ].map((feature, index) => (
-              <div className="cmt-box-col-wrapper col-lg-12" key={index}>
+              <div
+                className="cmt-box-col-wrapper col-lg-12 tw-h-[300px]"
+                key={index}
+              >
                 <div className="featured-imagebox featured-imagebox-country style2 bor_rad_5">
                   <div className="cmt-box-view-content-inner">
                     <div
@@ -594,7 +610,7 @@ const FeatureSection = () => {
                           alt="image"
                         />
                       </div>
-                      <div className="featured-title">
+                      <div className="featured-title tw-pt-4">
                         <h5>
                           <a
                             href={feature.to}
@@ -649,7 +665,10 @@ const FeatureSection = () => {
                   "As a member state of the EU, They offer its residents and citizens a number of reassuring benefits.",
               },
             ].map((feature, index) => (
-              <div className="cmt-box-col-wrapper col-lg-12" key={index}>
+              <div
+              className="cmt-box-col-wrapper col-lg-12 tw-h-[300px]"
+              key={index}
+            >
                 <div className="featured-imagebox featured-imagebox-country style2 bor_rad_5">
                   <div className="cmt-box-view-content-inner">
                     <div
@@ -672,7 +691,7 @@ const FeatureSection = () => {
                           alt="image"
                         />
                       </div>
-                      <div className="featured-title">
+                      <div className="featured-title tw-pt-4">
                         <h5>
                           <a
                             href={feature.to}
@@ -726,15 +745,14 @@ const FeatureSection = () => {
                 description: "",
               },
             ].map((feature, index) => (
-              <div 
-              className={`${
-                feature.img !== "" ? "cmt-box-col-wrapper col-lg-12" : ""
-              }`} 
-              key={index}
-            >
-            
-            <div className={feature.img !== "" ? "featured-imagebox featured-imagebox-country style2 bor_rad_5" : null}>
-            <div className={feature.img !== "" ? "cmt-box-view-content-inner" : null}>
+              <div
+                className={`${feature.img !== "" ? "cmt-box-col-wrapper col-lg-12" : ""
+                  }`}
+                key={index}
+              >
+
+                <div className={feature.img !== "" ? "featured-imagebox featured-imagebox-country style2 bor_rad_5" : null}>
+                  <div className={feature.img !== "" ? "cmt-box-view-content-inner" : null}>
                     {feature.img && (
                       <div
                         className="featured-thumbnail"
@@ -760,7 +778,7 @@ const FeatureSection = () => {
                         </div>
                       )}
                       {feature.country && (
-                        <div className="featured-title">
+                        <div className="featured-title tw-pt-4">
                           <h5>
                             <a
                               href={feature.to}
@@ -795,7 +813,7 @@ const FeatureSection = () => {
         </div>
 
         {/* View More Button */}
-     
+
       </div>
     </section>
   );

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../../assets/images/SwedenRelocators.png';
 import Modal from '../../components/Modal';
+import Button from "../../components/Button";
+
 
 const Assessment_modal = ({ isModalOpen, setIsModalOpen, closeModal, setUsers }) => {
   useEffect(() => {
@@ -49,7 +51,7 @@ const Assessment_modal = ({ isModalOpen, setIsModalOpen, closeModal, setUsers })
               experience to advise on visa strategy, right documentation and they ensure your application is successful and we charge for our services.
             </h6>
 
-            <div className="border tw-rounded-md  tw-w-full tw-my-3 p-2">
+            {/* <div className="border tw-rounded-md  tw-w-full tw-my-3 p-2">
               <table className=" tw-w-full">
                 <thead className="tw-w-full">
                   <tr className="tw-flex tw-justify-between">
@@ -92,23 +94,28 @@ const Assessment_modal = ({ isModalOpen, setIsModalOpen, closeModal, setUsers })
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </div> */}
 
-            <div className="  tw-flex tw-justify-end">
+            <div className="  tw-flex tw-justify-center tw-pt-4">
               <div></div>
               <div className=" tw-flex md:tw-flex-row tw-flex-col  tw-items-center tw-gap-2">
-                <button className=" tw-bg-blue  tw-rounded-sm tw-text-xs px-2 tw-py-1.5 tw-text-white">
-                  {' '}
-                  <i class="fa tw-m-0 fa-download" aria-hidden="true"></i> Download/View Report
-                </button>
-                <button className=" tw-bg-blue tw-rounded-sm tw-text-xs px-2 tw-py-1.5 tw-text-white">
-                  {' '}
-                  <i class="fa fa-step-forward tw-m-0 tw-mt-1" aria-hidden="true"></i> Book an Appointment
-                </button>
-                <button onClick={() => setIsModalOpen(false)} className=" tw-bg-[#1F2437]  tw-rounded-sm  tw-text-xs px-2 tw-py-1.5 tw-text-white">
-                  {' '}
-                  <i class="fa fa-times-circle  tw-m-0  tw-mt-1" aria-hidden="true"></i> close
-                </button>
+
+                <Button
+                  className={"btn-warning "}
+                  label="Download/View Report"
+                />
+                <Button
+                  className={"btn-warning "}
+                  label="Book an Appointment"
+                />
+                <Button
+                  className={"btn-warning "}
+                  label="close"
+                  onClick = {() => setIsModalOpen(false)}
+                />
+
+             
+              
               </div>
             </div>
           </div>

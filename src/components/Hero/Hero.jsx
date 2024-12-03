@@ -11,7 +11,8 @@ import { useTranslation } from '../../context/TranslationContext';
 const Hero = () => {
   const containerVariants = staggerContainer(0.1, 0.1);
 
-  const { t} = useTranslation();
+  const { t, language} = useTranslation();
+  const isleftlangue = language === 'ur';
 
   return (
     <section className="tw-relative  tw-bg-homeHero tw-bg-cover tw-bg-center md:tw-bg-left tw-bg-no-repeat tw-h-full xl:tw-py-24 2xl:tw-min-h-[970px] tw-py-10">

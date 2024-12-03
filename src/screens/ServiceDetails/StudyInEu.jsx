@@ -21,7 +21,8 @@ import Sidebar from "../../components/ScrollableBar";
 import Header from "../../components/Header_New/Header";
 
 const StudyInEu = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
+  const isleftlangue = language === 'ur';
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -275,7 +276,10 @@ const StudyInEu = () => {
         <section className="  ">
           <div className="container-fluid">
             <div className="row g-4">
-              <div className="col-md-8 tw-py-12 tw-bg-white tw-text-justify">
+            <div
+                className="col-md-8 tw-py-20 tw-bg-white tw-text-justify"
+                style={{ direction: isleftlangue ? 'rtl' : 'ltr' }}
+              >
                 <div className="  2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div className="row">
                     <div className="col-md-3">

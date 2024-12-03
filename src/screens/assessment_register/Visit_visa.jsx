@@ -243,7 +243,7 @@ const Visit_visa = () => {
   ];
 
   const [location, setLocation] = useState("");
-  
+
   const [maritalStatus, setMaritalStatus] = useState("");
 
   const [personnummer, setPersonnummer] = useState("");
@@ -256,14 +256,14 @@ const Visit_visa = () => {
 
 
   const [proofOfEnrolment, setProofOfEnrolment] = useState("");
-  
+
   const [noObjectionLetter, setNoObjectionLetter] = useState("");
   const [registrationCertificate, setRegistrationCertificate] = useState("");
   const [availableAssets, setAvailableAssets] = useState("");
   const [taxReturns, setTaxReturns] = useState("");
   const [natureOfJob, setNatureOfJob] = useState("");
   const [monthlySalary, setMonthlySalary] = useState("");
-  
+
 
 
 
@@ -277,18 +277,18 @@ const Visit_visa = () => {
   const [birthCertificate, setBirthCertificate] = useState("");
   const [spouseIncome, setSpouseIncome] = useState("");
   const [tripSupport, setTripSupport] = useState("");
-  
+
 
   const [passport, setPassport] = useState("");
-const [personalStatus, setPersonalStatus] = useState("");
-const [schengenVisits, setSchengenVisits] = useState("");
-const [visitPurpose, setVisitPurpose] = useState("");
-const [refusal, setRefusal] = useState("");
-const [residencePermit, setResidencePermit] = useState("");
-const [relationEU, setRelationEU] = useState("");
-const [dependents, setDependents] = useState("");
-const [invitation, setInvitation] = useState("");
-const [investmentAmount, setInvestmentAmount] = useState("");
+  const [personalStatus, setPersonalStatus] = useState("");
+  const [schengenVisits, setSchengenVisits] = useState("");
+  const [visitPurpose, setVisitPurpose] = useState("");
+  const [refusal, setRefusal] = useState("");
+  const [residencePermit, setResidencePermit] = useState("");
+  const [relationEU, setRelationEU] = useState("");
+  const [dependents, setDependents] = useState("");
+  const [invitation, setInvitation] = useState("");
+  const [investmentAmount, setInvestmentAmount] = useState("");
 
   const handleSelectChange = (e) => {
     const value = e.target.value;
@@ -305,11 +305,11 @@ const [investmentAmount, setInvestmentAmount] = useState("");
 
 
 
-     
+
       case "proofOfEnrolment":
         setProofOfEnrolment(value);
         break;
-    
+
       case "noObjectionLetter":
         setNoObjectionLetter(value);
         break;
@@ -361,7 +361,7 @@ const [investmentAmount, setInvestmentAmount] = useState("");
       case "passport":
         setPassport(value);
         break;
-    
+
       case "schengenVisits":
         setSchengenVisits(value);
         break;
@@ -399,7 +399,7 @@ const [investmentAmount, setInvestmentAmount] = useState("");
       case "maritalStatus":
         setMaritalStatus(value);
         break;
-   
+
 
       case "personnummer":
         setPersonnummer(value);
@@ -407,7 +407,7 @@ const [investmentAmount, setInvestmentAmount] = useState("");
       case "coordinationNumber":
         setCoordinationNumber(value);
         break;
-     
+
       case "separateAssets":
         setSeparateAssets(value);
         break;
@@ -435,11 +435,11 @@ const [investmentAmount, setInvestmentAmount] = useState("");
   return (
     <>
       <Header />
-      <Banner_Page 
-    highlightText={t("Visit Visa")}
-    regularText={t("Plan your visit with ease. We offer assistance for obtaining visit visas tailored to your travel needs.")}
-    backgroundImage={homeBgImage} 
-/>
+      <Banner_Page
+        highlightText={t("Visit Visa")}
+        regularText={t("Plan your visit with ease. We offer assistance for obtaining visit visas tailored to your travel needs.")}
+        backgroundImage={homeBgImage}
+      />
       <section className="">
         <div className="container-fluid ">
           <div className="row   g-5">
@@ -455,8 +455,8 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                     <h2>
                       <strong>{t(`Find Out Your Eligibility for a Visit Visa to Sweden`)}</strong>
                     </h2>
-                    <br/>
-                    <strong className = "tw-text-gray">{t(`Who Should Use This Tool?`)}</strong>
+                    <br />
+                    <strong className="tw-text-gray">{t(`Who Should Use This Tool?`)}</strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
@@ -489,7 +489,7 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                     </ul>
 
 
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Why`)}</span>
@@ -497,10 +497,10 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                     <h2 className="tw-text-left">
                       <strong>{t(`Use the Eligibility Tool?`)}</strong>
                     </h2>
-                    <br/>
+                    <br />
 
 
-                 
+
                     <p className="tw-text-gray">{t(`This tool is designed to help you understand the
                       requirements and eligibility criteria for different types
                       of visit visas by gathering important details, such as:`)}</p>
@@ -530,7 +530,7 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                       </li>
                     </ul>
 
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Complete`)}</span>
@@ -538,10 +538,10 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                     <h2 className="tw-text-left">
                       <strong>{t(`Schengen Visa File Preparation`)}</strong>
                     </h2>
-                    <br/>
+                    <br />
 
 
-                    
+
 
                     <p className="tw-text-gray">{t(`We handle the entire process of preparing your Schengen
                       visa file, ensuring it includes everything you need:`)}</p>
@@ -573,7 +573,7 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                       </li>
                     </ul>
 
-                    <strong className = "tw-text-gray">{t(`File Delivery Options`)}</strong>
+                    <strong className="tw-text-gray">{t(`File Delivery Options`)}</strong>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
@@ -595,7 +595,7 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                     </ul>
 
 
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`)}</span>
@@ -603,7 +603,7 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                     <h2 className="tw-text-left">
                       <strong>{t(`We Use the Information`)}</strong>
                     </h2>
-                    <br/>
+                    <br />
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
@@ -629,7 +629,7 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                     </ul>
 
 
-                    <br/>
+                    <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
@@ -637,15 +637,15 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                     <h2 className="tw-text-left">
                       <strong>{t(`Get Started`)}</strong>
                     </h2>
-                    <br/>
+                    <br />
 
 
-                   
+
                     <p className=" tw-text-gray">{t(`Use the eligibility tool to take the first step toward your visit to Sweden, whether it’s to see loved ones, attend a conference, or for a short-term business trip!`)}</p>
                   </div>
 
                   <div>
-                  {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
+                    {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
                   <h5 className=" tw-text-black  ">{t(`Personal Details`)}</h5>
 
                   <h6 className=" tw-text-black ">
@@ -657,7 +657,7 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                     <Assessment_modal
                       isModalOpen={isModalOpen}
                       setIsModalOpen={setIsModalOpen}
-                      // setUsers={setUsers}
+                    // setUsers={setUsers}
                     />
 
                     {/* <form>
@@ -698,102 +698,102 @@ const [investmentAmount, setInvestmentAmount] = useState("");
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-                 
+
 
                     <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
-                        
-                      <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
-                    <h2 className="tw-text-left">
-                      <strong>{t(`Applicant Assessment`)}</strong>
-                    </h2> 
-                        
+                        <span className=" tw-flex tw-items-center tw-gap-2">
+                          {" "}
+                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+
+                        <h2 className="tw-text-left">
+                          <strong>{t(`Applicant Assessment`)}</strong>
+                        </h2>
+
                         <div className="col-md-6 tw-pt-4">
-                        <Select
-  label="Do you have National Passport?"
-  name="passport"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={passport}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                          <Select
+                            label="Do you have National Passport?"
+                            name="passport"
+                            options={[
+                              { value: "yes", label: "Yes" },
+                              { value: "no", label: "No" },
+                            ]}
+                            value={passport}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
 
                         </div>
 
                         <div className="col-md-6 tw-pt-4">
-                        <Select
-  label="Did you visit Schengen Countries before?"
-  name="personalStatus"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={personalStatus}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                          <Select
+                            label="Did you visit Schengen Countries before?"
+                            name="personalStatus"
+                            options={[
+                              { value: "yes", label: "Yes" },
+                              { value: "no", label: "No" },
+                            ]}
+                            value={personalStatus}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
 
                         {personalStatus === "yes" ? (
                           <>
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="How many times have you visited the Schengen States?"
-  name="schengenVisits"
-  options={[
-    { value: "1", label: "1" },
-    { value: "2", label: "2" },
-    { value: "3", label: "3" },
-    { value: "4", label: "4" },
-    { value: "5", label: "5 or more" },
-  ]}
-  value={schengenVisits}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                              <Select
+                                label="How many times have you visited the Schengen States?"
+                                name="schengenVisits"
+                                options={[
+                                  { value: "1", label: "1" },
+                                  { value: "2", label: "2" },
+                                  { value: "3", label: "3" },
+                                  { value: "4", label: "4" },
+                                  { value: "5", label: "5 or more" },
+                                ]}
+                                value={schengenVisits}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
 
                             </div>
 
                             <div className="col-md-6 tw-pt-4">
-                            <Select
-  label="Purpose of Visit"
-  name="visitPurpose"
-  options={[
-    { value: "Visiting Family Friend", label: "Visiting Family Friend" },
-    { value: "Official Trip", label: "Official Trip" },
-    { value: "Tourism", label: "Tourism" },
-    { value: "Business Conference", label: "Business Conference" },
-    { value: "Medical Treatment", label: "Medical Treatment" },
-    { value: "Other", label: "Other" },
-  ]}
-  value={visitPurpose}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                              <Select
+                                label="Purpose of Visit"
+                                name="visitPurpose"
+                                options={[
+                                  { value: "Visiting Family Friend", label: "Visiting Family Friend" },
+                                  { value: "Official Trip", label: "Official Trip" },
+                                  { value: "Tourism", label: "Tourism" },
+                                  { value: "Business Conference", label: "Business Conference" },
+                                  { value: "Medical Treatment", label: "Medical Treatment" },
+                                  { value: "Other", label: "Other" },
+                                ]}
+                                value={visitPurpose}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
 
                             </div>
                           </>
                         ) : null}
                         <div className="col-md-6 tw-pt-4">
-                        <Select
-  label="Have you got any refusal for Schengen Countries?"
-  name="refusal"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={refusal}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                          <Select
+                            label="Have you got any refusal for Schengen Countries?"
+                            name="refusal"
+                            options={[
+                              { value: "yes", label: "Yes" },
+                              { value: "no", label: "No" },
+                            ]}
+                            value={refusal}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
 
@@ -801,88 +801,88 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                           <>
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
-                              
+
                               </label>
 
                               <Input
-                            placeholder={"Refusal Month-Year"}
-                            star={"*"}
-                            type = {"date"}
-                            className={
-                              " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
-                            }
-                            label={"Refusal Month-Year"}
-                          />
+                                placeholder={"Refusal Month-Year"}
+                                star={"*"}
+                                type={"date"}
+                                className={
+                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                }
+                                label={"Refusal Month-Year"}
+                              />
                             </div>
 
                             <div className="col-md-12 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
-                              
+
                               </label>
                               <Input
-                            placeholder={"Reason of Refusal"}
-                            star={"*"}
-                           
-                            className={
-                              " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
-                            }
-                            label={"Reason of Refusal"}
-                          />
-                              
-                              
-                              
-                                </div>
+                                placeholder={"Reason of Refusal"}
+                                star={"*"}
+
+                                className={
+                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                }
+                                label={"Reason of Refusal"}
+                              />
+
+
+
+                            </div>
                           </>
                         ) : null}
 
-                        <div className="col-md-6 tw-pt-4">
-                        <Select
-  label="Is any of your close relative living in Schengen Countries and you want to visit him/her?"
-  name="residencePermit"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={residencePermit}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                        <div className="col-md-12 tw-pt-4">
+                          <Select
+                            label="Is any of your close relative living in Schengen Countries and you want to visit him/her?"
+                            name="residencePermit"
+                            options={[
+                              { value: "yes", label: "Yes" },
+                              { value: "no", label: "No" },
+                            ]}
+                            value={residencePermit}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
 
                         {residencePermit === "yes" ? (
-                          <div className="col-md-6 tw-pt-4">
+                          <div className="col-md-12 tw-pt-4">
                             <Select
-  label="Relation with the EU person (e.g., Parents, Siblings, Family Friend)"
-  name="relationEU"
-  options={[
-    { value: "Parents", label: "Parents" },
-    { value: "Husband", label: "Husband" },
-    { value: "Wife", label: "Wife" },
-    { value: "Sibling", label: "Sibling" },
-    { value: "Cousin", label: "Cousin" },
-    { value: "Family Friend", label: "Family Friend" },
-  ]}
-  value={relationEU}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                              label="Relation with the EU person (e.g., Parents, Siblings, Family Friend)"
+                              name="relationEU"
+                              options={[
+                                { value: "Parents", label: "Parents" },
+                                { value: "Husband", label: "Husband" },
+                                { value: "Wife", label: "Wife" },
+                                { value: "Sibling", label: "Sibling" },
+                                { value: "Cousin", label: "Cousin" },
+                                { value: "Family Friend", label: "Family Friend" },
+                              ]}
+                              value={relationEU}
+                              onChange={handleSelectChange}
+                              className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                            />
 
                           </div>
                         ) : null}
 
-                        <div className="col-md-6 tw-pt-4">
-                        <Select
-  label="Are you dependent on the person who is living in Schengen Countries?"
-  name="dependents"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={dependents}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                        <div className="col-md-12 tw-pt-4">
+                          <Select
+                            label="Are you dependent on the person who is living in Schengen Countries?"
+                            name="dependents"
+                            options={[
+                              { value: "yes", label: "Yes" },
+                              { value: "no", label: "No" },
+                            ]}
+                            value={dependents}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
 
@@ -890,126 +890,126 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                           <>
                             <div className="col-md-6 tw-pt-4">
                               <label className=" tw-text-sm  tw-text-gray ">
-                             
+
                               </label>
-                              
+
                               <Input
-                            placeholder={" Describe How?"}
-                            star={"*"}
-                            type = {"year"}
-                            className={
-                              " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
-                            }
-                            label={" Describe How?"}
-                          />
-                              
-                              
-                                </div>
+                                placeholder={" Describe How?"}
+                                star={"*"}
+                                type={"year"}
+                                className={
+                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                }
+                                label={" Describe How?"}
+                              />
+
+
+                            </div>
                           </>
                         ) : null}
                         <div className="col-md-12 tw-pt-4">
-                        <Select
-  label="Do you have an invitation from any individual, business group, company, or organisation?"
-  name="invitation"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={invitation}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                          <Select
+                            label="Do you have an invitation from any individual, business group, company, or organisation?"
+                            name="invitation"
+                            options={[
+                              { value: "yes", label: "Yes" },
+                              { value: "no", label: "No" },
+                            ]}
+                            value={invitation}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
 
                         {invitation === "yes" ? (
                           <>
-                            <div className="col-md-12 tw-pt-4">
+                            <div className="col-md-12 ">
                               <label className=" tw-text-sm  tw-text-gray ">
-                             
+
                               </label>
-                             
+
                               <Input
-                            placeholder={" Details of the Company, Organisation or Association"}
-                            star={"*"}
-                         
-                            className={
-                              " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
-                            }
-                            label={"Details of the Company, Organisation or Association"}
-                          />
-                             
-                             
-                                        </div>
+                                placeholder={" Details of the Company, Organisation or Association"}
+                                star={"*"}
+
+                                className={
+                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                }
+                                label={"Details of the Company, Organisation or Association"}
+                              />
+
+
+                            </div>
                           </>
                         ) : null}
                         <div className="col-md-6 tw-pt-4">
-                        <Select
-  label="Can you support yourself for this trip?"
-  name="investmentAmount"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={investmentAmount}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                          <Select
+                            label="Can you support yourself for this trip?"
+                            name="investmentAmount"
+                            options={[
+                              { value: "yes", label: "Yes" },
+                              { value: "no", label: "No" },
+                            ]}
+                            value={investmentAmount}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
                         {investmentAmount === "no" ? (
                           <div className="col-md-3 tw-pt-4">
-                           <Select
-  label="Funded by Organizer?"
-  name="coordinationNumber"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={coordinationNumber}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                            <Select
+                              label="Funded by Organizer?"
+                              name="coordinationNumber"
+                              options={[
+                                { value: "yes", label: "Yes" },
+                                { value: "no", label: "No" },
+                              ]}
+                              value={coordinationNumber}
+                              onChange={handleSelectChange}
+                              className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                            />
 
                           </div>
                         ) : null}
 
                         {coordinationNumber === "yes" ? (
                           <>
-                            <div className="col-md-3 tw-pt-4">
+                            <div className="col-md-3 ">
                               <label className=" tw-text-sm  tw-text-gray ">
-                               
+
                               </label>
-                             
+
                               <Input
-                            placeholder={" Details of Organizer"}
-                           
-                           
-                            className={
-                              " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
-                            }
-                            label={" Details of Organizer"}
-                          />
-                             
-                             
-                                </div>
+                                placeholder={" Details of Organizer"}
+
+
+                                className={
+                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                }
+                                label={" Details of Organizer"}
+                              />
+
+
+                            </div>
                           </>
                         ) : null}
 
                         <div className="col-md-6 tw-pt-4">
-                        <Select
-  label="Choose Employee Type?"
-  name="personnummer"
-  options={[
-    { value: "Employee", label: "Employee" },
-    { value: "Self-Employee", label: "Self-Employee" },
-    { value: "Student", label: "Student" },
-    { value: "NGO / Media / Sports / Association", label: "NGO / Media / Sports / Association" },
-  ]}
-  value={personnummer}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                          <Select
+                            label="Choose Employee Type?"
+                            name="personnummer"
+                            options={[
+                              { value: "Employee", label: "Employee" },
+                              { value: "Self-Employee", label: "Self-Employee" },
+                              { value: "Student", label: "Student" },
+                              { value: "NGO / Media / Sports / Association", label: "NGO / Media / Sports / Association" },
+                            ]}
+                            value={personnummer}
+                            onChange={handleSelectChange}
+                            className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                          />
 
                         </div>
 
@@ -1017,46 +1017,46 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                           <>
                             <div className="row">
                               <div className="col-md-3 tw-pt-4">
-                              <Select
-  label="Proof of Enrolment"
-  name="proofOfEnrolment"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={proofOfEnrolment}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                                <Select
+                                  label="Proof of Enrolment"
+                                  name="proofOfEnrolment"
+                                  options={[
+                                    { value: "yes", label: "Yes" },
+                                    { value: "no", label: "No" },
+                                  ]}
+                                  value={proofOfEnrolment}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                />
 
                               </div>
                               <div className="col-md-3 tw-pt-4">
-                              <Select
-  label="Invitation for Visit"
-  name="invitation"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={invitation}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                                <Select
+                                  label="Invitation for Visit"
+                                  name="invitation"
+                                  options={[
+                                    { value: "yes", label: "Yes" },
+                                    { value: "no", label: "No" },
+                                  ]}
+                                  value={invitation}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                />
 
                               </div>
 
                               <div className="col-md-6 tw-pt-4">
-                              <Select
-  label="No Objection Letter from School/College/University"
-  name="noObjectionLetter"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={noObjectionLetter}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                                <Select
+                                  label="No Objection Letter from School/College/University"
+                                  name="noObjectionLetter"
+                                  options={[
+                                    { value: "yes", label: "Yes" },
+                                    { value: "no", label: "No" },
+                                  ]}
+                                  value={noObjectionLetter}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                />
 
                               </div>
                             </div>
@@ -1067,48 +1067,48 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                           <>
                             <div className="row">
                               <div className="col-md-4 tw-pt-4">
-                              <Select
-  label="Registration Certificate"
-  name="registrationCertificate"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={registrationCertificate}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                                <Select
+                                  label="Registration Certificate"
+                                  name="registrationCertificate"
+                                  options={[
+                                    { value: "yes", label: "Yes" },
+                                    { value: "no", label: "No" },
+                                  ]}
+                                  value={registrationCertificate}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                />
 
                               </div>
                               <div className="col-md-4 tw-pt-4">
-                              <Select
-  label="Available Assets"
-  name="availableAssets"
-  options={[
-    { value: "1 Million $ to 3 Million $", label: "1 Million $ to 3 Million $" },
-    { value: "3 Million $ to 5 Million $", label: "3 Million $ to 5 Million $" },
-    { value: "5 Million $ to 10 Million $", label: "5 Million $ to 10 Million $" },
-    { value: "10 Million $ to 20 Million $", label: "10 Million $ to 20 Million $" },
-  ]}
-  value={availableAssets}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                                <Select
+                                  label="Available Assets"
+                                  name="availableAssets"
+                                  options={[
+                                    { value: "1 Million $ to 3 Million $", label: "1 Million $ to 3 Million $" },
+                                    { value: "3 Million $ to 5 Million $", label: "3 Million $ to 5 Million $" },
+                                    { value: "5 Million $ to 10 Million $", label: "5 Million $ to 10 Million $" },
+                                    { value: "10 Million $ to 20 Million $", label: "10 Million $ to 20 Million $" },
+                                  ]}
+                                  value={availableAssets}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                />
 
                               </div>
 
                               <div className="col-md-4 tw-pt-4">
-                              <Select
-  label="Tax Returns of 2 to 3 Years"
-  name="taxReturns"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={taxReturns}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                                <Select
+                                  label="Tax Returns of 2 to 3 Years"
+                                  name="taxReturns"
+                                  options={[
+                                    { value: "yes", label: "Yes" },
+                                    { value: "no", label: "No" },
+                                  ]}
+                                  value={taxReturns}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                />
 
                               </div>
                             </div>
@@ -1116,84 +1116,84 @@ const [investmentAmount, setInvestmentAmount] = useState("");
                         ) : null}
 
                         {personnummer ===
-                        "NGO / Media /Sports / Association" ? (
+                          "NGO / Media /Sports / Association" ? (
                           <div className="col-md-12 tw-pt-4">
                             <label className=" tw-text-sm  tw-text-gray ">
-                              
+
                             </label>
                             <Input
-                            placeholder={"Please describe NGO / Media /Sports / Association:"}
-                           
-                            className={
-                              " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
-                            }
-                            label={"Please describe NGO / Media /Sports / Association:"}
-                          />
-                           
-                           
-                           
-                                  </div>
+                              placeholder={"Please describe NGO / Media /Sports / Association:"}
+
+                              className={
+                                " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                              }
+                              label={"Please describe NGO / Media /Sports / Association:"}
+                            />
+
+
+
+                          </div>
                         ) : null}
 
                         {personnummer === "Employee" ? (
                           <>
                             <div className="row">
                               <div className="col-md-3 tw-pt-4">
-                              <Select
-  label="Nature of Job"
-  name="natureOfJob"
-  options={[
-    { value: "Permanent", label: "Permanent" },
-    { value: "Temporary", label: "Temporary" },
-  ]}
-  value={natureOfJob}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                                <Select
+                                  label="Nature of Job"
+                                  name="natureOfJob"
+                                  options={[
+                                    { value: "Permanent", label: "Permanent" },
+                                    { value: "Temporary", label: "Temporary" },
+                                  ]}
+                                  value={natureOfJob}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                />
 
                               </div>
                               <div className="col-md-3 tw-pt-4">
-                              <Select
-  label="Monthly Salary"
-  name="monthlySalary"
-  options={[
-    { value: "0 - 50.000 $", label: "0 - 50.000 $" },
-    { value: "50.000 $ - 75.000 $", label: "50.000 $ - 75.000 $" },
-    { value: "75.000 $ - 100.000 $", label: "75.000 $ - 100.000 $" },
-  ]}
-  value={monthlySalary}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                                <Select
+                                  label="Monthly Salary"
+                                  name="monthlySalary"
+                                  options={[
+                                    { value: "0 - 50.000 $", label: "0 - 50.000 $" },
+                                    { value: "50.000 $ - 75.000 $", label: "50.000 $ - 75.000 $" },
+                                    { value: "75.000 $ - 100.000 $", label: "75.000 $ - 100.000 $" },
+                                  ]}
+                                  value={monthlySalary}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                />
 
                               </div>
 
                               <div className="col-md-3 tw-pt-4">
-                              <Select
-  label="Job Contract"
-  name="jobContract"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={jobContract}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                                <Select
+                                  label="Job Contract"
+                                  name="jobContract"
+                                  options={[
+                                    { value: "yes", label: "Yes" },
+                                    { value: "no", label: "No" },
+                                  ]}
+                                  value={jobContract}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                />
 
                               </div>
                               <div className="col-md-3 tw-pt-4">
-                              <Select
-  label="Vacations Letter"
-  name="vacationsLetter"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={vacationsLetter}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
+                                <Select
+                                  label="Vacations Letter"
+                                  name="vacationsLetter"
+                                  options={[
+                                    { value: "yes", label: "Yes" },
+                                    { value: "no", label: "No" },
+                                  ]}
+                                  value={vacationsLetter}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                />
 
                               </div>
                             </div>
@@ -1205,146 +1205,146 @@ const [investmentAmount, setInvestmentAmount] = useState("");
 
                   {/* user info */}
                   <div className=" tw-pt-8">
-                     <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                 
-                     <span className=" tw-flex tw-items-center tw-gap-2">
-                      {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                    <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
 
-                    <h2 className="tw-text-left">
-                      <strong>{t(`Family Document detail`)}</strong>
-                    </h2>
-              
+                      <span className=" tw-flex tw-items-center tw-gap-2">
+                        {" "}
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
-                    <div className="tw-flex tw-items-center tw-gap-2 tw-pt-3">
-                      <input
-                        type="checkbox"
-                        className="tw-mt-1"
-                        checked={isSingle}
-                        onChange={handleCheckboxChange}
-                      />
-                      <p className="tw-text-gray-dark  tw-m-0">{t(`I am Visiting Alone`)}</p>
+                      <h2 className="tw-text-left">
+                        <strong>{t(`Family Document detail`)}</strong>
+                      </h2>
+
+
+                      <div className="tw-flex tw-items-center tw-gap-2 tw-pt-3">
+                        <input
+                          type="checkbox"
+                          className="tw-mt-1"
+                          checked={isSingle}
+                          onChange={handleCheckboxChange}
+                        />
+                        <p className="tw-text-gray-dark  tw-m-0">{t(`I am Visiting Alone`)}</p>
+                      </div>
+
+                      {!isSingle && (
+                        <form>
+                          <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                            <div className="col-md-12 tw-pt-4">
+                              <Select
+                                label="Did your Spouse have a valid National Passport?"
+                                name="spousePassport"
+                                options={[
+                                  { value: "yes", label: "Yes" },
+                                  { value: "no", label: "No" },
+                                ]}
+                                value={spousePassport}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
+
+                            </div>
+                            <div className="col-md-12 tw-pt-4">
+                              <Select
+                                label="Did your spouse have a Marriage Certificate and is your marriage registered in your home country?"
+                                name="marriageCertificate"
+                                options={[
+                                  { value: "yes", label: "Yes" },
+                                  { value: "no", label: "No" },
+                                ]}
+                                value={marriageCertificate}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
+
+                            </div>
+                            <div className="col-md-8 tw-pt-4">
+                              <Select
+                                label="Do you have a Family Registration Certificate?"
+                                name="familyRegistrationCertificate"
+                                options={[
+                                  { value: "yes", label: "Yes" },
+                                  { value: "no", label: "No" },
+                                ]}
+                                value={familyRegistrationCertificate}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
+
+                            </div>
+                            <div className="col-md-12 tw-pt-4">
+                              <Select
+                                label="Do you as the main applicant support your family for this trip?"
+                                name="mainApplicantSupport"
+                                options={[
+                                  { value: "yes", label: "Yes" },
+                                  { value: "no", label: "No" },
+                                ]}
+                                value={mainApplicantSupport}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
+
+                            </div>
+                            <div className="col-md-6 tw-pt-4">
+                              <Select
+                                label="Do you have children?"
+                                name="children"
+                                options={[
+                                  { value: "yes", label: "Yes" },
+                                  { value: "no", label: "No" },
+                                ]}
+                                value={children}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
+
+                            </div>
+                            <div className="col-md-12 tw-pt-4">
+                              <Select
+                                label="If you are not an EU citizen, do you have a birth certificate for your children?"
+                                name="birthCertificate"
+                                options={[
+                                  { value: "yes", label: "Yes" },
+                                  { value: "no", label: "No" },
+                                ]}
+                                value={birthCertificate}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
+
+                            </div>
+                            <div className="col-md-12 tw-pt-4">
+                              <Select
+                                label="Does your spouse have any income or savings?"
+                                name="spouseIncome"
+                                options={[
+                                  { value: "yes", label: "Yes" },
+                                  { value: "no", label: "No" },
+                                ]}
+                                value={spouseIncome}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
+
+                            </div>
+                            <div className="col-md-12 tw-pt-4">
+                              <Select
+                                label="Someone else will support you for this trip?"
+                                name="tripSupport"
+                                options={[
+                                  { value: "yes", label: "Yes" },
+                                  { value: "no", label: "No" },
+                                ]}
+                                value={tripSupport}
+                                onChange={handleSelectChange}
+                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                              />
+
+                            </div>
+                          </div>
+                        </form>
+                      )}
                     </div>
-
-                    {!isSingle && (
-                      <form>
-                        <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
-                          <div className="col-md-6 tw-pt-4">
-                          <Select
-  label="Did your Spouse have a valid National Passport?"
-  name="spousePassport"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={spousePassport}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
-
-                          </div>
-                          <div className="col-md-6 tw-pt-4">
-                          <Select
-  label="Did your spouse have a Marriage Certificate and is your marriage registered in your home country?"
-  name="marriageCertificate"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={marriageCertificate}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
-
-                          </div>
-                          <div className="col-md-8 tw-pt-4">
-                          <Select
-  label="Do you have a Family Registration Certificate?"
-  name="familyRegistrationCertificate"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={familyRegistrationCertificate}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
-
-                          </div>
-                          <div className="col-md-12 tw-pt-4">
-                          <Select
-  label="Do you as the main applicant support your family for this trip?"
-  name="mainApplicantSupport"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={mainApplicantSupport}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
-
-                          </div>
-                          <div className="col-md-6 tw-pt-4">
-                          <Select
-  label="Do you have children?"
-  name="children"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={children}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
-
-                          </div>
-                          <div className="col-md-12 tw-pt-4">
-                          <Select
-  label="If you are not an EU citizen, do you have a birth certificate for your children?"
-  name="birthCertificate"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={birthCertificate}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
-
-                          </div>
-                          <div className="col-md-12 tw-pt-4">
-                          <Select
-  label="Does your spouse have any income or savings?"
-  name="spouseIncome"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={spouseIncome}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
-
-                          </div>
-                          <div className="col-md-12 tw-pt-4">
-                          <Select
-  label="Someone else will support you for this trip?"
-  name="tripSupport"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={tripSupport}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-/>
-
-                          </div>
-                        </div>
-                      </form>
-                    )}
-                  </div>
                   </div>
 
                   <Button
@@ -1358,7 +1358,7 @@ const [investmentAmount, setInvestmentAmount] = useState("");
               </div>
             </div>
 
-           <Sidebar/>
+            <Sidebar />
           </div>
         </div>
       </section>

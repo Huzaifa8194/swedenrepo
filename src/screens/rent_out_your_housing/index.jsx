@@ -50,12 +50,12 @@ const Rent_out_your_housing = () => {
   const [rentDuration, setRentDuration] = useState("");
   const [propertyType, setPropertyType] = useState("");
   const [bankCountry, setBankCountry] = useState("");
-  
+
 
 
   const handleSelectChange = (event) => {
     const { name, value } = event.target;
-  
+
     switch (name) {
       case "selectCountry":
         setSelectCountry(value);
@@ -130,15 +130,15 @@ const Rent_out_your_housing = () => {
         break;
     }
   };
-  
 
- 
+
+
 
   return (
     <>
       <Header />
       <Banner_Page
-        highlightText={t("Lease your Property")}
+        highlightText={t("List your Property")}
         regularText={t(
           "Maximize your rental potential with ease. We provide support for listing and renting out your property efficiently."
         )}
@@ -146,7 +146,18 @@ const Rent_out_your_housing = () => {
       />
       <section className=" md:tw-pt-8 tw-pt-8   px-4 tw-py-4 tw-shadow-2xl tw-bg-[#F5FAFF] ">
         <section className="tw-w-full tw-px-8  2xl:tw-pl-[14%] md:tw-pl-[10%] tw-pl-3 tw-pr-[3.5%] 2xl:tw-pr-[15%] md:tw-pr-[10%]">
+
+
+
+
+
           <div className="    px-10 tw-py-4  tw-bg-[#F5FAFF] ">
+
+
+
+
+
+
             <div className="tw-px-8 tw-py-8 tw-bg-white tw-rounded-2xl tw-shadow-lg">
               <span className=" tw-flex tw-items-center tw-gap-2">
                 {" "}
@@ -167,10 +178,55 @@ const Rent_out_your_housing = () => {
           </div>
         </section>
 
+
+        <div className="tw-flex tw-justify-between tw-flex-wrap tw-p-4   tw-bg-[#F5FAFF] 2xl:tw-pl-[14%] md:tw-pl-[10%] tw-pl-3 tw-pr-3 2xl:tw-pr-[14%] md:tw-pr-[10%]">
+          {[
+            {
+              image: rentimage1,
+              alt: "Rental Home 1",
+              title: "Maximize Your Property’s Potential",
+              description: "List your property effortlessly—and we will handle the rest!",
+            },
+            {
+              image: rentimage2,
+              alt: "Rental Home 2",
+              title: "Personalized Search Experience",
+              description: "Description: Take a virtual look at your next home with interactive tours & detailed property insights.",
+            },
+            {
+              image: rentimage4,
+              alt: "Rental Home 3",
+              title: "Rent Out Your Home with Ease",
+              description: "Use our financial tools to manage expenses and make smart housing decisions effortlessly.",
+            },
+          ].map(({ image, alt, title, description }, index) => (
+            <div
+              key={index}
+              className="tw-flex tw-p-3 tw-rounded-2xl tw-shadow-lg tw-bg-white tw-flex-col tw-items-center tw-w-[30%] tw-max-w-[30%] tw-gap-4"
+              style={{ flex: "1 1 30%", maxWidth: "30%" }}
+            >
+              <div className="tw-w-full tw-relative" style={{ paddingBottom: "56.25%" }}>
+                <img
+                  src={image}
+                  alt={alt}
+                  className="tw-absolute tw-inset-0 tw-w-full tw-h-[110%] tw-rounded-2xl tw-object-cover tw-bg-white tw-shadow-lg"
+                />
+              </div>
+              <div className="tw-flex tw-flex-col tw-pt-4 tw-items-center tw-text-center">
+                <h7 className="tw-text-lg tw-text-gray-dark  tw-font-bold" style={{
+                  color: "#1F2437",
+                  fontWeight: "300", fontSize: '1.3em'
+                }}>{title}</h7>
+                <p className="tw-text-gray">{description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
         <div className="container-fluid  tw-px-4 ">
           <div className="row tw-justify-left  tw-gap-5 tw-items-start ">
-            <div className="col-md-8 ">
-              <div className="  tw-pt-8 tw-pl-10   2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[0%]">
+            <div className="">
+            <div className=" tw-bg-[#F5FAFF] tw-pt-8  2xl:tw-pl-[14%] md:tw-pl-[10%] tw-pl-3 tw-pr-3 2xl:tw-pr-[14%] md:tw-pr-[10%]">
                 <form>
                   <div className="row g-3 tw-pt-6  tw-rounded-2xl px-4 tw-py-4 tw-shadow-lg tw-bg-white border-t-2 border-black">
                     <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
@@ -201,17 +257,17 @@ const Rent_out_your_housing = () => {
                         Select Country
                       </label> */}
 
-<Select
-  label="Select Country"
-  name="selectCountry"
-  options={[
-    { value: "Sweden - Skane", label: "Sweden - Skane" },
-    { value: "Denmark - Copenhagen", label: "Denmark - Copenhagen" },
-  ]}
-  value={selectCountry}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Select Country"
+                        name="selectCountry"
+                        options={[
+                          { value: "Sweden - Skane", label: "Sweden - Skane" },
+                          { value: "Denmark - Copenhagen", label: "Denmark - Copenhagen" },
+                        ]}
+                        value={selectCountry}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
                     {selectCountry === "Sweden - Skane" ? (
@@ -223,21 +279,21 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Select Country
                       </label> */}
-                     <Select
-  label="Select Skåne City"
-  name="skaneCity"
-  options={[
-    { value: "Ängelholm", label: "Ängelholm" },
-    { value: "Åstorp", label: "Åstorp" },
-    { value: "Båstad", label: "Båstad" },
-    { value: "Bjuv", label: "Bjuv" },
-    { value: "Bromölla", label: "Bromölla" },
-    { value: "Burlöv", label: "Burlöv" },
-  ]}
-  value={skaneCity}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                        <Select
+                          label="Select Skåne City"
+                          name="skaneCity"
+                          options={[
+                            { value: "Ängelholm", label: "Ängelholm" },
+                            { value: "Åstorp", label: "Åstorp" },
+                            { value: "Båstad", label: "Båstad" },
+                            { value: "Bjuv", label: "Bjuv" },
+                            { value: "Bromölla", label: "Bromölla" },
+                            { value: "Burlöv", label: "Burlöv" },
+                          ]}
+                          value={skaneCity}
+                          onChange={handleSelectChange}
+                          className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                        />
 
                       </div>
                     ) : null}
@@ -251,21 +307,21 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Select Country
                       </label> */}
-                    <Select
-  label="Select Denmark City"
-  name="denmarkCity"
-  options={[
-    { value: "Ängelholm", label: "Ängelholm" },
-    { value: "Åstorp", label: "Åstorp" },
-    { value: "Båstad", label: "Båstad" },
-    { value: "Bjuv", label: "Bjuv" },
-    { value: "Bromölla", label: "Bromölla" },
-    { value: "Burlöv", label: "Burlöv" },
-  ]}
-  value={denmarkCity}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                        <Select
+                          label="Select Denmark City"
+                          name="denmarkCity"
+                          options={[
+                            { value: "Ängelholm", label: "Ängelholm" },
+                            { value: "Åstorp", label: "Åstorp" },
+                            { value: "Båstad", label: "Båstad" },
+                            { value: "Bjuv", label: "Bjuv" },
+                            { value: "Bromölla", label: "Bromölla" },
+                            { value: "Burlöv", label: "Burlöv" },
+                          ]}
+                          value={denmarkCity}
+                          onChange={handleSelectChange}
+                          className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                        />
 
                       </div>
                     ) : null}
@@ -279,20 +335,20 @@ const Rent_out_your_housing = () => {
                         Select your type of house
                       </label> */}
 
-<Select
-  label="Select House Type"
-  name="houseType"
-  options={[
-    { value: "Apartment", label: "Apartment" },
-    { value: "Villa", label: "Villa" },
-    { value: "Radhus", label: "Radhus" },
-    { value: "Shared Rooms", label: "Shared Rooms" },
-    { value: "Shared Beds", label: "Shared Beds" },
-  ]}
-  value={houseType}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Select House Type"
+                        name="houseType"
+                        options={[
+                          { value: "Apartment", label: "Apartment" },
+                          { value: "Villa", label: "Villa" },
+                          { value: "Radhus", label: "Radhus" },
+                          { value: "Shared Rooms", label: "Shared Rooms" },
+                          { value: "Shared Beds", label: "Shared Beds" },
+                        ]}
+                        value={houseType}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -305,22 +361,22 @@ const Rent_out_your_housing = () => {
                         Select Floor
                       </label> */}
 
-<Select
-  label="Select Floor"
-  name="floor"
-  options={[
-    { value: "Basement", label: "Basement" },
-    { value: "Ground Floor", label: "Ground Floor" },
-    { value: "1", label: "1" },
-    { value: "2", label: "2" },
-    { value: "3", label: "3" },
-    { value: "4", label: "4" },
-    { value: "5", label: "5" },
-  ]}
-  value={floor}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Select Floor"
+                        name="floor"
+                        options={[
+                          { value: "Basement", label: "Basement" },
+                          { value: "Ground Floor", label: "Ground Floor" },
+                          { value: "1", label: "1" },
+                          { value: "2", label: "2" },
+                          { value: "3", label: "3" },
+                          { value: "4", label: "4" },
+                          { value: "5", label: "5" },
+                        ]}
+                        value={floor}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -333,20 +389,20 @@ const Rent_out_your_housing = () => {
                         Total rooms
                       </label> */}
 
-<Select
-  label="Total Rooms in Property"
-  name="totalRooms"
-  options={[
-    { value: "1", label: "1" },
-    { value: "2", label: "2" },
-    { value: "3", label: "3" },
-    { value: "4", label: "4" },
-    { value: "5", label: "5" },
-  ]}
-  value={totalRooms}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Total Rooms in Property"
+                        name="totalRooms"
+                        options={[
+                          { value: "1", label: "1" },
+                          { value: "2", label: "2" },
+                          { value: "3", label: "3" },
+                          { value: "4", label: "4" },
+                          { value: "5", label: "5" },
+                        ]}
+                        value={totalRooms}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -389,19 +445,19 @@ const Rent_out_your_housing = () => {
                         Furnished?
                       </label> */}
 
-<Select
-  label="Furnished"
-  name="furnished"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "partly", label: "Partly" },
-    { value: "Flexible", label: "Flexible" },
-    { value: "No", label: "No" },
-  ]}
-  value={furnished}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Furnished"
+                        name="furnished"
+                        options={[
+                          { value: "yes", label: "Yes" },
+                          { value: "partly", label: "Partly" },
+                          { value: "Flexible", label: "Flexible" },
+                          { value: "No", label: "No" },
+                        ]}
+                        value={furnished}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
                     <div className="col-md-6">
@@ -413,18 +469,18 @@ const Rent_out_your_housing = () => {
                         Is car parking included?
                       </label> */}
 
-<Select
-  label="Is Car Parking Included?"
-  name="carParking"
-  options={[
-    { value: "Included", label: "Included" },
-    { value: "Not Included", label: "Not Included" },
-    { value: "N/A", label: "N/A" },
-  ]}
-  value={carParking}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Is Car Parking Included?"
+                        name="carParking"
+                        options={[
+                          { value: "Included", label: "Included" },
+                          { value: "Not Included", label: "Not Included" },
+                          { value: "N/A", label: "N/A" },
+                        ]}
+                        value={carParking}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -437,17 +493,17 @@ const Rent_out_your_housing = () => {
                         Are pets allowed?
                       </label> */}
 
-<Select
-  label="Are Pets Allowed?"
-  name="petsAllowed"
-  options={[
-    { value: "Allowed", label: "Allowed" },
-    { value: "Not Allowed", label: "Not Allowed" },
-  ]}
-  value={petsAllowed}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Are Pets Allowed?"
+                        name="petsAllowed"
+                        options={[
+                          { value: "Allowed", label: "Allowed" },
+                          { value: "Not Allowed", label: "Not Allowed" },
+                        ]}
+                        value={petsAllowed}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -460,17 +516,17 @@ const Rent_out_your_housing = () => {
                         Is smoking allowed?
                       </label> */}
 
-<Select
-  label="Is Smoking Allowed?"
-  name="smokingAllowed"
-  options={[
-    { value: "Allowed", label: "Allowed" },
-    { value: "Not Allowed", label: "Not Allowed" },
-  ]}
-  value={smokingAllowed}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Is Smoking Allowed?"
+                        name="smokingAllowed"
+                        options={[
+                          { value: "Allowed", label: "Allowed" },
+                          { value: "Not Allowed", label: "Not Allowed" },
+                        ]}
+                        value={smokingAllowed}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -483,17 +539,17 @@ const Rent_out_your_housing = () => {
                         Is electricity included?
                       </label> */}
 
-<Select
-  label="Is Electricity Included?"
-  name="electricityIncluded"
-  options={[
-    { value: "Included", label: "Included" },
-    { value: "Not Included", label: "Not Included" },
-  ]}
-  value={electricityIncluded}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Is Electricity Included?"
+                        name="electricityIncluded"
+                        options={[
+                          { value: "Included", label: "Included" },
+                          { value: "Not Included", label: "Not Included" },
+                        ]}
+                        value={electricityIncluded}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -506,17 +562,17 @@ const Rent_out_your_housing = () => {
                         Is lift available?
                       </label> */}
 
-<Select
-  label="Is Lift Available?"
-  name="liftAvailable"
-  options={[
-    { value: "Allowed", label: "Allowed" },
-    { value: "Not Allowed", label: "Not Allowed" },
-  ]}
-  value={liftAvailable}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Is Lift Available?"
+                        name="liftAvailable"
+                        options={[
+                          { value: "Allowed", label: "Allowed" },
+                          { value: "Not Allowed", label: "Not Allowed" },
+                        ]}
+                        value={liftAvailable}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -529,17 +585,17 @@ const Rent_out_your_housing = () => {
                         Is internet included?
                       </label> */}
 
-<Select
-  label="Is Internet Included?"
-  name="internetIncluded"
-  options={[
-    { value: "Included", label: "Included" },
-    { value: "Not Included", label: "Not Included" },
-  ]}
-  value={internetIncluded}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Is Internet Included?"
+                        name="internetIncluded"
+                        options={[
+                          { value: "Included", label: "Included" },
+                          { value: "Not Included", label: "Not Included" },
+                        ]}
+                        value={internetIncluded}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -554,17 +610,17 @@ const Rent_out_your_housing = () => {
                         Is washing machine available?
                       </label> */}
 
-<Select
-  label="Is Washing Machine Available?"
-  name="washingMachine"
-  options={[
-    { value: "Available", label: "Available" },
-    { value: "Not Available", label: "Not Available" },
-  ]}
-  value={washingMachine}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Is Washing Machine Available?"
+                        name="washingMachine"
+                        options={[
+                          { value: "Available", label: "Available" },
+                          { value: "Not Available", label: "Not Available" },
+                        ]}
+                        value={washingMachine}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -577,17 +633,17 @@ const Rent_out_your_housing = () => {
                         Is dishwasher available?
                       </label> */}
 
-<Select
-  label="Is Dishwasher Available?"
-  name="dishwasher"
-  options={[
-    { value: "Available", label: "Available" },
-    { value: "Not Available", label: "Not Available" },
-  ]}
-  value={dishwasher}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Is Dishwasher Available?"
+                        name="dishwasher"
+                        options={[
+                          { value: "Available", label: "Available" },
+                          { value: "Not Available", label: "Not Available" },
+                        ]}
+                        value={dishwasher}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -600,17 +656,17 @@ const Rent_out_your_housing = () => {
                         Is heat & water includes in rent?
                       </label> */}
 
-<Select
-  label="Is Heat & Water Included in Rent?"
-  name="heatWaterIncluded"
-  options={[
-    { value: "Available", label: "Available" },
-    { value: "Not Available", label: "Not Available" },
-  ]}
-  value={heatWaterIncluded}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Is Heat & Water Included in Rent?"
+                        name="heatWaterIncluded"
+                        options={[
+                          { value: "Available", label: "Available" },
+                          { value: "Not Available", label: "Not Available" },
+                        ]}
+                        value={heatWaterIncluded}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -623,17 +679,17 @@ const Rent_out_your_housing = () => {
                         Is balcony/terrace available?
                       </label> */}
 
-<Select
-  label="Is Balcony/Terrace Available?"
-  name="balconyAvailable"
-  options={[
-    { value: "Included", label: "Included" },
-    { value: "Not Included", label: "Not Included" },
-  ]}
-  value={balconyAvailable}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Is Balcony/Terrace Available?"
+                        name="balconyAvailable"
+                        options={[
+                          { value: "Included", label: "Included" },
+                          { value: "Not Included", label: "Not Included" },
+                        ]}
+                        value={balconyAvailable}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -664,19 +720,19 @@ const Rent_out_your_housing = () => {
                         Select Contract Type?
                       </label> */}
 
-<Select
-  label="Select Contract Type"
-  name="contractType"
-  options={[
-    { value: "First Hand", label: "First Hand" },
-    { value: "Second Hand", label: "Second Hand" },
-    { value: "Other", label: "Other" },
-    { value: "N/A", label: "N/A" },
-  ]}
-  value={contractType}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Select Contract Type"
+                        name="contractType"
+                        options={[
+                          { value: "First Hand", label: "First Hand" },
+                          { value: "Second Hand", label: "Second Hand" },
+                          { value: "Other", label: "Other" },
+                          { value: "N/A", label: "N/A" },
+                        ]}
+                        value={contractType}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -688,17 +744,17 @@ const Rent_out_your_housing = () => {
                         <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
                         Are you looking for deposit?
                       </label> */}
-                     <Input
-  star={"*"}
-  type={"number"}
-  step="0.01"
-  min="0"
-  className={
-    "tw-w-full border tw-py-2.5 tw-px-3 tw-rounded-xl mt-2"
-  }
-  label={"How much rent are you looking for?"}
-  placeholder={"Enter the rent amount"}
-></Input>
+                      <Input
+                        star={"*"}
+                        type={"number"}
+                        step="0.01"
+                        min="0"
+                        className={
+                          "tw-w-full border tw-py-2.5 tw-px-3 tw-rounded-xl mt-2"
+                        }
+                        label={"How much rent are you looking for?"}
+                        placeholder={"Enter the rent amount"}
+                      ></Input>
 
                     </div>
 
@@ -711,17 +767,17 @@ const Rent_out_your_housing = () => {
                         Maximum people can stay in this residence?
                       </label> */}
 
-<Select
-  label="Are You Looking for Deposit?"
-  name="lookingForDeposit"
-  options={[
-    { value: "yes", label: "Yes" },
-    { value: "no", label: "No" },
-  ]}
-  value={lookingForDeposit}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Are You Looking for Deposit?"
+                        name="lookingForDeposit"
+                        options={[
+                          { value: "yes", label: "Yes" },
+                          { value: "no", label: "No" },
+                        ]}
+                        value={lookingForDeposit}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -734,20 +790,20 @@ const Rent_out_your_housing = () => {
                         What is the duration of rent out?
                       </label> */}
 
-<Select
-  label="Maximum People Can Stay"
-  name="maxPeople"
-  options={[
-    { value: "1", label: "1" },
-    { value: "2", label: "2" },
-    { value: "3", label: "3" },
-    { value: "4", label: "4" },
-    { value: "5", label: "5" },
-  ]}
-  value={maxPeople}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Maximum People Can Stay"
+                        name="maxPeople"
+                        options={[
+                          { value: "1", label: "1" },
+                          { value: "2", label: "2" },
+                          { value: "3", label: "3" },
+                          { value: "4", label: "4" },
+                          { value: "5", label: "5" },
+                        ]}
+                        value={maxPeople}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -760,20 +816,20 @@ const Rent_out_your_housing = () => {
                         What is the duration of rent out?
                       </label> */}
 
-<Select
-  label="Duration of Rent Out"
-  name="rentDuration"
-  options={[
-    { value: "1 Month", label: "1 Month" },
-    { value: "2 Months", label: "2 Months" },
-    { value: "3 Months", label: "3 Months" },
-    { value: "4 Months", label: "4 Months" },
-    { value: "5 Months", label: "5 Months" },
-  ]}
-  value={rentDuration}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Duration of Rent Out"
+                        name="rentDuration"
+                        options={[
+                          { value: "1 Month", label: "1 Month" },
+                          { value: "2 Months", label: "2 Months" },
+                          { value: "3 Months", label: "3 Months" },
+                          { value: "4 Months", label: "4 Months" },
+                          { value: "5 Months", label: "5 Months" },
+                        ]}
+                        value={rentDuration}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -824,18 +880,18 @@ const Rent_out_your_housing = () => {
                         Your Property Type
                       </label> */}
 
-<Select
-  label="Property Type"
-  name="propertyType"
-  options={[
-    { value: "Rental Property", label: "Rental Property" },
-    { value: "Shared Property", label: "Shared Property" },
-    { value: "Own Property", label: "Own Property" },
-  ]}
-  value={propertyType}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Property Type"
+                        name="propertyType"
+                        options={[
+                          { value: "Rental Property", label: "Rental Property" },
+                          { value: "Shared Property", label: "Shared Property" },
+                          { value: "Own Property", label: "Own Property" },
+                        ]}
+                        value={propertyType}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -863,7 +919,7 @@ const Rent_out_your_housing = () => {
                       />
 
                       <label>
-                      <p className="tw-text-gray tw-pl-4">{t(`File Allowed type (jpg,jpeg,png) | Maxium File size limit(5 mb)`)}</p>
+                        <p className="tw-text-gray tw-pl-4">{t(`File Allowed type (jpg,jpeg,png) | Maxium File size limit(5 mb)`)}</p>
                       </label>
                     </div>
 
@@ -910,15 +966,15 @@ const Rent_out_your_housing = () => {
                     </div>
 
                     <div className="col-md-6">
-                    <Input
-  star={"*"}
-  type={"tel"}
-  className={
-    "tw-w-full border tw-py-3 tw-px-3 tw-rounded-xl"
-  }
-  label={"Your phone number"}
-  placeholder={"Your phone number"}
-/>
+                      <Input
+                        star={"*"}
+                        type={"tel"}
+                        className={
+                          "tw-w-full border tw-py-3 tw-px-3 tw-rounded-xl"
+                        }
+                        label={"Your phone number"}
+                        placeholder={"Your phone number"}
+                      />
 
                     </div>
 
@@ -950,18 +1006,18 @@ const Rent_out_your_housing = () => {
                         Select Bank Country
                       </label> */}
 
-<Select
-  label="Bank Country"
-  name="bankCountry"
-  options={[
-    { value: "Sweden", label: "Sweden" },
-    { value: "Denmark", label: "Denmark" },
-    { value: "International", label: "International" },
-  ]}
-  value={bankCountry}
-  onChange={handleSelectChange}
-  className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-/>
+                      <Select
+                        label="Bank Country"
+                        name="bankCountry"
+                        options={[
+                          { value: "Sweden", label: "Sweden" },
+                          { value: "Denmark", label: "Denmark" },
+                          { value: "International", label: "International" },
+                        ]}
+                        value={bankCountry}
+                        onChange={handleSelectChange}
+                        className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                      />
 
                     </div>
 
@@ -1014,101 +1070,7 @@ const Rent_out_your_housing = () => {
               </div>
             </div>
 
-            <div className="col-md-3    gap-3 tw-justify-center tw-text-center">
-              <div className="tw-pr-[22.5%]">
-
-              <img
-                src={rentimage1}
-                className=" tw-rounded-xl tw-w-full tw-mt-14 tw-bg-white tw-shadow-lg   "
-              
-                // keeps image fixed at the top of its container while scrolling
-              />
-
-              <div className="" >
-                {" "}
-                <h7
-                  className="tw-text-light"
-                  style={{
-                    fontSize: "1.2em",
-                    color: "#1F2437",
-                    fontWeight: "300",
-                    
-                  }}
-                >{t(`Maximize Your Property’s Potential`)}</h7>
-                <p>{t(`Leverage our platform to showcase your property to a wide
-                  range of potential tenants. Fill out the necessary
-                  information, and we’ll guide you through every step to ensure
-                  a smooth rental experience.`)}</p>
-              </div>
-
-              <img
-                src={rentimage2}
-                className=" tw-rounded-xl tw-w-full tw-mt-14 tw-bg-white tw-shadow-lg "
-             
-                // keeps image fixed at the top of its container while scrolling
-              />
-
-              <div className=""  >
-                {" "}
-                <h7
-                  className="tw-text-light"
-                  style={{
-                    fontSize: "1.2em",
-                    color: "#1F2437",
-                    fontWeight: "300",
-                  }}
-                >{t(`Personalized Search Experience`)}</h7>
-                <p>{t(`We prioritize your preferences to show only the most relevant
-                  listings. Whether it’s a cozy apartment or a spacious family
-                  home, let us help you find the place you’ll love.`)}</p>
-              </div>
-
-              <img
-                src={rentimage3}
-                className=" tw-rounded-xl tw-w-full tw-mt-14 tw-bg-white tw-shadow-lg "
-              
-                // keeps image fixed at the top of its container while scrolling
-              />
-
-              <div className=""  >
-                {" "}
-                <h7
-                  className="tw-text-light"
-                  style={{
-                    fontSize: "1.2em",
-                    color: "#1F2437",
-                    fontWeight: "300",
-                  }}
-                >{t(`Trust and Transparency`)}</h7>
-                <p>{t(`Our goal is to make renting a hassle-free experience. We
-                  provide clear information on each property, ensuring you feel
-                  confident in every step of the rental process.`)}</p>
-              </div>
-
-              <img
-                src={rentimage4}
-                className=" tw-rounded-xl tw-w-full tw-mt-14 tw-bg-white tw-shadow-lg "
-                
-                // keeps image fixed at the top of its container while scrolling
-              />
-
-              <div className=""  >
-                {" "}
-                <h7
-                  className="tw-text-light"
-                  style={{
-                    fontSize: "1.2em",
-                    color: "#1F2437",
-                    fontWeight: "300",
-                  }}
-                >{t(`Rent Out Your Home with Ease`)}</h7>
-                <p>{t(`Start the process of renting out your property by filling in
-                  the details about your house. Our simple form helps you get
-                  started quickly, so you can start earning from your space
-                  without the stress.`)}</p>
-              </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>

@@ -180,13 +180,13 @@ export const servicesChildLinks = [
   },
 ];
 export const housingChildLinks = [
-  {
-    id: 1,
-    title: 'How It Works',
-    description: 'Get to know how to the housing process works.',
-    icons: <FaQuestion color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
-    Link: '/housing',
-  },
+  // {
+  //   id: 1,
+  //   title: 'How It Works',
+  //   description: 'Get to know how to the housing process works.',
+  //   icons: <FaQuestion color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
+  //   Link: '/housing',
+  // },
   {
     id: 2,
     title: 'Available Housing',
@@ -196,7 +196,7 @@ export const housingChildLinks = [
   },
   {
     id: 3,
-    title: 'Lease your property',
+    title: 'List your property',
     description: 'If youre looking to rent out your house.',
     icons: <MdOutlineBedroomParent color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
     Link: '/rent_out_your_housing',
