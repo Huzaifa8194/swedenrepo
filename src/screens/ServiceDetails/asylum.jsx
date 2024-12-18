@@ -19,6 +19,7 @@ import ap4 from "../../assets/iconscout/ap4.png";
 
 import Sidebar from "../../components/ScrollableBar";
 
+
 const ServiceDetails = () => {
   const { t, language } = useTranslation();
 
@@ -1131,9 +1132,9 @@ const ServiceDetails = () => {
                           style={{ fontSize: "1.2em" }}
                         >
                           <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
-                            Sign Up{" "}
+                            Sign Up Today!{" "}
                           </strong>
-                          <strong>{t(`Today!`)}</strong>
+                        
                         </h5>
                       </Link>
                       <br />

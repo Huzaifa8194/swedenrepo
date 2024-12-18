@@ -30,7 +30,7 @@ const Sidebar = () => {
         },
         {
           id: 3,
-          title: "Personnummer Sweden",
+          title: "Relocate to Sweden",
           description:
             "The personal identification is a number that the Swedish Tax Agency assigns to person registered in Sweden.",
           icons: (
@@ -41,7 +41,7 @@ const Sidebar = () => {
         },
         {
           id: 4,
-          title: "CPR Number Denmark",
+          title: "Relocate to Denmark",
           description:
             "CPR stands for Det Centrale Personregister, which translates to the Civil Registration System ",
           icons: (
@@ -229,7 +229,7 @@ const Sidebar = () => {
           icons: (
             <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-boarding-pass-2"></i>
           ),
-          Link: "/golden-visa-greece-portugal",
+          Link: "/logistics",
         },
 
         

@@ -23,13 +23,15 @@ import sr1 from "../../assets/iconscout/sr1.png"
 import sr2 from "../../assets/iconscout/sr2.png"
 import sr3 from "../../assets/iconscout/sr3.png"
 
+import white from "../../assets/iconscout/white.png"
+
 
 
 
 
 
 const ServiceSlider = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const settings = {
     dots: false,
     arrows: true,
@@ -66,43 +68,44 @@ const ServiceSlider = () => {
       buttonLabel2: t("Contact Us"),
     },
   ];
-  
+
 
 
 
   return (
     <>
-    <Slider {...settings}>
-      {slides.map((slide, index) => (
-        <div key={index} className="slider-slide" style={{ position: 'relative' }}>
+      <Slider {...settings}>
+        {slides.map((slide, index) => (
+          <div key={index} className="slider-slide " style={{ position: 'relative', height: '40%' }}>
 
 
 <img
   src={slide.image}
-
-  className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-rounded-2xl tw-object-contain tw-bg-white tw-shadow-lg"
+  className="tw-absolute tw-top-0 tw-right-0 tw-w-auto tw-h-[100%] tw-self-center tw-object-contain"
 />
-           {/* <VideoPlayer src={video1} className = "slider-image"/> */}
-          <img src={slide.image} alt={`Slide ${index + 1}`} className="slider-image" />
-          <div className="slider-content">
-            <h3 className="slider-title">{slide.title}</h3>
-            <h2 className="slider-subtitle">
-              {slide.subtitle.split(" ").map((word, idx) =>
-                word.toLowerCase() === 'visa' || word.toLowerCase() === 'immigration' ? (
-                  <div style ={{display: 'inline'}} key={idx} className="highlighted-text">{word} </div>
-                ) : (
-                  `${word} `
-                )
-              )}
-            </h2>
-            <button className="slider-button">{slide.buttonLabel}</button>
-            <button className="slider-button2">{slide.buttonLabel2}</button>
+
+
+
+            <img src={white} alt={`Slide ${index + 1}`} className=" tw-h-[10%]" />
+            <div className="slider-content">
+              <h3 className="slider-title">{slide.title}</h3>
+              <h2 className="slider-subtitle">
+                {slide.subtitle.split(" ").map((word, idx) =>
+                  word.toLowerCase() === 'visa' || word.toLowerCase() === 'immigration' ? (
+                    <div style={{ display: 'inline' }} key={idx} className="highlighted-text">{word} </div>
+                  ) : (
+                    `${word} `
+                  )
+                )}
+              </h2>
+              <button className="slider-button">{slide.buttonLabel}</button>
+              <button className="slider-button2">{slide.buttonLabel2}</button>
+            </div>
           </div>
-        </div>
-      ))}
-    </Slider>
-    
-      </>
+        ))}
+      </Slider>
+
+    </>
 
   );
 };

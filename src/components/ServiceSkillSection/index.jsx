@@ -68,7 +68,7 @@ const SkillSection = () => {
     <section className="cmt-row skill-section clearfix">
       <div className="container">
         <div className="row row-equal-height">
-          <div className="col-xl-6 tw-items-center col-lg-6 col-md-7 col-sm-7 mx-auto">
+          <div className="col-xl-6 tw-items-center col-lg-6 col-md-7 col-sm-7 mx-auto tw-rounded-xl tw-shadow-md">
 
 
             <VideoPlayer src={video1} className="tw-mt-10" />
@@ -85,7 +85,7 @@ const SkillSection = () => {
                   <div className="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-white cmt-icon_element-size-sm mb-15 mr-2">
                     <i className="ti ti-control-play"></i>
                   </div>
-                  <h5>{t("Working Since 1987")}</h5>
+                  <h5>{t("Working Since 2015")}</h5>
                 </div>
               </a>
             </div>

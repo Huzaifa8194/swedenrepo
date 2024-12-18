@@ -193,6 +193,67 @@ const Long_term_eu_status_assessment = () => {
   const [numberOfChildren, setNumberOfChildren] = useState("");
   const [birthCertificates, setBirthCertificates] = useState("");
   
+
+
+
+    const [resultdata, setResultData ] = useState(null);
+  
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+  
+    // API Endpoint
+    const url = "https://nordicrelocators.com/api/assessment/longTermEUPermit";
+  
+    // Prepare the form data
+    const formData = new FormData();
+    formData.append("citizenship", location); // Assuming 'location' refers to citizenship
+    formData.append("permanent_residence", residenceCountry);
+    formData.append("job_offer_in_sweden", jobOffer);
+    formData.append("business_in_sweden", ownBusiness);
+    formData.append("90_days_period", moveToSweden);
+    formData.append("sweden_with_family", assessmentFamily);
+    formData.append("marriage_certificate", marriageCertificate);
+    formData.append("home_country", homeCountryMarriage);
+    formData.append("registration_certificate", familyRegistrationCertificate);
+    formData.append("childrens", numberOfChildren);
+    formData.append("birth_certificate_for_childrens", birthCertificates);
+  
+    // Authorization header
+    const headers = {
+      Accept: "application/json",
+      Authorization: "Bearer 36|tTf2XgkBNu9QcNRxEAqBxGiGTiFQTL5GGgq55J5V8f05512d",
+    };
+  
+    try {
+      // Make the API request
+      const response = await fetch(url, {
+        method: "POST",
+        headers,
+        body: formData,
+      });
+  
+      // Handle the response
+      if (response.ok) {
+        const data = await response.json();
+        setResultData(data.data);
+
+      
+      console.log("State: " + resultdata);
+
+      openModal();  
+      } else {
+        const errorData = await response.json();
+        console.error("Error:", errorData);
+        alert("Submission failed. Please check your data.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred. Please try again.");
+    }
+  };
+  
+
+
   const handleSelectChange = (e) => {
     const value = e.target.value;
 
@@ -284,7 +345,7 @@ const Long_term_eu_status_assessment = () => {
                   {/* user info */}
 
                   <div>
-                    <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
+                  <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Long-Term EU Residence Status`)}</span>
 
@@ -313,7 +374,7 @@ const Long_term_eu_status_assessment = () => {
                     </ul>
 
 <br/>
-                    <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
+<span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Why`)}</span>
 
@@ -372,7 +433,7 @@ const Long_term_eu_status_assessment = () => {
                       </li>
                     </ul>
 
-                    <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
+                    <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`)}</span>
 
@@ -405,7 +466,7 @@ const Long_term_eu_status_assessment = () => {
 
                   
 <br/>
-                    <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
+<span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Get`)}</span>
 
@@ -431,11 +492,11 @@ const Long_term_eu_status_assessment = () => {
                     <i class="fa fa-user"> </i>FILL UP THE PERSONAL DETAILS 
                   </h6>
                 </div> */}
-                    <Assessment_modal
+               {resultdata && (     <Assessment_modal
                       isModalOpen={isModalOpen}
                       setIsModalOpen={setIsModalOpen}
-                      // setUsers={setUsers}
-                    />
+                      data = {resultdata}
+                    /> )}
 
                     {/* <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
@@ -459,7 +520,7 @@ const Long_term_eu_status_assessment = () => {
                     <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                         
-                      <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
@@ -562,7 +623,7 @@ const Long_term_eu_status_assessment = () => {
                     <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                         
-                      <span classname="tw-text-left tw-flex tw-items-center tw-gap-2">
+                      <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
@@ -676,7 +737,7 @@ const Long_term_eu_status_assessment = () => {
                     </form>
                   </div>
 
-                  <Button onClick={openModal} label={'Submit'} className={'  tw-w-full tw-bg-primary tw-py-3 tw-text-white tw-rounded-xl  tw-mt-10'} />
+                  <Button onClick={handleSubmit} label={'Submit'} className={'  tw-w-full tw-bg-primary tw-py-3 tw-text-white tw-rounded-xl  tw-mt-10'} />
                 </div>
               </div>
             </div>

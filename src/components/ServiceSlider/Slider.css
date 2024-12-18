@@ -1,7 +1,7 @@
 .slider-slide {
     position: relative;
     overflow: hidden;
-    max-height: 500px;
+    max-height: 450px;
   }
   
   .slider-image {
@@ -94,9 +94,9 @@
     margin-top: 15px;
     padding: 10px 20px;
     background-color: rgv(255,255,255,0);
-    border: 1px solid white;
-    color: white;
-    margin-left: 20px;
+    border: 1px solid #0067ed;
+    color: #0067ed ;
+    margin-left: 10px;
     border-radius: 25px;
     cursor: pointer;
     font-size: 15px;
@@ -108,8 +108,8 @@
   }
   
   .slider-button2:hover {
-    background-color: white; /* Change background color */
-    color: black; /* Change text color */
+    background-color: #0067ed; /* Change background color */
+    color: white; /* Change text color */
     
     /* Add scale animation */
     transform: scale(1.1); /* Slightly enlarge the button */

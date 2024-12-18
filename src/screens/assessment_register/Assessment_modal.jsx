@@ -4,7 +4,7 @@ import Modal from '../../components/Modal';
 import Button from "../../components/Button";
 
 
-const Assessment_modal = ({ isModalOpen, setIsModalOpen, closeModal, setUsers }) => {
+const Assessment_modal = ({ isModalOpen, setIsModalOpen, closeModal, setUsers, data }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -25,13 +25,21 @@ const Assessment_modal = ({ isModalOpen, setIsModalOpen, closeModal, setUsers })
 
             <div className=" tw-bg-[#d0e8d6] tw-my-4 border tw-py-3 tw-px-6 tw-rounded-md tw-flex md:tw-flex-row tw-flex-col tw-items-center tw-justify-between ">
               <div>
-                <h5 className=" tw-m-0 tw-text-[green]">You are ELIGLE!</h5>
-                <p className=" m-0 tw-text-blue">Assessment No: 24042189</p>
+              
+              
+              { data.result == 'Eligible' ? (
+                <h5 className=" tw-m-0 tw-text-[green]">You are {data.result}</h5>
+              ) : ( 
+                <h5 className=" tw-m-0 tw-text-[red]">You are {data.result}</h5>
+              )}
+                
+                <p className=" m-0 tw-text-blue">Assessment No: {data.assessment_no}</p>
               </div>
 
               <div>
+
                 <h6 className="  tw-font-normal tw-text-center">
-                  AS PER YOUR PROVIDED INFORMATION'S <br /> YOU ARE ELIGIBLE TO APPLY
+                  AS PER YOUR PROVIDED INFORMATION'S <br /> YOU ARE {data.result} TO APPLY
                 </h6>
               </div>
             </div>

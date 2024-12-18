@@ -10,6 +10,10 @@ import Button from '../../components/Button';
 import Input from '../../components/Input';
 import { GoTriangleRight } from 'react-icons/go';
 import { Link } from 'react-router-dom';
+import Sidebar from "../../components/ScrollableBar";
+
+
+import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
 
 import Header from '../../components/Header_New/Header';
@@ -175,8 +179,16 @@ const BlogDetails = () => {
   return (
     <>
       <Header />
-      <Banner_Page title={'5 Swedish Foods You Must Try'} />
-      <section className=" md:tw-mt-36 tw-mt-48">
+    
+
+      <Banner_Page
+        highlightText={("Blogs")}
+        regularText={(
+          "5 Swedish Foods You Must Try"
+        )}
+        backgroundImage={homeBgImage}
+      />
+      <section className="">
         <div className="container-fluid ">
           <div className="row g-5">
             <div className="col-md-8    tw-py-10 tw-bg-white">
@@ -270,39 +282,7 @@ const BlogDetails = () => {
                           </div>
                         </div>
 
-                        <div className=" tw-pt-10">
-                          <h3>Leave a Reply</h3>
-                          <p className="">Your email address will not be published.</p>
-                          <form>
-                            <div className="row ">
-                              <div className="col-md-12">
-                                <textarea rows={6} className=" tw-border tw-border-gray-light  tw-rounded-md tw-w-full"></textarea>
-                              </div>
-                              <div className="col-md-4">
-                                <Input placeholder={'Name (required)'} className={' border tw-rounded-none tw-py-3 tw-w-full'} />
-                              </div>
-                              <div className="col-md-4">
-                                <Input placeholder={'Email (required)'} className={' border tw-rounded-none tw-py-3 tw-w-full'} />
-                              </div>
-                              <div className="col-md-4">
-                                <Input placeholder={'Website'} className={' border tw-rounded-none tw-py-3 tw-w-full'} />
-                              </div>
-                              <div>
-                                <div className=" tw-flex  tw-gap-3">
-                                  <Input type={'checkbox'} className={''} />
-                                  <p className=" tw-text-gray tw-m-0 tw-pt-2">Save my name, email, and website in this browser for the next time I comment.</p>
-                                </div>
-                                <p className=" tw-text-gray tw-pt-4">Please enter an answer in digits:</p>
-                              </div>
-                              <div className="col-md-12">
-                                <Input label={'2 x 5='} className={' border tw-rounded-none tw-py-3 tw-w-full'} />
-                              </div>
-                              <div className="col-md-12 tw-pt-6">
-                                <Button label={'Post Comment'} className={' tw-border tw-rounded-full tw-py-2 tw-font-semibold tw-border-gray-dark'} />
-                              </div>
-                            </div>
-                          </form>
-                        </div>
+                       
                       </div>
                     </div>
                   </div>
@@ -311,20 +291,8 @@ const BlogDetails = () => {
               </div>
             </div>
 
-            <div className="col-md-4  tw-pt-16  tw-bg-[#F5FAFF]">
-              <div className="  md:tw-pr-32 tw-pr-4">
-                <ul className=" tw-pl-4 tw-flex tw-flex-col tw-gap-2.5">
-                  {data2?.map((item, index) => {
-                    return (
-                      <Link to={`${item?.Link}`} className="hover-effect tw-rounded-md hover:tw-bg-blue tw-bg-white tw-p-4 tw-shadow-lg tw-flex tw-justify-between tw-items-center hover:tw-text-white">
-                        <p className="m-0 tw-text-gray-dark tw-font-semibold hover:tw-text-white">{item?.title}</p>
-                        <GoTriangleRight className="tw-text-gray" />
-                      </Link>
-                    );
-                  })}
-                </ul>
-              </div>
-            </div>
+            <Sidebar />
+        
           </div>
         </div>
       </section>

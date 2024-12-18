@@ -1,7 +1,8 @@
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import businessman from "../../assets/iconscout/businessman.svg";
+import businessman from "../../assets/iconscout/businessman.svg"
+import businessman2 from "../../assets/iconscout/businessman2.svg"
 
 
 const Our_specialization = () => {
@@ -98,11 +99,13 @@ const Our_specialization = () => {
                   </p>
                 </div>
               </div>
+
+
               <div className="col-md-6 tw-pt-4">
                 <div className="">
-                  <div className="tw-flex tw-gap-0 tw-pb-1 tw-text-center">
-                    <img src = {businessman} style = {{maxWidth: '3rem', marginBottom: '0px'}}/>
-                    <h5 style={{margin: '0px'}}>{t('Investment Solutions')}</h5>
+                  <div className="tw-flex tw-gap-10 tw-pb-4 tw-text-center">
+                    <i className="flaticon-bussiness-man tw-text-5xl tw-m-0 tw-text-blue"></i>
+                    <h5>{t('Investment Solutions')}</h5>
                   </div>
                   <hr className="tw-border-gray" />
                   <p className="tw-text-gray">
@@ -110,6 +113,11 @@ const Our_specialization = () => {
                   </p>
                 </div>
               </div>
+
+
+
+
+           
             </div>
           </div>
         </div>

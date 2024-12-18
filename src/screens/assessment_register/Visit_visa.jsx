@@ -18,11 +18,21 @@ import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 import Header from '../../components/Header_New/Header';
 import Select from "../../components/Selecttab";
 import Sidebar from "../../components/ScrollableBar";
+import axios from "axios";
 
+
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import SubmitModel from "./submitmodel";
 
 const Visit_visa = () => {
   const { t } = useTranslation();
   const { id } = useParams();
+
+
+  
+
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -265,6 +275,11 @@ const Visit_visa = () => {
   const [monthlySalary, setMonthlySalary] = useState("");
 
 
+  const [describeHow, setdescribeHow] = useState("");
+  const [ invitationDetails, setinvitationDetails] = useState("");
+const [coordinationDetails, setcoordinationDetails] = useState("");
+const [invitation2, setinvitation2] = useState("");
+const [refusalMonthYear, setrefusalMonthYear] = useState("");
 
 
   const [jobContract, setJobContract] = useState("");
@@ -310,6 +325,26 @@ const Visit_visa = () => {
         setProofOfEnrolment(value);
         break;
 
+
+
+        case "coordinationDetails":
+          setcoordinationDetails(value);
+          break;
+
+
+          case "refusalMonthYear":
+            setrefusalMonthYear(value);
+            break;
+
+        case "invitation2":
+          setinvitation2(value);
+          break;
+      case "invitationDetails":
+        setinvitationDetails(value);
+        break;
+      case "describeHow":
+        setdescribeHow(value);
+        break;  
       case "noObjectionLetter":
         setNoObjectionLetter(value);
         break;
@@ -416,6 +451,110 @@ const Visit_visa = () => {
     }
   };
 
+
+
+
+  const [isModel2Open, setIsModel2Open] = useState(false);
+  const [model2Message, setModel2Message] = useState("");
+
+  const openModel2 = (message) => {
+    setModel2Message(message);
+    setIsModel2Open(true);
+    setTimeout(() => {
+      setIsModel2Open(false); // Close modal after 2 seconds
+      setModel2Message(""); // Clear the message
+    }, 5000);
+  };
+
+
+
+
+  const [resultdata, setResultData ] = useState(null);
+
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent page refresh
+  
+    // Form the request data using the explicitly defined states
+    const formData = new FormData();
+  
+    formData.append("national_passport", passport );
+    formData.append("countries_before", schengenVisits); // Hardcoded as no state is provided
+    formData.append("visited_the_schengen_stat", schengenVisits );
+    formData.append("purpose_of_visit", visitPurpose );
+    formData.append("schengen_countries", personalStatus); // Hardcoded as no state is provided
+    formData.append("visit_month_year", refusalMonthYear); // Hardcoded as no state is provided
+    formData.append("reason_of_refusal", refusal || "");
+    formData.append("relative_living_schengen_country", residencePermit); // Hardcoded as no state is provided
+    formData.append("eu_person", relationEU || "");
+    formData.append("dependent_living_schengen_country", dependents || "no");
+    formData.append("describe_how", describeHow); // Hardcoded as no state is provided
+    formData.append("invitation_from_any_individual_business", invitation || "no");
+    formData.append("details_of_the_company", invitationDetails); // Hardcoded as no state is provided
+    formData.append("can_you_support_yourself", investmentAmount); // Hardcoded as no state is provided
+    formData.append("fully_funded_by_organiser", coordinationNumber); // Hardcoded as no state is provided
+    formData.append("details_of_organizer", coordinationDetails); // Hardcoded as no state is provided
+    formData.append("choose_type", personnummer); // Hardcoded as no state is provided
+    formData.append("nature_of_job", natureOfJob || "");
+    formData.append("monthly_salary", monthlySalary || "");
+    formData.append("job_contract", jobContract || "");
+    formData.append("vacations_letter", vacationsLetter || "");
+    formData.append("registration_certificate", registrationCertificate || "");
+    formData.append("available_assets", availableAssets || "");
+    formData.append("tax_returns_2_to_3_years", taxReturns || "");
+    formData.append("proof_of_enrolment", proofOfEnrolment || "");
+    formData.append("invitation_for_visit", invitation2); // Hardcoded as no state is provided
+    formData.append("letter_from_school", noObjectionLetter); // Hardcoded as no state is provided
+    formData.append("visiting_alone", isSingle); // Hardcoded as no state is provided
+    formData.append("spouse_valid_national_passport", spousePassport || "");
+    formData.append("marriage_certificate", marriageCertificate || "");
+    formData.append("family_registration_certificate", familyRegistrationCertificate || "");
+    formData.append("main_applicant_support", mainApplicantSupport || "");
+    formData.append("do_you_have_childern", children || "");
+    formData.append("birth_certificate_of_your_children", birthCertificate || "");
+    formData.append("spouse_have_any_income", spouseIncome || "");
+    formData.append("spouse_income_desc", spouseIncome); // Hardcoded as no state is provided
+    formData.append("someone_else_support_trip",tripSupport); // Hardcoded as no state is provided
+    formData.append("describe_support_trip",  "");
+  
+    try {
+      const response = await axios.post(
+        `https://nordicrelocators.com/api/assessment/visitVisa`,
+        formData,
+        {
+          headers: {
+            "Authorization": `Bearer 28|FObEnWL85TWkV7pN0LpUNcxE19raItBrN4UMqdfy4cf88eb4`,
+            "Accept": "application/json",
+          },
+        }
+      );
+      console.log("Response:", response.data.data);
+      setResultData(response.data.data);
+
+      
+      console.log("State: " + resultdata);
+
+      openModal();  
+     
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    alert("Error Submitting. Please fill in all required fields.");
+    }
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -440,6 +579,15 @@ const Visit_visa = () => {
         regularText={t("Plan your visit with ease. We offer assistance for obtaining visit visas tailored to your travel needs.")}
         backgroundImage={homeBgImage}
       />
+
+
+{isModel2Open && (
+        <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 z-100000">
+          <div className="bg-white rounded-lg shadow-lg p-6 w-1/3 text-center">
+            <p className="text-lg font-semibold text-gray-800">{model2Message}</p>
+          </div>
+        </div>
+      )}
       <section className="">
         <div className="container-fluid ">
           <div className="row   g-5">
@@ -654,11 +802,17 @@ const Visit_visa = () => {
                   </h6>
                 </div> */}
 
-                    <Assessment_modal
+
+
+
+
+{resultdata && (     <Assessment_modal
                       isModalOpen={isModalOpen}
                       setIsModalOpen={setIsModalOpen}
-                    // setUsers={setUsers}
-                    />
+                      data = {resultdata}
+                    /> )}
+
+               
 
                     {/* <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
@@ -812,6 +966,8 @@ const Visit_visa = () => {
                                   " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
                                 }
                                 label={"Refusal Month-Year"}
+                                name = "refusalMonthYear"
+                                value = {refusalMonthYear}
                               />
                             </div>
 
@@ -901,6 +1057,8 @@ const Visit_visa = () => {
                                   " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
                                 }
                                 label={" Describe How?"}
+                                name = "describeHow"
+                                value = {describeHow}
                               />
 
 
@@ -932,7 +1090,10 @@ const Visit_visa = () => {
                               <Input
                                 placeholder={" Details of the Company, Organisation or Association"}
                                 star={"*"}
+                                value = {invitationDetails}
+                                onChange={handleSelectChange}
 
+                                name = "invitationDetails"
                                 className={
                                   " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
                                 }
@@ -984,6 +1145,8 @@ const Visit_visa = () => {
                               <Input
                                 placeholder={" Details of Organizer"}
 
+                                value = {coordinationDetails}
+                                name = "coordinationDetails"
 
                                 className={
                                   " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
@@ -1033,12 +1196,12 @@ const Visit_visa = () => {
                               <div className="col-md-3 tw-pt-4">
                                 <Select
                                   label="Invitation for Visit"
-                                  name="invitation"
+                                  name="invitation2"
                                   options={[
                                     { value: "yes", label: "Yes" },
                                     { value: "no", label: "No" },
                                   ]}
-                                  value={invitation}
+                                  value={invitation2}
                                   onChange={handleSelectChange}
                                   className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
                                 />
@@ -1348,7 +1511,7 @@ const Visit_visa = () => {
                   </div>
 
                   <Button
-                    onClick={openModal}
+                    onClick={handleSubmit}
                     label={"Submit"}
                     className={
                       "  tw-w-full  tw-bg-primary tw-py-3 tw-text-white tw-rounded-xl  tw-mt-10"

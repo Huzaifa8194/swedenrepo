@@ -18,6 +18,7 @@ import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 import Select from "../../components/Selecttab";
 import Sidebar from "../../components/ScrollableBar";
 import { useTranslation } from '../../context/TranslationContext';
+import axios from "axios";
 
 
 const Family_reunification_assessment = () => {
@@ -261,6 +262,52 @@ const Family_reunification_assessment = () => {
   const [familyVisaRejected, setFamilyVisaRejected] = useState("");
 
 
+
+      const [resultdata, setResultData ] = useState(null);
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData();
+    formData.append("eu_citizen", euCitizen || "");
+    formData.append("move_to_sweden_in_90_days", movedToSweden || "");
+    formData.append("citizenship_country", citizenship || "");
+    formData.append("permanent_residence_permit_country", permanentResidencePermit || "");
+    formData.append("personnummerin_sweden", personnummer || "");
+    formData.append("applied_personnumer_and_rejected", personnummerRejected || "");
+    formData.append("own_apartment_or_rental", apartmentStatus || "");
+    formData.append("planning_to_stay_permanently", stayPermanently || "");
+    formData.append("full_time_work_in_sweden", fullTimeWork || "");
+    formData.append("applied_family_visa_and_rejected", familyVisaRejected || "");
+    formData.append("valid_national_passport", spousePassport || "");
+    formData.append("children_have_valid_national_passport", childrenPassport || "");
+    formData.append("marriage_certificate", marriageCertificateRegistered || "");
+    formData.append("birth_certificate", birthCertificateChildren || "");
+
+    try {
+      const response = await axios.post(
+        `https://nordicrelocators.com/api/assessment/familyReunification`,
+        formData,
+        {
+          headers: {
+            "Accept": "application/json",
+          },
+        }
+      );
+      console.log("Response:", response.data);
+      setResultData(response.data.data);
+
+      
+      console.log("State: " + resultdata);
+
+      openModal();  
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Failed to submit the form. Please try again.");
+    }
+  };
+
+
   const handleSelectChange = (e) => {
     const value = e.target.value;
 
@@ -470,13 +517,11 @@ const Family_reunification_assessment = () => {
                     <i class="fa fa-user"> </i>FILL UP THE PERSONAL DETAILS 
                   </h6>
                 </div> */}
-
-                    <Assessment_modal
+{resultdata && (     <Assessment_modal
                       isModalOpen={isModalOpen}
                       setIsModalOpen={setIsModalOpen}
-                    // setUsers={setUsers}
-                    />
-
+                      data = {resultdata}
+                    /> )}
                     {/* <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                         <div className="col-md-6 tw-pt-4">
@@ -820,7 +865,7 @@ const Family_reunification_assessment = () => {
 
 
                   <Button
-                    onClick={openModal}
+                    onClick={handleSubmit}
                     label={"Submit"}
                     className={
                       "  tw-w-full  tw-bg-primary tw-py-3 tw-text-white tw-rounded-xl  tw-mt-10"

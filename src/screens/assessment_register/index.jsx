@@ -300,6 +300,83 @@ const Assessment_register = () => {
   const [businessOwned, setbusinessOwned] = useState("");
   const [businessOwnedSweden, setbusinessOwnedSweden] = useState("");
 
+
+    const [resultdata, setResultData ] = useState(null);
+
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+  
+    // API Endpoint
+    const url = "https://nordicrelocators.com/api/assessment/businessVisa";
+  
+    // Prepare the form data
+    const formData = new FormData();
+    formData.append("api_token", "0c05a7c6cb627216702cc552b539d548");
+    formData.append("user_id", "696");
+    formData.append("am_sweden", location);
+    formData.append("personal_status", personalStatus);
+    formData.append("valid_residence_permit", residencePermit);
+    formData.append("marital_status", maritalStatus);
+    formData.append("dependent_main_applicant", depents);
+    formData.append("comp_deg_sweeden", degreeCompleted);
+    formData.append("valid_personnummer", personnummer);
+    formData.append("valid_coordination", coordinationNumber);
+    formData.append("planning_to_invest", investmentAmount);
+    formData.append("funds_for_family_in_sweden", familyAssets);
+    formData.append("inside_family_applicant", movealongwithfamily);
+    formData.append("education_level", educationLevel);
+    formData.append("educational_certificate_available", certificateAvailable);
+    formData.append("job_business_experience", jobExperience);
+    formData.append("owned_business_country", businessOwned);
+    formData.append("owned_business_sweden", businessOwnedSweden);
+    formData.append("person_legal_status", knowsomeone_legalstatus);
+    formData.append("person_personnummer", knowsomeone_personnummer);
+    formData.append("schengen_states", schengen);
+    formData.append("issue_country", schengenissuecountry);
+    formData.append("type_of_visa", schengentype);
+    formData.append("expiry_date", schengenexpirydate);
+    formData.append("details_duration_of_stay", schengendetail);
+    formData.append("sort_rejected_schengen_visa", past2yearsrejection);
+    formData.append("rejected_country", past2yearscountry);
+    formData.append("reason_of_rejection", past2yearsrejectionreason);
+    formData.append("english_lang_certificate", languageCertificate);
+  
+    // Authorization header
+    const headers = {
+      Accept: "application/json",
+      Authorization: "Bearer 29|EzEXhYfq1rxGtQZVwlfZqPp5UVQ485gth4MgO9dcc0b9d492",
+    };
+  
+    try {
+      // Make the API request
+      const response = await fetch(url, {
+        method: "POST",
+        headers,
+        body: formData,
+      });
+  
+      // Handle the response
+      if (response.ok) {
+        const data = await response.json();
+        setResultData(data.data);
+
+      
+        console.log("State: " + resultdata);
+  
+        openModal();  
+      } else {
+        const errorData = await response.json();
+        console.error("Error:", errorData);
+        alert("Submission failed. Please check your data.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred. Please try again.");
+    }
+  };
+  
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
 
@@ -620,11 +697,11 @@ case "educationLevel":
                   </h6>
                 </div> */}
 
-                    <Assessment_modal
+{resultdata && (     <Assessment_modal
                       isModalOpen={isModalOpen}
                       setIsModalOpen={setIsModalOpen}
-                    // setUsers={setUsers}
-                    />
+                      data = {resultdata}
+                    /> )}
 
                     {/* <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
@@ -1563,7 +1640,7 @@ case "educationLevel":
                   </div>
 
                   <Button
-                    onClick={openModal}
+                    onClick={handleSubmit}
                     label={"Submit"}
                     className={
                       "  tw-w-full tw-bg-primary tw-py-3 tw-text-white tw-rounded-xl  tw-mt-10"

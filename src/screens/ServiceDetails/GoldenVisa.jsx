@@ -246,7 +246,7 @@ const GoldenVisa = () => {
       <Banner_Page
         highlightText={"Global Visit Visa"}
         regularText={
-          "Seek safety and a fresh start in Sweden. Our comprehensive support helps guide you through the asylum process smoothly."
+      "Effortlessly explore the world with our expert Global Visit Visa services, ensuring seamless travel to your dream destinations."
         }
         backgroundImage={homeBgImage}
       />
@@ -666,9 +666,9 @@ const GoldenVisa = () => {
                       <Link to="/register" className="tw-text-center tw-pt-4">
                       <h5 className="tw-text-center tw-text-black tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
-                          Sign Up{" "}
+                          Sign Up Today!{" "}
                         </strong>
-                        <strong>{t(`Today!`)}</strong>
+                       
                       </h5>
                     </Link>
                     <br />

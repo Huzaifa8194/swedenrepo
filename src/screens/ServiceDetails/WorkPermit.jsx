@@ -738,10 +738,9 @@ const WorkPermit = () => {
                     <Link to="/register" className="tw-text-center tw-pt-4">
                     <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
-                          {t(`Sign Up`)}{" "}
+                          {t(`Sign Up Today!`)}{" "}
                         </strong>
-                        <strong className="tw-text-black">{t(`Today!`)}</strong>
-                      </h5>
+                                             </h5>
                     </Link>
                     <br />
                     <p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're

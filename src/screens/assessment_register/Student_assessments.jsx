@@ -20,7 +20,9 @@ import { useTranslation } from '../../context/TranslationContext';
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import Header from "../../components/Header_New/Header";
 import Sidebar from "../../components/ScrollableBar";
-
+import { Alert } from "bootstrap";
+//import { alert } from "@material-tailwind/react";
+import axios from "axios";
 
 const Student_assessments = () => {
   const { t } = useTranslation();
@@ -270,9 +272,52 @@ const Student_assessments = () => {
 
 
 
+  const [resultdata, setResultData ] = useState(null);
 
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
+    const formData = new FormData();
+    formData.append("api_token", "4f29ddc35580c021515af364fddc8b24");
+    formData.append("user_id", "696");
+    formData.append("country", country || ""); 
+    formData.append("educational_level", studyLevel || ""); 
+    formData.append("years_of_study", yearsOfStudy || "");
+    formData.append("proficiency_language", languageTest || "");
+    formData.append("ielts_score", ieltsScore || "");
+    formData.append("higher_subject", subject || "");
+    formData.append("higher_percentage", percentage || "");
+    formData.append("higher_grade", grade || "");
+    formData.append("inter_subject", subject2 || "");
+    formData.append("inter_percentage", percentage2 || "");
+    formData.append("inter_grade", grade2 || "");
+    formData.append("gra_percentage", percentage3 || "");
+    formData.append("gra_grade", grade3 || "");
+    formData.append("gra_subject", subject3 || "");
+
+    try {
+      const response = await axios.post(
+        `https://nordicrelocators.com/api/assessment/studentVisa`,
+        formData,
+        {
+          headers: {
+            "Accept": "application/json",
+          },
+        }
+      );
+      setResultData(response.data.data);
+
+      
+      console.log("State: " + resultdata);
+
+      openModal();  
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Error Submitting. Please fill in all required fields.");
+
+    }
+  };
 
 
 
@@ -618,11 +663,12 @@ const Student_assessments = () => {
                         details.`)}</h6>
                     </div> */}
 
-                    <Assessment_modal
+{resultdata && (     <Assessment_modal
                       isModalOpen={isModalOpen}
                       setIsModalOpen={setIsModalOpen}
-                    // setUsers={setUsers}
-                    />
+                      data = {resultdata}
+                    /> )}
+
 
                     {/* <form>
                       <div className="row ">
@@ -1499,7 +1545,7 @@ const Student_assessments = () => {
                   ) : null}
 
                   <Button
-                    onClick={openModal}
+                    onClick={handleSubmit}
                     label={"Submit"}
                     className={
                       "  tw-w-full tw-bg-primary tw-py-3 tw-text-white tw-rounded-xl  tw-mt-10"

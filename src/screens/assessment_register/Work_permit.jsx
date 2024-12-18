@@ -11,6 +11,8 @@ import Input from "../../components/Input";
 import { GoTriangleRight } from "react-icons/go";
 import { TfiAngleLeft } from "react-icons/tfi";
 import { Link, useParams } from "react-router-dom";
+
+import axios from "axios";
 import Assessment_modal from "./Assessment_modal";
 
 import { useTranslation } from '../../context/TranslationContext';
@@ -286,6 +288,63 @@ const Work_permit = () => {
   const [savings, setSavings] = useState("");
   const [assetRange, setAssetRange] = useState("");
 
+
+
+
+    const [resultdata, setResultData ] = useState(null);
+  
+  const handleSubmit = async () => {
+    const formData = {
+      api_token: "4f29ddc35580c021515af364fddc8b24",
+      category: workCategory,
+      state_subject: educationLevel,
+      educational_certificate_available: educationalCertificate,
+      work_experience: jobExperience,
+      total_work_experience: experienceCertificate,
+      outside_of_sweden: outsideSweden,
+      res_work_permit_citizenship: citizenshipCountries,
+      country_of_residence: workedInSweden,
+      job_offer: jobOffer,
+      company_have_more_than_5: companyEmployees,
+      insurance_for_employees: companyInsurance,
+      sweden_before: workedInSweden,
+      schengen_visa: schengenRejected,
+      are_you_single: singleStatus,
+      age_between_18_to_30: ageRange,
+      health_insurance_policy: healthInsuranceProof,
+      swedish_language_studies: swedishLanguageInterest,
+      au_pair_certificate_of_admission: admissionCertificate,
+      family_in_sweden_stating: hostFamilyInvitation,
+      time_for_house: studyHours,
+      return_ticket: returnTicket,
+      comprehensive_health_insurance: healthInsurance,
+      already_work_applying_asylum: workedBeforeAsylum,
+      asylum_case_has_been_refused: asylumRefused,
+      permission_of_work: workPermission,
+      still_working_same_company_4_months: sameCompany,
+      permanent_job: permanentContract,
+      swedish_minimum_salary: minimumSalary,
+      assets_savings: savingsOrAssets,
+      assets_value: assetRange,
+    };
+
+    try {
+      const response = await axios.post("https://nordicrelocators.com/api/assessment/workPermit", formData, {
+        headers: {
+          Authorization: `Bearer 36|tTf2XgkBNu9QcNRxEAqBxGiGTiFQTL5GGgq55J5V8f05512d`,
+          Accept: "application/json",
+        },
+      });
+      console.log(response.data);
+      setResultData(response.data.data);
+      console.log("State: " + resultdata);
+      openModal();  
+    } catch (error) {
+      console.error("Error submitting the form:", error);
+      alert("Error Submitting. Please fill in all required fields.");
+
+    }
+  };
 
 
 
@@ -678,11 +737,12 @@ const Work_permit = () => {
                   </h6>
                 </div> */}
 
-                    <Assessment_modal
+{resultdata && (     <Assessment_modal
                       isModalOpen={isModalOpen}
                       setIsModalOpen={setIsModalOpen}
-                    // setUsers={setUsers}
-                    />
+                      data = {resultdata}
+                    /> )}
+
                     {/* <form>
                       <div className="row  tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                         <div className="col-md-6 tw-pt-4">
@@ -1502,7 +1562,7 @@ const Work_permit = () => {
                   </div>
 
                   <Button
-                    onClick={openModal}
+                    onClick={handleSubmit}
                     label={"Submit"}
                     className={
                       "  tw-w-full  tw-bg-primary tw-py-3 tw-text-white tw-rounded-xl  tw-mt-10"

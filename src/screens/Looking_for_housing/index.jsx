@@ -15,6 +15,7 @@ import rentimage2 from "../../assets/iconscout/rentimage5.png";
 import rentimage3 from "../../assets/iconscout/rentimage3.png";
 import Select from "../../components/Selecttab";
 
+import axios from 'axios';
 
 import l1 from "../../assets/iconscout/l1.png";
 
@@ -242,6 +243,39 @@ const Looking_for_housing = () => {
   const [smoke, setSmoke] = useState("");
 
 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+  
+    // Prepare the request body based on the API documentation
+    const requestBody = new FormData();
+    requestBody.append("type_id", "2"); // Housing type (e.g., Physically, Telephonic, Group)
+    requestBody.append("category_id", "3"); // Category ID (dummy data for now)
+    requestBody.append("appointment_date", "2024-12-16"); // Example date (replace as needed)
+    requestBody.append("country", selectCountry || "Sweden"); // Use selected country or default to "Sweden"
+    requestBody.append("time_slot_id", "4"); // Time slot (dummy data for now)
+    requestBody.append("description", "Looking for affordable housing solutions."); // Example description
+  
+    try {
+      // Send the POST request to the API endpoint
+      const response = await axios.post(
+        "https://nordicrelocators.com/api/appointment/reschedule/1",
+        requestBody,
+        {
+          headers: {
+            Accept: "application/json",
+            Authorization: `Bearer 29|FObEnWL85TWkV7pN0LpUNcxE19raItBrN4UMqdfy4cf88eb4`, // Replace with your actual token
+          },
+        }
+      );
+  
+      console.log("Response:", response.data);
+      alert("Housing request submitted successfully!");
+    } catch (error) {
+      console.error("Error submitting housing request:", error.response?.data || error.message);
+      alert(`Failed to submit housing request: ${error.response?.data?.message || error.message}`);
+    }
+  };
+    
 
 
   const handleSelectChange = (event) => {
@@ -869,6 +903,8 @@ const Looking_for_housing = () => {
                       className={
                         " tw-uppercase tw-mx-auto  tw-text-sm    tw-py-3 tw-bg-primary  tw-w-full tw-rounded-xl  tw-text-white "
                       }
+                      type = "submit"
+                      onClick={handleSubmit}
                     />
                   </div>
                 </div>

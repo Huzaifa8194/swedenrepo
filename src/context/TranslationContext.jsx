@@ -53,7 +53,7 @@ const TranslationProvider = ({ children }) => {
       return translations[text];
     } else {
       // Translate if not cached
-      translateText(text);
+    //  translateText(text);
       return text; // Return original text until translation is available
     }
   };

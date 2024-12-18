@@ -495,8 +495,8 @@ const BusinessPermit = () => {
                       today to start your business journey in Sweden with
                       confidence, knowing that every aspect of your application
                       is in good hands.`)}</p>{t(``)}<Link to="/register" className="tw-text-center tw-pt-4">{t(``)}<h5 className="tw-text-center tw-pt-4" style={{ fontSize: '1em' }}>{t(``)}<strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
-          {t(`Sign Up`)}{" "}
-        </strong>{t(``)}<strong className="tw-text-black">{t(`Today!`)}</strong>{t(``)}</h5>{t(``)}</Link>{t(``)}<br />{t(``)}<p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
+          {t(`Sign Up Today!`)}{" "}
+        </strong>{t(``)}<strong className="tw-text-black">{t(``)}</strong>{t(``)}</h5>{t(``)}</Link>{t(``)}<br />{t(``)}<p className="tw-text-gray">{t(`Sign up today and simplify your journey! Whether you're
                       seeking assistance with relocation, permits, visas, legal
                       processes, or settling into a new life, we're here to
                       help. Our comprehensive services cover everything from

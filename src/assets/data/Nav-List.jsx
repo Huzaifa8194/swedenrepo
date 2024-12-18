@@ -101,13 +101,7 @@ export const servicesChildLinks = [
     icons: <RiGlobalLine color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
     Link: '/global-visit-visas',
   },
-  {
-    id: 10,
-    title: 'EEA Permits',
-    description: 'Any EU citizen getting residence in the UK according to the EU rules, can bring their family with them.        ',
-    icons: <VscPreview color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
-    Link: '/eea-permits',
-  },
+
   {
     id: 11,
     title: 'Parents EU Permit',
