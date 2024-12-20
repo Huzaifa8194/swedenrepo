@@ -100,10 +100,10 @@ const Assessment_modal = ({ isModalOpen, setIsModalOpen, closeModal, setUsers })
               <div></div>
               <div className=" tw-flex md:tw-flex-row tw-flex-col  tw-items-center tw-gap-2">
 
-                <Button
+                {/* <Button
                   className={"btn-warning "}
                   label="Download/View Report"
-                />
+                /> */}
                 <Button
                   className={"btn-warning "}
                   label="Book an Appointment"
