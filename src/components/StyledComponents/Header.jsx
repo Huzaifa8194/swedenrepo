@@ -212,6 +212,22 @@ export const CancelMenuButton = ({ setOpenMenu }) => {
 };
 export const NavListMobile = ({ openMenu, selectedNavItem, setSelectedNavItem, setOpenMenu }) => {
   const navigate = useNavigate();
+  useEffect(() => {
+      // Prevent horizontal scrolling by resetting scroll position
+      const preventHorizontalScroll = () => {
+        console.log("scrollX", window.scrollX);
+        if (window.scrollX !== 0) {
+          window.scrollTo({ left: 0 });
+        }
+      };
+  
+      // Add listener to prevent horizontal movement
+      window.addEventListener("scroll", preventHorizontalScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", preventHorizontalScroll);
+      };
+    }, []);
   return (
     <>
       <div className={`tw-absolute tw-left-0 tw-right-0 tw-bg-white tw-transform tw-origin-top tw-transition-transform tw-duration-300 ${openMenu ? 'tw-scale-y-100' : 'tw-scale-y-0'} tw-h-screen tw-pt-4 tw-overflow-y-auto`}>
