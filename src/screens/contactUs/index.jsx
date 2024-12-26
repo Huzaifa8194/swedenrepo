@@ -4,7 +4,7 @@ import Navbar from '../../components/Header/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 

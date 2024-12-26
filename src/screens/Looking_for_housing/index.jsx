@@ -6,7 +6,7 @@ import Input from "../../components/Input";
 import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 import { GoTriangleRight } from "react-icons/go";
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import rentimage1 from "../../assets/iconscout/rentimage1.png";
@@ -354,9 +354,9 @@ const Looking_for_housing = () => {
             <div className="tw-w-full  ">
               <span className=" tw-flex tw-items-center tw-gap-2">
                 {" "}
-                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Looking for housing`)}</span>
+                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Looking for housing`.replace(/\s+/g, ' ').trim())}</span>
               <h2>
-                {t("Find Your Perfect Home with Us")} <strong>{t(``)}</strong>
+                {t("Find Your Perfect Home with Us")} <strong>{t(``.replace(/\s+/g, ' ').trim())}</strong>
               </h2>
 
               <p className="tw-text-gray tw-text-justify">{t(`Searching for a new place to call home? Let us help you find the
@@ -364,7 +364,7 @@ const Looking_for_housing = () => {
                 rest. By filling out the form below with your requirements, our
                 team will connect you with the best options tailored to your
                 needs, making your house-hunting journey as easy and stress-free
-                as possible.`)}</p>
+                as possible.`.replace(/\s+/g, ' ').trim())}</p>
             </div>
           </section>
         </section>
@@ -393,7 +393,7 @@ const Looking_for_housing = () => {
           tw-shadow-lg
           hover:tw-shadow-xl
         "
-          >{t(`Find all Available Housing`)}</Link>
+          >{t(`Find all Available Housing`.replace(/\s+/g, ' ').trim())}</Link>
         </div>
       </div>
 
@@ -454,7 +454,7 @@ const Looking_for_housing = () => {
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Provide the details & We will assist you in finding the
-                      right place in Skåne & Copenhagen.`)}</span>
+                      right place in Skåne & Copenhagen.`.replace(/\s+/g, ' ').trim())}</span>
                     <h7
                       className="tw-text-light"
                       style={{
@@ -462,7 +462,7 @@ const Looking_for_housing = () => {
                         color: "#1F2437",
                         fontWeight: "300",
                       }}
-                    >{t(`Details`)}</h7>
+                    >{t(`Details`.replace(/\s+/g, ' ').trim())}</h7>
                   </div>
 
                   <div className="col-md-6">
@@ -605,7 +605,7 @@ const Looking_for_housing = () => {
                   <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill up your family details`)}</span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill up your family details`.replace(/\s+/g, ' ').trim())}</span>
                     <h7
                       className="tw-text-light"
                       style={{
@@ -613,7 +613,7 @@ const Looking_for_housing = () => {
                         color: "#1F2437",
                         fontWeight: "300",
                       }}
-                    >{t(`Family Details`)}</h7>
+                    >{t(`Family Details`.replace(/\s+/g, ' ').trim())}</h7>
                   </div>
 
                   <div
@@ -626,7 +626,7 @@ const Looking_for_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`.replace(/\s+/g, ' ').trim())}</a>{" "}
                         Furnished?
                       </label> */}
 
@@ -654,7 +654,7 @@ const Looking_for_housing = () => {
                   <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill up your contract details`)}</span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill up your contract details`.replace(/\s+/g, ' ').trim())}</span>
                     <h7
                       className="tw-text-light"
                       style={{
@@ -662,7 +662,7 @@ const Looking_for_housing = () => {
                         color: "#1F2437",
                         fontWeight: "300",
                       }}
-                    >{t(`Contract Details`)}</h7>
+                    >{t(`Contract Details`.replace(/\s+/g, ' ').trim())}</h7>
                   </div>
 
                   <div
@@ -675,7 +675,7 @@ const Looking_for_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`.replace(/\s+/g, ' ').trim())}</a>{" "}
                         Select Contract Type?
                       </label> */}
 
@@ -700,7 +700,7 @@ const Looking_for_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`.replace(/\s+/g, ' ').trim())}</a>{" "}
                         Are you looking for deposit?
                       </label> */}
 
@@ -722,7 +722,7 @@ const Looking_for_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`.replace(/\s+/g, ' ').trim())}</a>{" "}
                         Maximum people can stay in this residence?
                       </label> */}
 
@@ -747,7 +747,7 @@ const Looking_for_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`.replace(/\s+/g, ' ').trim())}</a>{" "}
                         What is the duration of rent out?
                       </label> */}
 
@@ -772,7 +772,7 @@ const Looking_for_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`.replace(/\s+/g, ' ').trim())}</a>{" "}
                         What is the duration of rent out?
                       </label> */}
 
@@ -811,7 +811,7 @@ const Looking_for_housing = () => {
                   <div className="row g-1 tw-rounded-md   tw-py-4  tw-bg-white ">
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill up your Other Details`)}</span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill up your Other Details`.replace(/\s+/g, ' ').trim())}</span>
                     <h7
                       className="tw-text-light"
                       style={{
@@ -819,7 +819,7 @@ const Looking_for_housing = () => {
                         color: "#1F2437",
                         fontWeight: "300",
                       }}
-                    >{t(`Other Details`)}</h7>
+                    >{t(`Other Details`.replace(/\s+/g, ' ').trim())}</h7>
                   </div>
 
                   <div
@@ -832,7 +832,7 @@ const Looking_for_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`.replace(/\s+/g, ' ').trim())}</a>{" "}
                         Your Property Type
                       </label> */}
 
@@ -855,7 +855,7 @@ const Looking_for_housing = () => {
                         htmlFor="first_name"
                         className=" tw-block  tw-text-md  tw-pb-2 tw-text-gray"
                       >
-                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
+                        <a className=" tw-text-red-600 tw-font-semibold">{t(`*`.replace(/\s+/g, ' ').trim())}</a>{" "}
                         Your Property Type
                       </label> */}
 

@@ -118,7 +118,7 @@ export const servicesChildLinks = [
   },
   {
     id: 13,
-    title: 'Company Registration      ',
+    title: 'Company Registration',
     description: 'If you are planning to register your company inside Sweden, you can reach us anytime if you have some queries about it.        ',
     icons: <GiArchiveRegister color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
     Link: '/company-registration',
@@ -209,7 +209,7 @@ export const assessmentChidldLinks = [
     title: 'Business Visa',
     description: 'A business visa allows individuals to enter a foreign country for business-related activities, such as meetings, conferences, and negotiations, without engaging in long-term employment.',
     icons: <MdBusinessCenter color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
-    Link: '/assessment_register',
+    Link: '/businessvisaassessment',
   },
   {
     id: 2,
@@ -220,7 +220,7 @@ export const assessmentChidldLinks = [
   },
   {
     id: 3,
-    title: 'Long Term EU Status ',
+    title: 'Long Term EU Status',
     description: 'A Long-Term EU Residence Permit grants non-EU nationals the right to live, work, and move freely within an EU country, offering a stable residence status with certain EU-wide mobility rights.',
     icons: <GiEuropeanFlag color="#fff" className="tw-text-[28px] tw-text-white tw-mb-0" />,
     Link: '/long_term_eu_status_assessment',

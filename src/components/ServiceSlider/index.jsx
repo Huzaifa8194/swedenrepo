@@ -18,7 +18,7 @@ import './style/main.css';
 import './style/megamenu.css';
 import './style/responsive.css';
 import "./Slider.css"
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 import sr1 from "../../assets/iconscout/sr1.png"
 import sr2 from "../../assets/iconscout/sr2.png"
 import sr3 from "../../assets/iconscout/sr3.png"

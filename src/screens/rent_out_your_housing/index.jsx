@@ -15,7 +15,7 @@ import lfh1 from "../../assets/iconscout/lfh1.png";
 import lfh2 from "../../assets/iconscout/lfh2.png";
 import lfh3 from "../../assets/iconscout/lfh3.png";
 
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 
 
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";

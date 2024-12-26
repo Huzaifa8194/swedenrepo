@@ -36,7 +36,7 @@ import video1 from "../../assets/iconscout/Sweden Relocators_English_Origanal2.m
 
 import VideoPlayer from '../videoPlayer';
 
-import { useTranslation } from "../../context/TranslationContext";
+import { useTranslation } from "react-i18next";
 
 import { useEffect, useState } from "react";
 
@@ -97,7 +97,7 @@ const SkillSection = () => {
                 <div className="title-header">
                   <h5>{t("Who We are")}</h5>
                   <h2 className="title tw-mb-0">
-                    Relocation and Immigration<br />
+                    {t(` Relocation and Immigration`.replace(/\s+/g, ' ').trim())}<br />
 
                     <strong className="tw-m-0 tw-p-0">{t("Services Provider")}</strong>
                   </h2>
@@ -106,7 +106,7 @@ const SkillSection = () => {
 
 
                 <p className="mb-0 tw-text-gray tw-text-justify tw-pt-2">
-                  {t(`We are a trusted provider of relocation and immigration services, dedicated to assisting individuals and businesses in navigating complex processes with ease. As proud members of EuRA (European Relocation Association) and IIA (Immigration Industry Association), we uphold the highest standards in service delivery. Our mission is to make your relocation and immigration journey seamless and stress-free, offering complete transparency and control through our user-friendly digital portal and apps.  `)}{" "}
+                  {t(`We are a trusted provider of relocation and immigration services, dedicated to assisting individuals and businesses in navigating complex processes with ease. As proud members of EuRA (European Relocation Association) and IIA (Immigration Industry Association), we uphold the highest standards in service delivery. Our mission is to make your relocation and immigration journey seamless and stress-free, offering complete transparency and control through our user-friendly digital portal and apps.  `.replace(/\s+/g, ' ').trim())}{" "}
                 </p>
 
                 <div className="title-desc " style={{ color: 'black' }}>
@@ -117,9 +117,9 @@ const SkillSection = () => {
 
 
                 <ol className="tw-list-decimal tw-text-gray">
-                  <li className="tw-pt-4"><strong>Sign Up </strong>& Book an Appointment</li>
-                  <li className="tw-pt-4">Sign a <strong>Power of Attorney</strong> and <strong>Service Agreement</strong></li>
-                  <li className="tw-pt-4">Pay the <strong>Service Invoice</strong></li>
+                  <li className="tw-pt-4"><strong>{t(`Sign Up`)} </strong>& {t(`Book an Appointment`)}</li>
+                  <li className="tw-pt-4">Sign a <strong>{t(`Power of Attorney`)}</strong> and <strong>Service Agreement</strong></li>
+                  <li className="tw-pt-4">Pay the <strong>{t(`Service Invoice`)} </strong></li>
                   <li className="tw-pt-4">Track your application status until completion</li>
 
                 </ol>

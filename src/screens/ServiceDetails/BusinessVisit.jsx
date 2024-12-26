@@ -7,7 +7,7 @@ import { Link, useParams } from "react-router-dom";
 import banner from "../../assets/images/startup-business.jpg";
 import banner2 from "../../assets/images/man-searching-air-ticket-for-summer-travel.png";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 
 import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
@@ -20,228 +20,13 @@ import Sidebar from "../../components/ScrollableBar";
 import Header from "../../components/Header_New/Header";
 
 const BusinessVisit = () => {
-  const { t, language } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const data = [
-    {
-      id: 1,
-      title: "Asylum",
-      description:
-        "You have to be in Sweden or on the Swedish border in order to apply for asylum.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 fa fa-home"></i>
-      ),
-      Link: "/asylum",
-    },
-    {
-      id: 2,
-      title: "Family Reunification",
-      description:
-        "Family reunification is a recognized reason for the immigration of family members to a country.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-family"></i>
-      ),
-      Link: "/family-reunification",
-    },
-    {
-      id: 3,
-      title: "Personnummer Sweden",
-      description:
-        "The personal identification is a number that the Swedish Tax Agency assigns to person registered in Sweden.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-14"></i>
-      ),
 
-      Link: "/personnumer-sweden",
-    },
-    {
-      id: 4,
-      title: "CPR Number Denmark",
-      description:
-        "CPR stands for Det Centrale Personregister, which translates to the Civil Registration System ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-12"></i>
-      ),
-      Link: "/cpr-number-denmark",
-    },
-    {
-      id: 5,
-      title: "Work Permit",
-      description:
-        "Permit To Work refers to management systems used to ensure that work is done safely and efficiently.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-11"></i>
-      ),
-      Link: "/work-permit",
-    },
-    {
-      id: 5,
-      title: "Business Permit",
-      description:
-        "Swedish business culture is open and innovative, and starting a business there is relatively simple        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 fa fa-briefcase"></i>
-      ),
-
-      Link: "/business-permit",
-    },
-    {
-      id: 6,
-      title: "Business Visit",
-      description:
-        "Foreign people who want to invest in Sweden and stay temporarily for that purpose can apply for business visa.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 themifyicon ti-map-alt"></i>
-      ),
-
-      Link: "/business-visit",
-    },
-    {
-      id: 7,
-      title: "Citizenship",
-      description:
-        "When you have lived in Sweden for a specified period and meet requirements, you can apply for Swedish citizenship.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport"></i>
-      ),
-      Link: "/citizenship",
-    },
-    {
-      id: 8,
-      title: "Study in EU",
-      description:
-        "If you are thinking about studying abroad, then visit Sweden. Sweden is well known for its world-class academic opportunities.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-graduation-hat-1"></i>
-      ),
-      Link: "/study-in-eu",
-    },
-    {
-      id: 9,
-      title: "Global Visit Visas",
-      description:
-        "For visiting Sweden for a short period you will need a visit visa. Sweden follows the same visa rules as others.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-travel"></i>
-      ),
-      Link: "/global-visit-visas",
-    },
-    {
-      id: 10,
-      title: "EEA Permits",
-      description:
-        "Any EU citizen getting residence in the UK according to the EU rules, can bring their family with them.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-contract"></i>
-      ),
-      Link: "/eea-permits",
-    },
-    {
-      id: 11,
-      title: "Parents EU Permit",
-      description:
-        "Parents of a child under 18 years who is in Sweden can move to sweden if they will live with the child.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-family-1"></i>
-      ),
-      Link: "/parents-eu-permit",
-    },
-    {
-      id: 12,
-      title: "Marriage & Divorce      ",
-      description:
-        "Getting married is beautiful. But to make sure that it will be a good experience, it is important to have legal control.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-insurance"></i>
-      ),
-      Link: "/marriage-divorce",
-    },
-    {
-      id: 13,
-      title: "Company Registration      ",
-      description:
-        "If you are planning to register your company inside Sweden, you can reach us anytime if you have some queries about it.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-certificate"></i>
-      ),
-      Link: "/company-registration",
-    },
-    {
-      id: 14,
-      title: "House & Offices",
-      description:
-        "we offer you an easy and painless solution where you can get a place to live without any worries.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-certificate"></i>
-      ),
-      Link: "/house-offices",
-    },
-    {
-      id: 15,
-      title: "Appeal Cases",
-      description:
-        "Have you been denied? let’s take a look at your case so that the decision can hopefully be overturned.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-reading"></i>
-      ),
-      Link: "/appeal-cases",
-    },
-    {
-      id: 16,
-      title: "EU Citizens Relocation",
-      description:
-        "Family reunification means that a family that has been split up can apply to be allowed to live together.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-passport-3"></i>
-      ),
-      Link: "/eu-family-reunification",
-    },
-    {
-      id: 17,
-      title: "Investment",
-      description:
-        "There are various opportunities for business ventures, Look for the best opportunity, grab it and do your best.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  fa fa-sitemap"></i>
-      ),
-      Link: "/investment",
-    },
-    {
-      id: 18,
-      title: "Direct Citizenship  ",
-      description:
-        "citizenship-by-investment programs provide ultra-wealthy families with the privilege of a second or third passport.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-boarding-pass"></i>
-      ),
-      Link: "/direct-citizenship-by-investments",
-    },
-    {
-      id: 19,
-      title: "Permanent Residence",
-      description:
-        "If you lived in Sweden for more than 5 years with the EU right of residence you can get the permanent residence permit.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-policy"></i>
-      ),
-      Link: "/permanent-residence",
-    },
-    {
-      id: 20,
-      title: "Golden Visa   ",
-      description:
-        "As a member state of the EU, They offer its residents and citizens a number of reassuring benefits.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-boarding-pass-2"></i>
-      ),
-      Link: "/golden-visa-greece-portugal",
-    },
-  ];
-
-  const isleftlangue = language === 'ur';
+  const isleftlangue = i18n.language === 'ur';
   return (
     <>
       <Header />
@@ -265,12 +50,12 @@ const BusinessVisit = () => {
                   <div>
                     <span className="tw-flex tw-items-center tw-gap-2">
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>
-                     {t(` Documentation`)}
+                     {t(` Documentation`.replace(/\s+/g, ' ').trim())}
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
                         {" "}
-                        {t(`Requirements for Visa Application`)}{" "}
+                        {t(`Requirements for Visa Application`.replace(/\s+/g, ' ').trim())}{" "}
                       </strong>
                     </h2>
                     <br></br>
@@ -278,17 +63,17 @@ const BusinessVisit = () => {
                      {t(` For your visa application, certain documents must be
                       submitted to ensure a smooth process. Below is a guide
                       detailing all necessary documents, including those for
-                      both applicants and sponsoring companies:`)}
+                      both applicants and sponsoring companies:`.replace(/\s+/g, ' ').trim())}
                     </p>
                     <br></br>
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                     {t(` Personal`)}
+                     {t(` Personal`.replace(/\s+/g, ' ').trim())}
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
-                       {t(` Document Requirements`)}{" "}
+                       {t(` Document Requirements`.replace(/\s+/g, ' ').trim())}{" "}
                       </strong>
                     </h2>
                     <br></br>
@@ -296,7 +81,7 @@ const BusinessVisit = () => {
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           <strong className="tw-text-black">
-                            {t(`Bank Statement:`)}
+                            {t(`Bank Statement:`.replace(/\s+/g, ' ').trim())}
                           </strong>
                           <br /> {t(`To complete your application or prove your
                           financial stability, you may be required to submit an
@@ -306,7 +91,7 @@ const BusinessVisit = () => {
                           statements are unavailable, you can alternatively
                           provide proof of other assets, such as investment
                           portfolios, property ownership, or other financial
-                          documents that demonstrate your financial capacity.`)}
+                          documents that demonstrate your financial capacity.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </li>
 
@@ -329,7 +114,7 @@ const BusinessVisit = () => {
                             <p className="m-0 tw-text-gray">
                               <br />
                               <strong className="tw-text-black">
-                                {t(`Passport Requirements:`)}
+                                {t(`Passport Requirements:`.replace(/\s+/g, ' ').trim())}
                               </strong>
                               <br /> Your passport must:
                               <ul className="tw-pl-0">
@@ -338,7 +123,7 @@ const BusinessVisit = () => {
                                     <GoTriangleRight className=" tw-text-blue" />
                                   </div>
                                   <p className=" m-0 tw-text-gray">
-                                   {t(` Have at least two blank pages.`)}
+                                   {t(` Have at least two blank pages.`.replace(/\s+/g, ' ').trim())}
                                   </p>
                                 </li>
 
@@ -348,7 +133,7 @@ const BusinessVisit = () => {
                                   </div>
                                   <p className=" m-0 tw-text-gray">
                                     {t(`Be valid for at least three months beyond
-                                    the end of your planned trip.`)}
+                                    the end of your planned trip.`.replace(/\s+/g, ' ').trim())}
                                   </p>
                                 </li>
 
@@ -358,7 +143,7 @@ const BusinessVisit = () => {
                                   </div>
                                   <p className=" m-0 tw-text-gray">
                                     {t(`Include all previous passports from the past
-                                    seven years.`)}
+                                    seven years.`.replace(/\s+/g, ' ').trim())}
                                   </p>
                                 </li>
 
@@ -368,7 +153,7 @@ const BusinessVisit = () => {
                                   </div>
                                   <p className=" m-0 tw-text-gray">
                                     {t(`Include all previous passports from the past
-                                    seven years.`)}
+                                    seven years.`.replace(/\s+/g, ' ').trim())}
                                   </p>
                                 </li>
                               </ul>
@@ -381,45 +166,45 @@ const BusinessVisit = () => {
                         <p className="m-0 tw-text-gray">
                           <br />{" "}
                           <strong className="tw-text-black">
-                            {t(`Invitation Letter:`)}
+                            {t(`Invitation Letter:`.replace(/\s+/g, ' ').trim())}
                           </strong>
                           <br />{t(` A formal invitation from the Swedish company or
                           individual on official letterhead. The letter should
-                          include:`)}
+                          include:`.replace(/\s+/g, ' ').trim())}
                           <ul className="tw-pl-0">
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
                              {t(` Full address and contact details of the inviting
-                              company.`)}
+                              company.`.replace(/\s+/g, ' ').trim())}
                             </li>
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
                              {t(` Name and position of the contact person or
-                              signatory.`)}
+                              signatory.`.replace(/\s+/g, ' ').trim())}
                             </li>
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                             {t(` Purpose and expected duration of your visit.`)}
+                             {t(` Purpose and expected duration of your visit.`.replace(/\s+/g, ' ').trim())}
                             </li>
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
                               {t(`Details of who will bear travel and living
-                              expenses.`)}
+                              expenses.`.replace(/\s+/g, ' ').trim())}
                             </li>
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
                               {t(`A statement guaranteeing that the applicant will
-                              depart Sweden before visa expiration.`)}
+                              depart Sweden before visa expiration.`.replace(/\s+/g, ' ').trim())}
                             </li>
                           </ul>
                         </p>
@@ -429,27 +214,27 @@ const BusinessVisit = () => {
                         <p className="m-0 tw-text-gray">
                           <br />
                           <strong className="tw-text-black">
-                           {t(` Employment Certificate:`)}
+                           {t(` Employment Certificate:`.replace(/\s+/g, ' ').trim())}
                           </strong>
-                          <br /> {t(`Proof of employment, detailing:`)}
+                          <br /> {t(`Proof of employment, detailing:`.replace(/\s+/g, ' ').trim())}
                           <ul className="tw-pl-0">
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              {t(`Your employment start date.`)}
+                              {t(`Your employment start date.`.replace(/\s+/g, ' ').trim())}
                             </li>
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                             {t(` Current position, salary, and purpose of travel.`)}
+                             {t(` Current position, salary, and purpose of travel.`.replace(/\s+/g, ' ').trim())}
                             </li>
                             <li className=" tw-flex  tw-gap-3">
                               <div>
                                 <GoTriangleRight className=" tw-text-blue" />
                               </div>
-                              {t(`Approval of leave for the duration of the visit.`)}
+                              {t(`Approval of leave for the duration of the visit.`.replace(/\s+/g, ' ').trim())}
                             </li>
                           </ul>
                         </p>
@@ -459,13 +244,13 @@ const BusinessVisit = () => {
                         <p className="m-0 tw-text-gray">
                           <br />
                           <strong className="tw-text-black">
-                            {t(`Medical Insurance:`)}
+                            {t(`Medical Insurance:`.replace(/\s+/g, ' ').trim())}
                           </strong>
                           <br /> {t(`Travel insurance covering the entire Schengen
                           area, valid for your entire stay. The policy should
                           cover at least EUR 30,000 to cover expenses for
                           emergency medical treatment, hospital care,
-                          repatriation, or death.`)}
+                          repatriation, or death.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </li>
 
@@ -473,11 +258,11 @@ const BusinessVisit = () => {
                         <p className="m-0 tw-text-gray">
                           <br />
                           <strong className="tw-text-black">
-                            {t(`Travel Ticket Reservation:`)}
+                            {t(`Travel Ticket Reservation:`.replace(/\s+/g, ' ').trim())}
                           </strong>
                           <br /> {t(`Provide round-trip flight reservations. Final
                           tickets are not required but initial booking
-                          confirmation is mandatory.`)}
+                          confirmation is mandatory.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </li>
 
@@ -485,10 +270,10 @@ const BusinessVisit = () => {
                         <p className="m-0 tw-text-gray">
                           <br />{" "}
                           <strong className="tw-text-black">
-                            {t(`Accommodation Proof:`)}
+                            {t(`Accommodation Proof:`.replace(/\s+/g, ' ').trim())}
                           </strong>
                           <br /> {t(`A confirmed hotel booking or another proof of
-                          accommodation (primary reservation required).`)}
+                          accommodation (primary reservation required).`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </li>
                     </ul>
@@ -496,11 +281,11 @@ const BusinessVisit = () => {
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      {t(`Additional Requirements`)}
+                      {t(`Additional Requirements`.replace(/\s+/g, ' ').trim())}
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
-                        {t(`for Employers or Sponsoring Companies`)}{" "}
+                        {t(`for Employers or Sponsoring Companies`.replace(/\s+/g, ' ').trim())}{" "}
                       </strong>
                     </h2>
                     <br></br>
@@ -508,11 +293,11 @@ const BusinessVisit = () => {
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           <strong className="tw-text-black">
-                            {t(`Commercial Registration and Tax Card:`)}
+                            {t(`Commercial Registration and Tax Card:`.replace(/\s+/g, ' ').trim())}
                           </strong>{" "}
                           {t(`Original and copy of the company’s commercial registry
                           and tax card, translated into English or Swedish, to
-                          confirm the legitimacy of the business.`)}
+                          confirm the legitimacy of the business.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </li>
                     </ul>
@@ -520,12 +305,12 @@ const BusinessVisit = () => {
                     <span className=" tw-flex tw-text-left tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      {t(`Additional Documents`)}
+                      {t(`Additional Documents`.replace(/\s+/g, ' ').trim())}
                     </span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
                         {" "}
-                        {t(`that May Be Required`)}
+                        {t(`that May Be Required`.replace(/\s+/g, ' ').trim())}
                       </strong>
                     </h2>
                     <br></br>
@@ -533,7 +318,7 @@ const BusinessVisit = () => {
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           <strong className="tw-text-black">
-                           {t(` Movement Certificate:`)}
+                           {t(` Movement Certificate:`.replace(/\s+/g, ' ').trim())}
                           </strong>
                           <br /> {t(`A movement certificate is required in specific
                           circumstances, such as when you are a first-time
@@ -544,7 +329,7 @@ const BusinessVisit = () => {
                           travel history and verify your eligibility for entry
                           or a visa. It serves as proof of your movement between
                           countries, ensuring that you meet the necessary
-                          requirements for visa processing.`)}
+                          requirements for visa processing.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </li>
 
@@ -567,7 +352,7 @@ const BusinessVisit = () => {
                             <p className="m-0 tw-text-gray">
                               <br />
                               <strong className="tw-text-black">
-                                {t(`Other Embassy-Specified Documents:`)}
+                                {t(`Other Embassy-Specified Documents:`.replace(/\s+/g, ' ').trim())}
                               </strong>{" "}
                               <br />
                               {t(`Depending on your individual situation, the
@@ -582,7 +367,7 @@ const BusinessVisit = () => {
                               important to carefully review the embassy's
                               guidelines and provide any additional
                               documentation as requested to ensure a smooth
-                              application process.`)}
+                              application process.`.replace(/\s+/g, ' ').trim())}
                             </p>
                           </li>
                         </div>
@@ -595,12 +380,12 @@ const BusinessVisit = () => {
                     <span className="tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      {t(`Business Visa for Foreign Investors`)}
+                      {t(`Business Visa for Foreign Investors`.replace(/\s+/g, ' ').trim())}
                     </span>
 
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
-                       {t(` A Swedish Business Visa for Investors`)}
+                       {t(` A Swedish Business Visa for Investors`.replace(/\s+/g, ' ').trim())}
                       </strong>
                     </h2>
 
@@ -618,7 +403,7 @@ const BusinessVisit = () => {
                         residency. While the business visa does not grant
                         permission to work in Sweden, it provides flexibility
                         for individuals involved in the management, development,
-                        or oversight of a Swedish business.`)}
+                        or oversight of a Swedish business.`.replace(/\s+/g, ' ').trim())}
                       </p>
 
                       <div className="col-md-6">
@@ -649,7 +434,7 @@ const BusinessVisit = () => {
                           while maintaining compliance with visa regulations.
                           This makes it a practical solution for those managing
                           investments or business interests in Sweden on a
-                          regular basis.`)}
+                          regular basis.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </div>
                     </div>
@@ -659,11 +444,11 @@ const BusinessVisit = () => {
                       months, this visa is sufficient without the need for a
                       residence permit. However, if you plan to stay longer or
                       relocate for an extended period, a residence permit may be
-                      required.`)}
+                      required.`.replace(/\s+/g, ' ').trim())}
                     </p>
 
                     <strong className="m-0 tw-text-gray">
-                     {t(` How We Assist You`)}
+                     {t(` How We Assist You`.replace(/\s+/g, ' ').trim())}
                     </strong>
                     <br />
 
@@ -673,7 +458,7 @@ const BusinessVisit = () => {
                         <p className="m-0 tw-text-gray">
                          {t(` Document Preparation and Submission: Assistance
                           in gathering, verifying, and submitting all required
-                          documents to ensure a smooth process.`)}
+                          documents to ensure a smooth process.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </li>
 
@@ -682,7 +467,7 @@ const BusinessVisit = () => {
                         <p className="m-0 tw-text-gray">
                           {t(`Guidance on Financial Requirements: Advising on
                           the proof of funds and financial documentation needed
-                          to meet Swedish visa requirements.`)}
+                          to meet Swedish visa requirements.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </li>
 
@@ -691,7 +476,7 @@ const BusinessVisit = () => {
                         <p className="m-0 tw-text-gray">
                           {t(`Appointment Scheduling: Coordinating necessary
                           appointments with the Swedish embassy or consulate for
-                          document submission and interviews.`)}
+                          document submission and interviews.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </li>
 
@@ -700,7 +485,7 @@ const BusinessVisit = () => {
                         <p className="m-0 tw-text-gray">
                           {t(`Ongoing Support and Updates: Regular updates on
                           your visa status and timely responses to any
-                          additional embassy requests.`)}
+                          additional embassy requests.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </li>
                     </ul>
@@ -710,12 +495,12 @@ const BusinessVisit = () => {
                       business objectives while we take care of the paperwork.
                       Contact us today to learn more about how we can facilitate
                       your short-term business visa to Sweden and support your
-                      professional success.`)}
+                      professional success.`.replace(/\s+/g, ' ').trim())}
                     </p>
                     <Link to="/register" className="tw-text-center tw-pt-4">
                     <h5 className="tw-text-center tw-text-black tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
-                          {t(`Sign Up Today!`)}{" "}
+                          {t(`Sign Up Today!`.replace(/\s+/g, ' ').trim())}{" "}
                         </strong>
                         
                       </h5>
@@ -728,7 +513,7 @@ const BusinessVisit = () => {
                       help. Our comprehensive services cover everything from
                       work and study opportunities to family reunifications,
                       business support, and much more. Let us guide you every
-                      step of the way—start your seamless experience now!`)}
+                      step of the way—start your seamless experience now!`.replace(/\s+/g, ' ').trim())}
                     </p>
                   </div>
                 </div>

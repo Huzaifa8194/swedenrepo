@@ -13,7 +13,7 @@ import "./style/shortcodes.css";
 import "./style/main.css";
 import "./style/megamenu.css";
 import "./style/responsive.css";
-import { useTranslation } from "../../context/TranslationContext";
+import { useTranslation } from "react-i18next";
 
 const ServiceCat = () => {
   const { t } = useTranslation();
@@ -78,7 +78,7 @@ const ServiceCat = () => {
                         <p>
                           {t(` You have to be in Sweden or on the Swedish border in
                           order to apply for asylum and we will process it for
-                          you.`)}
+                          you.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </div>
                       <div className="cmt-di_links">
@@ -108,7 +108,7 @@ const ServiceCat = () => {
                       <div className="featured-desc">
                         <p>
                           {t(` People who want to invest in or about to start
-                          businesses abroad.`)}
+                          businesses abroad.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </div>
                       <div className="cmt-di_links">
@@ -138,7 +138,7 @@ const ServiceCat = () => {
                       <div className="featured-desc">
                         <p>
                           {t(`To work refers to manage systems used to ensure that
-                          work is done nicely.`)}
+                          work is done nicely.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </div>
                       <div className="cmt-di_links">
@@ -168,7 +168,7 @@ const ServiceCat = () => {
                       <div className="featured-desc">
                         <p>
                         {t(`  People who have lived in sweden for a period of time
-                          can apply for citizenship.`)}
+                          can apply for citizenship.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </div>
                       <div className="cmt-di_links">
@@ -198,7 +198,7 @@ const ServiceCat = () => {
                       <div className="featured-desc">
                         <p>
                          {t(` For the perception & better career opportunities for
-                          the students.`)}
+                          the students.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </div>
                       <div className="cmt-di_links">
@@ -223,11 +223,11 @@ const ServiceCat = () => {
             <div className="text-center mt-35 mb_20 res-991-mt-20">
               <h6>
                 <span className="font-weight-normal">
-                 {t(` Don’t Hesitate, Contact us for Better Help and Services.`)}
+                 {t(` Don’t Hesitate, Contact us for Better Help and Services.`.replace(/\s+/g, ' ').trim())}
                 </span>
                 <u>
                   <a className="cmt-textcolor-skincolor" href="#">
-                    {t(`Explore all visa Categories.`)}
+                    {t(`Explore all visa Categories.`.replace(/\s+/g, ' ').trim())}
                   </a>
                 </u>
               </h6>

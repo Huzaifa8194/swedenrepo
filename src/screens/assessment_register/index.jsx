@@ -29,221 +29,7 @@ const Assessment_register = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const data = [
-    {
-      id: 1,
-      title: "Asylum",
-      description:
-        "You have to be in Sweden or on the Swedish border in order to apply for asylum.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 fa fa-home"></i>
-      ),
-      Link: "/asylum",
-    },
-    {
-      id: 2,
-      title: "Family Reunification",
-      description:
-        "Family reunification is a recognized reason for the immigration of family members to a country.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-family"></i>
-      ),
-      Link: "/family-reunification",
-    },
-    {
-      id: 3,
-      title: "Personnummer Sweden",
-      description:
-        "The personal identification is a number that the Swedish Tax Agency assigns to person registered in Sweden.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-14"></i>
-      ),
 
-      Link: "/personnumer-sweden",
-    },
-    {
-      id: 4,
-      title: "CPR Number Denmark",
-      description:
-        "CPR stands for Det Centrale Personregister, which translates to the Civil Registration System ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-12"></i>
-      ),
-      Link: "/cpr-number-denmark",
-    },
-    {
-      id: 5,
-      title: "Work Permit",
-      description:
-        "Permit To Work refers to management systems used to ensure that work is done safely and efficiently.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-11"></i>
-      ),
-      Link: "/work-permit",
-    },
-    {
-      id: 5,
-      title: "Business Permit",
-      description:
-        "Swedish business culture is open and innovative, and starting a business there is relatively simple        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 fa fa-briefcase"></i>
-      ),
-
-      Link: "/business-permit",
-    },
-    {
-      id: 6,
-      title: "Business Visit",
-      description:
-        "Foreign people who want to invest in Sweden and stay temporarily for that purpose can apply for business visa.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 themifyicon ti-map-alt"></i>
-      ),
-
-      Link: "/business-visit",
-    },
-    {
-      id: 7,
-      title: "Citizenship",
-      description:
-        "When you have lived in Sweden for a specified period and meet requirements, you can apply for Swedish citizenship.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport"></i>
-      ),
-      Link: "/citizenship",
-    },
-    {
-      id: 8,
-      title: "Study in EU",
-      description:
-        "If you are thinking about studying abroad, then visit Sweden. Sweden is well known for its world-class academic opportunities.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-graduation-hat-1"></i>
-      ),
-      Link: "/study-in-eu",
-    },
-    {
-      id: 9,
-      title: "Global Visit Visas",
-      description:
-        "For visiting Sweden for a short period you will need a visit visa. Sweden follows the same visa rules as others.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-travel"></i>
-      ),
-      Link: "/global-visit-visas",
-    },
-    {
-      id: 10,
-      title: "EEA Permits",
-      description:
-        "Any EU citizen getting residence in the UK according to the EU rules, can bring their family with them.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-contract"></i>
-      ),
-      Link: "/eea-permits",
-    },
-    {
-      id: 11,
-      title: "Parents EU Permit",
-      description:
-        "Parents of a child under 18 years who is in Sweden can move to sweden if they will live with the child.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-family-1"></i>
-      ),
-      Link: "/parents-eu-permit",
-    },
-    {
-      id: 12,
-      title: "Marriage & Divorce      ",
-      description:
-        "Getting married is beautiful. But to make sure that it will be a good experience, it is important to have legal control.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-insurance"></i>
-      ),
-      Link: "/marriage-divorce",
-    },
-    {
-      id: 13,
-      title: "Company Registration      ",
-      description:
-        "If you are planning to register your company inside Sweden, you can reach us anytime if you have some queries about it.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-certificate"></i>
-      ),
-      Link: "/company-registration",
-    },
-    {
-      id: 14,
-      title: "House & Offices",
-      description:
-        "we offer you an easy and painless solution where you can get a place to live without any worries.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-certificate"></i>
-      ),
-      Link: "/house-offices",
-    },
-    {
-      id: 15,
-      title: "Appeal Cases",
-      description:
-        "Have you been denied? let’s take a look at your case so that the decision can hopefully be overturned.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-reading"></i>
-      ),
-      Link: "/appeal-cases",
-    },
-    {
-      id: 16,
-      title: "EU Citizens Relocation",
-      description:
-        "Family reunification means that a family that has been split up can apply to be allowed to live together.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-passport-3"></i>
-      ),
-      Link: "/eu-family-reunification",
-    },
-    {
-      id: 17,
-      title: "Investment",
-      description:
-        "There are various opportunities for business ventures, Look for the best opportunity, grab it and do your best.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  fa fa-sitemap"></i>
-      ),
-      Link: "/investment",
-    },
-    {
-      id: 18,
-      title: "Direct Citizenship by Investments      ",
-      description:
-        "citizenship-by-investment programs provide ultra-wealthy families with the privilege of a second or third passport.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-boarding-pass"></i>
-      ),
-      Link: "/direct-citizenship-by-investments",
-    },
-    {
-      id: 19,
-      title: "Permanent Residence",
-      description:
-        "If you lived in Sweden for more than 5 years with the EU right of residence you can get the permanent residence permit.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-policy"></i>
-      ),
-      Link: "/permanent-residence",
-    },
-    {
-      id: 20,
-      title: "Golden Visa (Greece - Portugal)      ",
-      description:
-        "As a member state of the EU, They offer its residents and citizens a number of reassuring benefits.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-boarding-pass-2"></i>
-      ),
-      Link: "/golden-visa-greece-portugal",
-    },
-  ];
 
   const [location, setLocation] = useState("");
   const [plan, setPlans] = useState("");
@@ -270,6 +56,7 @@ const Assessment_register = () => {
 
   const [schengen, setSchenger] = useState("");
 
+  
   const [schengenissuecountry, setSchengerIssueCountry] = useState("");
 
   const [schengentype, setSchengerType] = useState("");
@@ -288,6 +75,8 @@ const Assessment_register = () => {
 
 
   const [languageCertificate, setlanguageCertificate] = useState("");
+
+  const [languageCertificateEnglish, setlanguageCertificateEnglish] = useState("");
   const [degreeCompleted, setdegreeCompleted] = useState("");
 
   const [partnerDegreeCompleted, setpartnerDegreeCompleted] = useState("");
@@ -301,15 +90,35 @@ const Assessment_register = () => {
   const [businessOwnedSweden, setbusinessOwnedSweden] = useState("");
 
 
-    const [resultdata, setResultData ] = useState(null);
+  const [resultdata, setResultData] = useState(null);
 
 
+  const [partnervalidpersonnummber, setpartnervalidpersonnummber] = useState("");
+
+
+  const [willingtoinvest, setwillingtoinvest] = useState("");
+  const [seperateAssets, setseperateAssets] = useState("");
+
+  const [partnerOtherresidence, setpartnerOtherresidence] = useState("");
+
+
+  const [partner30credithours, setpartner30credithours] = useState("");
+
+  // State
+const [otherresidencepermit, setotherresidencepermit] = useState("");
+
+  const [self30credithours, setself30credithours] = useState("");
+
+
+  const [validpartnercordnumber, setvalidpartnercordnumber] = useState("");
+
+  const [validselfcordnumber, setvalidselfcordnumber] = useState("");
   const handleSubmit = async (event) => {
     event.preventDefault();
-  
+
     // API Endpoint
     const url = "https://nordicrelocators.com/api/assessment/businessVisa";
-  
+
     // Prepare the form data
     const formData = new FormData();
     formData.append("api_token", "0c05a7c6cb627216702cc552b539d548");
@@ -341,13 +150,13 @@ const Assessment_register = () => {
     formData.append("rejected_country", past2yearscountry);
     formData.append("reason_of_rejection", past2yearsrejectionreason);
     formData.append("english_lang_certificate", languageCertificate);
-  
+
     // Authorization header
     const headers = {
       Accept: "application/json",
       Authorization: "Bearer 29|EzEXhYfq1rxGtQZVwlfZqPp5UVQ485gth4MgO9dcc0b9d492",
     };
-  
+
     try {
       // Make the API request
       const response = await fetch(url, {
@@ -355,16 +164,16 @@ const Assessment_register = () => {
         headers,
         body: formData,
       });
-  
+
       // Handle the response
       if (response.ok) {
         const data = await response.json();
         setResultData(data.data);
 
-      
+
         console.log("State: " + resultdata);
-  
-        openModal();  
+
+        openModal();
       } else {
         const errorData = await response.json();
         console.error("Error:", errorData);
@@ -375,16 +184,53 @@ const Assessment_register = () => {
       alert("An error occurred. Please try again.");
     }
   };
-  
+
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
 
     switch (name) {
 
-case "educationLevel":
-  seteducationLevel(value);
-  break;
+
+      case "languageCertificateEnglish":
+        setlanguageCertificateEnglish(value);
+        break;
+      case "validpartnercordnumber":
+    setvalidpartnercordnumber(value);
+    break;   
+
+    case "validselfcordnumber":
+    setvalidselfcordnumber(value);
+    break;
+
+      case "otherresidencepermit":
+        setotherresidencepermit(value);
+        break;
+      case "self30credithours":
+    setself30credithours(value);
+    break;
+
+      case "partnerOtherresidence":
+        setpartnerOtherresidence(value);
+        break;
+      case "partner30credithours":
+        setpartner30credithours(value);
+        break;
+      case "educationLevel":
+        seteducationLevel(value);
+        break;
+
+      case "willingtoinvest":
+        setwillingtoinvest(value);
+        break;
+
+      case "seperateAssets":
+        setseperateAssets(value);
+        break;
+
+      case "partnervalidpersonnummber":
+        setpartnervalidpersonnummber(value);
+        break;
 
 
       case "businessOwnedSweden":
@@ -573,14 +419,14 @@ case "educationLevel":
                   <div>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Business visa assessment`)}</span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Business visa assessment`.replace(/\s+/g, ' ').trim())}</span>
 
                     <h2 className="tw-text-left">
                       <strong>{t(`Find Out Your Eligibility for a Business or
-                        Self-Employed Permit in Sweden`)}</strong>
+                        Self-Employed Permit in Sweden`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
-                    <strong className="tw-text-gray">{t(`Who Should Fill Out the Assessment Form?`)}</strong>
+                    <strong className="tw-text-gray">{t(`Who Should Fill Out the Assessment Form?`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
@@ -588,21 +434,21 @@ case "educationLevel":
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Individuals currently in Sweden or applying from
-                          outside the country`)}</p>
+                          outside the country`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Those who are studying in Sweden and looking to switch
-                          their residence permit track.`)}</p>
+                          their residence permit track.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Anyone considering applying for a business or
-                          self-employed permit in Sweden`)}</p>
+                          self-employed permit in Sweden`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
@@ -610,16 +456,16 @@ case "educationLevel":
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Why`)}</span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Why`.replace(/\s+/g, ' ').trim())}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>{t(`Complete the Assessment Form?`)}</strong>
+                      <strong>{t(`Complete the Assessment Form?`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
 
 
                     <br />
                     <p className="tw-text-gray">{t(`Filling out the assessment form allows us to gather
-                      essential details about:`)}</p>
+                      essential details about:`.replace(/\s+/g, ' ').trim())}</p>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
@@ -627,21 +473,21 @@ case "educationLevel":
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Your Business Experience: Information about your
-                          skills and expertise in the relevant field.`)}</p>
+                          skills and expertise in the relevant field.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Financial Situation: Details of your financial
-                          capacity to support your business.`)}</p>
+                          capacity to support your business.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Business Plan: Insights into your proposed business
-                          idea, its viability, and potential for success.`)}</p>
+                          idea, its viability, and potential for success.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
@@ -649,10 +495,10 @@ case "educationLevel":
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`)}</span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`.replace(/\s+/g, ' ').trim())}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>{t(`We Use the Information`)}</strong>
+                      <strong>{t(`We Use the Information`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
 
                     <br />
@@ -663,33 +509,33 @@ case "educationLevel":
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`We will evaluate your qualifications based on the
-                          provided details.`)}</p>
+                          provided details.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Our team will guide you through the next steps of the
-                          application process.`)}</p>
+                          application process.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`We'll ensure you meet all the necessary requirements
-                          for a successful permit application.`)}</p>
+                          for a successful permit application.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
-                    <h4>{t(`Get Started`)}</h4>
+                    <h4>{t(`Get Started`.replace(/\s+/g, ' ').trim())}</h4>
                     <p className=" tw-text-gray">{t(`Complete the assessment form to take the first step toward
-                      your business journey in Sweden!`)}</p>
+                      your business journey in Sweden!`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
 
                   {/* user info */}
                   <div>
                     {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">{t(`Personal Details`)}</h5>
+                  <h5 className=" tw-text-black  ">{t(`Personal Details`.replace(/\s+/g, ' ').trim())}</h5>
 
                   <h6 className=" tw-text-black ">
                     {" "}
@@ -697,11 +543,11 @@ case "educationLevel":
                   </h6>
                 </div> */}
 
-{resultdata && (     <Assessment_modal
+                    {resultdata && (<Assessment_modal
                       isModalOpen={isModalOpen}
                       setIsModalOpen={setIsModalOpen}
-                      data = {resultdata}
-                    /> )}
+                      data={resultdata}
+                    />)}
 
                     {/* <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
@@ -746,10 +592,10 @@ case "educationLevel":
 
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`.replace(/\s+/g, ' ').trim())}</span>
 
                       <h2 className="tw-text-left">
-                        <strong>{t(`Educational & Business Background`)}</strong>
+                        <strong>{t(`Educational & Business Background`.replace(/\s+/g, ' ').trim())}</strong>
                       </h2>
 
 
@@ -763,7 +609,7 @@ case "educationLevel":
                             label="Choose option"
                             name="location"
                             options={[
-                             
+
                               { value: "sweden", label: "I am in Sweden" },
                               { value: "outside", label: "I am outside of Sweden" },
                             ]}
@@ -809,7 +655,7 @@ case "educationLevel":
                               </div>
                             )}
 
-                            {personalStatus === "employed" && (
+                            {personalStatus === "other" && (
                               <>
                                 <div className="col-md-12">
                                   <Select
@@ -826,7 +672,151 @@ case "educationLevel":
 
                                 </div>
 
+
+                                <div className="col-md-12">
+                                  <Select
+                                    label="Do you have separate assets other than the investment to support yourself with the application?"
+                                    name="separateAssets"
+                                    options={[
+                                      { value: "yes", label: "Yes" },
+                                      { value: "no", label: "No" },
+                                    ]}
+                                    value={separateAssets}
+                                    onChange={handleInputChange}
+                                    className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg"
+                                  />
+
+                                </div>
+
                                 <div className="col-md-6">
+                                  <Select
+                                    label="Do you have valid Personnummer?"
+                                    name="personnummer"
+                                    options={[
+                                      { value: "yes", label: "Yes" },
+                                      { value: "no", label: "No" },
+                                    ]}
+                                    value={personnummer}
+                                    onChange={handleInputChange}
+                                    className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg "
+                                  />
+
+                                </div>
+
+                                {personnummer === "no" && (
+                                  <div className="col-md-6">
+                                    <Select
+                                      label="Do you have a valid Coordination number?"
+                                      name="coordinationNumber"
+                                      options={[
+                                        { value: "yes", label: "Yes" },
+                                        { value: "no", label: "No" },
+                                      ]}
+                                      value={coordinationNumber}
+                                      onChange={handleInputChange}
+                                      className="tw-outline-none tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray-dark tw-w-full tw-border tw-rounded-lg "
+                                    />
+
+                                  </div>
+                                )}
+
+                                <div className="col-md-6">
+                                  <Select
+                                    label="How much are you planning to invest?"
+                                    name="investmentAmount"
+                                    options={[
+                                      { value: "less_than_50k", label: "Less than 50,000 SEK" },
+                                      { value: "50k_100k", label: "50,000 - 100,000 SEK" },
+                                      { value: "more_than_100k", label: "More than 100,000 SEK" },
+                                    ]}
+                                    value={investmentAmount}
+                                    onChange={handleInputChange}
+                                    className="tw-outline-none tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray-dark tw-w-full tw-border tw-rounded-lg "
+                                  />
+
+                                </div>
+
+                                <div className="col-md-12">
+                                  <Select
+                                    label="Do you have separate assets other than the investment to support yourself with the application?"
+                                    name="separateAssets"
+                                    options={[
+                                      { value: "yes", label: "Yes" },
+                                      { value: "no", label: "No" },
+                                    ]}
+                                    value={separateAssets}
+                                    onChange={handleInputChange}
+                                    className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg "
+                                  />
+
+                                </div>
+                              </>
+                            )}
+
+                            {maritalStatus === "single" && (
+                              <>
+                                <div className="col-md-6">
+                                  <div className="tw-relative tw-mb-5">
+                                    <Select
+                                      label="Did you complete your degree in Sweden?"
+                                      name="degreeCompleted"
+                                      options={[
+                                        { value: "yes", label: "Yes" },
+                                        { value: "no", label: "No" },
+                                      ]}
+                                      value={degreeCompleted}
+                                      onChange={handleInputChange}
+                                      className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                    />
+
+                                  </div>
+                                </div>
+
+                                {
+                                  degreeCompleted === "no" && (
+                                    <>
+                                      <div className="col-md-6">
+                                      <Select
+                                        label="Did you complete 30 credits hours?"
+                                        name="self30credithours"
+                                        options={[
+                                          { value: "yes", label: "Yes" },
+                                          { value: "no", label: "No" },
+                                        ]}
+                                        value={self30credithours}
+                                        onChange={handleInputChange}
+                                        className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg "
+
+                                      />
+                                    </div>
+                                    </>
+                                  )
+                                }
+
+{
+                                  self30credithours === "no" && (
+
+                                    <>
+                                      <div className="col-md-6">
+                                      <Select
+                                        label="Do you have any other residence permit in sweden?"
+                                        name="otherresidencepermit"
+                                        options={[
+                                          { value: "yes", label: "Yes" },
+                                          { value: "no", label: "No" },
+                                        ]}
+                                        value={otherresidencepermit}
+                                        onChange={handleInputChange}
+                                        className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg "
+
+                                      />
+                                    </div>
+                                    
+                                    </>
+                                  )
+                                }
+
+<div className="col-md-6">
                                   <Select
                                     label="Do you have valid Personnummer?"
                                     name="personnummer"
@@ -858,58 +848,27 @@ case "educationLevel":
                                   </div>
                                 )}
 
-                                <div className="col-md-6">
+
+<div className="col-md-6">
                                   <Select
                                     label="How much are you planning to invest?"
                                     name="investmentAmount"
                                     options={[
-                                      { value: "less_than_50k", label: "Less than 50,000 SEK" },
-                                      { value: "50k_100k", label: "50,000 - 100,000 SEK" },
-                                      { value: "more_than_100k", label: "More than 100,000 SEK" },
+                                      { value: "200000 SEK - 300000 SEK", label: "200000 SEK - 300000 SEK" },
+                                      { value: "400000 SEK - 500000 SEK", label: "400000 SEK - 500000 SEK" },
+                                      { value: "500000 SEK - 600000 SEK", label: "500000 SEK - 600000 SEK" },
+                                      { value: "6000000 SEK - 7000000 SEK", label: "6000000 SEK - 7000000 SEK" },
+                                      { value: "7000000 SEK - 8000000 SEK", label: "7000000 SEK - 8000000 SEK" },
+                                      { value: "8000000 SEK - 9000000 SEK", label: "8000000 SEK - 9000000 SEK" },
+                                      { value: "9000000 SEK - 1 Million SEK", label: "9000000 SEK - 1 Million SEK" },
+                                      { value: "More than 1 Million SEK", label: "More than 1 Million SEK" },
                                     ]}
                                     value={investmentAmount}
                                     onChange={handleInputChange}
-                                    className="tw-outline-none tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray-dark tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                    className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg "
+
                                   />
-
                                 </div>
-
-                                <div className="col-md-12">
-                                  <Select
-                                    label="Do you have separate assets other than the investment to support yourself with the application?"
-                                    name="separateAssets"
-                                    options={[
-                                      { value: "yes", label: "Yes" },
-                                      { value: "no", label: "No" },
-                                    ]}
-                                    value={separateAssets}
-                                    onChange={handleInputChange}
-                                    className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-                                  />
-
-                                </div>
-                              </>
-                            )}
-
-                            {maritalStatus === "single" && (
-                              <>
-                                <div className="col-md-6">
-                                  <div className="tw-relative tw-mb-5">
-                                    <Select
-                                      label="Did you complete your degree in Sweden?"
-                                      name="degreeCompleted"
-                                      options={[
-                                        { value: "yes", label: "Yes" },
-                                        { value: "no", label: "No" },
-                                      ]}
-                                      value={degreeCompleted}
-                                      onChange={handleInputChange}
-                                      className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-                                    />
-
-                                  </div>
-                                </div>
-
                                 <div className="col-md-12">
                                   <Select
                                     label="Do you have separate assets other than the investment to support yourself with the application?"
@@ -947,21 +906,147 @@ case "educationLevel":
                             )}
 
                             {depents === "dependent" ? (
-                              <div className="col-md-6">
-                                <Select
-                                  label="Did your partner complete a degree in Sweden?"
-                                  name="partnerDegreeCompleted"
-                                  options={[
-                                    { value: "yes", label: "Yes" },
-                                    { value: "no", label: "No" },
-                                  ]}
-                                  value={partnerDegreeCompleted}
-                                  onChange={handleInputChange}
-                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
-                                />
+                              <>
+                                <div className="col-md-6">
+                                  <Select
+                                    label="Did your partner complete a degree in Sweden?"
+                                    name="partnerDegreeCompleted"
+                                    options={[
+                                      { value: "yes", label: "Yes" },
+                                      { value: "no", label: "No" },
+                                    ]}
+                                    value={partnerDegreeCompleted}
+                                    onChange={handleInputChange}
+                                    className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg "
 
-                              </div>
+                                  />
+                                </div>
+
+                                {
+                                  partnerDegreeCompleted === "no" && (
+                                    <>
+                                      <div className="col-md-6">
+                                        <Select
+                                          label="Did your partner completed 30 credits hours?"
+                                          name="partner30credithours"
+                                          options={[
+                                            { value: "yes", label: "Yes" },
+                                            { value: "no", label: "No" },
+                                          ]}
+                                          value={partner30credithours}
+                                          onChange={handleInputChange}
+                                          className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg "
+
+                                        />
+                                      </div>
+                                    </>
+
+                                  )
+                                }
+
+                                {
+                                  partner30credithours === "no" && (
+                                    <>
+                                      <div className="col-md-6">
+                                        <Select
+                                          label="Did your partner have any other residence permit in sweden?"
+                                          name="partnerOtherresidence"
+                                          options={[
+                                            { value: "yes", label: "Yes" },
+                                            { value: "no", label: "No" },
+                                          ]}
+                                          value={partnerOtherresidence}
+                                          onChange={handleInputChange}
+                                          className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg "
+
+                                        />
+                                      </div>
+
+                                    </>
+                                  )
+
+
+                                }
+
+
+                                <div className="col-md-6">
+                                  <Select
+                                    label="Did you or your partner have valid Personnummer?"
+                                    name="partnervalidpersonnummber"
+                                    options={[
+                                      { value: "yes", label: "Yes" },
+                                      { value: "no", label: "No" },
+                                    ]}
+                                    value={partnervalidpersonnummber}
+                                    onChange={handleInputChange}
+                                    className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg "
+
+                                  />
+                                </div>
+
+                                {
+                                  partnervalidpersonnummber === "no" && (
+                                    <>
+                                     <div className="col-md-6">
+                                  <Select
+                                    label="Did you or your partner have valid Coordination no.?"
+                                    name="validpartnercordnumber"
+                                    options={[
+                                      { value: "yes", label: "Yes" },
+                                      { value: "no", label: "No" },
+                                    ]}
+                                    value={validpartnercordnumber}
+                                    onChange={handleInputChange}
+                                    className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg "
+
+                                  />
+                                </div>
+                                    </>
+                                  )
+                                }
+
+                                <div className="col-md-6">
+                                  <Select
+                                    label="How much you or your partner will planning to invest?"
+                                    name="willingtoinvest"
+                                    options={[
+                                      { value: "200000 SEK - 300000 SEK", label: "200000 SEK - 300000 SEK" },
+                                      { value: "400000 SEK - 500000 SEK", label: "400000 SEK - 500000 SEK" },
+                                      { value: "500000 SEK - 600000 SEK", label: "500000 SEK - 600000 SEK" },
+                                      { value: "6000000 SEK - 7000000 SEK", label: "6000000 SEK - 7000000 SEK" },
+                                      { value: "7000000 SEK - 8000000 SEK", label: "7000000 SEK - 8000000 SEK" },
+                                      { value: "8000000 SEK - 9000000 SEK", label: "8000000 SEK - 9000000 SEK" },
+                                      { value: "9000000 SEK - 1 Million SEK", label: "9000000 SEK - 1 Million SEK" },
+                                      { value: "More than 1 Million SEK", label: "More than 1 Million SEK" },
+                                    ]}
+                                    value={willingtoinvest}
+                                    onChange={handleInputChange}
+                                    className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg "
+
+                                  />
+                                </div>
+                                <div className="col-md-12">
+                                  <Select
+                                    label=" Do you have separate assets other than the investment to support the family with the application?"
+                                    name="seperateAssets"
+                                    options={[
+
+                                      { value: "no", label: "No" },
+                                      { value: "yes", label: "Yes" },
+                                    ]}
+                                    value={seperateAssets}
+                                    onChange={handleInputChange}
+                                    className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg "
+
+                                  />
+                                </div>
+
+
+                              </>
                             ) : null}
+
+
+
 
                             {depents === "main applicant" ? (
                               <>
@@ -980,6 +1065,107 @@ case "educationLevel":
 
                                 </div>
 
+
+                                {degreeCompleted === "no" && (
+
+                                  <>
+                                    <div className="col-md-6">
+                                      <Select
+                                        label="Did you complete 30 credits hours?"
+                                        name="self30credithours"
+                                        options={[
+                                          { value: "yes", label: "Yes" },
+                                          { value: "no", label: "No" },
+                                        ]}
+                                        value={self30credithours}
+                                        onChange={handleInputChange}
+                                        className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg "
+
+                                      />
+                                    </div>
+
+                                  </>
+
+                                )
+
+
+                                }
+
+                                {
+                                  self30credithours === "no" && (
+
+                                    <>
+                                      <div className="col-md-6">
+                                      <Select
+                                        label="Do you have any other residence permit in sweden?"
+                                        name="otherresidencepermit"
+                                        options={[
+                                          { value: "yes", label: "Yes" },
+                                          { value: "no", label: "No" },
+                                        ]}
+                                        value={otherresidencepermit}
+                                        onChange={handleInputChange}
+                                        className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg "
+
+                                      />
+                                    </div>
+                                    
+                                    </>
+                                  )
+                                }
+
+                                <div className="col-md-6">
+                                  <Select
+                                    label="Do you have valid Personnummer?"
+                                    name="personnummer"
+                                    options={[
+                                      { value: "yes", label: "Yes" },
+                                      { value: "no", label: "No" },
+                                    ]}
+                                    value={personnummer}
+                                    onChange={handleInputChange}
+                                    className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                  />
+
+                                </div>
+
+
+{
+  personnummer === "no" && (
+    <>
+         <div className="col-md-6">
+                                  <Select
+                                    label="Do you have valid Coordination number?"
+                                    name="validselfcordnumber"
+                                    options={[
+                                      { value: "yes", label: "Yes" },
+                                      { value: "no", label: "No" },
+                                    ]}
+                                    value={validselfcordnumber}
+                                    onChange={handleInputChange}
+                                    className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                  />
+
+                                </div>
+    </>
+  )
+}
+
+                                <div className="col-md-6">
+                                  <Select
+                                    label="How much are you planning to invest?"
+                                    name="investmentAmount"
+                                    options={[
+                                      { value: "less_than_50k", label: "Less than 50,000 SEK" },
+                                      { value: "50k_100k", label: "50,000 - 100,000 SEK" },
+                                      { value: "more_than_100k", label: "More than 100,000 SEK" },
+                                    ]}
+                                    value={investmentAmount}
+                                    onChange={handleInputChange}
+                                    className="tw-outline-none tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray-dark tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                                  />
+
+                                </div>
                                 <div className="col-md-12">
                                   <Select
                                     label="Do you have separate assets other than the investment to support the family with the application?"
@@ -1035,7 +1221,7 @@ case "educationLevel":
                       </div>
                       {location === "outside" ? (
                         <>
-                        <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow-lg tw-bg-white ">
+                          <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow-lg tw-bg-white ">
                             <div className="col-md-6 tw-pt-6">
                               <Select
                                 label="Education Level"
@@ -1129,10 +1315,10 @@ case "educationLevel":
 
                           <span className=" tw-flex tw-items-center tw-gap-2">
                             {" "}
-                            <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                            <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`.replace(/\s+/g, ' ').trim())}</span>
 
                           <h2 className="tw-text-left">
-                            <strong>{t(`Business plan Assessment`)}</strong>
+                            <strong>{t(`Business plan Assessment`.replace(/\s+/g, ' ').trim())}</strong>
                           </h2>
                         </div>
 
@@ -1210,10 +1396,10 @@ case "educationLevel":
 
                           <span className=" tw-flex tw-items-center tw-gap-2">
                             {" "}
-                            <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                            <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`.replace(/\s+/g, ' ').trim())}</span>
 
                           <h2 className="tw-text-left">
-                            <strong>{t(`Business plan Assessment`)}</strong>
+                            <strong>{t(`Business plan Assessment`.replace(/\s+/g, ' ').trim())}</strong>
                           </h2>
 
 
@@ -1604,10 +1790,10 @@ case "educationLevel":
 
                         <span className=" tw-flex tw-items-center tw-gap-2">
                           {" "}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`.replace(/\s+/g, ' ').trim())}</span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`Language Skill`)}</strong>
+                          <strong>{t(`Language Skill`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
 
                         <div className="col-md-6 tw-pt-4">
@@ -1615,26 +1801,37 @@ case "educationLevel":
 
                         </div>
                         <div className="col-md-8 tw-pt-4">
-                          {/* <label
-                            htmlFor="first_name"
-                            className=" tw-block  tw-text-md  tw-pb-2.5 tw-text-gray"
-                          >
-                            <a className=" tw-text-red-600 tw-font-semibold">{t(`*`)}</a>{" "}
-                            Do you have Swedish Language Certificate?
-                          </label> */}
+                        
                           <Select
                             label="Do you have a Swedish Language Certificate?"
-                            name="languageCertificate"
+                            name="languageCertificateEnglish"
                             options={[
                               { value: "yes", label: "Yes" },
                               { value: "no", label: "No" },
                             ]}
-                            value={languageCertificate}
+                            value={languageCertificateEnglish}
                             onChange={handleInputChange}
                             className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
                           />
 
                         </div>
+
+
+                        <div className="col-md-8">
+                        
+                        <Select
+                          label="Do you have a English Language Certificate?"
+                          name="languageCertificate"
+                          options={[
+                            { value: "yes", label: "Yes" },
+                            { value: "no", label: "No" },
+                          ]}
+                          value={languageCertificate}
+                          onChange={handleInputChange}
+                          className="tw-outline-none tw-text-sm tw-bg-lightGray tw-py-3 tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
+                        />
+
+                      </div>
                       </div>
                     </form>
                   </div>

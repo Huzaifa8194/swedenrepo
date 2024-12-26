@@ -11,235 +11,21 @@ import { motion } from "framer-motion";
 import Sidebar from "../../components/ScrollableBar";
 
 
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 import Header from "../../components/Header_New/Header";
 
 import cr1 from "../../assets/iconscout/cr1.png";
 import cr2 from "../../assets/iconscout/cr2.png";
 
 const CompanyRegistration = () => {
-  const { t , language} = useTranslation();
+  const { t , i18n} = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const data = [
-    {
-      id: 1,
-      title: "Asylum",
-      description:
-        "You have to be in Sweden or on the Swedish border in order to apply for asylum.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 fa fa-home"></i>
-      ),
-      Link: "/asylum",
-    },
-    {
-      id: 2,
-      title: "Family Reunification",
-      description:
-        "Family reunification is a recognized reason for the immigration of family members to a country.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-family"></i>
-      ),
-      Link: "/family-reunification",
-    },
-    {
-      id: 3,
-      title: "Personnummer Sweden",
-      description:
-        "The personal identification is a number that the Swedish Tax Agency assigns to person registered in Sweden.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-14"></i>
-      ),
 
-      Link: "/personnumer-sweden",
-    },
-    {
-      id: 4,
-      title: "CPR Number Denmark",
-      description:
-        "CPR stands for Det Centrale Personregister, which translates to the Civil Registration System ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-12"></i>
-      ),
-      Link: "/cpr-number-denmark",
-    },
-    {
-      id: 5,
-      title: "Work Permit",
-      description:
-        "Permit To Work refers to management systems used to ensure that work is done safely and efficiently.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-11"></i>
-      ),
-      Link: "/work-permit",
-    },
-    {
-      id: 5,
-      title: "Business Permit",
-      description:
-        "Swedish business culture is open and innovative, and starting a business there is relatively simple        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 fa fa-briefcase"></i>
-      ),
 
-      Link: "/business-permit",
-    },
-    {
-      id: 6,
-      title: "Business Visit",
-      description:
-        "Foreign people who want to invest in Sweden and stay temporarily for that purpose can apply for business visa.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 themifyicon ti-map-alt"></i>
-      ),
-
-      Link: "/business-visit",
-    },
-    {
-      id: 7,
-      title: "Citizenship",
-      description:
-        "When you have lived in Sweden for a specified period and meet requirements, you can apply for Swedish citizenship.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport"></i>
-      ),
-      Link: "/citizenship",
-    },
-    {
-      id: 8,
-      title: "Study in EU",
-      description:
-        "If you are thinking about studying abroad, then visit Sweden. Sweden is well known for its world-class academic opportunities.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-graduation-hat-1"></i>
-      ),
-      Link: "/study-in-eu",
-    },
-    {
-      id: 9,
-      title: "Global Visit Visas",
-      description:
-        "For visiting Sweden for a short period you will need a visit visa. Sweden follows the same visa rules as others.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-travel"></i>
-      ),
-      Link: "/global-visit-visas",
-    },
-    {
-      id: 10,
-      title: "EEA Permits",
-      description:
-        "Any EU citizen getting residence in the UK according to the EU rules, can bring their family with them.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-contract"></i>
-      ),
-      Link: "/eea-permits",
-    },
-    {
-      id: 11,
-      title: "Parents EU Permit",
-      description:
-        "Parents of a child under 18 years who is in Sweden can move to sweden if they will live with the child.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-family-1"></i>
-      ),
-      Link: "/parents-eu-permit",
-    },
-    {
-      id: 12,
-      title: "Marriage & Divorce      ",
-      description:
-        "Getting married is beautiful. But to make sure that it will be a good experience, it is important to have legal control.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-insurance"></i>
-      ),
-      Link: "/marriage-divorce",
-    },
-    {
-      id: 13,
-      title: "Company Registration      ",
-      description:
-        "If you are planning to register your company inside Sweden, you can reach us anytime if you have some queries about it.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-certificate"></i>
-      ),
-      Link: "/company-registration",
-    },
-    {
-      id: 14,
-      title: "House & Offices",
-      description:
-        "we offer you an easy and painless solution where you can get a place to live without any worries.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-certificate"></i>
-      ),
-      Link: "/house-offices",
-    },
-    {
-      id: 15,
-      title: "Appeal Cases",
-      description:
-        "Have you been denied? let’s take a look at your case so that the decision can hopefully be overturned.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-reading"></i>
-      ),
-      Link: "/appeal-cases",
-    },
-    {
-      id: 16,
-      title: "EU Citizens Relocation",
-      description:
-        "Family reunification means that a family that has been split up can apply to be allowed to live together.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-passport-3"></i>
-      ),
-      Link: "/eu-family-reunification",
-    },
-    {
-      id: 17,
-      title: "Investment",
-      description:
-        "There are various opportunities for business ventures, Look for the best opportunity, grab it and do your best.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  fa fa-sitemap"></i>
-      ),
-      Link: "/investment",
-    },
-    {
-      id: 18,
-      title: "Direct Citizenship   ",
-      description:
-        "citizenship-by-investment programs provide ultra-wealthy families with the privilege of a second or third passport.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-boarding-pass"></i>
-      ),
-      Link: "/direct-citizenship-by-investments",
-    },
-    {
-      id: 19,
-      title: "Permanent Residence",
-      description:
-        "If you lived in Sweden for more than 5 years with the EU right of residence you can get the permanent residence permit.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-policy"></i>
-      ),
-      Link: "/permanent-residence",
-    },
-    {
-      id: 20,
-      title: "Golden Visa     ",
-      description:
-        "As a member state of the EU, They offer its residents and citizens a number of reassuring benefits.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-boarding-pass-2"></i>
-      ),
-      Link: "/golden-visa-greece-portugal",
-    },
-  ];
-
-  const isleftlangue = language === 'ur';
+  const isleftlangue = i18n.language === 'ur';
 
   return (
     <>
@@ -264,9 +50,9 @@ const CompanyRegistration = () => {
                   <div>
                     <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Comprehensive Guide to`)}</span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Comprehensive Guide to`.replace(/\s+/g, ' ').trim())}</span>
                     <h2 className="tw-text-left">
-                      <strong className ='tw-text-black'>{t(`Company Registration in Sweden`)}</strong>
+                      <strong className ='tw-text-black'>{t(`Company Registration in Sweden`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
                     <p className="tw-text-gray">{t(`Setting up a business in Sweden offers access to one of
@@ -276,10 +62,10 @@ const CompanyRegistration = () => {
                       operate a business in Sweden, as it legally establishes
                       the company and allows it to engage in business
                       activities, enter contracts, and access essential
-                      services.`)}</p>
+                      services.`.replace(/\s+/g, ' ').trim())}</p>
                     <p className="tw-text-gray">{t(`This guide covers the various types of companies in
                       Sweden, the pros and cons of each, and why and when
-                      company registration is necessary.`)}</p>
+                      company registration is necessary.`.replace(/\s+/g, ' ').trim())}</p>
 
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
@@ -288,17 +74,17 @@ const CompanyRegistration = () => {
                       Why
                     </span>
                     <h2 className="tw-text-left">
-                      <strong className ='tw-text-black'>{t(`is Company Registration Important?`)}</strong>
+                      <strong className ='tw-text-black'>{t(`is Company Registration Important?`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong className ='tw-text-black'>{t(`Legal Recognition:`)}</strong>
+                          <strong className ='tw-text-black'>{t(`Legal Recognition:`.replace(/\s+/g, ' ').trim())}</strong>
                           <br /> {t(`Registering your company gives it legal status
                           in Sweden, allowing it to enter contracts, open bank
-                          accounts, and conduct business legally.`)}
+                          accounts, and conduct business legally.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -307,11 +93,11 @@ const CompanyRegistration = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className ='tw-text-black'>{t(`Tax Compliance:`)}</strong>
+                          <strong className ='tw-text-black'>{t(`Tax Compliance:`.replace(/\s+/g, ' ').trim())}</strong>
                           <br />{t(`Registered companies are eligible to apply for
                           VAT registration and must comply with Swedish tax
                           regulations, enabling transparent financial
-                          operations.`)}</p>
+                          operations.`.replace(/\s+/g, ' ').trim())}</p>
                         <p>
                           <br />
                         </p>
@@ -319,11 +105,11 @@ const CompanyRegistration = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className ='tw-text-black'>{t(`Access to Benefits:`)}</strong>
+                          <strong className ='tw-text-black'>{t(`Access to Benefits:`.replace(/\s+/g, ' ').trim())}</strong>
                           <br /> {t(`Registered companies can benefit from
                           government incentives, tax deductions, and access to
                           loans and financing from Swedish financial
-                          institutions.`)}
+                          institutions.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -332,11 +118,11 @@ const CompanyRegistration = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className ='tw-text-black'>{t(`Credibility and Trust:`)}</strong>
+                          <strong className ='tw-text-black'>{t(`Credibility and Trust:`.replace(/\s+/g, ' ').trim())}</strong>
                           <br /> {t(`Registered companies are more trusted by
                           customers, suppliers, and partners, as they
                           demonstrate a commitment to legal compliance and
-                          transparency.`)}
+                          transparency.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -345,11 +131,11 @@ const CompanyRegistration = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className ='tw-text-black'>{t(`Limited Liability:`)}</strong>
+                          <strong className ='tw-text-black'>{t(`Limited Liability:`.replace(/\s+/g, ' ').trim())}</strong>
                           <br /> {t(`Certain company types, like limited companies
                           (Aktiebolag), provide limited liability protection,
                           shielding the owner’s personal assets from business
-                          debts and obligations.`)}
+                          debts and obligations.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -375,9 +161,9 @@ const CompanyRegistration = () => {
                     <div className="col-md-6">
                       <br />
                       <span className="tw-flex tw-items-center tw-gap-2">
-                        <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Setting up`)}</span>
+                        <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Setting up`.replace(/\s+/g, ' ').trim())}</span>
                       <h2 className="tw-text-left">
-                        <strong className ='tw-text-black'>{t(`Your Business in Sweden`)}</strong>
+                        <strong className ='tw-text-black'>{t(`Your Business in Sweden`.replace(/\s+/g, ' ').trim())}</strong>
                       </h2>
                       <br />
                       <p className="tw-text-gray">{t(`Setting up a business in Sweden offers access to one of
@@ -389,133 +175,133 @@ const CompanyRegistration = () => {
                         activities, enter contracts, and access essential
                         services. This guide covers the various types of
                         companies in Sweden, the pros and cons of each, and why
-                        and when company registration is necessary.`)}</p>
+                        and when company registration is necessary.`.replace(/\s+/g, ' ').trim())}</p>
                     </div>
                   </div>
                   <div>
                     <br />
 
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Types of`)}</span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Types of`.replace(/\s+/g, ' ').trim())}</span>
                     <h2 className="tw-text-left">
-                      <strong className ='tw-text-black'>{t(`Companies in Sweden`)}</strong>
+                      <strong className ='tw-text-black'>{t(`Companies in Sweden`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
                     <p className="tw-text-gray">{t(`Sweden offers several types of business structures, each
                       with specific advantages, disadvantages, and requirements.
                       The right structure depends on your business goals, scale,
-                      and risk tolerance.`)}</p>
+                      and risk tolerance.`.replace(/\s+/g, ' ').trim())}</p>
 
-                    <strong className="tw-text-black">{t(`1. Sole Trader (Enskild Firma)`)}</strong>
+                    <strong className="tw-text-black">{t(`1. Sole Trader (Enskild Firma)`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <p className="tw-text-gray">{t(`A sole trader business is owned and managed by an
                       individual, making it the simplest business form in
                       Sweden. It is ideal for freelancers, consultants, and
-                      small businesses with minimal capital requirements.`)}</p>
-                    <p className="tw-text-gray">{t(`Advantages:`)}</p>
+                      small businesses with minimal capital requirements.`.replace(/\s+/g, ' ').trim())}</p>
+                    <p className="tw-text-gray">{t(`Advantages:`.replace(/\s+/g, ' ').trim())}</p>
                     <ul className="tw-pl-0">
                       <li className=" tw-flex tw-text-gray tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                       {t(` Simple to set up and maintain.`)}
+                       {t(` Simple to set up and maintain.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        {t(`Full control over business decisions.`)}
+                        {t(`Full control over business decisions.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        {t(`Lower administrative and regulatory requirements.`)}
+                        {t(`Lower administrative and regulatory requirements.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Profits are taxed as personal income, which can simplify
-                        tax filing.`)}
+                        tax filing.`.replace(/\s+/g, ' ').trim())}
                       </li>
                     </ul>
-                    <p className="tw-text-gray">{t(`Disadvantages:`)}</p>
+                    <p className="tw-text-gray">{t(`Disadvantages:`.replace(/\s+/g, ' ').trim())}</p>
                     <ul className="tw-pl-0">
                       <li className=" tw-flex tw-text-gray tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                        {t(` Unlimited liability: The owner is personally liable for
-                        all business debts and obligations.`)}
+                        all business debts and obligations.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Limited access to capital: Often restricted to personal
-                        funds or small loans.`)}
+                        funds or small loans.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`May lack credibility for large clients or investors
-                        compared to incorporated entities.`)}
+                        compared to incorporated entities.`.replace(/\s+/g, ' ').trim())}
                       </li>
                     </ul>
                     <p className="tw-text-gray">
-                      <strong className ='tw-text-gray'>{t(`When to Register:`)}</strong>
+                      <strong className ='tw-text-gray'>{t(`When to Register:`.replace(/\s+/g, ' ').trim())}</strong>
                       <br />{t(`Ideal for individuals starting a small business or
                       working as freelancers. Registration is generally
                       recommended if you intend to trade under a business name
-                      or need a VAT number.`)}</p>
+                      or need a VAT number.`.replace(/\s+/g, ' ').trim())}</p>
 
-                    <strong className="tw-text-black">{t(`2. Limited Company (Aktiebolag or AB)`)}</strong>
+                    <strong className="tw-text-black">{t(`2. Limited Company (Aktiebolag or AB)`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <p className="tw-text-gray">{t(`A limited company (AB) is a separate legal entity from its
                       shareholders, offering limited liability protection. This
                       is the most popular structure for start-ups, small
-                      businesses, and large corporations alike.`)}</p>
-                    <p className="tw-text-gray">{t(`Advantages:`)}</p>
+                      businesses, and large corporations alike.`.replace(/\s+/g, ' ').trim())}</p>
+                    <p className="tw-text-gray">{t(`Advantages:`.replace(/\s+/g, ' ').trim())}</p>
                     <ul className="tw-pl-0">
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Limited liability: Shareholders are not personally
-                        liable for business debts beyond their investment.`)}
+                        liable for business debts beyond their investment.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Easier to attract investors: Credibility and potential
-                        for issuing shares.`)}
+                        for issuing shares.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Flexibility in growth: Suitable for businesses with
-                        plans to expand or seek external funding.`)}
+                        plans to expand or seek external funding.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Tax benefits: Company profits are taxed at a corporate
-                        rate, which can be more favorable for larger earnings.`)}
+                        rate, which can be more favorable for larger earnings.`.replace(/\s+/g, ' ').trim())}
                       </li>
                     </ul>
-                    <p className="tw-text-gray">{t(`Disadvantages:`)}</p>
+                    <p className="tw-text-gray">{t(`Disadvantages:`.replace(/\s+/g, ' ').trim())}</p>
                     <ul className="tw-pl-0">
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Higher initial capital requirement: Minimum share
-                        capital of SEK 25,000.`)}
+                        capital of SEK 25,000.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
@@ -523,7 +309,7 @@ const CompanyRegistration = () => {
                         </div>
                        {t(` More complex administration: Requires annual reports,
                         board meetings, and compliance with corporate
-                        regulations.`)}
+                        regulations.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
@@ -531,178 +317,178 @@ const CompanyRegistration = () => {
                         </div>
                         {t(`Shareholder obligations: Shareholders have specific
                         responsibilities, such as attending annual general
-                        meetings and approving financial statements.`)}
+                        meetings and approving financial statements.`.replace(/\s+/g, ' ').trim())}
                       </li>
                     </ul>
                     <p className="tw-text-gray">
-                      <strong className ='tw-text-gray'>{t(`When to Register:`)}</strong>
+                      <strong className ='tw-text-gray'>{t(`When to Register:`.replace(/\s+/g, ' ').trim())}</strong>
                       <br />{t(`Registering a limited company is ideal when seeking
                       external investments, minimizing personal risk, or
                       planning to grow the business significantly. It is also a
                       suitable structure if you need to protect your personal
-                      assets.`)}</p>
+                      assets.`.replace(/\s+/g, ' ').trim())}</p>
 
-                    <strong className="tw-text-black">{t(`3. Trading Partnership (Handelsbolag)`)}</strong>
+                    <strong className="tw-text-black">{t(`3. Trading Partnership (Handelsbolag)`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <p className="tw-text-gray">{t(`A trading partnership is a business owned by two or more
                       individuals. Each partner shares equal responsibility for
                       the business’s debts and obligations unless agreed
-                      otherwise.`)}</p>
-                    <p className="tw-text-gray">{t(`Advantages:`)}</p>
+                      otherwise.`.replace(/\s+/g, ' ').trim())}</p>
+                    <p className="tw-text-gray">{t(`Advantages:`.replace(/\s+/g, ' ').trim())}</p>
                     <ul className="tw-pl-0">
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                       {t(` Simple to establish with minimal initial capital.`)}
+                       {t(` Simple to establish with minimal initial capital.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                        {t(` Shared decision-making and responsibility among
-                        partners.`)}
+                        partners.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Profits are taxed as personal income, which can be
-                        favorable depending on income level.`)}
+                        favorable depending on income level.`.replace(/\s+/g, ' ').trim())}
                       </li>
                     </ul>
-                    <p className="tw-text-gray">{t(`Disadvantages:`)}</p>
+                    <p className="tw-text-gray">{t(`Disadvantages:`.replace(/\s+/g, ' ').trim())}</p>
                     <ul className="tw-pl-0">
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Unlimited liability: Partners are jointly and
-                        individually liable for business debts.`)}
+                        individually liable for business debts.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Shared risk: One partner’s decisions can impact the
-                        financial obligations of others.`)}
+                        financial obligations of others.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Potential for disputes: Without a clear partnership
-                        agreement, disagreements can disrupt the business.`)}
+                        agreement, disagreements can disrupt the business.`.replace(/\s+/g, ' ').trim())}
                       </li>
                     </ul>
                     <p className="tw-text-gray">
-                      <strong className ='tw-text-gray'>{t(`When to Register:`)}</strong> {t(`A trading partnership
+                      <strong className ='tw-text-gray'>{t(`When to Register:`.replace(/\s+/g, ' ').trim())}</strong> {t(`A trading partnership
                       is suitable for two or more individuals who wish to
                       collaborate on a business with shared control. Registering
                       is important to establish legal recognition and define
-                      each partner’s roles and liabilities.`)}
+                      each partner’s roles and liabilities.`.replace(/\s+/g, ' ').trim())}
                     </p>
 
-                    <strong className="tw-text-black">{t(`4. Limited Partnership (Kommanditbolag)`)}</strong>
+                    <strong className="tw-text-black">{t(`4. Limited Partnership (Kommanditbolag)`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <p className="tw-text-gray">{t(`A limited partnership includes both general and limited
                       partners. General partners have full control and unlimited
                       liability, while limited partners have limited liability
-                      and typically no involvement in management.`)}</p>
-                    <p className="tw-text-gray">{t(`Advantages:`)}</p>
+                      and typically no involvement in management.`.replace(/\s+/g, ' ').trim())}</p>
+                    <p className="tw-text-gray">{t(`Advantages:`.replace(/\s+/g, ' ').trim())}</p>
                     <ul className="tw-pl-0">
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Flexibility: Allows for different levels of involvement
-                        and risk among partners.`)}
+                        and risk among partners.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                        {t(` Limited liability for silent partners: Reduced financial
-                        risk for limited partners.`)}
+                        risk for limited partners.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Clear roles: Defined responsibilities for general and
-                        limited partners.`)}
+                        limited partners.`.replace(/\s+/g, ' ').trim())}
                       </li>
                     </ul>
-                    <p className="tw-text-gray">{t(`Disadvantages:`)}</p>
+                    <p className="tw-text-gray">{t(`Disadvantages:`.replace(/\s+/g, ' ').trim())}</p>
                     <ul className="tw-pl-0">
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Unlimited liability for general partners: Risk for those
-                        with active control over business operations.`)}
+                        with active control over business operations.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Shared control: Requires a strong partnership agreement
-                        to prevent disputes.`)}
+                        to prevent disputes.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Profits taxed as personal income: Can be less favorable
-                        for high-revenue businesses.`)}
+                        for high-revenue businesses.`.replace(/\s+/g, ' ').trim())}
                       </li>
                     </ul>
                     <p className="tw-text-gray">
-                      <strong className ='tw-text-gray'>{t(`When to Register:`)}</strong> {t(`A limited partnership
+                      <strong className ='tw-text-gray'>{t(`When to Register:`.replace(/\s+/g, ' ').trim())}</strong> {t(`A limited partnership
                       is best for businesses with multiple partners where one or
                       more partners wish to limit their financial risk.
                       Registering establishes legal definitions of roles and
-                      responsibilities, helping to prevent disputes.`)}
+                      responsibilities, helping to prevent disputes.`.replace(/\s+/g, ' ').trim())}
                     </p>
 
-                    <strong className="tw-text-black">{t(`5. Economic Association (Ekonomisk Förening)`)}</strong>
+                    <strong className="tw-text-black">{t(`5. Economic Association (Ekonomisk Förening)`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <p className="tw-text-gray">{t(`An economic association is a cooperative entity formed by
                       at least three members who collaborate to promote shared
                       economic interests, such as housing cooperatives or joint
-                      ventures.`)}</p>
-                    <p className="tw-text-gray">{t(`Advantages:`)}</p>
+                      ventures.`.replace(/\s+/g, ' ').trim())}</p>
+                    <p className="tw-text-gray">{t(`Advantages:`.replace(/\s+/g, ' ').trim())}</p>
                     <ul className="tw-pl-0">
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                        {t(` Shared benefits and risk: Members share profits and
-                        responsibilities.`)}
+                        responsibilities.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                        {t(` Limited liability for members: Members are not
-                        personally liable beyond their contributions.`)}
+                        personally liable beyond their contributions.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Flexibility for cooperatives: Ideal for community-driven
-                        projects and joint ventures.`)}
+                        projects and joint ventures.`.replace(/\s+/g, ' ').trim())}
                       </li>
                     </ul>
-                    <p className="tw-text-gray">{t(`Disadvantages:`)}</p>
+                    <p className="tw-text-gray">{t(`Disadvantages:`.replace(/\s+/g, ' ').trim())}</p>
                     <ul className="tw-pl-0">
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         {t(`Minimum member requirement: Must have at least three
-                        members, which can limit flexibility.`)}
+                        members, which can limit flexibility.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
@@ -710,13 +496,13 @@ const CompanyRegistration = () => {
                         </div>
                         {t(`Administrative requirements: Requires annual reports,
                         member meetings, and compliance with cooperative
-                        regulations.`)}
+                        regulations.`.replace(/\s+/g, ' ').trim())}
                       </li>
                       <li className=" tw-flex tw-text-gray  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                       {t(` Potential conflict`)}
+                       {t(` Potential conflict`.replace(/\s+/g, ' ').trim())}
                       </li>
                     </ul>
                   </div>
@@ -724,9 +510,9 @@ const CompanyRegistration = () => {
                   <div>
                     <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`The Company Registration Process in Sweden`)}</span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`The Company Registration Process in Sweden`.replace(/\s+/g, ' ').trim())}</span>
                     <h2 className="tw-text-left">
-                      <strong className ='tw-text-black'>{t(`Step-by-Step Guide`)}</strong>
+                      <strong className ='tw-text-black'>{t(`Step-by-Step Guide`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
 
@@ -758,18 +544,18 @@ const CompanyRegistration = () => {
                           corporate bank account and ensure compliance with
                           Swedish labor laws and business practices. These steps
                           ensure your company operates legally and efficiently
-                          in Sweden.`)}</p>
+                          in Sweden.`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-black">{t(`Step 1: Choose the Business Structure`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Step 1: Choose the Business Structure`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                          {t(`Assess the advantages, disadvantages, and legal
                           requirements of different structures to choose the
-                          best fit for your business goals and risk tolerance.`)}
+                          best fit for your business goals and risk tolerance.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -777,13 +563,13 @@ const CompanyRegistration = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">{t(`Step 2: Register the Company Name`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Step 2: Register the Company Name`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           {t(`Ensure the chosen name adheres to Swedish conventions
-                          and is distinct from existing businesses.`)}
+                          and is distinct from existing businesses.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -791,14 +577,14 @@ const CompanyRegistration = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">{t(`Step 3: File for Registration`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Step 3: File for Registration`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           {t(`Submit necessary forms and documents to Bolagsverket,
                           including founder identification, proof of share
-                          capital, and articles of association.`)}
+                          capital, and articles of association.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -806,13 +592,13 @@ const CompanyRegistration = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">{t(`Step 4: Apply for Tax Registration`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Step 4: Apply for Tax Registration`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           {t(`Register with Skatteverket for VAT, employer taxes,
-                          and other obligations post-registration.`)}
+                          and other obligations post-registration.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -820,13 +606,13 @@ const CompanyRegistration = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">{t(`Step 5: Apply for Necessary Permits`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Step 5: Apply for Necessary Permits`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           {t(`Secure any required permits relevant to your sector,
-                          such as those for food services or construction.`)}
+                          such as those for food services or construction.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -834,14 +620,14 @@ const CompanyRegistration = () => {
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">{t(`Step 6: Open a Business Bank Account`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Step 6: Open a Business Bank Account`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
                           {t(`Establish an account with a Swedish bank using
                           registration documents and VAT number to manage
-                          finances and transactions.`)}
+                          finances and transactions.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -851,18 +637,18 @@ const CompanyRegistration = () => {
                     <br />
 
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Our`)}</span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Our`.replace(/\s+/g, ' ').trim())}</span>
                     <h2 className="tw-text-left">
-                      <strong className ='tw-text-black'>{t(`Services Include:`)}</strong>
+                      <strong className ='tw-text-black'>{t(`Services Include:`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong className ='tw-text-black'>{t(`Business Structure Advisory:`)}</strong> {t(`Expert
+                          <strong className ='tw-text-black'>{t(`Business Structure Advisory:`.replace(/\s+/g, ' ').trim())}</strong> {t(`Expert
                           guidance on selecting the most suitable structure for
-                          your business.`)}
+                          your business.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -870,9 +656,9 @@ const CompanyRegistration = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className ='tw-text-black'>{t(`Registration Assistance:`)}</strong> {t(`Full
+                          <strong className ='tw-text-black'>{t(`Registration Assistance:`.replace(/\s+/g, ' ').trim())}</strong> {t(`Full
                           management of the application and documentation
-                          process with Bolagsverket and Skatteverket.`)}
+                          process with Bolagsverket and Skatteverket.`.replace(/\s+/g, ' ').trim())}
                         </p>
                         <p>
                           <br />
@@ -880,9 +666,9 @@ const CompanyRegistration = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className ='tw-text-black'>{t(`Tax Registration and Compliance:`)}</strong>{" "}
+                          <strong className ='tw-text-black'>{t(`Tax Registration and Compliance:`.replace(/\s+/g, ' ').trim())}</strong>{" "}
                           {t(`Support with VAT and tax filings to maintain legal
-                          compliance.`)}
+                          compliance.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -890,9 +676,9 @@ const CompanyRegistration = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className ='tw-text-black'>{t(`Permit Application:`)}</strong> {t(`Assistance with
+                          <strong className ='tw-text-black'>{t(`Permit Application:`.replace(/\s+/g, ' ').trim())}</strong> {t(`Assistance with
                           obtaining any necessary permits specific to your
-                          industry.`)}
+                          industry.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -900,8 +686,8 @@ const CompanyRegistration = () => {
                       </li>
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className ='tw-text-black'>{t(`Ongoing Support:`)}</strong> {t(`Continued advisory
-                          and administrative help as your business grows.`)}
+                          <strong className ='tw-text-black'>{t(`Ongoing Support:`.replace(/\s+/g, ' ').trim())}</strong> {t(`Continued advisory
+                          and administrative help as your business grows.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -910,21 +696,21 @@ const CompanyRegistration = () => {
                     </ul>
                     <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Why Choose Sweden Relocators?`)}</span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Why Choose Sweden Relocators?`.replace(/\s+/g, ' ').trim())}</span>
                     <h2 className="tw-text-left">
-                      <strong className ='tw-text-black'>{t(`Trusted Expertise`)}</strong>
+                      <strong className ='tw-text-black'>{t(`Trusted Expertise`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
 
                     <p className="tw-text-gray">{t(`Choose Sweden Relocators for a seamless, personalized, and
-                      efficient company registration experience in Sweden.`)}</p>
+                      efficient company registration experience in Sweden.`.replace(/\s+/g, ' ').trim())}</p>
 
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong className ='tw-text-black'>{t(`Experienced Team:`)}</strong> {t(`Our specialists are
+                          <strong className ='tw-text-black'>{t(`Experienced Team:`.replace(/\s+/g, ' ').trim())}</strong> {t(`Our specialists are
                           knowledgeable in Swedish corporate law and business
-                          practices.`)}
+                          practices.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -933,9 +719,9 @@ const CompanyRegistration = () => {
 
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong className ='tw-text-black'>{t(`All-In-One Service:`)}</strong> {t(`From document
+                          <strong className ='tw-text-black'>{t(`All-In-One Service:`.replace(/\s+/g, ' ').trim())}</strong> {t(`From document
                           preparation to travel arrangements and follow-up, we
-                          manage every step of the application.`)}
+                          manage every step of the application.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -944,10 +730,10 @@ const CompanyRegistration = () => {
 
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong className ='tw-text-black'>{t(`Simplified Future Applications:`)}</strong>{t(` Your
+                          <strong className ='tw-text-black'>{t(`Simplified Future Applications:`.replace(/\s+/g, ' ').trim())}</strong>{t(` Your
                           data remains securely stored, allowing you to apply
                           for visas to other countries with minimal additional
-                          input, streamlining subsequent applications.`)}
+                          input, streamlining subsequent applications.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -956,10 +742,10 @@ const CompanyRegistration = () => {
 
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong className ='tw-text-black'>{t(`Real-Time Tracking and Updates:`)}</strong>{t(` Our
+                          <strong className ='tw-text-black'>{t(`Real-Time Tracking and Updates:`.replace(/\s+/g, ' ').trim())}</strong>{t(` Our
                           portal and app keep you updated at every stage, so
                           you’re always informed on the progress of your
-                          application.`)}
+                          application.`.replace(/\s+/g, ' ').trim())}
                           <p>
                             <br />
                           </p>
@@ -973,10 +759,10 @@ const CompanyRegistration = () => {
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      {t(`Apply for`)}
+                      {t(`Apply for`.replace(/\s+/g, ' ').trim())}
                     </span>
                     <h2 className="tw-text-left">
-                      <strong className ='tw-text-black'>{t(`Your Global Visit Visa Today`)}</strong>
+                      <strong className ='tw-text-black'>{t(`Your Global Visit Visa Today`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
 
@@ -987,11 +773,11 @@ const CompanyRegistration = () => {
                       we provide a full-service solution, managing every aspect
                       of your visa application and ensuring a smooth experience.
                       Let Sweden Relocators handle the details, so you can focus
-                      on planning your journey.`)}</p>
+                      on planning your journey.`.replace(/\s+/g, ' ').trim())}</p>
                     <Link to="/register" className="tw-text-center tw-pt-4">
                     <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
-                          {t(`Sign Up  Today!`)}{" "}
+                          {t(`Sign Up  Today!`.replace(/\s+/g, ' ').trim())}{" "}
                         </strong>
                     
                       </h5>
@@ -1003,7 +789,7 @@ const CompanyRegistration = () => {
                       help. Our comprehensive services cover everything from
                       work and study opportunities to family reunifications,
                       business support, and much more. Let us guide you every
-                      step of the way—start your seamless experience now!`)}</p>
+                      step of the way—start your seamless experience now!`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
                 </div>{" "}
               </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../Button';
 import { Link } from 'react-router-dom';
 import arrow from '../../assets/images/proccess-box-arrow.png';
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 
 const Visitor = () => {
   const {t }= useTranslation();

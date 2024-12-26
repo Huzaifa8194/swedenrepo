@@ -15,7 +15,7 @@ import { GoTriangleRight } from "react-icons/go";
 import { TfiAngleLeft } from "react-icons/tfi";
 import { Link, useParams } from "react-router-dom";
 import Assessment_modal from "./Assessment_modal";
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import Header from "../../components/Header_New/Header";
@@ -272,7 +272,38 @@ const Student_assessments = () => {
 
 
 
-  const [resultdata, setResultData ] = useState(null);
+  const [resultdata, setResultData] = useState(null);
+
+  const [gpa, setgpa] = useState("");
+
+  const [subjectHEC, setsubjectHEC] = useState("");
+  const [subjectINTER, setsubjectINTER] = useState("");
+  const [subjectUNDER, setsubjectUNDER] = useState("");
+  const [subjectMASTER, setsubjectMASTER] = useState("");
+
+  const [percentageHEC, setpercentageHEC] = useState("");
+  const [percentageINTER, setpercentageINTER] = useState("");
+  const [percentageUNDER, setpercentageUNDER] = useState("");
+  const [percentageMASTER, setpercentageMASTER] = useState("");
+
+  const [gradeHEC, setgradeHEC] = useState("");
+  const [gradeINTER, setgradeINTER] = useState("");
+  const [gradeUNDER, setgradeUNDER] = useState("");
+  const [gradeMASTER, setgradeMASTER] = useState("");
+
+  const [yearHEC, setyearHEC] = useState("");
+  const [yearINTER, setyearINTER] = useState("");
+
+
+  const [fromUNDER, setfromUNDER] = useState("");
+  const [toUNDER, settoUNDER] = useState("");
+
+  const [fromMASTER, setfromMASTER] = useState("");
+  const [toMASTER, settoMASTER] = useState("");
+
+  const [gpaMASTER, setgpaMASTER] = useState("");
+  const [gpaUNDER, setgpaUNDER] = useState("");
+
 
 
   const handleSubmit = async (e) => {
@@ -281,8 +312,8 @@ const Student_assessments = () => {
     const formData = new FormData();
     formData.append("api_token", "4f29ddc35580c021515af364fddc8b24");
     formData.append("user_id", "696");
-    formData.append("country", country || ""); 
-    formData.append("educational_level", studyLevel || ""); 
+    formData.append("country", country || "");
+    formData.append("educational_level", studyLevel || "");
     formData.append("years_of_study", yearsOfStudy || "");
     formData.append("proficiency_language", languageTest || "");
     formData.append("ielts_score", ieltsScore || "");
@@ -308,21 +339,16 @@ const Student_assessments = () => {
       );
       setResultData(response.data.data);
 
-      
+
       console.log("State: " + resultdata);
 
-      openModal();  
+      openModal();
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Error Submitting. Please fill in all required fields.");
 
     }
   };
-
-
-
-
-
 
   const handleSelectChange = (e) => {
     const value = e.target.value;
@@ -338,6 +364,11 @@ const Student_assessments = () => {
     switch (e.target.name) {
 
 
+
+
+      case "gpa":
+        setgpa(value);
+        break;
 
 
 
@@ -452,13 +483,13 @@ const Student_assessments = () => {
                   <div>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Study in Sweden`)}</span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Study in Sweden`.replace(/\s+/g, ' ').trim())}</span>
 
                     <h2>
-                      <strong>{t(`Find Out Your Eligibility to Study in Sweden`)}</strong>
+                      <strong>{t(`Find Out Your Eligibility to Study in Sweden`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
-                    <strong className="tw-text-gray">{t(`Who Should Use This Tool?`)}</strong>
+                    <strong className="tw-text-gray">{t(`Who Should Use This Tool?`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
@@ -466,14 +497,14 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Individuals who are planning to apply for a student
-                          residence permit in Sweden.`)}</p>
+                          residence permit in Sweden.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Those seeking assistance with the application process
-                          for studying in Sweden.`)}</p>
+                          for studying in Sweden.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
@@ -482,7 +513,7 @@ const Student_assessments = () => {
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Applicants looking for support with housing and
                           settling in Sweden once they arrive on a student
-                          residence permit.`)}</p>
+                          residence permit.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
@@ -490,17 +521,17 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Anyone who prefers professional assistance in managing
-                          their study application and relocation process.`)}</p>
+                          their study application and relocation process.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Why`)}</span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Why`.replace(/\s+/g, ' ').trim())}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>{t(`Use the Eligibility Tool?`)}</strong>
+                      <strong>{t(`Use the Eligibility Tool?`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
 
@@ -508,7 +539,7 @@ const Student_assessments = () => {
 
                     <p className="tw-text-gray">{t(`This tool is designed to help you understand the
                       requirements and eligibility criteria for studying in
-                      Sweden by gathering essential details such as:`)}</p>
+                      Sweden by gathering essential details such as:`.replace(/\s+/g, ' ').trim())}</p>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
@@ -516,14 +547,14 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Academic Background: Information on your previous
-                          education and qualifications.`)}</p>
+                          education and qualifications.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Program of Interest: The type of course or program you
-                          intend to apply for at Swedish universities.`)}</p>
+                          intend to apply for at Swedish universities.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
@@ -531,10 +562,10 @@ const Student_assessments = () => {
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Application Requirements: Your preparedness in meeting
                           the specific admission requirements of Swedish
-                          institutions.`)}</p>
+                          institutions.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
-                    <h5 className="tw-text-gray italic">{t(`Important Note`)}</h5>
+                    <h5 className="tw-text-gray italic">{t(`Important Note`.replace(/\s+/g, ' ').trim())}</h5>
                     <p className="tw-text-gray">
                       {" "}
                       This assessment is designed to guide you through the
@@ -548,7 +579,7 @@ const Student_assessments = () => {
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Complete`)}</span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Complete`.replace(/\s+/g, ' ').trim())}</span>
 
                     <h2 className="tw-text-left">
                       <strong>
@@ -560,7 +591,7 @@ const Student_assessments = () => {
 
 
                     <p className="tw-text-gray">{t(`We offer end-to-end support for your study journey and
-                      relocation to Sweden through our web portal and app:`)}</p>
+                      relocation to Sweden through our web portal and app:`.replace(/\s+/g, ' ').trim())}</p>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
@@ -570,7 +601,7 @@ const Student_assessments = () => {
                         <p className=" m-0 tw-text-gray">{t(`Comprehensive Application Assistance: We help with
                           your student residence permit application, making sure
                           all documents are complete and comply with Swedish
-                          immigration standards.`)}</p>
+                          immigration standards.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
@@ -579,7 +610,7 @@ const Student_assessments = () => {
                         <p className=" m-0 tw-text-gray">{t(`Housing and Settling Services: Once your permit is
                           approved, we provide assistance with finding
                           accommodation and settling into your new life in
-                          Sweden.`)}</p>
+                          Sweden.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
@@ -589,17 +620,17 @@ const Student_assessments = () => {
                         <p className=" m-0 tw-text-gray">{t(`Digital Management: Manage your entire study
                           application and relocation process through our web
                           portal or app, making it easy and convenient to track
-                          every step.`)}</p>
+                          every step.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`)}</span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`.replace(/\s+/g, ' ').trim())}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>{t(`We Use the Information`)}</strong>
+                      <strong>{t(`We Use the Information`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
 
@@ -612,7 +643,7 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`We will evaluate your details to determine your
-                          eligibility to study in Sweden.`)}</p>
+                          eligibility to study in Sweden.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
@@ -620,7 +651,7 @@ const Student_assessments = () => {
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Our team will guide you through the application
                           process for both your chosen academic program and
-                          student residence permit.`)}</p>
+                          student residence permit.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
@@ -628,7 +659,7 @@ const Student_assessments = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`We’ll ensure that you have the support you need for a
-                          smooth transition to life in Sweden.`)}</p>
+                          smooth transition to life in Sweden.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
@@ -641,7 +672,7 @@ const Student_assessments = () => {
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>{t(`Get Started`)}</strong>
+                      <strong>{t(`Get Started`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
 
@@ -650,24 +681,24 @@ const Student_assessments = () => {
                     <p className=" tw-text-gray">{t(`Use the eligibility tool on our web portal or app to take
                       the first step toward your educational journey in Sweden.
                       Whether you need help with your application or future
-                      relocation, we’re here to assist you at every step!`)}</p>
+                      relocation, we’re here to assist you at every step!`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
 
                   <div>
                     {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
-                      <h5 className=" tw-text-black  ">{t(`Persoanl Details`)}</h5>
+                      <h5 className=" tw-text-black  ">{t(`Persoanl Details`.replace(/\s+/g, ' ').trim())}</h5>
 
                       <h6 className=" tw-text-black ">
                         {" "}
                         <i class="fa fa-building"></i>{t(`Fill up your personal
-                        details.`)}</h6>
+                        details.`.replace(/\s+/g, ' ').trim())}</h6>
                     </div> */}
 
-{resultdata && (     <Assessment_modal
+                    {resultdata && (<Assessment_modal
                       isModalOpen={isModalOpen}
                       setIsModalOpen={setIsModalOpen}
-                      data = {resultdata}
-                    /> )}
+                      data={resultdata}
+                    />)}
 
 
                     {/* <form>
@@ -712,10 +743,10 @@ const Student_assessments = () => {
                       <div className="row g-3 tw-pt-6 tw-rounded-2xl  px-4 tw-py-4 tw-shadow tw-bg-white ">
                         <span className=" tw-flex tw-items-center tw-gap-2">
                           {" "}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`.replace(/\s+/g, ' ').trim())}</span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`Educational Background`)}</strong>
+                          <strong>{t(`Educational Background`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <div className="col-md-6 tw-pt-4">
                           <Select
@@ -804,10 +835,10 @@ const Student_assessments = () => {
                                 <div className="row ">
                                   <span className=" tw-flex tw-items-center tw-gap-2">
                                     {" "}
-                                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                                    <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`.replace(/\s+/g, ' ').trim())}</span>
 
                                   <h2 className="tw-text-left">
-                                    <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
+                                    <strong>{t(`Higher Secondary Education (Matriculation)`.replace(/\s+/g, ' ').trim())}</strong>
                                   </h2>
 
                                   <div className="col-md-6 tw-pt-4">
@@ -909,16 +940,16 @@ const Student_assessments = () => {
 
                             <span className=" tw-flex tw-items-center tw-gap-2">
                               {" "}
-                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`.replace(/\s+/g, ' ').trim())}</span>
 
                             <h2 className="tw-text-left">
-                              <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
+                              <strong>{t(`Higher Secondary Education (Matriculation)`.replace(/\s+/g, ' ').trim())}</strong>
                             </h2>
 
                             <div className="col-md-12 tw-pt-4">
                               <Select
                                 label="Subject"
-                                name="subject"
+                                name="subjectHEC"
                                 options={[
                                   { value: "Science", label: "Science" },
                                   { value: "Engineering", label: "Engineering" },
@@ -931,7 +962,7 @@ const Student_assessments = () => {
                                   { value: "Journalism", label: "Journalism" },
                                   { value: "Natural Science", label: "Natural Science" },
                                 ]}
-                                value={subject}
+                                value={subjectHEC}
                                 onChange={handleSelectChange}
                                 className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
                               />
@@ -948,17 +979,19 @@ const Student_assessments = () => {
                                   " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
                                 }
                                 label={"Completed Year"}
+                                name = "yearHEC"
+                                value = {yearHEC}
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
                               <Select
                                 label="Percentage"
-                                name="percentage"
+                                name="percentageHEC"
                                 options={Array.from({ length: 18 }, (_, i) => ({
                                   value: `${33 + i}`,
                                   label: `${33 + i}`,
                                 }))}
-                                value={percentage}
+                                value={percentageHEC}
                                 onChange={handleSelectChange}
                                 className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
                               />
@@ -968,7 +1001,7 @@ const Student_assessments = () => {
 
                               <Select
                                 label="Grade"
-                                name="grade"
+                                name="gradeHEC"
                                 options={[
                                   { value: "A", label: "A" },
                                   { value: "B", label: "B" },
@@ -976,7 +1009,7 @@ const Student_assessments = () => {
                                   { value: "D", label: "D" },
                                   { value: "E", label: "E" },
                                 ]}
-                                value={grade}
+                                value={gradeHEC}
                                 onChange={handleSelectChange}
                                 className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
                               />
@@ -998,10 +1031,10 @@ const Student_assessments = () => {
 
                             <span className=" tw-flex tw-items-center tw-gap-2">
                               {" "}
-                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`.replace(/\s+/g, ' ').trim())}</span>
 
                             <h2 className="tw-text-left">
-                              <strong>{t(`English Proficiency Test`)}</strong>
+                              <strong>{t(`English Proficiency Test`.replace(/\s+/g, ' ').trim())}</strong>
                             </h2>
 
                             <div className="col-md-6 tw-pt-4">
@@ -1043,16 +1076,16 @@ const Student_assessments = () => {
 
                             <span className=" tw-flex tw-items-center tw-gap-2">
                               {" "}
-                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`.replace(/\s+/g, ' ').trim())}</span>
 
                             <h2 className="tw-text-left">
-                              <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
+                              <strong>{t(`Higher Secondary Education (Matriculation)`.replace(/\s+/g, ' ').trim())}</strong>
                             </h2>
 
                             <div className="col-md-12 tw-pt-4">
                               <Select
                                 label="Subject"
-                                name="subject2"
+                                name="subjectHEC"
                                 options={[
                                   { value: "Science", label: "Science" },
                                   { value: "Engineering", label: "Engineering" },
@@ -1065,7 +1098,7 @@ const Student_assessments = () => {
                                   { value: "Journalism", label: "Journalism" },
                                   { value: "Natural Science", label: "Natural Science" },
                                 ]}
-                                value={subject2}
+                                value={subjectHEC}
                                 onChange={handleSelectChange}
                                 className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
                               />
@@ -1081,18 +1114,20 @@ const Student_assessments = () => {
                                 className={
                                   " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
                                 }
+                                name = "yearHEC"
+                                value = {yearHEC}
                                 label={"Completed Year"}
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
                               <Select
                                 label="Percentage"
-                                name="percentage"
+                                name="percentageHEC"
                                 options={Array.from({ length: 18 }, (_, i) => ({
                                   value: `${33 + i}`,
                                   label: `${33 + i}`,
                                 }))}
-                                value={percentage}
+                                value={percentageHEC}
                                 onChange={handleSelectChange}
                                 className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                               />
@@ -1101,7 +1136,7 @@ const Student_assessments = () => {
                             <div className="col-md-6 tw-pt-4">
                               <Select
                                 label="Select Grade"
-                                name="grade"
+                                name="gradeHEC"
                                 options={[
                                   { value: "A", label: "A" },
                                   { value: "B", label: "B" },
@@ -1109,7 +1144,7 @@ const Student_assessments = () => {
                                   { value: "D", label: "D" },
                                   { value: "E", label: "E" },
                                 ]}
-                                value={grade}
+                                value={gradeHEC}
                                 onChange={handleSelectChange}
                                 className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                               />
@@ -1124,7 +1159,7 @@ const Student_assessments = () => {
                         <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
                           <i class="fa tw-text-white fa-building tw-pt-1"></i>
                           <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">{t(`Intermediate / O-A Levels (F.A, I.Com, ICS, FSC,
-                            DAE, +2 Examination)`)}</p>
+                            DAE, +2 Examination)`.replace(/\s+/g, ' ').trim())}</p>
                         </div>
 
                         <form>
@@ -1132,7 +1167,7 @@ const Student_assessments = () => {
                             <div className="col-md-6 tw-pt-4">
                               <Select
                                 label="Subject"
-                                name="subject"
+                                name="subjectINTER"
                                 options={[
                                   { value: "Science", label: "Science" },
                                   { value: "Engineering", label: "Engineering" },
@@ -1162,17 +1197,19 @@ const Student_assessments = () => {
                                   " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
                                 }
                                 label={"Completed Year"}
+                                name={"yearINTER"}
+                                value={yearINTER}
                               />
                             </div>
                             <div className="col-md-6 tw-pt-4">
                               <Select
                                 label="Percentage"
-                                name="percentage2"
+                                name="percentageINTER"
                                 options={Array.from({ length: 18 }, (_, i) => ({
                                   value: `${33 + i}`,
                                   label: `${33 + i}`,
                                 }))}
-                                value={percentage2}
+                                value={percentageINTER}
                                 onChange={handleSelectChange}
                                 className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                               />
@@ -1181,7 +1218,7 @@ const Student_assessments = () => {
                             <div className="col-md-6 tw-pt-4">
                               <Select
                                 label="Select Grade"
-                                name="grade2"
+                                name="gradeINTER"
                                 options={[
                                   { value: "A", label: "A" },
                                   { value: "B", label: "B" },
@@ -1189,7 +1226,7 @@ const Student_assessments = () => {
                                   { value: "D", label: "D" },
                                   { value: "E", label: "E" },
                                 ]}
-                                value={grade2}
+                                value={gradeINTER}
                                 onChange={handleSelectChange}
                                 className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
                               />
@@ -1210,10 +1247,10 @@ const Student_assessments = () => {
                           <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                             <span className=" tw-flex tw-items-center tw-gap-2">
                               {" "}
-                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`.replace(/\s+/g, ' ').trim())}</span>
 
                             <h2 className="tw-text-left">
-                              <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
+                              <strong>{t(`English Language Proficiency Test`.replace(/\s+/g, ' ').trim())}</strong>
                             </h2>
 
 
@@ -1242,307 +1279,807 @@ const Student_assessments = () => {
                     </>
                   ) : null}
 
-                  {studyLevel === "Under Graduate" ||
+                  {studyLevel === "Under Graduate" ?
+                    (
+                      <>
+                        {/* user info */}
+                        <div className=" tw-pt-8">
+
+
+
+                          <form>
+                            <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+
+                              <span className=" tw-flex tw-items-center tw-gap-2">
+                                {" "}
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`.replace(/\s+/g, ' ').trim())}</span>
+
+                              <h2 className="tw-text-left">
+                                <strong>{t(`Higher Secondary Education (Matriculation)`.replace(/\s+/g, ' ').trim())}</strong>
+                              </h2>
+
+                              <div className="col-md-12 tw-pt-4">
+                                <Select
+                                  label="Subject"
+                                  name="subjectHEC"
+                                  options={[
+                                    { value: "Science", label: "Science" },
+                                    { value: "Engineering", label: "Engineering" },
+                                    { value: "Medical", label: "Medical" },
+                                    { value: "IT", label: "IT" },
+                                    { value: "Business", label: "Business" },
+                                    { value: "Management", label: "Management" },
+                                    { value: "Art Design Media", label: "Art Design Media" },
+                                    { value: "Education", label: "Education" },
+                                    { value: "Journalism", label: "Journalism" },
+                                    { value: "Natural Science", label: "Natural Science" },
+                                  ]}
+                                  value={subjectHEC}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+
+                              <div className="col-md-12 ">
+                                <label className=" tw-text-sm  tw-text-gray "></label>
+                                <Input
+                                  placeholder={"Completed Year"}
+                                  star={"*"}
+                                  type={"year"}
+                                  className={
+                                    " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                  }
+                                  name = "yearHEC"
+                                  value = {yearHEC}
+                                  label={"Completed Year"}
+                                />
+                              </div>
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select Percentage"
+                                  name="percentageHEC"
+                                  options={Array.from({ length: 18 }, (_, i) => ({
+                                    value: `${33 + i}`,
+                                    label: `${33 + i}`,
+                                  }))}
+                                  value={percentageHEC}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select Grade"
+                                  name="gradeHEC"
+                                  options={[
+                                    { value: "A", label: "A" },
+                                    { value: "B", label: "B" },
+                                    { value: "C", label: "C" },
+                                    { value: "D", label: "D" },
+                                    { value: "E", label: "E" },
+                                  ]}
+                                  value={grade3}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
+                                />
+
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+
+                        {/* user info */}
+                        <div className=" tw-pt-8">
+                          <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
+                            <i class="fa tw-text-white fa-building tw-pt-1"></i>
+                            <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">{t(`Intermediate / O-A Levels (F.A, I.Com, ICS, FSC,
+                            DAE, +2 Examination)`.replace(/\s+/g, ' ').trim())}</p>
+                          </div>
+
+                          <form>
+                            <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Subject"
+                                  name="subjectINTER"
+                                  options={[
+                                    { value: "Science", label: "Science" },
+                                    { value: "Engineering", label: "Engineering" },
+                                    { value: "Medical", label: "Medical" },
+                                    { value: "IT", label: "IT" },
+                                    { value: "Business", label: "Business" },
+                                    { value: "Management", label: "Management" },
+                                    { value: "Art Design Media", label: "Art Design Media" },
+                                    { value: "Education", label: "Education" },
+                                    { value: "Journalism", label: "Journalism" },
+                                    { value: "Natural Science", label: "Natural Science" },
+                                  ]}
+                                  value={subjectINTER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
+                                />
+
+                              </div>
+
+                              <div className="col-md-6 tw-pt-4">
+                                <label className=" tw-text-sm  tw-text-gray "></label>
+                                <Input
+                                  placeholder={"Completed Year"}
+                                  star={"*"}
+                                  type={"year"}
+                                  className={
+                                    " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                  }
+                                  name = "yearINTER"
+                                  value = {yearINTER}
+                                  label={"Completed Year"}
+                                />
+                              </div>
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select Percentage"
+                                  name="percentageINTER"
+                                  options={Array.from({ length: 18 }, (_, i) => ({
+                                    value: `${33 + i}`,
+                                    label: `${33 + i}`,
+                                  }))}
+                                  value={percentageINTER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select Grade"
+                                  name="gradeINTER"
+                                  options={[
+                                    { value: "A", label: "A" },
+                                    { value: "B", label: "B" },
+                                    { value: "C", label: "C" },
+                                    { value: "D", label: "D" },
+                                    { value: "E", label: "E" },
+                                  ]}
+                                  value={gradeINTER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+
+                        {/* user info */}
+                        <div className=" tw-pt-8">
+                          <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
+                            <i class="fa tw-text-white fa-building tw-pt-1"></i>
+                            <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">{t(`Under Graduate (B.A, B.Com, BBA, BCS, BIT,BSc, BE,
+                            BS, DVM, LLB)`.replace(/\s+/g, ' ').trim())}</p>
+                          </div>
+
+                          <form>
+                            <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Subject"
+                                  name="subjectUNDER"
+                                  options={[
+                                    { value: "Science", label: "Science" },
+                                    { value: "Engineering", label: "Engineering" },
+                                    { value: "Medical", label: "Medical" },
+                                    { value: "IT", label: "IT" },
+                                    { value: "Business", label: "Business" },
+                                    { value: "Management", label: "Management" },
+                                    { value: "Art Design Media", label: "Art Design Media" },
+                                    { value: "Education", label: "Education" },
+                                    { value: "Journalism", label: "Journalism" },
+                                    { value: "Natural Science", label: "Natural Science" },
+                                  ]}
+                                  value={subjectUNDER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+
+                              <div className="col-md-3 ">
+                                <label className=" tw-text-sm  tw-text-gray "></label>
+                                <Input
+                                  placeholder={"From"}
+                                  star={"*"}
+                                  type={"year"}
+                                  className={
+                                    " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                  }
+                                  label={"From"}
+                                  name = "fromUNDER"
+                                  value = {fromUNDER}
+                                />
+                              </div>
+
+                              <div className="col-md-3 tw-pt-4">
+
+                                <Input
+                                  placeholder={"To"}
+                                  star={"*"}
+                                  type={"year"}
+                                  className={
+                                    " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                  }
+                                  label={"To"}
+                                  name = "toUNDER"
+                                  value = {toUNDER}
+                                />
+                              </div>
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select Percentage"
+                                  name="percentageUNDER"
+                                  options={Array.from({ length: 18 }, (_, i) => ({
+                                    value: `${33 + i}`,
+                                    label: `${33 + i}`,
+                                  }))}
+                                  value={percentageUNDER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+
+
+
+
+
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select GPA"
+                                  name="gpaUNDER"
+                                  options={Array.from({ length: 26 }, (_, i) => {
+                                    const value = (1.5 + i * 0.1).toFixed(1);
+                                    return { value, label: value };
+                                  })}
+                                  value={gpaUNDER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+                              </div>
+
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select Grade"
+                                  name="gradeUNDER"
+                                  options={[
+                                    { value: "A", label: "A" },
+                                    { value: "B", label: "B" },
+                                    { value: "C", label: "C" },
+                                    { value: "D", label: "D" },
+                                    { value: "E", label: "E" },
+                                  ]}
+                                  value={gradeUNDER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+
+                        {/* user info */}
+                        <div className=" tw-pt-8">
+
+
+                          <form>
+                            <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+
+                              <span className=" tw-flex tw-items-center tw-gap-2">
+                                {" "}
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`.replace(/\s+/g, ' ').trim())}</span>
+
+                              <h2 className="tw-text-left">
+                                <strong>{t(`English Language Proficiency Test`.replace(/\s+/g, ' ').trim())}</strong>
+                              </h2>
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="English Language Proficiency Test"
+                                  name="languageTest"
+                                  options={[
+                                    { value: "IELTS", label: "IELTS" },
+                                    { value: "TOFEL (Paper-based)", label: "TOFEL (Paper-based)" },
+                                    { value: "TOFEL (Internet-based)", label: "TOFEL (Internet-based)" },
+                                    { value: "CAMBRIDGE", label: "CAMBRIDGE" },
+                                    { value: "PEARSON", label: "PEARSON" },
+                                    { value: "LETTER OF PROFICIENCY", label: "LETTER OF PROFICIENCY" },
+                                    { value: "OTHER", label: "OTHER" },
+                                  ]}
+                                  value={languageTest}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </>
+                    ) : null}
+
+
+
+
+
+                  {
                     studyLevel === "Masters/ M.Phil / Post Graduate" ? (
-                    <>
-                      {/* user info */}
-                      <div className=" tw-pt-8">
+                      <>
+                        {/* user info */}
+                        <div className=" tw-pt-8">
 
 
 
-                        <form>
-                          <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                          <form>
+                            <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
 
-                            <span className=" tw-flex tw-items-center tw-gap-2">
-                              {" "}
-                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                              <span className=" tw-flex tw-items-center tw-gap-2">
+                                {" "}
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`.replace(/\s+/g, ' ').trim())}</span>
 
-                            <h2 className="tw-text-left">
-                              <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
-                            </h2>
+                              <h2 className="tw-text-left">
+                                <strong>{t(`Higher Secondary Education (Matriculation)`.replace(/\s+/g, ' ').trim())}</strong>
+                              </h2>
 
-                            <div className="col-md-12 tw-pt-4">
-                              <Select
-                                label="Subject"
-                                name="subject2"
-                                options={[
-                                  { value: "Science", label: "Science" },
-                                  { value: "Engineering", label: "Engineering" },
-                                  { value: "Medical", label: "Medical" },
-                                  { value: "IT", label: "IT" },
-                                  { value: "Business", label: "Business" },
-                                  { value: "Management", label: "Management" },
-                                  { value: "Art Design Media", label: "Art Design Media" },
-                                  { value: "Education", label: "Education" },
-                                  { value: "Journalism", label: "Journalism" },
-                                  { value: "Natural Science", label: "Natural Science" },
-                                ]}
-                                value={subject2}
-                                onChange={handleSelectChange}
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                              />
+                              <div className="col-md-12 tw-pt-4">
+                                <Select
+                                  label="Subject"
+                                  name="subjectHEC"
+                                  options={[
+                                    { value: "Science", label: "Science" },
+                                    { value: "Engineering", label: "Engineering" },
+                                    { value: "Medical", label: "Medical" },
+                                    { value: "IT", label: "IT" },
+                                    { value: "Business", label: "Business" },
+                                    { value: "Management", label: "Management" },
+                                    { value: "Art Design Media", label: "Art Design Media" },
+                                    { value: "Education", label: "Education" },
+                                    { value: "Journalism", label: "Journalism" },
+                                    { value: "Natural Science", label: "Natural Science" },
+                                  ]}
+                                  value={subjectHEC}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
 
+                              </div>
+
+                              <div className="col-md-12 ">
+                                <label className=" tw-text-sm  tw-text-gray "></label>
+                                <Input
+                                  placeholder={"Completed Year"}
+                                  star={"*"}
+                                  type={"year"}
+                                  className={
+                                    " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                  }
+                                  label={"Completed Year"}
+                                  name = {"yearHEC"}
+                                  value = {yearHEC}
+                                />
+                              </div>
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select Percentage"
+                                  name="percentageHEC"
+                                  options={Array.from({ length: 18 }, (_, i) => ({
+                                    value: `${33 + i}`,
+                                    label: `${33 + i}`,
+                                  }))}
+                                  value={percentageHEC}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select Grade"
+                                  name="gradeHEC"
+                                  options={[
+                                    { value: "A", label: "A" },
+                                    { value: "B", label: "B" },
+                                    { value: "C", label: "C" },
+                                    { value: "D", label: "D" },
+                                    { value: "E", label: "E" },
+                                  ]}
+                                  value={gradeHEC}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
+                                />
+
+                              </div>
                             </div>
-
-                            <div className="col-md-12 ">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
-                              <Input
-                                placeholder={"Completed Year"}
-                                star={"*"}
-                                type={"year"}
-                                className={
-                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
-                                }
-                                label={"Completed Year"}
-                              />
-                            </div>
-                            <div className="col-md-6 tw-pt-4">
-                              <Select
-                                label="Select Percentage"
-                                name="percentage3"
-                                options={Array.from({ length: 18 }, (_, i) => ({
-                                  value: `${33 + i}`,
-                                  label: `${33 + i}`,
-                                }))}
-                                value={percentage3}
-                                onChange={handleSelectChange}
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                              />
-
-                            </div>
-                            <div className="col-md-6 tw-pt-4">
-                              <Select
-                                label="Select Grade"
-                                name="grade3"
-                                options={[
-                                  { value: "A", label: "A" },
-                                  { value: "B", label: "B" },
-                                  { value: "C", label: "C" },
-                                  { value: "D", label: "D" },
-                                  { value: "E", label: "E" },
-                                ]}
-                                value={grade3}
-                                onChange={handleSelectChange}
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
-                              />
-
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-
-                      {/* user info */}
-                      <div className=" tw-pt-8">
-                        <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                          <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                          <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">{t(`Intermediate / O-A Levels (F.A, I.Com, ICS, FSC,
-                            DAE, +2 Examination)`)}</p>
+                          </form>
                         </div>
 
-                        <form>
-                          <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
-                            <div className="col-md-6 tw-pt-4">
-                              <Select
-                                label="Subject"
-                                name="subject3"
-                                options={[
-                                  { value: "Science", label: "Science" },
-                                  { value: "Engineering", label: "Engineering" },
-                                  { value: "Medical", label: "Medical" },
-                                  { value: "IT", label: "IT" },
-                                  { value: "Business", label: "Business" },
-                                  { value: "Management", label: "Management" },
-                                  { value: "Art Design Media", label: "Art Design Media" },
-                                  { value: "Education", label: "Education" },
-                                  { value: "Journalism", label: "Journalism" },
-                                  { value: "Natural Science", label: "Natural Science" },
-                                ]}
-                                value={subject3}
-                                onChange={handleSelectChange}
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
-                              />
-
-                            </div>
-
-                            <div className="col-md-6 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
-                              <Input
-                                placeholder={"Completed Year"}
-                                star={"*"}
-                                type={"year"}
-                                className={
-                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
-                                }
-                                label={"Completed Year"}
-                              />
-                            </div>
-                            <div className="col-md-6 tw-pt-4">
-                              <Select
-                                label="Select Percentage"
-                                name="percentage"
-                                options={Array.from({ length: 18 }, (_, i) => ({
-                                  value: `${33 + i}`,
-                                  label: `${33 + i}`,
-                                }))}
-                                value={percentage}
-                                onChange={handleSelectChange}
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                              />
-
-                            </div>
-                            <div className="col-md-6 tw-pt-4">
-                              <Select
-                                label="Select Grade"
-                                name="grade"
-                                options={[
-                                  { value: "A", label: "A" },
-                                  { value: "B", label: "B" },
-                                  { value: "C", label: "C" },
-                                  { value: "D", label: "D" },
-                                  { value: "E", label: "E" },
-                                ]}
-                                value={grade}
-                                onChange={handleSelectChange}
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                              />
-
-                            </div>
+                        {/* user info */}
+                        <div className=" tw-pt-8">
+                          <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
+                            <i class="fa tw-text-white fa-building tw-pt-1"></i>
+                            <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">{t(`Intermediate / O-A Levels (F.A, I.Com, ICS, FSC,
+                            DAE, +2 Examination)`.replace(/\s+/g, ' ').trim())}</p>
                           </div>
-                        </form>
-                      </div>
 
-                      {/* user info */}
-                      <div className=" tw-pt-8">
-                        <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
-                          <i class="fa tw-text-white fa-building tw-pt-1"></i>
-                          <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">{t(`Under Graduate (B.A, B.Com, BBA, BCS, BIT,BSc, BE,
-                            BS, DVM, LLB)`)}</p>
+                          <form>
+                            <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Subject"
+                                  name="subjectINTER"
+                                  options={[
+                                    { value: "Science", label: "Science" },
+                                    { value: "Engineering", label: "Engineering" },
+                                    { value: "Medical", label: "Medical" },
+                                    { value: "IT", label: "IT" },
+                                    { value: "Business", label: "Business" },
+                                    { value: "Management", label: "Management" },
+                                    { value: "Art Design Media", label: "Art Design Media" },
+                                    { value: "Education", label: "Education" },
+                                    { value: "Journalism", label: "Journalism" },
+                                    { value: "Natural Science", label: "Natural Science" },
+                                  ]}
+                                  value={subjectINTER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg tw-mt-2"
+                                />
+
+                              </div>
+
+                              <div className="col-md-6 tw-pt-4">
+                                <label className=" tw-text-sm  tw-text-gray "></label>
+                                <Input
+                                  placeholder={"Completed Year"}
+                                  star={"*"}
+                                  type={"year"}
+                                  className={
+                                    " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                  }
+                                  label={"Completed Year"}
+                                  name = "yearINTER"
+                                  value = {yearINTER}
+                                />
+                              </div>
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select Percentage"
+                                  name="percentageINTER"
+                                  options={Array.from({ length: 18 }, (_, i) => ({
+                                    value: `${33 + i}`,
+                                    label: `${33 + i}`,
+                                  }))}
+                                  value={percentageINTER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select Grade"
+                                  name="gradeINTER"
+                                  options={[
+                                    { value: "A", label: "A" },
+                                    { value: "B", label: "B" },
+                                    { value: "C", label: "C" },
+                                    { value: "D", label: "D" },
+                                    { value: "E", label: "E" },
+                                  ]}
+                                  value={gradeINTER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+                            </div>
+                          </form>
                         </div>
 
-                        <form>
-                          <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
-                            <div className="col-md-6 tw-pt-4">
-                              <Select
-                                label="Subject"
-                                name="subject"
-                                options={[
-                                  { value: "Science", label: "Science" },
-                                  { value: "Engineering", label: "Engineering" },
-                                  { value: "Medical", label: "Medical" },
-                                  { value: "IT", label: "IT" },
-                                  { value: "Business", label: "Business" },
-                                  { value: "Management", label: "Management" },
-                                  { value: "Art Design Media", label: "Art Design Media" },
-                                  { value: "Education", label: "Education" },
-                                  { value: "Journalism", label: "Journalism" },
-                                  { value: "Natural Science", label: "Natural Science" },
-                                ]}
-                                value={subject}
-                                onChange={handleSelectChange}
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                              />
-
-                            </div>
-
-                            <div className="col-md-3 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray "></label>
-                              <Input
-                                placeholder={"From"}
-                                star={"*"}
-                                type={"year"}
-                                className={
-                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
-                                }
-                                label={"From"}
-                              />
-                            </div>
-
-                            <div className="col-md-3 tw-pt-4">
-                              <label className=" tw-text-sm  tw-text-gray ">{t(`To`)}</label>
-
-                              <Input
-                                placeholder={"To"}
-                                star={"*"}
-                                type={"year"}
-                                className={
-                                  " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
-                                }
-                                label={"To"}
-                              />
-                            </div>
-                            <div className="col-md-6 tw-pt-4">
-                              <Select
-                                label="Select Percentage"
-                                name="percentage2"
-                                options={Array.from({ length: 18 }, (_, i) => ({
-                                  value: `${33 + i}`,
-                                  label: `${33 + i}`,
-                                }))}
-                                value={percentage2}
-                                onChange={handleSelectChange}
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                              />
-
-                            </div>
-                            <div className="col-md-6 tw-pt-4">
-                              <Select
-                                label="Select Grade"
-                                name="grade2"
-                                options={[
-                                  { value: "A", label: "A" },
-                                  { value: "B", label: "B" },
-                                  { value: "C", label: "C" },
-                                  { value: "D", label: "D" },
-                                  { value: "E", label: "E" },
-                                ]}
-                                value={grade2}
-                                onChange={handleSelectChange}
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                              />
-
-                            </div>
+                        {/* user info */}
+                        <div className=" tw-pt-8">
+                          <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
+                            <i class="fa tw-text-white fa-building tw-pt-1"></i>
+                            <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">{t(`Under Graduate (B.A, B.Com, BBA, BCS, BIT,BSc, BE,
+                            BS, DVM, LLB)`.replace(/\s+/g, ' ').trim())}</p>
                           </div>
-                        </form>
-                      </div>
 
-                      {/* user info */}
-                      <div className=" tw-pt-8">
+                          <form>
+                            <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Subject"
+                                  name="subjectUNDER"
+                                  options={[
+                                    { value: "Science", label: "Science" },
+                                    { value: "Engineering", label: "Engineering" },
+                                    { value: "Medical", label: "Medical" },
+                                    { value: "IT", label: "IT" },
+                                    { value: "Business", label: "Business" },
+                                    { value: "Management", label: "Management" },
+                                    { value: "Art Design Media", label: "Art Design Media" },
+                                    { value: "Education", label: "Education" },
+                                    { value: "Journalism", label: "Journalism" },
+                                    { value: "Natural Science", label: "Natural Science" },
+                                  ]}
+                                  value={subjectUNDER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+
+                              <div className="col-md-3 ">
+                                <label className=" tw-text-sm  tw-text-gray "></label>
+                                <Input
+                                  placeholder={"From"}
+                                  star={"*"}
+                                  type={"year"}
+                                  className={
+                                    " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                  }
+                                  label={"From"}
+                                  name = "fromUNDER"
+                                  value = {fromUNDER}
+                                />
+                              </div>
+
+                              <div className="col-md-3 tw-pt-4">
+
+                                <Input
+                                  placeholder={"To"}
+                                  star={"*"}
+                                  type={"year"}
+                                  className={
+                                    " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                  }
+                                  label={"To"}
+                                  name = "toUNDER"
+                                  value = {toUNDER}
+                                />
+                              </div>
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select Percentage"
+                                  name="percentageUNDER"
+                                  options={Array.from({ length: 18 }, (_, i) => ({
+                                    value: `${33 + i}`,
+                                    label: `${33 + i}`,
+                                  }))}
+                                  value={percentageUNDER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
 
 
-                        <form>
-                          <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
 
-                            <span className=" tw-flex tw-items-center tw-gap-2">
-                              {" "}
-                              <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
 
-                            <h2 className="tw-text-left">
-                              <strong>{t(`Higher Secondary Education (Matriculation)`)}</strong>
-                            </h2>
-                            <div className="col-md-6 tw-pt-4">
-                              <Select
-                                label="English Language Proficiency Test"
-                                name="languageTest"
-                                options={[
-                                  { value: "IELTS", label: "IELTS" },
-                                  { value: "TOFEL (Paper-based)", label: "TOFEL (Paper-based)" },
-                                  { value: "TOFEL (Internet-based)", label: "TOFEL (Internet-based)" },
-                                  { value: "CAMBRIDGE", label: "CAMBRIDGE" },
-                                  { value: "PEARSON", label: "PEARSON" },
-                                  { value: "LETTER OF PROFICIENCY", label: "LETTER OF PROFICIENCY" },
-                                  { value: "OTHER", label: "OTHER" },
-                                ]}
-                                value={languageTest}
-                                onChange={handleSelectChange}
-                                className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
-                              />
+
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select GPA"
+                                  name="gpaUNDER"
+                                  options={Array.from({ length: 26 }, (_, i) => {
+                                    const value = (1.5 + i * 0.1).toFixed(1);
+                                    return { value, label: value };
+                                  })}
+                                  value={gpaUNDER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+                              </div>
+
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select Grade"
+                                  name="gradeUNDER"
+                                  options={[
+                                    { value: "A", label: "A" },
+                                    { value: "B", label: "B" },
+                                    { value: "C", label: "C" },
+                                    { value: "D", label: "D" },
+                                    { value: "E", label: "E" },
+                                  ]}
+                                  value={gradeUNDER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+
+
+
+                              {/*MASTERS */}
+
+
+
+
+
+
+
 
                             </div>
+                          </form>
+                        </div>
+
+
+                        <div className=" tw-pt-8">
+                          <div className="  tw-bg-primary p-3 tw-rounded-md tw-flex tw-items-center tw-text-white">
+                            <i class="fa tw-text-white fa-building tw-pt-1"></i>
+                            <p className=" m-0 tw-text-white tw-font-semibold tw-uppercase">{t(` Masters (M.A, M.Com, MS, MBBS, MSC, MBA, MIT, MSc, ME)`.replace(/\s+/g, ' ').trim())}</p>
                           </div>
-                        </form>
-                      </div>
-                    </>
-                  ) : null}
+
+                          <form>
+                            <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Subject"
+                                  name="subjectMASTER"
+                                  options={[
+                                    { value: "Science", label: "Science" },
+                                    { value: "Engineering", label: "Engineering" },
+                                    { value: "Medical", label: "Medical" },
+                                    { value: "IT", label: "IT" },
+                                    { value: "Business", label: "Business" },
+                                    { value: "Management", label: "Management" },
+                                    { value: "Art Design Media", label: "Art Design Media" },
+                                    { value: "Education", label: "Education" },
+                                    { value: "Journalism", label: "Journalism" },
+                                    { value: "Natural Science", label: "Natural Science" },
+                                  ]}
+                                  value={subjectMASTER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+
+                              <div className="col-md-3 ">
+                                <label className=" tw-text-sm  tw-text-gray "></label>
+                                <Input
+                                  placeholder={"From"}
+                                  star={"*"}
+                                  type={"year"}
+                                  className={
+                                    " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                  }
+                                  label={"From"}
+                                  name = "fromMASTER"
+                                  value = {fromMASTER}
+                                />
+                              </div>
+
+                              <div className="col-md-3 tw-pt-4">
+
+                                <Input
+                                  placeholder={"To"}
+                                  star={"*"}
+                                  type={"year"}
+                                  className={
+                                    " tw-w-full border tw-py-3.5 tw-px-3 tw-rounded-lg"
+                                  }
+                                  label={"To"}
+                                  name = "toMASTER"
+                                  value = {toMASTER}
+                                />
+                              </div>
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select Percentage"
+                                  name="percentageMASTER"
+                                  options={Array.from({ length: 18 }, (_, i) => ({
+                                    value: `${33 + i}`,
+                                    label: `${33 + i}`,
+                                  }))}
+                                  value={percentageMASTER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+
+
+
+
+
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select GPA"
+                                  name="gpaMASTER"
+                                  options={Array.from({ length: 26 }, (_, i) => {
+                                    const value = (1.5 + i * 0.1).toFixed(1);
+                                    return { value, label: value };
+                                  })}
+                                  value={gpaMASTER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+                              </div>
+
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="Select Grade"
+                                  name="gradeMASTER"
+                                  options={[
+                                    { value: "A", label: "A" },
+                                    { value: "B", label: "B" },
+                                    { value: "C", label: "C" },
+                                    { value: "D", label: "D" },
+                                    { value: "E", label: "E" },
+                                  ]}
+                                  value={gradeMASTER}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+
+
+
+                              {/*MASTERS */}
+
+
+
+
+
+                            </div>
+                          </form>
+                        </div>
+
+
+
+
+                        {/* user info */}
+                        <div className=" tw-pt-8">
+
+
+                          <form>
+                            <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
+
+                              <span className=" tw-flex tw-items-center tw-gap-2">
+                                {" "}
+                                <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`.replace(/\s+/g, ' ').trim())}</span>
+
+                              <h2 className="tw-text-left">
+                                <strong>{t(`English Language Proficiency Test)`.replace(/\s+/g, ' ').trim())}</strong>
+                              </h2>
+                              <div className="col-md-6 tw-pt-4">
+                                <Select
+                                  label="English Language Proficiency Test"
+                                  name="languageTest"
+                                  options={[
+                                    { value: "IELTS", label: "IELTS" },
+                                    { value: "TOFEL (Paper-based)", label: "TOFEL (Paper-based)" },
+                                    { value: "TOFEL (Internet-based)", label: "TOFEL (Internet-based)" },
+                                    { value: "CAMBRIDGE", label: "CAMBRIDGE" },
+                                    { value: "PEARSON", label: "PEARSON" },
+                                    { value: "LETTER OF PROFICIENCY", label: "LETTER OF PROFICIENCY" },
+                                    { value: "OTHER", label: "OTHER" },
+                                  ]}
+                                  value={languageTest}
+                                  onChange={handleSelectChange}
+                                  className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full border tw-rounded-lg mt-2"
+                                />
+
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </>
+                    ) : null}
+
+
+
 
                   <Button
                     onClick={handleSubmit}

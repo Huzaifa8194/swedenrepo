@@ -89,7 +89,7 @@ const Routing = () => {
           <Route path="/rent_out_your_housing" element={<Rent_out_your_housing />} />
           <Route path="/looking_for_housing" element={<Looking_for_housing />} />
           <Route path="/assessment" element={<Assessment />} />
-          <Route path="/assessment_register" element={<Assessment_register />} />
+          <Route path="/businessvisaassessment" element={<Assessment_register />} />
           <Route path="/family_reunification_assessment" element={<Family_reunification_assessment />} />
           <Route path="/long_term_eu_status_assessment" element={<Long_term_eu_status_assessment />} />
           <Route path="/visit_visa" element={<Visit_visa />} />

@@ -11,20 +11,23 @@ import Header from '../../components/Header_New/Header';
 
 import { useTranslation } from 'react-i18next';
 
-
 const Home = () => {
+  const { i18n } = useTranslation();
 
-  const { t } = useTranslation();
-
+  // Check if the current language is RTL
+  const isRTL = i18n.language === 'ur'; // Adjust language code as needed
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div>
       <Header />
       <Hero />
-      <OurSkills />
+      <div dir={isRTL ? 'rtl' : 'ltr'} className={isRTL ? 'rtl' : ''}>
+        <OurSkills />
+      </div>
       <Because_family />
       <Visitor />
       <Blog />

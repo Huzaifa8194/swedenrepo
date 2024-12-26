@@ -14,15 +14,15 @@ import flag2 from "../../assets/images/Norway.png";
 import flag3 from "../../assets/images/icons8-czech-republic-80.png";
 import flag4 from "../../assets/images/great-britain.png";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 import Sidebar from "../../components/ScrollableBar";
 
 
 import Header from "../../components/Header_New/Header";
 
 const StudyInEu = () => {
-  const { t, language } = useTranslation();
-  const isleftlangue = language === 'ur';
+  const { t, i18n } = useTranslation();
+  const isleftlangue = i18n.language === 'ur';
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -45,221 +45,7 @@ const StudyInEu = () => {
 
   const { id } = useParams();
 
-  const data = [
-    {
-      id: 1,
-      title: "Asylum",
-      description:
-        "You have to be in Sweden or on the Swedish border in order to apply for asylum.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 fa fa-home"></i>
-      ),
-      Link: "/asylum",
-    },
-    {
-      id: 2,
-      title: "Family Reunification",
-      description:
-        "Family reunification is a recognized reason for the immigration of family members to a country.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-family"></i>
-      ),
-      Link: "/family-reunification",
-    },
-    {
-      id: 3,
-      title: "Personnummer Sweden",
-      description:
-        "The personal identification is a number that the Swedish Tax Agency assigns to person registered in Sweden.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-14"></i>
-      ),
-
-      Link: "/personnumer-sweden",
-    },
-    {
-      id: 4,
-      title: "CPR Number Denmark",
-      description:
-        "CPR stands for Det Centrale Personregister, which translates to the Civil Registration System ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-12"></i>
-      ),
-      Link: "/cpr-number-denmark",
-    },
-    {
-      id: 5,
-      title: "Work Permit",
-      description:
-        "Permit To Work refers to management systems used to ensure that work is done safely and efficiently.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-11"></i>
-      ),
-      Link: "/work-permit",
-    },
-    {
-      id: 5,
-      title: "Business Permit",
-      description:
-        "Swedish business culture is open and innovative, and starting a business there is relatively simple        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 fa fa-briefcase"></i>
-      ),
-
-      Link: "/business-permit",
-    },
-    {
-      id: 6,
-      title: "Business Visit",
-      description:
-        "Foreign people who want to invest in Sweden and stay temporarily for that purpose can apply for business visa.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 themifyicon ti-map-alt"></i>
-      ),
-
-      Link: "/business-visit",
-    },
-    {
-      id: 7,
-      title: "Citizenship",
-      description:
-        "When you have lived in Sweden for a specified period and meet requirements, you can apply for Swedish citizenship.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport"></i>
-      ),
-      Link: "/citizenship",
-    },
-    {
-      id: 8,
-      title: "Study in EU",
-      description:
-        "If you are thinking about studying abroad, then visit Sweden. Sweden is well known for its world-class academic opportunities.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-graduation-hat-1"></i>
-      ),
-      Link: "/study-in-eu",
-    },
-    {
-      id: 9,
-      title: "Global Visit Visas",
-      description:
-        "For visiting Sweden for a short period you will need a visit visa. Sweden follows the same visa rules as others.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-travel"></i>
-      ),
-      Link: "/global-visit-visas",
-    },
-    {
-      id: 10,
-      title: "EEA Permits",
-      description:
-        "Any EU citizen getting residence in the UK according to the EU rules, can bring their family with them.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-contract"></i>
-      ),
-      Link: "/eea-permits",
-    },
-    {
-      id: 11,
-      title: "Parents EU Permit",
-      description:
-        "Parents of a child under 18 years who is in Sweden can move to sweden if they will live with the child.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-family-1"></i>
-      ),
-      Link: "/parents-eu-permit",
-    },
-    {
-      id: 12,
-      title: "Marriage & Divorce      ",
-      description:
-        "Getting married is beautiful. But to make sure that it will be a good experience, it is important to have legal control.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-insurance"></i>
-      ),
-      Link: "/marriage-divorce",
-    },
-    {
-      id: 13,
-      title: "Company Registration      ",
-      description:
-        "If you are planning to register your company inside Sweden, you can reach us anytime if you have some queries about it.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-certificate"></i>
-      ),
-      Link: "/company-registration",
-    },
-    {
-      id: 14,
-      title: "House & Offices",
-      description:
-        "we offer you an easy and painless solution where you can get a place to live without any worries.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-certificate"></i>
-      ),
-      Link: "/house-offices",
-    },
-    {
-      id: 15,
-      title: "Appeal Cases",
-      description:
-        "Have you been denied? let’s take a look at your case so that the decision can hopefully be overturned.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-reading"></i>
-      ),
-      Link: "/appeal-cases",
-    },
-    {
-      id: 16,
-      title: "EU Citizens Relocation",
-      description:
-        "Family reunification means that a family that has been split up can apply to be allowed to live together.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-passport-3"></i>
-      ),
-      Link: "/eu-family-reunification",
-    },
-    {
-      id: 17,
-      title: "Investment",
-      description:
-        "There are various opportunities for business ventures, Look for the best opportunity, grab it and do your best.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  fa fa-sitemap"></i>
-      ),
-      Link: "/investment",
-    },
-    {
-      id: 18,
-      title: "Direct Citizenship ",
-      description:
-        "citizenship-by-investment programs provide ultra-wealthy families with the privilege of a second or third passport.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-boarding-pass"></i>
-      ),
-      Link: "/direct-citizenship-by-investments",
-    },
-    {
-      id: 19,
-      title: "Permanent Residence",
-      description:
-        "If you lived in Sweden for more than 5 years with the EU right of residence you can get the permanent residence permit.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-policy"></i>
-      ),
-      Link: "/permanent-residence",
-    },
-    {
-      id: 20,
-      title: "Golden Visa  ",
-      description:
-        "As a member state of the EU, They offer its residents and citizens a number of reassuring benefits.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-boarding-pass-2"></i>
-      ),
-      Link: "/golden-visa-greece-portugal",
-    },
-  ];
+  
 
   return (
     <>
@@ -294,7 +80,7 @@ const StudyInEu = () => {
                       </span>
 
                       <h2 className="tw-text-left">
-                        <strong>{t(`In Sweden`)}</strong>
+                        <strong>{t(`In Sweden`.replace(/\s+/g, ' ').trim())}</strong>
                       </h2>
 
                       <br />
@@ -316,10 +102,10 @@ const StudyInEu = () => {
                     fascinating history and culture, global businesses,
                     delicious food, and welcoming people; and is also well known
                     for its world-class academic opportunities that rank among
-                    the top 100 in the world.`)}</p>
+                    the top 100 in the world.`.replace(/\s+/g, ' ').trim())}</p>
 
                   <p className=" tw-text-gray">{t(`Following are 6 reasons why Sweden is considered an ideal
-                    place to study:`)}</p>
+                    place to study:`.replace(/\s+/g, ' ').trim())}</p>
 
                   <div>
                     <br />
@@ -329,7 +115,7 @@ const StudyInEu = () => {
                       VISION
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>{t(`Enhancement Of One’s Mind`)}</strong>
+                      <strong>{t(`Enhancement Of One’s Mind`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
 
@@ -342,7 +128,7 @@ const StudyInEu = () => {
                       Where everyone is urged to bestow their ideas and
                       opinions. This independence of mind and letting everyone’s
                       voice heard are the reasons why Sweden ranks among the
-                      world’s most innovative nations.`)}</p>
+                      world’s most innovative nations.`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
                   <div>
                     <div>
@@ -353,7 +139,7 @@ const StudyInEu = () => {
                         RICH
                       </span>
                       <h2 className="tw-text-left">
-                        <strong>{t(`Swedish History`)}</strong>
+                        <strong>{t(`Swedish History`.replace(/\s+/g, ' ').trim())}</strong>
                       </h2>
                       <br />
 
@@ -363,7 +149,7 @@ const StudyInEu = () => {
                         History Museum, the largest museum in Sweden; where
                         millions of visitors and students come to see Sweden’s
                         foremost gold and silver treasures, and incomparable
-                        medieval art.`)}</p>
+                        medieval art.`.replace(/\s+/g, ' ').trim())}</p>
                       <br />
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                         {" "}
@@ -371,7 +157,7 @@ const StudyInEu = () => {
                         LANGUAGE
                       </span>
                       <h2 className="tw-text-left">
-                        <strong>{t(`Proficiency`)}</strong>
+                        <strong>{t(`Proficiency`.replace(/\s+/g, ' ').trim())}</strong>
                       </h2>
                       <br />
 
@@ -386,7 +172,7 @@ const StudyInEu = () => {
                         open your mind to your new cultural surroundings. Also,
                         Sweden is a car-free country with an extensive network
                         of buses, trains, subways, trams, boats, planes, and
-                        many more that can take you anywhere you want to go.`)}</p>
+                        many more that can take you anywhere you want to go.`.replace(/\s+/g, ' ').trim())}</p>
 
                       <br />
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
@@ -396,7 +182,7 @@ const StudyInEu = () => {
                       </span>
 
                       <h2 className="tw-text-left">
-                        <strong>{t(`A Coastal City`)}</strong>
+                        <strong>{t(`A Coastal City`.replace(/\s+/g, ' ').trim())}</strong>
                       </h2>
                       <br />
 
@@ -413,7 +199,7 @@ const StudyInEu = () => {
                         as digital media, transports, financial services,
                         business, leisure, entertainment, and constructions.
                         And, most importantly, the cost of an apartment in Malmo
-                        is in the 139th place of all 248 Teleport cities.`)}</p>
+                        is in the 139th place of all 248 Teleport cities.`.replace(/\s+/g, ' ').trim())}</p>
 
                       <br />
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
@@ -423,7 +209,7 @@ const StudyInEu = () => {
                       </span>
 
                       <h2 className="tw-text-left">
-                        <strong>{t(`And Working In Sweden`)}</strong>
+                        <strong>{t(`And Working In Sweden`.replace(/\s+/g, ' ').trim())}</strong>
                       </h2>
                       <br />
 
@@ -433,7 +219,7 @@ const StudyInEu = () => {
                         during their studies. After the completion of studies,
                         you can apply to extend your residence permit to look
                         for work for up to six months. (But for that learning
-                        Swedish is necessary – it’s often a job’s requirement.)`)}</p>
+                        Swedish is necessary – it’s often a job’s requirement.)`.replace(/\s+/g, ' ').trim())}</p>
 
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                         {" "}
@@ -443,7 +229,7 @@ const StudyInEu = () => {
 
                       <br />
                       <h2 className="tw-text-left">
-                        <strong>{t(`Citizen’s Right`)}</strong>
+                        <strong>{t(`Citizen’s Right`.replace(/\s+/g, ' ').trim())}</strong>
                       </h2>
                       <br />
 
@@ -457,13 +243,13 @@ const StudyInEu = () => {
                         therefore can shift to the country with or without a
                         job. However, they will need to start the Swedish visa
                         application process if they plan to continue their stay
-                        in a country for a long time.`)}</p>
+                        in a country for a long time.`.replace(/\s+/g, ' ').trim())}</p>
                       <p className=" tw-text-gray">{t(`If you are thinking about relocation Sweden; want to
                         study abroad and also interesting in traveling, then
                         Swedes are waiting for you. They are very friendly and
                         like traveling very much. They are habitually open to
                         know about a new culture and also interested in hearing
-                        about international experiences.`)}</p>
+                        about international experiences.`.replace(/\s+/g, ' ').trim())}</p>
                     </div>
                     <div className="row">
                       <div className="col-md-9 tw-mx-auto">
@@ -484,13 +270,13 @@ const StudyInEu = () => {
                     </span>
 
                     <h2 className="tw-text-left">
-                      <strong>{t(`Requirements For Students`)}</strong>
+                      <strong>{t(`Requirements For Students`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
 
                     <p className=" tw-text-gray">{t(`Students from the EU/EEA can study in Sweden without any
                       visa requirements. If you are from outside the EU/EEA, you
-                      may need to obtain a student visa.`)}</p>
+                      may need to obtain a student visa.`.replace(/\s+/g, ' ').trim())}</p>
                     <br />
                     <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                       {" "}
@@ -498,7 +284,7 @@ const StudyInEu = () => {
                       JOB MARKET
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>{t(`For Graduates`)}</strong>
+                      <strong>{t(`For Graduates`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
 
@@ -511,45 +297,45 @@ const StudyInEu = () => {
                       to get the foot in the door of the Swedish job market,
                       even when their knowledge of Swedish is limited. Sweden’s
                       government has also put an effort into decreasing red tape
-                      for foreign nationals looking to join the local workforce.`)}</p>
+                      for foreign nationals looking to join the local workforce.`.replace(/\s+/g, ' ').trim())}</p>
 
                     <div className=" row tw-pt-5">
                       <div className="col-md-6">
                         <h2 className="tw-text-left">
-                          <strong>{t(`Bachelor Programs`)}</strong>
+                          <strong>{t(`Bachelor Programs`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
 
                         <p className="  tw-text-gray">
-                          {t(`Application for`)} <b>{t(`online first admission`)}</b>{t(` of
-                          bachelor’s regarding different programs starts from`)}{" "}
-                          <b>{t(`16th of October to 15th of January`)}</b> {t(`every year.
-                          After enrolling, the classes start in August.`)}
+                          {t(`Application for`.replace(/\s+/g, ' ').trim())} <b>{t(`online first admission`.replace(/\s+/g, ' ').trim())}</b>{t(` of
+                          bachelor’s regarding different programs starts from`.replace(/\s+/g, ' ').trim())}{" "}
+                          <b>{t(`16th of October to 15th of January`.replace(/\s+/g, ' ').trim())}</b> {t(`every year.
+                          After enrolling, the classes start in August.`.replace(/\s+/g, ' ').trim())}
                         </p>
 
                         <p className="  tw-text-gray">
-                          {t(`Application for`)} <b>{t(`online second admission`)}</b> {t(`of
-                          bachelor’s regarding different programs starts from`)}{" "}
-                          <b>{t(`1st of June to 15th of August`)}</b> {t(`of every year.
-                          The classes will start in January after enrolling.`)}
+                          {t(`Application for`.replace(/\s+/g, ' ').trim())} <b>{t(`online second admission`.replace(/\s+/g, ' ').trim())}</b> {t(`of
+                          bachelor’s regarding different programs starts from`.replace(/\s+/g, ' ').trim())}{" "}
+                          <b>{t(`1st of June to 15th of August`.replace(/\s+/g, ' ').trim())}</b> {t(`of every year.
+                          The classes will start in January after enrolling.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </div>
                       <div className="col-md-6">
                         <h2 className="tw-text-left">
-                          <strong>{t(`Maters Programs`)}</strong>
+                          <strong>{t(`Maters Programs`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
 
                         <p className="  tw-text-gray">
-                          {t(`Application for`)} <b>{t(`online first admission`)}</b> {t(`of
-                          bachelor’s regarding different programs starts from`)}{" "}
-                          <b>{t(`16th of October to 15th of January`)}</b> {t(`every year.
-                          After enrolling, the classes start in August.`)}
+                          {t(`Application for`.replace(/\s+/g, ' ').trim())} <b>{t(`online first admission`.replace(/\s+/g, ' ').trim())}</b> {t(`of
+                          bachelor’s regarding different programs starts from`.replace(/\s+/g, ' ').trim())}{" "}
+                          <b>{t(`16th of October to 15th of January`.replace(/\s+/g, ' ').trim())}</b> {t(`every year.
+                          After enrolling, the classes start in August.`.replace(/\s+/g, ' ').trim())}
                         </p>
 
                         <p className="  tw-text-gray">
-                          {(`Application for`)} <b>{t(`online second admission`)}</b> {t(`of
-                          bachelor’s regarding different programs starts from`)}{" "}
-                          <b>{t(`1st of June to 15th of August`)}</b> {t(`of every year.
-                          The classes will start in January after enrolling.`)}
+                          {(`Application for`.replace(/\s+/g, ' ').trim())} <b>{t(`online second admission`.replace(/\s+/g, ' ').trim())}</b> {t(`of
+                          bachelor’s regarding different programs starts from`.replace(/\s+/g, ' ').trim())}{" "}
+                          <b>{t(`1st of June to 15th of August`.replace(/\s+/g, ' ').trim())}</b> {t(`of every year.
+                          The classes will start in January after enrolling.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </div>
                     </div>
@@ -558,10 +344,10 @@ const StudyInEu = () => {
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                       {t(` LETTER OF`)}
+                       {t(` LETTER OF`.replace(/\s+/g, ' ').trim())}
                       </span>
                       <h2 className="tw-text-left">
-                        <strong>{t(`English Proficiency`)}</strong>
+                        <strong>{t(`English Proficiency`.replace(/\s+/g, ' ').trim())}</strong>
                       </h2>
                       <br />
 
@@ -571,18 +357,18 @@ const StudyInEu = () => {
                         Students from Pakistan and India with their Swedish
                         Kandidatexamen equivalent degree (Bachelors Hons) can
                         provide letter of English proficiency from their
-                        Universities.`)}</p>
+                        Universities.`.replace(/\s+/g, ' ').trim())}</p>
                     </div>
 
                     <div>
                       <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                        {t(`ENGLISH`)}
+                        {t(`ENGLISH`.replace(/\s+/g, ' ').trim())}
                       </span>
 
                       <h2 className="tw-text-left">
-                        <strong>{t(`Requirement`)}</strong>
+                        <strong>{t(`Requirement`.replace(/\s+/g, ' ').trim())}</strong>
                       </h2>
                       <br />
 
@@ -592,32 +378,32 @@ const StudyInEu = () => {
                         Students from Pakistan and India with their Swedish
                         Kandidatexamen equivalent degree (Bachelors Hons) can
                         provide letter of English proficiency from their
-                        Universities.`)}</p>
+                        Universities.`.replace(/\s+/g, ' ').trim())}</p>
 
                       <ul className=" tw-p-0 tw-pt-4">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">{t(`IELTS score of 6.5 is required.`)}</p>
+                          <p className=" m-0 tw-text-gray">{t(`IELTS score of 6.5 is required.`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">{t(`TOEFL score of 4.5 in written test is required.`)}</p>
+                          <p className=" m-0 tw-text-gray">{t(`TOEFL score of 4.5 in written test is required.`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <GoTriangleRight className=" tw-text-blue" />
                           <p className=" m-0 tw-text-gray">{t(`English Language with Proficiency Certificate from
-                            Cambridge Michigan.`)}</p>
+                            Cambridge Michigan.`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
 
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">{t(`Minimum score for Pearson is 47.`)}</p>
+                          <p className=" m-0 tw-text-gray">{t(`Minimum score for Pearson is 47.`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                       </ul>
 
                       <p className=" tw-text-gray">
-                        {t(`Use our`)} <b>{t(`Student Assessment tool`)}</b> {t(`to find out if
-                        you are eligible for admission in Sweden.`)}
+                        {t(`Use our`.replace(/\s+/g, ' ').trim())} <b>{t(`Student Assessment tool`.replace(/\s+/g, ' ').trim())}</b> {t(`to find out if
+                        you are eligible for admission in Sweden.`.replace(/\s+/g, ' ').trim())}
                       </p>
 
                       <div className="row tw-pt-4">
@@ -633,11 +419,11 @@ const StudyInEu = () => {
                           <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                             {" "}
                             <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                           {t(` STUDY`)}
+                           {t(` STUDY`.replace(/\s+/g, ' ').trim())}
                           </span>
 
                           <h2 className="tw-text-left">
-                            <strong>{t(`In Denmark`)}</strong>
+                            <strong>{t(`In Denmark`.replace(/\s+/g, ' ').trim())}</strong>
                           </h2>
                           <br />
                         </div>
@@ -648,11 +434,11 @@ const StudyInEu = () => {
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                         {t(` FACTS AND FIGURES ABOUT`)}
+                         {t(` FACTS AND FIGURES ABOUT`.replace(/\s+/g, ' ').trim())}
                         </span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`Higher Education In Denmark`)}</strong>
+                          <strong>{t(`Higher Education In Denmark`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <br />
 
@@ -666,7 +452,7 @@ const StudyInEu = () => {
                           “universities of applied sciences” or polytechnics). A
                           locally special kind of institution are the business
                           academies, which offer practice-oriented associate’s
-                          and bachelor’s degrees in business-related fields.`)}</p>
+                          and bachelor’s degrees in business-related fields.`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
 
                       <div>
@@ -674,17 +460,17 @@ const StudyInEu = () => {
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                         {t(` JOB MARKET`)}
+                         {t(` JOB MARKET`.replace(/\s+/g, ' ').trim())}
                         </span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`For Graduates`)}</strong>
+                          <strong>{t(`For Graduates`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <br />
 
                         <p className=" tw-text-gray">{t(`In Denmark requirements vary from programme to
                           programme. Here is what you need to know about how and
-                          when to apply.`)}</p>
+                          when to apply.`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
 
                       <div>
@@ -692,28 +478,28 @@ const StudyInEu = () => {
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                          {t(`ASSESSMENT OF`)}
+                          {t(`ASSESSMENT OF`.replace(/\s+/g, ' ').trim())}
                         </span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`Your Qualifications`)}</strong>
+                          <strong>{t(`Your Qualifications`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <br />
 
                         <p className=" tw-text-gray">{t(`Non-Danish citizens who do not have a Danish entrance
                           examination are eligi-ble for admission if they have
                           qualifications recognized as being comparable to
-                          Danish entrance qualifications.`)}</p>
+                          Danish entrance qualifications.`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
 
                       <div>
                         <br />
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {" "}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`FOR AN OFFICIAL ASSESSMENT OF`)}</span>
+                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`FOR AN OFFICIAL ASSESSMENT OF`.replace(/\s+/g, ' ').trim())}</span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`Your Qualifications Visit Student Assessment Tool`)}</strong>
+                          <strong>{t(`Your Qualifications Visit Student Assessment Tool`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <br />
                       </div>
@@ -723,11 +509,11 @@ const StudyInEu = () => {
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                         {t(` GENERAL`)}
+                         {t(` GENERAL`.replace(/\s+/g, ' ').trim())}
                         </span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`Admission Requirements`)}</strong>
+                          <strong>{t(`Admission Requirements`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <br />
 
@@ -738,15 +524,15 @@ const StudyInEu = () => {
                           proficiency comparable to ‘English B’ in the Danish
                           upper secondary school (gymnasium). Some programmes
                           require ‘Eng-lish A’, which is one level higher than
-                          ‘English B’.`)}</p>
+                          ‘English B’.`.replace(/\s+/g, ' ').trim())}</p>
 
-                        <p className=" tw-text-gray">{t(`English language requirements`)}</p>
+                        <p className=" tw-text-gray">{t(`English language requirements`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`To prove a satisfactory proficiency in English, the
                           language tests TOEFL, IELTS and Cambridge ESOL
                           examinations (CAE) are often used. The score
                           equivalents are determined by the individual
                           institution, so to be certain check out their language
-                          requirements.`)}</p>
+                          requirements.`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
 
                       <div>
@@ -754,11 +540,11 @@ const StudyInEu = () => {
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                          {t(`BASED UPON A ROUGH AVERAGE OF PREVIOUS REQUIREMENTS`)}
+                          {t(`BASED UPON A ROUGH AVERAGE OF PREVIOUS REQUIREMENTS`.replace(/\s+/g, ' ').trim())}
                         </span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`Here Is An Estimate Of The Ranges You Can Expect`)}</strong>
+                          <strong>{t(`Here Is An Estimate Of The Ranges You Can Expect`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <br />
 
@@ -767,7 +553,7 @@ const StudyInEu = () => {
                           least English B level in Denmark. Educational
                           insti-tutions can offer a specially designed test for
                           these applicants, which can docu-ment the applicant’s
-                          English level.`)}</p>
+                          English level.`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
 
                       <div className="row tw-pt-4">
@@ -782,11 +568,11 @@ const StudyInEu = () => {
                           <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                             {" "}
                             <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                            {t(`STUDY`)}
+                            {t(`STUDY`.replace(/\s+/g, ' ').trim())}
                           </span>
 
                           <h2 className="tw-text-left">
-                            <strong>{t(`In United Kingdom`)}</strong>
+                            <strong>{t(`In United Kingdom`.replace(/\s+/g, ' ').trim())}</strong>
                           </h2>
                           <br />
                         </div>
@@ -797,11 +583,11 @@ const StudyInEu = () => {
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                          {t(`HOW TO`)}
+                          {t(`HOW TO`.replace(/\s+/g, ' ').trim())}
                         </span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`Apply`)}</strong>
+                          <strong>{t(`Apply`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <br />
 
@@ -811,11 +597,11 @@ const StudyInEu = () => {
                           which academic study is to commence. This must be done
                           through UCAS (The University and Colleges Admissions
                           Services) which acts as the intermediator between
-                          universities and students.`)}</p>
+                          universities and students.`.replace(/\s+/g, ' ').trim())}</p>
 
                         <p className="  tw-text-gray">{t(`You will need to take an admission test and an
                           interview if required by the course. So it will be
-                          advised for some early preparation`)}</p>
+                          advised for some early preparation`.replace(/\s+/g, ' ').trim())}</p>
 
                         <div className="row">
                           <div className="col-md-10 tw-mx-auto">
@@ -831,17 +617,17 @@ const StudyInEu = () => {
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                          {t(`ENTRY`)}
+                          {t(`ENTRY`.replace(/\s+/g, ' ').trim())}
                         </span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`Qualifications`)}</strong>
+                          <strong>{t(`Qualifications`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <br />
 
                         <p className=" tw-text-gray">{t(`As per the qualification guidelines provided by the UK
                           National Agency, universities assess your application
-                          before offering a place on the course.`)}</p>
+                          before offering a place on the course.`.replace(/\s+/g, ' ').trim())}</p>
                         <ul className=" tw-p-0 tw-pt-4">
                           <li className=" tw-flex  tw-gap-3">
                             <div>
@@ -849,21 +635,21 @@ const StudyInEu = () => {
                             </div>
                             <p className=" m-0 tw-text-gray">{t(`At least two subjects to be taken at A2. Sometimes
                               grades are converted into UCAS Tariff points to
-                              compare the applicants`)}</p>
+                              compare the applicants`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                           <li className=" tw-flex  tw-gap-3">
                             <div>
                               <GoTriangleRight className=" tw-text-blue" />
                             </div>
                             <p className=" m-0 tw-text-gray">{t(`Many universities appreciate The Extended Project
-                              (EPQ) though it is not compulsory`)}</p>
+                              (EPQ) though it is not compulsory`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                           <li className=" tw-flex tw-items-center tw-gap-3">
                             <div>
                               <GoTriangleRight className=" tw-text-blue" />
                             </div>
                             <p className=" m-0 tw-text-gray">{t(`Many universities appreciate The Extended Project
-                              (EPQ) though it is not compulsory`)}</p>
+                              (EPQ) though it is not compulsory`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                           <li className=" tw-flex t tw-gap-3">
                             <div>
@@ -871,18 +657,18 @@ const StudyInEu = () => {
                             </div>
                             <p className=" m-0 tw-text-gray">{t(`SI-UK provides IELTS preparation classes so you
                               can hit your target score. Sign up for the right
-                              IELTS course that suits your schedule.`)}</p>
+                              IELTS course that suits your schedule.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                           <li className=" tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className=" tw-text-blue" />
-                            <p className=" m-0 tw-text-gray">{t(`A criminal record DBS check`)}</p>
+                            <p className=" m-0 tw-text-gray">{t(`A criminal record DBS check`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                           <li className=" tw-flex tw-gap-3">
                             <div>
                               <GoTriangleRight className=" tw-text-blue" />
                             </div>
                             <p className=" m-0 tw-text-gray">{t(`A fitness to practice check as well as finance
-                              check`)}</p>
+                              check`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                           <li className=" tw-flex  tw-gap-3">
                             <div>
@@ -890,7 +676,7 @@ const StudyInEu = () => {
                             </div>
                             <p className=" m-0 tw-text-gray">{t(`You will need to take an admission test and an
                               interview if required by the course. So it will be
-                              advised for some early preparation`)}</p>
+                              advised for some early preparation`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                         </ul>
                       </div>
@@ -907,11 +693,11 @@ const StudyInEu = () => {
                           <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                             {" "}
                             <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                           {t(` STUDY`)}
+                           {t(` STUDY`.replace(/\s+/g, ' ').trim())}
                           </span>
 
                           <h2 className="tw-text-left">
-                            <strong>{t(`In Czech Republic`)}</strong>
+                            <strong>{t(`In Czech Republic`.replace(/\s+/g, ' ').trim())}</strong>
                           </h2>
                           <br />
                         </div>
@@ -922,11 +708,11 @@ const StudyInEu = () => {
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                         {t(` ADMISSION`)}
+                         {t(` ADMISSION`.replace(/\s+/g, ' ').trim())}
                         </span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`Requirements`)}</strong>
+                          <strong>{t(`Requirements`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <br />
 
@@ -936,19 +722,19 @@ const StudyInEu = () => {
                           Bachelor’s (3 years) and long-cycle Master’s degree
                           programmes (5-6 years); Bachelor’s degree for a
                           follow-up Master’s; Master’s degree for a Doctoral
-                          study programme).`)}</p>
+                          study programme).`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`If you want to study at university in the Czech
                           Republic, you need to have your previous completed
                           study recognized by the Czech recognition authority.
                           Read more details about the process of recognition of
-                          your previous studies`)}</p>
+                          your previous studies`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`Besides certified copies of your educational
                           qualifications, the minimum entry requirements usually
                           include a completed and submitted application, proof
                           of the admission procedure fee payment and compliance
                           with the conditions for the specific study programme
                           (e.g. letter of motivation, letter of recommendation,
-                          portfolio, English proficiency test)`)}</p>
+                          portfolio, English proficiency test)`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
 
                       <div className="row tw-pt-4">
@@ -963,11 +749,11 @@ const StudyInEu = () => {
                           <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                             {" "}
                             <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                            {t(`STUDY`)}
+                            {t(`STUDY`.replace(/\s+/g, ' ').trim())}
                           </span>
 
                           <h2 className="tw-text-left">
-                            <strong>{t(`In Norway`)}</strong>
+                            <strong>{t(`In Norway`.replace(/\s+/g, ' ').trim())}</strong>
                           </h2>
                           <br />
                         </div>
@@ -978,23 +764,23 @@ const StudyInEu = () => {
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                          {t(`APPLICATION`)}
+                          {t(`APPLICATION`.replace(/\s+/g, ' ').trim())}
                         </span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`& Admission`)}</strong>
+                          <strong>{t(`& Admission`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <br />
 
                         <p className=" tw-text-gray">{t(`Applications and admissions to higher education in
                           Norway is handled by each institution, and the
                           different institutions may have different requirements
-                          and deadlines.`)}</p>
+                          and deadlines.`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`Make sure you obtain all necessary information about
                           requirements, documenta-tion, and deadlines for the
                           different study programmes and institutions. Below you
                           will find the minimum requirements for admission to
-                          higher education in Norway.`)}</p>
+                          higher education in Norway.`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
 
                       <div>
@@ -1006,11 +792,11 @@ const StudyInEu = () => {
                         </span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`Academic Requirements`)}</strong>
+                          <strong>{t(`Academic Requirements`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <br />
 
-                        <p className=" tw-text-gray">{t(`Bachelor’s/ undergraduate studies`)}</p>
+                        <p className=" tw-text-gray">{t(`Bachelor’s/ undergraduate studies`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`Completion of secondary education at advanced level,
                           equivalent to passing the ex-am at the end of
                           Norwegian secondary school, is the general basic
@@ -1019,22 +805,22 @@ const StudyInEu = () => {
                           Quality Assurance in Education (NOKUT). For students
                           from some countries at least one year of completed
                           studies at the university level is required in
-                          addition.`)}</p>
+                          addition.`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`Some study programmes have special admission
                           requirements, usually related to specialist subjects
                           or fields of study from secondary school. Please check
                           with the institution for information about these
-                          special qualifications.`)}</p>
+                          special qualifications.`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`Applicants for Masters programmes have normally
                           obtained an undergraduate/Bachelor’s degree or
                           equivalent of at least 3 years’ duration. The degree
                           must include courses equal to at least 1 1/2 years of
                           full-time studies in a subject relevant to that of the
-                          programme applied for.`)}</p>
+                          programme applied for.`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`Please beware that for some countries the first (and
                           sometimes the second) year of study at a foreign
                           higher education institution will not be recognized as
-                          higher education in Norway (see above).`)}</p>
+                          higher education in Norway (see above).`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
 
                       <div>
@@ -1042,10 +828,10 @@ const StudyInEu = () => {
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                          {t(`DEGREE SEEKING STUDENTS`)}
+                          {t(`DEGREE SEEKING STUDENTS`.replace(/\s+/g, ' ').trim())}
                         </span>
                         <h2 className="tw-text-left">
-                          <strong>{t(`Language Requirements`)}</strong>
+                          <strong>{t(`Language Requirements`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>{" "}
                         <br />
                         <p className=" tw-text-gray">{t(`For courses where the language of instruction is
@@ -1055,14 +841,14 @@ const StudyInEu = () => {
                           may vary from institution to institution, and
                           sometimes from study programme to study programme, and
                           that different English tests and scores may be
-                          required by different institutions.`)}</p>
+                          required by different institutions.`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`For courses where the language of instruction is
                           Norwegian, proficiency in the Norwegian language is
-                          required and should be documented.`)}</p>
-                        <p className=" tw-text-gray">{t(`Learn Norwegian outside Norway`)}</p>
+                          required and should be documented.`.replace(/\s+/g, ' ').trim())}</p>
+                        <p className=" tw-text-gray">{t(`Learn Norwegian outside Norway`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`Even though your study programme is taught in English
                           a certain knowledge of the Norwegian language will
-                          help you both academically, but also socially.`)}</p>
+                          help you both academically, but also socially.`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
 
                       <div className="row tw-pt-4">
@@ -1077,11 +863,11 @@ const StudyInEu = () => {
                           <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                             {" "}
                             <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                            {t(`STUDY`)}
+                            {t(`STUDY`.replace(/\s+/g, ' ').trim())}
                           </span>
 
                           <h2 className="tw-text-left">
-                            <strong>{t(`In Finland`)}</strong>
+                            <strong>{t(`In Finland`.replace(/\s+/g, ' ').trim())}</strong>
                           </h2>
                           <br />
                         </div>
@@ -1092,11 +878,11 @@ const StudyInEu = () => {
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                          {t(`BACHELOR’S AND`)}
+                          {t(`BACHELOR’S AND`.replace(/\s+/g, ' ').trim())}
                         </span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`Master’s Admissions`)}</strong>
+                          <strong>{t(`Master’s Admissions`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <br />
 
@@ -1104,12 +890,12 @@ const StudyInEu = () => {
                           Finland is done online at Studyin-fo.fi. That is also
                           where you can search for the available English-taught
                           degree programme options. There is no application fee,
-                          applying is always free.`)}</p>
+                          applying is always free.`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`If you are a non-EU student and subject to tuition
                           fees, you can usually apply for a scholarship from the
                           university at the same time when you are applying for
                           ad-mission. Check the fee and scholarship details with
-                          the university you are applying to!`)}</p>
+                          the university you are applying to!`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
 
                       <div>
@@ -1117,11 +903,11 @@ const StudyInEu = () => {
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                         {t(` WHEN TO`)}
+                         {t(` WHEN TO`.replace(/\s+/g, ' ').trim())}
                         </span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`Apply`)}</strong>
+                          <strong>{t(`Apply`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <br />
 
@@ -1133,7 +919,7 @@ const StudyInEu = () => {
                           application window. For example, some degree options
                           may of-fer a January study start option. For these,
                           applications would usually be open in September – or
-                          even earlier. It depends on the university!`)}</p>
+                          even earlier. It depends on the university!`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
 
                       <div>
@@ -1141,11 +927,11 @@ const StudyInEu = () => {
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                          {t(`WHEN TO`)}
+                          {t(`WHEN TO`.replace(/\s+/g, ' ').trim())}
                         </span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`To Apply`)}</strong>
+                          <strong>{t(`To Apply`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <br />
 
@@ -1154,23 +940,23 @@ const StudyInEu = () => {
                           make you eligible to apply for higher education in
                           your home country. You’ll need your upper secondary
                           school certificates, even if you have completed some
-                          higher education studies after that.`)}</p>
+                          higher education studies after that.`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`For master’s level admissions, you need to have
                           completed a university-level bachelor’s degree, or
-                          equivalent.`)}</p>
+                          equivalent.`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`The eligibility requirements may vary from one-degree
                           programme to another, so remember to check the details
                           with the university you are interested in. For
                           example, if you are an eligible applicant, you may
                           additionally be required to complete an entrance exam
-                          or an interview.`)}</p>
+                          or an interview.`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`If English is not your first language, you may need to
                           demonstrate your English proficiency level. IELTS and
                           TOEFL are the most accepted options, but many
                           institutions also offer others. Check the English
                           proficiency test requirements and any possible
                           exemption rules with the university you are applying
-                          to.`)}</p>
+                          to.`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
 
                       <div>
@@ -1178,11 +964,11 @@ const StudyInEu = () => {
                         <span className=" tw-pt-3 tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                          {t(`ADMISSION`)}
+                          {t(`ADMISSION`.replace(/\s+/g, ' ').trim())}
                         </span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`Results`)}</strong>
+                          <strong>{t(`Results`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <br />
 
@@ -1190,19 +976,19 @@ const StudyInEu = () => {
                           are over, the universities you have applied to will
                           process your application and make a final admission
                           decision. The admissions decision schedule is
-                          available in the Studyinfo.fi programme description.`)}</p>
+                          available in the Studyinfo.fi programme description.`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`Once you have been accepted as a student, you will
                           receive an official letter of ad-mission from the
                           institution in question. Remember to follow the
                           guidelines given by the university to confirm your
-                          study place.`)}</p>
+                          study place.`.replace(/\s+/g, ' ').trim())}</p>
                         <Link to="/register" className="tw-text-center tw-pt-4">
                           <h5
                             className="tw-text-center tw-pt-4"
                             style={{ fontSize: "1.2em" }}
                           >
                             <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
-                              {t(`Sign Up Today!`)}{" "}
+                              {t(`Sign Up Today!`.replace(/\s+/g, ' ').trim())}{" "}
                             </strong>
                             
                           </h5>
@@ -1215,7 +1001,7 @@ const StudyInEu = () => {
                           everything from work and study opportunities to family
                           reunifications, business support, and much more. Let
                           us guide you every step of the way—start your seamless
-                          experience now!`)}</p>
+                          experience now!`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
                     </div>
                   </div>

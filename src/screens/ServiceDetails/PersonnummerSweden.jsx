@@ -8,7 +8,7 @@ import banner from "../../assets/images/credit-card.png";
 import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 
 import Sidebar from "../../components/ScrollableBar";
 
@@ -23,227 +23,13 @@ import pn6 from "../../assets/iconscout/pn6.png";
 import Header from "../../components/Header_New/Header";
 
 const PersonnumerSweden = () => {
-  const { t, language } = useTranslation();
-  const isleftlangue = language === 'ur';
+  const { t, i18n } = useTranslation();
+  const isleftlangue = i18n.language === 'ur';
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const data = [
-    {
-      id: 1,
-      title: "Asylum",
-      description:
-        "You have to be in Sweden or on the Swedish border in order to apply for asylum.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 fa fa-home"></i>
-      ),
-      Link: "/asylum",
-    },
-    {
-      id: 2,
-      title: "Family Reunification",
-      description:
-        "Family reunification is a recognized reason for the immigration of family members to a country.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-family"></i>
-      ),
-      Link: "/family-reunification",
-    },
-    {
-      id: 3,
-      title: "Personnummer Sweden",
-      description:
-        "The personal identification is a number that the Swedish Tax Agency assigns to person registered in Sweden.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-14"></i>
-      ),
 
-      Link: "/personnumer-sweden",
-    },
-    {
-      id: 4,
-      title: "CPR Number Denmark",
-      description:
-        "CPR stands for Det Centrale Personregister, which translates to the Civil Registration System ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-12"></i>
-      ),
-      Link: "/cpr-number-denmark",
-    },
-    {
-      id: 5,
-      title: "Work Permit",
-      description:
-        "Permit To Work refers to management systems used to ensure that work is done safely and efficiently.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-11"></i>
-      ),
-      Link: "/work-permit",
-    },
-    {
-      id: 5,
-      title: "Business Permit",
-      description:
-        "Swedish business culture is open and innovative, and starting a business there is relatively simple        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 fa fa-briefcase"></i>
-      ),
-
-      Link: "/business-permit",
-    },
-    {
-      id: 6,
-      title: "Business Visit",
-      description:
-        "Foreign people who want to invest in Sweden and stay temporarily for that purpose can apply for business visa.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 themifyicon ti-map-alt"></i>
-      ),
-
-      Link: "/business-visit",
-    },
-    {
-      id: 7,
-      title: "Citizenship",
-      description:
-        "When you have lived in Sweden for a specified period and meet requirements, you can apply for Swedish citizenship.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport"></i>
-      ),
-      Link: "/citizenship",
-    },
-    {
-      id: 8,
-      title: "Study in EU",
-      description:
-        "If you are thinking about studying abroad, then visit Sweden. Sweden is well known for its world-class academic opportunities.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-graduation-hat-1"></i>
-      ),
-      Link: "/study-in-eu",
-    },
-    {
-      id: 9,
-      title: "Global Visit Visas",
-      description:
-        "For visiting Sweden for a short period you will need a visit visa. Sweden follows the same visa rules as others.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-travel"></i>
-      ),
-      Link: "/global-visit-visas",
-    },
-    {
-      id: 10,
-      title: "EEA Permits",
-      description:
-        "Any EU citizen getting residence in the UK according to the EU rules, can bring their family with them.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-contract"></i>
-      ),
-      Link: "/eea-permits",
-    },
-    {
-      id: 11,
-      title: "Parents EU Permit",
-      description:
-        "Parents of a child under 18 years who is in Sweden can move to sweden if they will live with the child.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-family-1"></i>
-      ),
-      Link: "/parents-eu-permit",
-    },
-    {
-      id: 12,
-      title: "Marriage & Divorce      ",
-      description:
-        "Getting married is beautiful. But to make sure that it will be a good experience, it is important to have legal control.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-insurance"></i>
-      ),
-      Link: "/marriage-divorce",
-    },
-    {
-      id: 13,
-      title: "Company Registration      ",
-      description:
-        "If you are planning to register your company inside Sweden, you can reach us anytime if you have some queries about it.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-certificate"></i>
-      ),
-      Link: "/company-registration",
-    },
-    {
-      id: 14,
-      title: "House & Offices",
-      description:
-        "we offer you an easy and painless solution where you can get a place to live without any worries.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-certificate"></i>
-      ),
-      Link: "/house-offices",
-    },
-    {
-      id: 15,
-      title: "Appeal Cases",
-      description:
-        "Have you been denied? let’s take a look at your case so that the decision can hopefully be overturned.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-reading"></i>
-      ),
-      Link: "/appeal-cases",
-    },
-    {
-      id: 16,
-      title: "EU Citizens Relocation",
-      description:
-        "Family reunification means that a family that has been split up can apply to be allowed to live together.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-passport-3"></i>
-      ),
-      Link: "/eu-family-reunification",
-    },
-    {
-      id: 17,
-      title: "Investment",
-      description:
-        "There are various opportunities for business ventures, Look for the best opportunity, grab it and do your best.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  fa fa-sitemap"></i>
-      ),
-      Link: "/investment",
-    },
-    {
-      id: 18,
-      title: "Direct Citizenship     ",
-      description:
-        "citizenship-by-investment programs provide ultra-wealthy families with the privilege of a second or third passport.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-boarding-pass"></i>
-      ),
-      Link: "/direct-citizenship-by-investments",
-    },
-    {
-      id: 19,
-      title: "Permanent Residence",
-      description:
-        "If you lived in Sweden for more than 5 years with the EU right of residence you can get the permanent residence permit.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-policy"></i>
-      ),
-      Link: "/permanent-residence",
-    },
-    {
-      id: 20,
-      title: "Golden Visa       ",
-      description:
-        "As a member state of the EU, They offer its residents and citizens a number of reassuring benefits.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-boarding-pass-2"></i>
-      ),
-      Link: "/golden-visa-greece-portugal",
-    },
-  ];
 
   return (
     <>
@@ -267,11 +53,11 @@ const PersonnumerSweden = () => {
                 <div className=" 2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`(Personnummer)`)}</span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`(Personnummer)`.replace(/\s+/g, ' ').trim())}</span>
 
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">{t(`Applying for a Swedish Social Security Number
-                     :`)}</strong>
+                     :`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
 
@@ -283,7 +69,7 @@ const PersonnumerSweden = () => {
                       various government services. Without a personnummer,
                       navigating Swedish systems can be challenging, as it is
                       the foundation for receiving a Swedish ID card and other
-                      vital services.`)}</p>
+                      vital services.`.replace(/\s+/g, ' ').trim())}</p>
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
@@ -321,10 +107,10 @@ const PersonnumerSweden = () => {
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4 tw-text-black">{t(`Access to Healthcare:`)}</strong>
+                          <strong className="tw-pt-4 tw-text-black">{t(`Access to Healthcare:`.replace(/\s+/g, ' ').trim())}</strong>
                           <br /> {t(`The personnummer is required to register with
                           the healthcare system, enabling you to receive medical
-                          care at the standard rates for Swedish residents.`)}
+                          care at the standard rates for Swedish residents.`.replace(/\s+/g, ' ').trim())}
                           <br />
                           <br />
                         </p>
@@ -332,7 +118,7 @@ const PersonnumerSweden = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4 tw-text-black">{t(`Opening a Bank Account:`)}</strong>
+                          <strong className="tw-pt-4 tw-text-black">{t(`Opening a Bank Account:`.replace(/\s+/g, ' ').trim())}</strong>
                           <br /> {t(`In Sweden, having a personnummer is typically a
                           prerequisite for opening a bank account. This account
                           is essential for managing everyday financial
@@ -341,7 +127,7 @@ const PersonnumerSweden = () => {
                           Without a bank account, it can be challenging to
                           navigate Sweden’s largely cashless economy, as most
                           transactions—both personal and professional—are
-                          conducted electronically.`)}
+                          conducted electronically.`.replace(/\s+/g, ' ').trim())}
                           <br />
                           <br />
                         </p>
@@ -364,7 +150,7 @@ const PersonnumerSweden = () => {
                         <div className="col-md-6">
                           <li>
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-pt-4 tw-text-black">{t(`Education and Social Services:`)}</strong>{" "}
+                              <strong className="tw-pt-4 tw-text-black">{t(`Education and Social Services:`.replace(/\s+/g, ' ').trim())}</strong>{" "}
                               <br />
                              {t(` A personnummer plays a crucial role in accessing
                               both educational and social welfare systems in
@@ -373,7 +159,7 @@ const PersonnumerSweden = () => {
                               Sweden’s comprehensive education system. For
                               adults, the personnummer serves as a gateway to a
                               wide range of social services, such as applying
-                              for unemployment benefits.`)}
+                              for unemployment benefits.`.replace(/\s+/g, ' ').trim())}
                               <br />
                               <br />
                             </p>
@@ -383,7 +169,7 @@ const PersonnumerSweden = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4 tw-text-black">{t(`Swedish ID Card:`)}</strong>{" "}
+                          <strong className="tw-pt-4 tw-text-black">{t(`Swedish ID Card:`.replace(/\s+/g, ' ').trim())}</strong>{" "}
                           <br />
                          {t(` Swedish ID Card: After obtaining a personnummer, you
                           become eligible to apply for a Swedish ID card, which
@@ -391,7 +177,7 @@ const PersonnumerSweden = () => {
                           card significantly simplifies various aspects of daily
                           life, such as verifying your identity when shopping,
                           collecting packages from postal services, or accessing
-                          public facilities and services.`)}
+                          public facilities and services.`.replace(/\s+/g, ' ').trim())}
                           <br />
                         </p>
                       </li>
@@ -414,7 +200,7 @@ const PersonnumerSweden = () => {
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-pt-4 tw-text-black">{t(`First Six Digits:`)}</strong>
+                          <strong className="tw-pt-4 tw-text-black">{t(`First Six Digits:`.replace(/\s+/g, ' ').trim())}</strong>
                           <br /> {t(`The first six digits of the personnummer
                           represent the individual’s birthdate in the format
                           YYMMDD. This means the numbers correspond to the year,
@@ -422,7 +208,7 @@ const PersonnumerSweden = () => {
                           standardized way to identify a person's date of birth
                           at a glance. This structure makes the personnummer
                           both practical and easy to interpret across various
-                          systems and services in Sweden.`)}
+                          systems and services in Sweden.`.replace(/\s+/g, ' ').trim())}
                           <br />
                           <br />
                         </p>
@@ -445,11 +231,11 @@ const PersonnumerSweden = () => {
                         <div className="col-md-6">
                           <li>
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-pt-4 tw-text-black">{t(`Last Four Digits:`)}</strong>{" "}
+                              <strong className="tw-pt-4 tw-text-black">{t(`Last Four Digits:`.replace(/\s+/g, ' ').trim())}</strong>{" "}
                               <br />
                             {t(`  Serve as a unique identifier, which also includes
                               information about gender. Odd numbers designate
-                              males, while even numbers designate females.`)}
+                              males, while even numbers designate females.`.replace(/\s+/g, ' ').trim())}
                               <br />
                               <br />
                             </p>
@@ -457,11 +243,11 @@ const PersonnumerSweden = () => {
 
                           <li>
                             <p className="m-0 tw-text-gray">
-                              <strong className="tw-pt-4 tw-text-black">{t(`Century Marker:`)}</strong>
+                              <strong className="tw-pt-4 tw-text-black">{t(`Century Marker:`.replace(/\s+/g, ' ').trim())}</strong>
                               <br /> {t(`A hyphen ("-") is used between the
                               birthdate and the unique identifier. When a person
                               turns 100, the hyphen is replaced with a plus sign
-                              (“+”) to distinguish their century of birth.`)}
+                              (“+”) to distinguish their century of birth.`.replace(/\s+/g, ' ').trim())}
                               <br />
                               <br />
                             </p>
@@ -471,7 +257,7 @@ const PersonnumerSweden = () => {
 
                       <li>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-text-black">{t(`Coordination Number (samordningsnummer):`)}</strong>{" "}
+                          <strong className="tw-text-black">{t(`Coordination Number (samordningsnummer):`.replace(/\s+/g, ' ').trim())}</strong>{" "}
                           <br />
                           {t(`For individuals who are staying temporarily in Sweden
                           or do not have a registered residence, a Coordination
@@ -480,7 +266,7 @@ const PersonnumerSweden = () => {
                           enabling access to essential services and integration
                           into administrative systems. It is structured
                           similarly to the personnummer, with the key difference
-                          being that 60 is added to the day of birth.`)}
+                          being that 60 is added to the day of birth.`.replace(/\s+/g, ' ').trim())}
                           <br />
                         </p>
                       </li>
@@ -490,7 +276,7 @@ const PersonnumerSweden = () => {
                   <div>
                     <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Steps to Apply for a Personnummer`)}</span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Steps to Apply for a Personnummer`.replace(/\s+/g, ' ').trim())}</span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-black">
                         {" "}
@@ -501,13 +287,13 @@ const PersonnumerSweden = () => {
                     <br />
                     <p className="tw-text-gray">{t(`If you are planning to stay in Sweden for more than one
                       year, you can apply for a personnummer at the local
-                      Skatteverket office. The requirements include:`)}</p>
-                    <strong className="m-0 tw-text-black">{t(`Proof of Residence in Sweden`)}</strong>
+                      Skatteverket office. The requirements include:`.replace(/\s+/g, ' ').trim())}</p>
+                    <strong className="m-0 tw-text-black">{t(`Proof of Residence in Sweden`.replace(/\s+/g, ' ').trim())}</strong>
                     <ul className="tw-p-0 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">{t(`You need to present documentation that confirms you’ll
                           be living in Sweden for a year or longer, such as a
-                          residence permit.`)}</p>
+                          residence permit.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
@@ -526,22 +312,22 @@ const PersonnumerSweden = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-black">{t(`Identification Documents`)}</strong>
+                        <strong className="m-0 tw-text-black">{t(`Identification Documents`.replace(/\s+/g, ' ').trim())}</strong>
                         <ul className="tw-p-0 tw-pl-0">
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <p className="m-0 tw-text-gray">{t(`A passport or national ID card is typically
                               required. For non-EU citizens, additional
                               documentation such as a residence permit is often
-                              necessary.`)}</p>
+                              necessary.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                         </ul>
-                        <strong className="m-0 tw-text-black">{t(`Supporting Documents for Family Members`)}</strong>
+                        <strong className="m-0 tw-text-black">{t(`Supporting Documents for Family Members`.replace(/\s+/g, ' ').trim())}</strong>
                         <ul className="tw-p-0 tw-pl-0">
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <p className="m-0 tw-text-gray">{t(`If you’re moving with your family, each family
                               member will need their identification documents
                               and proof of relationship (such as marriage or
-                              birth certificates).`)}</p>
+                              birth certificates).`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                         </ul>
                       </div>
@@ -549,7 +335,7 @@ const PersonnumerSweden = () => {
 
                     <p className="tw-text-gray">{t(`The approval process can vary, and it may take several
                       weeks for your application to be processed. Once approved,
-                      you will receive your personnummer by post.`)}</p>
+                      you will receive your personnummer by post.`.replace(/\s+/g, ' ').trim())}</p>
                     <br />
 
                     <span className=" tw-flex tw-items-center tw-gap-2">
@@ -569,17 +355,17 @@ const PersonnumerSweden = () => {
                       Swedish ID card, which further simplifies access to
                       various services and activities in Sweden. The ID card is
                       issued by Skatteverket and is recognized by banks,
-                      healthcare providers, and other institutions.`)}</p>
-                    <strong className="m-0 tw-text-black">{t(`Requirements for Obtaining an ID Card`)}</strong>
+                      healthcare providers, and other institutions.`.replace(/\s+/g, ' ').trim())}</p>
+                    <strong className="m-0 tw-text-black">{t(`Requirements for Obtaining an ID Card`.replace(/\s+/g, ' ').trim())}</strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-text-gray">{t(`Personnummer:`)}</strong>{" "}
+                          <strong className="tw-text-gray">{t(`Personnummer:`.replace(/\s+/g, ' ').trim())}</strong>{" "}
                          {t( `Only residents with a personnummer can apply for the
-                          ID card.`)}
+                          ID card.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </li>
 
@@ -588,9 +374,9 @@ const PersonnumerSweden = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-text-gray">{t(`Proof of Payment:`)}</strong>{" "}
+                          <strong className="tw-text-gray">{t(`Proof of Payment:`.replace(/\s+/g, ' ').trim())}</strong>{" "}
                           {t(`A fee (currently around 400 SEK) must be paid before
-                          your appointment.`)}
+                          your appointment.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </li>
 
@@ -599,10 +385,10 @@ const PersonnumerSweden = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">
-                          <strong className="tw-text-gray">{t(`Proof of Identity:`)}</strong>{" "}
+                          <strong className="tw-text-gray">{t(`Proof of Identity:`.replace(/\s+/g, ' ').trim())}</strong>{" "}
                           {t(`If you are a new resident, Skatteverket may require a
                           witness or additional documents to verify your
-                          identity.`)}
+                          identity.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </li>
                     </ul>
@@ -611,7 +397,7 @@ const PersonnumerSweden = () => {
                       your identity in various situations, such as at banks,
                       when shopping, or signing important documents. It also
                       simplifies tasks like collecting packages from delivery
-                      points or accessing healthcare services`)}</p>
+                      points or accessing healthcare services`.replace(/\s+/g, ' ').trim())}</p>
 
                     <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
@@ -628,25 +414,25 @@ const PersonnumerSweden = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-black">{t(`Open and Manage Bank Accounts`)}</strong>
+                        <strong className="m-0 tw-text-black">{t(`Open and Manage Bank Accounts`.replace(/\s+/g, ' ').trim())}</strong>
                         <ul className="tw-p-0 ">
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <p className="m-0 tw-text-gray">{t(`Most banks in Sweden require the Swedish ID card
-                              as primary identification.`)}</p>
+                              as primary identification.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                         </ul>
-                        <strong className="m-0 tw-text-black">{t(`Sign Up for Services and Contracts`)}</strong>
+                        <strong className="m-0 tw-text-black">{t(`Sign Up for Services and Contracts`.replace(/\s+/g, ' ').trim())}</strong>
                         <ul className="tw-p-0 ">
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <p className="m-0 tw-text-gray">{t(`From mobile phone plans to internet service,
-                              having a Swedish ID card simplifies verification.`)}</p>
+                              having a Swedish ID card simplifies verification.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                         </ul>
-                        <strong className="m-0 tw-text-black">{t(`Access Health Services Easily`)}</strong>
+                        <strong className="m-0 tw-text-black">{t(`Access Health Services Easily`.replace(/\s+/g, ' ').trim())}</strong>
                         <ul className="tw-p-0 ">
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <p className="m-0 tw-text-gray">{t(`The ID card is commonly used for identity
-                              verification in healthcare facilities.`)}</p>
+                              verification in healthcare facilities.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                         </ul>
                       </div>
@@ -668,15 +454,15 @@ const PersonnumerSweden = () => {
                     <p className="tw-text-gray">{t(`Without a personnummer, integrating into Swedish society
                       can be difficult, as most institutions and services are
                       designed to rely on this system. Common challenges
-                      include:`)}</p>
-                    <strong className="m-0 tw-text-black">{t(`Banking Restrictions`)}</strong>
+                      include:`.replace(/\s+/g, ' ').trim())}</p>
+                    <strong className="m-0 tw-text-black">{t(`Banking Restrictions`.replace(/\s+/g, ' ').trim())}</strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">{t(`Most banks will not open an account for you without a
                           personnummer and Swedish ID, and foreign
                           identification is often insufficient. This can make it
                           difficult to receive a salary, pay bills, or access
-                          financial services.`)}</p>
+                          financial services.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
@@ -695,31 +481,31 @@ const PersonnumerSweden = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-black">{t(`Limited Access to Healthcare`)}</strong>
+                        <strong className="m-0 tw-text-black">{t(`Limited Access to Healthcare`.replace(/\s+/g, ' ').trim())}</strong>
                         <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <p className="m-0 tw-text-gray">{t(`While emergency healthcare is available, many
                               regular services require a personnummer for full
-                              access and standard rates.`)}</p>
+                              access and standard rates.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                         </ul>
 
-                        <strong className="m-0 tw-text-black">{t(`Difficulty in Renting Housing`)}</strong>
+                        <strong className="m-0 tw-text-black">{t(`Difficulty in Renting Housing`.replace(/\s+/g, ' ').trim())}</strong>
                         <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <p className="m-0 tw-text-gray">{t(`Many landlords require a personnummer for signing
-                              lease agreements.`)}</p>
+                              lease agreements.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                         </ul>
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-black">{t(`Educational Access for Children`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Educational Access for Children`.replace(/\s+/g, ' ').trim())}</strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">{t(`Enrolling children in school can be more complex
                           without a personnummer, as it’s often required for
-                          school registration.`)}</p>
+                          school registration.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
                     <br />
@@ -738,51 +524,51 @@ const PersonnumerSweden = () => {
                     <p className="tw-text-gray">{t(`Navigating the personnummer application process can be
                       complex, especially for foreign nationals unfamiliar with
                       Swedish administrative procedures. Sweden Relocators
-                      offers a full suite of services to simplify the process:`)}</p>
-                    <strong className="m-0 tw-text-black">{t(`Document Preparation`)}</strong>
+                      offers a full suite of services to simplify the process:`.replace(/\s+/g, ' ').trim())}</p>
+                    <strong className="m-0 tw-text-black">{t(`Document Preparation`.replace(/\s+/g, ' ').trim())}</strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">{t(`We ensure that you have all required documents,
                           including identity proof, residence permits, and any
-                          additional paperwork needed for family members.`)}</p>
+                          additional paperwork needed for family members.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
-                    <strong className="m-0 tw-text-black">{t(`Application Assistance`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Application Assistance`.replace(/\s+/g, ' ').trim())}</strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">{t(`Our team provides step-by-step guidance for submitting
                           your personnummer application and follows up with
-                          Skatteverket to address any issues or delays.`)}</p>
+                          Skatteverket to address any issues or delays.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
-                    <strong className="m-0 tw-text-black">{t(`Swedish ID Card Application`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Swedish ID Card Application`.replace(/\s+/g, ' ').trim())}</strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">{t(`Once your personnummer is approved, we help you apply
                           for your Swedish ID card, guiding you through the
-                          required steps and appointment scheduling.`)}</p>
+                          required steps and appointment scheduling.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
-                    <strong className="m-0 tw-text-black">{t(`Bank Account Setup`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Bank Account Setup`.replace(/\s+/g, ' ').trim())}</strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">{t(`With your personnummer and ID card, we assist you in
                           opening a Swedish bank account, ensuring you meet all
-                          necessary requirements for a smooth process.`)}</p>
+                          necessary requirements for a smooth process.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
-                    <strong className="m-0 tw-text-black">{t(`Coordination Number Assistance`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Coordination Number Assistance`.replace(/\s+/g, ' ').trim())}</strong>
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">{t(`If you are staying temporarily in Sweden, we also help
                           you obtain a Coordination Number, facilitating access
-                          to services for short-term residents.`)}</p>
+                          to services for short-term residents.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
                     <p className="tw-text-gray">{t(`With Sweden Relocators, you’ll have the expert support
                       needed to navigate the personnummer and Swedish ID
                       processes, ensuring that you can access essential services
-                      smoothly and start your new life in Sweden with ease.`)}</p>
+                      smoothly and start your new life in Sweden with ease.`.replace(/\s+/g, ' ').trim())}</p>
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
@@ -790,7 +576,7 @@ const PersonnumerSweden = () => {
                       Be sure to
                     </span>
                     <h2 className="tw-text-left">
-                      <strong className="tw-text-black">{t(`Contact Us`)}</strong>
+                      <strong className="tw-text-black">{t(`Contact Us`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
                     <p className="tw-text-gray">{t(`Securing your personnummer and Swedish ID card is an
@@ -798,7 +584,7 @@ const PersonnumerSweden = () => {
                       Contact Sweden Relocators today to learn more about how we
                       can assist you with the application process, ensuring a
                       smooth transition into the Swedish system and allowing you
-                      to fully enjoy life in Sweden.`)}</p>
+                      to fully enjoy life in Sweden.`.replace(/\s+/g, ' ').trim())}</p>
 
                     <Link to="/register" className="tw-text-center tw-pt-4">
                     <h5 className="tw-text-center tw-pt-4" style = {{fontSize: '1.2em'}}>
@@ -815,7 +601,7 @@ const PersonnumerSweden = () => {
                       help. Our comprehensive services cover everything from
                       work and study opportunities to family reunifications,
                       business support, and much more. Let us guide you every
-                      step of the way—start your seamless experience now!`)}</p>
+                      step of the way—start your seamless experience now!`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
                 </div>
               </div>

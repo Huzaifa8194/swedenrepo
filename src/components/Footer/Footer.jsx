@@ -5,7 +5,7 @@ import playstore from "../../assets/images/Google-play.png";
 import applestore from "../../assets/images/App-Store.png";
 import sweden from "../../assets/images/icons8-sweden.png";
 import denmark from "../../assets/images/icons8-denmark.png";
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 
 
 import Facebookicon from "../../assets/icons/facebook.png";

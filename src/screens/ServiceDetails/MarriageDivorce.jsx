@@ -9,7 +9,7 @@ import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
 import Header from "../../components/Header_New/Header";
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 import Sidebar from "../../components/ScrollableBar";
 
 
@@ -20,8 +20,8 @@ import md4 from "../../assets/iconscout/md4.png";
 import md5 from "../../assets/iconscout/md5.png";
 
 const MarriageDivorce = () => {
-  const { t , language} = useTranslation();
-  const isleftlangue = language === 'ur';
+  const { t , i18n} = useTranslation();
+  const isleftlangue = i18n.language === 'ur';
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);

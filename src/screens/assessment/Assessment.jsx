@@ -24,7 +24,7 @@ import { Link } from "react-router-dom";
 import Header from "../../components/Header_New/Header";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 
-import { useTranslation } from "../../context/TranslationContext";
+import { useTranslation } from "react-i18next";
 
 const Assessment = () => {
   const { t } = useTranslation();
@@ -76,7 +76,7 @@ const Assessment = () => {
                     <div className="col-md-8 tw-w-full md:tw-w-2/3">
                       <p className="tw-text-gray">
                         {t(
-                          ` Welcome to our fully digital eligibility assessment tool! Designed to streamline the process of relocating to Sweden, this tool helps you determine whether you meet the basic requirements for your desired Visa or Residence Permit. Our web portal and app offer a completely online experience, ensuring that every step of your relocation journey is convenient and transparent.`
+                          `Welcome to our fully digital eligibility assessment tool! Designed to streamline the process of relocating to Sweden, this tool helps you determine whether you meet the basic requirements for your desired Visa or Residence Permit. Our web portal and app offer a completely online experience, ensuring that every step of your relocation journey is convenient and transparent.`
                         )}
                       </p>
                     </div>

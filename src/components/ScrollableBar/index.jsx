@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { GoTriangleRight } from "react-icons/go";
-import { useTranslation } from "../../context/TranslationContext";
+import { useTranslation } from "react-i18next";
 
 const Sidebar = () => {
   const {t} = useTranslation();
@@ -133,7 +133,7 @@ const Sidebar = () => {
         },
         {
           id: 12,
-          title: "Marriage & Divorce      ",
+          title: "Marriage & Divorce",
           description:
             "Getting married is beautiful. But to make sure that it will be a good experience, it is important to have legal control.        ",
           icons: (
@@ -143,7 +143,7 @@ const Sidebar = () => {
         },
         {
           id: 13,
-          title: "Company Registration      ",
+          title: "Company Registration",
           description:
             "If you are planning to register your company inside Sweden, you can reach us anytime if you have some queries about it.        ",
           icons: (
@@ -193,7 +193,7 @@ const Sidebar = () => {
         },
         {
           id: 18,
-          title: " Citizenship       ",
+          title: "Citizenship",
           description:
             "citizenship-by-investment programs provide ultra-wealthy families with the privilege of a second or third passport.        ",
           icons: (
@@ -213,7 +213,7 @@ const Sidebar = () => {
         },
         {
           id: 20,
-          title: "Golden Visa     ",
+          title: "Golden Visa",
           description:
             "As a member state of the EU, They offer its residents and citizens a number of reassuring benefits.        ",
           icons: (
@@ -223,7 +223,7 @@ const Sidebar = () => {
         },
         {
           id: 21,
-          title: "Logistics    ",
+          title: "Logistics",
           description:
             "As a member state of the EU, They offer its residents and citizens a number of reassuring benefits.        ",
           icons: (

@@ -5,7 +5,7 @@ import blog3 from '../../assets/images/blog/b3.png';
 import blog4 from '../../assets/images/blog/b4.png';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 
 const Blog = () => {
   const { t } = useTranslation();

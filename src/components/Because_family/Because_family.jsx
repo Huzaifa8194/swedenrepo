@@ -18,7 +18,7 @@ import choose from '../../assets/images/office-meetings.png';
 import { fadeIn, imageVariants, staggerContainer, zoomIn } from '../../utils/motion';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 
 
 
@@ -69,7 +69,7 @@ const Because_family = () => {
       textTwo: t(''),
       description: [
         t('Moving abroad is an exciting yet stressful task. People migrate to different countries because of many reasons. People move to other countries to pursue better job opportunities, better education systems, better living standards, health systems, or due to their Family ties.'),
-        t('We provide a wide range of services to individuals, families, and companies to relocate their employees to Sweden :'),
+        t('We provide a wide range of services to individuals, families, and companies to relocate their employees to Sweden'),
         t('Visa and immigration services: We can assist with the application process for various types of visas, including work visas, student visas, and family reunification visas. They can also provide guidance on immigration laws and regulations, and help with the documentation required for the application process.'),
       ],
       link: '/personnumer-sweden',

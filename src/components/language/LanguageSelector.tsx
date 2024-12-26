@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from "react-i18next";
 
 import eng from "../../assets/images/uk.webp"; // english
 import ge from "../../assets/images/ge.webp"; // german
@@ -13,46 +13,29 @@ import ur from "../../assets/icons/flags/flag_of_Pakistan.svg"; // urdu
 import pn from "../../assets/icons/flags/flag_of_India.png"; // punjabi
 
 const languageIcons = {
-  English: eng,
-  German: ge,
-  Danish: da,
-  Swedish: sw,
-  Spanish: sp,
-  Arabic: ab,
-  Persian: pe,
-  Greek: gr,
-  Urdu: ur,
-  Punjabi: pn,
+  en: eng,
+  de: ge,
+  da: da,
+  sv: sw,
+  es: sp,
+  ar: ab,
+  fa: pe,
+  el: gr,
+  ur: ur,
+  pa: pn,
 };
 
 const LanguageSelector = () => {
-  const { t, setLanguage } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("English"); // Default to English
+  const [selectedLanguage, setSelectedLanguage] = useState("ur"); // Default language code
   const buttonRef = useRef(null);
   const dropdownRef = useRef(null);
 
-  // Mapping languages to their Google API codes
-  const languageCodes = {
-    English: "en",
-    German: "de",
-    Danish: "da",
-    Swedish: "sv",
-    Spanish: "es",
-    Arabic: "ar",
-    Persian: "fa",
-    Greek: "el",
-    Urdu: "ur",
-    Punjabi: "pa",
-  };
-
-  const handleLanguageChange = (language) => {
-    const langCode = languageCodes[language];
-    if (langCode) {
-      setLanguage(langCode);
-      setSelectedLanguage(language);
-      setIsOpen(false);
-    }
+  const handleLanguageChange = (langCode) => {
+    i18n.changeLanguage(langCode);
+    setSelectedLanguage(langCode);
+    setIsOpen(false);
   };
 
   const handleMouseEnter = () => {
@@ -87,9 +70,11 @@ const LanguageSelector = () => {
         <img
           src={languageIcons[selectedLanguage] || eng}
           className="tw-w-5 tw-h-5 tw-rounded-full tw-object-cover"
-          alt={selectedLanguage}
+          alt={t(`language.${selectedLanguage}`)}
         />
-        <p className="m-0 tw-text-sm tw-text-white">{selectedLanguage}</p>
+        <p className="m-0 tw-text-sm tw-text-white">
+          {t(`language.${selectedLanguage}`)}
+        </p>
         <svg
           className="-tw-mr-2 tw-mb-1 tw-h-5 tw-w-5"
           xmlns="http://www.w3.org/2000/svg"
@@ -111,18 +96,20 @@ const LanguageSelector = () => {
           className="tw-absolute tw-z-[99999] tw-right-12 sm:tw-top-20 md:tw-top-12 lg:tw-top-12 tw-top-32 tw-w-80 tw-rounded-md tw-shadow-lg tw-bg-white tw-ring-1 tw-ring-black tw-ring-opacity-5"
         >
           <div className="tw-py-1 tw-grid tw-grid-cols-2 tw-gap-3 p-2">
-            {Object.entries(languageIcons).map(([language, icon]) => (
-              <div key={language}>
+            {Object.entries(languageIcons).map(([langCode, icon]) => (
+              <div key={langCode}>
                 <div
                   className="tw-flex tw-gap-4 hover:tw-bg-gray-light p-2 tw-rounded-md"
-                  onClick={() => handleLanguageChange(language)}
+                  onClick={() => handleLanguageChange(langCode)}
                 >
                   <img
                     src={icon}
                     className="tw-w-7 tw-h-7 tw-rounded-full tw-object-cover"
-                    alt={language}
+                    alt={t(`language.${langCode}`)}
                   />
-                  <p className="m-0 tw-text-black">{language}</p>
+                  <p className="m-0 tw-text-black">
+                    {t(`language.${langCode}`)}
+                  </p>
                 </div>
               </div>
             ))}

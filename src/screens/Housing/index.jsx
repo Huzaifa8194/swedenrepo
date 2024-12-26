@@ -14,7 +14,7 @@ import howitwork3 from "../../assets/iconscout/howitwork3.png"
 import howitwork4 from "../../assets/iconscout/howitwork4.png"
 
 
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 
 
 import Header from '../../components/Header_New/Header';

@@ -10,7 +10,7 @@ import mobile5 from "../../assets/images/writing_image.png";
 import { GoTriangleRight } from "react-icons/go";
 import { Link, useLocation } from "react-router-dom";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next'
 import Sidebar from "../../components/ScrollableBar";
 
 
@@ -21,7 +21,7 @@ const New_In_sweden = () => {
 
 
 
-console.log("[LOG221]:" + language);
+  console.log("[LOG221]:" + language);
 
 
   useEffect(() => {
@@ -261,12 +261,10 @@ console.log("[LOG221]:" + language);
         setTopOffset("-150%");
       } else if (window.innerWidth < 900) {
         setTopOffset("-340%");
-      } 
-      
-      
-      else 
-      
-      {
+      }
+
+
+      else {
         setTopOffset("-100%");
       }
     };
@@ -292,8 +290,7 @@ console.log("[LOG221]:" + language);
     };
   }, []);
 
-  return (
-    <div style={{ position: "relative" }}>
+  return (<div style={{ position: "relative" }}>
       <Header />
       <Banner_Page
         highlightText={t("New in Sweden")}
@@ -307,33 +304,37 @@ console.log("[LOG221]:" + language);
         <section className=" ">
           <div className="container-fluid ">
             <div className="row g-4">
-            <div 
-  className="col-md-8 tw-py-20 tw-bg-white tw-text-justify" 
-  style={{ direction: isleftlangue ? 'rtl' : 'ltr' }}
->
+              <div
+                className="col-md-8 tw-py-20 tw-bg-white tw-text-justify"
+                style={{ direction: isleftlangue ? 'rtl' : 'ltr' }}
+              >
                 <div className="   2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <span className=" tw-flex tw-items-center tw-gap-5">
                     {" "}
                     <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`SOCIAL SECURITY NUMBER`)}</span>
 
-                  <h2 className = "tw-text-left">
+                  <h2 className="tw-text-left">
                     <strong className='tw-text-black'>{t(`Personnummer`)}</strong>
                   </h2>
 
                   <br />
                   <p className="tw-text-gray">
-  {t(`If you are new in Sweden, the first thing you should do is register with the Swedish Tax Authority to get your social security number, also called a personal identity number or personnummer.`)} <br/>
-  {t(`As an E U citizen, you have the right to live, work, and study in Sweden with or without a personnummer. The personnummer is a 12-digit number issued by Skatteverket. They issue it when they confirm you can support yourself and your family during your first year in Sweden.`)}
+                    {t(`If you are new in Sweden, the first thing you should do is register with the Swedish Tax Authority to get your social security number, also called a personal identity number or personnummer.`.replace(/\s+/g, ' ').trim())} <br />
+                    {t(`As an E U citizen, you have the right to live, work, and study in Sweden with or without a personnummer. The personnummer is a 12-digit number issued by Skatteverket. They issue it when they confirm you can support yourself and your family during your first year in Sweden.`.replace(/\s+/g, ' ').trim())}
+                  </p>
+
+                  <p className="tw-text-gray">
+  {t(
+    `Personnummer is not only required to be a part of the social
+      security and health care systems in Sweden, which is
+      otherwise quite expensive to arrange through private
+      insurance companies, but is often used as identification
+      proof at all government offices, banks, insurances,
+      subscriptions, collection of postal items at the post office
+      etc.`.replace(/\s+/g, ' ').trim()
+     
+  )}
 </p>
-
-
-                  <p className=" tw-text-gray">{t(`Personnummer is not only required to be a part of the social
-                    security and health care systems in Sweden, which is
-                    otherwise quite expensive to arrange through private
-                    insurance companies, but is often used as identification
-                    proof at all government offices, banks, insurances,
-                    subscriptions, collection of postal items at the post office
-                    etc.`)}</p>
 
                   <div>
                     <br />
@@ -341,7 +342,7 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`TAKE`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`All These Into Consideration`)}</strong>
                     </h2>
                     <br />
@@ -351,19 +352,19 @@ console.log("[LOG221]:" + language);
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">{t(`Employment contract(s),`)}</p>
+                        <p className=" m-0 tw-text-gray">{t(`Employment contract(s),`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">{t(`Proof of savings ex. Bank statement.`)}</p>
+                        <p className=" m-0 tw-text-gray">{t(`Proof of savings ex. Bank statement.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">{t(`Number of members in the family`)}</p>
+                        <p className=" m-0 tw-text-gray">{t(`Number of members in the family`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
@@ -372,7 +373,8 @@ console.log("[LOG221]:" + language);
                         <p className=" m-0 tw-text-gray">{t(`Place of residence(must be in Sweden). You can NOT
                           apply for a personnummer while still living abroad.
                           Neither is a holiday address enough. You must have a
-                          residential address in Sweden.`)}</p>
+                          residential address in Sweden.`.replace(/\s+/g, ' ').trim() .replace(/\s+/g, ' ')
+                          .trim())}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
@@ -381,14 +383,14 @@ console.log("[LOG221]:" + language);
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`You need to go in person (all the persons in the
                           family) to an office of Skatteverket to apply for a
-                          personnummer.`)}</p>
+                          personnummer.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`A legal ID-certificate, preferably a passport for
-                          every person applying.`)}</p>
+                          every person applying.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
                   </div>
@@ -399,19 +401,19 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`IDENTIFICATION CARD`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`Swedish ID Card`)}</strong>
                     </h2>
                     <br />
 
                     <p className=" tw-text-gray">{t(`Once you have received your Social Security number, you
                       need to book an appointment with Swedish tax
-                      authority-Skatteverket to apply for a Swedish ID card.`)}</p>
+                      authority-Skatteverket to apply for a Swedish ID card.`.replace(/\s+/g, ' ').trim())}</p>
                     <p className=" tw-text-gray">{t(`Anyone who is at least 13 years old and registered for
                       population purposes in Sweden may apply to the Swedish Tax
                       Agency for Swedish ID card. You must be able to identify
                       yourself, in other words prove who you are, with approved
-                      ID documentation or via an attester.`)}</p>
+                      ID documentation or via an attester.`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
 
                   <div>
@@ -420,17 +422,17 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`OPENING OF A`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`Bank Account`)}</strong>
                     </h2>
                     <br />
 
                     <p className=" tw-text-gray">
-                      <strong className='tw-text-black'>{t(`General requirements:`)}</strong>
+                      <strong className='tw-text-black'>{t(`General requirements:`.replace(/\s+/g, ' ').trim())}</strong>
                     </p>
 
                     <p className=" tw-text-gray">{t(`In order to open a bank account, you must always be able
-                      to identify yourself.`)}</p>
+                      to identify yourself.`.replace(/\s+/g, ' ').trim())}</p>
 
                     <ul className=" tw-p-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -441,7 +443,7 @@ console.log("[LOG221]:" + language);
                           <p className=" m-0 tw-text-gray">{t(`You can identify yourself with a valid Swedish
                             identification document, such as a passport, a
                             national identity card or a BankID. You can also
-                            identify yourself with a Swedish driving license.`)}</p>
+                            identify yourself with a Swedish driving license.`.replace(/\s+/g, ' ').trim())}</p>
                         </div>
                       </li>
                       <li className=" tw-flex tw-gap-3">
@@ -455,7 +457,7 @@ console.log("[LOG221]:" + language);
                             clearly shows your citizenship and is issued by an
                             authority or some other authorised issuer. Note that
                             the bank may request that you also present other
-                            documents.`)}</p>
+                            documents.`.replace(/\s+/g, ' ').trim())}</p>
                         </div>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
@@ -466,7 +468,7 @@ console.log("[LOG221]:" + language);
                           <p className=" m-0 tw-text-gray">{t(`If you do not have any valid identity documents, you
                             must be able to prove who you are and your
                             citizenship by means of other documents issued by a
-                            competent authority.`)}</p>
+                            competent authority.`.replace(/\s+/g, ' ').trim())}</p>
                         </div>
                       </li>
                     </ul>
@@ -478,18 +480,18 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`OPENING OF A`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`Bank Account`)}</strong>
                     </h2>
                     <br />
 
                     <p className=" tw-text-gray">
-                      <strong className='tw-text-black'>{t(`Specific requirements:`)}</strong>
+                      <strong className='tw-text-black'>{t(`Specific requirements:`.replace(/\s+/g, ' ').trim())}</strong>
                     </p>
 
                     <p className=" tw-text-gray">{t(`If you are a foreign student and willing to open a bank
                       account, you must also be able to identify yourself like
-                      all others. In addition, you need`)}</p>
+                      all others. In addition, you need`.replace(/\s+/g, ' ').trim())}</p>
 
                     <div className="row">
                       <div className=" col-md-5">
@@ -502,35 +504,35 @@ console.log("[LOG221]:" + language);
                               <GoTriangleRight className=" tw-text-blue" />
                             </div>
                             <p className=" m-0 tw-text-gray">{t(`A residence permit or a visa (does not apply to EU
-                              citizens).`)}</p>
+                              citizens).`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                           <li className=" tw-flex  tw-gap-3">
                             <div>
                               <GoTriangleRight className=" tw-text-blue" />
                             </div>
                             <p className=" m-0 tw-text-gray">{t(`An admission decision confirmation from your
-                              university, showing the duration of your studies.`)}</p>
+                              university, showing the duration of your studies.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                           <li className=" tw-flex  tw-gap-3">
                             <div>
                               <GoTriangleRight className=" tw-text-blue" />
                             </div>
                             <p className=" m-0 tw-text-gray">{t(`The bank is not satisfied with the identity
-                              document submitted.`)}</p>
+                              document submitted.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                           <li className=" tw-flex  tw-gap-3">
                             <div>
                               <GoTriangleRight className=" tw-text-blue" />
                             </div>
                             <p className=" m-0 tw-text-gray">{t(`The bank determines that the reason given by you
-                              to open an account is inadequate.`)}</p>
+                              to open an account is inadequate.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                           <li className=" tw-flex  tw-gap-3">
                             <div>
                               <GoTriangleRight className=" tw-text-blue" />
                             </div>
                             <p className=" m-0 tw-text-gray">{t(`The bank, by opening an account, would be in
-                              breach of a legal regulation or directive.`)}</p>
+                              breach of a legal regulation or directive.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
 
                           <li className=" tw-flex  tw-gap-3">
@@ -538,7 +540,7 @@ console.log("[LOG221]:" + language);
                               <GoTriangleRight className=" tw-text-blue" />
                             </div>
                             <p className=" m-0 tw-text-gray">{t(`You have previously acted dishonestly towards the
-                              bank.`)}</p>
+                              bank.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                         </ul>
                       </div>
@@ -555,7 +557,7 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`BEFORE`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`Visiting A Bank …`)}</strong>
                     </h2>
                     <br />
@@ -566,14 +568,14 @@ console.log("[LOG221]:" + language);
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`You must be able to understand the bank’s questions as
-                          well as answer them.`)}</p>
+                          well as answer them.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`You must also be able to understand the information
-                          that the bank gives you.`)}</p>
+                          that the bank gives you.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
@@ -581,14 +583,14 @@ console.log("[LOG221]:" + language);
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`In case you need someone to translate for you then you
                           should bring such a person with you while visiting the
-                          bank.`)}</p>
+                          bank.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
 
                       <li className=" tw-flex tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">{t(`The bank will ask you about the source of income.`)}</p>
+                        <p className=" m-0 tw-text-gray">{t(`The bank will ask you about the source of income.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
@@ -597,7 +599,7 @@ console.log("[LOG221]:" + language);
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Your account and other bank services must not be used
                           by anyone else unless an agreement for this is held
-                          with the bank.`)}</p>
+                          with the bank.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
@@ -605,7 +607,7 @@ console.log("[LOG221]:" + language);
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`The bank may ask you additional questions or stipulate
-                          other requirements.`)}</p>
+                          other requirements.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
                   </div>
@@ -616,7 +618,7 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`HOW TO GET A`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`Driving License`)}</strong>
                     </h2>
                     <br />
@@ -630,7 +632,7 @@ console.log("[LOG221]:" + language);
                           country then it is valid throughout your stay in
                           Sweden. You can even exchange your driving license
                           with a Swedish license if you have permanent
-                          residence(PR).`)}</p>
+                          residence(PR).`.replace(/\s+/g, ' ').trim())}</p>
 
                         <p className=" m-0 tw-text-gray">{t(`A driving license which is issued by any non-EEA
                           country (excluding Switzerland and Japan) is valid for
@@ -638,23 +640,23 @@ console.log("[LOG221]:" + language);
                           with a Swedish license. So if you want to continue
                           driving in Sweden you must avail a swedish driving
                           licence. For which you will have to complete the risk
-                          education, theoritical and practical driving exam.`)}</p>
+                          education, theoritical and practical driving exam.`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
                     </div>
                     <p className=" tw-text-gray tw-pt-6">
-                      <strong className='tw-text-gray'>{t(`For more details, please visit:`)}</strong>{" "}
+                      <strong className='tw-text-gray'>{t(`For more details, please visit:`.replace(/\s+/g, ' ').trim())}</strong>{" "}
                       <Link
                         to={
                           "https://www.transportstyrelsen.se/en/road/Driving-licences/"
                         }
-                      >{t(`https://www.transportstyrelsen.se/en/road/Driving-licences/`)}</Link>
+                      >{t(`https://www.transportstyrelsen.se/en/road/Driving-licences/`.replace(/\s+/g, ' ').trim())}</Link>
                     </p>
                   </div>
 
                   <div className=" tw-pt-6">
                     {/* <span>{t(`BEFORE`)}</span> */}
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`Steps To Get A License`)}</strong>
                     </h2>
                     <br />
@@ -664,33 +666,33 @@ console.log("[LOG221]:" + language);
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">{t(`Apply for a learning permit`)}</p>
+                        <p className=" m-0 tw-text-gray">{t(`Apply for a learning permit`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">{t(`Start your driving practice`)}</p>
+                        <p className=" m-0 tw-text-gray">{t(`Start your driving practice`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">{t(`Study the theory of driving`)}</p>
+                        <p className=" m-0 tw-text-gray">{t(`Study the theory of driving`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">{t(`Take the risk training – riskutbildning`)}</p>
+                        <p className=" m-0 tw-text-gray">{t(`Take the risk training – riskutbildning`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
 
                       <li className=" tw-flex tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">{t(`Book a time for a driving test.`)}</p>
+                        <p className=" m-0 tw-text-gray">{t(`Book a time for a driving test.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
                   </div>
@@ -701,14 +703,14 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`LOOKING`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`For Work In Sweden`)}</strong>
                     </h2>
                     <br />
 
                     <p className=" tw-text-gray">
                       {" "}
-                      <Link to={""}>{t(`The Swedish Public Employment Service`)}</Link>{" "}
+                      <Link to={""}>{t(`The Swedish Public Employment Service`.replace(/\s+/g, ' ').trim())}</Link>{" "}
                       {t(`(Arbetsförmedlingen) offers support to people looking for
                       work. You can register either online using your Bank-ID or
                       by personally visiting the nearest Arbetsförmedlingen
@@ -716,7 +718,7 @@ console.log("[LOG221]:" + language);
                       other privately run job websites like LinkedIn, Indeed,
                       etc. commonly used to find a job in Sweden. These websites
                       usually include job listings and functions where you can
-                      upload your CV.`)}
+                      upload your CV.`.replace(/\s+/g, ' ').trim())}
                     </p>
                   </div>
 
@@ -726,7 +728,7 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`SWEDISH EDUCATION SYSTEM`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`School Admissions`)}</strong>
                     </h2>
                     <br />
@@ -735,7 +737,7 @@ console.log("[LOG221]:" + language);
                       child’s developement. There is a great focus on basic
                       values and individual needs such as playing together,
                       tolerance and being considerate for others. Preschool is
-                      provided for children aged 1 to 5 years.`)}</p>
+                      provided for children aged 1 to 5 years.`.replace(/\s+/g, ' ').trim())}</p>
 
                     <p className=" tw-text-gray">{t(`The year your child turns 6, he or she can participate in
                       a non-compulsory preschool class (sexårsverksamhet)
@@ -744,14 +746,14 @@ console.log("[LOG221]:" + language);
                       studies or homework. Swedish compulsory schooling is
                       divided ino four stages: förskoleklass (preschool year
                       or year 0), lågstadiet (years 1–3), mellanstadiet (years
-                      4–6) and högstadiet (years 7–9).`)}</p>
+                      4–6) and högstadiet (years 7–9).`.replace(/\s+/g, ' ').trim())}</p>
 
                     <p className=" tw-text-gray">{t(`From the ages of 7 to 16, all children in Sweden are
                       required to attend the compulsory school (grundskola),
                       where they are taught a core group of basic subjects.
                       Families of children between ages six and thirteen are
                       also offered out-of-school care before and after school
-                      hours called fritids.`)}</p>
+                      hours called fritids.`.replace(/\s+/g, ' ').trim())}</p>
 
                     <p className=" tw-text-gray">{t(`Although preschools and after-school care are paid
                       services, but from the age of 6 years all schooling in
@@ -759,7 +761,7 @@ console.log("[LOG221]:" + language);
                       is also included. However if you want your child to study
                       in private schools then private and international schools
                       do exist in sweden and there is usually a fee for such
-                      schools.`)}</p>
+                      schools.`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
 
                   <div>
@@ -768,7 +770,7 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`PARENTAL`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`Allowance`)}</strong>
                     </h2>
                     <br />
@@ -785,7 +787,7 @@ console.log("[LOG221]:" + language);
                       decided by the government will be paid. It is not your
                       employer who bears the cost of your parent benefit but it
                       is the Swedish Social Insurance Agency (Försäkringskassan)
-                      who pays it.`)}</p>
+                      who pays it.`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
 
                   <div>
@@ -794,7 +796,7 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`MOTHER AND CHILD CARE`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`Maternity Clinics`)}</strong>
                     </h2>
                     <br />
@@ -804,7 +806,7 @@ console.log("[LOG221]:" + language);
                       responsible for women’s health care throughout the
                       pregnancy and for child’s health care before, during and
                       after birth. Visits to the government maternity clinics
-                      are free, but not in case of private care.`)}</p>
+                      are free, but not in case of private care.`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
 
                   <div>
@@ -813,7 +815,7 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`CHILD`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`Health Care Centre`)}</strong>
                     </h2>
                     <br />
@@ -825,7 +827,7 @@ console.log("[LOG221]:" + language);
                       to make an appointment for a first meeting. The first
                       meeting is often held at home. At the meeting, the nurse
                       tells you about the child health centre and looks to see
-                      how your baby is doing.`)}</p>
+                      how your baby is doing.`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
 
                   <div>
@@ -834,7 +836,7 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`CHILD`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`Care Allowance (Barnbidrag)`)}</strong>
                     </h2>
                     <br />
@@ -843,7 +845,7 @@ console.log("[LOG221]:" + language);
                       Sweden before their first birthday are entitled to receive
                       child allowance starting from one month after their birth.
                       The allowance is paid to both parents until the child
-                      turns 16.`)}</p>
+                      turns 16.`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
 
                   <div>
@@ -852,7 +854,7 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`REGISTER`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`With Försäkringskassan`)}</strong>
                     </h2>
                     <br />
@@ -861,7 +863,7 @@ console.log("[LOG221]:" + language);
                       Social Insurance Agency) to qualify for various benefits
                       for eg. child care allowance, unemployment benefit,
                       parental benefit, etc. Read more at
-                      www.forsakringskassan.se`)}</p>
+                      www.forsakringskassan.se`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
 
                   <div>
@@ -870,7 +872,7 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`HEALTH CARE`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`Health Centre`)}</strong>
                     </h2>
                     <br />
@@ -884,7 +886,7 @@ console.log("[LOG221]:" + language);
                           These centres provide a starting point for most
                           medical treatments in Sweden.The staff can help you
                           with health related matters and write referrals –
-                          remisser, which you need in order to see a specialist.`)}</p>
+                          remisser, which you need in order to see a specialist.`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
                     </div>
                   </div>
@@ -896,7 +898,7 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`COSTS`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`And Fees`)}</strong>
                     </h2>
                     <br />
@@ -906,7 +908,7 @@ console.log("[LOG221]:" + language);
                       between 100 – 300 SEK and normally free for everyone under
                       20. Don’t forget to cancel an appointment if you don’t
                       need it, as you will otherwise have to pay the full costs
-                      of the defaulted visit.`)}</p>
+                      of the defaulted visit.`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
 
                   <div className=" tw-pt-6">
@@ -915,7 +917,7 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`COSTS`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`Is Covered?`)}</strong>
                     </h2>
                     <br />
@@ -924,15 +926,15 @@ console.log("[LOG221]:" + language);
                       free dental care up to and including the 31 of December of
                       the year you turn 23. Adults on the other hand, pay a
                       large part of their dental care costs themselves, starting
-                      on the 1 January of the year they turn 23.`)}</p>
+                      on the 1 January of the year they turn 23.`.replace(/\s+/g, ' ').trim())}</p>
 
                     <p className=" tw-text-gray">{t(`For asylum seekers and undocumented immigrants: you have
                       the right to receive dental care free of charge until your
-                      18th birthday.`)}</p>
+                      18th birthday.`.replace(/\s+/g, ' ').trim())}</p>
                     <p className=" tw-text-gray">{t(`You are, as an adult, entitled to a dental care grant of
                       300 or 600 SEK a year. You can save the grant for two
                       years and use it on one occasion, but you can’t save more
-                      than two grants at the time.`)}</p>
+                      than two grants at the time.`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
 
                   <div className=" tw-pt-6">
@@ -941,13 +943,13 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`WHERE DO`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`I Find A Dentist?`)}</strong>
                     </h2>
                     <br />
 
                     <p className=" tw-text-gray">{t(`You will get a list with all the dentists affiliated with
-                      the public dental service – Folktandvården.`)}</p>
+                      the public dental service – Folktandvården.`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
 
                   <div>
@@ -956,13 +958,13 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`LANGUAGE`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`Courses`)}</strong>
                     </h2>
                     <br />
 
                     <p className=" tw-text-gray">
-                      <strong className='tw-text-black'>{t(`Learn Swedish in Sweden`)}</strong>
+                      <strong className='tw-text-black'>{t(`Learn Swedish in Sweden`.replace(/\s+/g, ' ').trim())}</strong>
                     </p>
 
                     <div className="row">
@@ -972,17 +974,17 @@ console.log("[LOG221]:" + language);
                       <div className=" col-md-7">
                         <p className=" tw-text-gray">{t(`Depending on the location of your stay, there are
                           different options for learning Swedish while in the
-                          country. More information at: www.sweden.se.`)}</p>
+                          country. More information at: www.sweden.se.`.replace(/\s+/g, ' ').trim())}</p>
 
                         <p className=" tw-text-gray">{t(`Folkuniversitetet offers Swedish courses at different
-                          levels.`)}</p>
+                          levels.`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`Study associations also offer language courses and a
                           wide range of other courses. See a list of study
-                          associations.`)}</p>
+                          associations.`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`SFI-courses (Swedish for immigrants). Once you have
                           become a resident in Sweden and have been issued a
                           personal identity number (personnummer) you can
-                          contact your local municipality for information about`)}</p>
+                          contact your local municipality for information about`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
 
                       <div className="col-md-12">
@@ -990,7 +992,7 @@ console.log("[LOG221]:" + language);
                           training in the Swedish language for adults who do not
                           have Swedish as their first language. You can study
                           SFI full-time or part-time. The training is free of
-                          charge.`)}</p>
+                          charge.`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
                     </div>
                   </div>
@@ -1001,27 +1003,27 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`UNEMPLOYMENT`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`Insurance`)}</strong>
                     </h2>
                     <br />
 
                     <p className=" tw-text-gray">{t(`Payouts of unemployment insurance take two forms, a basic
                       benefit or an income-related benefit. Registered yourself
-                      for A-Kassa as soon you start your work.`)}</p>
+                      for A-Kassa as soon you start your work.`.replace(/\s+/g, ' ').trim())}</p>
 
                     <p className=" tw-text-gray">{t(`Unemployment insurance is not a part of the social
                       insurance system in Sweden. Unemployment insurance is
                       connected closely to the trade unions but is legally
                       independent. When you start working in Sweden, investigate
                       which unemployment insurance fund (widely known as
-                      A-Kassa) is available.`)}</p>
+                      A-Kassa) is available.`.replace(/\s+/g, ' ').trim())}</p>
 
                     <p className=" tw-text-gray">{t(`In order to receive an income-based benefit, you must have
                       been a member of a voluntary unemployment insurance fund
                       (A-kassa) for 12 months and have worked (been employed)
                       for at least six months. In addition, some trade unions
-                      offer additional insurance against loss of income.`)}</p>
+                      offer additional insurance against loss of income.`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
 
                   <div className=" tw-pt-6">
@@ -1030,7 +1032,7 @@ console.log("[LOG221]:" + language);
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`RECOGNITION OF`)}</span>
 
-                    <h2 className = "tw-text-left">
+                    <h2 className="tw-text-left">
                       <strong className='tw-text-black'>{t(`Higher Education Qualifications`)}</strong>
                     </h2>
                     <br />
@@ -1042,60 +1044,60 @@ console.log("[LOG221]:" + language);
                       evaluates foreign qualifications in order to provide
                       support for people looking for work in Sweden, people who
                       wish to continue studying, or for employers who wish to
-                      employ someone with foreign qualifications.`)}</p>
+                      employ someone with foreign qualifications.`.replace(/\s+/g, ' ').trim())}</p>
 
                     <p className=" tw-text-gray tw-font-medium">{t(`Figuring out the responsibilities of the different
                       authorities isn’t all that easy. Who is responsible for
                       what? Whom should you turn to with your questions,
-                      applications and concerns?`)}</p>
+                      applications and concerns?`.replace(/\s+/g, ' ').trim())}</p>
 
                     <p className=" tw-text-gray">{t(`This guide gives you a brief overview of the different
-                      authorities and their main responsibilities.`)}</p>
+                      authorities and their main responsibilities.`.replace(/\s+/g, ' ').trim())}</p>
 
                     <ul className=" tw-p-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">{t(`Migrationsverket (Migration Agency)`)}</p>
+                        <p className=" m-0 tw-text-gray">{t(`Migrationsverket (Migration Agency)`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">{t(`Skatteverket (Tax Agency)`)}</p>
+                        <p className=" m-0 tw-text-gray">{t(`Skatteverket (Tax Agency)`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">{t(`Arbetsförmedlingen (Public Employment Service)`)}</p>
+                        <p className=" m-0 tw-text-gray">{t(`Arbetsförmedlingen (Public Employment Service)`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">{t(`Försäkringskassan (Social Insurance Agency)`)}</p>
-                      </li>
-
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className=" m-0 tw-text-gray">{t(`Skolverket (National Agency for Education)`)}</p>
-                      </li>
-                      <li className=" tw-flex  tw-gap-3">
-                        <div>
-                          <GoTriangleRight className=" tw-text-blue" />
-                        </div>
-                        <p className=" m-0 tw-text-gray">{t(`Jordbruksverket (Swedish Board of Agriculture)`)}</p>
+                        <p className=" m-0 tw-text-gray">{t(`Försäkringskassan (Social Insurance Agency)`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">{t(`Tullverket (Swedish Customs)`)}</p>
+                        <p className=" m-0 tw-text-gray">{t(`Skolverket (National Agency for Education)`.replace(/\s+/g, ' ').trim())}</p>
+                      </li>
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
+                        <p className=" m-0 tw-text-gray">{t(`Jordbruksverket (Swedish Board of Agriculture)`.replace(/\s+/g, ' ').trim())}</p>
+                      </li>
+
+                      <li className=" tw-flex  tw-gap-3">
+                        <div>
+                          <GoTriangleRight className=" tw-text-blue" />
+                        </div>
+                        <p className=" m-0 tw-text-gray">{t(`Tullverket (Swedish Customs)`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
@@ -1103,21 +1105,21 @@ console.log("[LOG221]:" + language);
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Transportstyrelsen (Transport Agency) & Trafikverket
-                          (Transport Administration)`)}</p>
+                          (Transport Administration)`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">{t(`Länsstyrelserna (the County administrative boards)`)}</p>
+                        <p className=" m-0 tw-text-gray">{t(`Länsstyrelserna (the County administrative boards)`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
-                        <p className=" m-0 tw-text-gray">{t(`Landstingen (County councils)`)}</p>
+                        <p className=" m-0 tw-text-gray">{t(`Landstingen (County councils)`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
@@ -1127,7 +1129,7 @@ console.log("[LOG221]:" + language);
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`MIGRATIONSVERKET`)}</span>
 
-                      <h2 className = "tw-text-left">
+                      <h2 className="tw-text-left">
                         <strong className='tw-text-black'>{t(`(Migration Agency)`)}</strong>
                       </h2>
                       <br />
@@ -1137,7 +1139,7 @@ console.log("[LOG221]:" + language);
                         Sweden, or if you want to become a Swedish citizen.
                         Migrationsverket is also responsible for the settlement
                         of certain new arrivals and decides on compensation to
-                        municipalities and counties.`)}</p>
+                        municipalities and counties.`.replace(/\s+/g, ' ').trim())}</p>
                     </div>
 
                     <div className=" tw-pt-6">
@@ -1146,7 +1148,7 @@ console.log("[LOG221]:" + language);
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`SKATTEVERKET`)}</span>
 
-                      <h2 className = "tw-text-left">
+                      <h2 className="tw-text-left">
                         <strong className='tw-text-black'>{t(`(Tax Agency)`)}</strong>
                       </h2>
                       <br />
@@ -1154,7 +1156,7 @@ console.log("[LOG221]:" + language);
                       <p className=" tw-text-gray">{t(`Skatteverket (The Tax Agency) is in charge of tax
                         matters but is also responsible for Sweden’s population
                         register. Skatteverket does your folkbokföring
-                        (registration), You can als apply for a Swedish ID card`)}</p>
+                        (registration), You can als apply for a Swedish ID card`.replace(/\s+/g, ' ').trim())}</p>
                     </div>
 
                     <div className=" tw-pt-6">
@@ -1163,35 +1165,35 @@ console.log("[LOG221]:" + language);
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`ARBETSFÖRMEDLINGEN`)}</span>
 
-                      <h2 className = "tw-text-left">
+                      <h2 className="tw-text-left">
                         <strong className='tw-text-black'>{t(`(Public Employment Service)`)}</strong>
                       </h2>
                       <br />
 
                       <p className=" tw-text-gray">{t(`Arbetsförmedlingen (the Public Employment Service) is
-                        mainly responsible for labor related issues.`)}</p>
+                        mainly responsible for labor related issues.`.replace(/\s+/g, ' ').trim())}</p>
                       <p className=" tw-text-black tw-font-semibold">{t(`Arbetsförmedlingen has three main services for Newly
-                        arrived people:`)}</p>
+                        arrived people:`.replace(/\s+/g, ' ').trim())}</p>
 
                       <ul className=" tw-p-0 tw-pt-4">
                         <li className=" tw-flex  tw-gap-3">
                           <div>
                             <GoTriangleRight className=" tw-text-blue" />
                           </div>
-                          <p className=" m-0 tw-text-gray">{t(`Nystartsjobb`)}</p>
+                          <p className=" m-0 tw-text-gray">{t(`Nystartsjobb`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                         <li className=" tw-flex tw-gap-3">
                           <div>
                             <GoTriangleRight className=" tw-text-blue" />
                           </div>
-                          <p className=" m-0 tw-text-gray">{t(`Instegsjobb`)}</p>
+                          <p className=" m-0 tw-text-gray">{t(`Instegsjobb`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                         <li className=" tw-flex tw-gap-3">
                           <div>
                             <GoTriangleRight className=" tw-text-blue" />
                           </div>
                           <p className=" m-0 tw-text-gray">{t(`Etableringspaket(for peple covered by the law 2010:
-                            197)`)}</p>
+                            197)`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                       </ul>
                     </div>
@@ -1202,7 +1204,7 @@ console.log("[LOG221]:" + language);
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`FÖRSÄKRINGSKASSAN`)}</span>
 
-                      <h2 className = "tw-text-left">
+                      <h2 className="tw-text-left">
                         <strong className='tw-text-black'>{t(`(Social Insurance Agency)`)}</strong>
                       </h2>
                       <br />
@@ -1211,13 +1213,13 @@ console.log("[LOG221]:" + language);
                         charge for the social insurance in Sweden and their main
                         task is to ensure you get the benefits and allowances
                         you are entitled to. The social insurance covers
-                        everyone who lives and works in Sweden.`)}</p>
+                        everyone who lives and works in Sweden.`.replace(/\s+/g, ' ').trim())}</p>
                       <p className=" tw-text-gray">{t(`Försäkringskassan is not always the determining
                         authority (the one taking the actual decision whether or
                         not you are entitled to a benefit or allowance), but is
                         usually the one who pays out the benefits and
-                        allowances.`)}</p>
-                      <p className=" tw-text-black tw-font-semibold">{t(`Newbie relevant benefits and allowances (among many):`)}</p>
+                        allowances.`.replace(/\s+/g, ' ').trim())}</p>
+                      <p className=" tw-text-black tw-font-semibold">{t(`Newbie relevant benefits and allowances (among many):`.replace(/\s+/g, ' ').trim())}</p>
 
                       <ul className=" tw-p-0 tw-pt-4">
                         <li className=" tw-flex  tw-gap-3">
@@ -1226,7 +1228,7 @@ console.log("[LOG221]:" + language);
                           </div>
                           <p className=" m-0 tw-text-gray">{t(`Etableringsersättning(introduction supplement)
                             Information in Swedish, English, Arabic, Dari,
-                            Tingrinja, Somali)`)}</p>
+                            Tingrinja, Somali)`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                         <li className=" tw-flex tw-gap-3">
                           <div>
@@ -1234,19 +1236,19 @@ console.log("[LOG221]:" + language);
                           </div>
                           <p className=" m-0 tw-text-gray">{t(`Etableringstillägg(financial supplement that can be
                             added to the introduction supplement if you have
-                            children) Information in Swedish`)}</p>
+                            children) Information in Swedish`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                         <li className=" tw-flex  tw-gap-3">
                           <div>
                             <GoTriangleRight className=" tw-text-blue" />
                           </div>
-                          <p className=" m-0 tw-text-gray">{t(`Bostadsersättning(housing allowance)`)}</p>
+                          <p className=" m-0 tw-text-gray">{t(`Bostadsersättning(housing allowance)`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                         <li className=" tw-flex  tw-gap-3">
                           <div>
                             <GoTriangleRight className=" tw-text-blue" />
                           </div>
-                          <p className=" m-0 tw-text-gray">{t(`Föräldraförsäkring(parental leave)`)}</p>
+                          <p className=" m-0 tw-text-gray">{t(`Föräldraförsäkring(parental leave)`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                       </ul>
                     </div>
@@ -1257,7 +1259,7 @@ console.log("[LOG221]:" + language);
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`SKOLVERKET`)}</span>
 
-                      <h2 className = "tw-text-left">
+                      <h2 className="tw-text-left">
                         <strong className='tw-text-black'>{t(`(National Agency For Education)`)}</strong>
                       </h2>
                       <br />
@@ -1266,7 +1268,7 @@ console.log("[LOG221]:" + language);
                         central authority for education in Sweden. They offer an
                         English- language guide to the Swedish school system.
                         They also process applications for teachers with foreign
-                        qualifications that wish to work in Sweden.`)}</p>
+                        qualifications that wish to work in Sweden.`.replace(/\s+/g, ' ').trim())}</p>
                     </div>
 
                     <div className=" tw-pt-6">
@@ -1275,7 +1277,7 @@ console.log("[LOG221]:" + language);
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`JORDBRUKSVERKET`)}</span>
 
-                      <h2 className = "tw-text-left">
+                      <h2 className="tw-text-left">
                         <strong className='tw-text-black'>{t(`(Board Of Agriculture)`)}</strong>
                       </h2>
                       <br />
@@ -1283,13 +1285,13 @@ console.log("[LOG221]:" + language);
                       <p className=" tw-text-gray">{t(`Jordbruksverket is in charge of agricultural and
                         horticultural matters in Sweden. They are the authority
                         to turn to if you want to bring your dog or cat to
-                        Sweden.`)}</p>
+                        Sweden.`.replace(/\s+/g, ' ').trim())}</p>
                     </div>
 
                     <div className=" tw-pt-6">
                       <br />
                       <span>{t(`TULLVERKET`)}</span>
-                      <h2 className = "tw-text-left">
+                      <h2 className="tw-text-left">
                         <strong className='tw-text-black'>{t(`(Customs)`)}</strong>
                       </h2>
                       <br />
@@ -1297,7 +1299,7 @@ console.log("[LOG221]:" + language);
                       <p className=" tw-text-gray">{t(`Tullverket (Customs) is charge of the flows of goods in
                         and out of Sweden. Check with Tullverket when bringing
                         or shipping goods in and out of Sweden. They have a
-                        guide in English especially for Newbies.`)}</p>
+                        guide in English especially for Newbies.`.replace(/\s+/g, ' ').trim())}</p>
                     </div>
 
                     <div className=" tw-pt-6">
@@ -1306,7 +1308,7 @@ console.log("[LOG221]:" + language);
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`TRANSPORTSTYRELSEN (TRANSPORT AGENCY)`)}</span>
 
-                      <h2 className = "tw-text-left">
+                      <h2 className="tw-text-left">
                         <strong className='tw-text-black'>{t(`& Trafikverket (Transport Administration)`)}</strong>
                       </h2>
                       <br />
@@ -1315,7 +1317,7 @@ console.log("[LOG221]:" + language);
                         everything concerning driving licenses as well as other
                         transport- and traffic-related rules and regulations in
                         Sweden. If you want to find out more visit their common
-                        website – körkortsportalen –`)}</p>
+                        website – körkortsportalen –`.replace(/\s+/g, ' ').trim())}</p>
                     </div>
 
                     <div className=" tw-pt-6">
@@ -1324,7 +1326,7 @@ console.log("[LOG221]:" + language);
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`KOMMUNERNA`)}</span>
 
-                      <h2 className = "tw-text-left">
+                      <h2 className="tw-text-left">
                         <strong className='tw-text-black'>{t(`(The Municipalities)`)}</strong>
                       </h2>
                       <br />
@@ -1336,41 +1338,41 @@ console.log("[LOG221]:" + language);
                         also responsible for the receiving and housing of
                         Newbies covered by the law (2000: 1383), and shall, if
                         necessary, provide practical assistance in connection
-                        with the settlement.`)}</p>
+                        with the settlement.`.replace(/\s+/g, ' ').trim())}</p>
 
                       <p className=" tw-text-gray">{t(`The municipalities are furthermore responsible for the
                         financial support of Newbies who are not covered by law
                         (2010:197). You belong to the municipality where you
-                        made your registration (folkbokföring).`)}</p>
+                        made your registration (folkbokföring).`.replace(/\s+/g, ' ').trim())}</p>
 
-                      <p className=" tw-text-black tw-font-semibold">{t(`Your municipality is in charge for:`)}</p>
+                      <p className=" tw-text-black tw-font-semibold">{t(`Your municipality is in charge for:`.replace(/\s+/g, ' ').trim())}</p>
 
                       <ul className=" tw-p-0 tw-pt-4">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">{t(`SFI(Swedish teaching)`)}</p>
+                          <p className=" m-0 tw-text-gray">{t(`SFI(Swedish teaching)`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">{t(`Komvux(Adult education)`)}</p>
+                          <p className=" m-0 tw-text-gray">{t(`Komvux(Adult education)`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">{t(`Samhällsorientering(Social Orientation)`)}</p>
+                          <p className=" m-0 tw-text-gray">{t(`Samhällsorientering(Social Orientation)`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <GoTriangleRight className=" tw-text-blue" />
-                          <p className=" m-0 tw-text-gray">{t(`Education (child care, preschool, school etc.)`)}</p>
+                          <p className=" m-0 tw-text-gray">{t(`Education (child care, preschool, school etc.)`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <GoTriangleRight className=" tw-text-blue" />
                           <p className=" m-0 tw-text-gray">{t(`Financial support for Newbies who aren’t covered by
-                            the law (2010:197)`)}</p>
+                            the law (2010:197)`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <GoTriangleRight className=" tw-text-blue" />
                           <p className=" m-0 tw-text-gray">{t(`Receiving and Housing of Newbies (covered by the law
-                            200: 1383)`)}</p>
+                            200: 1383)`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                       </ul>
                     </div>
@@ -1381,7 +1383,7 @@ console.log("[LOG221]:" + language);
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`LÄNSSTYRELSERNA`)}</span>
 
-                      <h2 className = "tw-text-left">
+                      <h2 className="tw-text-left">
                         <strong className='tw-text-black'>{t(`(The County Administrative Boards)`)}</strong>
                       </h2>
                       <br />
@@ -1393,7 +1395,7 @@ console.log("[LOG221]:" + language);
                         goals and objects are achieved. It is Länsstyrelserna’s
                         task to ensure that the municipalities are prepared to
                         receive Newbies, but also help the municipalities
-                        coordinate the SFI teaching and the society orientation.`)}</p>
+                        coordinate the SFI teaching and the society orientation.`.replace(/\s+/g, ' ').trim())}</p>
                     </div>
 
                     <div className=" tw-pt-6">
@@ -1402,14 +1404,14 @@ console.log("[LOG221]:" + language);
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`LANDSTINGEN`)}</span>
 
-                      <h2 className = "tw-text-left">
+                      <h2 className="tw-text-left">
                         <strong className='tw-text-black'>{t(`(The County Councils)`)}</strong>
                       </h2>
                       <br />
 
                       <p className=" tw-pt-8 tw-text-gray">{t(`Landstingen (the county councils) are in charge of
-                        everything concerning healthcare matters in Sweden.`)}</p>
-                      <p className="  tw-text-black tw-pt-6   tw-font-semibold">{t(`Länsstyrelserna (The County administrative boards)`)}</p>
+                        everything concerning healthcare matters in Sweden.`.replace(/\s+/g, ' ').trim())}</p>
+                      <p className="  tw-text-black tw-pt-6   tw-font-semibold">{t(`Länsstyrelserna (The County administrative boards)`.replace(/\s+/g, ' ').trim())}</p>
 
                       <p className=" tw-text-gray">{t(`Länsstyrelserna (the county administrative boards)
                         represent the government in the county. Their task is to
@@ -1418,8 +1420,8 @@ console.log("[LOG221]:" + language);
                         goals and objects are achieved. It is Länsstyrelserna’s
                         task to ensure that the municipalities are prepared to
                         receive Newbies, but also help the municipalities
-                        coordinate the SFI teaching and the society orientation.`)}</p>
-                     
+                        coordinate the SFI teaching and the society orientation.`.replace(/\s+/g, ' ').trim())}</p>
+
                     </div>
 
                     <div>
@@ -1428,7 +1430,7 @@ console.log("[LOG221]:" + language);
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`ACCOMODATION`)}</span>
 
-                      <h2 className = "tw-text-left">
+                      <h2 className="tw-text-left">
                         <strong className='tw-text-black'>{t(`Finding Home`)}</strong>
                       </h2>
                       <br />
@@ -1444,13 +1446,13 @@ console.log("[LOG221]:" + language);
                             for your own place to stay can be a challenging task
                             in larger cities such as Stockholm, Gothenburg and
                             Malmö, where available housing remains relatively
-                            scarce.`)}</p>
+                            scarce.`.replace(/\s+/g, ' ').trim())}</p>
                           <p className=" tw-text-gray">{t(`You can rent ‘first-hand’ or ‘second-hand’ in
                             Sweden. First-hand (första hand) means you sign an
                             agreement with the owner of the building, while
                             second-hand (andra hand) means you sign an agreement
                             with someone who owns the flat or has the first-hand
-                            contract on the flat.`)}</p>
+                            contract on the flat.`.replace(/\s+/g, ' ').trim())}</p>
                         </div>
 
                         <p className=" tw-text-gray">{t(`To get a first-hand contract, you need to register to
@@ -1458,7 +1460,7 @@ console.log("[LOG221]:" + language);
                           it can take anywhere from a few days in some
                           municipalities to up to ten years for central
                           locations in cities like Stockholm for a first-hand
-                          contract to become available.`)}</p>
+                          contract to become available.`.replace(/\s+/g, ' ').trim())}</p>
                         <p className=" tw-text-gray">{t(`As a new resident, you’ll probably be renting a flat
                           from someone who sublets in a second-hand arrangement.
                           It is extremely important to make sure that the tenant
@@ -1466,10 +1468,10 @@ console.log("[LOG221]:" + language);
                           (bostadsrättsföreningen) or the landlord has signed
                           off on second-hand leasing. If you rent a flat from a
                           subletter who doesn’t have permission, you run the
-                          risk of being evicted (to make a long story short).`)}</p>
+                          risk of being evicted (to make a long story short).`.replace(/\s+/g, ' ').trim())}</p>
 
                         <p className=" tw-text-gray">{t(`Useful websites for finding flats in cities around the
-                          country are`)}</p>
+                          country are`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
                     </div>
 
@@ -1479,198 +1481,197 @@ console.log("[LOG221]:" + language);
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`USEFULL`)}</span>
 
-                      <h2 className = "tw-text-left">
+                      <h2 className="tw-text-left">
                         <strong className='tw-text-black'>{t(`LINKS`)}</strong>
                       </h2>
                       <br />
                       <ul className=" tw-p-0">
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Personnummer & ID card`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://www.skatteverket.se" target="_blank" rel="noopener noreferrer">
-        {t(`www.skatteverket.se`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Personnummer & ID card`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://www.skatteverket.se" target="_blank" rel="noopener noreferrer">
+                              {t(`www.skatteverket.se`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Application for Swedish Language`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://malmo.se/…/Sfi—svenska…/Sfi-intensivkurs.html" target="_blank" rel="noopener noreferrer">
-        {t(`https://malmo.se/…/Sfi—svenska…/Sfi-intensivkurs.html`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Application for Swedish Language`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://malmo.se/…/Sfi—svenska…/Sfi-intensivkurs.html" target="_blank" rel="noopener noreferrer">
+                              {t(`https://malmo.se/…/Sfi—svenska…/Sfi-intensivkurs.html`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Apartments Search`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://www.boplats.se" target="_blank" rel="noopener noreferrer">
-        {t(`www.boplats.se`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Apartments Search`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://www.boplats.se" target="_blank" rel="noopener noreferrer">
+                              {t(`www.boplats.se`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Registration for Job Search`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://www.arbetsförmedlingen.se" target="_blank" rel="noopener noreferrer">
-        {t(`www.arbetsförmedlingen.se`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Registration for Job Search`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://www.arbetsförmedlingen.se" target="_blank" rel="noopener noreferrer">
+                              {t(`www.arbetsförmedlingen.se`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Business Registration`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://www.verksamt.se" target="_blank" rel="noopener noreferrer">
-        {t(`www.verksamt.se`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Business Registration`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://www.verksamt.se" target="_blank" rel="noopener noreferrer">
+                              {t(`www.verksamt.se`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Driving Test`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://www.trafikverket.se/korkort/boka-prov/" target="_blank" rel="noopener noreferrer">
-        {t(`https://www.trafikverket.se/korkort/boka-prov/`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Driving Test`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://www.trafikverket.se/korkort/boka-prov/" target="_blank" rel="noopener noreferrer">
+                              {t(`https://www.trafikverket.se/korkort/boka-prov/`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Change your EU B-Driving License`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://transportstyrelsen.se/…/ansokan-om-utbyte-av…/" target="_blank" rel="noopener noreferrer">
-        {t(`https://transportstyrelsen.se/…/ansokan-om-utbyte-av…/`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Change your EU B-Driving License`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://transportstyrelsen.se/…/ansokan-om-utbyte-av…/" target="_blank" rel="noopener noreferrer">
+                              {t(`https://transportstyrelsen.se/…/ansokan-om-utbyte-av…/`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Change your Taxi License`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://transportstyrelsen.se/…/taxi…/" target="_blank" rel="noopener noreferrer">
-        {t(`https://transportstyrelsen.se/…/taxi…/`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Change your Taxi License`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://transportstyrelsen.se/…/taxi…/" target="_blank" rel="noopener noreferrer">
+                              {t(`https://transportstyrelsen.se/…/taxi…/`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Buy/Sell Everything`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://www.blocket.se" target="_blank" rel="noopener noreferrer">
-        {t(`www.blocket.se`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Buy/Sell Everything`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://www.blocket.se" target="_blank" rel="noopener noreferrer">
+                              {t(`www.blocket.se`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Buy Sell House`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://www.hemnet.se" target="_blank" rel="noopener noreferrer">
-        {t(`www.hemnet.se`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Buy Sell House`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://www.hemnet.se" target="_blank" rel="noopener noreferrer">
+                              {t(`www.hemnet.se`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Furniture`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://www.ikea.se" target="_blank" rel="noopener noreferrer">
-        {t(`www.ikea.se`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Furniture`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://www.ikea.se" target="_blank" rel="noopener noreferrer">
+                              {t(`www.ikea.se`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Residence Permit`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://www.migrationsverket.se" target="_blank" rel="noopener noreferrer">
-        {t(`www.migrationsverket.se`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Residence Permit`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://www.migrationsverket.se" target="_blank" rel="noopener noreferrer">
+                              {t(`www.migrationsverket.se`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Foreign Educational Document evaluation`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://www.uhr.se" target="_blank" rel="noopener noreferrer">
-        {t(`www.Uhr.se`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Foreign Educational Document evaluation`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://www.uhr.se" target="_blank" rel="noopener noreferrer">
+                              {t(`www.Uhr.se`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Applying for Study in Sweden-English`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://www.universityadmisisons.se" target="_blank" rel="noopener noreferrer">
-        {t(`www.universityadmisisons.se`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Applying for Study in Sweden-English`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://www.universityadmisisons.se" target="_blank" rel="noopener noreferrer">
+                              {t(`www.universityadmisisons.se`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Apply for study in Sweden-Swedish`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://www.antagning.se" target="_blank" rel="noopener noreferrer">
-        {t(`https://www.antagning.se`)}
-      </a>
-    </div>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://www.utbyten.se" target="_blank" rel="noopener noreferrer">
-        {t(`https://www.utbyten.se`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Apply for study in Sweden-Swedish`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://www.antagning.se" target="_blank" rel="noopener noreferrer">
+                              {t(`https://www.antagning.se`)}
+                            </a>
+                          </div>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://www.utbyten.se" target="_blank" rel="noopener noreferrer">
+                              {t(`https://www.utbyten.se`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`PHD Search`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://www.euraxess.se" target="_blank" rel="noopener noreferrer">
-        {t(`https://www.euraxess.se`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`PHD Search`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://www.euraxess.se" target="_blank" rel="noopener noreferrer">
+                              {t(`https://www.euraxess.se`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Apply for Children’s Playgroup and School`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://malmo.se/…/Utbildning-och-forskola/Forskola.html" target="_blank" rel="noopener noreferrer">
-        {t(`https://malmo.se/…/Utbildning-och-forskola/Forskola.html`)}
-      </a>
-    </div>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://malmo.se/…/Utbildni…/Utbildningar-for-vuxna.html" target="_blank" rel="noopener noreferrer">
-        {t(`https://malmo.se/…/Utbildni…/Utbildningar-for-vuxna.html`)}
-      </a>
-    </div>
-  </li>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Apply for Children’s Playgroup and School`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://malmo.se/…/Utbildning-och-forskola/Forskola.html" target="_blank" rel="noopener noreferrer">
+                              {t(`https://malmo.se/…/Utbildning-och-forskola/Forskola.html`)}
+                            </a>
+                          </div>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://malmo.se/…/Utbildni…/Utbildningar-for-vuxna.html" target="_blank" rel="noopener noreferrer">
+                              {t(`https://malmo.se/…/Utbildni…/Utbildningar-for-vuxna.html`)}
+                            </a>
+                          </div>
+                        </li>
 
-  <li className=" ">
-    <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Social Rights`)}</p>
-    <div className=" tw-py-2">
-      <a className=" tw-font-normal" href="https://www.forsakringskassan.se" target="_blank" rel="noopener noreferrer">
-        {t(`https://www.forsakringskassan.se`)}
-      </a>
-    </div>
-  </li>
-</ul>
+                        <li className=" ">
+                          <p className=" m-0 tw-text-gray tw-font-semibold">{t(`Social Rights`.replace(/\s+/g, ' ').trim())}</p>
+                          <div className=" tw-py-2">
+                            <a className=" tw-font-normal" href="https://www.forsakringskassan.se" target="_blank" rel="noopener noreferrer">
+                              {t(`https://www.forsakringskassan.se`)}
+                            </a>
+                          </div>
+                        </li>
+                      </ul>
 
                     </div>
                   </div>
                 </div>
               </div>
 
-             <Sidebar/>
+              <Sidebar />
             </div>
           </div>
         </section>
       </div>
 
       <Footer />
-    </div>
-  );
+    </div>);
 };
 
 export default New_In_sweden;

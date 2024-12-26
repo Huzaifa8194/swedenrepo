@@ -56,7 +56,7 @@ import directinvestment from "../../assets/iconscout/directinvestment.png";
 import DCI from "../../assets/iconscout/property.png";
 import goldenvisa from "../../assets/iconscout/goldenvisa.png";
 import cpr from "../../assets/iconscout/cpr.png";
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 
 
 const FeatureSection = () => {

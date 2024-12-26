@@ -6,7 +6,7 @@ import tesi from '../../assets/images/testimonial/01.jpg';
 import tesi2 from '../../assets/images/testimonial/02.jpg';
 import tesi3 from '../../assets/images/testimonial/03.jpg';
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 
 import Header from '../../components/Header_New/Header';
 
@@ -84,7 +84,7 @@ const Testimonials = () => {
             <h2>What Our Clients Say?</h2>
             <p className=" tw-text-gray">
             {t(`  Hear what our clients have to say about partnering with us for corporate and development. We assist our customers in home finding, children’s school, Moving Services, and we can take care of all the paperwork from day one till you moved
-              to your new home.`)}
+              to your new home.`.replace(/\s+/g, ' ').trim())}
             </p>
           </div>
 

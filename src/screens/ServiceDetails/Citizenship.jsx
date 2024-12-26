@@ -7,7 +7,7 @@ import { Link, useParams } from "react-router-dom";
 import banner from "../../assets/images/security-check-in-airport.png";
 import banner2 from "../../assets/images/travel-vacation.png";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 import { imageVariants } from "../../utils/motion";
 import { motion } from "framer-motion";
 import Sidebar from "../../components/ScrollableBar";
@@ -25,228 +25,13 @@ import Header from "../../components/Header_New/Header";
 import { MdHdrStrong } from "react-icons/md";
 
 const Citizenship = () => {
-  const { t, language } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const data = [
-    {
-      id: 1,
-      title: "Asylum",
-      description:
-        "You have to be in Sweden or on the Swedish border in order to apply for asylum.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 fa fa-home"></i>
-      ),
-      Link: "/asylum",
-    },
-    {
-      id: 2,
-      title: "Family Reunification",
-      description:
-        "Family reunification is a recognized reason for the immigration of family members to a country.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-family"></i>
-      ),
-      Link: "/family-reunification",
-    },
-    {
-      id: 3,
-      title: "Personnummer Sweden",
-      description:
-        "The personal identification is a number that the Swedish Tax Agency assigns to person registered in Sweden.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-14"></i>
-      ),
-
-      Link: "/personnumer-sweden",
-    },
-    {
-      id: 4,
-      title: "CPR Number Denmark",
-      description:
-        "CPR stands for Det Centrale Personregister, which translates to the Civil Registration System ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-12"></i>
-      ),
-      Link: "/cpr-number-denmark",
-    },
-    {
-      id: 5,
-      title: "Work Permit",
-      description:
-        "Permit To Work refers to management systems used to ensure that work is done safely and efficiently.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport-11"></i>
-      ),
-      Link: "/work-permit",
-    },
-    {
-      id: 5,
-      title: "Business Permit",
-      description:
-        "Swedish business culture is open and innovative, and starting a business there is relatively simple        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 fa fa-briefcase"></i>
-      ),
-
-      Link: "/business-permit",
-    },
-    {
-      id: 6,
-      title: "Business Visit",
-      description:
-        "Foreign people who want to invest in Sweden and stay temporarily for that purpose can apply for business visa.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 themifyicon ti-map-alt"></i>
-      ),
-
-      Link: "/business-visit",
-    },
-    {
-      id: 7,
-      title: "Citizenship",
-      description:
-        "When you have lived in Sweden for a specified period and meet requirements, you can apply for Swedish citizenship.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-passport"></i>
-      ),
-      Link: "/citizenship",
-    },
-    {
-      id: 8,
-      title: "Study in EU",
-      description:
-        "If you are thinking about studying abroad, then visit Sweden. Sweden is well known for its world-class academic opportunities.          ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-graduation-hat-1"></i>
-      ),
-      Link: "/study-in-eu",
-    },
-    {
-      id: 9,
-      title: "Global Visit Visas",
-      description:
-        "For visiting Sweden for a short period you will need a visit visa. Sweden follows the same visa rules as others.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-travel"></i>
-      ),
-      Link: "/global-visit-visas",
-    },
-    {
-      id: 10,
-      title: "EEA Permits",
-      description:
-        "Any EU citizen getting residence in the UK according to the EU rules, can bring their family with them.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12 flaticon-contract"></i>
-      ),
-      Link: "/eea-permits",
-    },
-    {
-      id: 11,
-      title: "Parents EU Permit",
-      description:
-        "Parents of a child under 18 years who is in Sweden can move to sweden if they will live with the child.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-family-1"></i>
-      ),
-      Link: "/parents-eu-permit",
-    },
-    {
-      id: 12,
-      title: "Marriage & Divorce      ",
-      description:
-        "Getting married is beautiful. But to make sure that it will be a good experience, it is important to have legal control.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-insurance"></i>
-      ),
-      Link: "/marriage-divorce",
-    },
-    {
-      id: 13,
-      title: "Company Registration      ",
-      description:
-        "If you are planning to register your company inside Sweden, you can reach us anytime if you have some queries about it.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-certificate"></i>
-      ),
-      Link: "/company-registration",
-    },
-    {
-      id: 14,
-      title: "House & Offices",
-      description:
-        "we offer you an easy and painless solution where you can get a place to live without any worries.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-certificate"></i>
-      ),
-      Link: "/house-offices",
-    },
-    {
-      id: 15,
-      title: "Appeal Cases",
-      description:
-        "Have you been denied? let’s take a look at your case so that the decision can hopefully be overturned.",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-reading"></i>
-      ),
-      Link: "/appeal-cases",
-    },
-    {
-      id: 16,
-      title: "EU Citizens Relocation",
-      description:
-        "Family reunification means that a family that has been split up can apply to be allowed to live together.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-passport-3"></i>
-      ),
-      Link: "/eu-family-reunification",
-    },
-    {
-      id: 17,
-      title: "Investment",
-      description:
-        "There are various opportunities for business ventures, Look for the best opportunity, grab it and do your best.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  fa fa-sitemap"></i>
-      ),
-      Link: "/investment",
-    },
-    {
-      id: 18,
-      title: "Direct Citizenship      ",
-      description:
-        "citizenship-by-investment programs provide ultra-wealthy families with the privilege of a second or third passport.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-boarding-pass"></i>
-      ),
-      Link: "/direct-citizenship-by-investments",
-    },
-    {
-      id: 19,
-      title: "Permanent Residence",
-      description:
-        "If you lived in Sweden for more than 5 years with the EU right of residence you can get the permanent residence permit.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-policy"></i>
-      ),
-      Link: "/permanent-residence",
-    },
-    {
-      id: 20,
-      title: "Golden Visa  ",
-      description:
-        "As a member state of the EU, They offer its residents and citizens a number of reassuring benefits.        ",
-      icons: (
-        <i class="   tw-ml-0 p-0 tw-text-4xl tw-text-blue tw-mb-12  flaticon-boarding-pass-2"></i>
-      ),
-      Link: "/golden-visa-greece-portugal",
-    },
-  ];
-
-  const isleftlangue = language === 'ur';
+ 
+  const isleftlangue = i18n.language === 'ur';
   return (
     <>
       <Header />
@@ -268,18 +53,18 @@ const Citizenship = () => {
                 <div className="   2xl:tw-pl-[21.3%] md:tw-pl-[14.5%] tw-pl-3 tw-pr-[3.5%]">
                   <div>
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Swedish Citizenship`)}</span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Swedish Citizenship`.replace(/\s+/g, ' ').trim())}</span>
 
                     <h2 className="tw-text-left">
                       <strong>{t(`Requirements, Application Process,
-                      and Waiting Times`)}</strong>
+                      and Waiting Times`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
 
                     <br />
                     <p className="tw-text-gray">{t(`To qualify for Swedish citizenship, applicants must meet
-                      several key requirements:`)}</p>
+                      several key requirements:`.replace(/\s+/g, ' ').trim())}</p>
 
-                    <strong className="m-0 tw-text-black">{t(`Age Requirement`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Age Requirement`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -287,11 +72,11 @@ const Citizenship = () => {
                           <strong></strong>{t(`You must be at least 18 years old to
                           apply independently. Children under 18 can apply
                           alongside a parent or guardian, with special
-                          considerations for adopted children.`)}</p>
+                          considerations for adopted children.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">{t(`Permanent Residence or Right of Residence`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Permanent Residence or Right of Residence`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -299,11 +84,11 @@ const Citizenship = () => {
                           <>Residence Requirement:</>{t(`Applicants must hold
                           either a permanent residence permit (permanent
                           uppehållstillstånd) or permanent right of residence
-                          (permanent uppehållsrätt) if they are EU/EEA citizens.`)}</p>
+                          (permanent uppehållsrätt) if they are EU/EEA citizens.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">{t(`Residency Duration`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Residency Duration`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pt-4 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -361,7 +146,7 @@ const Citizenship = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-black">{t(`Good Conduct`)}</strong>
+                        <strong className="m-0 tw-text-black">{t(`Good Conduct`.replace(/\s+/g, ' ').trim())}</strong>
 
                         <ul className="tw-p-0 tw-pt-4 tw-pl-0">
                           <li className="tw-flex tw-items-center tw-gap-3">
@@ -380,13 +165,13 @@ const Citizenship = () => {
                               business systems. Applicants may be required to
                               provide documentation or disclosures related to
                               their legal history and financial status as part
-                              of the application process.`)}</p>
+                              of the application process.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                         </ul>
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-black">{t(`Ability to Support Yourself`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Ability to Support Yourself`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -394,25 +179,25 @@ const Citizenship = () => {
                           <strong></strong>{t(`Generally, applicants should be
                           financially independent and not rely on social
                           assistance. This applies particularly to non-Nordic
-                          and non-EU/EEA applicants.`)}</p>
+                          and non-EU/EEA applicants.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
                   </div>
                   <div>
                     <br />
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Specific Paths to Citizenship`)}</span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Specific Paths to Citizenship`.replace(/\s+/g, ' ').trim())}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>{t(`Citizenship for Nordic Citizens`)}</strong>
+                      <strong>{t(`Citizenship for Nordic Citizens`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
 
                     <br />
 
                     <p className="tw-text-gray">{t(`For citizens of Denmark, Finland, Iceland, and Norway, the
-                      process for Swedish citizenship is streamlined:`)}</p>
+                      process for Swedish citizenship is streamlined:`.replace(/\s+/g, ' ').trim())}</p>
 
-                    <strong className="m-0 tw-text-black">{t(`Residency Requirement`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Residency Requirement`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <p className="tw-text-gray">
                       {" "}
@@ -420,7 +205,7 @@ const Citizenship = () => {
                       required to qualify for certain residency benefits or
                       permits. This relatively short period makes it easier for
                       individuals to establish themselves in Sweden and access
-                      various opportunities,`)}
+                      various opportunities,`.replace(/\s+/g, ' ').trim())}
                     </p>
                     <div className="row tw-flex tw-items-center">
                       <div className="col-md-6">
@@ -440,7 +225,7 @@ const Citizenship = () => {
                         <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                           <li className="tw-flex tw-items-center tw-gap-3">
                             <p className="m-0 tw-text-gray">{t(`such as applying for permanent residency or other
-                              long-term residence options`)}</p>
+                              long-term residence options`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
 
                           <li className=" tw-flex tw-pt-4 tw-gap-3">
@@ -452,7 +237,7 @@ const Citizenship = () => {
                               citizens can apply directly to Migrationsverket
                               or, if they meet the criteria, register at their
                               local Tax Agency (Skatteverket) for simplified
-                              processing.`)}</p>
+                              processing.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
 
                           <li className=" tw-flex  tw-gap-3">
@@ -462,7 +247,7 @@ const Citizenship = () => {
                             <p className="m-0 tw-text-gray">
                               <>Automatic Naturalization:</>{t(`Some Nordic
                               citizens may qualify for automatic naturalization
-                              under specific conditions.`)}</p>
+                              under specific conditions.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                         </ul>
                       </div>
@@ -477,21 +262,21 @@ const Citizenship = () => {
                       Citizenship
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>{t(`For EU/EEA Citizens`)}</strong>
+                      <strong>{t(`For EU/EEA Citizens`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
 
                     <p className="tw-text-gray">{t(`EU/EEA citizens can apply for Swedish citizenship after
                       five years of continuous residence in Sweden. Requirements
-                      include:`)}</p>
+                      include:`.replace(/\s+/g, ' ').trim())}</p>
 
-                    <strong className="m-0 tw-text-black">{t(`Permanent Right of Residence`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Permanent Right of Residence`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className="tw-flex tw-items-center tw-gap-3">
                         <p className="m-0 tw-text-gray">{t(`After five years of residence, EU/EEA citizens
                           typically acquire a permanent right of residence
                           (permanent uppehållsrätt), which is essential for the
-                          citizenship application.`)}</p>
+                          citizenship application.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
 
                       <li className=" tw-flex tw-pt-4 tw-gap-3">
@@ -499,10 +284,10 @@ const Citizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0  tw-text-gray">
-                          <>{t(`Simplified Process:`)}</>{t(`EU/EEA citizens may
+                          <>{t(`Simplified Process:`.replace(/\s+/g, ' ').trim())}</>{t(`EU/EEA citizens may
                           experience a slightly simplified process since they
                           are not required to hold a residence permit due to
-                          their EU rights.`)}</p>
+                          their EU rights.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
@@ -513,7 +298,7 @@ const Citizenship = () => {
                         {t(`  Proof of Good Conduct and Financial Independence:
                           Similar to other applicants, EU/EEA citizens must
                           demonstrate good conduct and generally be financially
-                          self-sufficient.`)}
+                          self-sufficient.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </li>
                     </ul>
@@ -525,16 +310,16 @@ const Citizenship = () => {
                       Citizenship for Individuals
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>{t(`With a Permanent Residence Permit`)}</strong>
+                      <strong>{t(`With a Permanent Residence Permit`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
 
                     <br />
 
                     <p className="tw-text-gray">{t(`If you have been granted a permanent residence permit in
                       Sweden, you may apply for citizenship once you fulfill the
-                      residency requirements:`)}</p>
+                      residency requirements:`.replace(/\s+/g, ' ').trim())}</p>
 
-                    <strong className="m-0 tw-text-black">{t(`Five-Year Residence Requirement`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Five-Year Residence Requirement`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pt-4 tw-pl-0">
                       <li className="tw-flex tw-items-center tw-gap-3">
@@ -546,7 +331,7 @@ const Citizenship = () => {
                           conflict or persecution. This shorter residency
                           requirement for refugees is designed to help them
                           integrate into Swedish society more quickly and
-                          establish stability after seeking asylum.`)}</p>
+                          establish stability after seeking asylum.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <div className="row tw-flex tw-items-center">
                         <div className="col-md-6">
@@ -568,10 +353,10 @@ const Citizenship = () => {
                               <GoTriangleRight className=" tw-text-blue" />
                             </div>
                             <p className="m-0 tw-text-gray">
-                              <strong>{t(`Documentation of Residence and Income:`)}</strong>{" "}
+                              <strong>{t(`Documentation of Residence and Income:`.replace(/\s+/g, ' ').trim())}</strong>{" "}
                               {t(`You will need to provide evidence of your
                               residence and financial stability during your time
-                              in Sweden.`)}
+                              in Sweden.`.replace(/\s+/g, ' ').trim())}
                             </p>
                           </li>
 
@@ -580,10 +365,10 @@ const Citizenship = () => {
                               <GoTriangleRight className=" tw-text-blue" />
                             </div>
                             <p className="m-0 tw-text-gray">
-                              <strong>{t(`Commitment to Stay in Sweden:`)}</strong>{" "}
+                              <strong>{t(`Commitment to Stay in Sweden:`.replace(/\s+/g, ' ').trim())}</strong>{" "}
                              {t(` Migrationsverket may consider factors like
                               employment and social ties to assess your
-                              intention to remain in Sweden.`)}
+                              intention to remain in Sweden.`.replace(/\s+/g, ' ').trim())}
                             </p>
                           </li>
                         </div>
@@ -595,18 +380,18 @@ const Citizenship = () => {
                     <br />
 
                     <span className="tw-flex tw-items-center tw-gap-2">
-                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Specific Paths to Citizenship`)}</span>
+                      <p className="tw-m-0 tw-w-[15px] tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Specific Paths to Citizenship`.replace(/\s+/g, ' ').trim())}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>{t(`Application Process for Swedish Citizenship`)}</strong>
+                      <strong>{t(`Application Process for Swedish Citizenship`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
 
                     <p className="tw-text-gray">{t(`The application process for Swedish citizenship involves
                       several steps to ensure you meet the eligibility criteria.
-                      Here’s an overview of the process:`)}</p>
+                      Here’s an overview of the process:`.replace(/\s+/g, ' ').trim())}</p>
 
-                    <strong className="m-0 tw-text-black">{t(`Prepare Documentation`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Prepare Documentation`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4 ">
                       <li>
@@ -614,7 +399,7 @@ const Citizenship = () => {
                           <strong> </strong> {t(`Gather all necessary documents,
                           including a valid passport, proof of residence (such
                           as rental agreements), employment records, and proof
-                          of income.`)}
+                          of income.`.replace(/\s+/g, ' ').trim())}
                         </p>
                       </li>
                     </ul>
@@ -634,7 +419,7 @@ const Citizenship = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-black">{t(`Submit Application`)}</strong>
+                        <strong className="m-0 tw-text-black">{t(`Submit Application`.replace(/\s+/g, ' ').trim())}</strong>
 
                         <ul className="tw-p-0 tw-pt-4 tw-pl-0">
                           <li>
@@ -642,13 +427,13 @@ const Citizenship = () => {
                               Migrationsverket’s e-service or in paper format.
                               Ensure all information is accurate, and
                               double-check for any required documents, as
-                              incomplete applications may delay processing.`)}</p>
+                              incomplete applications may delay processing.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                         </ul>
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-black">{t(`Application Review`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Application Review`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li className=" tw-flex  tw-gap-3">
@@ -658,7 +443,7 @@ const Citizenship = () => {
                         <p className="m-0 tw-text-gray">{t(`Migrationsverket reviews the application and checks
                           your eligibility. This review includes confirming your
                           residence, examining your criminal record (if
-                          applicable), and verifying financial self-sufficiency.`)}</p>
+                          applicable), and verifying financial self-sufficiency.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
 
                       <li className=" tw-flex  tw-gap-3">
@@ -666,18 +451,18 @@ const Citizenship = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className="m-0 tw-text-gray">{t(`Migrationsverket may contact you to request additional
-                          documentation if necessary.`)}</p>
+                          documentation if necessary.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">{t(`Decision and Notification`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Decision and Notification`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-10">
                       <li>
                         <p className="m-0 tw-text-gray">{t(`Once the review is complete, Migrationsverket will
                           issue a decision. If approved, you will receive a
                           certificate of Swedish citizenship. If denied, you
-                          have the right to appeal the decision.`)}</p>
+                          have the right to appeal the decision.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
@@ -688,7 +473,7 @@ const Citizenship = () => {
                       Waiting Time for
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>{t(`Citizenship Applications`)}</strong>
+                      <strong>{t(`Citizenship Applications`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
 
                     <br />
@@ -705,7 +490,7 @@ const Citizenship = () => {
                           issues, may take longer due to the need for additional
                           checks and documentation. Applicants with refugee or
                           protected status may experience a slightly shorter
-                          processing time, usually within 12 to 18 months.`)}</p>
+                          processing time, usually within 12 to 18 months.`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
 
                       <div className="col-md-6">
@@ -723,33 +508,33 @@ const Citizenship = () => {
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-black">{t(`Standard Processing`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Standard Processing`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
                         <p className="m-0 tw-text-gray">{t(`Standard processing for non-EU/EEA citizens and those
                           without special exemptions typically takes 18-36
-                          months.`)}</p>
+                          months.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">{t(`Nordic Citizens`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Nordic Citizens`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
                         <p className="m-0 tw-text-gray">{t(`Nordic citizens typically experience shorter
                           processing times, often between 6-12 months due to
-                          simplified requirements.`)}</p>
+                          simplified requirements.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">{t(`EU/EEA Citizens`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`EU/EEA Citizens`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
                         <p className="m-0 tw-text-gray">{t(`EU/EEA citizens often have similar processing times to
                           standard applicants, but cases are typically processed
-                          more quickly if all documentation is in order.`)}</p>
+                          more quickly if all documentation is in order.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
@@ -772,15 +557,15 @@ const Citizenship = () => {
                     <p className="tw-text-gray">{t(`Navigating the Swedish citizenship application process can
                       be complex and time-consuming. Sweden Relocators offers
                       comprehensive services to help streamline your
-                      application. Here’s how we can assist:`)}</p>
+                      application. Here’s how we can assist:`.replace(/\s+/g, ' ').trim())}</p>
 
-                    <strong className="m-0 tw-text-black">{t(`Eligibility Assessment`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Eligibility Assessment`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
                         <p className="m-0 tw-text-gray">{t(`We evaluate your residency history, documentation, and
                           circumstances to confirm your eligibility and advise
-                          on any additional requirements.`)}</p>
+                          on any additional requirements.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
@@ -799,46 +584,46 @@ const Citizenship = () => {
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <strong className="m-0 tw-text-black">{t(`Document Preparation and Verification`)}</strong>
+                        <strong className="m-0 tw-text-black">{t(`Document Preparation and Verification`.replace(/\s+/g, ' ').trim())}</strong>
 
                         <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                           <li>
                             <p className="m-0 tw-text-gray">{t(`We ensure that all required documents are
                               accurate, complete, and up-to-date, including
-                              translation of foreign documents if necessary.`)}</p>
+                              translation of foreign documents if necessary.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                         </ul>
 
-                        <strong className="m-0 tw-text-black">{t(`Application Submission and Monitoring`)}</strong>
+                        <strong className="m-0 tw-text-black">{t(`Application Submission and Monitoring`.replace(/\s+/g, ' ').trim())}</strong>
 
                         <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                           <li>
                             <p className="m-0 tw-text-gray">{t(`We submit your application and monitor its
                               progress with Migrationsverket, providing updates
                               and handling any requests for additional
-                              information.`)}</p>
+                              information.`.replace(/\s+/g, ' ').trim())}</p>
                           </li>
                         </ul>
                       </div>
                     </div>
 
-                    <strong className="m-0 tw-text-black">{t(`Support for Appeal`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Support for Appeal`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
                         <p className="m-0 tw-text-gray">{t(`If your application is denied, we guide you through
                           the appeal process and help strengthen your case for
-                          reconsideration.`)}</p>
+                          reconsideration.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">{t(`Guidance on Additional Requirements`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Guidance on Additional Requirements`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
                         <p className="m-0 tw-text-gray">{t(`We provide personalized advice to address specific
                           issues such as criminal records, financial concerns,
-                          or extended absences.`)}</p>
+                          or extended absences.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
@@ -849,41 +634,41 @@ const Citizenship = () => {
                       Why Choose
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>{t(`Sweden Relocators?`)}</strong>
+                      <strong>{t(`Sweden Relocators?`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
 
                     <p className="tw-text-gray">{t(`Sweden Relocators offers expert knowledge and personalized
                       services to ensure a smooth Swedish citizenship
-                      application process. Here’s why you should choose us:`)}</p>
+                      application process. Here’s why you should choose us:`.replace(/\s+/g, ' ').trim())}</p>
 
-                    <strong className="m-0 tw-text-black">{t(`Expert Knowledge of Swedish Citizenship Laws`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Expert Knowledge of Swedish Citizenship Laws`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
                         <p className="m-0 tw-text-gray">{t(`Our team is well-versed in the latest citizenship
                           requirements, ensuring you have the best chance of
-                          success.`)}</p>
+                          success.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">{t(`Comprehensive, Personalized Support`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Comprehensive, Personalized Support`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
                         <p className="m-0 tw-text-gray">{t(`We tailor our services to meet your specific needs,
                           whether you’re a Nordic citizen, EU resident, or
-                          permanent residence permit holder.`)}</p>
+                          permanent residence permit holder.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
-                    <strong className="m-0 tw-text-black">{t(`Streamlined Application Process`)}</strong>
+                    <strong className="m-0 tw-text-black">{t(`Streamlined Application Process`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className="tw-p-0 tw-pl-0 tw-pt-4">
                       <li>
                         <p className="m-0 tw-text-gray">{t(`We handle the details, so you can have peace of mind
                           knowing that every step is managed professionally and
-                          efficiently.`)}</p>
+                          efficiently.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
                   </div>
@@ -902,7 +687,7 @@ const Citizenship = () => {
                     Our comprehensive services cover everything from work and
                     study opportunities to family reunifications, business
                     support, and much more. Let us guide you every step of the
-                    way—start your seamless experience now!`)}</p>
+                    way—start your seamless experience now!`.replace(/\s+/g, ' ').trim())}</p>
                 </div>
               </div>
 

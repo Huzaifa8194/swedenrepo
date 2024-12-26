@@ -9,7 +9,7 @@ import './style.css'; // Import the CSS file
 
 import { Link } from "react-router-dom";
 
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 const Header = () => {
   const [isTop, setIsTop] = useState(true);
   const [isScreenTab, setIsScreenTab] = useState(window.innerWidth);

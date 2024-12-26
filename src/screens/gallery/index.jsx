@@ -25,7 +25,7 @@ import eng6 from "../../assets/images/video/06-Assessment-English.mp4";
 import eng7 from "../../assets/images/video/07-Business investment-English.mp4";
 import eng8 from "../../assets/images/video/08-Upload Doc-English.mp4";
 import Header from "../../components/Header_New/Header";
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 
 
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";

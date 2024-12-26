@@ -9,7 +9,7 @@ import Header from "../../components/Header_New/Header";
 import video1 from "../../assets/images/video/about_video1.mp4";
 import video2 from "../../assets/images/video/about_video2.mp4";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 
 
 

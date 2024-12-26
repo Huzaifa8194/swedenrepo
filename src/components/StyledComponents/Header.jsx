@@ -14,7 +14,7 @@ import { MdKeyboardArrowRight } from 'react-icons/md';
 import { RxCross1 } from 'react-icons/rx';
 import Button from '../Button/index.jsx';
 
-import { useTranslation } from '../../context/TranslationContext.jsx';
+import { useTranslation } from 'react-i18next';
 import { use } from 'i18next';
 import { Link } from 'react-router-dom';
 

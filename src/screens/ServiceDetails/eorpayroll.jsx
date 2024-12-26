@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { imageVariants } from "../../utils/motion";
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png";
 import Sidebar from "../../components/ScrollableBar";
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 
 
 import eor1 from "../../assets/iconscout/eor1.png";
@@ -19,8 +19,9 @@ import eor3 from "../../assets/iconscout/eor3.png";
 import Header from "../../components/Header_New/Header";
 
 const EORPayroll = () => {
-  const { t, language } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { id } = useParams();
+  language = i18n.language;
   const isleftlangue = language === 'ur';
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -268,7 +269,7 @@ const EORPayroll = () => {
                       Employer of Record (EOR) & Payroll Services
                     </span>
                     <h2 className="tw-text-left">
-                      <strong>{t(`Simplified with Our Online Portal`)}</strong>
+                      <strong>{t(`Simplified with Our Online Portal`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
 
@@ -278,7 +279,7 @@ const EORPayroll = () => {
                       management simple. With our EOR and payroll solutions,
                       your company can expand globally without navigating the
                       complexities of local employment laws, tax compliance, or
-                      benefits administration.`)}</p>
+                      benefits administration.`.replace(/\s+/g, ' ').trim())}</p>
 
                     <div>
                       <br />
@@ -301,10 +302,10 @@ const EORPayroll = () => {
                           <span className=" tw-flex tw-items-center tw-gap-2">
                             {" "}
                             <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                            {t(`What is`)}
+                            {t(`What is`.replace(/\s+/g, ' ').trim())}
                           </span>
                           <h2>
-                            <strong>{t(`Employer of Record (EOR)?`)}</strong>
+                            <strong>{t(`Employer of Record (EOR)?`.replace(/\s+/g, ' ').trim())}</strong>
                           </h2>
                           <br />
 
@@ -315,7 +316,7 @@ const EORPayroll = () => {
                             Sweden Relocators legally employs your workforce on
                             your behalf, allowing you to operate in Sweden or
                             other countries without setting up a local legal
-                            entity.`)}</p>
+                            entity.`.replace(/\s+/g, ' ').trim())}</p>
                         </div>
                       </div>
                     </div>
@@ -325,63 +326,63 @@ const EORPayroll = () => {
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                        {t(`How Our`)}
+                        {t(`How Our`.replace(/\s+/g, ' ').trim())}
                       </span>
                       <h2>
-                        <strong>{t(`EOR Service Works`)}</strong>
+                        <strong>{t(`EOR Service Works`.replace(/\s+/g, ' ').trim())}</strong>
                       </h2>
                       <br />
 
-                      <strong className=" m-0 tw-text-black">{t(`Company Sign-Up on the Portal:`)}</strong>
+                      <strong className=" m-0 tw-text-black">{t(`Company Sign-Up on the Portal:`.replace(/\s+/g, ' ').trim())}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">{t(`Simply sign up on our portal as a company to get
                             started. Once registered, you can add employees and
                             provide relevant information, including roles,
-                            salaries, and benefits.`)}</p>
+                            salaries, and benefits.`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-black">{t(`Local Compliance Management:`)}</strong>
+                      <strong className=" m-0 tw-text-black">{t(`Local Compliance Management:`.replace(/\s+/g, ' ').trim())}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">{t(`Sweden Relocators handles all compliance aspects,
                             from employment contracts that align with Swedish
                             labor laws to adherence to local tax regulations,
-                            protecting your business from potential legal risks.`)}</p>
+                            protecting your business from potential legal risks.`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-black">{t(`Employee Onboarding:`)}</strong>
+                      <strong className=" m-0 tw-text-black">{t(`Employee Onboarding:`.replace(/\s+/g, ' ').trim())}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">{t(`Our portal guides you through the employee
                             onboarding process, ensuring all necessary
                             documents, tax forms, and agreements are collected
-                            and organized for smooth employment`)}</p>
+                            and organized for smooth employment`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-black">{t(`Payroll & Benefits Administration:`)}</strong>
+                      <strong className=" m-0 tw-text-black">{t(`Payroll & Benefits Administration:`.replace(/\s+/g, ' ').trim())}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">{t(`We handle payroll processing, ensuring accurate and
                             timely salary payments that account for all required
-                            deductions, benefits, and tax contributions.`)}</p>
+                            deductions, benefits, and tax contributions.`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-black">{t(`Termination and Offboarding:`)}</strong>
+                      <strong className=" m-0 tw-text-black">{t(`Termination and Offboarding:`.replace(/\s+/g, ' ').trim())}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">{t(`In case of employment termination, our team ensures
                             all legal procedures are followed, providing full
-                            support for smooth, compliant offboarding.`)}</p>
+                            support for smooth, compliant offboarding.`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                       </ul>
                     </div>
@@ -391,24 +392,24 @@ const EORPayroll = () => {
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                       {t(` How Our Payroll Services Work`)}
+                       {t(` How Our Payroll Services Work`.replace(/\s+/g, ' ').trim())}
                       </span>
                       <h2>
-                        <strong>{t(`A Step-by-Step Guide`)}</strong>
+                        <strong>{t(`A Step-by-Step Guide`.replace(/\s+/g, ' ').trim())}</strong>
                       </h2>
                       <br />
 
                       <p className=" tw-text-gray">{t(`Our Payroll Services are fully integrated with our EOR
                         platform, handling all aspects of salary payments, tax
                         compliance, and benefits administration. Here’s how it
-                        works:`)}</p>
+                        works:`.replace(/\s+/g, ' ').trim())}</p>
 
-                      <strong className=" m-0 tw-text-black">{t(`Employee Setup and Salary Processing`)}</strong>
+                      <strong className=" m-0 tw-text-black">{t(`Employee Setup and Salary Processing`.replace(/\s+/g, ' ').trim())}</strong>
 
                       <ul className=" tw-p-0 tw-pt-4">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <GoTriangleRight className=" tw-text-blue" />
-                          <strong className=" m-0 tw-text-gray">{t(`Add Employee Details:`)}</strong>
+                          <strong className=" m-0 tw-text-gray">{t(`Add Employee Details:`.replace(/\s+/g, ' ').trim())}</strong>
                         </li>
                       </ul>
 
@@ -417,7 +418,7 @@ const EORPayroll = () => {
                           <p className=" m-0 tw-text-gray">
                             <strong></strong> {t(`Through our online portal, you can
                             add each employee’s salary, benefits, and any other
-                            payroll-specific details.`)}
+                            payroll-specific details.`.replace(/\s+/g, ' ').trim())}
                             <p>
                               <br />
                             </p>
@@ -427,7 +428,7 @@ const EORPayroll = () => {
                         <ul className=" tw-p-0 tw-pt-4">
                           <li className=" tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className=" tw-text-blue" />
-                            <strong className=" m-0 tw-text-gray">{t(`Monthly Payroll Calculation:`)}</strong>
+                            <strong className=" m-0 tw-text-gray">{t(`Monthly Payroll Calculation:`.replace(/\s+/g, ' ').trim())}</strong>
                           </li>
                         </ul>
 
@@ -436,7 +437,7 @@ const EORPayroll = () => {
                             <strong></strong>{t(`Every pay period, our system
                             calculates salaries with full compliance, including
                             all taxes, benefits, and deductions. This ensures
-                            payroll accuracy and consistency.`)}</p>
+                            payroll accuracy and consistency.`.replace(/\s+/g, ' ').trim())}</p>
                           <p>
                             <br />
                           </p>
@@ -445,7 +446,7 @@ const EORPayroll = () => {
                         <ul className=" tw-p-0 tw-pt-4">
                           <li className=" tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className=" tw-text-blue" />
-                            <strong className=" m-0 tw-text-gray">{t(`Timely Salary Payments:`)}</strong>
+                            <strong className=" m-0 tw-text-gray">{t(`Timely Salary Payments:`.replace(/\s+/g, ' ').trim())}</strong>
                           </li>
                         </ul>
 
@@ -455,7 +456,7 @@ const EORPayroll = () => {
                             deposited directly into employees’ bank accounts.
                             Payslips with breakdowns of earnings, deductions,
                             and taxes are available for employees to view
-                            online.`)}
+                            online.`.replace(/\s+/g, ' ').trim())}
                             <p>
                               <br />
                             </p>
@@ -478,12 +479,12 @@ const EORPayroll = () => {
                           </div>
                         </div>
                         <div className="col-md-6">
-                          <strong className=" m-0 tw-text-black">{t(`Tax Compliance and Filing`)}</strong>
+                          <strong className=" m-0 tw-text-black">{t(`Tax Compliance and Filing`.replace(/\s+/g, ' ').trim())}</strong>
 
                           <ul className=" tw-p-0 tw-pt-4">
                             <li className=" tw-flex tw-items-center tw-gap-3">
                               <GoTriangleRight className=" tw-text-blue" />
-                              <strong className=" m-0 tw-text-gray">{t(`Tax Withholding:`)}</strong>
+                              <strong className=" m-0 tw-text-gray">{t(`Tax Withholding:`.replace(/\s+/g, ' ').trim())}</strong>
                             </li>
                           </ul>
 
@@ -493,7 +494,7 @@ const EORPayroll = () => {
                                 <strong></strong> {t(`Our system automatically
                                 withholds the correct taxes from each employee’s
                                 salary, ensuring compliance with Swedish tax
-                                laws.`)}
+                                laws.`.replace(/\s+/g, ' ').trim())}
                                 <p>
                                   <br />
                                 </p>
@@ -503,7 +504,7 @@ const EORPayroll = () => {
                             <ul className=" tw-p-0 tw-pt-4">
                               <li className=" tw-flex tw-items-center tw-gap-3">
                                 <GoTriangleRight className=" tw-text-blue" />
-                                <strong className=" m-0 tw-text-gray">{t(`Reporting and Filing:`)}</strong>
+                                <strong className=" m-0 tw-text-gray">{t(`Reporting and Filing:`.replace(/\s+/g, ' ').trim())}</strong>
                               </li>
                             </ul>
 
@@ -512,7 +513,7 @@ const EORPayroll = () => {
                                 <strong></strong>{t(`Our team handles monthly,
                                 quarterly, and annual tax filings, so your
                                 business stays compliant with all local
-                                regulations.`)}</p>
+                                regulations.`.replace(/\s+/g, ' ').trim())}</p>
                               <p>
                                 <br />
                               </p>
@@ -521,7 +522,7 @@ const EORPayroll = () => {
                             <ul className=" tw-p-0 tw-pt-4">
                               <li className=" tw-flex tw-items-center tw-gap-3">
                                 <GoTriangleRight className=" tw-text-blue" />
-                                <strong className=" m-0 tw-text-gray">{t(`Transparency and Record-Keeping:`)}</strong>
+                                <strong className=" m-0 tw-text-gray">{t(`Transparency and Record-Keeping:`.replace(/\s+/g, ' ').trim())}</strong>
                               </li>
                             </ul>
 
@@ -531,7 +532,7 @@ const EORPayroll = () => {
                                {t(` All payroll transactions, tax filings, and
                                 reports are securely stored in the portal,
                                 offering real-time visibility for both employers
-                                and employees.`)}
+                                and employees.`.replace(/\s+/g, ' ').trim())}
                                 <p>
                                   <br />
                                 </p>
@@ -541,12 +542,12 @@ const EORPayroll = () => {
                         </div>
                       </div>
 
-                      <strong className=" m-0 tw-text-black">{t(`Benefits Administration`)}</strong>
+                      <strong className=" m-0 tw-text-black">{t(`Benefits Administration`.replace(/\s+/g, ' ').trim())}</strong>
 
                       <ul className=" tw-p-0 tw-pt-4">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <GoTriangleRight className=" tw-text-blue" />
-                          <strong className=" m-0 tw-text-gray">{t(`Employee Benefits Setup:`)}</strong>
+                          <strong className=" m-0 tw-text-gray">{t(`Employee Benefits Setup:`.replace(/\s+/g, ' ').trim())}</strong>
                         </li>
                       </ul>
 
@@ -555,7 +556,7 @@ const EORPayroll = () => {
                           <p className=" m-0 tw-text-gray">
                            {t(` Through the portal, employers can define benefit
                             plans, including health insurance, retirement plans,
-                            and other perks.`)}
+                            and other perks.`.replace(/\s+/g, ' ').trim())}
                             <p>
                               <br />
                             </p>
@@ -565,14 +566,14 @@ const EORPayroll = () => {
                         <ul className=" tw-p-0 tw-pt-4">
                           <li className=" tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className=" tw-text-blue" />
-                            <strong className=" m-0 tw-text-gray">{t(`Automated Benefits Processing:`)}</strong>
+                            <strong className=" m-0 tw-text-gray">{t(`Automated Benefits Processing:`.replace(/\s+/g, ' ').trim())}</strong>
                           </li>
                         </ul>
 
                         <li>
                           <p className=" m-0 tw-text-gray">{t(`Our system automatically calculates and administers
                             benefits, ensuring employees receive the correct
-                            benefits each month.`)}</p>
+                            benefits each month.`.replace(/\s+/g, ' ').trim())}</p>
                           <p>
                             <br />
                           </p>
@@ -581,7 +582,7 @@ const EORPayroll = () => {
                         <ul className=" tw-p-0 tw-pt-4">
                           <li className=" tw-flex tw-items-center tw-gap-3">
                             <GoTriangleRight className=" tw-text-blue" />
-                            <strong className=" m-0 tw-text-gray">{t(`Compliance with Swedish Standards:`)}</strong>
+                            <strong className=" m-0 tw-text-gray">{t(`Compliance with Swedish Standards:`.replace(/\s+/g, ' ').trim())}</strong>
                           </li>
                         </ul>
 
@@ -590,7 +591,7 @@ const EORPayroll = () => {
                             <></>
                            {t(` We manage benefits in line with Swedish laws,
                             ensuring all requirements are met without additional
-                            administrative burden on your part.`)}
+                            administrative burden on your part.`.replace(/\s+/g, ' ').trim())}
                             <p>
                               <br />
                             </p>
@@ -604,14 +605,14 @@ const EORPayroll = () => {
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                       {t(` Key Advantages of`)}
+                       {t(` Key Advantages of`.replace(/\s+/g, ' ').trim())}
                       </span>
                       <h2>
-                        <strong>{t(`Using Sweden Relocators’ EOR & Payroll Portal`)}</strong>
+                        <strong>{t(`Using Sweden Relocators’ EOR & Payroll Portal`.replace(/\s+/g, ' ').trim())}</strong>
                       </h2>
                       <br />
 
-                      <strong className=" m-0 tw-text-black">{t(`1. Simple Online Sign-Up and Employee Management`)}</strong>
+                      <strong className=" m-0 tw-text-black">{t(`1. Simple Online Sign-Up and Employee Management`.replace(/\s+/g, ' ').trim())}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -619,11 +620,11 @@ const EORPayroll = () => {
                             manage payroll, and oversee benefits through our
                             portal. This allows you to focus on your business
                             operations, while we handle compliance and payroll
-                            administration.`)}</p>
+                            administration.`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-black">{t(`2. Seamless Global Expansion`)}</strong>
+                      <strong className=" m-0 tw-text-black">{t(`2. Seamless Global Expansion`.replace(/\s+/g, ' ').trim())}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -632,22 +633,22 @@ const EORPayroll = () => {
                             can operate in Sweden or other countries without the
                             need to set up a legal entity. Our EOR services
                             handle all local compliance, saving you time and
-                            resources.`)}</p>
+                            resources.`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-black">{t(`3. Complete Compliance Assurance`)}</strong>
+                      <strong className=" m-0 tw-text-black">{t(`3. Complete Compliance Assurance`.replace(/\s+/g, ' ').trim())}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">{t(`Our platform ensures compliance with Swedish labor
                             laws, tax regulations, and benefits standards. You
                             can confidently expand knowing your operations meet
-                            all local requirements.`)}</p>
+                            all local requirements.`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-black">{t(`4. Accurate, Timely Payroll Processing`)}</strong>
+                      <strong className=" m-0 tw-text-black">{t(`4. Accurate, Timely Payroll Processing`.replace(/\s+/g, ' ').trim())}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
@@ -655,18 +656,18 @@ const EORPayroll = () => {
                             ensuring accurate calculations that consider
                             deductions, benefits, and taxes. Employees are paid
                             on time, and payroll transparency is enhanced
-                            through detailed payslips.`)}</p>
+                            through detailed payslips.`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-black">{t(`5. Enhanced Employee Satisfaction`)}</strong>
+                      <strong className=" m-0 tw-text-black">{t(`5. Enhanced Employee Satisfaction`.replace(/\s+/g, ' ').trim())}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">{t(`Employees benefit from timely payments, transparent
                             benefits administration, and easily accessible
                             payslips, all through an intuitive online interface,
-                            leading to improved satisfaction and retention.`)}</p>
+                            leading to improved satisfaction and retention.`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                       </ul>
                     </div>
@@ -676,33 +677,33 @@ const EORPayroll = () => {
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
                         <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                       {t(` How to`)}
+                       {t(` How to`.replace(/\s+/g, ' ').trim())}
                       </span>
                       <h2>
                         <strong>{t(`Get Started with Sweden Relocators’ EOR & Payroll
-                          Portal`)}</strong>
+                          Portal`.replace(/\s+/g, ' ').trim())}</strong>
                       </h2>
                       <br />
 
-                      <strong className=" m-0 tw-text-black">{t(`Sign Up as a Company on Our Portal:`)}</strong>
+                      <strong className=" m-0 tw-text-black">{t(`Sign Up as a Company on Our Portal:`.replace(/\s+/g, ' ').trim())}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">{t(`Visit our website to create an account as a company.
                             Once registered, you can start adding employees to
                             your portal and managing your international
-                            workforce.`)}</p>
+                            workforce.`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                       </ul>
 
-                      <strong className=" m-0 tw-text-black">{t(`Add Employee Information:`)}</strong>
+                      <strong className=" m-0 tw-text-black">{t(`Add Employee Information:`.replace(/\s+/g, ' ').trim())}</strong>
 
                       <ul className=" tw-p-0 ">
                         <li className=" tw-flex tw-items-center tw-gap-3">
                           <p className=" m-0 tw-text-gray">{t(`Use our streamlined portal to add employee details,
                             including salaries, benefits, and contract terms.
                             Our system captures everything needed for compliant
-                            payroll and benefits processing.`)}</p>
+                            payroll and benefits processing.`.replace(/\s+/g, ' ').trim())}</p>
                         </li>
                       </ul>
 
@@ -729,16 +730,16 @@ const EORPayroll = () => {
                         <span className=" tw-flex tw-items-center tw-gap-2">
                           {" "}
                           <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                         {t(` All in One Place:`)}
+                         {t(` All in One Place:`.replace(/\s+/g, ' ').trim())}
                         </span>
                         <h2 className=" tw-text-left">
-                          <strong>{t(`Payroll, Benefits, and Compliance:`)}</strong>
+                          <strong>{t(`Payroll, Benefits, and Compliance:`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
                         <br />
                         <p className=" tw-text-gray">{t(`With our platform, you can manage payroll, tax
                           compliance, and benefits administration from a single
                           dashboard, with real-time reporting and full
-                          transparency.`)}</p>
+                          transparency.`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
                     </div>
 
@@ -746,33 +747,33 @@ const EORPayroll = () => {
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
                       <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{" "}
-                      {t(`Ongoing`)}
+                      {t(`Ongoing`.replace(/\s+/g, ' ').trim())}
                     </span>
                     <h2>
-                      <strong>{t(`Support and Updates:`)}</strong>
+                      <strong>{t(`Support and Updates:`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
                     <p className=" tw-text-gray">{t(`Our expert team is always available for support, ensuring
                       that your business stays compliant and adapts to any
-                      changes in local labor laws or tax regulations.`)}</p>
+                      changes in local labor laws or tax regulations.`.replace(/\s+/g, ' ').trim())}</p>
 
                     <div>
                       <p className=" tw-text-gray">
-                        {t(`By choosing Sweden Relocators, your business gains`)}
+                        {t(`By choosing Sweden Relocators, your business gains`.replace(/\s+/g, ' ').trim())}
                         access to a comprehensive{" "}
-                        <strong>{t(`EOR & Payroll Portal`)}</strong> {t(`that makes global
+                        <strong>{t(`EOR & Payroll Portal`.replace(/\s+/g, ' ').trim())}</strong> {t(`that makes global
                         workforce management seamless. Whether you're expanding
                         to Sweden or managing a multinational team, our system
                         streamlines payroll processing, tax compliance, and
-                        benefits administration—all from a single platform.`)}
+                        benefits administration—all from a single platform.`.replace(/\s+/g, ' ').trim())}
                         <br />{t(`Contact us today to start your journey with Sweden
                         Relocators and see how easy managing a global workforce
-                        can be with our EOR and payroll solutions.`)}</p>
+                        can be with our EOR and payroll solutions.`.replace(/\s+/g, ' ').trim())}</p>
                     </div>
                     <Link to="/register" className="tw-text-center tw-pt-4">
                     <h5 className="tw-text-center tw-text-primary tw-pt-4" style = {{fontSize: '1.2em'}}>
                         <strong className="tw-border tw-text-white tw-bg-primary tw-border-black tw-rounded-lg tw-px-2 tw-py-1 tw-inline-block">
-                         {t(` Sign Up Today!`)}{" "}
+                         {t(` Sign Up Today!`.replace(/\s+/g, ' ').trim())}{" "}
                         </strong>
                        
                       </h5>
@@ -784,7 +785,7 @@ const EORPayroll = () => {
                       help. Our comprehensive services cover everything from
                       work and study opportunities to family reunifications,
                       business support, and much more. Let us guide you every
-                      step of the way—start your seamless experience now!`)}</p>
+                      step of the way—start your seamless experience now!`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
                 </div>
 

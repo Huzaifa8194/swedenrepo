@@ -17,9 +17,11 @@ import Header from '../../components/Header_New/Header';
 import homeBgImage from "../../assets/images/bg-image/col-bgimage-1.png"
 import Select from "../../components/Selecttab";
 import Sidebar from "../../components/ScrollableBar";
-import { useTranslation } from '../../context/TranslationContext';
+import { useTranslation } from 'react-i18next';
 import axios from "axios";
 
+
+import Modal from "./Error_Modal"
 
 const Family_reunification_assessment = () => {
 
@@ -264,25 +266,61 @@ const Family_reunification_assessment = () => {
 
 
       const [resultdata, setResultData ] = useState(null);
+
+      const [isModalOpen3, setIsModalOpen3] = useState(false);
+      const [errors, setErrors] = useState({});
   
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const formData = new FormData();
-    formData.append("eu_citizen", euCitizen || "");
-    formData.append("move_to_sweden_in_90_days", movedToSweden || "");
-    formData.append("citizenship_country", citizenship || "");
-    formData.append("permanent_residence_permit_country", permanentResidencePermit || "");
-    formData.append("personnummerin_sweden", personnummer || "");
-    formData.append("applied_personnumer_and_rejected", personnummerRejected || "");
-    formData.append("own_apartment_or_rental", apartmentStatus || "");
-    formData.append("planning_to_stay_permanently", stayPermanently || "");
-    formData.append("full_time_work_in_sweden", fullTimeWork || "");
-    formData.append("applied_family_visa_and_rejected", familyVisaRejected || "");
-    formData.append("valid_national_passport", spousePassport || "");
-    formData.append("children_have_valid_national_passport", childrenPassport || "");
-    formData.append("marriage_certificate", marriageCertificateRegistered || "");
-    formData.append("birth_certificate", birthCertificateChildren || "");
+   
+    const newErrors = {};
+
+
+    if (!euCitizen) newErrors.euCitizen = "Please select if you are an EU Citizen.";
+  if (!movedToSweden) newErrors.movedToSweden = "Please specify if you are moving to Sweden in 90 days.";
+  if (!citizenship) newErrors.citizenship = "Citizenship country is required.";
+  if (!permanentResidencePermit) newErrors.permanentResidencePermit = "Permanent residence permit country is required.";
+  if (!personnummer) newErrors.personnummer = "Please specify your personnummer in Sweden.";
+  if (!personnummerRejected) newErrors.personnummerRejected = "Please specify if personnummer application was rejected.";
+  if (!apartmentStatus) newErrors.apartmentStatus = "Please specify your apartment status.";
+  if (!stayPermanently) newErrors.stayPermanently = "Please specify if you plan to stay permanently.";
+  if (!fullTimeWork) newErrors.fullTimeWork = "Please specify if you have full-time work in Sweden.";
+  if (!familyVisaRejected) newErrors.familyVisaRejected = "Please specify if your family visa application was rejected.";
+  if (!spousePassport) newErrors.spousePassport = "Please specify if your spouse has a valid national passport.";
+  if (!childrenPassport) newErrors.childrenPassport = "Please specify if your children have valid national passports.";
+  if (!marriageCertificateRegistered) newErrors.marriageCertificateRegistered = "Marriage certificate registration status is required.";
+  if (!birthCertificateChildren) newErrors.birthCertificateChildren = "Please specify if children have birth certificates.";
+
+  // If there are errors, display them and stop submission
+  if (Object.keys(newErrors).length > 0) {
+
+    console.log("THIS SHIT IS WORKING");      
+    setErrors(newErrors);
+    setIsModalOpen(true);
+    return;
+  }
+
+
+  const formData = new FormData();
+  formData.append("eu_citizen", euCitizen || "");
+  formData.append("move_to_sweden_in_90_days", movedToSweden || "");
+  formData.append("citizenship_country", citizenship || "");
+  formData.append("permanent_residence_permit_country", permanentResidencePermit || "");
+  formData.append("personnummerin_sweden", personnummer || "");
+  formData.append("applied_personnumer_and_rejected", personnummerRejected || "");
+  formData.append("own_apartment_or_rental", apartmentStatus || "");
+  formData.append("planning_to_stay_permanently", stayPermanently || "");
+  formData.append("full_time_work_in_sweden", fullTimeWork || "");
+  formData.append("applied_family_visa_and_rejected", familyVisaRejected || "");
+  formData.append("valid_national_passport", spousePassport || "");
+  formData.append("children_have_valid_national_passport", childrenPassport || "");
+  formData.append("marriage_certificate", marriageCertificateRegistered || "");
+  formData.append("birth_certificate", birthCertificateChildren || "");
+
+
+
+
 
     try {
       const response = await axios.post(
@@ -405,12 +443,12 @@ const Family_reunification_assessment = () => {
                   <div>
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Family Reunification`)}</span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Family Reunification`.replace(/\s+/g, ' ').trim())}</span>
                     <h2 className="tw-text-left">
                       <strong className="tw-text-left">{t(`Find Out Your Eligibility for Family Reunification in
-                        Sweden`)}</strong>
+                        Sweden`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
-                    <strong className="tw-text-gray">{t(`Who Should Use This Tool?`)}</strong>
+                    <strong className="tw-text-gray">{t(`Who Should Use This Tool?`.replace(/\s+/g, ' ').trim())}</strong>
 
                     <ul className=" tw-p-0">
                       <li className=" tw-flex  tw-gap-3">
@@ -418,22 +456,22 @@ const Family_reunification_assessment = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`EU Citizens who have already moved to Sweden or are
-                          planning to move to Sweden.`)}</p>
+                          planning to move to Sweden.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Long-term EU Residents who are currently living in
-                          Sweden or intend to relocate to Sweden.`)}</p>
+                          Sweden or intend to relocate to Sweden.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
-                    <strong className="tw-text-gray">{t(`Why Use the Eligibility Tool?`)}</strong>
+                    <strong className="tw-text-gray">{t(`Why Use the Eligibility Tool?`.replace(/\s+/g, ' ').trim())}</strong>
                     <p className=" tw-text-gray">{t(`This tool is designed to help you understand the
                       requirements and eligibility criteria for bringing your
                       family members to Sweden by collecting important details,
-                      such as:`)}</p>
+                      such as:`.replace(/\s+/g, ' ').trim())}</p>
 
                     <ul className=" tw-p-0 ">
                       <li className=" tw-flex  tw-gap-3">
@@ -441,31 +479,31 @@ const Family_reunification_assessment = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Your Residence Status: Information about your current
-                          or planned residence in Sweden.`)}</p>
+                          or planned residence in Sweden.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Family Relationship: Specific details about the family
-                          members you want to reunite with.`)}</p>
+                          members you want to reunite with.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Eligibility Requirements: Guidance based on your
-                          status as an EU citizen or long-term EU resident.`)}</p>
+                          status as an EU citizen or long-term EU resident.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`)}</span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`How`.replace(/\s+/g, ' ').trim())}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>{t(`We Use the Information`)}</strong>
+                      <strong>{t(`We Use the Information`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
 
                     <br />
@@ -476,14 +514,14 @@ const Family_reunification_assessment = () => {
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`We will assess your details to determine your
-                          eligibility for family reunification in Sweden.`)}</p>
+                          eligibility for family reunification in Sweden.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
                           <GoTriangleRight className=" tw-text-blue" />
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`Our team will guide you through the necessary steps to
-                          start the reunification process.`)}</p>
+                          start the reunification process.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                       <li className=" tw-flex  tw-gap-3">
                         <div>
@@ -491,36 +529,39 @@ const Family_reunification_assessment = () => {
                         </div>
                         <p className=" m-0 tw-text-gray">{t(`We’ll ensure you have a clear understanding of the
                           requirements to successfully bring your family to
-                          Sweden.`)}</p>
+                          Sweden.`.replace(/\s+/g, ' ').trim())}</p>
                       </li>
                     </ul>
 
                     <br />
                     <span className=" tw-flex tw-items-center tw-gap-2">
                       {" "}
-                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                      <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`.replace(/\s+/g, ' ').trim())}</span>
 
                     <h2 className="tw-text-left">
-                      <strong>{t(`Get Started`)}</strong>
+                      <strong>{t(`Get Started`.replace(/\s+/g, ' ').trim())}</strong>
                     </h2>
                     <br />
 
 
-                    <p className=" tw-text-gray">{t(`Use the eligibility tool to take the first step toward reuniting with your family in Sweden as an EU citizen or long-term EU resident!`)}</p>
+                    <p className=" tw-text-gray">{t(`Use the eligibility tool to take the first step toward reuniting with your family in Sweden as an EU citizen or long-term EU resident!`.replace(/\s+/g, ' ').trim())}</p>
                   </div>
                   <div>
                     {/* <div className="row g-3 tw-pt-6 tw-rounded-2xl  tw-mb-2 px-4 tw-py-4 tw-shadow tw-bg-white ">
-                  <h5 className=" tw-text-black  ">{t(`Personal Details`)}</h5>
+                  <h5 className=" tw-text-black  ">{t(`Personal Details`.replace(/\s+/g, ' ').trim())}</h5>
 
                   <h6 className=" tw-text-black ">
                     {" "}
                     <i class="fa fa-user"> </i>FILL UP THE PERSONAL DETAILS 
                   </h6>
                 </div> */}
+
+                <Modal/>
 {resultdata && (     <Assessment_modal
                       isModalOpen={isModalOpen}
                       setIsModalOpen={setIsModalOpen}
                       data = {resultdata}
+                      errors = {errors}
                     /> )}
                     {/* <form>
                       <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
@@ -558,6 +599,8 @@ const Family_reunification_assessment = () => {
                     </form> */}
                   </div>
 
+
+
                   {/* user info */}
                   <div className=" tw-pt-8">
 
@@ -567,10 +610,10 @@ const Family_reunification_assessment = () => {
 
                         <span className=" tw-flex tw-items-center tw-gap-2">
                           {" "}
-                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Relocate to Sweden`)}</span>
+                          <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Relocate to Sweden`.replace(/\s+/g, ' ').trim())}</span>
 
                         <h2 className="tw-text-left">
-                          <strong>{t(`Personal Details`)}</strong>
+                          <strong>{t(`Personal Details`.replace(/\s+/g, ' ').trim())}</strong>
                         </h2>
 
                         <div className="col-md-6 tw-pt-4">
@@ -583,6 +626,7 @@ const Family_reunification_assessment = () => {
                             ]}
                             value={euCitizen}
                             onChange={handleSelectChange}
+                            required={true}
                             className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
                           />
 
@@ -782,10 +826,10 @@ const Family_reunification_assessment = () => {
                     <div className="row tw-rounded-2xl px-4 tw-py-4 tw-shadow tw-bg-white border-t-2 border-black">
                       <span className=" tw-flex tw-items-center tw-gap-2">
                         {" "}
-                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`)}</span>
+                        <p className=" tw-m-0 tw-w-[15px]  tw-h-[1px] tw-bg-[#c2c2d3]"></p>{t(`Fill in your`.replace(/\s+/g, ' ').trim())}</span>
 
                       <h2 className="tw-text-left">
-                        <strong>{t(`Family Documents`)}</strong>
+                        <strong>{t(`Family Documents`.replace(/\s+/g, ' ').trim())}</strong>
                       </h2>
 
                       <div className="tw-flex tw-items-center tw-gap-2 tw-pt-3">
@@ -795,7 +839,7 @@ const Family_reunification_assessment = () => {
                           checked={isSingle}
                           onChange={handleCheckboxChange}
                         />
-                        <p className="tw-text-gray-dark  tw-m-0">{t(`I am single or I want to move by myself first`)}</p>
+                        <p className="tw-text-gray-dark  tw-m-0">{t(`I am single or I want to move by myself first`.replace(/\s+/g, ' ').trim())}</p>
                       </div>
 
                       {!isSingle && (
@@ -825,6 +869,7 @@ const Family_reunification_assessment = () => {
                                 ]}
                                 value={childrenPassport}
                                 onChange={handleSelectChange}
+                         
                                 className="tw-outline-none tw-bg-lightGray tw-py-3 tw-text-sm tw-px-3.5 tw-text-gray tw-w-full tw-border tw-rounded-lg tw-mt-2"
                               />
 
@@ -863,9 +908,10 @@ const Family_reunification_assessment = () => {
                     </div>
                   </div>
 
-
+                    
                   <Button
                     onClick={handleSubmit}
+                    type = {"submit"}
                     label={"Submit"}
                     className={
                       "  tw-w-full  tw-bg-primary tw-py-3 tw-text-white tw-rounded-xl  tw-mt-10"
